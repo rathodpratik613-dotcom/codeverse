@@ -1,20 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { findUserByEmail, verifyPassword, generateToken } from '@/lib/auth';
+import { findUserByEmail, getUserWithPassword, verifyPassword, generateToken, createSession } from '@/lib/auth';
+import { z } from 'zod';
+
+const loginSchema = z.object({
+  email: z.string().email(),
+  password: z.string().min(1),
+  rememberMe: z.boolean().optional().default(false),
+});
 
 export async function POST(request: NextRequest) {
   try {
-    const { email, password } = await request.json();
+    const body = await request.json();
+    const { email, password, rememberMe } = loginSchema.parse(body);
 
-    if (!email || !password) {
-      return NextResponse.json(
-        { error: 'Email and password are required' },
-        { status: 400 }
-      );
-    }
+    // Find user with password
+    const userWithPassword = await getUserWithPassword(
+      (await findUserByEmail(email))?.id || ''
+    );
 
-    // Find user
-    const user = findUserByEmail(email);
-    if (!user) {
+    if (!userWithPassword) {
       return NextResponse.json(
         { error: 'Invalid email or password' },
         { status: 401 }
@@ -22,7 +26,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Verify password
-    const isValid = await verifyPassword(password, user.password);
+    const isValid = await verifyPassword(password, userWithPassword.password);
     if (!isValid) {
       return NextResponse.json(
         { error: 'Invalid email or password' },
@@ -30,18 +34,37 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Generate token
-    const token = generateToken(user.id);
+    // Generate token and create session
+    const token = generateToken(userWithPassword.id);
+    const userAgent = request.headers.get('user-agent') || undefined;
+    const ipAddress = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || undefined;
+    await createSession(userWithPassword.id, token, rememberMe, userAgent, ipAddress);
 
     // Return user data without password
-    const { password: _, ...userWithoutPassword } = user;
+    const { password: _, ...user } = userWithPassword;
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       success: true,
-      user: userWithoutPassword,
-      token
+      user,
     });
+
+    // Set httpOnly cookie
+    response.cookies.set('token', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      maxAge: rememberMe ? 30 * 24 * 60 * 60 : 7 * 24 * 60 * 60, // 30 days or 7 days
+      path: '/',
+    });
+
+    return response;
   } catch (error) {
+    if (error instanceof z.ZodError) {
+      return NextResponse.json(
+        { error: 'Invalid input', details: error.issues },
+        { status: 400 }
+      );
+    }
     console.error('Login error:', error);
     return NextResponse.json(
       { error: 'Internal server error' },

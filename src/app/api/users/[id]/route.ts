@@ -7,7 +7,7 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    const user = findUserById(id);
+    const user = await findUserById(id);
 
     if (!user) {
       return NextResponse.json(
@@ -16,11 +16,9 @@ export async function GET(
       );
     }
 
-    const { password: _, ...userWithoutPassword } = user;
-
     return NextResponse.json({
       success: true,
-      user: userWithoutPassword
+      user
     });
   } catch (error) {
     console.error('Get user error:', error);
@@ -39,7 +37,7 @@ export async function PATCH(
     const { id } = await params;
     const { xp, coins, streak } = await request.json();
 
-    let user = findUserById(id);
+    let user = await findUserById(id);
 
     if (!user) {
       return NextResponse.json(
@@ -49,20 +47,18 @@ export async function PATCH(
     }
 
     if (xp !== undefined) {
-      user = updateUserXP(id, xp);
+      user = await updateUserXP(id, xp);
     }
     if (coins !== undefined) {
-      user = updateUserCoins(id, coins);
+      user = await updateUserCoins(id, coins);
     }
     if (streak !== undefined) {
-      user = updateUserStreak(id, streak);
+      user = await updateUserStreak(id, streak);
     }
-
-    const { password: _, ...userWithoutPassword } = user!;
 
     return NextResponse.json({
       success: true,
-      user: userWithoutPassword
+      user
     });
   } catch (error) {
     console.error('Update user error:', error);

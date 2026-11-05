@@ -116,12 +116,15 @@
 ## 🚧 Not Yet Implemented
 
 ### Database Integration
-- [ ] PostgreSQL/Supabase setup
-- [ ] Prisma ORM integration
-- [ ] Database migrations
-- [ ] Persistent user storage
-- [ ] Progress persistence
-- [ ] Achievement storage
+- [x] MongoDB connection setup
+- [x] Mongoose models for all student data
+- [x] JWT + httpOnly cookie sessions
+- [x] API routes for all student data operations
+- [x] Idempotent XP/coin transactions
+- [x] Docker Compose for local MongoDB
+- [ ] Guest mode implementation
+- [ ] Offline sync queue
+- [ ] Admin CRUD for content
 
 ### Session Management
 - [ ] Cookie-based sessions
@@ -281,6 +284,6 @@
 
 ---
 
-**Last Updated**: November 5, 2026
-**Status**: Phase 2 - Dataset Architecture Complete, Content Generation In Progress
-**Next Action**: Generate Python content batch by batch, then JavaScript, then other Tier 1 languages
+**Last Updated**: November 6, 2026
+**Status**: Phase 3 - MongoDB Persistence Core Complete
+**Next Action**: Update frontend components to use new auth context with httpOnly cookies, then implement guest mode and offline sync

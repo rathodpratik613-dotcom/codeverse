@@ -1,19 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { registerUser, findUserByEmail, generateToken } from '@/lib/auth';
+import { registerUser, findUserByEmail, generateToken, createSession } from '@/lib/auth';
+import { z } from 'zod';
+
+const signupSchema = z.object({
+  username: z.string().min(3).max(30).regex(/^[a-zA-Z0-9_]+$/, 'Username can only contain letters, numbers, and underscores'),
+  email: z.string().email(),
+  password: z.string().min(8).max(100),
+  rememberMe: z.boolean().optional().default(false),
+});
 
 export async function POST(request: NextRequest) {
   try {
-    const { username, email, password } = await request.json();
-
-    if (!username || !email || !password) {
-      return NextResponse.json(
-        { error: 'Username, email, and password are required' },
-        { status: 400 }
-      );
-    }
+    const body = await request.json();
+    const { username, email, password, rememberMe } = signupSchema.parse(body);
 
     // Check if user already exists
-    const existingUser = findUserByEmail(email);
+    const existingUser = await findUserByEmail(email);
     if (existingUser) {
       return NextResponse.json(
         { error: 'User with this email already exists' },
@@ -24,18 +26,34 @@ export async function POST(request: NextRequest) {
     // Register new user
     const user = await registerUser(username, email, password);
 
-    // Generate token
+    // Generate token and create session
     const token = generateToken(user.id);
+    const userAgent = request.headers.get('user-agent') || undefined;
+    const ipAddress = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || undefined;
+    await createSession(user.id, token, rememberMe, userAgent, ipAddress);
 
-    // Return user data without password
-    const { password: _, ...userWithoutPassword } = user;
-
-    return NextResponse.json({
+    const response = NextResponse.json({
       success: true,
-      user: userWithoutPassword,
-      token
+      user,
     });
+
+    // Set httpOnly cookie
+    response.cookies.set('token', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      maxAge: rememberMe ? 30 * 24 * 60 * 60 : 7 * 24 * 60 * 60, // 30 days or 7 days
+      path: '/',
+    });
+
+    return response;
   } catch (error) {
+    if (error instanceof z.ZodError) {
+      return NextResponse.json(
+        { error: 'Invalid input', details: error.issues },
+        { status: 400 }
+      );
+    }
     console.error('Signup error:', error);
     return NextResponse.json(
       { error: 'Internal server error' },
