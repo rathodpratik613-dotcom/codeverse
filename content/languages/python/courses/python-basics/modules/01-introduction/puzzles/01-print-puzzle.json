@@ -1,0 +1,32 @@
+{
+  "id": "01-print-puzzle",
+  "title": "Print Statement Puzzle",
+  "description": "Arrange the blocks in the correct order to create a valid Python program",
+  "blocks": [
+    {
+      "id": "block1",
+      "code": "print(\"Step 1: Start\")",
+      "description": "First print statement"
+    },
+    {
+      "id": "block2",
+      "code": "print(\"Step 2: Process\")",
+      "description": "Second print statement"
+    },
+    {
+      "id": "block3",
+      "code": "print(\"Step 3: Finish\")",
+      "description": "Third print statement"
+    },
+    {
+      "id": "block4",
+      "code": "print(\"All done!\")",
+      "description": "Final print statement"
+    }
+  ],
+  "correctOrder": ["block1", "block2", "block3", "block4"],
+  "generatedCode": "print(\"Step 1: Start\")\nprint(\"Step 2: Process\")\nprint(\"Step 3: Finish\")\nprint(\"All done!\")",
+  "explanation": "The blocks should be arranged in logical order - starting with the first step and ending with completion.",
+  "xpReward": 10,
+  "coinReward": 5
+}

@@ -1,0 +1,31 @@
+{
+  "id": "01-hello-world",
+  "title": "Hello World Challenge",
+  "difficulty": 1,
+  "statement": "Write a Python program that prints 'Hello, World!' to the console. This is your first step in programming!",
+  "starterCode": "# Write your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": true
+    }
+  ],
+  "hints": [
+    "Use the print() function to display text",
+    "Remember to include quotes around the text",
+    "The exact output should be: Hello, World!"
+  ],
+  "solution": "print(\"Hello, World!\")",
+  "solutionExplanation": "The print() function is used to output text to the console. We pass the string 'Hello, World!' as an argument.",
+  "xpReward": 10,
+  "coinReward": 5,
+  "tags": ["basics", "print", "hello-world"]
+}

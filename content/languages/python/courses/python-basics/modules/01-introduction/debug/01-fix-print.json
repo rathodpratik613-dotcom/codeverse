@@ -1,0 +1,20 @@
+{
+  "id": "01-fix-print",
+  "title": "Fix the Print Statement",
+  "difficulty": 1,
+  "description": "This code has a bug. Can you find and fix it?",
+  "brokenCode": "print(\"Hello, World!\")\nprint(\"This is Python\")\nprint(\"Learning is fun\")",
+  "bugCount": 1,
+  "bugDescriptions": [
+    "Missing closing parenthesis on the last print statement"
+  ],
+  "fixedCode": "print(\"Hello, World!\")\nprint(\"This is Python\")\nprint(\"Learning is fun\")",
+  "hints": [
+    "Check each line carefully",
+    "Make sure all parentheses are properly closed",
+    "Count the opening and closing parentheses"
+  ],
+  "explanation": "The last print statement is missing its closing parenthesis. Every print() call needs both opening and closing parentheses.",
+  "xpReward": 15,
+  "coinReward": 5
+}

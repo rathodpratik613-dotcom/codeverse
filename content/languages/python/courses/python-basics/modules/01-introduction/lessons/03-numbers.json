@@ -1,0 +1,67 @@
+{
+  "id": "03-numbers",
+  "title": "Numbers and Math Operations",
+  "summary": "Learn to work with numbers and perform mathematical operations in Python",
+  "estimatedMinutes": 25,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand Python's number types",
+    "Learn basic arithmetic operators",
+    "Use mathematical functions",
+    "Handle number formatting"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Python is great for math! It supports all the basic arithmetic operations you know: addition, subtraction, multiplication, division, and more.\n\nNumbers in Python can be integers (whole numbers) or floats (decimals)."
+    },
+    {
+      "type": "code",
+      "content": "Let's try basic math operations:",
+      "codeExample": "a = 10\nb = 3\n\nprint(a + b)  # Addition\nprint(a - b)  # Subtraction\nprint(a * b)  # Multiplication\nprint(a / b)  # Division\nprint(a // b) # Floor division\nprint(a % b)  # Modulus (remainder)\nprint(a ** b) # Exponentiation",
+      "expectedOutput": "13\n7\n30\n3.3333333333333335\n3\n1\n1000",
+      "language": "python"
+    },
+    {
+      "type": "text",
+      "content": "Python follows the standard order of operations (PEMDAS/BODMAS):\n\n1. **P**arentheses\n2. **E**xponents\n3. **M**ultiplication and **D**ivision (left to right)\n4. **A**ddition and **S**ubtraction (left to right)"
+    },
+    {
+      "type": "code",
+      "content": "Order of operations matters!",
+      "codeExample": "print(2 + 3 * 4)    # 14 (multiplication first)\nprint((2 + 3) * 4)  # 20 (parentheses first)\nprint(10 - 2 - 3)   # 5 (left to right)",
+      "expectedOutput": "14\n20\n5",
+      "language": "python"
+    },
+    {
+      "type": "tip",
+      "content": "Use parentheses to make your code clearer! Even if not needed, they help you and others understand the order of operations."
+    },
+    {
+      "type": "code",
+      "content": "Python has built-in math functions:",
+      "codeExample": "import math\n\nprint(math.sqrt(16))   # Square root\nprint(math.pi)         # Pi constant\nprint(math.floor(4.7)) # Floor (round down)\nprint(math.ceil(4.2))  # Ceiling (round up)\nprint(round(3.14159, 2)) # Round to 2 decimals",
+      "expectedOutput": "4.0\n3.141592653589793\n4\n5\n3.14",
+      "language": "python"
+    },
+    {
+      "type": "common-mistake",
+      "content": "Don't confuse // (floor division) with / (regular division). // gives you the whole number part, while / gives you the decimal result."
+    },
+    {
+      "type": "warning",
+      "content": "Division by zero will cause an error! Always check if the divisor is not zero before dividing."
+    }
+  ],
+  "keyTakeaways": [
+    "Python supports all basic arithmetic operators",
+    "Order of operations follows PEMDAS/BODMAS",
+    "Use parentheses for clarity",
+    "math module provides advanced functions",
+    "Division by zero causes errors"
+  ],
+  "quizRefs": ["03-numbers-quiz"],
+  "challengeRefs": ["03-math-challenge"],
+  "nextLessonId": "04-strings"
+}

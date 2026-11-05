@@ -1,0 +1,7 @@
+{
+  "id": "01-introduction",
+  "title": "Introduction to Python",
+  "order": 1,
+  "description": "Get started with Python - installation, first program, and basic concepts",
+  "estimatedMinutes": 120
+}

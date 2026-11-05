@@ -1,0 +1,10 @@
+{
+  "id": "python",
+  "name": "Python",
+  "icon": "🐍",
+  "color": "#3776AB",
+  "description": "Python is a high-level, interpreted programming language known for its simplicity and readability. Perfect for beginners and powerful enough for advanced applications.",
+  "difficulty": "beginner",
+  "runtimeType": "browser",
+  "tags": ["backend", "data-science", "ai", "web", "automation", "scripting"]
+}

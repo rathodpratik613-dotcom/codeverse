@@ -1,0 +1,59 @@
+{
+  "id": "01-first-program",
+  "title": "Your First Python Program",
+  "summary": "Learn how to write and run your first Python program using print()",
+  "estimatedMinutes": 15,
+  "difficulty": 1,
+  "xpReward": 10,
+  "learningObjectives": [
+    "Understand what Python is and why it's popular",
+    "Learn to use the print() function",
+    "Write your first Python program",
+    "Understand basic Python syntax"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Welcome to Python! Python is one of the most popular programming languages in the world. It's known for its simplicity and readability, making it perfect for beginners.\n\nPython is used everywhere - from web development to data science, AI, automation, and more. The best part? It's free and open-source!"
+    },
+    {
+      "type": "code",
+      "content": "Let's write your first Python program. In Python, we use the print() function to display text on the screen.",
+      "codeExample": "print(\"Hello, World!\")",
+      "expectedOutput": "Hello, World!",
+      "language": "python"
+    },
+    {
+      "type": "tip",
+      "content": "Python uses indentation (spaces) to define code blocks. Unlike other languages that use braces {}, Python uses 4 spaces or a tab."
+    },
+    {
+      "type": "warning",
+      "content": "Python is case-sensitive! 'Print' and 'print' are different. Always use lowercase 'print' for the print function."
+    },
+    {
+      "type": "common-mistake",
+      "content": "Many beginners forget to include quotes around text. Remember: print(\"Hello\") not print(Hello). The quotes tell Python it's a string of text."
+    },
+    {
+      "type": "text",
+      "content": "Now let's try something more interesting. We can print multiple things and even do math!"
+    },
+    {
+      "type": "code",
+      "content": "Try this example that prints different types of data:",
+      "codeExample": "print(\"My name is Alice\")\nprint(\"I am 25 years old\")\nprint(\"I like programming\")",
+      "expectedOutput": "My name is Alice\nI am 25 years old\nI like programming",
+      "language": "python"
+    }
+  ],
+  "keyTakeaways": [
+    "Python uses print() to display output",
+    "Text must be enclosed in quotes",
+    "Python is case-sensitive",
+    "Indentation is important in Python"
+  ],
+  "quizRefs": ["01-intro-quiz"],
+  "challengeRefs": ["01-hello-world"],
+  "nextLessonId": "02-variables"
+}

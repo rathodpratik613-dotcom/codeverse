@@ -1,0 +1,67 @@
+{
+  "id": "02-variables",
+  "title": "Variables and Data Types",
+  "summary": "Learn how to store data in variables and understand Python's data types",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 15,
+  "learningObjectives": [
+    "Understand what variables are",
+    "Learn to create and assign variables",
+    "Know Python's basic data types",
+    "Use variables in print statements"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Variables are like containers that store data. In Python, you create a variable by assigning a value to it using the = sign.\n\nThink of variables as labeled boxes where you can store different types of information."
+    },
+    {
+      "type": "code",
+      "content": "Let's create some variables:",
+      "codeExample": "name = \"Alice\"\nage = 25\nis_student = True\nheight = 5.6\n\nprint(name)\nprint(age)\nprint(is_student)\nprint(height)",
+      "expectedOutput": "Alice\n25\nTrue\n5.6",
+      "language": "python"
+    },
+    {
+      "type": "text",
+      "content": "Python has several built-in data types:\n\n- **str** (string): Text like \"Hello\" or 'World'\n- **int** (integer): Whole numbers like 42, -5, 1000\n- **float**: Decimal numbers like 3.14, 2.5, -0.5\n- **bool** (boolean): True or False values"
+    },
+    {
+      "type": "tip",
+      "content": "Python automatically figures out the data type! You don't need to declare it like in other languages. Just assign the value and Python knows what type it is."
+    },
+    {
+      "type": "code",
+      "content": "You can check the type of a variable using type():",
+      "codeExample": "name = \"Alice\"\nage = 25\nheight = 5.6\nis_student = True\n\nprint(type(name))\nprint(type(age))\nprint(type(height))\nprint(type(is_student))",
+      "expectedOutput": "<class 'str'>\n<class 'int'>\n<class 'float'>\n<class 'bool'>",
+      "language": "python"
+    },
+    {
+      "type": "common-mistake",
+      "content": "Don't use 'True' and 'False' with quotes! They're Python keywords, not strings. Use True and False without quotes."
+    },
+    {
+      "type": "warning",
+      "content": "Variable names can't start with numbers! They must start with a letter or underscore (_). Also, they're case-sensitive: 'name' and 'Name' are different variables."
+    },
+    {
+      "type": "code",
+      "content": "Try this example with different variable names:",
+      "codeExample": "first_name = \"John\"\nlast_name = \"Doe\"\nage = 30\n\nprint(\"Name:\", first_name, last_name)\nprint(\"Age:\", age)",
+      "expectedOutput": "Name: John Doe\nAge: 30",
+      "language": "python"
+    }
+  ],
+  "keyTakeaways": [
+    "Variables store data using = operator",
+    "Python has 4 main data types: str, int, float, bool",
+    "Python automatically detects data types",
+    "Variable names can't start with numbers",
+    "Variables are case-sensitive"
+  ],
+  "quizRefs": ["02-variables-quiz"],
+  "challengeRefs": ["02-variable-challenge"],
+  "nextLessonId": "03-numbers"
+}
