@@ -55,12 +55,13 @@ export default function LessonNavigationComponent({
 
       // Award XP (idempotent - check if already awarded)
       const xpAwarded = localStorage.getItem(`xp_awarded_${currentLesson.id}`);
+      const lessonXP = currentLesson.exercises?.[0]?.xpReward || 10;
       if (!xpAwarded) {
         await fetch(`/api/users/${user.id}`, {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            xp: currentLesson.xpReward || 10,
+            xp: lessonXP,
             coins: 5,
           }),
         });
@@ -68,7 +69,7 @@ export default function LessonNavigationComponent({
       }
 
       // Show success toast
-      setToastMessage(`Lesson completed! +${currentLesson.xpReward || 10} XP`);
+      setToastMessage(`Lesson completed! +${lessonXP} XP`);
       setShowToast(true);
 
       // Call callback if provided
