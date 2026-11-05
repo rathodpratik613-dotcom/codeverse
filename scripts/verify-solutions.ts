@@ -98,7 +98,7 @@ except Exception as e:
 
 sys.stdout = old_stdout
 output = captured_output.getvalue().strip()
-expected = '''${test.expectedOutput.strip()}'''
+expected = '''${test.expectedOutput}'''
 
 if output != expected:
     print(f"Expected: {expected}", file=sys.stderr)
