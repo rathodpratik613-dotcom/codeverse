@@ -25,13 +25,6 @@ export default function ProfilePage() {
     { label: 'Streak', value: `${user.streak} days`, icon: Flame, color: 'text-red-400' }
   ];
 
-  const stats = [
-    { label: 'Level', value: user.level, icon: TrendingUp, color: 'text-purple-400' },
-    { label: 'XP', value: user.totalXP.toLocaleString(), icon: TrendingUp, color: 'text-blue-400' },
-    { label: 'Coins', value: user.coins, icon: Trophy, color: 'text-cyan-400' },
-    { label: 'Streak', value: `${user.streak} days`, icon: Flame, color: 'text-red-400' }
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a0e27] via-[#1a1f3a] to-[#0a0e27]">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center border-b border-white/10">
@@ -143,15 +136,15 @@ export default function ProfilePage() {
               <h3 className="text-xl font-bold text-white mb-4">Learning Statistics</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <div className="text-3xl font-bold text-purple-400 mb-1">{user.totalLessons}</div>
+                  <div className="text-3xl font-bold text-purple-400 mb-1">0</div>
                   <p className="text-gray-400">Lessons Completed</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-400 mb-1">{user.totalChallenges}</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-1">0</div>
                   <p className="text-gray-400">Challenges Solved</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-cyan-400 mb-1">{Math.floor(user.totalXP / user.totalLessons)}</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-1">0</div>
                   <p className="text-gray-400">Avg XP per Lesson</p>
                 </div>
                 <div>
