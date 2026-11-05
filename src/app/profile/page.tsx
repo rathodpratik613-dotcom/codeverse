@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { Code2, User, Mail, Calendar, TrendingUp, Flame, Trophy, Edit, LogOut } from 'lucide-react';
 import { useAuth } from '@/lib/auth-context';
@@ -9,9 +10,21 @@ export default function ProfilePage() {
   const router = useRouter();
   const { user, logout } = useAuth();
 
+  useEffect(() => {
+    if (!user) {
+      router.push('/login');
+    }
+  }, [user, router]);
+
   if (!user) {
-    router.push('/login');
-    return null;
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-[#0a0e27] via-[#1a1f3a] to-[#0a0e27] flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
+          <p className="text-gray-400">Loading...</p>
+        </div>
+      </div>
+    );
   }
 
   const joinedDate = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });

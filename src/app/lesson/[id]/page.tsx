@@ -1,13 +1,29 @@
 'use client';
 
-import { useState } from 'react';
-import { useParams, Link } from 'next/navigation';
+import { Suspense, useState } from 'react';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
 import { Code2, Play, RotateCcw, CheckCircle, XCircle, ArrowLeft } from 'lucide-react';
 import Editor from '@monaco-editor/react';
 import { pythonCourse, javascriptCourse } from '@/data/courses';
 import { useAuth } from '@/lib/auth-context';
 
 export default function LessonPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-br from-[#0a0e27] via-[#1a1f3a] to-[#0a0e27] flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
+          <p className="text-gray-400">Loading lesson...</p>
+        </div>
+      </div>
+    }>
+      <LessonContent />
+    </Suspense>
+  );
+}
+
+function LessonContent() {
   const params = useParams();
   const lessonId = params.id as string;
   const { user } = useAuth();

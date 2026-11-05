@@ -3,10 +3,11 @@ import { findUserById, updateUserXP, updateUserCoins, updateUserStreak } from '@
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const user = findUserById(params.id);
+    const { id } = await params;
+    const user = findUserById(id);
 
     if (!user) {
       return NextResponse.json(
@@ -32,12 +33,13 @@ export async function GET(
 
 export async function PATCH(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params;
     const { xp, coins, streak } = await request.json();
 
-    let user = findUserById(params.id);
+    let user = findUserById(id);
 
     if (!user) {
       return NextResponse.json(
@@ -47,13 +49,13 @@ export async function PATCH(
     }
 
     if (xp !== undefined) {
-      user = updateUserXP(params.id, xp);
+      user = updateUserXP(id, xp);
     }
     if (coins !== undefined) {
-      user = updateUserCoins(params.id, coins);
+      user = updateUserCoins(id, coins);
     }
     if (streak !== undefined) {
-      user = updateUserStreak(params.id, streak);
+      user = updateUserStreak(id, streak);
     }
 
     const { password: _, ...userWithoutPassword } = user!;

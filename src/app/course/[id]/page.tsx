@@ -1,11 +1,28 @@
 'use client';
 
-import { useParams, Link } from 'next/navigation';
+import { Suspense } from 'react';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
 import { Code2, Lock, CheckCircle, Play } from 'lucide-react';
 import { pythonCourse, javascriptCourse } from '@/data/courses';
 import { languages } from '@/data/languages';
 
 export default function CoursePage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-br from-[#0a0e27] via-[#1a1f3a] to-[#0a0e27] flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
+          <p className="text-gray-400">Loading course...</p>
+        </div>
+      </div>
+    }>
+      <CourseContent />
+    </Suspense>
+  );
+}
+
+function CourseContent() {
   const params = useParams();
   const courseId = params.id as string;
 
