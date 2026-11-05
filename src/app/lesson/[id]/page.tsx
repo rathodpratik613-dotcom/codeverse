@@ -7,6 +7,8 @@ import { Code2, Play, RotateCcw, CheckCircle, XCircle, ArrowLeft } from 'lucide-
 import Editor from '@monaco-editor/react';
 import { pythonCourse, javascriptCourse } from '@/data/courses';
 import { useAuth } from '@/lib/auth-context';
+import { getLessonNavigation } from '@/lib/lesson-navigation';
+import LessonNavigationComponent from '@/components/lesson-navigation';
 
 export default function LessonPage() {
   return (
@@ -38,6 +40,7 @@ function LessonContent() {
   const courses = { 'python-basics': pythonCourse, 'javascript-basics': javascriptCourse };
   let lesson = null;
   let language = 'python';
+  let navigation = null;
 
   for (const course of Object.values(courses)) {
     for (const module of course.modules) {
@@ -63,6 +66,9 @@ function LessonContent() {
       </div>
     );
   }
+
+  // Get navigation data
+  navigation = getLessonNavigation(courses, lessonId);
 
   const handleRunCode = async () => {
     setIsRunning(true);
@@ -187,6 +193,16 @@ function LessonContent() {
                   <span className="text-cyan-400">+{lesson.exercises[0].coinReward} coins</span>
                 </div>
               </div>
+            )}
+
+            {/* Lesson Navigation */}
+            {navigation && (
+              <LessonNavigationComponent
+                navigation={navigation}
+                onLessonComplete={(lessonId) => {
+                  console.log('Lesson completed:', lessonId);
+                }}
+              />
             )}
           </div>
 
