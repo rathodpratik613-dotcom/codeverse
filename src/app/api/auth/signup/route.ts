@@ -14,7 +14,6 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { username, email, password, rememberMe } = signupSchema.parse(body);
 
-    // Check if user already exists
     const existingUser = await findUserByEmail(email);
     if (existingUser) {
       return NextResponse.json(
@@ -23,10 +22,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Register new user
     const user = await registerUser(username, email, password);
-
-    // Generate token and create session
     const token = generateToken(user.id);
     const userAgent = request.headers.get('user-agent') || undefined;
     const ipAddress = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || undefined;
@@ -37,12 +33,11 @@ export async function POST(request: NextRequest) {
       user,
     });
 
-    // Set httpOnly cookie
     response.cookies.set('token', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',
-      maxAge: rememberMe ? 30 * 24 * 60 * 60 : 7 * 24 * 60 * 60, // 30 days or 7 days
+      maxAge: rememberMe ? 30 * 24 * 60 * 60 : 7 * 24 * 60 * 60,
       path: '/',
     });
 

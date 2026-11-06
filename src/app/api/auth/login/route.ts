@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { findUserByEmail, getUserWithPassword, verifyPassword, generateToken, createSession } from '@/lib/auth';
+import { findUserByEmail, getUserWithPasswordByEmail, verifyPassword, generateToken, createSession } from '@/lib/auth';
 import { z } from 'zod';
 
 const loginSchema = z.object({
@@ -13,10 +13,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { email, password, rememberMe } = loginSchema.parse(body);
 
-    // Find user with password
-    const userWithPassword = await getUserWithPassword(
-      (await findUserByEmail(email))?.id || ''
-    );
+    const userWithPassword = await getUserWithPasswordByEmail(email);
 
     if (!userWithPassword) {
       return NextResponse.json(
@@ -25,7 +22,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Verify password
     const isValid = await verifyPassword(password, userWithPassword.password);
     if (!isValid) {
       return NextResponse.json(
@@ -34,13 +30,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Generate token and create session
     const token = generateToken(userWithPassword.id);
     const userAgent = request.headers.get('user-agent') || undefined;
     const ipAddress = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || undefined;
     await createSession(userWithPassword.id, token, rememberMe, userAgent, ipAddress);
 
-    // Return user data without password
     const { password: _, ...user } = userWithPassword;
 
     const response = NextResponse.json({
@@ -48,12 +42,11 @@ export async function POST(request: NextRequest) {
       user,
     });
 
-    // Set httpOnly cookie
     response.cookies.set('token', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',
-      maxAge: rememberMe ? 30 * 24 * 60 * 60 : 7 * 24 * 60 * 60, // 30 days or 7 days
+      maxAge: rememberMe ? 30 * 24 * 60 * 60 : 7 * 24 * 60 * 60,
       path: '/',
     });
 

@@ -1,39 +1,66 @@
-import mongoose from 'mongoose';
+import { Low } from 'lowdb';
+import { JSONFile } from 'lowdb/node';
+import path from 'path';
+import fs from 'fs';
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/codeverse';
+const DATA_DIR = path.join(process.cwd(), 'data');
+const DB_FILE = path.join(DATA_DIR, 'codeverse.json');
 
-interface MongooseCache {
-  conn: typeof mongoose | null;
-  promise: Promise<typeof mongoose> | null;
+if (!fs.existsSync(DATA_DIR)) {
+  fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
-const globalWithMongoose = globalThis as unknown as {
-  mongoose?: MongooseCache;
+interface DatabaseSchema {
+  users: any[];
+  sessions: any[];
+  lessonProgress: any[];
+  editorDrafts: any[];
+  challengeSubmissions: any[];
+  xpTransactions: any[];
+  coinTransactions: any[];
+  userAchievements: any[];
+  bookmarks: any[];
+  notes: any[];
+  activityLog: any[];
+  notifications: any[];
+}
+
+const defaultData: DatabaseSchema = {
+  users: [],
+  sessions: [],
+  lessonProgress: [],
+  editorDrafts: [],
+  challengeSubmissions: [],
+  xpTransactions: [],
+  coinTransactions: [],
+  userAchievements: [],
+  bookmarks: [],
+  notes: [],
+  activityLog: [],
+  notifications: [],
 };
 
-let cached: MongooseCache = globalWithMongoose.mongoose || { conn: null, promise: null };
+let db: Low<DatabaseSchema> | null = null;
 
-if (!globalWithMongoose.mongoose) {
-  globalWithMongoose.mongoose = cached;
+export async function getDb(): Promise<Low<DatabaseSchema>> {
+  if (!db) {
+    db = new Low<DatabaseSchema>(new JSONFile(DB_FILE), defaultData);
+    await db.read();
+    
+    // Ensure all collections exist
+    const data = db.data as any;
+    for (const key of Object.keys(defaultData)) {
+      if (!data[key]) {
+        data[key] = [];
+      }
+    }
+    await db.write();
+  }
+  return db;
 }
 
-async function dbConnect(): Promise<typeof mongoose> {
-  if (cached.conn) {
-    return cached.conn;
+export async function saveDb(): Promise<void> {
+  if (db) {
+    await db.write();
   }
-
-  if (!cached.promise) {
-    const opts = {
-      bufferCommands: false,
-    };
-
-    cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
-      return mongoose;
-    });
-  }
-
-  cached.conn = await cached.promise;
-  return cached.conn;
 }
-
-export default dbConnect;

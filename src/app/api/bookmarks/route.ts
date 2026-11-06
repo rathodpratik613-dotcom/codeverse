@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import dbConnect from '@/lib/db';
-import { Bookmark, Note } from '@/models/achievement';
+import { getDb, saveDb } from '@/lib/db';
 import { z } from 'zod';
+import crypto from 'crypto';
 
 const bookmarkSchema = z.object({
   contentId: z.string(),
@@ -14,8 +14,6 @@ const bookmarkSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
-    await dbConnect();
-
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -29,18 +27,25 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const data = bookmarkSchema.parse(body);
 
-    const bookmark = await Bookmark.findOneAndUpdate(
-      {
-        userId: decoded.userId,
-        contentId: data.contentId,
-      },
-      {
-        ...data,
-        userId: decoded.userId,
-      },
-      { upsert: true, new: true }
+    const db = await getDb();
+    let bookmark = db.data.bookmarks.find(
+      (b: any) => b.userId === decoded.userId && b.contentId === data.contentId
     );
 
+    if (bookmark) {
+      Object.assign(bookmark, data, { updatedAt: new Date().toISOString() });
+    } else {
+      bookmark = {
+        id: crypto.randomUUID(),
+        userId: decoded.userId,
+        ...data,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      };
+      db.data.bookmarks.push(bookmark);
+    }
+
+    await saveDb();
     return NextResponse.json({ success: true, bookmark });
   } catch (error) {
     if (error instanceof z.ZodError) {
@@ -53,8 +58,6 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
-    await dbConnect();
-
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -68,10 +71,12 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const contentId = searchParams.get('contentId');
 
-    const query: any = { userId: decoded.userId };
-    if (contentId) query.contentId = contentId;
+    const db = await getDb();
+    let bookmarks = db.data.bookmarks.filter((b: any) => b.userId === decoded.userId);
 
-    const bookmarks = await Bookmark.find(query).lean();
+    if (contentId) {
+      bookmarks = bookmarks.filter((b: any) => b.contentId === contentId);
+    }
 
     return NextResponse.json({ bookmarks });
   } catch (error) {
@@ -82,8 +87,6 @@ export async function GET(request: NextRequest) {
 
 export async function DELETE(request: NextRequest) {
   try {
-    await dbConnect();
-
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -101,7 +104,11 @@ export async function DELETE(request: NextRequest) {
       return NextResponse.json({ error: 'contentId is required' }, { status: 400 });
     }
 
-    await Bookmark.deleteOne({ userId: decoded.userId, contentId });
+    const db = await getDb();
+    db.data.bookmarks = db.data.bookmarks.filter(
+      (b: any) => !(b.userId === decoded.userId && b.contentId === contentId)
+    );
+    await saveDb();
 
     return NextResponse.json({ success: true });
   } catch (error) {

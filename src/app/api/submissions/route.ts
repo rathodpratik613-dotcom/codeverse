@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import dbConnect from '@/lib/db';
-import { ChallengeSubmission } from '@/models/challenge-submission';
+import { getDb, saveDb } from '@/lib/db';
 import { z } from 'zod';
+import crypto from 'crypto';
 
 const submissionSchema = z.object({
   contentId: z.string(),
@@ -16,8 +16,6 @@ const submissionSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
-    await dbConnect();
-
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -31,25 +29,29 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const data = submissionSchema.parse(body);
 
-    // Check if this is a better solution than existing ones
-    const existingBest = await ChallengeSubmission.findOne({
-      userId: decoded.userId,
-      contentId: data.contentId,
-      result: 'passed',
-      isBestSolution: true,
-    }).sort({ testsPassed: -1 });
+    const db = await getDb();
+
+    // Check if this is a better solution
+    const existingBest = db.data.challengeSubmissions.find(
+      (s: any) => s.userId === decoded.userId && s.contentId === data.contentId && s.result === 'passed' && s.isBestSolution
+    );
 
     const isBest = !existingBest || (data.result === 'passed' && data.testsPassed > (existingBest.testsPassed || 0));
 
     if (isBest && existingBest) {
-      await ChallengeSubmission.updateOne({ _id: existingBest._id }, { isBestSolution: false });
+      existingBest.isBestSolution = false;
     }
 
-    const submission = await ChallengeSubmission.create({
-      ...data,
+    const submission = {
+      id: crypto.randomUUID(),
       userId: decoded.userId,
+      ...data,
       isBestSolution: isBest,
-    });
+      createdAt: new Date().toISOString(),
+    };
+
+    db.data.challengeSubmissions.push(submission);
+    await saveDb();
 
     return NextResponse.json({ success: true, submission });
   } catch (error) {
@@ -63,8 +65,6 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
-    await dbConnect();
-
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -78,13 +78,15 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const contentId = searchParams.get('contentId');
 
-    const query: any = { userId: decoded.userId };
-    if (contentId) query.contentId = contentId;
+    const db = await getDb();
+    let submissions = db.data.challengeSubmissions
+      .filter((s: any) => s.userId === decoded.userId)
+      .sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+      .slice(0, 50);
 
-    const submissions = await ChallengeSubmission.find(query)
-      .sort({ createdAt: -1 })
-      .limit(50)
-      .lean();
+    if (contentId) {
+      submissions = submissions.filter((s: any) => s.contentId === contentId);
+    }
 
     return NextResponse.json({ submissions });
   } catch (error) {

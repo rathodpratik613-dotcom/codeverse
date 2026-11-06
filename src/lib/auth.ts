@@ -1,8 +1,7 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import dbConnect from './db';
-import { User } from '@/models/user';
-import { Session } from '@/models/session';
+import { getDb, saveDb } from './db';
+import crypto from 'crypto';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
 const SESSION_EXPIRY = 7 * 24 * 60 * 60 * 1000; // 7 days
@@ -27,6 +26,11 @@ export interface AuthUser {
     notifications: boolean;
   };
   role: 'student' | 'admin';
+  createdAt: string;
+}
+
+interface User extends AuthUser {
+  password: string;
 }
 
 export async function hashPassword(password: string): Promise<string> {
@@ -50,11 +54,11 @@ export function verifyToken(token: string): { userId: string } | null {
 }
 
 export async function registerUser(username: string, email: string, password: string): Promise<AuthUser> {
-  await dbConnect();
-
+  const db = await getDb();
   const hashedPassword = await hashPassword(password);
 
-  const user = await User.create({
+  const user: User = {
+    id: crypto.randomUUID(),
     username: username.toLowerCase(),
     email: email.toLowerCase(),
     password: hashedPassword,
@@ -71,246 +75,148 @@ export async function registerUser(username: string, email: string, password: st
       reducedMotion: false,
       notifications: true,
     },
-  });
-
-  return {
-    id: user._id.toString(),
-    username: user.username,
-    email: user.email,
-    name: user.name,
-    avatar: user.avatar,
-    level: user.level,
-    xp: user.xp,
-    coins: user.coins,
-    streak: user.streak,
-    longestStreak: user.longestStreak,
-    selectedLanguages: user.selectedLanguages,
-    preferences: user.preferences,
-    role: user.role,
+    role: 'student',
+    createdAt: new Date().toISOString(),
   };
+
+  db.data.users.push(user);
+  await saveDb();
+
+  const { password: _, ...userWithoutPassword } = user;
+  return userWithoutPassword;
 }
 
 export async function findUserByEmail(email: string): Promise<AuthUser | null> {
-  await dbConnect();
-  const user = await User.findOne({ email: email.toLowerCase() });
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.email === email.toLowerCase());
   if (!user) return null;
 
-  return {
-    id: user._id.toString(),
-    username: user.username,
-    email: user.email,
-    name: user.name,
-    avatar: user.avatar,
-    level: user.level,
-    xp: user.xp,
-    coins: user.coins,
-    streak: user.streak,
-    longestStreak: user.longestStreak,
-    selectedLanguages: user.selectedLanguages,
-    preferences: user.preferences,
-    role: user.role,
-  };
+  const { password: _, ...userWithoutPassword } = user;
+  return userWithoutPassword;
 }
 
 export async function findUserById(id: string): Promise<AuthUser | null> {
-  await dbConnect();
-  const user = await User.findById(id);
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.id === id);
   if (!user) return null;
 
-  return {
-    id: user._id.toString(),
-    username: user.username,
-    email: user.email,
-    name: user.name,
-    avatar: user.avatar,
-    level: user.level,
-    xp: user.xp,
-    coins: user.coins,
-    streak: user.streak,
-    longestStreak: user.longestStreak,
-    selectedLanguages: user.selectedLanguages,
-    preferences: user.preferences,
-    role: user.role,
-  };
+  const { password: _, ...userWithoutPassword } = user;
+  return userWithoutPassword;
 }
 
-export async function getUserWithPassword(id: string): Promise<(AuthUser & { password: string }) | null> {
-  await dbConnect();
-  const user = await User.findById(id);
-  if (!user) return null;
+export async function getUserWithPassword(id: string): Promise<User | null> {
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.id === id);
+  return user || null;
+}
 
-  return {
-    id: user._id.toString(),
-    username: user.username,
-    email: user.email,
-    name: user.name,
-    avatar: user.avatar,
-    level: user.level,
-    xp: user.xp,
-    coins: user.coins,
-    streak: user.streak,
-    longestStreak: user.longestStreak,
-    selectedLanguages: user.selectedLanguages,
-    preferences: user.preferences,
-    role: user.role,
-    password: user.password,
-  };
+export async function getUserWithPasswordByEmail(email: string): Promise<User | null> {
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.email === email.toLowerCase());
+  return user || null;
 }
 
 export async function updateUserXP(userId: string, xpToAdd: number): Promise<AuthUser | null> {
-  await dbConnect();
-
-  const user = await User.findByIdAndUpdate(
-    userId,
-    {
-      $inc: { xp: xpToAdd },
-    },
-    { new: true }
-  );
-
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.id === userId);
   if (!user) return null;
 
-  // Check for level up
+  user.xp += xpToAdd;
   const newLevel = Math.floor(user.xp / 1000) + 1;
   if (newLevel > user.level) {
-    await User.findByIdAndUpdate(userId, { level: newLevel });
     user.level = newLevel;
   }
 
-  return {
-    id: user._id.toString(),
-    username: user.username,
-    email: user.email,
-    name: user.name,
-    avatar: user.avatar,
-    level: user.level,
-    xp: user.xp,
-    coins: user.coins,
-    streak: user.streak,
-    longestStreak: user.longestStreak,
-    selectedLanguages: user.selectedLanguages,
-    preferences: user.preferences,
-    role: user.role,
-  };
+  await saveDb();
+  const { password: _, ...userWithoutPassword } = user;
+  return userWithoutPassword;
 }
 
 export async function updateUserCoins(userId: string, coinsToAdd: number): Promise<AuthUser | null> {
-  await dbConnect();
-
-  const user = await User.findByIdAndUpdate(
-    userId,
-    {
-      $inc: { coins: coinsToAdd },
-    },
-    { new: true }
-  );
-
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.id === userId);
   if (!user) return null;
 
-  return {
-    id: user._id.toString(),
-    username: user.username,
-    email: user.email,
-    name: user.name,
-    avatar: user.avatar,
-    level: user.level,
-    xp: user.xp,
-    coins: user.coins,
-    streak: user.streak,
-    longestStreak: user.longestStreak,
-    selectedLanguages: user.selectedLanguages,
-    preferences: user.preferences,
-    role: user.role,
-  };
+  user.coins += coinsToAdd;
+  await saveDb();
+  const { password: _, ...userWithoutPassword } = user;
+  return userWithoutPassword;
 }
 
 export async function updateUserStreak(userId: string, streak: number): Promise<AuthUser | null> {
-  await dbConnect();
-
-  const user = await User.findByIdAndUpdate(
-    userId,
-    {
-      streak,
-      longestStreak: Math.max(streak, (await User.findById(userId))?.longestStreak || 0),
-    },
-    { new: true }
-  );
-
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.id === userId);
   if (!user) return null;
 
-  return {
-    id: user._id.toString(),
-    username: user.username,
-    email: user.email,
-    name: user.name,
-    avatar: user.avatar,
-    level: user.level,
-    xp: user.xp,
-    coins: user.coins,
-    streak: user.streak,
-    longestStreak: user.longestStreak,
-    selectedLanguages: user.selectedLanguages,
-    preferences: user.preferences,
-    role: user.role,
-  };
+  user.streak = streak;
+  if (streak > user.longestStreak) {
+    user.longestStreak = streak;
+  }
+
+  await saveDb();
+  const { password: _, ...userWithoutPassword } = user;
+  return userWithoutPassword;
 }
 
 export async function createSession(userId: string, token: string, rememberMe: boolean, userAgent?: string, ipAddress?: string): Promise<void> {
-  await dbConnect();
+  const db = await getDb();
 
-  const expiresAt = new Date(Date.now() + (rememberMe ? REMEMBER_ME_EXPIRY : SESSION_EXPIRY));
-
-  await Session.create({
+  const session = {
+    id: crypto.randomUUID(),
     userId,
     token,
-    expiresAt,
+    expiresAt: new Date(Date.now() + (rememberMe ? REMEMBER_ME_EXPIRY : SESSION_EXPIRY)).toISOString(),
     isRememberMe: rememberMe,
     userAgent,
     ipAddress,
     isActive: true,
-  });
+    createdAt: new Date().toISOString(),
+  };
+
+  db.data.sessions.push(session);
+  await saveDb();
 }
 
 export async function getSessionByToken(token: string): Promise<{ userId: string; sessionId: string } | null> {
-  await dbConnect();
-
-  const session = await Session.findOne({ token, isActive: true, expiresAt: { $gt: new Date() } });
+  const db = await getDb();
+  const session = db.data.sessions.find((s: any) => s.token === token && s.isActive && new Date(s.expiresAt) > new Date());
   if (!session) return null;
 
   return {
-    userId: session.userId.toString(),
-    sessionId: session._id.toString(),
+    userId: session.userId,
+    sessionId: session.id,
   };
 }
 
 export async function deleteSession(token: string): Promise<void> {
-  await dbConnect();
-  await Session.findOneAndUpdate({ token }, { isActive: false });
+  const db = await getDb();
+  const session = db.data.sessions.find((s: any) => s.token === token);
+  if (session) {
+    session.isActive = false;
+    await saveDb();
+  }
 }
 
 export async function deleteAllUserSessions(userId: string, exceptToken?: string): Promise<void> {
-  await dbConnect();
-
-  const query: any = { userId, isActive: true };
-  if (exceptToken) {
-    query.token = { $ne: exceptToken };
-  }
-
-  await Session.updateMany(query, { isActive: false });
+  const db = await getDb();
+  db.data.sessions.forEach((s: any) => {
+    if (s.userId === userId && s.isActive && (!exceptToken || s.token !== exceptToken)) {
+      s.isActive = false;
+    }
+  });
+  await saveDb();
 }
 
-export async function getUserSessions(userId: string): Promise<Array<{ id: string; userAgent?: string; ipAddress?: string; createdAt: Date; isRememberMe: boolean }>> {
-  await dbConnect();
-
-  const sessions = await Session.find({ userId, isActive: true, expiresAt: { $gt: new Date() } })
-    .sort({ createdAt: -1 })
-    .lean();
-
-  return sessions.map((s) => ({
-    id: s._id.toString(),
-    userAgent: s.userAgent,
-    ipAddress: s.ipAddress,
-    createdAt: s.createdAt,
-    isRememberMe: s.isRememberMe,
-  }));
+export async function getUserSessions(userId: string): Promise<Array<{ id: string; userAgent?: string; ipAddress?: string; createdAt: string; isRememberMe: boolean }>> {
+  const db = await getDb();
+  return db.data.sessions
+    .filter((s: any) => s.userId === userId && s.isActive && new Date(s.expiresAt) > new Date())
+    .sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .map((s: any) => ({
+      id: s.id,
+      userAgent: s.userAgent,
+      ipAddress: s.ipAddress,
+      createdAt: s.createdAt,
+      isRememberMe: s.isRememberMe,
+    }));
 }

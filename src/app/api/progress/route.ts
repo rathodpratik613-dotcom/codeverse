@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import dbConnect from '@/lib/db';
-import { LessonProgress } from '@/models/lesson-progress';
+import { getDb, saveDb } from '@/lib/db';
 import { z } from 'zod';
+import crypto from 'crypto';
 
 const progressSchema = z.object({
   contentId: z.string(),
@@ -17,8 +17,6 @@ const progressSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
-    await dbConnect();
-
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -32,19 +30,28 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const data = progressSchema.parse(body);
 
-    const progress = await LessonProgress.findOneAndUpdate(
-      {
-        userId: decoded.userId,
-        contentId: data.contentId,
-      },
-      {
-        ...data,
-        userId: decoded.userId,
-        completedAt: data.status === 'completed' ? new Date() : undefined,
-      },
-      { upsert: true, new: true }
+    const db = await getDb();
+    let progress = db.data.lessonProgress.find(
+      (p: any) => p.userId === decoded.userId && p.contentId === data.contentId
     );
 
+    if (progress) {
+      Object.assign(progress, data, {
+        completedAt: data.status === 'completed' ? new Date().toISOString() : progress.completedAt,
+      });
+    } else {
+      progress = {
+        id: crypto.randomUUID(),
+        userId: decoded.userId,
+        ...data,
+        completedAt: data.status === 'completed' ? new Date().toISOString() : undefined,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      };
+      db.data.lessonProgress.push(progress);
+    }
+
+    await saveDb();
     return NextResponse.json({ success: true, progress });
   } catch (error) {
     if (error instanceof z.ZodError) {
@@ -57,8 +64,6 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
-    await dbConnect();
-
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
     if (!token) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -73,11 +78,15 @@ export async function GET(request: NextRequest) {
     const languageSlug = searchParams.get('language');
     const contentId = searchParams.get('contentId');
 
-    const query: any = { userId: decoded.userId };
-    if (languageSlug) query.languageSlug = languageSlug;
-    if (contentId) query.contentId = contentId;
+    const db = await getDb();
+    let progress = db.data.lessonProgress.filter((p: any) => p.userId === decoded.userId);
 
-    const progress = await LessonProgress.find(query).lean();
+    if (languageSlug) {
+      progress = progress.filter((p: any) => p.languageSlug === languageSlug);
+    }
+    if (contentId) {
+      progress = progress.filter((p: any) => p.contentId === contentId);
+    }
 
     return NextResponse.json({ progress });
   } catch (error) {
