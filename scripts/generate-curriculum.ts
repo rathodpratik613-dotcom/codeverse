@@ -503,7 +503,7 @@ const HTML_TOPICS: Topic[] = [
 // To keep the file manageable, CSS and SQL reuse a compact topic generator
 // built from per-topic fact rows below.
 
-interface SimpleTopic { mod: number; title: string; body: string; code: string; mcq: [string, string, string[]]; tf: [string, boolean]; fill: [string, string]; }
+type SimpleTopic = [number, string, string, string, [string, string, string[], [string, boolean]]];
 
 const CSS_ROWS: SimpleTopic[] = [
   [0, 'How CSS Works', 'CSS (Cascading Style Sheets) controls presentation: colors, fonts, spacing, layout. It applies rules made of selectors and declarations.\n\nThe cascade decides conflicts: more specific selectors win, then later rules, then !important (use sparingly).\n\nKey points: separate content (HTML) from presentation (CSS), external stylesheets beat inline styles for maintainability.', 'body {\n    font-family: sans-serif;\n    color: #333;\n}\nh1 {\n    color: navy;\n}', ['What does CSS control?', 'Page presentation — colors, fonts, layout', ['Page presentation — colors, fonts, layout', 'Page content and structure', 'Server databases', 'Image file formats'], ['CSS styles content; HTML provides structure.', true]]],
@@ -620,9 +620,9 @@ function makeQuiz(f: Facts, topicIndex: number, t: Topic, seq: number) {
   const tf = {
     id: `${f.id}-q-tf-${topicIndex}`,
     type: 'true-false' as const,
-    question: `True or False: ${t.tf[0]}`,
-    correctAnswer: t.tf[1] ? 'True' : 'False',
-    explanation: t.tf[1] ? 'This statement is correct.' : 'This statement is incorrect — review the lesson.',
+    question: `True or False: ${t.tf.s}`,
+    correctAnswer: t.tf.ok ? 'True' : 'False',
+    explanation: t.tf.ok ? 'This statement is correct.' : 'This statement is incorrect — review the lesson.',
   };
   const fillQ = t.fill.code
     ? {
@@ -640,7 +640,7 @@ function makeQuiz(f: Facts, topicIndex: number, t: Topic, seq: number) {
         correctAnswer: t.title,
         explanation: `It exists to help you ${t.title.toLowerCase()} effectively.`,
       };
-  const outputQ = {
+  const outputQ: any = {
     id: `${f.id}-q-out-${topicIndex}`,
     type: 'predict-output' as const,
     question: `What does this ${f.name} code produce?\n\`\`\`\n${t.snippet(f).split('\n').slice(0, 3).join('\n')}\n\`\`\``,
