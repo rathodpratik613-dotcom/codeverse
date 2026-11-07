@@ -9,6 +9,8 @@ import { pythonCourse, javascriptCourse } from '@/data/courses';
 import { useAuth } from '@/lib/auth-context';
 import { getLessonNavigation } from '@/lib/lesson-navigation';
 import LessonNavigationComponent from '@/components/lesson-navigation';
+import { useLessonProgress } from '@/lib/use-lesson-progress';
+import type { Course } from '@/types';
 
 export default function LessonPage() {
   return (
@@ -37,24 +39,30 @@ function LessonContent() {
   const [xpAwarded, setXpAwarded] = useState(false);
 
   // Find the lesson from courses
-  const courses = { 'python-basics': pythonCourse, 'javascript-basics': javascriptCourse };
+  const courses: Record<string, Course> = { 'python-basics': pythonCourse, 'javascript-basics': javascriptCourse };
   let lesson = null;
   let language = 'python';
-  let navigation = null;
+  let course: Course | null = null;
 
-  for (const course of Object.values(courses)) {
-    for (const module of course.modules) {
+  for (const c of Object.values(courses)) {
+    for (const module of c.modules) {
       const found = module.lessons.find(l => l.id === lessonId);
       if (found) {
         lesson = found;
-        language = course.languageId;
+        language = c.languageId;
+        course = c;
         break;
       }
     }
     if (lesson) break;
   }
 
-  if (!lesson) {
+  const courseLessonIds = course
+    ? course.modules.flatMap((m) => m.lessons.map((l) => l.id))
+    : [];
+  const progress = useLessonProgress(course?.languageId, courseLessonIds);
+
+  if (!lesson || !course) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-[#0a0e27] via-[#1a1f3a] to-[#0a0e27] flex items-center justify-center">
         <div className="text-center">
@@ -68,7 +76,7 @@ function LessonContent() {
   }
 
   // Get navigation data
-  navigation = getLessonNavigation(courses, lessonId);
+  const navigation = getLessonNavigation(courses, lessonId);
 
   const handleRunCode = async () => {
     setIsRunning(true);
@@ -170,7 +178,7 @@ function LessonContent() {
       </nav>
 
       <main className="container mx-auto px-6 py-8">
-        <Link href="/course/python-basics" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 mb-6">
+        <Link href={`/course/${course.id}`} className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 mb-6">
           <ArrowLeft className="w-4 h-4" />
           Back to Course
         </Link>
@@ -212,10 +220,55 @@ function LessonContent() {
               </div>
             )}
 
+            {/* Course Content Menu */}
+            <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/50 border border-gray-700/50 rounded-xl p-6">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-lg font-bold text-white">Course Content</h2>
+                <span className="text-sm text-gray-400">
+                  {progress.completedCount}/{progress.totalCount} completed
+                </span>
+              </div>
+              <div className="space-y-4">
+                {course.modules.map((module, moduleIndex) => (
+                  <div key={module.id}>
+                    <div className="text-sm font-medium text-purple-400 mb-2">
+                      Module {moduleIndex + 1}: {module.title}
+                    </div>
+                    <div className="space-y-1">
+                      {module.lessons.map((l) => {
+                        const orderNumber = courseLessonIds.indexOf(l.id) + 1;
+                        const isCurrent = l.id === lessonId;
+                        const isDone = progress.completedIds.has(l.id);
+                        return (
+                          <Link
+                            key={l.id}
+                            href={`/lesson/${l.id}`}
+                            className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors ${
+                              isCurrent
+                                ? 'bg-purple-500/20 text-purple-300 border border-purple-500/40'
+                                : 'text-gray-300 hover:bg-white/5 hover:text-white'
+                            }`}
+                          >
+                            <span className="w-6 h-6 rounded bg-white/10 flex items-center justify-center text-xs text-gray-400 shrink-0">
+                              {orderNumber}
+                            </span>
+                            <span className="flex-1 truncate">{l.title}</span>
+                            {isDone && <CheckCircle className="w-4 h-4 text-green-400 shrink-0" />}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* Lesson Navigation */}
             {navigation && (
               <LessonNavigationComponent
                 navigation={navigation}
+                completedIds={progress.completedIds}
+                onMarkComplete={progress.markComplete}
                 onLessonComplete={(lessonId) => {
                   console.log('Lesson completed:', lessonId);
                 }}

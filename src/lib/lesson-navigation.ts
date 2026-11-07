@@ -14,6 +14,7 @@ export interface LessonNavigation {
   totalModules: number;
   courseIndex: number;
   totalCourses: number;
+  courseLessonIds: string[];
 }
 
 export function getLessonNavigation(
@@ -42,7 +43,9 @@ export function getLessonNavigation(
     return null;
   }
 
-  // Get all lessons in order
+  // Get all lessons in the CURRENT course, in order.
+  // Navigation must never leak into a different course — the last lesson of
+  // a course shows "Finish Course" instead of jumping to another language.
   const allLessons: Array<{
     lesson: Lesson;
     module: Module;
@@ -52,25 +55,24 @@ export function getLessonNavigation(
     courseIndex: number;
   }> = [];
 
-  let courseIndex = 0;
-  for (const course of Object.values(courses)) {
-    let moduleIndex = 0;
-    for (const module of course.modules) {
-      let lessonIndex = 0;
-      for (const lesson of module.lessons) {
-        allLessons.push({
-          lesson,
-          module,
-          course,
-          moduleIndex,
-          lessonIndex,
-          courseIndex,
-        });
-        lessonIndex++;
-      }
-      moduleIndex++;
+  const courseKeys = Object.keys(courses);
+  const courseIndex = Math.max(0, courseKeys.indexOf(currentCourse.id));
+
+  let moduleIndex = 0;
+  for (const module of currentCourse.modules) {
+    let lessonIndex = 0;
+    for (const lesson of module.lessons) {
+      allLessons.push({
+        lesson,
+        module,
+        course: currentCourse,
+        moduleIndex,
+        lessonIndex,
+        courseIndex,
+      });
+      lessonIndex++;
     }
-    courseIndex++;
+    moduleIndex++;
   }
 
   // Find current lesson index in all lessons
@@ -100,8 +102,9 @@ export function getLessonNavigation(
     totalLessons,
     moduleIndex: currentItem.moduleIndex,
     totalModules: currentItem.course.modules.length,
-    courseIndex: currentItem.courseIndex,
-    totalCourses: Object.keys(courses).length,
+    courseIndex,
+    totalCourses: courseKeys.length,
+    courseLessonIds: allLessons.map((item) => item.lesson.id),
   };
 }
 

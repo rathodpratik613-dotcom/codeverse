@@ -5,10 +5,17 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { Code2, TrendingUp, Flame, Target, Trophy, BookOpen, Zap, Calendar, LogOut, Settings } from 'lucide-react';
 import { useAuth } from '@/lib/auth-context';
+import { pythonCourse, javascriptCourse } from '@/data/courses';
+import { useLessonProgress } from '@/lib/use-lesson-progress';
 
 export default function DashboardPage() {
   const router = useRouter();
   const { user, logout } = useAuth();
+
+  const pythonLessonIds = pythonCourse.modules.flatMap((m) => m.lessons.map((l) => l.id));
+  const jsLessonIds = javascriptCourse.modules.flatMap((m) => m.lessons.map((l) => l.id));
+  const pythonProgress = useLessonProgress('python', pythonLessonIds);
+  const jsProgress = useLessonProgress('javascript', jsLessonIds);
 
   useEffect(() => {
     if (!user) {
@@ -184,29 +191,41 @@ export default function DashboardPage() {
           <h2 className="text-2xl font-bold text-white mb-4">Continue Learning</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Link
-              href="/course/python-basics"
+              href={pythonProgress.completedCount > 0 && pythonProgress.completedCount < pythonProgress.totalCount
+                ? `/lesson/${pythonCourse.modules.flatMap(m => m.lessons).find(l => !pythonProgress.completedIds.has(l.id))?.id}`
+                : '/course/python-basics'}
               className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-purple-500/50 transition-all group"
             >
               <div className="text-4xl mb-4">🐍</div>
               <h3 className="text-xl font-bold text-white mb-2">Python Fundamentals</h3>
-              <p className="text-gray-400 text-sm mb-4">Module 2: Control Flow</p>
+              <p className="text-gray-400 text-sm mb-4">
+                {pythonProgress.completedCount > 0 && pythonProgress.completedCount < pythonProgress.totalCount
+                  ? 'Continue where you left off'
+                  : 'Start learning Python'}
+              </p>
               <div className="w-full bg-white/10 rounded-full h-2 mb-2">
-                <div className="bg-gradient-to-r from-purple-500 to-blue-500 h-2 rounded-full" style={{ width: '45%' }} />
+                <div className="bg-gradient-to-r from-purple-500 to-blue-500 h-2 rounded-full transition-all" style={{ width: `${pythonProgress.percent}%` }} />
               </div>
-              <p className="text-gray-400 text-sm">45% complete</p>
+              <p className="text-gray-400 text-sm">{pythonProgress.percent}% complete</p>
             </Link>
 
             <Link
-              href="/course/javascript-basics"
+              href={jsProgress.completedCount > 0 && jsProgress.completedCount < jsProgress.totalCount
+                ? `/lesson/${javascriptCourse.modules.flatMap(m => m.lessons).find(l => !jsProgress.completedIds.has(l.id))?.id}`
+                : '/course/javascript-basics'}
               className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-purple-500/50 transition-all group"
             >
               <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-xl font-bold text-white mb-2">JavaScript Basics</h3>
-              <p className="text-gray-400 text-sm mb-4">Module 1: Introduction</p>
+              <p className="text-gray-400 text-sm mb-4">
+                {jsProgress.completedCount > 0 && jsProgress.completedCount < jsProgress.totalCount
+                  ? 'Continue where you left off'
+                  : 'Start learning JavaScript'}
+              </p>
               <div className="w-full bg-white/10 rounded-full h-2 mb-2">
-                <div className="bg-gradient-to-r from-purple-500 to-blue-500 h-2 rounded-full" style={{ width: '20%' }} />
+                <div className="bg-gradient-to-r from-purple-500 to-blue-500 h-2 rounded-full transition-all" style={{ width: `${jsProgress.percent}%` }} />
               </div>
-              <p className="text-gray-400 text-sm">20% complete</p>
+              <p className="text-gray-400 text-sm">{jsProgress.percent}% complete</p>
             </Link>
 
             <Link

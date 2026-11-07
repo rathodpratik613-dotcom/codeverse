@@ -364,6 +364,404 @@ greet("Bob", "Hi")  # Hi, Bob!
               coinReward: 15
             }
           ]
+        },
+        {
+          id: 'python-lesson-7',
+          moduleId: 'python-module-3',
+          title: 'List Comprehensions',
+          content: `# List Comprehensions
+
+List comprehensions let you build lists in a single, readable line.
+
+## The Basic Idea
+
+Instead of writing a loop to build a list, wrap the expression in square brackets:
+
+\`\`\`python
+# Long way
+squares = []
+for n in range(10):
+    squares.append(n * n)
+
+# Short way — same result!
+squares = [n * n for n in range(10)]
+\`\`\`
+
+## Adding a Condition
+
+You can filter while building:
+
+\`\`\`python
+evens = [n for n in range(20) if n % 2 == 0]
+# [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+\`\`\`
+
+## Transforming Strings
+
+\`\`\`python
+names = ["alice", "bob", "carol"]
+shouted = [name.upper() + "!" for name in names]
+# ["ALICE!", "BOB!", "CAROL!"]
+\`\`\`
+
+## When to Use Them
+
+- Use comprehensions for simple map/filter operations
+- Use regular loops when the logic is complex or multi-step
+- They are faster and often easier to read once you are comfortable with them`,
+          language: 'python',
+          difficulty: 'medium',
+          order: 2,
+          exercises: [
+            {
+              id: 'ex-7',
+              lessonId: 'python-lesson-7',
+              type: 'code',
+              question: 'Use a list comprehension to create a list of cubes for numbers 1 through 5, then print the list',
+              starterCode: '# Write your list comprehension here\n',
+              expectedOutput: '[1, 8, 27, 64, 125]',
+              xpReward: 25,
+              coinReward: 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'python-module-4',
+      title: 'Data Structures',
+      order: 4,
+      lessons: [
+        {
+          id: 'python-lesson-8',
+          moduleId: 'python-module-4',
+          title: 'Lists',
+          content: `# Lists
+
+Lists are ordered collections you can change — the workhorse of Python.
+
+## Creating and Using Lists
+
+\`\`\`python
+fruits = ["apple", "banana", "cherry"]
+nums = [1, 2, 3, 4, 5]
+
+print(fruits[0])    # apple (index starts at 0)
+print(fruits[-1])   # cherry (negative = from the end)
+print(len(fruits))  # 3
+\`\`\`
+
+## Modifying Lists
+
+\`\`\`python
+fruits.append("orange")   # add to the end
+fruits.insert(1, "kiwi")  # insert at position
+fruits.remove("banana")   # remove by value
+last = fruits.pop()       # remove and return last item
+\`\`\`
+
+## Slicing
+
+\`\`\`python
+nums = [0, 1, 2, 3, 4, 5]
+print(nums[1:4])   # [1, 2, 3]
+print(nums[:3])    # [0, 1, 2]
+print(nums[::2])   # [0, 2, 4] — every second item
+\`\`\`
+
+## Checking Membership
+
+\`\`\`python
+if "apple" in fruits:
+    print("We have apples!")
+\`\`\`
+
+Lists can hold mixed types, but keeping one type per list makes code cleaner.`,
+          language: 'python',
+          difficulty: 'medium',
+          order: 1,
+          exercises: [
+            {
+              id: 'ex-8',
+              lessonId: 'python-lesson-8',
+              type: 'code',
+              question: 'Create a list of three colors, append "purple", then print the list length',
+              starterCode: 'colors = ["red", "blue", "green"]\n# Add a color and print the length\n',
+              expectedOutput: '4',
+              xpReward: 20,
+              coinReward: 10
+            }
+          ]
+        },
+        {
+          id: 'python-lesson-9',
+          moduleId: 'python-module-4',
+          title: 'Dictionaries',
+          content: `# Dictionaries
+
+Dictionaries store key-value pairs — perfect for looking things up fast.
+
+## Creating Dictionaries
+
+\`\`\`python
+user = {
+    "name": "Alice",
+    "age": 30,
+    "city": "Paris"
+}
+
+print(user["name"])       # Alice
+print(user.get("age"))    # 30
+\`\`\`
+
+## Adding and Updating
+
+\`\`\`python
+user["age"] = 31          # update existing key
+user["email"] = "a@b.com" # add new key
+\`\`\`
+
+## Safe Access
+
+\`\`\`python
+# .get() returns None instead of crashing on missing keys
+print(user.get("phone", "not set"))
+\`\`\`
+
+## Looping Through a Dictionary
+
+\`\`\`python
+for key, value in user.items():
+    print(f"{key}: {value}")
+\`\`\`
+
+## Dictionary Comprehensions
+
+\`\`\`python
+squares = {n: n * n for n in range(5)}
+# {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+\`\`\`
+
+Use dictionaries when you need fast lookup by a name or id — like a real dictionary.`,
+          language: 'python',
+          difficulty: 'medium',
+          order: 2,
+          exercises: [
+            {
+              id: 'ex-9',
+              lessonId: 'python-lesson-9',
+              type: 'code',
+              question: 'Create a dictionary with keys "name" and "score", then print the score value',
+              starterCode: 'player = {\n    "name": "Sam",\n    "score": 42\n}\n# Print the score\n',
+              expectedOutput: '42',
+              xpReward: 20,
+              coinReward: 10
+            }
+          ]
+        },
+        {
+          id: 'python-lesson-10',
+          moduleId: 'python-module-4',
+          title: 'Tuples and Sets',
+          content: `# Tuples and Sets
+
+Two more built-in collections: tuples (fixed) and sets (unique items).
+
+## Tuples — Immutable Lists
+
+Tuples cannot be changed after creation. Use them for fixed records:
+
+\`\`\`python
+point = (10, 20)
+name, age = ("Alice", 30)  # unpacking
+
+print(point[0])   # 10
+print(name)       # Alice
+\`\`\`
+
+## Sets — Unique Items
+
+Sets automatically remove duplicates and are great for membership tests:
+
+\`\`\`python
+ids = {1, 2, 3, 3, 2}
+print(ids)        # {1, 2, 3}
+
+print(2 in ids)   # True — very fast
+\`\`\`
+
+## Set Operations
+
+\`\`\`python
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a | b)   # union: {1, 2, 3, 4, 5}
+print(a & b)   # intersection: {3}
+print(a - b)   # difference: {1, 2}
+\`\`\`
+
+## Quick Reference
+
+| Type | Ordered | Mutable | Duplicates |
+|------|---------|---------|------------|
+| list | yes | yes | allowed |
+| tuple | yes | no | allowed |
+| set | no | yes | not allowed |
+| dict | yes (3.7+) | yes | keys unique |`,
+          language: 'python',
+          difficulty: 'medium',
+          order: 3,
+          exercises: [
+            {
+              id: 'ex-10',
+              lessonId: 'python-lesson-10',
+              type: 'code',
+              question: 'Create a set from the list [1, 2, 2, 3, 3, 3] and print its length',
+              starterCode: 'numbers = [1, 2, 2, 3, 3, 3]\n# Convert to a set and print the length\n',
+              expectedOutput: '3',
+              xpReward: 20,
+              coinReward: 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'python-module-5',
+      title: 'Errors and Files',
+      order: 5,
+      lessons: [
+        {
+          id: 'python-lesson-11',
+          moduleId: 'python-module-5',
+          title: 'Handling Errors',
+          content: `# Handling Errors
+
+Programs crash on bad input — learn to catch errors gracefully.
+
+## Try / Except
+
+\`\`\`python
+try:
+    number = int(input("Enter a number: "))
+    print(10 / number)
+except ValueError:
+    print("That's not a number!")
+except ZeroDivisionError:
+    print("Can't divide by zero!")
+\`\`\`
+
+## Catching Multiple Errors
+
+\`\`\`python
+try:
+    result = 10 / int("abc")
+except (ValueError, ZeroDivisionError) as e:
+    print(f"Something went wrong: {e}")
+\`\`\`
+
+## Else and Finally
+
+\`\`\`python
+try:
+    risky()
+except Exception as e:
+    print("Failed:", e)
+else:
+    print("Succeeded!")   # runs only if no exception
+finally:
+    print("Always runs")   # cleanup code
+\`\`\`
+
+## Raising Your Own Errors
+
+\`\`\`python
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+    return age
+\`\`\`
+
+Good error handling makes programs predictable instead of crashing.`,
+          language: 'python',
+          difficulty: 'medium',
+          order: 1,
+          exercises: [
+            {
+              id: 'ex-11',
+              lessonId: 'python-lesson-11',
+              type: 'code',
+              question: 'Write a try/except that attempts int("hello") and prints "caught" in the except block',
+              starterCode: 'try:\n    number = int("hello")\nexcept ValueError:\n    # Print a message here\n    pass\n',
+              expectedOutput: 'caught',
+              xpReward: 25,
+              coinReward: 10
+            }
+          ]
+        },
+        {
+          id: 'python-lesson-12',
+          moduleId: 'python-module-5',
+          title: 'Reading and Writing Files',
+          content: `# Files
+
+Python makes it easy to read and write text files.
+
+## Writing a File
+
+\`\`\`python
+with open("notes.txt", "w") as f:
+    f.write("Hello file!\\n")
+    f.write("Second line\\n")
+\`\`\`
+
+The \`with\` statement closes the file automatically — always use it.
+
+## Reading a File
+
+\`\`\`python
+with open("notes.txt", "r") as f:
+    content = f.read()       # whole file as one string
+
+with open("notes.txt", "r") as f:
+    for line in f:           # line by line
+        print(line.strip())
+\`\`\`
+
+## Appending
+
+\`\`\`python
+with open("notes.txt", "a") as f:
+    f.write("Added later\\n")
+\`\`\`
+
+## Mode Quick Reference
+
+| Mode | Meaning |
+|------|---------|
+| \`"r"\` | read (default, file must exist) |
+| \`"w"\` | write (creates or overwrites) |
+| \`"a"\` | append (creates if missing) |
+
+## Mini Project
+
+Try writing a small program that asks for your name, saves it to \`name.txt\`, then reads it back and greets you.`,
+          language: 'python',
+          difficulty: 'hard',
+          order: 2,
+          exercises: [
+            {
+              id: 'ex-12',
+              lessonId: 'python-lesson-12',
+              type: 'code',
+              question: 'Write code that opens "test.txt" in write mode and writes "Hello File" to it',
+              starterCode: '# Use a with block to write to test.txt\n',
+              expectedOutput: '',
+              xpReward: 30,
+              coinReward: 15
+            }
+          ]
         }
       ]
     }
@@ -489,6 +887,141 @@ console.log(typeof true);     // "boolean"
               expectedOutput: 'Hello',
               xpReward: 15,
               coinReward: 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'js-module-2',
+      title: 'Functions and Arrays',
+      order: 2,
+      lessons: [
+        {
+          id: 'js-lesson-3',
+          moduleId: 'js-module-2',
+          title: 'Functions',
+          content: `// Functions in JavaScript
+
+Functions package code so you can reuse it.
+
+## Declaring Functions
+
+\`\`\`javascript
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+console.log(greet("Alice")); // Hello, Alice!
+\`\`\`
+
+## Arrow Functions
+
+Modern JavaScript prefers arrow functions:
+
+\`\`\`javascript
+const add = (a, b) => a + b;
+console.log(add(2, 3)); // 5
+\`\`\`
+
+With a body and explicit return:
+
+\`\`\`javascript
+const square = (n) => {
+  return n * n;
+};
+\`\`\`
+
+## Default Parameters
+
+\`\`\`javascript
+function greet(name = "friend") {
+  return "Hello, " + name;
+}
+\`\`\`
+
+## Function Expressions
+
+\`\`\`javascript
+const double = function (n) {
+  return n * 2;
+};
+\`\`\`
+
+Functions are first-class values — you can pass them around like any variable.`,
+          language: 'javascript',
+          difficulty: 'easy',
+          order: 1,
+          exercises: [
+            {
+              id: 'js-ex-3',
+              lessonId: 'js-lesson-3',
+              type: 'code',
+              question: 'Write an arrow function "multiply" that takes two numbers and returns their product, then log multiply(4, 5)',
+              starterCode: '// Write your function and log the result\n',
+              expectedOutput: '20',
+              xpReward: 20,
+              coinReward: 10
+            }
+          ]
+        },
+        {
+          id: 'js-lesson-4',
+          moduleId: 'js-module-2',
+          title: 'Arrays and Loops',
+          content: `// Arrays and Loops
+
+Arrays store ordered lists of values.
+
+## Creating Arrays
+
+\`\`\`javascript
+const fruits = ["apple", "banana", "cherry"];
+const numbers = [1, 2, 3, 4, 5];
+const mixed = ["text", 42, true];
+\`\`\`
+
+## Accessing and Changing
+
+\`\`\`javascript
+console.log(fruits[0]);   // apple
+fruits[1] = "kiwi";       // change element
+fruits.push("orange");    // add to end
+fruits.pop();             // remove last
+console.log(fruits.length); // current size
+\`\`\`
+
+## Looping with for...of
+
+\`\`\`javascript
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+\`\`\`
+
+## Useful Array Methods
+
+\`\`\`javascript
+const doubled = numbers.map(n => n * 2);       // transform
+const evens = numbers.filter(n => n % 2 === 0); // filter
+const total = numbers.reduce((sum, n) => sum + n, 0); // combine
+console.log(numbers.includes(3)); // true
+\`\`\`
+
+map/filter/reduce are the heart of modern JavaScript — practice them often.`,
+          language: 'javascript',
+          difficulty: 'medium',
+          order: 2,
+          exercises: [
+            {
+              id: 'js-ex-4',
+              lessonId: 'js-lesson-4',
+              type: 'code',
+              question: 'Create an array [1, 2, 3, 4], use reduce to compute the sum, and log it',
+              starterCode: 'const nums = [1, 2, 3, 4];\n// Compute the sum and log it\n',
+              expectedOutput: '10',
+              xpReward: 25,
+              coinReward: 10
             }
           ]
         }
