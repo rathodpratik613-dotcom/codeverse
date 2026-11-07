@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-09",
+  "title": "Quiz: Attributes and Global Attributes",
+  "description": "Check your understanding of Attributes and Global Attributes.",
+  "questions": [
+    {
+      "id": "html-q-comment-9",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-9",
+      "type": "mcq",
+      "question": "What is the difference between class and id?",
+      "options": [
+        "class can repeat on many elements; id must be unique",
+        "They are identical",
+        "id styles, class scripts",
+        "class is for images only"
+      ],
+      "correctAnswer": "class can repeat on many elements; id must be unique",
+      "explanation": "id = one per page; class = reusable groups."
+    },
+    {
+      "id": "html-q-tf-9",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-9",
+      "type": "fill-blank",
+      "question": "Fill in the blank: class=\"${a} ${b}\"  // two classes on one element",
+      "correctAnswer": "space-separated",
+      "explanation": "Classes are separated by spaces."
+    },
+    {
+      "id": "html-q-out-9",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

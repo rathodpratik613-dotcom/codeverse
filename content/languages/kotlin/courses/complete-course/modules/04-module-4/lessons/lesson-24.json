@@ -1,0 +1,47 @@
+{
+  "id": "lesson-24",
+  "title": "Objects and Structures",
+  "summary": "Objects (or structs/classes instances) bundle related data and behavior: a \"User\" might have name, email, and methods like login().",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand objects and structures",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Objects (or structs/classes instances) bundle related data and behavior: a \"User\" might have name, email, and methods like login()."
+    },
+    {
+      "type": "text",
+      "content": "This is the bridge from raw data to modeling the real world. Even simple programs benefit — a point has x and y; an invoice has lines and a total."
+    },
+    {
+      "type": "text",
+      "content": "Key points: group fields that belong together, methods keep data and logic in one place, and start simple — you do not need full OOP for small scripts."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "fun main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Objects and Structures — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: group fields that belong together, methods keep data and logic in one place, and start simple — you do not need full OOP for small scripts."
+  ],
+  "quizRefs": [
+    "kotlin-quiz-24"
+  ],
+  "challengeRefs": [
+    "kotlin-challenge-m4-3"
+  ],
+  "nextLessonId": "lesson-25"
+}

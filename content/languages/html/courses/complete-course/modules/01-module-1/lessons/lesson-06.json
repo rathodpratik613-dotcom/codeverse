@@ -1,0 +1,47 @@
+{
+  "id": "lesson-06",
+  "title": "Forms",
+  "summary": "Forms collect user input: <form> wraps <input>, <textarea>, <select>, and a submit button. Each control needs a name so the data can be sent",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand forms",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Forms collect user input: <form> wraps <input>, <textarea>, <select>, and a submit button. Each control needs a name so the data can be sent."
+    },
+    {
+      "type": "text",
+      "content": "Input types matter: text, email, password, number, checkbox, radio, date. The type gives free validation and better mobile keyboards."
+    },
+    {
+      "type": "text",
+      "content": "Key points: always label inputs (accessibility), required marks mandatory fields, and the form action/method decide where data goes."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<form action=\"/signup\" method=\"post\">\n    <label for=\"email\">Email</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required>\n    <button type=\"submit\">Sign Up</button>\n</form>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Forms — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: always label inputs (accessibility), required marks mandatory fields, and the form action/method decide where data goes."
+  ],
+  "quizRefs": [
+    "html-quiz-06"
+  ],
+  "challengeRefs": [
+    "html-challenge-m1-3"
+  ],
+  "nextLessonId": "lesson-07"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "css-challenge-m5-3",
+  "title": "Advanced Topics Practice 3",
+  "difficulty": 5,
+  "statement": "Module 5 (Advanced Topics) covers: css architecture, capstone: style a page. Solve this practice problem using what you learned.\n\nExercise 3: write a small program that demonstrates one concept from this module (CSS Architecture).",
+  "starterCode": "/* */ Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the CSS Architecture lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "body {\n    font-family: sans-serif;\n}\nh1 {\n    color: blue;\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 50,
+  "coinReward": 25,
+  "tags": [
+    "css",
+    "module-5"
+  ]
+}

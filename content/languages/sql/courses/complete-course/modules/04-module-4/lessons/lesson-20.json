@@ -1,0 +1,47 @@
+{
+  "id": "lesson-20",
+  "title": "String Functions",
+  "summary": "SQL string functions transform text: UPPER/LOWER, LENGTH, SUBSTRING, TRIM, CONCAT, REPLACE, POSITION, and pattern matching with LIKE.",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand string functions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "SQL string functions transform text: UPPER/LOWER, LENGTH, SUBSTRING, TRIM, CONCAT, REPLACE, POSITION, and pattern matching with LIKE."
+    },
+    {
+      "type": "text",
+      "content": "Functions differ per engine: PostgreSQL has || for concat and SPLIT_PART; MySQL uses CONCAT() and SUBSTRING_INDEX()."
+    },
+    {
+      "type": "text",
+      "content": "Key points: TRIM removes padding spaces, SUBSTRING is 1-indexed in most engines, LIKE is case-insensitive in MySQL but sensitive in Postgres (use ILIKE), and regex via ~ (Postgres) or REGEXP (MySQL)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT UPPER(name), SUBSTRING(email, 1, 3) AS prefix\nFROM users;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: String Functions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: TRIM removes padding spaces, SUBSTRING is 1-indexed in most engines, LIKE is case-insensitive in MySQL but sensitive in Postgres (use ILIKE), and regex via ~ (Postgres) or REGEXP (MySQL)."
+  ],
+  "quizRefs": [
+    "sql-quiz-20"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m4-3"
+  ],
+  "nextLessonId": "lesson-21"
+}

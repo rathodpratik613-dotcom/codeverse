@@ -1,0 +1,59 @@
+{
+  "id": "javascript-quiz-17",
+  "title": "Quiz: Recursion",
+  "description": "Check your understanding of Recursion.",
+  "questions": [
+    {
+      "id": "javascript-q-comment-17",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in JavaScript?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In JavaScript, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "javascript-q-concept-17",
+      "type": "mcq",
+      "question": "What MUST every recursive function have?",
+      "options": [
+        "A base case that stops the recursion",
+        "At least ten parameters",
+        "A loop inside it",
+        "A print statement"
+      ],
+      "correctAnswer": "A base case that stops the recursion",
+      "explanation": "Without a base case, recursion never ends."
+    },
+    {
+      "id": "javascript-q-tf-17",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "javascript-q-fill-17",
+      "type": "fill-blank",
+      "question": "Fill in the blank: factorial calls ___ to solve smaller cases",
+      "correctAnswer": "itself",
+      "explanation": "Recursion means self-invocation."
+    },
+    {
+      "id": "javascript-q-out-17",
+      "type": "mcq",
+      "question": "In JavaScript, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

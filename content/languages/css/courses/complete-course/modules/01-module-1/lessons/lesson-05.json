@@ -1,0 +1,47 @@
+{
+  "id": "lesson-05",
+  "title": "The Box Model",
+  "summary": "Every element is a box: content, padding (inside), border, margin (outside). box-sizing: border-box makes width include padding+border — alm",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand the box model",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Every element is a box: content, padding (inside), border, margin (outside). box-sizing: border-box makes width include padding+border — almost always what you want."
+    },
+    {
+      "type": "text",
+      "content": "Margins collapse vertically between siblings; padding never collapses. Inline elements ignore width/height until made block or inline-block."
+    },
+    {
+      "type": "text",
+      "content": "Key points: debug layout with outline: 1px solid red, border-box is the modern default via reset, and margin: auto centers block elements horizontally."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "* {\n    box-sizing: border-box;\n}\n.card {\n    width: 300px;\n    padding: 20px;\n    border: 1px solid #ddd;\n    margin: 10px auto;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: The Box Model — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: debug layout with outline: 1px solid red, border-box is the modern default via reset, and margin: auto centers block elements horizontally."
+  ],
+  "quizRefs": [
+    "css-quiz-05"
+  ],
+  "challengeRefs": [
+    "css-challenge-m1-2"
+  ],
+  "nextLessonId": "lesson-06"
+}

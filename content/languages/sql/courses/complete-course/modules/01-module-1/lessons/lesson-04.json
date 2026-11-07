@@ -1,0 +1,47 @@
+{
+  "id": "lesson-04",
+  "title": "Sorting and Limiting",
+  "summary": "ORDER BY sorts results ascending (default) or descending (DESC); LIMIT caps row count; OFFSET skips rows for pagination.",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand sorting and limiting",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "ORDER BY sorts results ascending (default) or descending (DESC); LIMIT caps row count; OFFSET skips rows for pagination."
+    },
+    {
+      "type": "text",
+      "content": "Sort multiple columns: ORDER BY last_name, first_name. Sorting happens after WHERE filtering."
+    },
+    {
+      "type": "text",
+      "content": "Key points: always use LIMIT on big tables, OFFSET pagination gets slow deep — prefer keyset/cursor pagination, and ties in sort need a unique tiebreaker column."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT name, score FROM players\nORDER BY score DESC\nLIMIT 10;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Sorting and Limiting — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: always use LIMIT on big tables, OFFSET pagination gets slow deep — prefer keyset/cursor pagination, and ties in sort need a unique tiebreaker column."
+  ],
+  "quizRefs": [
+    "sql-quiz-04"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m1-1"
+  ],
+  "nextLessonId": "lesson-05"
+}

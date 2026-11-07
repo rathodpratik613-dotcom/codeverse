@@ -1,0 +1,59 @@
+{
+  "id": "csharp-quiz-29",
+  "title": "Quiz: Async and Concurrency",
+  "description": "Check your understanding of Async and Concurrency.",
+  "questions": [
+    {
+      "id": "csharp-q-comment-29",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C#?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C#, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "csharp-q-concept-29",
+      "type": "mcq",
+      "question": "What problem does async programming solve?",
+      "options": [
+        "Long-running tasks without freezing the program",
+        "Making code shorter",
+        "Removing the need for variables",
+        "Speeding up the CPU"
+      ],
+      "correctAnswer": "Long-running tasks without freezing the program",
+      "explanation": "Async lets slow operations happen in the background."
+    },
+    {
+      "id": "csharp-q-tf-29",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "csharp-q-fill-29",
+      "type": "fill-blank",
+      "question": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+      "correctAnswer": "the promise",
+      "explanation": "Await suspends until the async result arrives."
+    },
+    {
+      "id": "csharp-q-out-29",
+      "type": "mcq",
+      "question": "In C#, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-14",
+  "title": "Parameters and Arguments",
+  "summary": "Parameters are the named inputs a function accepts; arguments are the actual values you pass when calling it.",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand parameters and arguments",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Parameters are the named inputs a function accepts; arguments are the actual values you pass when calling it."
+    },
+    {
+      "type": "text",
+      "content": "Functions can take zero, one, or many parameters. Order matters — the first argument fills the first parameter, and so on."
+    },
+    {
+      "type": "text",
+      "content": "Key points: parameter names live only inside the function, and callers do not need to know the internal names — only the positions."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "func add(a, b) {\n    return a + b\n}\nprint(add(2, 3))  // passes 2 and 3 as arguments",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Parameters and Arguments — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: parameter names live only inside the function, and callers do not need to know the internal names — only the positions."
+  ],
+  "quizRefs": [
+    "swift-quiz-14"
+  ],
+  "challengeRefs": [
+    "swift-challenge-m3-2"
+  ],
+  "nextLessonId": "lesson-15"
+}

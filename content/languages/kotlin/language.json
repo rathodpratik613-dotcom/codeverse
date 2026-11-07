@@ -1,0 +1,14 @@
+{
+  "id": "kotlin",
+  "name": "Kotlin",
+  "icon": "🟣",
+  "color": "#7F52FF",
+  "description": "Kotlin complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "difficulty": "beginner",
+  "runtimeType": "simulated",
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
+}

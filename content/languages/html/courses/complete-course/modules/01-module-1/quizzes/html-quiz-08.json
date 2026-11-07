@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-08",
+  "title": "Quiz: Media: Audio, Video, Embeds",
+  "description": "Check your understanding of Media: Audio, Video, Embeds.",
+  "questions": [
+    {
+      "id": "html-q-comment-8",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-8",
+      "type": "mcq",
+      "question": "What is <iframe> used for?",
+      "options": [
+        "Embedding external content like maps or videos",
+        "Creating image galleries only",
+        "Styling text",
+        "Storing form data"
+      ],
+      "correctAnswer": "Embedding external content like maps or videos",
+      "explanation": "iframes embed whole other pages/documents."
+    },
+    {
+      "id": "html-q-tf-8",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-8",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <img src=\"a.jpg\" ${attr}=\"A cat\">",
+      "correctAnswer": "alt",
+      "explanation": "alt describes the image for accessibility."
+    },
+    {
+      "id": "html-q-out-8",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

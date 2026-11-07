@@ -1,0 +1,28 @@
+{
+  "id": "go-challenge-m5-3",
+  "title": "Advanced Topics Practice 3",
+  "difficulty": 5,
+  "statement": "Module 5 (Advanced Topics) covers: error handling, files, modules and imports, classes and oop basics, async and concurrency, capstone project. Solve this practice problem using what you learned.\n\nExercise 3: write a small program that demonstrates one concept from this module (Modules and Imports).",
+  "starterCode": "// Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Modules and Imports lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "package main\n\nimport \"fmt\"\n\nfunc main() {\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 50,
+  "coinReward": 25,
+  "tags": [
+    "go",
+    "module-5"
+  ]
+}

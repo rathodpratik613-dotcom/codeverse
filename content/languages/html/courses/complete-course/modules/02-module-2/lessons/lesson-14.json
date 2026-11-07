@@ -1,0 +1,47 @@
+{
+  "id": "lesson-14",
+  "title": "Images Best Practices",
+  "summary": "Images make pages heavy — optimize them: right format (WebP/AVIF today, JPEG photos, PNG transparency, SVG graphics), correct dimensions, an",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand images best practices",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Images make pages heavy — optimize them: right format (WebP/AVIF today, JPEG photos, PNG transparency, SVG graphics), correct dimensions, and lazy loading below the fold."
+    },
+    {
+      "type": "text",
+      "content": "Always set width and height attributes (or CSS aspect-ratio) to prevent layout shift, and write meaningful alt text — decorative images get alt=\"\"."
+    },
+    {
+      "type": "text",
+      "content": "Key points: srcset serves different sizes to different screens, <picture> enables art direction, and never link directly to huge originals."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<img src=\"hero.webp\" alt=\"Team working\" width=\"1200\" height=\"600\" loading=\"lazy\">",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Images Best Practices — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: srcset serves different sizes to different screens, <picture> enables art direction, and never link directly to huge originals."
+  ],
+  "quizRefs": [
+    "html-quiz-14"
+  ],
+  "challengeRefs": [
+    "html-challenge-m2-3"
+  ],
+  "nextLessonId": "lesson-15"
+}

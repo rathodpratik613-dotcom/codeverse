@@ -1,0 +1,47 @@
+{
+  "id": "lesson-16",
+  "title": "Normalization",
+  "summary": "Normalization removes redundancy by splitting data into related tables: 1NF (atomic values), 2NF (no partial dependencies), 3NF (no transiti",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand normalization",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Normalization removes redundancy by splitting data into related tables: 1NF (atomic values), 2NF (no partial dependencies), 3NF (no transitive dependencies)."
+    },
+    {
+      "type": "text",
+      "content": "Example: instead of repeating customer name/address on every order, store customers once and reference by id. Denormalization trades purity for read speed."
+    },
+    {
+      "type": "text",
+      "content": "Key points: normalize to avoid update anomalies, denormalize selectively for hot read paths, and learn the normal forms conceptually before deep theory."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "-- BAD: order repeats customer info\n-- GOOD: orders.customer_id -> customers.id",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Normalization — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: normalize to avoid update anomalies, denormalize selectively for hot read paths, and learn the normal forms conceptually before deep theory."
+  ],
+  "quizRefs": [
+    "sql-quiz-16"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m3-1"
+  ],
+  "nextLessonId": "lesson-17"
+}

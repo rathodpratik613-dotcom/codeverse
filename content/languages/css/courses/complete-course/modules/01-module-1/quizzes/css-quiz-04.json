@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-04",
+  "title": "Quiz: Typography",
+  "description": "Check your understanding of Typography.",
+  "questions": [
+    {
+      "id": "css-q-comment-4",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-4",
+      "type": "mcq",
+      "question": "Why use rem instead of px for font sizes?",
+      "options": [
+        "rem scales with user root settings — accessible",
+        "px is not allowed in CSS",
+        "rem is faster",
+        "No reason"
+      ],
+      "correctAnswer": "rem scales with user root settings — accessible",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-4",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-4",
+      "type": "mcq",
+      "question": "What is the main purpose of the Typography technique shown in this lesson?",
+      "options": [
+        "Typography",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Typography",
+      "explanation": "It exists to help you typography effectively."
+    },
+    {
+      "id": "css-q-out-4",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

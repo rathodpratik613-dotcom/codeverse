@@ -1,0 +1,28 @@
+{
+  "id": "dart-challenge-m2-1",
+  "title": "Control Flow Practice 1",
+  "difficulty": 2,
+  "statement": "Module 2 (Control Flow) covers: if statements, for loops, while loops, break and continue, conditionals deep dive, nested loops. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (If Statements).",
+  "starterCode": "// Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the If Statements lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "void main() {\nvoid main() {\n  print(\"Hello, World!\");\n}\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 30,
+  "coinReward": 15,
+  "tags": [
+    "dart",
+    "module-2"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "dart-quiz-15",
+  "title": "Quiz: Return Values",
+  "description": "Check your understanding of Return Values.",
+  "questions": [
+    {
+      "id": "dart-q-comment-15",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Dart?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Dart, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "dart-q-concept-15",
+      "type": "mcq",
+      "question": "What does \"return\" do?",
+      "options": [
+        "Sends a value back and ends the function",
+        "Prints the value to screen",
+        "Repeats the function",
+        "Deletes the function"
+      ],
+      "correctAnswer": "Sends a value back and ends the function",
+      "explanation": "Return both produces output and stops execution of that function."
+    },
+    {
+      "id": "dart-q-tf-15",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "dart-q-fill-15",
+      "type": "fill-blank",
+      "question": "Fill in the blank: $return a + b   // hand result to caller",
+      "correctAnswer": "return",
+      "explanation": "Return passes the value back."
+    },
+    {
+      "id": "dart-q-out-15",
+      "type": "mcq",
+      "question": "In Dart, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

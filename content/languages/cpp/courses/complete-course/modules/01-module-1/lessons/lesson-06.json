@@ -1,0 +1,47 @@
+{
+  "id": "lesson-06",
+  "title": "Operators",
+  "summary": "Operators are symbols that work on values: + adds, - subtracts, * multiplies, / divides, and = assigns. Comparison operators (==, !=, >, <) ",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand operators",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Operators are symbols that work on values: + adds, - subtracts, * multiplies, / divides, and = assigns. Comparison operators (==, !=, >, <) produce booleans."
+    },
+    {
+      "type": "text",
+      "content": "Every language shares these basics, though details differ — for example, some use % for remainder and ** for power."
+    },
+    {
+      "type": "text",
+      "content": "Key points: watch operator precedence (multiplication before addition), and = assigns while == compares in most languages."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "#include <iostream>\n#include <string>\n\nint main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Operators — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: watch operator precedence (multiplication before addition), and = assigns while == compares in most languages."
+  ],
+  "quizRefs": [
+    "cpp-quiz-06"
+  ],
+  "challengeRefs": [
+    "cpp-challenge-m1-3"
+  ],
+  "nextLessonId": "lesson-07"
+}

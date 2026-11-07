@@ -3,8 +3,12 @@
   "name": "Python",
   "icon": "🐍",
   "color": "#3776AB",
-  "description": "Python is a high-level, interpreted programming language known for its simplicity and readability. Perfect for beginners and powerful enough for advanced applications.",
+  "description": "Python complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
   "difficulty": "beginner",
   "runtimeType": "browser",
-  "tags": ["backend", "data-science", "ai", "web", "automation", "scripting"]
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
 }

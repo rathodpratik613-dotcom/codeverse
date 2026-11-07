@@ -1,0 +1,47 @@
+{
+  "id": "lesson-05",
+  "title": "Input and Output",
+  "summary": "Programs talk to users through input and output. Output prints messages; input reads what the user types.",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand input and output",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Programs talk to users through input and output. Output prints messages; input reads what the user types."
+    },
+    {
+      "type": "text",
+      "content": "Every language has a standard way to print. Input is a bit more varied — some languages read from the console, others from files or the network."
+    },
+    {
+      "type": "text",
+      "content": "Key points: printing is your main debugging tool early on, and always check what type input arrives as — it often starts as text."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "using System;\n\nclass Program {\n    static void Main() {\nConsole.WriteLine(\"Alice\");\n// The line above sends text to the screen\n    }\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Input and Output — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: printing is your main debugging tool early on, and always check what type input arrives as — it often starts as text."
+  ],
+  "quizRefs": [
+    "csharp-quiz-05"
+  ],
+  "challengeRefs": [
+    "csharp-challenge-m1-2"
+  ],
+  "nextLessonId": "lesson-06"
+}

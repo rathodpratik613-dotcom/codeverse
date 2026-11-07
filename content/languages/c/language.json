@@ -1,0 +1,14 @@
+{
+  "id": "c",
+  "name": "C",
+  "icon": "⚙️",
+  "color": "#A8B9CC",
+  "description": "C complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "difficulty": "beginner",
+  "runtimeType": "simulated",
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
+}

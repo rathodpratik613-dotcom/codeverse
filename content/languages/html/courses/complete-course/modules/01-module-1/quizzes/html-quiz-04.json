@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-04",
+  "title": "Quiz: Links and Images",
+  "description": "Check your understanding of Links and Images.",
+  "questions": [
+    {
+      "id": "html-q-comment-4",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-4",
+      "type": "mcq",
+      "question": "What does the href attribute do on an <a> tag?",
+      "options": [
+        "Specifies the link destination URL",
+        "Styles the link color",
+        "Adds a tooltip",
+        "Makes the link bold"
+      ],
+      "correctAnswer": "Specifies the link destination URL",
+      "explanation": "href = hypertext reference, the target address."
+    },
+    {
+      "id": "html-q-tf-4",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-4",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <a href=\"${url}\">text</a>",
+      "correctAnswer": "https://...",
+      "explanation": "href holds the destination."
+    },
+    {
+      "id": "html-q-out-4",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

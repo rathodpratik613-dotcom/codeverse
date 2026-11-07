@@ -1,0 +1,47 @@
+{
+  "id": "lesson-01",
+  "title": "What is HTML",
+  "summary": "HTML (HyperText Markup Language) is the skeleton of every web page. It describes structure using tags — headings, paragraphs, links, images ",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand what is html",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "HTML (HyperText Markup Language) is the skeleton of every web page. It describes structure using tags — headings, paragraphs, links, images — that browsers render."
+    },
+    {
+      "type": "text",
+      "content": "HTML is not a programming language; it has no variables or logic. It is a markup language: you describe WHAT things are, and CSS handles how they look."
+    },
+    {
+      "type": "text",
+      "content": "Key points: every page is a tree of nested elements, tags usually come in open/close pairs, and browsers are forgiving but you should write correct HTML."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<h1>Page Title</h1>\n<p>This is a paragraph of text.</p>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: What is HTML — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: every page is a tree of nested elements, tags usually come in open/close pairs, and browsers are forgiving but you should write correct HTML."
+  ],
+  "quizRefs": [
+    "html-quiz-01"
+  ],
+  "challengeRefs": [
+    "html-challenge-m1-1"
+  ],
+  "nextLessonId": "lesson-02"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-18",
+  "title": "Quiz: Filters and Blend Modes",
+  "description": "Check your understanding of Filters and Blend Modes.",
+  "questions": [
+    {
+      "id": "css-q-comment-18",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-18",
+      "type": "mcq",
+      "question": "What does backdrop-filter do?",
+      "options": [
+        "Applies effects to content behind the element",
+        "Filters the element's own children",
+        "Blurs the whole page",
+        "Adds a border"
+      ],
+      "correctAnswer": "Applies effects to content behind the element",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-18",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-18",
+      "type": "mcq",
+      "question": "What is the main purpose of the Filters and Blend Modes technique shown in this lesson?",
+      "options": [
+        "Filters and Blend Modes",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Filters and Blend Modes",
+      "explanation": "It exists to help you filters and blend modes effectively."
+    },
+    {
+      "id": "css-q-out-18",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-08",
+  "title": "Media: Audio, Video, Embeds",
+  "summary": "HTML embeds rich media natively: <img> for images, <audio> and <video> with <source> fallbacks, <iframe> for external content like maps or v",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand media: audio, video, embeds",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "HTML embeds rich media natively: <img> for images, <audio> and <video> with <source> fallbacks, <iframe> for external content like maps or videos."
+    },
+    {
+      "type": "text",
+      "content": "Always provide fallback content inside media tags for older browsers, and include controls + preload hints on video/audio."
+    },
+    {
+      "type": "text",
+      "content": "Key points: lazy-loading images (loading=\"lazy\") speeds pages, iframes need sandboxing for security, and video needs multiple formats for compatibility."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<video controls preload=\"metadata\">\n    <source src=\"clip.mp4\" type=\"video/mp4\">\n    Your browser does not support video.\n</video>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Media: Audio, Video, Embeds — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: lazy-loading images (loading=\"lazy\") speeds pages, iframes need sandboxing for security, and video needs multiple formats for compatibility."
+  ],
+  "quizRefs": [
+    "html-quiz-08"
+  ],
+  "challengeRefs": [
+    "html-challenge-m1-2"
+  ],
+  "nextLessonId": "lesson-09"
+}

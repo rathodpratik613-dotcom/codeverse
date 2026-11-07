@@ -1,0 +1,47 @@
+{
+  "id": "lesson-02",
+  "title": "Selectors",
+  "summary": "Selectors target elements to style: element names (p), classes (.card), ids (#main), and combinations (p.intro, div.card p).",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand selectors",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Selectors target elements to style: element names (p), classes (.card), ids (#main), and combinations (p.intro, div.card p)."
+    },
+    {
+      "type": "text",
+      "content": "Specificity order: id > class > element. When rules conflict, the most specific wins."
+    },
+    {
+      "type": "text",
+      "content": "Key points: class selectors are the workhorse, descendant selectors (space) target nested elements, and :hover/:focus add interactivity."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".card {\n    border: 1px solid #ccc;\n    padding: 16px;\n}\n.card .title {\n    font-weight: bold;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Selectors — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: class selectors are the workhorse, descendant selectors (space) target nested elements, and :hover/:focus add interactivity."
+  ],
+  "quizRefs": [
+    "css-quiz-02"
+  ],
+  "challengeRefs": [
+    "css-challenge-m1-2"
+  ],
+  "nextLessonId": "lesson-03"
+}

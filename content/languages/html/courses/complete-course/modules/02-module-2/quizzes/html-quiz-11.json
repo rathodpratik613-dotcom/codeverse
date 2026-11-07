@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-11",
+  "title": "Quiz: HTML Entities",
+  "description": "Check your understanding of HTML Entities.",
+  "questions": [
+    {
+      "id": "html-q-comment-11",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-11",
+      "type": "mcq",
+      "question": "How do you display a literal < character on a page?",
+      "options": [
+        "&lt;",
+        "<",
+        "&gt;",
+        "&#60;"
+      ],
+      "correctAnswer": "&lt;",
+      "explanation": "&lt; renders as < without starting a tag."
+    },
+    {
+      "id": "html-q-tf-11",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-11",
+      "type": "fill-blank",
+      "question": "Fill in the blank: Tom &${amp} Jerry  // literal ampersand",
+      "correctAnswer": "amp",
+      "explanation": "&amp; shows a real &."
+    },
+    {
+      "id": "html-q-out-11",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

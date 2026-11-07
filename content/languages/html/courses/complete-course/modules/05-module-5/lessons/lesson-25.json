@@ -1,0 +1,47 @@
+{
+  "id": "lesson-25",
+  "title": "HTML Security",
+  "summary": "HTML-level security starts with escaping: never inject unescaped user content into the DOM (XSS), sanitize anything rendered, and set securi",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand html security",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "HTML-level security starts with escaping: never inject unescaped user content into the DOM (XSS), sanitize anything rendered, and set security headers via your server."
+    },
+    {
+      "type": "text",
+      "content": "iframes from untrusted sources should use sandbox attributes; forms need CSRF tokens; and links should use rel=\"noopener\" for target=\"_blank\"."
+    },
+    {
+      "type": "text",
+      "content": "Key points: escape & < > \" in user text, Content-Security-Policy headers restrict what can load/run, and HTTPS is mandatory for any real site."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<iframe src=\"https://maps.example.com\" sandbox=\"allow-scripts\" referrerpolicy=\"no-referrer\"></iframe>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML Security — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: escape & < > \" in user text, Content-Security-Policy headers restrict what can load/run, and HTTPS is mandatory for any real site."
+  ],
+  "quizRefs": [
+    "html-quiz-25"
+  ],
+  "challengeRefs": [
+    "html-challenge-m5-2"
+  ],
+  "nextLessonId": "lesson-26"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-16",
+  "title": "Quiz: Accessibility Basics",
+  "description": "Check your understanding of Accessibility Basics.",
+  "questions": [
+    {
+      "id": "html-q-comment-16",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-16",
+      "type": "mcq",
+      "question": "What is the first accessibility win on any page?",
+      "options": [
+        "Correct semantic structure and landmarks",
+        "Fancy animations",
+        "More ads",
+        "Bigger fonts only"
+      ],
+      "correctAnswer": "Correct semantic structure and landmarks",
+      "explanation": "Structure carries meaning to assistive technology."
+    },
+    {
+      "id": "html-q-tf-16",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-16",
+      "type": "fill-blank",
+      "question": "Fill in the blank: aria-${attr}=\"...\"  // only when HTML falls short",
+      "correctAnswer": "label/hidden/etc",
+      "explanation": "ARIA supplements, not replaces, semantics."
+    },
+    {
+      "id": "html-q-out-16",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

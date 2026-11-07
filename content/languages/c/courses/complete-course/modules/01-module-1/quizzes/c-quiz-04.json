@@ -1,0 +1,59 @@
+{
+  "id": "c-quiz-04",
+  "title": "Quiz: Data Types",
+  "description": "Check your understanding of Data Types.",
+  "questions": [
+    {
+      "id": "c-q-comment-4",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "c-q-concept-4",
+      "type": "mcq",
+      "question": "Which of these is typically a boolean value?",
+      "options": [
+        "1 (true) / 0 (false)",
+        "\"hello\"",
+        "42",
+        "3.14"
+      ],
+      "correctAnswer": "1 (true) / 0 (false)",
+      "explanation": "Booleans represent truth values — only two states."
+    },
+    {
+      "id": "c-q-tf-4",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "c-q-fill-4",
+      "type": "fill-blank",
+      "question": "Fill in the blank: price = 9;",
+      "correctAnswer": ";",
+      "explanation": "Statements are terminated the way the language requires."
+    },
+    {
+      "id": "c-q-out-4",
+      "type": "mcq",
+      "question": "In C, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

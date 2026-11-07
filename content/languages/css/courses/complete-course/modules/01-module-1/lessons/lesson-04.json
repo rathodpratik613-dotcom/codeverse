@@ -1,0 +1,47 @@
+{
+  "id": "lesson-04",
+  "title": "Typography",
+  "summary": "Font properties control text: font-family (stack fallbacks), font-size (prefer rem over px), font-weight, line-height, letter-spacing, text-",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand typography",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Font properties control text: font-family (stack fallbacks), font-size (prefer rem over px), font-weight, line-height, letter-spacing, text-align."
+    },
+    {
+      "type": "text",
+      "content": "System font stacks load instantly; web fonts via @font-face or Google Fonts need font-display: swap to avoid invisible text."
+    },
+    {
+      "type": "text",
+      "content": "Key points: 1rem = 16px default, line-height ~1.5-1.7 for body text, and never set font-size below 16px on inputs (iOS zooms)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "body {\n    font-family: system-ui, sans-serif;\n    font-size: 1rem;\n    line-height: 1.6;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Typography — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: 1rem = 16px default, line-height ~1.5-1.7 for body text, and never set font-size below 16px on inputs (iOS zooms)."
+  ],
+  "quizRefs": [
+    "css-quiz-04"
+  ],
+  "challengeRefs": [
+    "css-challenge-m1-1"
+  ],
+  "nextLessonId": "lesson-05"
+}

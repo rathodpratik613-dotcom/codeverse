@@ -1,0 +1,47 @@
+{
+  "id": "lesson-11",
+  "title": "Pseudo-classes and Pseudo-elements",
+  "summary": "Pseudo-classes style states (:hover, :focus, :active, :first-child, :nth-child()) and pseudo-elements style parts (::before, ::after, ::plac",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand pseudo-classes and pseudo-elements",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Pseudo-classes style states (:hover, :focus, :active, :first-child, :nth-child()) and pseudo-elements style parts (::before, ::after, ::placeholder)."
+    },
+    {
+      "type": "text",
+      "content": ":hover only works on devices with hover — pair with @media (hover:hover) for touch safety. ::before/::after inject decorative content without HTML."
+    },
+    {
+      "type": "text",
+      "content": "Key points: :focus-visible shows keyboard focus only, ::selection styles highlighted text, and :nth-child formulas (2n = every other) are powerful."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "a:hover {\n    color: purple;\n}\nli::before {\n    content: \"→ \";\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Pseudo-classes and Pseudo-elements — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: :focus-visible shows keyboard focus only, ::selection styles highlighted text, and :nth-child formulas (2n = every other) are powerful."
+  ],
+  "quizRefs": [
+    "css-quiz-11"
+  ],
+  "challengeRefs": [
+    "css-challenge-m2-2"
+  ],
+  "nextLessonId": "lesson-12"
+}

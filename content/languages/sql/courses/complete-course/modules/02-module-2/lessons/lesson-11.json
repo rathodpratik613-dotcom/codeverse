@@ -1,0 +1,47 @@
+{
+  "id": "lesson-11",
+  "title": "Constraints and Keys",
+  "summary": "Constraints enforce data rules: PRIMARY KEY (unique+not null, one per table), UNIQUE, NOT NULL, DEFAULT, CHECK (value rules), FOREIGN KEY (r",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand constraints and keys",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Constraints enforce data rules: PRIMARY KEY (unique+not null, one per table), UNIQUE, NOT NULL, DEFAULT, CHECK (value rules), FOREIGN KEY (references another table)."
+    },
+    {
+      "type": "text",
+      "content": "Foreign keys maintain referential integrity — you cannot reference a user that does not exist. ON DELETE CASCADE/SET NULL decides cleanup behavior."
+    },
+    {
+      "type": "text",
+      "content": "Key points: indexes often auto-created on keys, constraints prevent bad data at the source, and violations raise errors you must handle."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "CREATE TABLE orders (\n    id INT PRIMARY KEY,\n    user_id INT NOT NULL,\n    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\n);",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Constraints and Keys — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: indexes often auto-created on keys, constraints prevent bad data at the source, and violations raise errors you must handle."
+  ],
+  "quizRefs": [
+    "sql-quiz-11"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m2-2"
+  ],
+  "nextLessonId": "lesson-12"
+}

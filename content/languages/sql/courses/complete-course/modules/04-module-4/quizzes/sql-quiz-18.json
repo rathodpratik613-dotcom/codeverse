@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-18",
+  "title": "Quiz: Query Optimization",
+  "description": "Check your understanding of Query Optimization.",
+  "questions": [
+    {
+      "id": "sql-q-comment-18",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-18",
+      "type": "mcq",
+      "question": "Why avoid WHERE YEAR(created_at) = 2024 on an indexed date column?",
+      "options": [
+        "Function blocks index",
+        "YEAR is slow",
+        "It returns wrong year",
+        "No reason"
+      ],
+      "correctAnswer": "The function wrapper prevents index use",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-18",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-18",
+      "type": "mcq",
+      "question": "What is the main purpose of the Query Optimization technique shown in this lesson?",
+      "options": [
+        "Query Optimization",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Query Optimization",
+      "explanation": "It exists to help you query optimization effectively."
+    },
+    {
+      "id": "sql-q-out-18",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-16",
+  "title": "Scope",
+  "summary": "Scope decides where a name is visible. Variables declared inside a function usually exist only there — they are local. Variables outside are",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand scope",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Scope decides where a name is visible. Variables declared inside a function usually exist only there — they are local. Variables outside are global, visible everywhere (use them sparingly)."
+    },
+    {
+      "type": "text",
+      "content": "Local scope prevents name collisions and makes functions predictable: two functions can each have a variable named total without interfering."
+    },
+    {
+      "type": "text",
+      "content": "Key points: a function sees its own locals plus outer globals, but outer code cannot see inside the function."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "using System;\n\nclass Program {\n    static void Main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n    }\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Scope — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: a function sees its own locals plus outer globals, but outer code cannot see inside the function."
+  ],
+  "quizRefs": [
+    "csharp-quiz-16"
+  ],
+  "challengeRefs": [
+    "csharp-challenge-m3-1"
+  ],
+  "nextLessonId": "lesson-17"
+}

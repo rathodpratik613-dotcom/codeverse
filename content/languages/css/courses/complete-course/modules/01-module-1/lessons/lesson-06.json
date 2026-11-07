@@ -1,0 +1,47 @@
+{
+  "id": "lesson-06",
+  "title": "Display Property",
+  "summary": "display controls layout behavior: block (full width, new line), inline (flows with text), inline-block (inline but sized), none (hidden), fl",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand display property",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "display controls layout behavior: block (full width, new line), inline (flows with text), inline-block (inline but sized), none (hidden), flex/grid (modern layouts)."
+    },
+    {
+      "type": "text",
+      "content": "Changing display is often the fix for \"my div won't center\" or \"my span ignores width\"."
+    },
+    {
+      "type": "text",
+      "content": "Key points: none removes from layout entirely (visibility:hidden only hides), flex/grid are for component layout, and display is not inherited but children react to parent context."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".hidden {\n    display: none;\n}\n.inline-block {\n    display: inline-block;\n    width: 100px;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Display Property — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: none removes from layout entirely (visibility:hidden only hides), flex/grid are for component layout, and display is not inherited but children react to parent context."
+  ],
+  "quizRefs": [
+    "css-quiz-06"
+  ],
+  "challengeRefs": [
+    "css-challenge-m1-3"
+  ],
+  "nextLessonId": "lesson-07"
+}

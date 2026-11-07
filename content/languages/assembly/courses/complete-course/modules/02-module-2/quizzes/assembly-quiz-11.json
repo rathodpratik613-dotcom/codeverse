@@ -1,0 +1,59 @@
+{
+  "id": "assembly-quiz-11",
+  "title": "Quiz: Conditionals Deep Dive",
+  "description": "Check your understanding of Conditionals Deep Dive.",
+  "questions": [
+    {
+      "id": "assembly-q-comment-11",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    },
+    {
+      "id": "assembly-q-concept-11",
+      "type": "mcq",
+      "question": "In boolean logic, A AND B is true when...",
+      "options": [
+        "both A and B are true",
+        "either A or B is true",
+        "A is false",
+        "never"
+      ],
+      "correctAnswer": "both A and B are true",
+      "explanation": "AND requires both sides true; OR requires only one."
+    },
+    {
+      "id": "assembly-q-tf-11",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "assembly-q-fill-11",
+      "type": "fill-blank",
+      "question": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+      "correctAnswer": "and",
+      "explanation": "AND requires both conditions to hold."
+    },
+    {
+      "id": "assembly-q-out-11",
+      "type": "mcq",
+      "question": "In Assembly, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

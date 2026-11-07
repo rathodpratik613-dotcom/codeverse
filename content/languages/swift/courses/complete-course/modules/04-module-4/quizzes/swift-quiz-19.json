@@ -1,0 +1,59 @@
+{
+  "id": "swift-quiz-19",
+  "title": "Quiz: Arrays and Lists",
+  "description": "Check your understanding of Arrays and Lists.",
+  "questions": [
+    {
+      "id": "swift-q-comment-19",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-19",
+      "type": "mcq",
+      "question": "In most languages, the first element of a list has index...",
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "none"
+      ],
+      "correctAnswer": "0",
+      "explanation": "Zero-based indexing is the near-universal convention."
+    },
+    {
+      "id": "swift-q-tf-19",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "swift-q-fill-19",
+      "type": "fill-blank",
+      "question": "Fill in the blank: items[${i}]  // get element at position i",
+      "correctAnswer": "0-based index",
+      "explanation": "Access uses numeric positions starting at 0."
+    },
+    {
+      "id": "swift-q-out-19",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

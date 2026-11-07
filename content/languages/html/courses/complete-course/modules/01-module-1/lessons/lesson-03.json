@@ -1,0 +1,47 @@
+{
+  "id": "lesson-03",
+  "title": "Text Elements",
+  "summary": "HTML has elements for every kind of text: <h1>–<h6> headings (h1 biggest), <p> paragraphs, <strong>/<em> for emphasis, <ul>/<ol> for lists.",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand text elements",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "HTML has elements for every kind of text: <h1>–<h6> headings (h1 biggest), <p> paragraphs, <strong>/<em> for emphasis, <ul>/<ol> for lists."
+    },
+    {
+      "type": "text",
+      "content": "Headings create document outline and matter for SEO and accessibility — use one h1 per page and don't skip levels."
+    },
+    {
+      "type": "text",
+      "content": "Key points: choose tags by MEANING not appearance (CSS controls size), lists need <li> children, and <br> forces a line break."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<h1>Main Title</h1>\n<h2>Section</h2>\n<p>Some <strong>bold</strong> and <em>italic</em> text.</p>\n<ul>\n    <li>First item</li>\n    <li>Second item</li>\n</ul>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Text Elements — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: choose tags by MEANING not appearance (CSS controls size), lists need <li> children, and <br> forces a line break."
+  ],
+  "quizRefs": [
+    "html-quiz-03"
+  ],
+  "challengeRefs": [
+    "html-challenge-m1-3"
+  ],
+  "nextLessonId": "lesson-04"
+}

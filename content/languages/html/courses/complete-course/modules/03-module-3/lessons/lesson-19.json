@@ -1,0 +1,47 @@
+{
+  "id": "lesson-19",
+  "title": "Interactive Elements",
+  "summary": "HTML5 added native interactivity: <details>/<summary> for expandable sections, <dialog> for modals, <progress> and <meter> for gauges.",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand interactive elements",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "HTML5 added native interactivity: <details>/<summary> for expandable sections, <dialog> for modals, <progress> and <meter> for gauges."
+    },
+    {
+      "type": "text",
+      "content": "These elements work without JavaScript for basic cases — progressive enhancement means functionality exists even if scripts fail."
+    },
+    {
+      "type": "text",
+      "content": "Key points: details/summary needs no JS for accordions, dialog needs showModal() for true modals, and meter vs progress differ (scalar vs completion)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<details>\n    <summary>Click to expand</summary>\n    <p>Hidden until opened.</p>\n</details>\n<progress value=\"70\" max=\"100\"></progress>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Interactive Elements — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: details/summary needs no JS for accordions, dialog needs showModal() for true modals, and meter vs progress differ (scalar vs completion)."
+  ],
+  "quizRefs": [
+    "html-quiz-19"
+  ],
+  "challengeRefs": [
+    "html-challenge-m3-2"
+  ],
+  "nextLessonId": "lesson-20"
+}

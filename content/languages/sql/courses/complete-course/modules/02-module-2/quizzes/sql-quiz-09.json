@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-09",
+  "title": "Quiz: Aggregate Functions",
+  "description": "Check your understanding of Aggregate Functions.",
+  "questions": [
+    {
+      "id": "sql-q-comment-9",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-9",
+      "type": "mcq",
+      "question": "What is the difference between WHERE and HAVING?",
+      "options": [
+        "WHERE=rows, HAVING=groups",
+        "They are identical",
+        "HAVING is faster",
+        "WHERE cannot use aggregates"
+      ],
+      "correctAnswer": "WHERE filters rows; HAVING filters groups",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-9",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-9",
+      "type": "mcq",
+      "question": "What is the main purpose of the Aggregate Functions technique shown in this lesson?",
+      "options": [
+        "Aggregate Functions",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Aggregate Functions",
+      "explanation": "It exists to help you aggregate functions effectively."
+    },
+    {
+      "id": "sql-q-out-9",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

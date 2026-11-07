@@ -1,0 +1,14 @@
+{
+  "id": "bash",
+  "name": "Bash",
+  "icon": "🐚",
+  "color": "#4EAA25",
+  "description": "Bash complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "difficulty": "beginner",
+  "runtimeType": "server",
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
+}

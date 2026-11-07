@@ -1,0 +1,47 @@
+{
+  "id": "lesson-21",
+  "title": "Tables Advanced",
+  "summary": "Real data tables need structure: <caption> for titles, <thead>/<tbody>/<tfoot> for grouping, scope attributes on <th> to associate headers, ",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand tables advanced",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Real data tables need structure: <caption> for titles, <thead>/<tbody>/<tfoot> for grouping, scope attributes on <th> to associate headers, and colspan/rowspan for merged cells."
+    },
+    {
+      "type": "text",
+      "content": "Complex tables become unreadable fast — if you need nested tables or heavy merging, reconsider whether a list or cards layout serves users better."
+    },
+    {
+      "type": "text",
+      "content": "Key points: caption describes the table, scope=\"col\"/\"row\" links headers to cells for screen readers, and zebra striping is CSS, not HTML."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<table>\n    <caption>Monthly sales</caption>\n    <thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>\n    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>\n</table>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Tables Advanced — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: caption describes the table, scope=\"col\"/\"row\" links headers to cells for screen readers, and zebra striping is CSS, not HTML."
+  ],
+  "quizRefs": [
+    "html-quiz-21"
+  ],
+  "challengeRefs": [
+    "html-challenge-m4-2"
+  ],
+  "nextLessonId": "lesson-22"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-03",
+  "title": "Filtering with WHERE",
+  "summary": "WHERE filters rows before results return: =, !=, <, >, <=, >=, BETWEEN, IN, LIKE, IS NULL. Combine with AND/OR/NOT and parentheses for prece",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand filtering with where",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "WHERE filters rows before results return: =, !=, <, >, <=, >=, BETWEEN, IN, LIKE, IS NULL. Combine with AND/OR/NOT and parentheses for precedence."
+    },
+    {
+      "type": "text",
+      "content": "LIKE uses % (any chars) and _ (one char) wildcards; IS NULL checks missing values — never use = NULL."
+    },
+    {
+      "type": "text",
+      "content": "Key points: filter on indexed columns for speed, string comparisons are often case-insensitive in MySQL but sensitive in PostgreSQL."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT * FROM users\nWHERE age >= 18 AND city = 'Paris';",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Filtering with WHERE — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: filter on indexed columns for speed, string comparisons are often case-insensitive in MySQL but sensitive in PostgreSQL."
+  ],
+  "quizRefs": [
+    "sql-quiz-03"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m1-3"
+  ],
+  "nextLessonId": "lesson-04"
+}

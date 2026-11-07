@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-01",
+  "title": "Quiz: How CSS Works",
+  "description": "Check your understanding of How CSS Works.",
+  "questions": [
+    {
+      "id": "css-q-comment-1",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-1",
+      "type": "mcq",
+      "question": "What does CSS control?",
+      "options": [
+        "Page presentation — colors, fonts, layout",
+        "Page content and structure",
+        "Server databases",
+        "Image file formats"
+      ],
+      "correctAnswer": "Page presentation — colors, fonts, layout",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-1",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-1",
+      "type": "mcq",
+      "question": "What is the main purpose of the How CSS Works technique shown in this lesson?",
+      "options": [
+        "How CSS Works",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "How CSS Works",
+      "explanation": "It exists to help you how css works effectively."
+    },
+    {
+      "id": "css-q-out-1",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

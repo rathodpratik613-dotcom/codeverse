@@ -1,0 +1,47 @@
+{
+  "id": "lesson-15",
+  "title": "Borders and Outlines",
+  "summary": "border draws inside the box model (affects layout); outline draws outside without affecting layout — ideal for focus rings. border-radius ro",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand borders and outlines",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "border draws inside the box model (affects layout); outline draws outside without affecting layout — ideal for focus rings. border-radius rounds corners; box-shadow adds depth."
+    },
+    {
+      "type": "text",
+      "content": "Shorthand: border: width style color. Styles: solid, dashed, dotted, double, none."
+    },
+    {
+      "type": "text",
+      "content": "Key points: outline-offset controls focus ring gap, border-radius percentages make circles/pills, and multiple shadows comma-separate."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".button {\n    border: 2px solid #333;\n    border-radius: 999px;\n    outline: 3px solid transparent;\n}\n.button:focus-visible {\n    outline-color: blue;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Borders and Outlines — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: outline-offset controls focus ring gap, border-radius percentages make circles/pills, and multiple shadows comma-separate."
+  ],
+  "quizRefs": [
+    "css-quiz-15"
+  ],
+  "challengeRefs": [
+    "css-challenge-m3-2"
+  ],
+  "nextLessonId": "lesson-16"
+}

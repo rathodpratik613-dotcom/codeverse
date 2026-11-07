@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-06",
+  "title": "Quiz: Forms",
+  "description": "Check your understanding of Forms.",
+  "questions": [
+    {
+      "id": "html-q-comment-6",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-6",
+      "type": "mcq",
+      "question": "What does input type=\"email\" give you?",
+      "options": [
+        "Built-in email format validation and a suitable keyboard",
+        "Automatic password encryption",
+        "A dropdown menu",
+        "File upload"
+      ],
+      "correctAnswer": "Built-in email format validation and a suitable keyboard",
+      "explanation": "Semantic input types improve UX and validation."
+    },
+    {
+      "id": "html-q-tf-6",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-6",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <input type=\"${t}\" name=\"age\">",
+      "correctAnswer": "number",
+      "explanation": "Types tailor input behavior and validation."
+    },
+    {
+      "id": "html-q-out-6",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

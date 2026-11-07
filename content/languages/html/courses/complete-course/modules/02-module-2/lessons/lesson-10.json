@@ -1,0 +1,47 @@
+{
+  "id": "lesson-10",
+  "title": "Divs and Spans",
+  "summary": "<div> is the generic block container; <span> is the generic inline container. Neither adds meaning — they exist purely for CSS/JS grouping.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand divs and spans",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "<div> is the generic block container; <span> is the generic inline container. Neither adds meaning — they exist purely for CSS/JS grouping."
+    },
+    {
+      "type": "text",
+      "content": "Reach for semantic tags first (nav, article, section); use div/span only when no semantic element fits. This keeps pages accessible and stylesheets sane."
+    },
+    {
+      "type": "text",
+      "content": "Key points: div = block (new line), span = inline (flows with text), and class names should describe purpose (.card, .nav-link) not appearance (.red-box)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<div class=\"card\">\n    <h2>Title</h2>\n    <p>Text with a <span class=\"highlight\">highlighted</span> word.</p>\n</div>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Divs and Spans — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: div = block (new line), span = inline (flows with text), and class names should describe purpose (.card, .nav-link) not appearance (.red-box)."
+  ],
+  "quizRefs": [
+    "html-quiz-10"
+  ],
+  "challengeRefs": [
+    "html-challenge-m2-2"
+  ],
+  "nextLessonId": "lesson-11"
+}

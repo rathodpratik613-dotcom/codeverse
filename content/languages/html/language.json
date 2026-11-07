@@ -1,0 +1,14 @@
+{
+  "id": "html",
+  "name": "HTML",
+  "icon": "🌐",
+  "color": "#E34F26",
+  "description": "HTML complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "difficulty": "beginner",
+  "runtimeType": "browser",
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
+}

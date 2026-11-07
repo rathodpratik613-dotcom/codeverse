@@ -1,0 +1,47 @@
+{
+  "id": "lesson-23",
+  "title": "Sorting and Searching",
+  "summary": "Sorting arranges items (numbers ascending, strings alphabetically); searching finds a target value or its position.",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand sorting and searching",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Sorting arranges items (numbers ascending, strings alphabetically); searching finds a target value or its position."
+    },
+    {
+      "type": "text",
+      "content": "Languages provide built-in sort and search functions — use them instead of writing your own. Binary search on sorted data is dramatically faster than checking every item."
+    },
+    {
+      "type": "text",
+      "content": "Key points: sorting mutates or returns new collections depending on language, and always sort before binary searching."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "#include <stdio.h>\n\nint main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Sorting and Searching — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: sorting mutates or returns new collections depending on language, and always sort before binary searching."
+  ],
+  "quizRefs": [
+    "c-quiz-23"
+  ],
+  "challengeRefs": [
+    "c-challenge-m4-2"
+  ],
+  "nextLessonId": "lesson-24"
+}

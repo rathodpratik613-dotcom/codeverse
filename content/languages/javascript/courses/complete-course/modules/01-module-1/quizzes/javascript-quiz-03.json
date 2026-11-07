@@ -1,0 +1,59 @@
+{
+  "id": "javascript-quiz-03",
+  "title": "Quiz: Variables",
+  "description": "Check your understanding of Variables.",
+  "questions": [
+    {
+      "id": "javascript-q-comment-3",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in JavaScript?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In JavaScript, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "javascript-q-concept-3",
+      "type": "mcq",
+      "question": "What is a variable?",
+      "options": [
+        "A named storage location for a value",
+        "A type of computer virus",
+        "A printing command",
+        "A loop that repeats forever"
+      ],
+      "correctAnswer": "A named storage location for a value",
+      "explanation": "Variables let you store and reuse data by name."
+    },
+    {
+      "id": "javascript-q-tf-3",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "javascript-q-fill-3",
+      "type": "fill-blank",
+      "question": "Fill in the blank: name{assign}\"Alice\"",
+      "correctAnswer": "{assign}",
+      "explanation": "The assignment operator stores the value into the variable."
+    },
+    {
+      "id": "javascript-q-out-3",
+      "type": "mcq",
+      "question": "In JavaScript, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

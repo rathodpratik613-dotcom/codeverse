@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-19",
+  "title": "Quiz: Interactive Elements",
+  "description": "Check your understanding of Interactive Elements.",
+  "questions": [
+    {
+      "id": "html-q-comment-19",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-19",
+      "type": "mcq",
+      "question": "Which element creates an expandable section without JavaScript?",
+      "options": [
+        "<details>",
+        "<dialog>",
+        "<section>",
+        "<accordion>"
+      ],
+      "correctAnswer": "<details>",
+      "explanation": "details + summary work natively."
+    },
+    {
+      "id": "html-q-tf-19",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-19",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <${d}><summary>Title</summary>content</${d}>",
+      "correctAnswer": "details",
+      "explanation": "details wraps collapsible content."
+    },
+    {
+      "id": "html-q-out-19",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

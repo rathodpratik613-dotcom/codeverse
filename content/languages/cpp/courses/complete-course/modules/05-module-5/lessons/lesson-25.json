@@ -1,0 +1,47 @@
+{
+  "id": "lesson-25",
+  "title": "Error Handling",
+  "summary": "Programs fail — bad input, missing files, network drops. Error handling catches failures gracefully instead of crashing.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand error handling",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Programs fail — bad input, missing files, network drops. Error handling catches failures gracefully instead of crashing."
+    },
+    {
+      "type": "text",
+      "content": "The pattern: try risky code, catch the specific failure, and decide what to do (retry, default value, friendly message). Finally blocks run cleanup either way."
+    },
+    {
+      "type": "text",
+      "content": "Key points: catch specific error types, never swallow errors silently, and validate input early to prevent most failures."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "#include <iostream>\n#include <string>\n\nint main() {\ntry {\n    risky_operation()\n} catch (error) {\n    std::cout << \"Something went wrong\" << std::endl;\n}\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Error Handling — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: catch specific error types, never swallow errors silently, and validate input early to prevent most failures."
+  ],
+  "quizRefs": [
+    "cpp-quiz-25"
+  ],
+  "challengeRefs": [
+    "cpp-challenge-m5-1"
+  ],
+  "nextLessonId": "lesson-26"
+}

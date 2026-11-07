@@ -1,0 +1,47 @@
+{
+  "id": "lesson-13",
+  "title": "Links Deep Dive",
+  "summary": "Links can do more than navigate: fragment links (#section) jump within a page, mailto: opens email, tel: dials on mobile, and download attri",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand links deep dive",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Links can do more than navigate: fragment links (#section) jump within a page, mailto: opens email, tel: dials on mobile, and download attributes save files."
+    },
+    {
+      "type": "text",
+      "content": "Link text should describe the destination (\"Read the guide\", not \"click here\") — screen readers announce links out of context."
+    },
+    {
+      "type": "text",
+      "content": "Key points: absolute vs relative paths, rel=\"noopener\" for target=\"_blank\" security, and visited/focus states matter for usability."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<a href=\"#pricing\">See pricing</a>\n<a href=\"mailto:hi@example.com\">Email us</a>\n<a href=\"file.zip\" download>Download</a>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Links Deep Dive — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: absolute vs relative paths, rel=\"noopener\" for target=\"_blank\" security, and visited/focus states matter for usability."
+  ],
+  "quizRefs": [
+    "html-quiz-13"
+  ],
+  "challengeRefs": [
+    "html-challenge-m2-2"
+  ],
+  "nextLessonId": "lesson-14"
+}

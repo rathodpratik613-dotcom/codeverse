@@ -1,0 +1,59 @@
+{
+  "id": "cpp-quiz-30",
+  "title": "Quiz: Capstone Project",
+  "description": "Check your understanding of Capstone Project.",
+  "questions": [
+    {
+      "id": "cpp-q-comment-30",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C++?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C++, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "cpp-q-concept-30",
+      "type": "mcq",
+      "question": "What is the best first step for a capstone project?",
+      "options": [
+        "Define the smallest version that works end-to-end",
+        "Write every feature at once",
+        "Design the perfect architecture first",
+        "Copy a large open-source project"
+      ],
+      "correctAnswer": "Define the smallest version that works end-to-end",
+      "explanation": "Working software beats perfect plans."
+    },
+    {
+      "id": "cpp-q-tf-30",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "cpp-q-fill-30",
+      "type": "fill-blank",
+      "question": "Fill in the blank: while game_running { play_round() }  // the main ___",
+      "correctAnswer": "loop",
+      "explanation": "Games and tools center on a main loop."
+    },
+    {
+      "id": "cpp-q-out-30",
+      "type": "mcq",
+      "question": "In C++, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

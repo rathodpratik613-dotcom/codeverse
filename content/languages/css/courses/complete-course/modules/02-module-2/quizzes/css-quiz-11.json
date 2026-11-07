@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-11",
+  "title": "Quiz: Pseudo-classes and Pseudo-elements",
+  "description": "Check your understanding of Pseudo-classes and Pseudo-elements.",
+  "questions": [
+    {
+      "id": "css-q-comment-11",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-11",
+      "type": "mcq",
+      "question": "What does ::before do?",
+      "options": [
+        "Inserts decorative content before the element",
+        "Targets the first child",
+        "Hides the element",
+        "Adds a border"
+      ],
+      "correctAnswer": "Inserts decorative content before the element",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-11",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-11",
+      "type": "mcq",
+      "question": "What is the main purpose of the Pseudo-classes and Pseudo-elements technique shown in this lesson?",
+      "options": [
+        "Pseudo-classes and Pseudo-elements",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Pseudo-classes and Pseudo-elements",
+      "explanation": "It exists to help you pseudo-classes and pseudo-elements effectively."
+    },
+    {
+      "id": "css-q-out-11",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

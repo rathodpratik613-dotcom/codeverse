@@ -1,0 +1,47 @@
+{
+  "id": "lesson-14",
+  "title": "Specificity and Cascade",
+  "summary": "When rules conflict, specificity decides: inline > id > class/attribute/pseudo-class > element/pseudo-element. !important overrides everythi",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand specificity and cascade",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "When rules conflict, specificity decides: inline > id > class/attribute/pseudo-class > element/pseudo-element. !important overrides everything (avoid it)."
+    },
+    {
+      "type": "text",
+      "content": "The cascade layers (later rules win at equal specificity), origin (author vs user agent), and inheritance complete the picture."
+    },
+    {
+      "type": "text",
+      "content": "Key points: count (ids, classes, elements), .a.b.c beats #id? No — any id beats all classes; equal specificity → source order wins."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "#nav .link { color: red; }\n.link { color: blue; }  /* red wins: higher specificity */",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Specificity and Cascade — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: count (ids, classes, elements), .a.b.c beats #id? No — any id beats all classes; equal specificity → source order wins."
+  ],
+  "quizRefs": [
+    "css-quiz-14"
+  ],
+  "challengeRefs": [
+    "css-challenge-m3-1"
+  ],
+  "nextLessonId": "lesson-15"
+}

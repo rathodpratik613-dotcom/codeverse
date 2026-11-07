@@ -1,0 +1,47 @@
+{
+  "id": "lesson-20",
+  "title": "Strings",
+  "summary": "Strings are sequences of characters — text. You can concatenate them, measure length, slice out pieces, and search inside them.",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand strings",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Strings are sequences of characters — text. You can concatenate them, measure length, slice out pieces, and search inside them."
+    },
+    {
+      "type": "text",
+      "content": "Most languages treat strings as immutable: operations return NEW strings rather than editing in place. This trips up beginners who expect in-place edits."
+    },
+    {
+      "type": "text",
+      "content": "Key points: quote styles vary (' vs \"), escaping handles special characters, and string functions (upper, lower, split, contains) are daily tools."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "public class Main {\n    public static void main(String[] args) {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n    }\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Strings — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: quote styles vary (' vs \"), escaping handles special characters, and string functions (upper, lower, split, contains) are daily tools."
+  ],
+  "quizRefs": [
+    "java-quiz-20"
+  ],
+  "challengeRefs": [
+    "java-challenge-m4-2"
+  ],
+  "nextLessonId": "lesson-21"
+}

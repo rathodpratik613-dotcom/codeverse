@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-02",
+  "title": "Quiz: SELECT Basics",
+  "description": "Check your understanding of SELECT Basics.",
+  "questions": [
+    {
+      "id": "sql-q-comment-2",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-2",
+      "type": "mcq",
+      "question": "What does SELECT DISTINCT do?",
+      "options": [
+        "Removes duplicate rows",
+        "Sorts results",
+        "Deletes duplicates from table",
+        "Counts rows"
+      ],
+      "correctAnswer": "Removes duplicate rows from results",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-2",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-2",
+      "type": "mcq",
+      "question": "What is the main purpose of the SELECT Basics technique shown in this lesson?",
+      "options": [
+        "SELECT Basics",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "SELECT Basics",
+      "explanation": "It exists to help you select basics effectively."
+    },
+    {
+      "id": "sql-q-out-2",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

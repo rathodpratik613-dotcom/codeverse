@@ -1,0 +1,59 @@
+{
+  "id": "ruby-quiz-24",
+  "title": "Quiz: Objects and Structures",
+  "description": "Check your understanding of Objects and Structures.",
+  "questions": [
+    {
+      "id": "ruby-q-comment-24",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Ruby?",
+      "options": [
+        "#",
+        "//",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "#",
+      "explanation": "In Ruby, # marks a comment. Block comments use =begin\n=end."
+    },
+    {
+      "id": "ruby-q-concept-24",
+      "type": "mcq",
+      "question": "What does an object/struct primarily do?",
+      "options": [
+        "Groups related data (and often behavior) under one name",
+        "Stores only numbers",
+        "Replaces all functions",
+        "Encrypts data"
+      ],
+      "correctAnswer": "Groups related data (and often behavior) under one name",
+      "explanation": "Objects model real-world things with fields + methods."
+    },
+    {
+      "id": "ruby-q-tf-24",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "ruby-q-fill-24",
+      "type": "fill-blank",
+      "question": "Fill in the blank: user.${field}  // access a field",
+      "correctAnswer": "name",
+      "explanation": "Dot notation reaches into an object."
+    },
+    {
+      "id": "ruby-q-out-24",
+      "type": "mcq",
+      "question": "In Ruby, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

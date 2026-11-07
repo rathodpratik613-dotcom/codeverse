@@ -1,0 +1,14 @@
+{
+  "id": "swift",
+  "name": "Swift",
+  "icon": "🍎",
+  "color": "#F05138",
+  "description": "Swift complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "difficulty": "beginner",
+  "runtimeType": "simulated",
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
+}

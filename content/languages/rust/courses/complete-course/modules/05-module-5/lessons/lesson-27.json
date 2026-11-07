@@ -1,0 +1,47 @@
+{
+  "id": "lesson-27",
+  "title": "Modules and Imports",
+  "summary": "Real programs split into modules — separate files you import to reuse functions without copy-paste.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand modules and imports",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Real programs split into modules — separate files you import to reuse functions without copy-paste."
+    },
+    {
+      "type": "text",
+      "content": "Imports give you access to the standard library (math, dates, HTTP) and your own shared code. Organizing code into modules keeps projects maintainable."
+    },
+    {
+      "type": "text",
+      "content": "Key points: import only what you need, name collisions are possible, and circular imports break programs — keep dependencies one-directional."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "fn main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Modules and Imports — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: import only what you need, name collisions are possible, and circular imports break programs — keep dependencies one-directional."
+  ],
+  "quizRefs": [
+    "rust-quiz-27"
+  ],
+  "challengeRefs": [
+    "rust-challenge-m5-3"
+  ],
+  "nextLessonId": "lesson-28"
+}

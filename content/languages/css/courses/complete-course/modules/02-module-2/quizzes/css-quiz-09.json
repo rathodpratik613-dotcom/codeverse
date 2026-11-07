@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-09",
+  "title": "Quiz: Positioning",
+  "description": "Check your understanding of Positioning.",
+  "questions": [
+    {
+      "id": "css-q-comment-9",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-9",
+      "type": "mcq",
+      "question": "Which position keeps an element visible while scrolling?",
+      "options": [
+        "fixed or sticky",
+        "absolute",
+        "relative",
+        "static"
+      ],
+      "correctAnswer": "fixed or sticky",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-9",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-9",
+      "type": "mcq",
+      "question": "What is the main purpose of the Positioning technique shown in this lesson?",
+      "options": [
+        "Positioning",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Positioning",
+      "explanation": "It exists to help you positioning effectively."
+    },
+    {
+      "id": "css-q-out-9",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

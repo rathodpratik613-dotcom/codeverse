@@ -1,0 +1,47 @@
+{
+  "id": "lesson-12",
+  "title": "CSS Variables",
+  "summary": "Custom properties (--name) store reusable values: colors, spacing, fonts. Change once at :root, update everywhere via var(--name).",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand css variables",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Custom properties (--name) store reusable values: colors, spacing, fonts. Change once at :root, update everywhere via var(--name)."
+    },
+    {
+      "type": "text",
+      "content": "They enable theming (dark mode = swap variables) and runtime updates from JavaScript. Unlike preprocessor vars, they are live in the browser."
+    },
+    {
+      "type": "text",
+      "content": "Key points: define on :root for global scope, fallbacks via var(--x, red), and they inherit down the DOM tree."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ":root {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n.button {\n    background: var(--color-primary);\n    padding: var(--space-md);\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Variables — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: define on :root for global scope, fallbacks via var(--x, red), and they inherit down the DOM tree."
+  ],
+  "quizRefs": [
+    "css-quiz-12"
+  ],
+  "challengeRefs": [
+    "css-challenge-m2-3"
+  ],
+  "nextLessonId": "lesson-13"
+}

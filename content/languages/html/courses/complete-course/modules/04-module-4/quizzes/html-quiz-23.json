@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-23",
+  "title": "Quiz: SVG and Canvas",
+  "description": "Check your understanding of SVG and Canvas.",
+  "questions": [
+    {
+      "id": "html-q-comment-23",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-23",
+      "type": "mcq",
+      "question": "When should you choose SVG over Canvas?",
+      "options": [
+        "For scalable icons and diagrams that need CSS/DOM control",
+        "For photo-realistic rendering",
+        "For 3D games only",
+        "Never — canvas is always better"
+      ],
+      "correctAnswer": "For scalable icons and diagrams that need CSS/DOM control",
+      "explanation": "SVG = vectors in the DOM; canvas = raw pixels."
+    },
+    {
+      "id": "html-q-tf-23",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-23",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <svg><${shape} .../></svg>",
+      "correctAnswer": "circle/rect/path",
+      "explanation": "SVG uses shape elements."
+    },
+    {
+      "id": "html-q-out-23",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

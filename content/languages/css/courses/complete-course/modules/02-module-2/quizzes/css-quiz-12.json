@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-12",
+  "title": "Quiz: CSS Variables",
+  "description": "Check your understanding of CSS Variables.",
+  "questions": [
+    {
+      "id": "css-q-comment-12",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-12",
+      "type": "mcq",
+      "question": "Where should global CSS variables be defined?",
+      "options": [
+        ":root",
+        "body only",
+        "Every selector",
+        "In HTML"
+      ],
+      "correctAnswer": ":root",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-12",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-12",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Variables technique shown in this lesson?",
+      "options": [
+        "CSS Variables",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Variables",
+      "explanation": "It exists to help you css variables effectively."
+    },
+    {
+      "id": "css-q-out-12",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-10",
+  "title": "Quiz: Divs and Spans",
+  "description": "Check your understanding of Divs and Spans.",
+  "questions": [
+    {
+      "id": "html-q-comment-10",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-10",
+      "type": "mcq",
+      "question": "When should you use <div> or <span>?",
+      "options": [
+        "When no semantic element fits the grouping need",
+        "For every piece of text",
+        "Never — they are deprecated",
+        "Only for images"
+      ],
+      "correctAnswer": "When no semantic element fits the grouping need",
+      "explanation": "They are neutral containers for styling/scripting."
+    },
+    {
+      "id": "html-q-tf-10",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-10",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <${tag} class=\"inline-note\">note</${tag}>",
+      "correctAnswer": "span",
+      "explanation": "span is the inline container."
+    },
+    {
+      "id": "html-q-out-10",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

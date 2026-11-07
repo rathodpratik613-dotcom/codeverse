@@ -1,0 +1,47 @@
+{
+  "id": "lesson-01",
+  "title": "What is SQL",
+  "summary": "SQL (Structured Query Language) talks to relational databases — tables of rows and columns. You use it to create tables, insert data, query ",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand what is sql",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "SQL (Structured Query Language) talks to relational databases — tables of rows and columns. You use it to create tables, insert data, query it, update it, and delete it."
+    },
+    {
+      "type": "text",
+      "content": "Relational databases (PostgreSQL, MySQL, SQLite) store structured data with enforced types and relationships between tables."
+    },
+    {
+      "type": "text",
+      "content": "Key points: SQL is declarative — you describe WHAT you want, not HOW to get it; most syntax is standard across engines with small dialect differences."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT id, name FROM users;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: What is SQL — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: SQL is declarative — you describe WHAT you want, not HOW to get it; most syntax is standard across engines with small dialect differences."
+  ],
+  "quizRefs": [
+    "sql-quiz-01"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m1-1"
+  ],
+  "nextLessonId": "lesson-02"
+}

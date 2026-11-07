@@ -1,0 +1,28 @@
+{
+  "id": "css-challenge-m2-2",
+  "title": "Control Flow Practice 2",
+  "difficulty": 3,
+  "statement": "Module 2 (Control Flow) covers: flexbox, css grid, positioning, responsive design, pseudo-classes and pseudo-elements, css variables, transitions and animations. Solve this practice problem using what you learned.\n\nExercise 2: write a small program that demonstrates one concept from this module (CSS Grid).",
+  "starterCode": "/* */ Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the CSS Grid lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "body {\n    font-family: sans-serif;\n}\nh1 {\n    color: blue;\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 40,
+  "coinReward": 20,
+  "tags": [
+    "css",
+    "module-2"
+  ]
+}

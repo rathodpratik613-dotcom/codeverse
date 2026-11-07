@@ -1,0 +1,59 @@
+{
+  "id": "assembly-quiz-20",
+  "title": "Quiz: Strings",
+  "description": "Check your understanding of Strings.",
+  "questions": [
+    {
+      "id": "assembly-q-comment-20",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    },
+    {
+      "id": "assembly-q-concept-20",
+      "type": "mcq",
+      "question": "What does concatenation mean for strings?",
+      "options": [
+        "Joining them end to end into one string",
+        "Deleting half of them",
+        "Sorting them alphabetically",
+        "Comparing their lengths"
+      ],
+      "correctAnswer": "Joining them end to end into one string",
+      "explanation": "\"foo\" + \"bar\" becomes \"foobar\"."
+    },
+    {
+      "id": "assembly-q-tf-20",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "assembly-q-fill-20",
+      "type": "fill-blank",
+      "question": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+      "correctAnswer": "concatenate",
+      "explanation": "The + operator joins strings."
+    },
+    {
+      "id": "assembly-q-out-20",
+      "type": "mcq",
+      "question": "In Assembly, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

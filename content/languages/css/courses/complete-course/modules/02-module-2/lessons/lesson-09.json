@@ -1,0 +1,47 @@
+{
+  "id": "lesson-09",
+  "title": "Positioning",
+  "summary": "position values: static (default), relative (offset from itself), absolute (relative to positioned ancestor), fixed (viewport), sticky (scro",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand positioning",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "position values: static (default), relative (offset from itself), absolute (relative to positioned ancestor), fixed (viewport), sticky (scrolls until threshold)."
+    },
+    {
+      "type": "text",
+      "content": "absolute removes from flow — siblings ignore it; fixed stays during scroll; sticky is the modern nav pattern."
+    },
+    {
+      "type": "text",
+      "content": "Key points: absolute needs a positioned ancestor (else it uses viewport), z-index only works on positioned elements, and sticky needs a scroll threshold like top:0."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".nav {\n    position: sticky;\n    top: 0;\n    z-index: 100;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Positioning — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: absolute needs a positioned ancestor (else it uses viewport), z-index only works on positioned elements, and sticky needs a scroll threshold like top:0."
+  ],
+  "quizRefs": [
+    "css-quiz-09"
+  ],
+  "challengeRefs": [
+    "css-challenge-m2-3"
+  ],
+  "nextLessonId": "lesson-10"
+}

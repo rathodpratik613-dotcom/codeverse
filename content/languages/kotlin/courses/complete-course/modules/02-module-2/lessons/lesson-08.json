@@ -1,0 +1,47 @@
+{
+  "id": "lesson-08",
+  "title": "For Loops",
+  "summary": "Loops repeat code. A for loop runs a fixed number of times — perfect when you know how many iterations you need.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand for loops",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Loops repeat code. A for loop runs a fixed number of times — perfect when you know how many iterations you need."
+    },
+    {
+      "type": "text",
+      "content": "The classic pattern counts from a start to an end value. Many languages also let you loop directly over list items, which is often cleaner."
+    },
+    {
+      "type": "text",
+      "content": "Key points: watch off-by-one errors (does the end value count?), loop variables are scoped to the loop in modern languages."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "fun main() {\nfor i in range(5) {\n    println(i)\n}\n// prints 0 1 2 3 4\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: For Loops — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: watch off-by-one errors (does the end value count?), loop variables are scoped to the loop in modern languages."
+  ],
+  "quizRefs": [
+    "kotlin-quiz-08"
+  ],
+  "challengeRefs": [
+    "kotlin-challenge-m2-2"
+  ],
+  "nextLessonId": "lesson-09"
+}

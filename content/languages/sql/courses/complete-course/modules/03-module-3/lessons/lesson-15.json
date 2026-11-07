@@ -1,0 +1,47 @@
+{
+  "id": "lesson-15",
+  "title": "Functions and Procedures",
+  "summary": "Functions return a value (used inside queries); stored procedures run action sequences (loops, transactions) called with CALL. Both live in ",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand functions and procedures",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Functions return a value (used inside queries); stored procedures run action sequences (loops, transactions) called with CALL. Both live in the database."
+    },
+    {
+      "type": "text",
+      "content": "They centralize logic close to data, reduce network round-trips, and enforce business rules consistently. PL/pgSQL (Postgres) and T-SQL (SQL Server) are common dialects."
+    },
+    {
+      "type": "text",
+      "content": "Key points: functions must be deterministic for indexing, procedures can contain transactions, and version-control your DB code like app code."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$\n    SELECT p * 2;\n$$ LANGUAGE SQL;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Functions and Procedures — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: functions must be deterministic for indexing, procedures can contain transactions, and version-control your DB code like app code."
+  ],
+  "quizRefs": [
+    "sql-quiz-15"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m3-3"
+  ],
+  "nextLessonId": "lesson-16"
+}

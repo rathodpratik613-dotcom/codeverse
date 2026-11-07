@@ -1,0 +1,47 @@
+{
+  "id": "lesson-03",
+  "title": "Variables",
+  "summary": "A variable is a named box that stores a value. Instead of repeating a value everywhere, you store it once and reuse the name.",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand variables",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "A variable is a named box that stores a value. Instead of repeating a value everywhere, you store it once and reuse the name."
+    },
+    {
+      "type": "text",
+      "content": "Variables can hold text (strings), whole numbers (integers), decimals (floats), and true/false values (booleans). Assigning a new value replaces the old one."
+    },
+    {
+      "type": "text",
+      "content": "Key points: names should describe content (userAge, not x), most languages are case-sensitive, and you must declare or assign before use."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "let name: string = \"Alice\";\nconst age: number = 30;\n// Variables hold reusable values",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Variables — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: names should describe content (userAge, not x), most languages are case-sensitive, and you must declare or assign before use."
+  ],
+  "quizRefs": [
+    "typescript-quiz-03"
+  ],
+  "challengeRefs": [
+    "typescript-challenge-m1-3"
+  ],
+  "nextLessonId": "lesson-04"
+}

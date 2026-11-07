@@ -1,0 +1,47 @@
+{
+  "id": "lesson-11",
+  "title": "Conditionals Deep Dive",
+  "summary": "Real programs combine conditions: and/or/not logic, comparison chains, and sometimes a switch that maps many values to different actions.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand conditionals deep dive",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Real programs combine conditions: and/or/not logic, comparison chains, and sometimes a switch that maps many values to different actions."
+    },
+    {
+      "type": "text",
+      "content": "Boolean algebra applies: conditions combine with AND (both true), OR (either true), NOT (flip). Parentheses control grouping."
+    },
+    {
+      "type": "text",
+      "content": "Key points: keep conditions readable — extract complex logic into a well-named boolean variable instead of one giant expression."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "if age >= 18 AND hasTicket {\n    console.log(\"Welcome in\");\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Conditionals Deep Dive — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: keep conditions readable — extract complex logic into a well-named boolean variable instead of one giant expression."
+  ],
+  "quizRefs": [
+    "javascript-quiz-11"
+  ],
+  "challengeRefs": [
+    "javascript-challenge-m2-2"
+  ],
+  "nextLessonId": "lesson-12"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "module-2",
+  "title": "Control Flow",
+  "order": 2,
+  "description": "Control Flow for SQL.",
+  "estimatedMinutes": 300
+}

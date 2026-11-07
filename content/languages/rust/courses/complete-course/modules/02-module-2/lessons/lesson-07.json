@@ -1,0 +1,47 @@
+{
+  "id": "lesson-07",
+  "title": "If Statements",
+  "summary": "If statements let code make decisions. When a condition is true, the block inside runs; otherwise it is skipped.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand if statements",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "If statements let code make decisions. When a condition is true, the block inside runs; otherwise it is skipped."
+    },
+    {
+      "type": "text",
+      "content": "Most languages also offer else (run when false) and elif/else-if (try another condition). Conditions must evaluate to true or false."
+    },
+    {
+      "type": "text",
+      "content": "Key points: indentation or braces define the block, conditions use comparison operators, and you can chain else-if for multiple cases."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "fn main() {\nage = 20\nif age >= 18 {\n    println!(\"{}\", \"Adult\");\n} else {\n    println!(\"{}\", \"Minor\");\n}\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: If Statements — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: indentation or braces define the block, conditions use comparison operators, and you can chain else-if for multiple cases."
+  ],
+  "quizRefs": [
+    "rust-quiz-07"
+  ],
+  "challengeRefs": [
+    "rust-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-08"
+}

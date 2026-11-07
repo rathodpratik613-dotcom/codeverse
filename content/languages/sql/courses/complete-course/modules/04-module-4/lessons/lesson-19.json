@@ -1,0 +1,47 @@
+{
+  "id": "lesson-19",
+  "title": "NULL Handling",
+  "summary": "NULL means \"unknown/missing\" — it is not zero, not empty string, not false. Any comparison with NULL yields NULL (not true), so rows silentl",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand null handling",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "NULL means \"unknown/missing\" — it is not zero, not empty string, not false. Any comparison with NULL yields NULL (not true), so rows silently drop."
+    },
+    {
+      "type": "text",
+      "content": "Handle with IS NULL / IS NOT NULL, COALESCE(col, default) for fallbacks, NULLIF to convert values to NULL, and careful with aggregates (they skip NULLs)."
+    },
+    {
+      "type": "text",
+      "content": "Key points: COUNT(col) ignores NULLs, SUM/AVG too, columns should be NOT NULL with defaults where \"missing\" is meaningless, and three-valued logic (true/false/unknown) surprises everyone."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT COALESCE(nickname, name) AS display_name\nFROM users;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: NULL Handling — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: COUNT(col) ignores NULLs, SUM/AVG too, columns should be NOT NULL with defaults where \"missing\" is meaningless, and three-valued logic (true/false/unknown) surprises everyone."
+  ],
+  "quizRefs": [
+    "sql-quiz-19"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m4-2"
+  ],
+  "nextLessonId": "lesson-20"
+}

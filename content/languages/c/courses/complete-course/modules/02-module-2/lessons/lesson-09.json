@@ -1,0 +1,47 @@
+{
+  "id": "lesson-09",
+  "title": "While Loops",
+  "summary": "A while loop repeats as long as its condition stays true. It is checked before every iteration — if it starts false, the body never runs.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand while loops",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "A while loop repeats as long as its condition stays true. It is checked before every iteration — if it starts false, the body never runs."
+    },
+    {
+      "type": "text",
+      "content": "While loops shine for \"keep going until done\" logic: reading input until a quit command, retrying failed operations, or processing streams."
+    },
+    {
+      "type": "text",
+      "content": "Key points: always ensure the condition eventually becomes false, or you create an infinite loop that hangs the program."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "#include <stdio.h>\n\nint main() {\ncount = 0\nwhile count < 5 {\n    printf(\"%s\\n\", count);\n    count = count + 1\n}\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: While Loops — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: always ensure the condition eventually becomes false, or you create an infinite loop that hangs the program."
+  ],
+  "quizRefs": [
+    "c-quiz-09"
+  ],
+  "challengeRefs": [
+    "c-challenge-m2-3"
+  ],
+  "nextLessonId": "lesson-10"
+}

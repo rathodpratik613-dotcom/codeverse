@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-22",
+  "title": "Quiz: Capstone: Design a Schema",
+  "description": "Check your understanding of Capstone: Design a Schema.",
+  "questions": [
+    {
+      "id": "sql-q-comment-22",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-22",
+      "type": "mcq",
+      "question": "What solves a many-to-many relationship?",
+      "options": [
+        "Junction table",
+        "Duplicate columns",
+        "JSON blob",
+        "Nothing needed"
+      ],
+      "correctAnswer": "A junction/link table",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-22",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-22",
+      "type": "mcq",
+      "question": "What is the main purpose of the Capstone: Design a Schema technique shown in this lesson?",
+      "options": [
+        "Capstone: Design a Schema",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Capstone: Design a Schema",
+      "explanation": "It exists to help you capstone: design a schema effectively."
+    },
+    {
+      "id": "sql-q-out-22",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

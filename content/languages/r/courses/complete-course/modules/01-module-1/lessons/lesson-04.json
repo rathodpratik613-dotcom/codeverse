@@ -1,0 +1,47 @@
+{
+  "id": "lesson-04",
+  "title": "Data Types",
+  "summary": "Every value has a type that decides what you can do with it. Numbers support math, strings support text operations, and booleans represent t",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand data types",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Every value has a type that decides what you can do with it. Numbers support math, strings support text operations, and booleans represent true/false."
+    },
+    {
+      "type": "text",
+      "content": "Mixing types carelessly causes bugs — adding a number to text may concatenate or error depending on the language. Knowing your types prevents surprises."
+    },
+    {
+      "type": "text",
+      "content": "Key points: common types are int, float, string, bool; some languages require declaring types, others guess them."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "name <- \"Alice\"\nage <- 30\n# Common types: \"Alice\" is a string, 42 is a number, TRUE is a boolean",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Data Types — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: common types are int, float, string, bool; some languages require declaring types, others guess them."
+  ],
+  "quizRefs": [
+    "r-quiz-04"
+  ],
+  "challengeRefs": [
+    "r-challenge-m1-1"
+  ],
+  "nextLessonId": "lesson-05"
+}

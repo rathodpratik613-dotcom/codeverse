@@ -1,0 +1,47 @@
+{
+  "id": "lesson-22",
+  "title": "Sets",
+  "summary": "A set stores unique values with no particular order. Adding a duplicate does nothing — the set simply keeps one copy.",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand sets",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "A set stores unique values with no particular order. Adding a duplicate does nothing — the set simply keeps one copy."
+    },
+    {
+      "type": "text",
+      "content": "Sets answer membership questions fast: \"have we seen this value before?\" They also support union, intersection, and difference operations."
+    },
+    {
+      "type": "text",
+      "content": "Key points: use sets to deduplicate lists, sets cannot be indexed by position, and membership tests are near-instant."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "tags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Sets — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: use sets to deduplicate lists, sets cannot be indexed by position, and membership tests are near-instant."
+  ],
+  "quizRefs": [
+    "javascript-quiz-22"
+  ],
+  "challengeRefs": [
+    "javascript-challenge-m4-1"
+  ],
+  "nextLessonId": "lesson-23"
+}

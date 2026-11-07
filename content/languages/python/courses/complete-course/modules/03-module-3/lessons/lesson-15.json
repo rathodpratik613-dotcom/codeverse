@@ -1,0 +1,47 @@
+{
+  "id": "lesson-15",
+  "title": "Return Values",
+  "summary": "The return statement hands a result back to whoever called the function, then ends the function immediately.",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand return values",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "The return statement hands a result back to whoever called the function, then ends the function immediately."
+    },
+    {
+      "type": "text",
+      "content": "Without return, a function produces no usable result — it can still print or modify things, but callers get nothing back."
+    },
+    {
+      "type": "text",
+      "content": "Key points: code after return is unreachable, you can return any value including collections, and some languages return multiple values."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "def square(n) {\n    return n * n\n}\nresult = square(5)\n# result is now 25",
+      "language": "python"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Return Values — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: code after return is unreachable, you can return any value including collections, and some languages return multiple values."
+  ],
+  "quizRefs": [
+    "python-quiz-15"
+  ],
+  "challengeRefs": [
+    "python-challenge-m3-3"
+  ],
+  "nextLessonId": "lesson-16"
+}

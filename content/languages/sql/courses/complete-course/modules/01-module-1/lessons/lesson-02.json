@@ -1,0 +1,47 @@
+{
+  "id": "lesson-02",
+  "title": "SELECT Basics",
+  "summary": "SELECT retrieves data: SELECT columns FROM table. Use * for all columns, DISTINCT to remove duplicates, and AS to rename output columns.",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand select basics",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "SELECT retrieves data: SELECT columns FROM table. Use * for all columns, DISTINCT to remove duplicates, and AS to rename output columns."
+    },
+    {
+      "type": "text",
+      "content": "SELECT name, age FROM users returns only those two columns for every row. Add WHERE to filter rows."
+    },
+    {
+      "type": "text",
+      "content": "Key points: column order in SELECT defines output order, table aliases (u.name) clarify queries, and quoting rules differ per engine."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT name, age FROM users;\nSELECT DISTINCT city FROM customers;\nSELECT price AS cost FROM products;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: SELECT Basics — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: column order in SELECT defines output order, table aliases (u.name) clarify queries, and quoting rules differ per engine."
+  ],
+  "quizRefs": [
+    "sql-quiz-02"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m1-2"
+  ],
+  "nextLessonId": "lesson-03"
+}

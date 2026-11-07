@@ -1,0 +1,47 @@
+{
+  "id": "lesson-10",
+  "title": "Break and Continue",
+  "summary": "Inside loops you can change the flow: break exits the loop immediately, and continue skips to the next iteration.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand break and continue",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Inside loops you can change the flow: break exits the loop immediately, and continue skips to the next iteration."
+    },
+    {
+      "type": "text",
+      "content": "Break is for \"found it, stop searching\"; continue is for \"skip this one item\". Both save you from wrapping the rest of the loop body in extra ifs."
+    },
+    {
+      "type": "text",
+      "content": "Key points: break exits ALL remaining iterations, continue only skips the current one."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "for i in range(10) {\n    if i == 5 { break }\n    console.log(i);\n}\n// prints 0 1 2 3 4",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Break and Continue — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: break exits ALL remaining iterations, continue only skips the current one."
+  ],
+  "quizRefs": [
+    "typescript-quiz-10"
+  ],
+  "challengeRefs": [
+    "typescript-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-11"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-12",
+  "title": "Comments in HTML",
+  "summary": "HTML comments look like <!-- this --> and are invisible in the rendered page. Use them to explain structure or temporarily disable markup.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand comments in html",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "HTML comments look like <!-- this --> and are invisible in the rendered page. Use them to explain structure or temporarily disable markup."
+    },
+    {
+      "type": "text",
+      "content": "Comments never reach the browser's visible output but ARE sent to the client — never put secrets or sensitive notes in them."
+    },
+    {
+      "type": "text",
+      "content": "Key points: comments cannot nest, they can wrap whole sections, and conditional comments for old IE are obsolete."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<!-- Navigation starts here -->\n<nav>...</nav>\n<!-- TODO: add search box -->",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Comments in HTML — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: comments cannot nest, they can wrap whole sections, and conditional comments for old IE are obsolete."
+  ],
+  "quizRefs": [
+    "html-quiz-12"
+  ],
+  "challengeRefs": [
+    "html-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-13"
+}

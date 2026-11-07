@@ -1,0 +1,59 @@
+{
+  "id": "csharp-quiz-26",
+  "title": "Quiz: Files",
+  "description": "Check your understanding of Files.",
+  "questions": [
+    {
+      "id": "csharp-q-comment-26",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C#?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C#, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "csharp-q-concept-26",
+      "type": "mcq",
+      "question": "Why use \"with open(...)\" instead of open() + close()?",
+      "options": [
+        "It closes the file automatically, even on errors",
+        "It makes files bigger",
+        "It is required by all languages",
+        "It encrypts the file"
+      ],
+      "correctAnswer": "It closes the file automatically, even on errors",
+      "explanation": "Context managers prevent resource leaks."
+    },
+    {
+      "id": "csharp-q-tf-26",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "csharp-q-fill-26",
+      "type": "fill-blank",
+      "question": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+      "correctAnswer": "a",
+      "explanation": "\"a\" means append."
+    },
+    {
+      "id": "csharp-q-out-26",
+      "type": "mcq",
+      "question": "In C#, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

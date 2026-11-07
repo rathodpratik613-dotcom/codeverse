@@ -1,0 +1,47 @@
+{
+  "id": "lesson-17",
+  "title": "SEO and Meta Tags",
+  "summary": "Meta tags in <head> describe your page to search engines: <title>, <meta name=\"description\">, Open Graph tags for social shares, canonical U",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand seo and meta tags",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Meta tags in <head> describe your page to search engines: <title>, <meta name=\"description\">, Open Graph tags for social shares, canonical URLs, and robots directives."
+    },
+    {
+      "type": "text",
+      "content": "One H1, descriptive titles, fast pages, and semantic content all rank better. Structured data (JSON-LD) enables rich results like FAQ boxes."
+    },
+    {
+      "type": "text",
+      "content": "Key points: title ~50-60 chars, description ~150-160, every page needs unique meta, and sitemap.xml helps crawlers discover pages."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<head>\n    <title>Learn HTML - Guide</title>\n    <meta name=\"description\" content=\"A beginner guide to HTML.\">\n    <link rel=\"canonical\" href=\"https://site.com/page\">\n</head>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: SEO and Meta Tags — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: title ~50-60 chars, description ~150-160, every page needs unique meta, and sitemap.xml helps crawlers discover pages."
+  ],
+  "quizRefs": [
+    "html-quiz-17"
+  ],
+  "challengeRefs": [
+    "html-challenge-m3-3"
+  ],
+  "nextLessonId": "lesson-18"
+}

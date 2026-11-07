@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-15",
+  "title": "Quiz: Borders and Outlines",
+  "description": "Check your understanding of Borders and Outlines.",
+  "questions": [
+    {
+      "id": "css-q-comment-15",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-15",
+      "type": "mcq",
+      "question": "What is the main advantage of outline over border?",
+      "options": [
+        "It does not affect layout",
+        "It is thicker",
+        "It supports gradients",
+        "It is required for buttons"
+      ],
+      "correctAnswer": "It does not affect layout",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-15",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-15",
+      "type": "mcq",
+      "question": "What is the main purpose of the Borders and Outlines technique shown in this lesson?",
+      "options": [
+        "Borders and Outlines",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Borders and Outlines",
+      "explanation": "It exists to help you borders and outlines effectively."
+    },
+    {
+      "id": "css-q-out-15",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

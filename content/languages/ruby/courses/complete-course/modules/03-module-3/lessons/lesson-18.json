@@ -1,0 +1,47 @@
+{
+  "id": "lesson-18",
+  "title": "Built-in Functions",
+  "summary": "Languages ship with libraries of ready-made functions: length, round, random, sorting, string helpers, and more. Learning the standard toolb",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand built-in functions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Languages ship with libraries of ready-made functions: length, round, random, sorting, string helpers, and more. Learning the standard toolbox saves you from reinventing basics."
+    },
+    {
+      "type": "text",
+      "content": "The exact names differ per language, but the categories are universal: string functions, math functions, collection functions, and conversion functions."
+    },
+    {
+      "type": "text",
+      "content": "Key points: check official docs for your language's built-ins — they are faster and better tested than hand-rolled versions."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "# Common built-ins you will meet:\n# length/count, round/floor/ceil, min/max, sort, join/split",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Built-in Functions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: check official docs for your language's built-ins — they are faster and better tested than hand-rolled versions."
+  ],
+  "quizRefs": [
+    "ruby-quiz-18"
+  ],
+  "challengeRefs": [
+    "ruby-challenge-m3-3"
+  ],
+  "nextLessonId": "lesson-19"
+}

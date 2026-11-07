@@ -1,0 +1,47 @@
+{
+  "id": "lesson-09",
+  "title": "Aggregate Functions",
+  "summary": "Aggregates summarize: COUNT rows, SUM/AVG numbers, MIN/MAX extremes, GROUP_CONCAT strings. They collapse many rows into one result.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand aggregate functions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Aggregates summarize: COUNT rows, SUM/AVG numbers, MIN/MAX extremes, GROUP_CONCAT strings. They collapse many rows into one result."
+    },
+    {
+      "type": "text",
+      "content": "With GROUP BY they summarize per group: COUNT orders per customer. HAVING filters the groups (WHERE filters rows before grouping)."
+    },
+    {
+      "type": "text",
+      "content": "Key points: COUNT(*) counts rows, COUNT(col) skips NULLs, AVG returns decimal, and empty groups produce no rows."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score\nFROM players\nGROUP BY city\nHAVING COUNT(*) > 10;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Aggregate Functions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: COUNT(*) counts rows, COUNT(col) skips NULLs, AVG returns decimal, and empty groups produce no rows."
+  ],
+  "quizRefs": [
+    "sql-quiz-09"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m2-3"
+  ],
+  "nextLessonId": "lesson-10"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-15",
+  "title": "Quiz: HTML5 Forms Advanced",
+  "description": "Check your understanding of HTML5 Forms Advanced.",
+  "questions": [
+    {
+      "id": "html-q-comment-15",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-15",
+      "type": "mcq",
+      "question": "What does <datalist> provide?",
+      "options": [
+        "Autocomplete suggestions for an input",
+        "A table of data",
+        "A dropdown of pages",
+        "Form validation errors"
+      ],
+      "correctAnswer": "Autocomplete suggestions for an input",
+      "explanation": "datalist offers suggestions while typing."
+    },
+    {
+      "id": "html-q-tf-15",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-15",
+      "type": "fill-blank",
+      "question": "Fill in the blank: autocomplete=\"${v}\"  // let browser fill the field",
+      "correctAnswer": "email/name/etc",
+      "explanation": "autocomplete tokens help password managers."
+    },
+    {
+      "id": "html-q-out-15",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

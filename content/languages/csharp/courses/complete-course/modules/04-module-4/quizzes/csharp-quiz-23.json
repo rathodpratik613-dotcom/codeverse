@@ -1,0 +1,59 @@
+{
+  "id": "csharp-quiz-23",
+  "title": "Quiz: Sorting and Searching",
+  "description": "Check your understanding of Sorting and Searching.",
+  "questions": [
+    {
+      "id": "csharp-q-comment-23",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C#?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C#, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "csharp-q-concept-23",
+      "type": "mcq",
+      "question": "Why is binary search faster than linear search?",
+      "options": [
+        "It halves the remaining items each step",
+        "It uses more memory",
+        "It runs on a faster CPU",
+        "It skips comparisons randomly"
+      ],
+      "correctAnswer": "It halves the remaining items each step",
+      "explanation": "Binary search needs sorted data and takes O(log n) time."
+    },
+    {
+      "id": "csharp-q-tf-23",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "csharp-q-fill-23",
+      "type": "fill-blank",
+      "question": "Fill in the blank: items.sort()  // arrange in ___ order",
+      "correctAnswer": "sorted",
+      "explanation": "Sort orders elements for predictable access."
+    },
+    {
+      "id": "csharp-q-out-23",
+      "type": "mcq",
+      "question": "In C#, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

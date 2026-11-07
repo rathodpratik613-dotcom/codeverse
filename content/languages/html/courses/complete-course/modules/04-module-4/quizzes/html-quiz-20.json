@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-20",
+  "title": "Quiz: Forms and Validation",
+  "description": "Check your understanding of Forms and Validation.",
+  "questions": [
+    {
+      "id": "html-q-comment-20",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-20",
+      "type": "mcq",
+      "question": "What does the required attribute do?",
+      "options": [
+        "Prevents submission when the field is empty",
+        "Hides the field",
+        "Makes it read-only",
+        "Adds a default value"
+      ],
+      "correctAnswer": "Prevents submission when the field is empty",
+      "explanation": "required enforces presence client-side."
+    },
+    {
+      "id": "html-q-tf-20",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-20",
+      "type": "fill-blank",
+      "question": "Fill in the blank: pattern=\"[0-9]{${n}}\"  // exactly n digits",
+      "correctAnswer": "5/10/etc",
+      "explanation": "pattern uses regex to constrain format."
+    },
+    {
+      "id": "html-q-out-20",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

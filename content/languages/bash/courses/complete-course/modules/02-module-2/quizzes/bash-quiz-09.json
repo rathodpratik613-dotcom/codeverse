@@ -1,0 +1,59 @@
+{
+  "id": "bash-quiz-09",
+  "title": "Quiz: While Loops",
+  "description": "Check your understanding of While Loops.",
+  "questions": [
+    {
+      "id": "bash-q-comment-9",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Bash?",
+      "options": [
+        "#",
+        "//",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "#",
+      "explanation": "In Bash, # marks a comment. Block comments use # (line comments only)."
+    },
+    {
+      "id": "bash-q-concept-9",
+      "type": "mcq",
+      "question": "What makes a while loop safe?",
+      "options": [
+        "Its condition eventually becomes false",
+        "It has a fixed iteration count",
+        "It always runs exactly once",
+        "It cannot contain breaks"
+      ],
+      "correctAnswer": "Its condition eventually becomes false",
+      "explanation": "A condition that never turns false loops forever."
+    },
+    {
+      "id": "bash-q-tf-9",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "bash-q-fill-9",
+      "type": "fill-blank",
+      "question": "Fill in the blank: $while count < 10 { ... }",
+      "correctAnswer": "while",
+      "explanation": "While repeats until the condition fails."
+    },
+    {
+      "id": "bash-q-out-9",
+      "type": "mcq",
+      "question": "In Bash, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

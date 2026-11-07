@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-13",
+  "title": "Quiz: Links Deep Dive",
+  "description": "Check your understanding of Links Deep Dive.",
+  "questions": [
+    {
+      "id": "html-q-comment-13",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-13",
+      "type": "mcq",
+      "question": "What does href=\"#section\" do?",
+      "options": [
+        "Jumps to the element with id=\"section\" on the same page",
+        "Opens a new website",
+        "Downloads a file",
+        "Sends an email"
+      ],
+      "correctAnswer": "Jumps to the element with id=\"section\" on the same page",
+      "explanation": "The # fragment references an element id."
+    },
+    {
+      "id": "html-q-tf-13",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-13",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <a href=\"${p}about.html\">About</a>",
+      "correctAnswer": "relative path",
+      "explanation": "Relative paths resolve from the current page."
+    },
+    {
+      "id": "html-q-out-13",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

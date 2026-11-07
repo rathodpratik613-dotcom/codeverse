@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-21",
+  "title": "Quiz: Date and Time",
+  "description": "Check your understanding of Date and Time.",
+  "questions": [
+    {
+      "id": "sql-q-comment-21",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-21",
+      "type": "mcq",
+      "question": "Why store timestamps in UTC?",
+      "options": [
+        "Timezone/DST safety",
+        "Smaller storage",
+        "Faster queries",
+        "Required by SQL"
+      ],
+      "correctAnswer": "Avoids timezone ambiguity and DST bugs",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-21",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-21",
+      "type": "mcq",
+      "question": "What is the main purpose of the Date and Time technique shown in this lesson?",
+      "options": [
+        "Date and Time",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Date and Time",
+      "explanation": "It exists to help you date and time effectively."
+    },
+    {
+      "id": "sql-q-out-21",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

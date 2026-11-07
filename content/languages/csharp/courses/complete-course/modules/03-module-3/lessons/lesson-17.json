@@ -1,0 +1,47 @@
+{
+  "id": "lesson-17",
+  "title": "Recursion",
+  "summary": "Recursion is a function calling itself to solve smaller versions of the same problem — like Russian nesting dolls.",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand recursion",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Recursion is a function calling itself to solve smaller versions of the same problem — like Russian nesting dolls."
+    },
+    {
+      "type": "text",
+      "content": "Every recursive function needs a base case (the simplest possible input) and a recursive case that moves toward it. Missing the base case means infinite recursion and a crash."
+    },
+    {
+      "type": "text",
+      "content": "Key points: recursion excels at tree-like problems (file systems, JSON), but loops are often simpler for plain repetition."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "using System;\n\nclass Program {\n    static void Main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n    }\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Recursion — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: recursion excels at tree-like problems (file systems, JSON), but loops are often simpler for plain repetition."
+  ],
+  "quizRefs": [
+    "csharp-quiz-17"
+  ],
+  "challengeRefs": [
+    "csharp-challenge-m3-2"
+  ],
+  "nextLessonId": "lesson-18"
+}

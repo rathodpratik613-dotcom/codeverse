@@ -1,0 +1,14 @@
+{
+  "id": "r",
+  "name": "R",
+  "icon": "📊",
+  "color": "#276DC3",
+  "description": "R complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "difficulty": "beginner",
+  "runtimeType": "simulated",
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-18",
+  "title": "Query Optimization",
+  "summary": "Fast queries: filter early (WHERE on indexed columns), select only needed columns, avoid SELECT *, prefer JOINs over correlated subqueries, ",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand query optimization",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Fast queries: filter early (WHERE on indexed columns), select only needed columns, avoid SELECT *, prefer JOINs over correlated subqueries, and paginate with LIMIT."
+    },
+    {
+      "type": "text",
+      "content": "EXPLAIN ANALYZE shows the execution plan — seq scans on big tables signal missing indexes; nested loops on big joins signal bad plans."
+    },
+    {
+      "type": "text",
+      "content": "Key points: measure before optimizing, index selective columns, avoid functions on indexed columns in WHERE (kills index use), and cache expensive aggregates."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "EXPLAIN ANALYZE\nSELECT * FROM orders WHERE user_id = 42;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Query Optimization — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: measure before optimizing, index selective columns, avoid functions on indexed columns in WHERE (kills index use), and cache expensive aggregates."
+  ],
+  "quizRefs": [
+    "sql-quiz-18"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m4-1"
+  ],
+  "nextLessonId": "lesson-19"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-09",
+  "title": "Attributes and Global Attributes",
+  "summary": "Attributes configure elements: href on links, src on images, class and id for CSS/JS hooks, style for inline CSS.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand attributes and global attributes",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Attributes configure elements: href on links, src on images, class and id for CSS/JS hooks, style for inline CSS."
+    },
+    {
+      "type": "text",
+      "content": "Global attributes work on every element: class (shared styling), id (unique identifier), title (tooltip), data-* (custom data), hidden, lang."
+    },
+    {
+      "type": "text",
+      "content": "Key points: attribute values go in quotes, class can hold multiple space-separated names, and id must be unique per page."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<p id=\"intro\" class=\"lead highlight\" title=\"A tooltip\">Text</p>\n<div data-user-id=\"42\">Custom data</div>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Attributes and Global Attributes — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: attribute values go in quotes, class can hold multiple space-separated names, and id must be unique per page."
+  ],
+  "quizRefs": [
+    "html-quiz-09"
+  ],
+  "challengeRefs": [
+    "html-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-10"
+}

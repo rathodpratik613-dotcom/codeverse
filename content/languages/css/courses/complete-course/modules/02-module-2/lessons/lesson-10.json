@@ -1,0 +1,47 @@
+{
+  "id": "lesson-10",
+  "title": "Responsive Design",
+  "summary": "Responsive design adapts to screen size: fluid units (%, rem, vw), media queries (@media), flexible images (max-width:100%), and mobile-firs",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand responsive design",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Responsive design adapts to screen size: fluid units (%, rem, vw), media queries (@media), flexible images (max-width:100%), and mobile-first thinking."
+    },
+    {
+      "type": "text",
+      "content": "Breakpoints target content needs, not devices — design for small screens first, then enhance upward."
+    },
+    {
+      "type": "text",
+      "content": "Key points: viewport meta enables media queries on mobile, clamp() fluidly scales values, and container queries now style by parent size."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "@media (max-width: 768px) {\n    .nav { flex-direction: column; }\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Responsive Design — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: viewport meta enables media queries on mobile, clamp() fluidly scales values, and container queries now style by parent size."
+  ],
+  "quizRefs": [
+    "css-quiz-10"
+  ],
+  "challengeRefs": [
+    "css-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-11"
+}

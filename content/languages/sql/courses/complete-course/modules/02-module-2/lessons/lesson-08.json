@@ -1,0 +1,47 @@
+{
+  "id": "lesson-08",
+  "title": "JOINs",
+  "summary": "JOINs combine tables on related columns: INNER JOIN keeps only matching rows, LEFT JOIN keeps all left rows (NULLs where no match), RIGHT/FU",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand joins",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "JOINs combine tables on related columns: INNER JOIN keeps only matching rows, LEFT JOIN keeps all left rows (NULLs where no match), RIGHT/FULL cover the other side."
+    },
+    {
+      "type": "text",
+      "content": "ON specifies the match condition (usually foreign key = primary key). Joins multiply rows when matches are one-to-many."
+    },
+    {
+      "type": "text",
+      "content": "Key points: pick the join type by which side must survive, alias tables (u.name) for readability, and check row counts — accidental cartesian products explode results."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT u.name, o.total\nFROM users u\nINNER JOIN orders o ON o.user_id = u.id;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: JOINs — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: pick the join type by which side must survive, alias tables (u.name) for readability, and check row counts — accidental cartesian products explode results."
+  ],
+  "quizRefs": [
+    "sql-quiz-08"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m2-2"
+  ],
+  "nextLessonId": "lesson-09"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "bash-quiz-08",
+  "title": "Quiz: For Loops",
+  "description": "Check your understanding of For Loops.",
+  "questions": [
+    {
+      "id": "bash-q-comment-8",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Bash?",
+      "options": [
+        "#",
+        "//",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "#",
+      "explanation": "In Bash, # marks a comment. Block comments use # (line comments only)."
+    },
+    {
+      "id": "bash-q-concept-8",
+      "type": "mcq",
+      "question": "A for loop is best when...",
+      "options": [
+        "you know how many times to repeat",
+        "the condition depends on user input forever",
+        "you want infinite repetition",
+        "you need random behavior"
+      ],
+      "correctAnswer": "you know how many times to repeat",
+      "explanation": "For loops count through a known sequence."
+    },
+    {
+      "id": "bash-q-tf-8",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "bash-q-fill-8",
+      "type": "fill-blank",
+      "question": "Fill in the blank: $for ... { repeat }",
+      "correctAnswer": "for",
+      "explanation": "The for keyword begins a counted loop."
+    },
+    {
+      "id": "bash-q-out-8",
+      "type": "mcq",
+      "question": "In Bash, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

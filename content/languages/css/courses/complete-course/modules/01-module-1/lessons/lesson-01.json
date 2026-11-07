@@ -1,0 +1,47 @@
+{
+  "id": "lesson-01",
+  "title": "How CSS Works",
+  "summary": "CSS (Cascading Style Sheets) controls presentation: colors, fonts, spacing, layout. It applies rules made of selectors and declarations.",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand how css works",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "CSS (Cascading Style Sheets) controls presentation: colors, fonts, spacing, layout. It applies rules made of selectors and declarations."
+    },
+    {
+      "type": "text",
+      "content": "The cascade decides conflicts: more specific selectors win, then later rules, then !important (use sparingly)."
+    },
+    {
+      "type": "text",
+      "content": "Key points: separate content (HTML) from presentation (CSS), external stylesheets beat inline styles for maintainability."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "body {\n    font-family: sans-serif;\n    color: #333;\n}\nh1 {\n    color: navy;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: How CSS Works — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: separate content (HTML) from presentation (CSS), external stylesheets beat inline styles for maintainability."
+  ],
+  "quizRefs": [
+    "css-quiz-01"
+  ],
+  "challengeRefs": [
+    "css-challenge-m1-1"
+  ],
+  "nextLessonId": "lesson-02"
+}

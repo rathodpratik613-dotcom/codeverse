@@ -1,0 +1,47 @@
+{
+  "id": "lesson-26",
+  "title": "Files",
+  "summary": "Files let programs persist data beyond a single run — save settings, read datasets, write reports.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand files",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Files let programs persist data beyond a single run — save settings, read datasets, write reports."
+    },
+    {
+      "type": "text",
+      "content": "The golden rule: use a \"with/open\" pattern that guarantees the file closes, even if an error occurs. Forgetting close() causes corrupted files and locked resources."
+    },
+    {
+      "type": "text",
+      "content": "Key points: common modes are read/write/append, always specify encoding for text, and check that files exist before reading."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "with open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n# file is auto-closed here",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Files — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: common modes are read/write/append, always specify encoding for text, and check that files exist before reading."
+  ],
+  "quizRefs": [
+    "ruby-quiz-26"
+  ],
+  "challengeRefs": [
+    "ruby-challenge-m5-2"
+  ],
+  "nextLessonId": "lesson-27"
+}

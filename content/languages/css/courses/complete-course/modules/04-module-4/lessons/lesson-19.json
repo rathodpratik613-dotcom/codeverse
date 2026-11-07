@@ -1,0 +1,47 @@
+{
+  "id": "lesson-19",
+  "title": "CSS Units",
+  "summary": "Units: px (fixed), % (parent-relative), em (element font-size), rem (root font-size), vw/vh (viewport), ch/ex (character-based), and math fu",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand css units",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Units: px (fixed), % (parent-relative), em (element font-size), rem (root font-size), vw/vh (viewport), ch/ex (character-based), and math functions calc/min/max/clamp."
+    },
+    {
+      "type": "text",
+      "content": "Prefer rem for typography, %/fr for layout proportions, vw/vh sparingly (mobile URL bars shift vh). clamp() gives fluid sizing without media queries."
+    },
+    {
+      "type": "text",
+      "content": "Key points: 1rem = root font-size (16px default), em compounds when nested, and vmin/vmax pick the smaller/larger viewport dimension."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".hero {\n    font-size: clamp(1.5rem, 4vw, 3rem);\n    width: min(90%, 1200px);\n    margin: 0 auto;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Units — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: 1rem = root font-size (16px default), em compounds when nested, and vmin/vmax pick the smaller/larger viewport dimension."
+  ],
+  "quizRefs": [
+    "css-quiz-19"
+  ],
+  "challengeRefs": [
+    "css-challenge-m4-1"
+  ],
+  "nextLessonId": "lesson-20"
+}

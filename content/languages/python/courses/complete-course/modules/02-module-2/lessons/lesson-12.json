@@ -1,0 +1,47 @@
+{
+  "id": "lesson-12",
+  "title": "Nested Loops",
+  "summary": "A loop inside a loop processes combinations — rows and columns, every pair of items, or repeated patterns. The inner loop completes fully fo",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand nested loops",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "A loop inside a loop processes combinations — rows and columns, every pair of items, or repeated patterns. The inner loop completes fully for each outer iteration."
+    },
+    {
+      "type": "text",
+      "content": "Nested loops multiply work: an outer loop of N and inner of M runs the inner body N×M times. Keep nesting shallow for speed and clarity."
+    },
+    {
+      "type": "text",
+      "content": "Key points: inner loop variables must differ from outer ones, and indentation makes nesting visible at a glance."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "for row in range(3) {\n    for col in range(3) {\n        print(\"*\")\n    }\n}",
+      "language": "python"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Nested Loops — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: inner loop variables must differ from outer ones, and indentation makes nesting visible at a glance."
+  ],
+  "quizRefs": [
+    "python-quiz-12"
+  ],
+  "challengeRefs": [
+    "python-challenge-m2-3"
+  ],
+  "nextLessonId": "lesson-13"
+}

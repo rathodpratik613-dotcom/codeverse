@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-03",
+  "title": "Quiz: Colors and Backgrounds",
+  "description": "Check your understanding of Colors and Backgrounds.",
+  "questions": [
+    {
+      "id": "css-q-comment-3",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-3",
+      "type": "mcq",
+      "question": "How do you make a semi-transparent color?",
+      "options": [
+        "rgba() or hsla()",
+        "Only named colors",
+        "opacity on the html tag",
+        "You cannot"
+      ],
+      "correctAnswer": "rgba() or hsla()",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-3",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-3",
+      "type": "mcq",
+      "question": "What is the main purpose of the Colors and Backgrounds technique shown in this lesson?",
+      "options": [
+        "Colors and Backgrounds",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Colors and Backgrounds",
+      "explanation": "It exists to help you colors and backgrounds effectively."
+    },
+    {
+      "id": "css-q-out-3",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

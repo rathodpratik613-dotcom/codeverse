@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-19",
+  "title": "Quiz: NULL Handling",
+  "description": "Check your understanding of NULL Handling.",
+  "questions": [
+    {
+      "id": "sql-q-comment-19",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-19",
+      "type": "mcq",
+      "question": "What does COALESCE(nickname, name) return?",
+      "options": [
+        "nickname else name",
+        "Always nickname",
+        "Always name",
+        "Empty string"
+      ],
+      "correctAnswer": "nickname if not NULL, else name",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-19",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-19",
+      "type": "mcq",
+      "question": "What is the main purpose of the NULL Handling technique shown in this lesson?",
+      "options": [
+        "NULL Handling",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "NULL Handling",
+      "explanation": "It exists to help you null handling effectively."
+    },
+    {
+      "id": "sql-q-out-19",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

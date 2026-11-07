@@ -1,0 +1,59 @@
+{
+  "id": "r-quiz-02",
+  "title": "Quiz: Comments",
+  "description": "Check your understanding of Comments.",
+  "questions": [
+    {
+      "id": "r-q-comment-2",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in R?",
+      "options": [
+        "#",
+        "//",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "#",
+      "explanation": "In R, # marks a comment. Block comments use # (line comments only)."
+    },
+    {
+      "id": "r-q-concept-2",
+      "type": "mcq",
+      "question": "What is the correct comment syntax?",
+      "options": [
+        "#",
+        "{wrong1}",
+        "{wrong2}",
+        "{wrong3}"
+      ],
+      "correctAnswer": "#",
+      "explanation": "Each language has one official comment marker."
+    },
+    {
+      "id": "r-q-tf-2",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "r-q-fill-2",
+      "type": "fill-blank",
+      "question": "Fill in the blank: # write a note here",
+      "correctAnswer": "#",
+      "explanation": "The line-comment marker starts a comment."
+    },
+    {
+      "id": "r-q-out-2",
+      "type": "mcq",
+      "question": "In R, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

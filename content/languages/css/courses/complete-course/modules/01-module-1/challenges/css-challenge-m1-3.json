@@ -1,0 +1,28 @@
+{
+  "id": "css-challenge-m1-3",
+  "title": "Getting Started Practice 3",
+  "difficulty": 3,
+  "statement": "Module 1 (Getting Started) covers: how css works, selectors, colors and backgrounds, typography, the box model, display property. Solve this practice problem using what you learned.\n\nExercise 3: write a small program that demonstrates one concept from this module (Colors and Backgrounds).",
+  "starterCode": "/* */ Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Colors and Backgrounds lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "body {\n    font-family: sans-serif;\n}\nh1 {\n    color: blue;\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 50,
+  "coinReward": 25,
+  "tags": [
+    "css",
+    "module-1"
+  ]
+}

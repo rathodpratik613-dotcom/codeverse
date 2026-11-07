@@ -1,0 +1,47 @@
+{
+  "id": "lesson-10",
+  "title": "Subqueries",
+  "summary": "A subquery is a query inside another query — in WHERE, FROM, or SELECT. They answer \"rows matching a condition computed from other rows\".",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand subqueries",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "A subquery is a query inside another query — in WHERE, FROM, or SELECT. They answer \"rows matching a condition computed from other rows\"."
+    },
+    {
+      "type": "text",
+      "content": "IN checks membership: WHERE id IN (SELECT ...). EXISTS tests existence efficiently. Correlated subqueries reference outer rows (slower)."
+    },
+    {
+      "type": "text",
+      "content": "Key points: prefer JOINs when possible (usually clearer/faster), but subqueries shine for \"exists\" checks and single-value lookups."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT name FROM users\nWHERE id IN (\n    SELECT user_id FROM orders WHERE total > 100\n);",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Subqueries — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: prefer JOINs when possible (usually clearer/faster), but subqueries shine for \"exists\" checks and single-value lookups."
+  ],
+  "quizRefs": [
+    "sql-quiz-10"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-11"
+}

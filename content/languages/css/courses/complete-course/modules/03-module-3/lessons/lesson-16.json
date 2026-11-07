@@ -1,0 +1,47 @@
+{
+  "id": "lesson-16",
+  "title": "Overflow and Clipping",
+  "summary": "overflow controls content escaping the box: visible (default), hidden (clip), scroll (always bars), auto (bars when needed). overflow-x/y co",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand overflow and clipping",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "overflow controls content escaping the box: visible (default), hidden (clip), scroll (always bars), auto (bars when needed). overflow-x/y control axes independently."
+    },
+    {
+      "type": "text",
+      "content": "text-overflow: ellipsis + white-space: nowrap + overflow: hidden creates the classic \"...\" truncation. clip-path cuts shapes."
+    },
+    {
+      "type": "text",
+      "content": "Key points: hidden creates a scroll container you can still scroll via JS, scroll-behavior: smooth animates anchors, and overscroll-behavior stops scroll chaining."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".card {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Overflow and Clipping — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: hidden creates a scroll container you can still scroll via JS, scroll-behavior: smooth animates anchors, and overscroll-behavior stops scroll chaining."
+  ],
+  "quizRefs": [
+    "css-quiz-16"
+  ],
+  "challengeRefs": [
+    "css-challenge-m3-3"
+  ],
+  "nextLessonId": "lesson-17"
+}

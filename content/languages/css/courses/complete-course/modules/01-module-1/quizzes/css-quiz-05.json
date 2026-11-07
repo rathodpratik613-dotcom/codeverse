@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-05",
+  "title": "Quiz: The Box Model",
+  "description": "Check your understanding of The Box Model.",
+  "questions": [
+    {
+      "id": "css-q-comment-5",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-5",
+      "type": "mcq",
+      "question": "With box-sizing: border-box and width:300px + padding:20px, total width is?",
+      "options": [
+        "300px",
+        "340px",
+        "320px",
+        "280px"
+      ],
+      "correctAnswer": "300px",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-5",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-5",
+      "type": "mcq",
+      "question": "What is the main purpose of the The Box Model technique shown in this lesson?",
+      "options": [
+        "The Box Model",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "The Box Model",
+      "explanation": "It exists to help you the box model effectively."
+    },
+    {
+      "id": "css-q-out-5",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-24",
+  "title": "Quiz: HTML Performance",
+  "description": "Check your understanding of HTML Performance.",
+  "questions": [
+    {
+      "id": "html-q-comment-24",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-24",
+      "type": "mcq",
+      "question": "What does defer on a script tag do?",
+      "options": [
+        "Downloads in parallel but executes after HTML parsing",
+        "Skips the script entirely",
+        "Runs before the page loads",
+        "Caches the script forever"
+      ],
+      "correctAnswer": "Downloads in parallel but executes after HTML parsing",
+      "explanation": "defer removes render-blocking without losing order."
+    },
+    {
+      "id": "html-q-tf-24",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-24",
+      "type": "fill-blank",
+      "question": "Fill in the blank: loading=\"${v}\" on below-fold images",
+      "correctAnswer": "lazy",
+      "explanation": "Lazy loading defers off-screen resources."
+    },
+    {
+      "id": "html-q-out-24",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-07",
+  "title": "Flexbox",
+  "summary": "Flexbox lays out items in a row or column with alignment control: justify-content (main axis), align-items (cross axis), gap for spacing.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand flexbox",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Flexbox lays out items in a row or column with alignment control: justify-content (main axis), align-items (cross axis), gap for spacing."
+    },
+    {
+      "type": "text",
+      "content": "It replaced float hacks for navbars, card rows, and centering. flex: 1 makes items share space equally."
+    },
+    {
+      "type": "text",
+      "content": "Key points: flex-direction changes axis, flex-wrap allows multiple lines, and align-self overrides align-items per item."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".row {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 16px;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Flexbox — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: flex-direction changes axis, flex-wrap allows multiple lines, and align-self overrides align-items per item."
+  ],
+  "quizRefs": [
+    "css-quiz-07"
+  ],
+  "challengeRefs": [
+    "css-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-08"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-07",
+  "title": "Quiz: Semantic HTML",
+  "description": "Check your understanding of Semantic HTML.",
+  "questions": [
+    {
+      "id": "html-q-comment-7",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-7",
+      "type": "mcq",
+      "question": "Why prefer <main> over <div class=\"main\">?",
+      "options": [
+        "It conveys meaning to browsers, SEO, and assistive tech",
+        "It is faster to type",
+        "Divs are deprecated",
+        "It adds colors automatically"
+      ],
+      "correctAnswer": "It conveys meaning to browsers, SEO, and assistive tech",
+      "explanation": "Semantics communicate structure, not just appearance."
+    },
+    {
+      "id": "html-q-tf-7",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-7",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <${tag}>primary page content</${tag}>",
+      "correctAnswer": "main",
+      "explanation": "main wraps the dominant content."
+    },
+    {
+      "id": "html-q-out-7",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-29",
+  "title": "Async and Concurrency",
+  "summary": "Async programming handles many tasks without waiting — fetching web data, timers, parallel downloads. Instead of blocking, you schedule work",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand async and concurrency",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Async programming handles many tasks without waiting — fetching web data, timers, parallel downloads. Instead of blocking, you schedule work and continue."
+    },
+    {
+      "type": "text",
+      "content": "Callbacks, promises, and async/await are common patterns. The key mental shift: operations that take time should not freeze the whole program."
+    },
+    {
+      "type": "text",
+      "content": "Key points: async code runs \"later\", ordering is not guaranteed unless you await, and race conditions appear when tasks share state."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "# fetch data without blocking the UI\n# await getData()  // pause THIS function only",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Async and Concurrency — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: async code runs \"later\", ordering is not guaranteed unless you await, and race conditions appear when tasks share state."
+  ],
+  "quizRefs": [
+    "r-quiz-29"
+  ],
+  "challengeRefs": [
+    "r-challenge-m5-2"
+  ],
+  "nextLessonId": "lesson-30"
+}

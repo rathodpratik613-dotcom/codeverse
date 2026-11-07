@@ -1,0 +1,47 @@
+{
+  "id": "lesson-17",
+  "title": "Transforms",
+  "summary": "transform moves/rotates/scales/skews elements without affecting layout: translate, rotate, scale, skew, matrix. transform-origin sets the pi",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand transforms",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "transform moves/rotates/scales/skews elements without affecting layout: translate, rotate, scale, skew, matrix. transform-origin sets the pivot point."
+    },
+    {
+      "type": "text",
+      "content": "3D transforms (rotateX/Y, perspective) add depth. Transforms combine by listing functions: transform: translateX(10px) rotate(45deg)."
+    },
+    {
+      "type": "text",
+      "content": "Key points: transforms are compositor-friendly, they do not trigger reflow, and percentage translates refer to the element's own size."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".badge {\n    transform: rotate(-5deg) scale(1.1);\n    transform-origin: center;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Transforms — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: transforms are compositor-friendly, they do not trigger reflow, and percentage translates refer to the element's own size."
+  ],
+  "quizRefs": [
+    "css-quiz-17"
+  ],
+  "challengeRefs": [
+    "css-challenge-m3-1"
+  ],
+  "nextLessonId": "lesson-18"
+}

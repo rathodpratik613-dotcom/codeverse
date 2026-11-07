@@ -1,0 +1,59 @@
+{
+  "id": "typescript-quiz-12",
+  "title": "Quiz: Nested Loops",
+  "description": "Check your understanding of Nested Loops.",
+  "questions": [
+    {
+      "id": "typescript-q-comment-12",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in TypeScript?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In TypeScript, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "typescript-q-concept-12",
+      "type": "mcq",
+      "question": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+      "options": [
+        "20 times",
+        "9 times",
+        "5 times",
+        "4 times"
+      ],
+      "correctAnswer": "20 times",
+      "explanation": "Nested loops multiply: 4 × 5 = 20."
+    },
+    {
+      "id": "typescript-q-tf-12",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "typescript-q-fill-12",
+      "type": "fill-blank",
+      "question": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+      "correctAnswer": "nested loops",
+      "explanation": "A loop inside a loop is called nesting."
+    },
+    {
+      "id": "typescript-q-out-12",
+      "type": "mcq",
+      "question": "In TypeScript, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

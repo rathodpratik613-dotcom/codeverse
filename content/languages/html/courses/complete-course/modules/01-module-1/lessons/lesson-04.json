@@ -1,0 +1,47 @@
+{
+  "id": "lesson-04",
+  "title": "Links and Images",
+  "summary": "The <a> tag creates hyperlinks with href pointing to a URL; <img> embeds images with src. Both are void-ish elements — <a> wraps content, <i",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand links and images",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "The <a> tag creates hyperlinks with href pointing to a URL; <img> embeds images with src. Both are void-ish elements — <a> wraps content, <img> stands alone."
+    },
+    {
+      "type": "text",
+      "content": "Always add alt text to images (accessibility + SEO), and use target=\"_blank\" to open links in a new tab when appropriate."
+    },
+    {
+      "type": "text",
+      "content": "Key points: relative vs absolute URLs, # links jump to page sections via id, and images need width/height hints to avoid layout shift."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<a href=\"https://example.com\">Visit Example</a>\n<img src=\"photo.jpg\" alt=\"A description of the photo\" width=\"400\">",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Links and Images — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: relative vs absolute URLs, # links jump to page sections via id, and images need width/height hints to avoid layout shift."
+  ],
+  "quizRefs": [
+    "html-quiz-04"
+  ],
+  "challengeRefs": [
+    "html-challenge-m1-1"
+  ],
+  "nextLessonId": "lesson-05"
+}

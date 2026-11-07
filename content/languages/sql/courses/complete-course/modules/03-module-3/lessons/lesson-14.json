@@ -1,0 +1,47 @@
+{
+  "id": "lesson-14",
+  "title": "Views",
+  "summary": "A view is a saved query that acts like a virtual table: CREATE VIEW recent_users AS SELECT ... Then query it like a table.",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand views",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "A view is a saved query that acts like a virtual table: CREATE VIEW recent_users AS SELECT ... Then query it like a table."
+    },
+    {
+      "type": "text",
+      "content": "Views simplify complex queries, enforce row-level security (show only allowed columns/rows), and insulate apps from schema changes."
+    },
+    {
+      "type": "text",
+      "content": "Key points: views do not store data (computed each use), some are updatable, and materialized views (Postgres) cache results for speed."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "CREATE VIEW active_users AS\nSELECT id, name FROM users WHERE active = true;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Views — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: views do not store data (computed each use), some are updatable, and materialized views (Postgres) cache results for speed."
+  ],
+  "quizRefs": [
+    "sql-quiz-14"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m3-2"
+  ],
+  "nextLessonId": "lesson-15"
+}

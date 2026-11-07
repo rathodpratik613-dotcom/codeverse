@@ -1,0 +1,28 @@
+{
+  "id": "dart-challenge-m4-3",
+  "title": "Data Structures Practice 3",
+  "difficulty": 5,
+  "statement": "Module 4 (Data Structures) covers: arrays and lists, strings, dictionaries and maps, sets, sorting and searching, objects and structures. Solve this practice problem using what you learned.\n\nExercise 3: write a small program that demonstrates one concept from this module (Dictionaries and Maps).",
+  "starterCode": "// Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Dictionaries and Maps lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "void main() {\nvoid main() {\n  print(\"Hello, World!\");\n}\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 50,
+  "coinReward": 25,
+  "tags": [
+    "dart",
+    "module-4"
+  ]
+}

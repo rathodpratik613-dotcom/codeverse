@@ -1,0 +1,47 @@
+{
+  "id": "lesson-07",
+  "title": "UPDATE and DELETE",
+  "summary": "UPDATE changes rows matching WHERE; DELETE removes them. Both are dangerous without WHERE — they affect EVERY row in the table.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand update and delete",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "UPDATE changes rows matching WHERE; DELETE removes them. Both are dangerous without WHERE — they affect EVERY row in the table."
+    },
+    {
+      "type": "text",
+      "content": "Always preview with SELECT first using the same WHERE clause. Transactions let you rollback mistakes."
+    },
+    {
+      "type": "text",
+      "content": "Key points: UPDATE t SET col = val WHERE cond, DELETE FROM t WHERE cond, and there is no undo without backups/transactions."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "UPDATE users SET age = 31 WHERE name = 'Amy';\nDELETE FROM logs WHERE created_at < '2020-01-01';",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: UPDATE and DELETE — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: UPDATE t SET col = val WHERE cond, DELETE FROM t WHERE cond, and there is no undo without backups/transactions."
+  ],
+  "quizRefs": [
+    "sql-quiz-07"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-08"
+}

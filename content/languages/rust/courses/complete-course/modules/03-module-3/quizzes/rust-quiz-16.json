@@ -1,0 +1,59 @@
+{
+  "id": "rust-quiz-16",
+  "title": "Quiz: Scope",
+  "description": "Check your understanding of Scope.",
+  "questions": [
+    {
+      "id": "rust-q-comment-16",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Rust?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Rust, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "rust-q-concept-16",
+      "type": "mcq",
+      "question": "A variable declared inside a function is...",
+      "options": [
+        "local — visible only within that function",
+        "global — visible everywhere",
+        "permanent — stored on disk",
+        "invisible to its own function"
+      ],
+      "correctAnswer": "local — visible only within that function",
+      "explanation": "Function bodies create their own scope."
+    },
+    {
+      "id": "rust-q-tf-16",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "rust-q-fill-16",
+      "type": "fill-blank",
+      "question": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+      "correctAnswer": "local",
+      "explanation": "Names inside functions default to local scope."
+    },
+    {
+      "id": "rust-q-out-16",
+      "type": "mcq",
+      "question": "In Rust, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

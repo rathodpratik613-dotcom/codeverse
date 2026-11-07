@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-10",
+  "title": "Quiz: Responsive Design",
+  "description": "Check your understanding of Responsive Design.",
+  "questions": [
+    {
+      "id": "css-q-comment-10",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-10",
+      "type": "mcq",
+      "question": "What enables media queries to work on phones?",
+      "options": [
+        "The viewport meta tag",
+        "display:flex",
+        "position:fixed",
+        "Nothing needed"
+      ],
+      "correctAnswer": "The viewport meta tag",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-10",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-10",
+      "type": "mcq",
+      "question": "What is the main purpose of the Responsive Design technique shown in this lesson?",
+      "options": [
+        "Responsive Design",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Responsive Design",
+      "explanation": "It exists to help you responsive design effectively."
+    },
+    {
+      "id": "css-q-out-10",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

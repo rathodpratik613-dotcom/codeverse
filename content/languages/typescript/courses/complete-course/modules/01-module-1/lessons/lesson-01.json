@@ -1,0 +1,47 @@
+{
+  "id": "lesson-01",
+  "title": "Hello World",
+  "summary": "Every programming journey starts with printing your first message. A \"Hello World\" program proves your tools work and shows the basic shape ",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand hello world",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Every programming journey starts with printing your first message. A \"Hello World\" program proves your tools work and shows the basic shape of a program: code goes in, output comes out."
+    },
+    {
+      "type": "text",
+      "content": "Read the example line by line. The only job of this program is to send the text \"Hello, World!\" to the screen. Once you can do this, every other program is just bigger versions of the same idea."
+    },
+    {
+      "type": "text",
+      "content": "Key points: programs run top to bottom, output functions differ per language, and small programs build confidence."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "console.log(\"Hello, World!\");",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Hello World — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: programs run top to bottom, output functions differ per language, and small programs build confidence."
+  ],
+  "quizRefs": [
+    "typescript-quiz-01"
+  ],
+  "challengeRefs": [
+    "typescript-challenge-m1-1"
+  ],
+  "nextLessonId": "lesson-02"
+}

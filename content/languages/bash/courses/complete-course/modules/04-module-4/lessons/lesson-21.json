@@ -1,0 +1,47 @@
+{
+  "id": "lesson-21",
+  "title": "Dictionaries and Maps",
+  "summary": "Dictionaries (hash maps) store key-value pairs: look up a value instantly by its key instead of scanning a list.",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand dictionaries and maps",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Dictionaries (hash maps) store key-value pairs: look up a value instantly by its key instead of scanning a list."
+    },
+    {
+      "type": "text",
+      "content": "Think of a real dictionary: word -> definition. In code: username -> user object, or product id -> price. Keys must be unique."
+    },
+    {
+      "type": "text",
+      "content": "Key points: average lookup is extremely fast, keys are often strings or numbers, and missing keys need safe handling (.get / has checks)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "user = { \"name\": \"Alice\", \"age\": 30 }\necho user[\"name\"]  # look up by key",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Dictionaries and Maps — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: average lookup is extremely fast, keys are often strings or numbers, and missing keys need safe handling (.get / has checks)."
+  ],
+  "quizRefs": [
+    "bash-quiz-21"
+  ],
+  "challengeRefs": [
+    "bash-challenge-m4-3"
+  ],
+  "nextLessonId": "lesson-22"
+}

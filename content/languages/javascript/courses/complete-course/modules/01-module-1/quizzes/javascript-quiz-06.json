@@ -1,0 +1,59 @@
+{
+  "id": "javascript-quiz-06",
+  "title": "Quiz: Operators",
+  "description": "Check your understanding of Operators.",
+  "questions": [
+    {
+      "id": "javascript-q-comment-6",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in JavaScript?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In JavaScript, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "javascript-q-concept-6",
+      "type": "mcq",
+      "question": "What is 10 % 3 in most languages?",
+      "options": [
+        "1 (the remainder)",
+        "3.33",
+        "30",
+        "0"
+      ],
+      "correctAnswer": "1 (the remainder)",
+      "explanation": "% is the modulo operator — it returns the remainder."
+    },
+    {
+      "id": "javascript-q-tf-6",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "javascript-q-fill-6",
+      "type": "fill-blank",
+      "question": "Fill in the blank: result = 7 operator 2   // result is 5",
+      "correctAnswer": "-",
+      "explanation": "The minus operator subtracts."
+    },
+    {
+      "id": "javascript-q-out-6",
+      "type": "mcq",
+      "question": "In JavaScript, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

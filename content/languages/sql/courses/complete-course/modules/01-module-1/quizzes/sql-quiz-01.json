@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-01",
+  "title": "Quiz: What is SQL",
+  "description": "Check your understanding of What is SQL.",
+  "questions": [
+    {
+      "id": "sql-q-comment-1",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-1",
+      "type": "mcq",
+      "question": "What kind of data does SQL manage?",
+      "options": [
+        "Structured data in relational tables",
+        "Unstructured text files",
+        "Images and video",
+        "Server configuration"
+      ],
+      "correctAnswer": "Structured data in relational tables",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-1",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-1",
+      "type": "mcq",
+      "question": "What is the main purpose of the What is SQL technique shown in this lesson?",
+      "options": [
+        "What is SQL",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "What is SQL",
+      "explanation": "It exists to help you what is sql effectively."
+    },
+    {
+      "id": "sql-q-out-1",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

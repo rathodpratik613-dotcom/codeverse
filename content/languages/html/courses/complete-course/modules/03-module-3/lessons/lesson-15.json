@@ -1,0 +1,47 @@
+{
+  "id": "lesson-15",
+  "title": "HTML5 Forms Advanced",
+  "summary": "Modern forms include datalist autocomplete, output elements, and the :invalid/:valid CSS states for live feedback. The FormData API reads su",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand html5 forms advanced",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Modern forms include datalist autocomplete, output elements, and the :invalid/:valid CSS states for live feedback. The FormData API reads submissions in JavaScript."
+    },
+    {
+      "type": "text",
+      "content": "Pattern attributes validate formats (emails, codes), min/max constrain numbers, and formaction overrides per-button."
+    },
+    {
+      "type": "text",
+      "content": "Key points: never trust client validation alone — always validate server-side too, and use autocomplete attributes so browsers can fill correctly."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<input list=\"colors\" name=\"fav\">\n<datalist id=\"colors\">\n    <option value=\"Red\">\n    <option value=\"Blue\">\n</datalist>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML5 Forms Advanced — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: never trust client validation alone — always validate server-side too, and use autocomplete attributes so browsers can fill correctly."
+  ],
+  "quizRefs": [
+    "html-quiz-15"
+  ],
+  "challengeRefs": [
+    "html-challenge-m3-1"
+  ],
+  "nextLessonId": "lesson-16"
+}

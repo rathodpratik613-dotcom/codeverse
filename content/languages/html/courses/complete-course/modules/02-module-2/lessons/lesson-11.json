@@ -1,0 +1,47 @@
+{
+  "id": "lesson-11",
+  "title": "HTML Entities",
+  "summary": "Some characters are special in HTML: < starts a tag, & starts an entity, > closes one. To display them literally, use entity codes like &lt;",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand html entities",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Some characters are special in HTML: < starts a tag, & starts an entity, > closes one. To display them literally, use entity codes like &lt; &gt; &amp; &nbsp;."
+    },
+    {
+      "type": "text",
+      "content": "Entities also cover symbols and international characters: &copy; ©, &euro; €, &mdash; —, and numeric forms like &#65; for A."
+    },
+    {
+      "type": "text",
+      "content": "Key points: always escape user-generated content to prevent broken pages and XSS, and &nbsp; prevents unwanted line breaks in phrases."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<p>5 &lt; 10 and 10 &gt; 5 is &amp; logic</p>\n<p>Copyright &copy; 2026 &mdash; Tom &amp; Jerry</p>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML Entities — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: always escape user-generated content to prevent broken pages and XSS, and &nbsp; prevents unwanted line breaks in phrases."
+  ],
+  "quizRefs": [
+    "html-quiz-11"
+  ],
+  "challengeRefs": [
+    "html-challenge-m2-3"
+  ],
+  "nextLessonId": "lesson-12"
+}

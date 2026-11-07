@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-21",
+  "title": "Quiz: Tables Advanced",
+  "description": "Check your understanding of Tables Advanced.",
+  "questions": [
+    {
+      "id": "html-q-comment-21",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-21",
+      "type": "mcq",
+      "question": "What does scope=\"col\" on a <th> tell assistive tech?",
+      "options": [
+        "This header applies to the cells below it in the column",
+        "The column is sortable",
+        "The cell is hidden",
+        "The table has 5 columns"
+      ],
+      "correctAnswer": "This header applies to the cells below it in the column",
+      "explanation": "scope associates headers with their data cells."
+    },
+    {
+      "id": "html-q-tf-21",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-21",
+      "type": "fill-blank",
+      "question": "Fill in the blank: colspan=\"${n}\"  // cell spans n columns",
+      "correctAnswer": "2/3/etc",
+      "explanation": "colspan merges cells horizontally."
+    },
+    {
+      "id": "html-q-out-21",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

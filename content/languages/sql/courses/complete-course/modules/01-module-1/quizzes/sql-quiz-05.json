@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-05",
+  "title": "Quiz: Creating Tables",
+  "description": "Check your understanding of Creating Tables.",
+  "questions": [
+    {
+      "id": "sql-q-comment-5",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-5",
+      "type": "mcq",
+      "question": "Why use DECIMAL instead of FLOAT for money?",
+      "options": [
+        "FLOAT rounds unpredictably",
+        "DECIMAL is faster",
+        "FLOAT cannot store money",
+        "No difference"
+      ],
+      "correctAnswer": "FLOAT has rounding errors — DECIMAL is exact",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-5",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-5",
+      "type": "mcq",
+      "question": "What is the main purpose of the Creating Tables technique shown in this lesson?",
+      "options": [
+        "Creating Tables",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Creating Tables",
+      "explanation": "It exists to help you creating tables effectively."
+    },
+    {
+      "id": "sql-q-out-5",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

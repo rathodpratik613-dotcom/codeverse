@@ -1,0 +1,28 @@
+{
+  "id": "html-challenge-m2-1",
+  "title": "Control Flow Practice 1",
+  "difficulty": 2,
+  "statement": "Module 2 (Control Flow) covers: attributes and global attributes, divs and spans, html entities, comments in html, links deep dive, images best practices. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Attributes and Global Attributes).",
+  "starterCode": "<!-- --> Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Attributes and Global Attributes lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "<!DOCTYPE html>\n<html>\n<body>\n    <h1>Hello, World!</h1>\n</body>\n</html>",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 30,
+  "coinReward": 15,
+  "tags": [
+    "html",
+    "module-2"
+  ]
+}

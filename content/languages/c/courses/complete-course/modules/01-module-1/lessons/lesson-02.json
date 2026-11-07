@@ -1,0 +1,47 @@
+{
+  "id": "lesson-02",
+  "title": "Comments",
+  "summary": "Comments are notes for humans inside code. The computer ignores them completely. Good comments explain WHY code does something, not what it ",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand comments",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Comments are notes for humans inside code. The computer ignores them completely. Good comments explain WHY code does something, not what it does — the code already says what."
+    },
+    {
+      "type": "text",
+      "content": "Every language has its own comment style. Some use a symbol at the start of a line, others use block markers. Knowing yours saves you from accidentally breaking programs."
+    },
+    {
+      "type": "text",
+      "content": "Key points: comments never affect output, use them for tricky logic, and remove stale comments when code changes."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "#include <stdio.h>\n\nint main() {\n// This program greets the world\n#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Comments — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: comments never affect output, use them for tricky logic, and remove stale comments when code changes."
+  ],
+  "quizRefs": [
+    "c-quiz-02"
+  ],
+  "challengeRefs": [
+    "c-challenge-m1-2"
+  ],
+  "nextLessonId": "lesson-03"
+}

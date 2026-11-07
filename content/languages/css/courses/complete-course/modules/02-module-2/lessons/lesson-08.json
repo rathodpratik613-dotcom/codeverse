@@ -1,0 +1,47 @@
+{
+  "id": "lesson-08",
+  "title": "CSS Grid",
+  "summary": "Grid creates two-dimensional layouts — rows AND columns — ideal for page skeletons: header/sidebar/main/footer in a few lines.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand css grid",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Grid creates two-dimensional layouts — rows AND columns — ideal for page skeletons: header/sidebar/main/footer in a few lines."
+    },
+    {
+      "type": "text",
+      "content": "Define tracks with grid-template-columns/rows (fr units share space), place items with grid-column/row, and gap spaces everything."
+    },
+    {
+      "type": "text",
+      "content": "Key points: 1fr = one share of free space, auto-fit/auto-fill make responsive grids without media queries, and grid areas name regions."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".layout {\n    display: grid;\n    grid-template-columns: 250px 1fr;\n    gap: 20px;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Grid — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: 1fr = one share of free space, auto-fit/auto-fill make responsive grids without media queries, and grid areas name regions."
+  ],
+  "quizRefs": [
+    "css-quiz-08"
+  ],
+  "challengeRefs": [
+    "css-challenge-m2-2"
+  ],
+  "nextLessonId": "lesson-09"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "c-quiz-05",
+  "title": "Quiz: Input and Output",
+  "description": "Check your understanding of Input and Output.",
+  "questions": [
+    {
+      "id": "c-q-comment-5",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "c-q-concept-5",
+      "type": "mcq",
+      "question": "What does the print/output function do?",
+      "options": [
+        "Sends text or values to the screen or console",
+        "Deletes variables",
+        "Creates new files",
+        "Stops the program"
+      ],
+      "correctAnswer": "Sends text or values to the screen or console",
+      "explanation": "Output makes program results visible."
+    },
+    {
+      "id": "c-q-tf-5",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "c-q-fill-5",
+      "type": "fill-blank",
+      "question": "Fill in the blank: printf(\"%s\\n\", \"Hello\");",
+      "correctAnswer": "print/output call",
+      "explanation": "Use the language's standard output function."
+    },
+    {
+      "id": "c-q-out-5",
+      "type": "mcq",
+      "question": "In C, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

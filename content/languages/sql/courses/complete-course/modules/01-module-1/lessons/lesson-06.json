@@ -1,0 +1,47 @@
+{
+  "id": "lesson-06",
+  "title": "Inserting Data",
+  "summary": "INSERT adds rows: INSERT INTO table (columns) VALUES (...). Multiple rows in one statement is faster than many single inserts.",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand inserting data",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "INSERT adds rows: INSERT INTO table (columns) VALUES (...). Multiple rows in one statement is faster than many single inserts."
+    },
+    {
+      "type": "text",
+      "content": "Omit columns with defaults; use RETURNING (Postgres) to get generated ids back. Always parameterize values — never concatenate user input."
+    },
+    {
+      "type": "text",
+      "content": "Key points: column list prevents order mistakes, NULL inserts need explicit NULL keyword, and bulk inserts beat row-by-row loops."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "INSERT INTO users (name, email)\nVALUES ('Amy', 'amy@mail.com'), ('Bob', 'bob@mail.com');",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Inserting Data — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: column list prevents order mistakes, NULL inserts need explicit NULL keyword, and bulk inserts beat row-by-row loops."
+  ],
+  "quizRefs": [
+    "sql-quiz-06"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m1-3"
+  ],
+  "nextLessonId": "lesson-07"
+}

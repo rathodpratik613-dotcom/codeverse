@@ -1,0 +1,46 @@
+{
+  "id": "lesson-30",
+  "title": "Capstone Project",
+  "summary": "Time to combine everything: variables, conditions, loops, functions, data structures, and error handling into one real program.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand capstone project",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Time to combine everything: variables, conditions, loops, functions, data structures, and error handling into one real program."
+    },
+    {
+      "type": "text",
+      "content": "Pick a small useful tool — a number guessing game, a to-do list manager, a quiz scorer, or a unit converter. Start with the simplest version that works, then add features one at a time."
+    },
+    {
+      "type": "text",
+      "content": "Key points: plan the features first, build the core loop early, test each piece, and finish something you can actually show people."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Capstone Project — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: plan the features first, build the core loop early, test each piece, and finish something you can actually show people."
+  ],
+  "quizRefs": [
+    "typescript-quiz-30"
+  ],
+  "challengeRefs": [
+    "typescript-challenge-m5-3"
+  ]
+}

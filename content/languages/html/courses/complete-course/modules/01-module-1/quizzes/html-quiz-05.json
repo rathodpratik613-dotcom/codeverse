@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-05",
+  "title": "Quiz: Lists and Tables",
+  "description": "Check your understanding of Lists and Tables.",
+  "questions": [
+    {
+      "id": "html-q-comment-5",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-5",
+      "type": "mcq",
+      "question": "Which tag pair creates a numbered list?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<dl>",
+        "<table>"
+      ],
+      "correctAnswer": "<ol>",
+      "explanation": "ol = ordered list; ul = unordered (bullets)."
+    },
+    {
+      "id": "html-q-tf-5",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-5",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <tr><${cell}>Data</${cell}></tr>",
+      "correctAnswer": "td",
+      "explanation": "td holds table data; th holds headers."
+    },
+    {
+      "id": "html-q-out-5",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-02",
+  "title": "Document Structure",
+  "summary": "Every HTML page starts with a boilerplate: <!DOCTYPE html>, an <html> root, a <head> for metadata, and a <body> for visible content.",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand document structure",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Every HTML page starts with a boilerplate: <!DOCTYPE html>, an <html> root, a <head> for metadata, and a <body> for visible content."
+    },
+    {
+      "type": "text",
+      "content": "The head holds the title (shown in the browser tab), links to CSS, and meta tags. The body holds everything the visitor sees."
+    },
+    {
+      "type": "text",
+      "content": "Key points: always include the doctype, put metadata in head and content in body, and nesting must be correct — tags close in reverse order."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<!DOCTYPE html>\n<html>\n<head>\n    <title>My Page</title>\n</head>\n<body>\n    <h1>Hello</h1>\n</body>\n</html>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Document Structure — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: always include the doctype, put metadata in head and content in body, and nesting must be correct — tags close in reverse order."
+  ],
+  "quizRefs": [
+    "html-quiz-02"
+  ],
+  "challengeRefs": [
+    "html-challenge-m1-2"
+  ],
+  "nextLessonId": "lesson-03"
+}

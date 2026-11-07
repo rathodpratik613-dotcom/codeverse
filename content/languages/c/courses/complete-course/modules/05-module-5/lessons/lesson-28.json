@@ -1,0 +1,47 @@
+{
+  "id": "lesson-28",
+  "title": "Classes and OOP Basics",
+  "summary": "Object-oriented programming organizes code around objects: classes define the blueprint (fields + methods), objects are the instances.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand classes and oop basics",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Object-oriented programming organizes code around objects: classes define the blueprint (fields + methods), objects are the instances."
+    },
+    {
+      "type": "text",
+      "content": "Core ideas: encapsulation (hide internals), inheritance (reuse via parent classes), polymorphism (same interface, different behavior). You have already used objects — strings and lists are objects in most languages!"
+    },
+    {
+      "type": "text",
+      "content": "Key points: start with simple data-grouping before deep hierarchies, and prefer composition (has-a) over deep inheritance (is-a)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "#include <stdio.h>\n\nint main() {\nclass Dog {\n    name = \"Buddy\"\n    void bark() { printf(\"%s\\n\", \"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Classes and OOP Basics — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: start with simple data-grouping before deep hierarchies, and prefer composition (has-a) over deep inheritance (is-a)."
+  ],
+  "quizRefs": [
+    "c-quiz-28"
+  ],
+  "challengeRefs": [
+    "c-challenge-m5-1"
+  ],
+  "nextLessonId": "lesson-29"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-15",
+  "title": "Quiz: Functions and Procedures",
+  "description": "Check your understanding of Functions and Procedures.",
+  "questions": [
+    {
+      "id": "sql-q-comment-15",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-15",
+      "type": "mcq",
+      "question": "Function vs procedure — key difference?",
+      "options": [
+        "Functions return values, procedures act",
+        "Identical",
+        "Procedures are faster",
+        "Functions cannot query"
+      ],
+      "correctAnswer": "Functions return a value; procedures perform actions",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-15",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-15",
+      "type": "mcq",
+      "question": "What is the main purpose of the Functions and Procedures technique shown in this lesson?",
+      "options": [
+        "Functions and Procedures",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Functions and Procedures",
+      "explanation": "It exists to help you functions and procedures effectively."
+    },
+    {
+      "id": "sql-q-out-15",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

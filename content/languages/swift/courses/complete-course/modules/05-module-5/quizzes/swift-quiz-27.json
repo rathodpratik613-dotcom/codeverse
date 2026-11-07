@@ -1,0 +1,59 @@
+{
+  "id": "swift-quiz-27",
+  "title": "Quiz: Modules and Imports",
+  "description": "Check your understanding of Modules and Imports.",
+  "questions": [
+    {
+      "id": "swift-q-comment-27",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-27",
+      "type": "mcq",
+      "question": "What does an import statement do?",
+      "options": [
+        "Makes functions/code from another module available",
+        "Deletes unused code",
+        "Compiles the program",
+        "Connects to the internet"
+      ],
+      "correctAnswer": "Makes functions/code from another module available",
+      "explanation": "Imports load reusable code into your program."
+    },
+    {
+      "id": "swift-q-tf-27",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "swift-q-fill-27",
+      "type": "fill-blank",
+      "question": "Fill in the blank: $import / use / include math   // bring in the math module",
+      "correctAnswer": "import",
+      "explanation": "Import loads external code."
+    },
+    {
+      "id": "swift-q-out-27",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

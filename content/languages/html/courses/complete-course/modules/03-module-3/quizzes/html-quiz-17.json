@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-17",
+  "title": "Quiz: SEO and Meta Tags",
+  "description": "Check your understanding of SEO and Meta Tags.",
+  "questions": [
+    {
+      "id": "html-q-comment-17",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-17",
+      "type": "mcq",
+      "question": "What does the meta description do?",
+      "options": [
+        "Gives search engines a summary shown under the result",
+        "Changes page colors",
+        "Encrypts the page",
+        "Adds keywords to body text"
+      ],
+      "correctAnswer": "Gives search engines a summary shown under the result",
+      "explanation": "It is the snippet text in search results."
+    },
+    {
+      "id": "html-q-tf-17",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-17",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <meta name=\"${n}\" content=\"...\">",
+      "correctAnswer": "description/viewport/robots",
+      "explanation": "Meta name/value pairs configure the page."
+    },
+    {
+      "id": "html-q-out-17",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

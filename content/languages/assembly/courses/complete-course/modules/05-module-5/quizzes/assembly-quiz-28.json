@@ -1,0 +1,59 @@
+{
+  "id": "assembly-quiz-28",
+  "title": "Quiz: Classes and OOP Basics",
+  "description": "Check your understanding of Classes and OOP Basics.",
+  "questions": [
+    {
+      "id": "assembly-q-comment-28",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    },
+    {
+      "id": "assembly-q-concept-28",
+      "type": "mcq",
+      "question": "What is a class?",
+      "options": [
+        "A blueprint for creating objects",
+        "A compiled executable",
+        "A database table",
+        "A loop construct"
+      ],
+      "correctAnswer": "A blueprint for creating objects",
+      "explanation": "Classes define structure; objects are built from them."
+    },
+    {
+      "id": "assembly-q-tf-28",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "assembly-q-fill-28",
+      "type": "fill-blank",
+      "question": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+      "correctAnswer": "Dog/Animal/etc",
+      "explanation": "Classes are named blueprints."
+    },
+    {
+      "id": "assembly-q-out-28",
+      "type": "mcq",
+      "question": "In Assembly, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

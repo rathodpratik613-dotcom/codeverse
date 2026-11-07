@@ -1,0 +1,59 @@
+{
+  "id": "assembly-quiz-14",
+  "title": "Quiz: Parameters and Arguments",
+  "description": "Check your understanding of Parameters and Arguments.",
+  "questions": [
+    {
+      "id": "assembly-q-comment-14",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    },
+    {
+      "id": "assembly-q-concept-14",
+      "type": "mcq",
+      "question": "What is the difference between a parameter and an argument?",
+      "options": [
+        "Parameters are placeholders; arguments are the real values passed",
+        "They are exactly the same thing",
+        "Parameters belong to callers, arguments to functions",
+        "Arguments are optional, parameters required"
+      ],
+      "correctAnswer": "Parameters are placeholders; arguments are the real values passed",
+      "explanation": "Parameters define the shape; arguments supply the data."
+    },
+    {
+      "id": "assembly-q-tf-14",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "assembly-q-fill-14",
+      "type": "fill-blank",
+      "question": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+      "correctAnswer": "arguments",
+      "explanation": "Values passed at call time are arguments."
+    },
+    {
+      "id": "assembly-q-out-14",
+      "type": "mcq",
+      "question": "In Assembly, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

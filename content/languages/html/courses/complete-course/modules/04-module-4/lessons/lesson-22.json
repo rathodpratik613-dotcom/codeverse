@@ -1,0 +1,47 @@
+{
+  "id": "lesson-22",
+  "title": "HTML and JavaScript Hooks",
+  "summary": "HTML exposes hooks for scripts: ids and classes for selection, data-* attributes for custom data, and semantic elements for behavior (detail",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand html and javascript hooks",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "HTML exposes hooks for scripts: ids and classes for selection, data-* attributes for custom data, and semantic elements for behavior (details toggles natively)."
+    },
+    {
+      "type": "text",
+      "content": "The DOM (Document Object Model) is the live tree scripts manipulate — every element becomes a node with properties, methods, and events."
+    },
+    {
+      "type": "text",
+      "content": "Key points: querySelector('#id') / querySelector('.class') are the main selectors, events (click, input) attach behavior, and innerHTML rebuilds content (careful with injection)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<button id=\"save\" data-action=\"save\">Save</button>\n<script>\ndocument.getElementById(\"save\").addEventListener(\"click\", () => {\n    console.log(\"saved!\");\n});\n</script>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML and JavaScript Hooks — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: querySelector('#id') / querySelector('.class') are the main selectors, events (click, input) attach behavior, and innerHTML rebuilds content (careful with injection)."
+  ],
+  "quizRefs": [
+    "html-quiz-22"
+  ],
+  "challengeRefs": [
+    "html-challenge-m4-3"
+  ],
+  "nextLessonId": "lesson-23"
+}

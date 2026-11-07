@@ -1,0 +1,59 @@
+{
+  "id": "swift-quiz-13",
+  "title": "Quiz: Defining Functions",
+  "description": "Check your understanding of Defining Functions.",
+  "questions": [
+    {
+      "id": "swift-q-comment-13",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-13",
+      "type": "mcq",
+      "question": "Why use functions?",
+      "options": [
+        "To reuse code and organize logic",
+        "To make programs run slower",
+        "To store data permanently",
+        "To avoid writing any code"
+      ],
+      "correctAnswer": "To reuse code and organize logic",
+      "explanation": "Functions eliminate duplication and create structure."
+    },
+    {
+      "id": "swift-q-tf-13",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "swift-q-fill-13",
+      "type": "fill-blank",
+      "question": "Fill in the blank: $func add(a, b) { return a + b }",
+      "correctAnswer": "def/function/fn/func",
+      "explanation": "The function keyword starts a definition."
+    },
+    {
+      "id": "swift-q-out-13",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

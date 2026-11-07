@@ -1,0 +1,14 @@
+{
+  "id": "php",
+  "name": "PHP",
+  "icon": "🐘",
+  "color": "#777BB4",
+  "description": "PHP complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "difficulty": "beginner",
+  "runtimeType": "server",
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
+}

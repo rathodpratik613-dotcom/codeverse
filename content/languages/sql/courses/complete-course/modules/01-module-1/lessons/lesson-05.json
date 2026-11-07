@@ -1,0 +1,47 @@
+{
+  "id": "lesson-05",
+  "title": "Creating Tables",
+  "summary": "CREATE TABLE defines structure: column names, data types (INT, VARCHAR, DATE, BOOLEAN, DECIMAL), constraints (PRIMARY KEY, NOT NULL, UNIQUE,",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand creating tables",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "CREATE TABLE defines structure: column names, data types (INT, VARCHAR, DATE, BOOLEAN, DECIMAL), constraints (PRIMARY KEY, NOT NULL, UNIQUE, DEFAULT)."
+    },
+    {
+      "type": "text",
+      "content": "PRIMARY KEY uniquely identifies each row; foreign keys link tables. Choose types carefully — altering types later is painful."
+    },
+    {
+      "type": "text",
+      "content": "Key points: VARCHAR(n) for variable text, DECIMAL for money (never FLOAT), and every table should have a primary key."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "CREATE TABLE users (\n    id INT PRIMARY KEY,\n    name VARCHAR(50) NOT NULL,\n    email VARCHAR(100) UNIQUE,\n    created_at DATE DEFAULT CURRENT_DATE\n);",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Creating Tables — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: VARCHAR(n) for variable text, DECIMAL for money (never FLOAT), and every table should have a primary key."
+  ],
+  "quizRefs": [
+    "sql-quiz-05"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m1-2"
+  ],
+  "nextLessonId": "lesson-06"
+}

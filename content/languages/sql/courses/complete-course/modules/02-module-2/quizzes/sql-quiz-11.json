@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-11",
+  "title": "Quiz: Constraints and Keys",
+  "description": "Check your understanding of Constraints and Keys.",
+  "questions": [
+    {
+      "id": "sql-q-comment-11",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-11",
+      "type": "mcq",
+      "question": "What does ON DELETE CASCADE do?",
+      "options": [
+        "Deletes children with parent",
+        "Prevents all deletes",
+        "Copies rows",
+        "Nothing"
+      ],
+      "correctAnswer": "Deletes child rows when the parent is deleted",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-11",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-11",
+      "type": "mcq",
+      "question": "What is the main purpose of the Constraints and Keys technique shown in this lesson?",
+      "options": [
+        "Constraints and Keys",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Constraints and Keys",
+      "explanation": "It exists to help you constraints and keys effectively."
+    },
+    {
+      "id": "sql-q-out-11",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

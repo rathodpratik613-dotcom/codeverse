@@ -1,0 +1,47 @@
+{
+  "id": "lesson-18",
+  "title": "Filters and Blend Modes",
+  "summary": "filter applies GPU effects: blur, brightness, contrast, grayscale, hue-rotate, drop-shadow. mix-blend-mode blends element colors with backdr",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand filters and blend modes",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "filter applies GPU effects: blur, brightness, contrast, grayscale, hue-rotate, drop-shadow. mix-blend-mode blends element colors with backdrop (multiply, screen, overlay)."
+    },
+    {
+      "type": "text",
+      "content": "Backdrop-filter blurs whatever is BEHIND an element — the frosted-glass effect used by modern navbars."
+    },
+    {
+      "type": "text",
+      "content": "Key points: filter on body is expensive, backdrop-filter needs a translucent background to show, and blend modes can surprise — test on real content."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".glass {\n    backdrop-filter: blur(12px);\n    background: rgba(255,255,255,0.1);\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Filters and Blend Modes — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: filter on body is expensive, backdrop-filter needs a translucent background to show, and blend modes can surprise — test on real content."
+  ],
+  "quizRefs": [
+    "css-quiz-18"
+  ],
+  "challengeRefs": [
+    "css-challenge-m3-2"
+  ],
+  "nextLessonId": "lesson-19"
+}

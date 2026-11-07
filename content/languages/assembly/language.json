@@ -1,0 +1,14 @@
+{
+  "id": "assembly",
+  "name": "Assembly",
+  "icon": "🔩",
+  "color": "#6E4C13",
+  "description": "Assembly complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "difficulty": "beginner",
+  "runtimeType": "simulated",
+  "tags": [
+    "programming",
+    "course",
+    "beginner"
+  ]
+}

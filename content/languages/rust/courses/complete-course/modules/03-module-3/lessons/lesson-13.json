@@ -1,0 +1,47 @@
+{
+  "id": "lesson-13",
+  "title": "Defining Functions",
+  "summary": "Functions package code into named, reusable blocks. Instead of copy-pasting logic, you write it once and call it whenever needed.",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand defining functions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Functions package code into named, reusable blocks. Instead of copy-pasting logic, you write it once and call it whenever needed."
+    },
+    {
+      "type": "text",
+      "content": "A function has a name, a parameter list, a body, and usually a return statement that hands a result back to the caller."
+    },
+    {
+      "type": "text",
+      "content": "Key points: good names describe what it does (calculateTax, not process), and functions should do one thing well."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "fn main() {\nfn greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Defining Functions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: good names describe what it does (calculateTax, not process), and functions should do one thing well."
+  ],
+  "quizRefs": [
+    "rust-quiz-13"
+  ],
+  "challengeRefs": [
+    "rust-challenge-m3-1"
+  ],
+  "nextLessonId": "lesson-14"
+}

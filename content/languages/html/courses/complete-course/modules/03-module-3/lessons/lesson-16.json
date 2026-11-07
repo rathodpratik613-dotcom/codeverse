@@ -1,0 +1,47 @@
+{
+  "id": "lesson-16",
+  "title": "Accessibility Basics",
+  "summary": "Accessible HTML means everyone can use your page: semantic landmarks, alt text, sufficient contrast, keyboard navigation, and ARIA only when",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand accessibility basics",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Accessible HTML means everyone can use your page: semantic landmarks, alt text, sufficient contrast, keyboard navigation, and ARIA only when HTML falls short."
+    },
+    {
+      "type": "text",
+      "content": "Test by unplugging your mouse — can you reach everything? Screen readers announce landmarks, headings, and form labels; get those right first."
+    },
+    {
+      "type": "text",
+      "content": "Key points: lang attribute on <html>, skip-to-content links, visible focus styles, and never convey meaning by color alone."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<html lang=\"en\">\n<body>\n    <a href=\"#main\" class=\"skip\">Skip to content</a>\n    <main id=\"main\">...</main>\n</body>",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Accessibility Basics — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: lang attribute on <html>, skip-to-content links, visible focus styles, and never convey meaning by color alone."
+  ],
+  "quizRefs": [
+    "html-quiz-16"
+  ],
+  "challengeRefs": [
+    "html-challenge-m3-2"
+  ],
+  "nextLessonId": "lesson-17"
+}

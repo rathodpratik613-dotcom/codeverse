@@ -1,0 +1,47 @@
+{
+  "id": "lesson-13",
+  "title": "Transitions and Animations",
+  "summary": "transition smoothly interpolates property changes (color, transform, opacity) over time with timing functions. @keyframes + animation runs m",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand transitions and animations",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "transition smoothly interpolates property changes (color, transform, opacity) over time with timing functions. @keyframes + animation runs multi-step sequences."
+    },
+    {
+      "type": "text",
+      "content": "Animate transform and opacity only — they run on the compositor without layout/paint cost."
+    },
+    {
+      "type": "text",
+      "content": "Key points: transition: all is lazy (list properties), prefers-reduced-motion must be respected, and animation-fill-mode controls end state."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".card {\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n.card:hover {\n    transform: translateY(-4px);\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Transitions and Animations — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: transition: all is lazy (list properties), prefers-reduced-motion must be respected, and animation-fill-mode controls end state."
+  ],
+  "quizRefs": [
+    "css-quiz-13"
+  ],
+  "challengeRefs": [
+    "css-challenge-m2-1"
+  ],
+  "nextLessonId": "lesson-14"
+}

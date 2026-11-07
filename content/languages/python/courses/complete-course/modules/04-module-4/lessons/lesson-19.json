@@ -1,0 +1,47 @@
+{
+  "id": "lesson-19",
+  "title": "Arrays and Lists",
+  "summary": "Arrays (or lists) store ordered collections under one name. You reach items by position — index 0 is the first element.",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand arrays and lists",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Arrays (or lists) store ordered collections under one name. You reach items by position — index 0 is the first element."
+    },
+    {
+      "type": "text",
+      "content": "Lists grow and shrink dynamically in most languages; fixed arrays exist too. Common operations: add, remove, access by index, and loop through every item."
+    },
+    {
+      "type": "text",
+      "content": "Key points: indexes start at 0, going past the end crashes or returns nothing, and loops over lists are everywhere in real code."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "items = [\"a\", \"b\", \"c\"]\nprint(items[0])  # first item\n# items[1], items[2] ... indexes count from 0",
+      "language": "python"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Arrays and Lists — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: indexes start at 0, going past the end crashes or returns nothing, and loops over lists are everywhere in real code."
+  ],
+  "quizRefs": [
+    "python-quiz-19"
+  ],
+  "challengeRefs": [
+    "python-challenge-m4-1"
+  ],
+  "nextLessonId": "lesson-20"
+}

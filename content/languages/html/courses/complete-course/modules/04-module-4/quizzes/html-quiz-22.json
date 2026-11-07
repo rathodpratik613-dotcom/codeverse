@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-22",
+  "title": "Quiz: HTML and JavaScript Hooks",
+  "description": "Check your understanding of HTML and JavaScript Hooks.",
+  "questions": [
+    {
+      "id": "html-q-comment-22",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-22",
+      "type": "mcq",
+      "question": "What is the DOM?",
+      "options": [
+        "The tree representation of the page that scripts can modify",
+        "A type of CSS file",
+        "The server database",
+        "A JavaScript framework"
+      ],
+      "correctAnswer": "The tree representation of the page that scripts can modify",
+      "explanation": "DOM = live, scriptable page structure."
+    },
+    {
+      "id": "html-q-tf-22",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-22",
+      "type": "fill-blank",
+      "question": "Fill in the blank: document.querySelector(\"${sel}\")  // find an element",
+      "correctAnswer": "#id/.class/tag",
+      "explanation": "Selectors find DOM nodes."
+    },
+    {
+      "id": "html-q-out-22",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lesson-20",
+  "title": "CSS Nesting",
+  "summary": "Native CSS nesting lets you write child rules inside parents — like preprocessors but built into browsers now. & refers to the parent select",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand css nesting",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Native CSS nesting lets you write child rules inside parents — like preprocessors but built into browsers now. & refers to the parent selector."
+    },
+    {
+      "type": "text",
+      "content": ".card { .title { } &:hover { } } compiles conceptually to .card .title and .card:hover. Specificity of & matches the parent."
+    },
+    {
+      "type": "text",
+      "content": "Key points: nesting is widely supported now, keep it shallow (2 levels), and & is required when the nested selector doesn't start with a combinator-friendly pattern."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".card {\n    padding: 1rem;\n    .title { font-weight: bold; }\n    &:hover { box-shadow: 0 4px 12px #0002; }\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Nesting — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: nesting is widely supported now, keep it shallow (2 levels), and & is required when the nested selector doesn't start with a combinator-friendly pattern."
+  ],
+  "quizRefs": [
+    "css-quiz-20"
+  ],
+  "challengeRefs": [
+    "css-challenge-m4-2"
+  ],
+  "nextLessonId": "lesson-21"
+}

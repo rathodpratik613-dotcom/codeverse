@@ -1,0 +1,47 @@
+{
+  "id": "lesson-03",
+  "title": "Colors and Backgrounds",
+  "summary": "CSS colors accept names (red), hex (#ff0000), rgb()/rgba(), hsl(), and modern oklch. The background shorthand sets color, image, position, a",
+  "estimatedMinutes": 20,
+  "difficulty": 1,
+  "xpReward": 20,
+  "learningObjectives": [
+    "Understand colors and backgrounds",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "CSS colors accept names (red), hex (#ff0000), rgb()/rgba(), hsl(), and modern oklch. The background shorthand sets color, image, position, and repeat."
+    },
+    {
+      "type": "text",
+      "content": "Contrast matters: body text needs ~4.5:1 against its background for readability (WCAG AA)."
+    },
+    {
+      "type": "text",
+      "content": "Key points: rgba adds transparency, gradients via linear-gradient(), and CSS variables keep palettes consistent."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ":root {\n    --primary: #6366f1;\n}\nbutton {\n    background: var(--primary);\n    color: white;\n}",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Colors and Backgrounds — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: rgba adds transparency, gradients via linear-gradient(), and CSS variables keep palettes consistent."
+  ],
+  "quizRefs": [
+    "css-quiz-03"
+  ],
+  "challengeRefs": [
+    "css-challenge-m1-3"
+  ],
+  "nextLessonId": "lesson-04"
+}

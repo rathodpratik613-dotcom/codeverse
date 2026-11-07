@@ -1,0 +1,28 @@
+{
+  "id": "go-challenge-m1-1",
+  "title": "Getting Started Practice 1",
+  "difficulty": 1,
+  "statement": "Module 1 (Getting Started) covers: hello world, comments, variables, data types, input and output, operators. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Hello World).",
+  "starterCode": "// Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Hello World lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "package main\n\nimport \"fmt\"\n\nfunc main() {\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 30,
+  "coinReward": 15,
+  "tags": [
+    "go",
+    "module-1"
+  ]
+}

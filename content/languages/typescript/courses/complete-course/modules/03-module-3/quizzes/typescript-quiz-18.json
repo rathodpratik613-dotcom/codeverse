@@ -1,0 +1,59 @@
+{
+  "id": "typescript-quiz-18",
+  "title": "Quiz: Built-in Functions",
+  "description": "Check your understanding of Built-in Functions.",
+  "questions": [
+    {
+      "id": "typescript-q-comment-18",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in TypeScript?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In TypeScript, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "typescript-q-concept-18",
+      "type": "mcq",
+      "question": "What is a \"built-in\" or standard library function?",
+      "options": [
+        "A ready-made function provided by the language",
+        "A function only you can write",
+        "A hardware chip",
+        "A type of variable"
+      ],
+      "correctAnswer": "A ready-made function provided by the language",
+      "explanation": "Standard libraries ship with every language."
+    },
+    {
+      "id": "typescript-q-tf-18",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "typescript-q-fill-18",
+      "type": "fill-blank",
+      "question": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+      "correctAnswer": "length",
+      "explanation": "Length functions count items or characters."
+    },
+    {
+      "id": "typescript-q-out-18",
+      "type": "mcq",
+      "question": "In TypeScript, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

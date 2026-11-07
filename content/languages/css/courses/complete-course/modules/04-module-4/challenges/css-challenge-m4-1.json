@@ -1,0 +1,28 @@
+{
+  "id": "css-challenge-m4-1",
+  "title": "Data Structures Practice 1",
+  "difficulty": 4,
+  "statement": "Module 4 (Data Structures) covers: css units, css nesting, print styles, css for forms. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (CSS Units).",
+  "starterCode": "/* */ Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the CSS Units lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "body {\n    font-family: sans-serif;\n}\nh1 {\n    color: blue;\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 30,
+  "coinReward": 15,
+  "tags": [
+    "css",
+    "module-4"
+  ]
+}

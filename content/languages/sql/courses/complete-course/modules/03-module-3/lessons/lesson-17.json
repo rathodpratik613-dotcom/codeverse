@@ -1,0 +1,47 @@
+{
+  "id": "lesson-17",
+  "title": "Window Functions",
+  "summary": "Window functions compute across rows related to the current row WITHOUT collapsing them: ROW_NUMBER, RANK, SUM() OVER (PARTITION BY ...).",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand window functions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Window functions compute across rows related to the current row WITHOUT collapsing them: ROW_NUMBER, RANK, SUM() OVER (PARTITION BY ...)."
+    },
+    {
+      "type": "text",
+      "content": "Use for running totals, top-N per group, moving averages — things GROUP BY cannot express without losing row detail."
+    },
+    {
+      "type": "text",
+      "content": "Key points: OVER() defines the window, PARTITION BY groups within it, ORDER BY inside OVER controls frame, and they are slower than plain aggregates."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT name, salary,\n    RANK() OVER (ORDER BY salary DESC) AS rank\nFROM employees;",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Window Functions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: OVER() defines the window, PARTITION BY groups within it, ORDER BY inside OVER controls frame, and they are slower than plain aggregates."
+  ],
+  "quizRefs": [
+    "sql-quiz-17"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m3-2"
+  ],
+  "nextLessonId": "lesson-18"
+}

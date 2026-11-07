@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-12",
+  "title": "Quiz: Indexes",
+  "description": "Check your understanding of Indexes.",
+  "questions": [
+    {
+      "id": "sql-q-comment-12",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-12",
+      "type": "mcq",
+      "question": "What is the trade-off of adding an index?",
+      "options": [
+        "Faster reads, slower writes",
+        "Faster everything",
+        "Only faster reads",
+        "Slower everything"
+      ],
+      "correctAnswer": "Faster reads, slower writes",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-12",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "sql-q-fill-12",
+      "type": "mcq",
+      "question": "What is the main purpose of the Indexes technique shown in this lesson?",
+      "options": [
+        "Indexes",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Indexes",
+      "explanation": "It exists to help you indexes effectively."
+    },
+    {
+      "id": "sql-q-out-12",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

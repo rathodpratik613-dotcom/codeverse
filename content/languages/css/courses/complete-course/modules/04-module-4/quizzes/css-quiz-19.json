@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-19",
+  "title": "Quiz: CSS Units",
+  "description": "Check your understanding of CSS Units.",
+  "questions": [
+    {
+      "id": "css-q-comment-19",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-19",
+      "type": "mcq",
+      "question": "What does clamp(1rem, 4vw, 2rem) do?",
+      "options": [
+        "Scales between min and max based on viewport",
+        "Always returns 4vw",
+        "Rounds to nearest rem",
+        "Is invalid CSS"
+      ],
+      "correctAnswer": "Scales between min and max based on viewport",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-19",
+      "type": "true-false",
+      "question": "True or False: undefined",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "css-q-fill-19",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Units technique shown in this lesson?",
+      "options": [
+        "CSS Units",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Units",
+      "explanation": "It exists to help you css units effectively."
+    },
+    {
+      "id": "css-q-out-19",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

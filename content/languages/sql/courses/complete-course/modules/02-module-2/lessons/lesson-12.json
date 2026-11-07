@@ -1,0 +1,47 @@
+{
+  "id": "lesson-12",
+  "title": "Indexes",
+  "summary": "Indexes are sorted lookup structures (B-trees) that make WHERE/JOIN/ORDER BY fast — like a book index vs reading every page.",
+  "estimatedMinutes": 20,
+  "difficulty": 2,
+  "xpReward": 30,
+  "learningObjectives": [
+    "Understand indexes",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Indexes are sorted lookup structures (B-trees) that make WHERE/JOIN/ORDER BY fast — like a book index vs reading every page."
+    },
+    {
+      "type": "text",
+      "content": "CREATE INDEX speeds reads but slows writes (every insert updates indexes) and uses disk. Add indexes on columns you filter/join/sort by."
+    },
+    {
+      "type": "text",
+      "content": "Key points: composite indexes follow leftmost-prefix rules, EXPLAIN shows if indexes are used, and over-indexing hurts write performance."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "CREATE INDEX idx_users_email ON users(email);",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Indexes — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: composite indexes follow leftmost-prefix rules, EXPLAIN shows if indexes are used, and over-indexing hurts write performance."
+  ],
+  "quizRefs": [
+    "sql-quiz-12"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m2-3"
+  ],
+  "nextLessonId": "lesson-13"
+}
