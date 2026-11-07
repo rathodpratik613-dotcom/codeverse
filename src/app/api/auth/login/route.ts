@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const token = generateToken(userWithPassword.id);
+    const token = generateToken(userWithPassword.id, rememberMe);
     const userAgent = request.headers.get('user-agent') || undefined;
     const ipAddress = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || undefined;
     await createSession(userWithPassword.id, token, rememberMe, userAgent, ipAddress);

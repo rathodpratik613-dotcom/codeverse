@@ -97,10 +97,27 @@ function LessonContent() {
               // Award XP if not already awarded
               if (!xpAwarded && user) {
                 try {
-                  await fetch(`/api/users/${user.id}`, {
-                    method: 'PATCH',
+                  await fetch('/api/xp', {
+                    method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ xp: exercise.xpReward, coins: exercise.coinReward }),
+                    credentials: 'include',
+                    body: JSON.stringify({
+                      amount: exercise.xpReward,
+                      sourceType: 'lesson',
+                      sourceId: lesson.id,
+                      description: `Exercise passed: ${lesson.title}`,
+                    }),
+                  });
+                  await fetch('/api/xp', {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    credentials: 'include',
+                    body: JSON.stringify({
+                      amount: exercise.coinReward,
+                      sourceType: 'lesson',
+                      sourceId: lesson.id,
+                      description: `Coins for exercise: ${lesson.title}`,
+                    }),
                   });
                   setXpAwarded(true);
                 } catch (error) {

@@ -57,12 +57,26 @@ export default function LessonNavigationComponent({
       const xpAwarded = localStorage.getItem(`xp_awarded_${currentLesson.id}`);
       const lessonXP = currentLesson.exercises?.[0]?.xpReward || 10;
       if (!xpAwarded) {
-        await fetch(`/api/users/${user.id}`, {
-          method: 'PATCH',
+        await fetch('/api/xp', {
+          method: 'POST',
           headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
           body: JSON.stringify({
-            xp: lessonXP,
-            coins: 5,
+            amount: lessonXP,
+            sourceType: 'lesson',
+            sourceId: currentLesson.id,
+            description: `Completed lesson: ${currentLesson.title}`,
+          }),
+        });
+        await fetch('/api/xp', {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify({
+            amount: 5,
+            sourceType: 'lesson',
+            sourceId: currentLesson.id,
+            description: `Coins for lesson: ${currentLesson.title}`,
           }),
         });
         localStorage.setItem(`xp_awarded_${currentLesson.id}`, 'true');

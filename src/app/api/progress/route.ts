@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyToken } from '@/lib/auth';
+import { getSessionAuth } from '@/lib/auth';
 import { getDb, saveDb } from '@/lib/db';
 import { z } from 'zod';
 import crypto from 'crypto';
@@ -18,13 +18,9 @@ const progressSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const body = await request.json();
@@ -32,7 +28,7 @@ export async function POST(request: NextRequest) {
 
     const db = await getDb();
     let progress = db.data.lessonProgress.find(
-      (p: any) => p.userId === decoded.userId && p.contentId === data.contentId
+      (p: any) => p.userId === auth.userId && p.contentId === data.contentId
     );
 
     if (progress) {
@@ -42,7 +38,7 @@ export async function POST(request: NextRequest) {
     } else {
       progress = {
         id: crypto.randomUUID(),
-        userId: decoded.userId,
+        userId: auth.userId,
         ...data,
         completedAt: data.status === 'completed' ? new Date().toISOString() : undefined,
         createdAt: new Date().toISOString(),
@@ -65,13 +61,9 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const { searchParams } = new URL(request.url);
@@ -79,7 +71,7 @@ export async function GET(request: NextRequest) {
     const contentId = searchParams.get('contentId');
 
     const db = await getDb();
-    let progress = db.data.lessonProgress.filter((p: any) => p.userId === decoded.userId);
+    let progress = db.data.lessonProgress.filter((p: any) => p.userId === auth.userId);
 
     if (languageSlug) {
       progress = progress.filter((p: any) => p.languageSlug === languageSlug);

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyToken } from '@/lib/auth';
+import { getSessionAuth } from '@/lib/auth';
 import { getDb, saveDb } from '@/lib/db';
 import { z } from 'zod';
 import crypto from 'crypto';
@@ -14,13 +14,9 @@ const draftSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const body = await request.json();
@@ -28,7 +24,7 @@ export async function POST(request: NextRequest) {
 
     const db = await getDb();
     let draft = db.data.editorDrafts.find(
-      (d: any) => d.userId === decoded.userId && d.contentId === data.contentId
+      (d: any) => d.userId === auth.userId && d.contentId === data.contentId
     );
 
     if (draft) {
@@ -36,7 +32,7 @@ export async function POST(request: NextRequest) {
     } else {
       draft = {
         id: crypto.randomUUID(),
-        userId: decoded.userId,
+        userId: auth.userId,
         ...data,
         isAutosaved: true,
         createdAt: new Date().toISOString(),
@@ -59,20 +55,16 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const { searchParams } = new URL(request.url);
     const contentId = searchParams.get('contentId');
 
     const db = await getDb();
-    let drafts = db.data.editorDrafts.filter((d: any) => d.userId === decoded.userId);
+    let drafts = db.data.editorDrafts.filter((d: any) => d.userId === auth.userId);
 
     if (contentId) {
       drafts = drafts.filter((d: any) => d.contentId === contentId);
@@ -88,13 +80,9 @@ export async function GET(request: NextRequest) {
 export async function DELETE(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const { searchParams } = new URL(request.url);
@@ -106,7 +94,7 @@ export async function DELETE(request: NextRequest) {
 
     const db = await getDb();
     db.data.editorDrafts = db.data.editorDrafts.filter(
-      (d: any) => !(d.userId === decoded.userId && d.contentId === contentId)
+      (d: any) => !(d.userId === auth.userId && d.contentId === contentId)
     );
     await saveDb();
 

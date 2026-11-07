@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { registerUser, findUserByEmail, generateToken, createSession } from '@/lib/auth';
+import { registerUser, findUserByEmail, findUserByUsername, generateToken, createSession } from '@/lib/auth';
 import { z } from 'zod';
 
 const signupSchema = z.object({
@@ -22,8 +22,16 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const existingUsername = await findUserByUsername(username);
+    if (existingUsername) {
+      return NextResponse.json(
+        { error: 'Username is already taken' },
+        { status: 409 }
+      );
+    }
+
     const user = await registerUser(username, email, password);
-    const token = generateToken(user.id);
+    const token = generateToken(user.id, rememberMe);
     const userAgent = request.headers.get('user-agent') || undefined;
     const ipAddress = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || undefined;
     await createSession(user.id, token, rememberMe, userAgent, ipAddress);

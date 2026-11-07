@@ -10,7 +10,8 @@
     "content:validate": "tsx scripts/validate-content.ts",
     "content:seed": "tsx scripts/seed-content.ts",
     "content:stats": "tsx scripts/content-stats.ts",
-    "content:verify": "tsx scripts/verify-solutions.ts"
+    "content:verify": "tsx scripts/verify-solutions.ts",
+    "content:import": "tsx scripts/import-content.ts"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",

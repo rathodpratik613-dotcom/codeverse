@@ -41,8 +41,8 @@ export async function verifyPassword(password: string, hash: string): Promise<bo
   return bcrypt.compare(password, hash);
 }
 
-export function generateToken(userId: string): string {
-  return jwt.sign({ userId }, JWT_SECRET, { expiresIn: '7d' });
+export function generateToken(userId: string, rememberMe = false): string {
+  return jwt.sign({ userId }, JWT_SECRET, { expiresIn: rememberMe ? '30d' : '7d' });
 }
 
 export function verifyToken(token: string): { userId: string } | null {
@@ -89,6 +89,15 @@ export async function registerUser(username: string, email: string, password: st
 export async function findUserByEmail(email: string): Promise<AuthUser | null> {
   const db = await getDb();
   const user = db.data.users.find((u: any) => u.email === email.toLowerCase());
+  if (!user) return null;
+
+  const { password: _, ...userWithoutPassword } = user;
+  return userWithoutPassword;
+}
+
+export async function findUserByUsername(username: string): Promise<AuthUser | null> {
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.username === username.toLowerCase());
   if (!user) return null;
 
   const { password: _, ...userWithoutPassword } = user;
@@ -177,6 +186,21 @@ export async function createSession(userId: string, token: string, rememberMe: b
   await saveDb();
 }
 
+/**
+ * Validates a bearer token end-to-end: JWT signature/expiry AND an active,
+ * unexpired session record. Returns null if either check fails, which means
+ * logout and password resets actually revoke access.
+ */
+export async function getSessionAuth(token: string): Promise<{ userId: string; sessionId: string } | null> {
+  const decoded = verifyToken(token);
+  if (!decoded) return null;
+
+  const session = await getSessionByToken(token);
+  if (!session || session.userId !== decoded.userId) return null;
+
+  return { userId: decoded.userId, sessionId: session.sessionId };
+}
+
 export async function getSessionByToken(token: string): Promise<{ userId: string; sessionId: string } | null> {
   const db = await getDb();
   const session = db.data.sessions.find((s: any) => s.token === token && s.isActive && new Date(s.expiresAt) > new Date());
@@ -219,4 +243,55 @@ export async function getUserSessions(userId: string): Promise<Array<{ id: strin
       createdAt: s.createdAt,
       isRememberMe: s.isRememberMe,
     }));
+}
+
+const RESET_TOKEN_EXPIRY = 60 * 60 * 1000; // 1 hour
+
+export async function createPasswordResetToken(email: string): Promise<string | null> {
+  const db = await getDb();
+  const user = db.data.users.find((u: any) => u.email === email.toLowerCase());
+  if (!user) return null;
+
+  // Invalidate any previous unused reset tokens for this user
+  db.data.passwordResetTokens.forEach((t: any) => {
+    if (t.userId === user.id && !t.usedAt) {
+      t.usedAt = new Date().toISOString();
+    }
+  });
+
+  const token = crypto.randomBytes(32).toString('hex');
+  db.data.passwordResetTokens.push({
+    id: crypto.randomUUID(),
+    userId: user.id,
+    token,
+    expiresAt: new Date(Date.now() + RESET_TOKEN_EXPIRY).toISOString(),
+    usedAt: null,
+    createdAt: new Date().toISOString(),
+  });
+  await saveDb();
+  return token;
+}
+
+export async function resetPassword(token: string, newPassword: string): Promise<boolean> {
+  const db = await getDb();
+  const reset = db.data.passwordResetTokens.find(
+    (t: any) => t.token === token && !t.usedAt && new Date(t.expiresAt) > new Date()
+  );
+  if (!reset) return false;
+
+  const user = db.data.users.find((u: any) => u.id === reset.userId);
+  if (!user) return false;
+
+  user.password = await hashPassword(newPassword);
+  reset.usedAt = new Date().toISOString();
+
+  // Revoke all existing sessions so old tokens stop working
+  db.data.sessions.forEach((s: any) => {
+    if (s.userId === user.id) {
+      s.isActive = false;
+    }
+  });
+
+  await saveDb();
+  return true;
 }

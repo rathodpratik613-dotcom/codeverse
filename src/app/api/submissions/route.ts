@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyToken } from '@/lib/auth';
+import { getSessionAuth } from '@/lib/auth';
 import { getDb, saveDb } from '@/lib/db';
 import { z } from 'zod';
 import crypto from 'crypto';
@@ -17,13 +17,9 @@ const submissionSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const body = await request.json();
@@ -33,7 +29,7 @@ export async function POST(request: NextRequest) {
 
     // Check if this is a better solution
     const existingBest = db.data.challengeSubmissions.find(
-      (s: any) => s.userId === decoded.userId && s.contentId === data.contentId && s.result === 'passed' && s.isBestSolution
+      (s: any) => s.userId === auth.userId && s.contentId === data.contentId && s.result === 'passed' && s.isBestSolution
     );
 
     const isBest = !existingBest || (data.result === 'passed' && data.testsPassed > (existingBest.testsPassed || 0));
@@ -44,7 +40,7 @@ export async function POST(request: NextRequest) {
 
     const submission = {
       id: crypto.randomUUID(),
-      userId: decoded.userId,
+      userId: auth.userId,
       ...data,
       isBestSolution: isBest,
       createdAt: new Date().toISOString(),
@@ -66,13 +62,9 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const { searchParams } = new URL(request.url);
@@ -80,7 +72,7 @@ export async function GET(request: NextRequest) {
 
     const db = await getDb();
     let submissions = db.data.challengeSubmissions
-      .filter((s: any) => s.userId === decoded.userId)
+      .filter((s: any) => s.userId === auth.userId)
       .sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
       .slice(0, 50);
 

@@ -15,6 +15,7 @@ export default function SignupPage() {
     password: '',
     confirmPassword: ''
   });
+  const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -27,14 +28,14 @@ export default function SignupPage() {
       return;
     }
 
-    if (formData.password.length < 6) {
-      setError('Password must be at least 6 characters');
+    if (formData.password.length < 8) {
+      setError('Password must be at least 8 characters');
       return;
     }
 
     setLoading(true);
 
-    const result = await signup(formData.username, formData.email, formData.password);
+    const result = await signup(formData.username, formData.email, formData.password, rememberMe);
 
     setLoading(false);
 
@@ -135,6 +136,16 @@ export default function SignupPage() {
                 />
               </div>
             </div>
+
+            <label className="flex items-center gap-2 text-sm text-gray-400 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={rememberMe}
+                onChange={(e) => setRememberMe(e.target.checked)}
+                className="rounded border-gray-600 bg-white/5"
+              />
+              Remember me
+            </label>
 
             <button
               type="submit"

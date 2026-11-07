@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyToken, findUserById } from '@/lib/auth';
+import { getSessionAuth, findUserById } from '@/lib/auth';
 import { cookies } from 'next/headers';
 
 export async function GET(request: NextRequest) {
@@ -11,12 +11,12 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Not authenticated' }, { status: 401 });
     }
 
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
+    const auth = await getSessionAuth(token);
+    if (!auth) {
+      return NextResponse.json({ error: 'Invalid or expired session' }, { status: 401 });
     }
 
-    const user = await findUserById(decoded.userId);
+    const user = await findUserById(auth.userId);
     if (!user) {
       return NextResponse.json({ error: 'User not found' }, { status: 404 });
     }

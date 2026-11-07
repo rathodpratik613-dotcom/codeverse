@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyToken } from '@/lib/auth';
+import { getSessionAuth } from '@/lib/auth';
 import { getDb, saveDb } from '@/lib/db';
 import { z } from 'zod';
 import crypto from 'crypto';
@@ -15,13 +15,9 @@ const bookmarkSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const body = await request.json();
@@ -29,7 +25,7 @@ export async function POST(request: NextRequest) {
 
     const db = await getDb();
     let bookmark = db.data.bookmarks.find(
-      (b: any) => b.userId === decoded.userId && b.contentId === data.contentId
+      (b: any) => b.userId === auth.userId && b.contentId === data.contentId
     );
 
     if (bookmark) {
@@ -37,7 +33,7 @@ export async function POST(request: NextRequest) {
     } else {
       bookmark = {
         id: crypto.randomUUID(),
-        userId: decoded.userId,
+        userId: auth.userId,
         ...data,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
@@ -59,20 +55,16 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const { searchParams } = new URL(request.url);
     const contentId = searchParams.get('contentId');
 
     const db = await getDb();
-    let bookmarks = db.data.bookmarks.filter((b: any) => b.userId === decoded.userId);
+    let bookmarks = db.data.bookmarks.filter((b: any) => b.userId === auth.userId);
 
     if (contentId) {
       bookmarks = bookmarks.filter((b: any) => b.contentId === contentId);
@@ -88,13 +80,9 @@ export async function GET(request: NextRequest) {
 export async function DELETE(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const { searchParams } = new URL(request.url);
@@ -106,7 +94,7 @@ export async function DELETE(request: NextRequest) {
 
     const db = await getDb();
     db.data.bookmarks = db.data.bookmarks.filter(
-      (b: any) => !(b.userId === decoded.userId && b.contentId === contentId)
+      (b: any) => !(b.userId === auth.userId && b.contentId === contentId)
     );
     await saveDb();
 

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyToken, updateUserXP, updateUserCoins } from '@/lib/auth';
+import { getSessionAuth, updateUserXP, updateUserCoins } from '@/lib/auth';
 import { getDb, saveDb } from '@/lib/db';
 import { z } from 'zod';
 import crypto from 'crypto';
@@ -14,13 +14,9 @@ const xpSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const body = await request.json();
@@ -30,7 +26,7 @@ export async function POST(request: NextRequest) {
 
     // Check if XP was already awarded (idempotent)
     const existing = db.data.xpTransactions.find(
-      (t: any) => t.userId === decoded.userId && t.sourceType === data.sourceType && t.sourceId === data.sourceId
+      (t: any) => t.userId === auth.userId && t.sourceType === data.sourceType && t.sourceId === data.sourceId
     );
 
     if (existing) {
@@ -40,7 +36,7 @@ export async function POST(request: NextRequest) {
     // Create XP transaction
     const transaction = {
       id: crypto.randomUUID(),
-      userId: decoded.userId,
+      userId: auth.userId,
       ...data,
       createdAt: new Date().toISOString(),
     };
@@ -48,7 +44,7 @@ export async function POST(request: NextRequest) {
     await saveDb();
 
     // Update user XP
-    const user = await updateUserXP(decoded.userId, data.amount);
+    const user = await updateUserXP(auth.userId, data.amount);
 
     return NextResponse.json({ success: true, user });
   } catch (error) {
@@ -70,13 +66,9 @@ const coinSchema = z.object({
 export async function PUT(request: NextRequest) {
   try {
     const token = request.cookies.get('token')?.value || request.headers.get('authorization')?.replace('Bearer ', '');
-    if (!token) {
+    const auth = token ? await getSessionAuth(token) : null;
+    if (!auth) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
-
-    const decoded = verifyToken(token);
-    if (!decoded) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
     }
 
     const body = await request.json();
@@ -86,7 +78,7 @@ export async function PUT(request: NextRequest) {
 
     // Check if coins were already awarded (idempotent)
     const existing = db.data.coinTransactions.find(
-      (t: any) => t.userId === decoded.userId && t.sourceType === data.sourceType && t.sourceId === data.sourceId
+      (t: any) => t.userId === auth.userId && t.sourceType === data.sourceType && t.sourceId === data.sourceId
     );
 
     if (existing) {
@@ -96,7 +88,7 @@ export async function PUT(request: NextRequest) {
     // Create coin transaction
     const transaction = {
       id: crypto.randomUUID(),
-      userId: decoded.userId,
+      userId: auth.userId,
       ...data,
       createdAt: new Date().toISOString(),
     };
@@ -104,7 +96,7 @@ export async function PUT(request: NextRequest) {
     await saveDb();
 
     // Update user coins
-    const user = await updateUserCoins(decoded.userId, data.amount);
+    const user = await updateUserCoins(auth.userId, data.amount);
 
     return NextResponse.json({ success: true, user });
   } catch (error) {

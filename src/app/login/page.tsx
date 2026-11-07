@@ -13,6 +13,7 @@ export default function LoginPage() {
     email: '',
     password: ''
   });
+  const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -21,7 +22,7 @@ export default function LoginPage() {
     setError('');
     setLoading(true);
 
-    const result = await login(formData.email, formData.password);
+    const result = await login(formData.email, formData.password, rememberMe);
 
     setLoading(false);
 
@@ -90,11 +91,16 @@ export default function LoginPage() {
             </div>
 
             <div className="flex items-center justify-between">
-              <label className="flex items-center gap-2 text-sm text-gray-400">
-                <input type="checkbox" className="rounded border-gray-600 bg-white/5" />
+              <label className="flex items-center gap-2 text-sm text-gray-400 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                  className="rounded border-gray-600 bg-white/5"
+                />
                 Remember me
               </label>
-              <Link href="#" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">
+              <Link href="/forgot-password" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">
                 Forgot password?
               </Link>
             </div>

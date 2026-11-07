@@ -23,6 +23,8 @@ interface DatabaseSchema {
   notes: any[];
   activityLog: any[];
   notifications: any[];
+  passwordResetTokens: any[];
+  contentItems: any[];
 }
 
 const defaultData: DatabaseSchema = {
@@ -38,6 +40,8 @@ const defaultData: DatabaseSchema = {
   notes: [],
   activityLog: [],
   notifications: [],
+  passwordResetTokens: [],
+  contentItems: [],
 };
 
 let db: Low<DatabaseSchema> | null = null;
