@@ -9,6 +9,7 @@ import { pythonCourse, javascriptCourse } from '@/data/courses';
 import { useAuth } from '@/lib/auth-context';
 import { getLessonNavigation } from '@/lib/lesson-navigation';
 import LessonNavigationComponent from '@/components/lesson-navigation';
+import DbLessonView from '@/components/db-lesson-view';
 import { useLessonProgress } from '@/lib/use-lesson-progress';
 import type { Course } from '@/types';
 
@@ -63,16 +64,8 @@ function LessonContent() {
   const progress = useLessonProgress(course?.languageId, courseLessonIds);
 
   if (!lesson || !course) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-[#0a0e27] via-[#1a1f3a] to-[#0a0e27] flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-white mb-4">Lesson Not Found</h1>
-          <Link href="/languages" className="text-purple-400 hover:text-purple-300">
-            Browse Languages
-          </Link>
-        </div>
-      </div>
-    );
+    // Fall back to database-backed content (generated curriculum for all languages)
+    return <DbLessonView lessonId={lessonId} />;
   }
 
   // Get navigation data
