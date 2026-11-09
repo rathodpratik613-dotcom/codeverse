@@ -7,6 +7,7 @@ import { Code2, Play, CheckCircle, ArrowRight, Trophy, BookOpen } from 'lucide-r
 import { pythonCourse, javascriptCourse } from '@/data/courses';
 import { languages } from '@/data/languages';
 import { useLessonProgress } from '@/lib/use-lesson-progress';
+import DbCourseView from '@/components/db-course-view';
 import type { Course } from '@/types';
 
 export default function CoursePage() {
@@ -37,16 +38,8 @@ function CourseContent() {
   const progress = useLessonProgress(course?.languageId, lessonIds);
 
   if (!course) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-[#0a0e27] via-[#1a1f3a] to-[#0a0e27] flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-white mb-4">Course Not Found</h1>
-          <Link href="/languages" className="text-purple-400 hover:text-purple-300">
-            Browse Languages
-          </Link>
-        </div>
-      </div>
-    );
+    // Fall back to database-backed courses (generated curriculum)
+    return <DbCourseView courseId={courseId} />;
   }
 
   const language = languages.find(l => l.id === course.languageId);

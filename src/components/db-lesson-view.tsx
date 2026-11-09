@@ -192,7 +192,7 @@ export default function DbLessonView({ lessonId }: { lessonId: string }) {
 
           <div className="flex-1">
             {isLast ? (
-              <Link href={courseId ? `/course/${courseId}` : '/languages'}
+              <Link href={courseId ? `/course/${courseId}?lang=${lesson.language}` : '/languages'}
                 className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-green-500/50 transition-all">
                 <Trophy className="w-5 h-5" />
                 <div className="text-center">
