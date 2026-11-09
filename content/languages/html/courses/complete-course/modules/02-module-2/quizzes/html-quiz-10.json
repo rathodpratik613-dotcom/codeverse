@@ -32,9 +32,9 @@
     {
       "id": "html-q-tf-10",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: <div> creates a block-level box; <span> stays inline.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "html-q-fill-10",

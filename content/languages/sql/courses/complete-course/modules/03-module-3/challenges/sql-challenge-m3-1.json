@@ -2,7 +2,7 @@
   "id": "sql-challenge-m3-1",
   "title": "Functions Practice 1",
   "difficulty": 3,
-  "statement": "Module 3 (Functions) covers: transactions, views, functions and procedures, normalization, window functions. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Transactions).",
+  "statement": "Module 3 (Functions) covers: transactions, views, functions and procedures, normalization, window functions, subquery patterns. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Transactions).",
   "starterCode": "-- Your code here\n",
   "visibleTests": [
     {

@@ -1,0 +1,53 @@
+{
+  "id": "lesson-35",
+  "title": "Web Performance",
+  "summary": "Fast pages win users and rankings. The biggest wins in HTML: fewer DOM nodes, lazy-loaded images, deferred scripts, and minimal render-block",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand web performance",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Fast pages win users and rankings. The biggest wins in HTML: fewer DOM nodes, lazy-loaded images, deferred scripts, and minimal render-blocking resources."
+    },
+    {
+      "type": "text",
+      "content": "Core Web Vitals measure real experience: LCP (loading), INP (interactivity), CLS (visual stability). HTML choices — image dimensions, async/defer on scripts, preload hints — directly move these numbers."
+    },
+    {
+      "type": "text",
+      "content": "Key points: measure before optimizing, lazy-load below the fold, and every script tag costs main-thread time."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<img src=\"photo.webp\" width=\"800\" height=\"600\" loading=\"lazy\" alt=\"...\">\n<script src=\"app.js\" defer></script>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<img src=\"photo.webp\" width=\"800\" height=\"600\" loading=\"lazy\" alt=\"...\">\n<script src=\"app.js\" defer></script>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Web Performance — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: measure before optimizing, lazy-load below the fold, and every script tag costs main-thread time."
+  ],
+  "quizRefs": [
+    "html-quiz-35"
+  ],
+  "challengeRefs": [
+    "html-challenge-m6-3"
+  ],
+  "nextLessonId": "lesson-36"
+}

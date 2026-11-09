@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-36",
+  "title": "Quiz: Accessibility Auditing",
+  "description": "Check your understanding of Accessibility Auditing.",
+  "questions": [
+    {
+      "id": "html-q-comment-36",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-36",
+      "type": "mcq",
+      "question": "What does WCAG stand for?",
+      "options": [
+        "Web Content Accessibility Guidelines",
+        "World Coding Alliance Group",
+        "Web Client Architecture Guide",
+        "Wide Compatibility And Guidelines"
+      ],
+      "correctAnswer": "Web Content Accessibility Guidelines",
+      "explanation": "The W3C standard for accessible web content."
+    },
+    {
+      "id": "html-q-tf-36",
+      "type": "true-false",
+      "question": "True or False: Automation tools can replace manual screen-reader testing entirely.",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-36",
+      "type": "fill-blank",
+      "question": "Fill in the blank: axe DevTools and Lighthouse ${verb} accessibility issues automatically",
+      "correctAnswer": "detect",
+      "explanation": "Automated scanners flag ~30-50% of issues; manual review covers the rest."
+    },
+    {
+      "id": "html-q-out-36",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -3,7 +3,7 @@
   "name": "JavaScript",
   "icon": "🟨",
   "color": "#F7DF1E",
-  "description": "JavaScript complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "description": "JavaScript complete beginner-to-advanced course with quizzes and practice challenges.",
   "difficulty": "beginner",
   "runtimeType": "browser",
   "tags": [

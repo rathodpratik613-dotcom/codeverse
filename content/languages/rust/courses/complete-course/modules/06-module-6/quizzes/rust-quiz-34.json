@@ -1,0 +1,59 @@
+{
+  "id": "rust-quiz-34",
+  "title": "Quiz: Version Control Basics",
+  "description": "Check your understanding of Version Control Basics.",
+  "questions": [
+    {
+      "id": "rust-q-comment-34",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Rust?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Rust, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "rust-q-concept-34",
+      "type": "mcq",
+      "question": "What is a commit?",
+      "options": [
+        "A saved snapshot of your code at a point in time",
+        "A type of computer virus",
+        "A programming language",
+        "An error message"
+      ],
+      "correctAnswer": "A saved snapshot of your code at a point in time",
+      "explanation": "Commits let you revisit or revert any past state."
+    },
+    {
+      "id": "rust-q-tf-34",
+      "type": "true-false",
+      "question": "True or False: You should commit code only when the whole project is finished.",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "rust-q-fill-34",
+      "type": "fill-blank",
+      "question": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+      "correctAnswer": "commit",
+      "explanation": "commit records your staged changes permanently."
+    },
+    {
+      "id": "rust-q-out-34",
+      "type": "mcq",
+      "question": "In Rust, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

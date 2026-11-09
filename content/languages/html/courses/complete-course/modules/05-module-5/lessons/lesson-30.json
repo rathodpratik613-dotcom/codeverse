@@ -1,0 +1,53 @@
+{
+  "id": "lesson-30",
+  "title": "Web Components",
+  "summary": "Web Components are native browser features for reusable custom elements: custom elements (<my-card>), Shadow DOM (encapsulated styles), HTML",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand web components",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Web Components are native browser features for reusable custom elements: custom elements (<my-card>), Shadow DOM (encapsulated styles), HTML templates, and slots."
+    },
+    {
+      "type": "text",
+      "content": "They work in any framework — or no framework — because the browser implements them directly. Libraries like Lit make authoring pleasant."
+    },
+    {
+      "type": "text",
+      "content": "Key points: shadow DOM isolates styles from the page, slots enable composition, and custom elements need a hyphenated name like <user-card>."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "class UserCard extends HTMLElement {\n  connectedCallback() {\n    this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;\n  }\n}\ncustomElements.define(\"user-card\", UserCard);",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "class UserCard extends HTMLElement {\n  connectedCallback() {\n    this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;\n  }\n}\ncustomElements.define(\"user-card\", UserCard);\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Web Components — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: shadow DOM isolates styles from the page, slots enable composition, and custom elements need a hyphenated name like <user-card>."
+  ],
+  "quizRefs": [
+    "html-quiz-30"
+  ],
+  "challengeRefs": [
+    "html-challenge-m5-1"
+  ],
+  "nextLessonId": "lesson-31"
+}

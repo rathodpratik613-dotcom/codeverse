@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "fun main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the new output\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Built-in Functions — practice the example by changing values and predicting the output before running it."
     }

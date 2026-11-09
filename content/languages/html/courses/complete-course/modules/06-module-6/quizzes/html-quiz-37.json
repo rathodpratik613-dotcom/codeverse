@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-37",
+  "title": "Quiz: Internationalization",
+  "description": "Check your understanding of Internationalization.",
+  "questions": [
+    {
+      "id": "html-q-comment-37",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-37",
+      "type": "mcq",
+      "question": "Why must charset be declared early in <head>? ",
+      "options": [
+        "So the browser decodes the document correctly from the start",
+        "It speeds up images",
+        "It enables JavaScript",
+        "Search engines require it"
+      ],
+      "correctAnswer": "So the browser decodes the document correctly from the start",
+      "explanation": "Wrong charset = mojibake garbled text before the tag is seen."
+    },
+    {
+      "id": "html-q-tf-37",
+      "type": "true-false",
+      "question": "True or False: Translated text is often longer than English — layouts need flexible space.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-37",
+      "type": "fill-blank",
+      "question": "Fill in the blank: dir=\"${dir}\"  // right-to-left for Arabic/Hebrew",
+      "correctAnswer": "rtl",
+      "explanation": "dir controls text direction for bidirectional languages."
+    },
+    {
+      "id": "html-q-out-37",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

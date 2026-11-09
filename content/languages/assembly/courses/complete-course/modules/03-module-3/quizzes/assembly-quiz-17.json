@@ -32,9 +32,9 @@
     {
       "id": "assembly-q-tf-17",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Recursion can replace loops for problems that break into smaller identical sub-problems.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "assembly-q-fill-17",

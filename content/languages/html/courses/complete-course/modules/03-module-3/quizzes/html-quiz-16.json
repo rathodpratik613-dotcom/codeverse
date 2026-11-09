@@ -32,9 +32,9 @@
     {
       "id": "html-q-tf-16",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: The lang attribute on <html> helps screen readers pronounce text correctly.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "html-q-fill-16",

@@ -1,0 +1,53 @@
+{
+  "id": "lesson-29",
+  "title": "CSS Dark Mode Patterns",
+  "summary": "Dark mode via prefers-color-scheme media query + custom properties is the clean approach: define semantic tokens (--bg, --surface, --text) a",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand css dark mode patterns",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Dark mode via prefers-color-scheme media query + custom properties is the clean approach: define semantic tokens (--bg, --surface, --text) and flip them per scheme."
+    },
+    {
+      "type": "text",
+      "content": "Manual toggles need a data-theme attribute + :root[data-theme=\"dark\"] overrides, persisted in localStorage. Either way, never hardcode colors — always go through variables."
+    },
+    {
+      "type": "text",
+      "content": "Key points: pure black backgrounds cause halation — use dark grays, images need dark variants, and test contrast in both modes."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ":root { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :root { --bg: #141414; --text: #eee; }\n}\nbody { background: var(--bg); color: var(--text); }",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ":root { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :root { --bg: #141414; --text: #eee; }\n}\nbody { background: var(--bg); color: var(--text); }\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Dark Mode Patterns — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: pure black backgrounds cause halation — use dark grays, images need dark variants, and test contrast in both modes."
+  ],
+  "quizRefs": [
+    "css-quiz-29"
+  ],
+  "challengeRefs": [
+    "css-challenge-m5-1"
+  ],
+  "nextLessonId": "lesson-30"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "lesson-37",
+  "title": "CSS Tooling",
+  "summary": "Modern CSS pipelines: PostCSS/LightningCSS for transpiling and minification, Stylelint for linting, Browserslist for target queries, and CSS",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand css tooling",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Modern CSS pipelines: PostCSS/LightningCSS for transpiling and minification, Stylelint for linting, Browserslist for target queries, and CSS modules or Tailwind for architecture."
+    },
+    {
+      "type": "text",
+      "content": "LightningCSS is the fast Rust-based compiler gaining adoption; nesting and custom media queries still need it for older browsers. Always measure bundle impact — unused CSS ships to users."
+    },
+    {
+      "type": "text",
+      "content": "Key points: purge unused selectors in production, autoprefixer is fading as browsers catch up, and source maps keep debugging sane."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "/* browserslist */\n> 0.5%, last 2 versions, not dead\n/* compiles modern CSS for older targets */",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "/* browserslist */\n> 0.5%, last 2 versions, not dead\n/* compiles modern CSS for older targets */\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Tooling — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: purge unused selectors in production, autoprefixer is fading as browsers catch up, and source maps keep debugging sane."
+  ],
+  "quizRefs": [
+    "css-quiz-37"
+  ],
+  "challengeRefs": [
+    "css-challenge-m6-3"
+  ]
+}

@@ -32,7 +32,7 @@
     {
       "id": "html-q-tf-4",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: The alt attribute on images is only decorative and can be skipped.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

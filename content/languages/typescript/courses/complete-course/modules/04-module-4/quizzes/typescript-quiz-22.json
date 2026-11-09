@@ -32,7 +32,7 @@
     {
       "id": "typescript-q-tf-22",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: You can access set items by numeric index like a list.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

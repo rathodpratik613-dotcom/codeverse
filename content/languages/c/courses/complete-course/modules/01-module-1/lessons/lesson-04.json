@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "#include <stdio.h>\n\nint main() {\nchar name[] = \"Alice\";\nint age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, 1 (true) / 0 (false) is a boolean\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Data Types — practice the example by changing values and predicting the output before running it."
     }

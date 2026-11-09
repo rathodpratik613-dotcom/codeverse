@@ -32,9 +32,9 @@
     {
       "id": "csharp-q-tf-12",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: The inner loop of a nested loop finishes all its iterations before the outer loop advances.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "csharp-q-fill-12",

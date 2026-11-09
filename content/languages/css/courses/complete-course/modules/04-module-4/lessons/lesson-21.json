@@ -1,47 +1,53 @@
 {
   "id": "lesson-21",
-  "title": "Print Styles",
-  "summary": "print media queries (@media print) tailor pages for paper: hide nav/ads, expand content, force black-on-white, avoid page-break-inside on ca",
+  "title": "CSS Nesting",
+  "summary": "Native CSS nesting lets you write child rules inside parents — like preprocessors but built into browsers now. & refers to the parent select",
   "estimatedMinutes": 20,
   "difficulty": 4,
   "xpReward": 50,
   "learningObjectives": [
-    "Understand print styles",
+    "Understand css nesting",
     "Apply the concept in a small program",
     "Predict program output by reading code"
   ],
   "sections": [
     {
       "type": "text",
-      "content": "print media queries (@media print) tailor pages for paper: hide nav/ads, expand content, force black-on-white, avoid page-break-inside on cards."
+      "content": "Native CSS nesting lets you write child rules inside parents — like preprocessors but built into browsers now. & refers to the parent selector."
     },
     {
       "type": "text",
-      "content": "Use cm/mm/inch units for print sizing, display:none for chrome, and link elements with media=\"print\" for print-only stylesheets."
+      "content": ".card { .title { } &:hover { } } compiles conceptually to .card .title and .card:hover. Specificity of & matches the parent."
     },
     {
       "type": "text",
-      "content": "Key points: browsers ignore most screen colors on print anyway, page-break-before/after control flow, and test with browser print preview."
+      "content": "Key points: nesting is widely supported now, keep it shallow (2 levels), and & is required when the nested selector doesn't start with a combinator-friendly pattern."
     },
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": "@media print {\n    nav, .ads { display: none; }\n    .card { page-break-inside: avoid; }\n}",
+      "codeExample": ".card {\n    padding: 1rem;\n    .title { font-weight: bold; }\n    &:hover { box-shadow: 0 4px 12px #0002; }\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".card {\n    padding: 1rem;\n    .title { font-weight: bold; }\n    &:hover { box-shadow: 0 4px 12px #0002; }\n}\n/* */ experiment: modify a value above and predict the new output",
       "language": "css"
     },
     {
       "type": "tip",
-      "content": "Summary: Print Styles — practice the example by changing values and predicting the output before running it."
+      "content": "Summary: CSS Nesting — practice the example by changing values and predicting the output before running it."
     }
   ],
   "keyTakeaways": [
-    "Key points: browsers ignore most screen colors on print anyway, page-break-before/after control flow, and test with browser print preview."
+    "Key points: nesting is widely supported now, keep it shallow (2 levels), and & is required when the nested selector doesn't start with a combinator-friendly pattern."
   ],
   "quizRefs": [
     "css-quiz-21"
   ],
   "challengeRefs": [
-    "css-challenge-m4-3"
+    "css-challenge-m4-2"
   ],
   "nextLessonId": "lesson-22"
 }

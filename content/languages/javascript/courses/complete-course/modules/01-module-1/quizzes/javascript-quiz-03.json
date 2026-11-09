@@ -32,7 +32,7 @@
     {
       "id": "javascript-q-tf-3",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: Once a variable is assigned, its value can never change.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

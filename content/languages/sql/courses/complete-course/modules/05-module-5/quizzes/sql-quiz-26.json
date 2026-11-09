@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-26",
+  "title": "Quiz: Indexes Deep Dive",
+  "description": "Check your understanding of Indexes Deep Dive.",
+  "questions": [
+    {
+      "id": "sql-q-comment-26",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-26",
+      "type": "mcq",
+      "question": "When should you create an index?",
+      "options": [
+        "Filter/join/sort columns",
+        "Every column",
+        "Only primary keys",
+        "Never"
+      ],
+      "correctAnswer": "On columns used in WHERE, JOIN, and ORDER BY",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-26",
+      "type": "true-false",
+      "question": "True or False: Indexes trade write speed for read speed.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-26",
+      "type": "mcq",
+      "question": "What is the main purpose of the Indexes Deep Dive technique shown in this lesson?",
+      "options": [
+        "Indexes Deep Dive",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Indexes Deep Dive",
+      "explanation": "It exists to help you indexes deep dive effectively."
+    },
+    {
+      "id": "sql-q-out-26",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -32,7 +32,7 @@
     {
       "id": "java-q-tf-2",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: Comments are executed by the computer just like normal code.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

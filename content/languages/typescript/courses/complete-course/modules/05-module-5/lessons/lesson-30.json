@@ -1,46 +1,53 @@
 {
   "id": "lesson-30",
-  "title": "Capstone Project",
-  "summary": "Time to combine everything: variables, conditions, loops, functions, data structures, and error handling into one real program.",
+  "title": "Naming and Readable Code",
+  "summary": "Good names are the cheapest documentation: calculateTotalTax beats processData, isValidEmail beats flag2. Names should say what something IS",
   "estimatedMinutes": 20,
   "difficulty": 5,
   "xpReward": 60,
   "learningObjectives": [
-    "Understand capstone project",
+    "Understand naming and readable code",
     "Apply the concept in a small program",
     "Predict program output by reading code"
   ],
   "sections": [
     {
       "type": "text",
-      "content": "Time to combine everything: variables, conditions, loops, functions, data structures, and error handling into one real program."
+      "content": "Good names are the cheapest documentation: calculateTotalTax beats processData, isValidEmail beats flag2. Names should say what something IS or DOES."
     },
     {
       "type": "text",
-      "content": "Pick a small useful tool — a number guessing game, a to-do list manager, a quiz scorer, or a unit converter. Start with the simplest version that works, then add features one at a time."
+      "content": "Readability rules that scale: functions do one thing, lines stay short, magic numbers become named constants, and comments explain WHY not WHAT. Code is read far more often than it is written."
     },
     {
       "type": "text",
-      "content": "Key points: plan the features first, build the core loop early, test each piece, and finish something you can actually show people."
+      "content": "Key points: consistent naming conventions matter more than the exact style, avoid abbreviations unless universal (id, url, db), and if you need a comment to explain WHAT, rename instead."
     },
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": "// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time",
+      "codeExample": "// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0",
+      "language": "javascript"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output",
       "language": "javascript"
     },
     {
       "type": "tip",
-      "content": "Summary: Capstone Project — practice the example by changing values and predicting the output before running it."
+      "content": "Summary: Naming and Readable Code — practice the example by changing values and predicting the output before running it."
     }
   ],
   "keyTakeaways": [
-    "Key points: plan the features first, build the core loop early, test each piece, and finish something you can actually show people."
+    "Key points: consistent naming conventions matter more than the exact style, avoid abbreviations unless universal (id, url, db), and if you need a comment to explain WHAT, rename instead."
   ],
   "quizRefs": [
     "typescript-quiz-30"
   ],
   "challengeRefs": [
     "typescript-challenge-m5-3"
-  ]
+  ],
+  "nextLessonId": "lesson-31"
 }

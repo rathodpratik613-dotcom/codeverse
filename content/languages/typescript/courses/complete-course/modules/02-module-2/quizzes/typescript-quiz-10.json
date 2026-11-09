@@ -32,9 +32,9 @@
     {
       "id": "typescript-q-tf-10",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: \"break\" inside a nested loop exits only the innermost loop in most languages.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "typescript-q-fill-10",

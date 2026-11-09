@@ -1,0 +1,53 @@
+{
+  "id": "lesson-24",
+  "title": "Common Table Expressions",
+  "summary": "CTEs (WITH name AS (SELECT ...)) name a subquery so you can reference it like a table — and chain multiple CTEs for readable multi-step quer",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand common table expressions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "CTEs (WITH name AS (SELECT ...)) name a subquery so you can reference it like a table — and chain multiple CTEs for readable multi-step queries."
+    },
+    {
+      "type": "text",
+      "content": "They shine for: breaking complex logic into steps, reusing a result set, and recursive queries (org charts, bill-of-materials)."
+    },
+    {
+      "type": "text",
+      "content": "Key points: WITH ... AS materializes conceptually, recursive CTEs need UNION ALL + anchor member, and some engines allow INSERT/UPDATE ... RETURNING via CTE."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "WITH adult_users AS (\n    SELECT * FROM users WHERE age >= 18\n)\nSELECT count(*) FROM adult_users;",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "WITH adult_users AS (\n    SELECT * FROM users WHERE age >= 18\n)\nSELECT count(*) FROM adult_users;\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Common Table Expressions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: WITH ... AS materializes conceptually, recursive CTEs need UNION ALL + anchor member, and some engines allow INSERT/UPDATE ... RETURNING via CTE."
+  ],
+  "quizRefs": [
+    "sql-quiz-24"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m4-3"
+  ],
+  "nextLessonId": "lesson-25"
+}

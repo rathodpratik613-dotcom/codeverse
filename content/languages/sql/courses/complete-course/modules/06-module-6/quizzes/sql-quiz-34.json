@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-34",
+  "title": "Quiz: Migrations and Schema Evolution",
+  "description": "Check your understanding of Migrations and Schema Evolution.",
+  "questions": [
+    {
+      "id": "sql-q-comment-34",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-34",
+      "type": "mcq",
+      "question": "Why never edit an already-applied migration?",
+      "options": [
+        "Version tracking breaks",
+        "It is slower",
+        "Databases forbid it",
+        "No reason"
+      ],
+      "correctAnswer": "Environments track applied versions — edits cause drift and failures",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-34",
+      "type": "true-false",
+      "question": "True or False: Applied migrations are immutable history; write a new one instead.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-34",
+      "type": "mcq",
+      "question": "What is the main purpose of the Migrations and Schema Evolution technique shown in this lesson?",
+      "options": [
+        "Migrations and Schema Evolution",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Migrations and Schema Evolution",
+      "explanation": "It exists to help you migrations and schema evolution effectively."
+    },
+    {
+      "id": "sql-q-out-34",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

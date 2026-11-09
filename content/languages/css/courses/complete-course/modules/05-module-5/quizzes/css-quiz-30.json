@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-30",
+  "title": "Quiz: CSS Animation Libraries",
+  "description": "Check your understanding of CSS Animation Libraries.",
+  "questions": [
+    {
+      "id": "css-q-comment-30",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-30",
+      "type": "mcq",
+      "question": "When should you reach for a JS animation library?",
+      "options": [
+        "For complex choreography",
+        "For every hover effect",
+        "CSS cannot animate",
+        "For SEO"
+      ],
+      "correctAnswer": "When you need timelines, scroll triggers, or complex sequencing",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-30",
+      "type": "true-false",
+      "question": "True or False: CSS handles simple cases; libraries earn their weight on complex motion.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-30",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Animation Libraries technique shown in this lesson?",
+      "options": [
+        "CSS Animation Libraries",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Animation Libraries",
+      "explanation": "It exists to help you css animation libraries effectively."
+    },
+    {
+      "id": "css-q-out-30",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

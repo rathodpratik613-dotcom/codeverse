@@ -1,0 +1,53 @@
+{
+  "id": "lesson-32",
+  "title": "Structured Data",
+  "summary": "Structured data (schema.org JSON-LD in a <script type=\"application/ld+json\"> tag) tells search engines exactly what your content is: article",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand structured data",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Structured data (schema.org JSON-LD in a <script type=\"application/ld+json\"> tag) tells search engines exactly what your content is: articles, products, events, FAQs, recipes."
+    },
+    {
+      "type": "text",
+      "content": "Rich results — star ratings, prices, FAQ dropdowns — come from valid structured data, not from visible text alone. Google's Rich Results Test validates your markup."
+    },
+    {
+      "type": "text",
+      "content": "Key points: JSON-LD is preferred over microdata, match schema to visible content only, and one @type per entity keeps it clean."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<script type=\"application/ld+json\">\n{ \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"My Post\" }\n</script>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<script type=\"application/ld+json\">\n{ \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"My Post\" }\n</script>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Structured Data — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: JSON-LD is preferred over microdata, match schema to visible content only, and one @type per entity keeps it clean."
+  ],
+  "quizRefs": [
+    "html-quiz-32"
+  ],
+  "challengeRefs": [
+    "html-challenge-m5-3"
+  ],
+  "nextLessonId": "lesson-33"
+}

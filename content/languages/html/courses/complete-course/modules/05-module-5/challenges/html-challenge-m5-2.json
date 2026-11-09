@@ -2,7 +2,7 @@
   "id": "html-challenge-m5-2",
   "title": "Advanced Topics Practice 2",
   "difficulty": 5,
-  "statement": "Module 5 (Advanced Topics) covers: html performance, html security, capstone: build a page. Solve this practice problem using what you learned.\n\nExercise 2: write a small program that demonstrates one concept from this module (HTML Security).",
+  "statement": "Module 5 (Advanced Topics) covers: html performance, html security, html forms security, web components, print and media queries, structured data. Solve this practice problem using what you learned.\n\nExercise 2: write a small program that demonstrates one concept from this module (HTML Security).",
   "starterCode": "<!-- --> Your code here\n",
   "visibleTests": [
     {

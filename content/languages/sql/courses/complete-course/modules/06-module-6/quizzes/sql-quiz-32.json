@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-32",
+  "title": "Quiz: Data Warehousing Basics",
+  "description": "Check your understanding of Data Warehousing Basics.",
+  "questions": [
+    {
+      "id": "sql-q-comment-32",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-32",
+      "type": "mcq",
+      "question": "What does OLAP optimize for?",
+      "options": [
+        "Analytics queries",
+        "Single-row writes",
+        "Real-time checkout",
+        "User logins"
+      ],
+      "correctAnswer": "Fast analytical scans and aggregations",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-32",
+      "type": "true-false",
+      "question": "True or False: Columnar stores make SUM/AVG over billions of rows cheap.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-32",
+      "type": "mcq",
+      "question": "What is the main purpose of the Data Warehousing Basics technique shown in this lesson?",
+      "options": [
+        "Data Warehousing Basics",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Data Warehousing Basics",
+      "explanation": "It exists to help you data warehousing basics effectively."
+    },
+    {
+      "id": "sql-q-out-32",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

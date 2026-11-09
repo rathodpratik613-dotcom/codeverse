@@ -1,0 +1,28 @@
+{
+  "id": "html-challenge-m6-2",
+  "title": "Projects & Mastery Practice 2",
+  "difficulty": 5,
+  "statement": "Module 6 (Projects & Mastery) covers: html in modern frameworks, progressive web apps basics, web performance, accessibility auditing, internationalization, capstone: build a page. Solve this practice problem using what you learned.\n\nExercise 2: write a small program that demonstrates one concept from this module (Progressive Web Apps Basics).",
+  "starterCode": "<!-- --> Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Progressive Web Apps Basics lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "<!DOCTYPE html>\n<html>\n<body>\n    <h1>Hello, World!</h1>\n</body>\n</html>",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 40,
+  "coinReward": 20,
+  "tags": [
+    "html",
+    "module-6"
+  ]
+}

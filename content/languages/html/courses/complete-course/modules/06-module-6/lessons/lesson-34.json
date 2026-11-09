@@ -1,0 +1,53 @@
+{
+  "id": "lesson-34",
+  "title": "Progressive Web Apps Basics",
+  "summary": "PWAs turn websites into app-like experiences: installable icons, offline support via service workers, push notifications, and fast repeat lo",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand progressive web apps basics",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "PWAs turn websites into app-like experiences: installable icons, offline support via service workers, push notifications, and fast repeat loads."
+    },
+    {
+      "type": "text",
+      "content": "Requirements: HTTPS, a web app manifest (name, icons, theme), and a service worker for caching. The manifest JSON declares installability."
+    },
+    {
+      "type": "text",
+      "content": "Key points: service workers intercept network requests, Lighthouse audits PWA criteria, and iOS support lags behind Chrome/Android."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "{\n  \"name\": \"My App\",\n  \"short_name\": \"App\",\n  \"start_url\": \"/\",\n  \"display\": \"standalone\",\n  \"icons\": [{ \"src\": \"/icon.png\", \"sizes\": \"192x192\" }]\n}",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "{\n  \"name\": \"My App\",\n  \"short_name\": \"App\",\n  \"start_url\": \"/\",\n  \"display\": \"standalone\",\n  \"icons\": [{ \"src\": \"/icon.png\", \"sizes\": \"192x192\" }]\n}\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Progressive Web Apps Basics — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: service workers intercept network requests, Lighthouse audits PWA criteria, and iOS support lags behind Chrome/Android."
+  ],
+  "quizRefs": [
+    "html-quiz-34"
+  ],
+  "challengeRefs": [
+    "html-challenge-m6-2"
+  ],
+  "nextLessonId": "lesson-35"
+}

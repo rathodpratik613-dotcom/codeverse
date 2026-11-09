@@ -1,7 +1,7 @@
 {
   "id": "html-quiz-21",
-  "title": "Quiz: Tables Advanced",
-  "description": "Check your understanding of Tables Advanced.",
+  "title": "Quiz: Forms and Validation",
+  "description": "Check your understanding of Forms and Validation.",
   "questions": [
     {
       "id": "html-q-comment-21",
@@ -19,29 +19,29 @@
     {
       "id": "html-q-concept-21",
       "type": "mcq",
-      "question": "What does scope=\"col\" on a <th> tell assistive tech?",
+      "question": "What does the required attribute do?",
       "options": [
-        "This header applies to the cells below it in the column",
-        "The column is sortable",
-        "The cell is hidden",
-        "The table has 5 columns"
+        "Prevents submission when the field is empty",
+        "Hides the field",
+        "Makes it read-only",
+        "Adds a default value"
       ],
-      "correctAnswer": "This header applies to the cells below it in the column",
-      "explanation": "scope associates headers with their data cells."
+      "correctAnswer": "Prevents submission when the field is empty",
+      "explanation": "required enforces presence client-side."
     },
     {
       "id": "html-q-tf-21",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: Client-side validation is sufficient to protect a server.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },
     {
       "id": "html-q-fill-21",
       "type": "fill-blank",
-      "question": "Fill in the blank: colspan=\"${n}\"  // cell spans n columns",
-      "correctAnswer": "2/3/etc",
-      "explanation": "colspan merges cells horizontally."
+      "question": "Fill in the blank: pattern=\"[0-9]{${n}}\"  // exactly n digits",
+      "correctAnswer": "5/10/etc",
+      "explanation": "pattern uses regex to constrain format."
     },
     {
       "id": "html-q-out-21",

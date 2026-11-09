@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-28",
+  "title": "Quiz: HTML Security",
+  "description": "Check your understanding of HTML Security.",
+  "questions": [
+    {
+      "id": "html-q-comment-28",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-28",
+      "type": "mcq",
+      "question": "What is XSS?",
+      "options": [
+        "Injecting malicious scripts into a page through unescaped content",
+        "A type of database",
+        "A CSS animation",
+        "A hosting provider"
+      ],
+      "correctAnswer": "Injecting malicious scripts into a page through unescaped content",
+      "explanation": "Cross-site scripting exploits unescaped output."
+    },
+    {
+      "id": "html-q-tf-28",
+      "type": "true-false",
+      "question": "True or False: The sandbox attribute on iframes restricts what embedded content can do.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-28",
+      "type": "fill-blank",
+      "question": "Fill in the blank: rel=\"${r}\" on target=\"_blank\" links",
+      "correctAnswer": "noopener",
+      "explanation": "noopener prevents window.opener attacks."
+    },
+    {
+      "id": "html-q-out-28",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

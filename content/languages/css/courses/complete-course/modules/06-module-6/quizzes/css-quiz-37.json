@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-37",
+  "title": "Quiz: CSS Tooling",
+  "description": "Check your understanding of CSS Tooling.",
+  "questions": [
+    {
+      "id": "css-q-comment-37",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-37",
+      "type": "mcq",
+      "question": "What does Browserslist do?",
+      "options": [
+        "Targets browser versions",
+        "Downloads browsers",
+        "Validates HTML",
+        "Speeds up servers"
+      ],
+      "correctAnswer": "Declares which browsers your CSS must support",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-37",
+      "type": "true-false",
+      "question": "True or False: Tools read it to decide which transforms/polyfills to emit.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-37",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Tooling technique shown in this lesson?",
+      "options": [
+        "CSS Tooling",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Tooling",
+      "explanation": "It exists to help you css tooling effectively."
+    },
+    {
+      "id": "css-q-out-37",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

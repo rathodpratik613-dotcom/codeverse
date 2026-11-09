@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-29",
+  "title": "Quiz: Stored Procedures and Functions",
+  "description": "Check your understanding of Stored Procedures and Functions.",
+  "questions": [
+    {
+      "id": "sql-q-comment-29",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-29",
+      "type": "mcq",
+      "question": "Why parameterize stored procedures instead of string-concatenating values?",
+      "options": [
+        "Injection safety",
+        "Speed only",
+        "Cleaner logs",
+        "No reason"
+      ],
+      "correctAnswer": "To prevent SQL injection",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-29",
+      "type": "true-false",
+      "question": "True or False: Unescaped user input in SQL text = classic injection vector.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-29",
+      "type": "mcq",
+      "question": "What is the main purpose of the Stored Procedures and Functions technique shown in this lesson?",
+      "options": [
+        "Stored Procedures and Functions",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Stored Procedures and Functions",
+      "explanation": "It exists to help you stored procedures and functions effectively."
+    },
+    {
+      "id": "sql-q-out-29",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

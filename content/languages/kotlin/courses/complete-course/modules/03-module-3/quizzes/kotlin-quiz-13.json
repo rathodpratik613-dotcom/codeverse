@@ -32,7 +32,7 @@
     {
       "id": "kotlin-q-tf-13",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: A function must always return a value.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

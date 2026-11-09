@@ -1,0 +1,53 @@
+{
+  "id": "lesson-29",
+  "title": "Stored Procedures and Functions",
+  "summary": "Stored procedures package SQL logic server-side: reusable, transaction-safe, callable from apps with parameters. Functions return values and",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand stored procedures and functions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Stored procedures package SQL logic server-side: reusable, transaction-safe, callable from apps with parameters. Functions return values and can be used inside queries."
+    },
+    {
+      "type": "text",
+      "content": "Trade-offs: less portable across engines, harder to version-control than app code, but they reduce round-trips and enforce business rules centrally."
+    },
+    {
+      "type": "text",
+      "content": "Key points: parameterize inputs (never concatenate user text — SQL injection), keep procedures focused, and document return shapes clearly."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "CREATE PROCEDURE get_user(IN uid INT)\nBEGIN\n    SELECT * FROM users WHERE id = uid;\nEND",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "CREATE PROCEDURE get_user(IN uid INT)\nBEGIN\n    SELECT * FROM users WHERE id = uid;\nEND\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Stored Procedures and Functions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: parameterize inputs (never concatenate user text — SQL injection), keep procedures focused, and document return shapes clearly."
+  ],
+  "quizRefs": [
+    "sql-quiz-29"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m5-2"
+  ],
+  "nextLessonId": "lesson-30"
+}

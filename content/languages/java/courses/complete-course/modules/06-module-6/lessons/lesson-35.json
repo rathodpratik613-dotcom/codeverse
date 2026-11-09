@@ -1,0 +1,53 @@
+{
+  "id": "lesson-35",
+  "title": "Asking Good Questions",
+  "summary": "When stuck, a good question gets answers fast. Bad questions (\"it doesn't work\") get ignored; good ones include what you tried, what you exp",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand asking good questions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "When stuck, a good question gets answers fast. Bad questions (\"it doesn't work\") get ignored; good ones include what you tried, what you expected, and what happened instead."
+    },
+    {
+      "type": "text",
+      "content": "Before asking: read the error fully, search for the exact error message, check docs, and simplify your code to the smallest failing example."
+    },
+    {
+      "type": "text",
+      "content": "Key points: show code + expected vs actual output, mention your language/version, and be specific — \"on line 12, x is null when it should be 5\"."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "public class Main {\n    public static void main(String[] args) {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n    }\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "public class Main {\n    public static void main(String[] args) {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n// experiment: modify a value above and predict the new output\n    }\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Asking Good Questions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: show code + expected vs actual output, mention your language/version, and be specific — \"on line 12, x is null when it should be 5\"."
+  ],
+  "quizRefs": [
+    "java-quiz-35"
+  ],
+  "challengeRefs": [
+    "java-challenge-m6-2"
+  ],
+  "nextLessonId": "lesson-36"
+}

@@ -32,9 +32,9 @@
     {
       "id": "sql-q-tf-16",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: One fact lives in one place.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "sql-q-fill-16",

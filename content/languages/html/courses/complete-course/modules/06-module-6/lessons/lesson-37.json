@@ -1,0 +1,53 @@
+{
+  "id": "lesson-37",
+  "title": "Internationalization",
+  "summary": "Building for the world means: lang attributes, UTF-8 charset always, RTL-aware layouts (dir=\"rtl\"), locale-aware dates/numbers, and text exp",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand internationalization",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Building for the world means: lang attributes, UTF-8 charset always, RTL-aware layouts (dir=\"rtl\"), locale-aware dates/numbers, and text expansion room (German is ~30% longer than English)."
+    },
+    {
+      "type": "text",
+      "content": "Avoid hardcoded strings concatenated in markup — separate them for translation. Bidirectional text (Arabic/Hebrew mixed with numbers) needs dir attributes on elements."
+    },
+    {
+      "type": "text",
+      "content": "Key points: <html lang> drives pronunciation for screen readers, charset must be first in <head>, and test with pseudo-localization."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<html lang=\"ar\" dir=\"rtl\">\n<head><meta charset=\"UTF-8\"></head>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<html lang=\"ar\" dir=\"rtl\">\n<head><meta charset=\"UTF-8\"></head>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Internationalization — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: <html lang> drives pronunciation for screen readers, charset must be first in <head>, and test with pseudo-localization."
+  ],
+  "quizRefs": [
+    "html-quiz-37"
+  ],
+  "challengeRefs": [
+    "html-challenge-m6-2"
+  ],
+  "nextLessonId": "lesson-38"
+}

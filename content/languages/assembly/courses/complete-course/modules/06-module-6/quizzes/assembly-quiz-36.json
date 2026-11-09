@@ -1,0 +1,59 @@
+{
+  "id": "assembly-quiz-36",
+  "title": "Quiz: Capstone Project",
+  "description": "Check your understanding of Capstone Project.",
+  "questions": [
+    {
+      "id": "assembly-q-comment-36",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    },
+    {
+      "id": "assembly-q-concept-36",
+      "type": "mcq",
+      "question": "What is the best first step for a capstone project?",
+      "options": [
+        "Define the smallest version that works end-to-end",
+        "Write every feature at once",
+        "Design the perfect architecture first",
+        "Copy a large open-source project"
+      ],
+      "correctAnswer": "Define the smallest version that works end-to-end",
+      "explanation": "Working software beats perfect plans."
+    },
+    {
+      "id": "assembly-q-tf-36",
+      "type": "true-false",
+      "question": "True or False: Adding features one at a time makes debugging much easier.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "assembly-q-fill-36",
+      "type": "fill-blank",
+      "question": "Fill in the blank: while game_running { play_round() }  // the main ___",
+      "correctAnswer": "loop",
+      "explanation": "Games and tools center on a main loop."
+    },
+    {
+      "id": "assembly-q-out-36",
+      "type": "mcq",
+      "question": "In Assembly, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

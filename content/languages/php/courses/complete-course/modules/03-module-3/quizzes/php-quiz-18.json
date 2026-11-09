@@ -32,7 +32,7 @@
     {
       "id": "php-q-tf-18",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: You should always write your own version of sorting instead of using built-ins.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

@@ -1,0 +1,53 @@
+{
+  "id": "lesson-35",
+  "title": "View Transitions",
+  "summary": "The View Transitions API animates between DOM states natively: document.startViewTransition(() => updateDOM()) morphs elements with shared n",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand view transitions",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "The View Transitions API animates between DOM states natively: document.startViewTransition(() => updateDOM()) morphs elements with shared names via view-transition-name."
+    },
+    {
+      "type": "text",
+      "content": "No library needed for page navigations, theme switches, and list reordering — the browser interpolates old/new snapshots. Pair with CSS ::view-transition-old/new pseudo-elements for custom easing."
+    },
+    {
+      "type": "text",
+      "content": "Key points: needs JS trigger but zero dependencies, fallback is instant swap, and it excels at theme toggles and SPA route changes."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "::view-transition-old(root),\n::view-transition-new(root) {\n    animation-duration: 0.3s;\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "::view-transition-old(root),\n::view-transition-new(root) {\n    animation-duration: 0.3s;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: View Transitions — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: needs JS trigger but zero dependencies, fallback is instant swap, and it excels at theme toggles and SPA route changes."
+  ],
+  "quizRefs": [
+    "css-quiz-35"
+  ],
+  "challengeRefs": [
+    "css-challenge-m6-1"
+  ],
+  "nextLessonId": "lesson-36"
+}

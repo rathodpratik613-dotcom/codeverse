@@ -3,7 +3,7 @@
   "name": "TypeScript",
   "icon": "🔷",
   "color": "#3178C6",
-  "description": "TypeScript complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "description": "TypeScript complete beginner-to-advanced course with quizzes and practice challenges.",
   "difficulty": "beginner",
   "runtimeType": "browser",
   "tags": [

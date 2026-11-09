@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "label: add(a, b) {\n    ret a + b\n}\n; output via syscall write (int 0x80)  ; passes 2 and 3 as arguments\n; experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Parameters and Arguments — practice the example by changing values and predicting the output before running it."
     }

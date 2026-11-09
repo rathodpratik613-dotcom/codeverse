@@ -30,6 +30,12 @@
       "language": "html"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<input list=\"colors\" name=\"fav\">\n<datalist id=\"colors\">\n    <option value=\"Red\">\n    <option value=\"Blue\">\n</datalist>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
       "type": "tip",
       "content": "Summary: HTML5 Forms Advanced — practice the example by changing values and predicting the output before running it."
     }

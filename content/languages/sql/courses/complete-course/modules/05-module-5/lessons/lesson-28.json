@@ -1,0 +1,53 @@
+{
+  "id": "lesson-28",
+  "title": "Window Functions in Depth",
+  "summary": "Window functions compute across rows related to the current row WITHOUT collapsing groups like aggregates — ROW_NUMBER, RANK, LAG, LEAD, run",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand window functions in depth",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Window functions compute across rows related to the current row WITHOUT collapsing groups like aggregates — ROW_NUMBER, RANK, LAG, LEAD, running SUMs."
+    },
+    {
+      "type": "text",
+      "content": "OVER (PARTITION BY dept ORDER BY salary) defines the window. They rank top-N per group, compute moving averages, and fill gaps — all in one pass."
+    },
+    {
+      "type": "text",
+      "content": "Key points: they run after WHERE/GROUP BY, cannot nest window functions, and ROW_NUMBER vs RANK differ on ties (RANK skips positions)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT name, salary,\n    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank\nFROM employees;",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "SELECT name, salary,\n    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank\nFROM employees;\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Window Functions in Depth — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: they run after WHERE/GROUP BY, cannot nest window functions, and ROW_NUMBER vs RANK differ on ties (RANK skips positions)."
+  ],
+  "quizRefs": [
+    "sql-quiz-28"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m5-1"
+  ],
+  "nextLessonId": "lesson-29"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-35",
+  "title": "Quiz: Specialized Databases",
+  "description": "Check your understanding of Specialized Databases.",
+  "questions": [
+    {
+      "id": "sql-q-comment-35",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-35",
+      "type": "mcq",
+      "question": "What is graph databases' specialty?",
+      "options": [
+        "Relationship traversal",
+        "Time-series metrics",
+        "Full-text search",
+        "Key-value caching"
+      ],
+      "correctAnswer": "Traversing relationships between entities",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-35",
+      "type": "true-false",
+      "question": "True or False: Neo4j-style queries walk edges natively — joins become path matches.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-35",
+      "type": "mcq",
+      "question": "What is the main purpose of the Specialized Databases technique shown in this lesson?",
+      "options": [
+        "Specialized Databases",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Specialized Databases",
+      "explanation": "It exists to help you specialized databases effectively."
+    },
+    {
+      "id": "sql-q-out-35",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

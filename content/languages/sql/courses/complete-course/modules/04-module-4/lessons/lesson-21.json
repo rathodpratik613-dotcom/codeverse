@@ -1,47 +1,53 @@
 {
   "id": "lesson-21",
-  "title": "Date and Time",
-  "summary": "Date functions handle timestamps: NOW()/CURRENT_TIMESTAMP for now, DATE_TRUNC for bucketing (day/hour), INTERVAL for arithmetic, EXTRACT for",
+  "title": "String Functions",
+  "summary": "SQL string functions transform text: UPPER/LOWER, LENGTH, SUBSTRING, TRIM, CONCAT, REPLACE, POSITION, and pattern matching with LIKE.",
   "estimatedMinutes": 20,
   "difficulty": 4,
   "xpReward": 50,
   "learningObjectives": [
-    "Understand date and time",
+    "Understand string functions",
     "Apply the concept in a small program",
     "Predict program output by reading code"
   ],
   "sections": [
     {
       "type": "text",
-      "content": "Date functions handle timestamps: NOW()/CURRENT_TIMESTAMP for now, DATE_TRUNC for bucketing (day/hour), INTERVAL for arithmetic, EXTRACT for parts (year, month)."
+      "content": "SQL string functions transform text: UPPER/LOWER, LENGTH, SUBSTRING, TRIM, CONCAT, REPLACE, POSITION, and pattern matching with LIKE."
     },
     {
       "type": "text",
-      "content": "Store timestamps in UTC (TIMESTAMPTZ), convert for display in app layer, and index date columns you range-filter."
+      "content": "Functions differ per engine: PostgreSQL has || for concat and SPLIT_PART; MySQL uses CONCAT() and SUBSTRING_INDEX()."
     },
     {
       "type": "text",
-      "content": "Key points: date math differs per dialect (Postgres intervals vs MySQL DATE_ADD), always specify timezones, and \"today\" boundaries are a classic bug source."
+      "content": "Key points: TRIM removes padding spaces, SUBSTRING is 1-indexed in most engines, LIKE is case-insensitive in MySQL but sensitive in Postgres (use ILIKE), and regex via ~ (Postgres) or REGEXP (MySQL)."
     },
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": "SELECT DATE_TRUNC('day', created_at) AS day, COUNT(*)\nFROM events GROUP BY 1;",
+      "codeExample": "SELECT UPPER(name), SUBSTRING(email, 1, 3) AS prefix\nFROM users;",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "SELECT UPPER(name), SUBSTRING(email, 1, 3) AS prefix\nFROM users;\n-- experiment: modify a value above and predict the new output",
       "language": "sql"
     },
     {
       "type": "tip",
-      "content": "Summary: Date and Time — practice the example by changing values and predicting the output before running it."
+      "content": "Summary: String Functions — practice the example by changing values and predicting the output before running it."
     }
   ],
   "keyTakeaways": [
-    "Key points: date math differs per dialect (Postgres intervals vs MySQL DATE_ADD), always specify timezones, and \"today\" boundaries are a classic bug source."
+    "Key points: TRIM removes padding spaces, SUBSTRING is 1-indexed in most engines, LIKE is case-insensitive in MySQL but sensitive in Postgres (use ILIKE), and regex via ~ (Postgres) or REGEXP (MySQL)."
   ],
   "quizRefs": [
     "sql-quiz-21"
   ],
   "challengeRefs": [
-    "sql-challenge-m4-1"
+    "sql-challenge-m4-3"
   ],
   "nextLessonId": "lesson-22"
 }

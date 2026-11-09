@@ -1,0 +1,53 @@
+{
+  "id": "lesson-32",
+  "title": "CSS Architecture at Scale",
+  "summary": "Large codebases need systems: BEM naming, design tokens via custom properties, layered files (reset → tokens → base → components → utilities",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand css architecture at scale",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Large codebases need systems: BEM naming, design tokens via custom properties, layered files (reset → tokens → base → components → utilities), and linting (stylelint) to enforce conventions."
+    },
+    {
+      "type": "text",
+      "content": "CSS-in-JS and utility frameworks (Tailwind) trade hand-written CSS for generated utilities — same cascade rules apply underneath. Pick one approach and document it."
+    },
+    {
+      "type": "text",
+      "content": "Key points: consistency beats cleverness, tokens make rebranding cheap, and dead CSS deletion is part of the job."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ":root {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n/* tokens -> base -> components -> utilities */",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ":root {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n/* tokens -> base -> components -> utilities */\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Architecture at Scale — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: consistency beats cleverness, tokens make rebranding cheap, and dead CSS deletion is part of the job."
+  ],
+  "quizRefs": [
+    "css-quiz-32"
+  ],
+  "challengeRefs": [
+    "css-challenge-m6-1"
+  ],
+  "nextLessonId": "lesson-33"
+}

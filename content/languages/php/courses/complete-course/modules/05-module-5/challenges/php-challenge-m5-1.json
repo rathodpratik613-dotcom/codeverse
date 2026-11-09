@@ -2,7 +2,7 @@
   "id": "php-challenge-m5-1",
   "title": "Advanced Topics Practice 1",
   "difficulty": 5,
-  "statement": "Module 5 (Advanced Topics) covers: error handling, files, modules and imports, classes and oop basics, async and concurrency, capstone project. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Error Handling).",
+  "statement": "Module 5 (Advanced Topics) covers: error handling, files, modules and imports, classes and oop basics, async and concurrency, naming and readable code. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Error Handling).",
   "starterCode": "// Your code here\n",
   "visibleTests": [
     {

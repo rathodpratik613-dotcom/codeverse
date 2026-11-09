@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "; This program greets the world\nsection .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    mov ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    int 0x80\n; experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Comments — practice the example by changing values and predicting the output before running it."
     }

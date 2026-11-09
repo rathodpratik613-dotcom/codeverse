@@ -32,9 +32,9 @@
     {
       "id": "css-q-tf-18",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: It samples the backdrop — frosted glass effect.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "css-q-fill-18",

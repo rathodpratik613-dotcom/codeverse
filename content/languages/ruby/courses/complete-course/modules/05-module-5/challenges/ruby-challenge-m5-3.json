@@ -2,7 +2,7 @@
   "id": "ruby-challenge-m5-3",
   "title": "Advanced Topics Practice 3",
   "difficulty": 5,
-  "statement": "Module 5 (Advanced Topics) covers: error handling, files, modules and imports, classes and oop basics, async and concurrency, capstone project. Solve this practice problem using what you learned.\n\nExercise 3: write a small program that demonstrates one concept from this module (Modules and Imports).",
+  "statement": "Module 5 (Advanced Topics) covers: error handling, files, modules and imports, classes and oop basics, async and concurrency, naming and readable code. Solve this practice problem using what you learned.\n\nExercise 3: write a small program that demonstrates one concept from this module (Modules and Imports).",
   "starterCode": "# Your code here\n",
   "visibleTests": [
     {

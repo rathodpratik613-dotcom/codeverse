@@ -1,0 +1,28 @@
+{
+  "id": "cpp-challenge-m6-3",
+  "title": "Projects & Mastery Practice 3",
+  "difficulty": 5,
+  "statement": "Module 6 (Projects & Mastery) covers: testing your code, debugging strategies, reading documentation, version control basics, asking good questions, capstone project. Solve this practice problem using what you learned.\n\nExercise 3: write a small program that demonstrates one concept from this module (Reading Documentation).",
+  "starterCode": "// Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Reading Documentation lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "#include <iostream>\n#include <string>\n\nint main() {\n#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}\n    return 0;\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 50,
+  "coinReward": 25,
+  "tags": [
+    "cpp",
+    "module-6"
+  ]
+}

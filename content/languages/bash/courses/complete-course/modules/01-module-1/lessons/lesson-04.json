@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "name=\"Alice\"\nage=30\n# Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n# experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Data Types — practice the example by changing values and predicting the output before running it."
     }

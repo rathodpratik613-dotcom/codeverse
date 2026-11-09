@@ -1,0 +1,53 @@
+{
+  "id": "lesson-33",
+  "title": "CSS Capstone",
+  "summary": "Style a complete multi-section page: hero, features grid, testimonials, pricing table, footer — fully responsive from 320px to 4K, keyboard-",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand css capstone",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Style a complete multi-section page: hero, features grid, testimonials, pricing table, footer — fully responsive from 320px to 4K, keyboard-navigable, dark-mode aware."
+    },
+    {
+      "type": "text",
+      "content": "Requirements: CSS custom properties for all colors/spacing, Grid for page layout, Flexbox for components, hover/focus/active states on everything interactive, zero horizontal scroll, Lighthouse >90."
+    },
+    {
+      "type": "text",
+      "content": "Key points: mobile-first breakpoints, test with real content, not filler copy, and reduced-motion support is mandatory."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ":root {\n    --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0;\n    --radius: 12px; --space: clamp(1rem, 4vw, 2rem);\n}\n.grid { display: grid; gap: var(--space); }",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ":root {\n    --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0;\n    --radius: 12px; --space: clamp(1rem, 4vw, 2rem);\n}\n.grid { display: grid; gap: var(--space); }\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Capstone — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: mobile-first breakpoints, test with real content, not filler copy, and reduced-motion support is mandatory."
+  ],
+  "quizRefs": [
+    "css-quiz-33"
+  ],
+  "challengeRefs": [
+    "css-challenge-m6-2"
+  ],
+  "nextLessonId": "lesson-34"
+}

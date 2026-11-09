@@ -1,0 +1,53 @@
+{
+  "id": "lesson-28",
+  "title": "CSS Performance",
+  "summary": "CSS affects performance through: selector matching cost (avoid deep descendant chains), properties that trigger layout (width, top) vs paint",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand css performance",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "CSS affects performance through: selector matching cost (avoid deep descendant chains), properties that trigger layout (width, top) vs paint (color) vs composite (transform, opacity), and oversized stylesheets."
+    },
+    {
+      "type": "text",
+      "content": "Fast properties to animate: transform and opacity only — they skip layout and paint. content-visibility: auto skips rendering off-screen sections entirely."
+    },
+    {
+      "type": "text",
+      "content": "Key points: will-change hints the compositor, avoid animating box-shadow/filters on large areas, and unused CSS still costs parse time."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".panel {\n    content-visibility: auto;\n    contain-intrinsic-size: auto 500px;\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".panel {\n    content-visibility: auto;\n    contain-intrinsic-size: auto 500px;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Performance — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: will-change hints the compositor, avoid animating box-shadow/filters on large areas, and unused CSS still costs parse time."
+  ],
+  "quizRefs": [
+    "css-quiz-28"
+  ],
+  "challengeRefs": [
+    "css-challenge-m5-3"
+  ],
+  "nextLessonId": "lesson-29"
+}

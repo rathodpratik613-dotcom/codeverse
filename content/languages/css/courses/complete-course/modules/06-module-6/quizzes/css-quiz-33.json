@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-33",
+  "title": "Quiz: CSS Capstone",
+  "description": "Check your understanding of CSS Capstone.",
+  "questions": [
+    {
+      "id": "css-q-comment-33",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-33",
+      "type": "mcq",
+      "question": "What does clamp() give you in CSS?",
+      "options": [
+        "Fluid scaling between bounds",
+        "Random values",
+        "Print margins",
+        "Z-index"
+      ],
+      "correctAnswer": "A value that scales fluidly between min and max",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-33",
+      "type": "true-false",
+      "question": "True or False: clamp(min, preferred, max) is the responsive sizing tool.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-33",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Capstone technique shown in this lesson?",
+      "options": [
+        "CSS Capstone",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Capstone",
+      "explanation": "It exists to help you css capstone effectively."
+    },
+    {
+      "id": "css-q-out-33",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

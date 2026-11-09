@@ -1,0 +1,53 @@
+{
+  "id": "lesson-18",
+  "title": "Subquery Patterns",
+  "summary": "A subquery is a SELECT inside another query — in WHERE (filter by computed value), FROM (treat results as a table), or SELECT (computed colu",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand subquery patterns",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "A subquery is a SELECT inside another query — in WHERE (filter by computed value), FROM (treat results as a table), or SELECT (computed column)."
+    },
+    {
+      "type": "text",
+      "content": "Correlated subqueries reference the outer row and run per-row — powerful but slow on big tables; prefer JOINs when possible."
+    },
+    {
+      "type": "text",
+      "content": "Key points: subqueries must return one column in WHERE comparisons, IN/EXISTS/ANY are the common patterns, and CTEs (WITH) often read cleaner."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "SELECT name FROM users\nWHERE age > (SELECT AVG(age) FROM users);",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "SELECT name FROM users\nWHERE age > (SELECT AVG(age) FROM users);\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Subquery Patterns — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: subqueries must return one column in WHERE comparisons, IN/EXISTS/ANY are the common patterns, and CTEs (WITH) often read cleaner."
+  ],
+  "quizRefs": [
+    "sql-quiz-18"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m3-3"
+  ],
+  "nextLessonId": "lesson-19"
+}

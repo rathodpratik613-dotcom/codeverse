@@ -1,0 +1,53 @@
+{
+  "id": "lesson-23",
+  "title": "CSS for Forms",
+  "summary": "Form styling needs :focus-visible rings for keyboard users, styled checkboxes/radios (accent-color or custom), and :placeholder-shown tricks",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand css for forms",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Form styling needs :focus-visible rings for keyboard users, styled checkboxes/radios (accent-color or custom), and :placeholder-shown tricks. Disabled/readonly states need visual distinction."
+    },
+    {
+      "type": "text",
+      "content": "accent-color recolors native controls cheaply; custom checkbox = hidden input + styled label + :checked sibling selector."
+    },
+    {
+      "type": "text",
+      "content": "Key points: never remove outlines without replacement, error states need text not just red, and input font-size ≥16px prevents iOS zoom."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "input:focus-visible {\n    outline: 2px solid blue;\n    outline-offset: 2px;\n}\ninput[type=\"checkbox\"] {\n    accent-color: #6366f1;\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "input:focus-visible {\n    outline: 2px solid blue;\n    outline-offset: 2px;\n}\ninput[type=\"checkbox\"] {\n    accent-color: #6366f1;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS for Forms — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: never remove outlines without replacement, error states need text not just red, and input font-size ≥16px prevents iOS zoom."
+  ],
+  "quizRefs": [
+    "css-quiz-23"
+  ],
+  "challengeRefs": [
+    "css-challenge-m4-1"
+  ],
+  "nextLessonId": "lesson-24"
+}

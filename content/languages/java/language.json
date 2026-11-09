@@ -3,7 +3,7 @@
   "name": "Java",
   "icon": "☕",
   "color": "#ED8B00",
-  "description": "Java complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "description": "Java complete beginner-to-advanced course with quizzes and practice challenges.",
   "difficulty": "beginner",
   "runtimeType": "simulated",
   "tags": [

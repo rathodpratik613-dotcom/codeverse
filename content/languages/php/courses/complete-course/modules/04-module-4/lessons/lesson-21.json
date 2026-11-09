@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "user = { \"name\": \"Alice\", \"age\": 30 }\necho user[\"name\"];  // look up by key\n// experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Dictionaries and Maps — practice the example by changing values and predicting the output before running it."
     }

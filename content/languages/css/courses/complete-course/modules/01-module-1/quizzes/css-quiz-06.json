@@ -32,9 +32,9 @@
     {
       "id": "css-q-tf-6",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: display:none removes from render tree; visibility:hidden keeps space.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "css-q-fill-6",

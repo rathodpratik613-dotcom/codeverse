@@ -30,6 +30,12 @@
       "language": "html"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<p id=\"intro\" class=\"lead highlight\" title=\"A tooltip\">Text</p>\n<div data-user-id=\"42\">Custom data</div>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
       "type": "tip",
       "content": "Summary: Attributes and Global Attributes — practice the example by changing values and predicting the output before running it."
     }

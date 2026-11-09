@@ -3,7 +3,7 @@
   "name": "SQL",
   "icon": "🗄️",
   "color": "#336791",
-  "description": "SQL complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "description": "SQL complete beginner-to-advanced course with quizzes and practice challenges.",
   "difficulty": "beginner",
   "runtimeType": "server",
   "tags": [

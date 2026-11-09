@@ -32,7 +32,7 @@
     {
       "id": "cpp-q-tf-6",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: In math, 2 + 3 * 4 equals 20; the same order of operations applies in most programming languages.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

@@ -1,47 +1,53 @@
 {
   "id": "lesson-20",
-  "title": "CSS Nesting",
-  "summary": "Native CSS nesting lets you write child rules inside parents — like preprocessors but built into browsers now. & refers to the parent select",
+  "title": "CSS Units",
+  "summary": "Units: px (fixed), % (parent-relative), em (element font-size), rem (root font-size), vw/vh (viewport), ch/ex (character-based), and math fu",
   "estimatedMinutes": 20,
   "difficulty": 4,
   "xpReward": 50,
   "learningObjectives": [
-    "Understand css nesting",
+    "Understand css units",
     "Apply the concept in a small program",
     "Predict program output by reading code"
   ],
   "sections": [
     {
       "type": "text",
-      "content": "Native CSS nesting lets you write child rules inside parents — like preprocessors but built into browsers now. & refers to the parent selector."
+      "content": "Units: px (fixed), % (parent-relative), em (element font-size), rem (root font-size), vw/vh (viewport), ch/ex (character-based), and math functions calc/min/max/clamp."
     },
     {
       "type": "text",
-      "content": ".card { .title { } &:hover { } } compiles conceptually to .card .title and .card:hover. Specificity of & matches the parent."
+      "content": "Prefer rem for typography, %/fr for layout proportions, vw/vh sparingly (mobile URL bars shift vh). clamp() gives fluid sizing without media queries."
     },
     {
       "type": "text",
-      "content": "Key points: nesting is widely supported now, keep it shallow (2 levels), and & is required when the nested selector doesn't start with a combinator-friendly pattern."
+      "content": "Key points: 1rem = root font-size (16px default), em compounds when nested, and vmin/vmax pick the smaller/larger viewport dimension."
     },
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": ".card {\n    padding: 1rem;\n    .title { font-weight: bold; }\n    &:hover { box-shadow: 0 4px 12px #0002; }\n}",
+      "codeExample": ".hero {\n    font-size: clamp(1.5rem, 4vw, 3rem);\n    width: min(90%, 1200px);\n    margin: 0 auto;\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".hero {\n    font-size: clamp(1.5rem, 4vw, 3rem);\n    width: min(90%, 1200px);\n    margin: 0 auto;\n}\n/* */ experiment: modify a value above and predict the new output",
       "language": "css"
     },
     {
       "type": "tip",
-      "content": "Summary: CSS Nesting — practice the example by changing values and predicting the output before running it."
+      "content": "Summary: CSS Units — practice the example by changing values and predicting the output before running it."
     }
   ],
   "keyTakeaways": [
-    "Key points: nesting is widely supported now, keep it shallow (2 levels), and & is required when the nested selector doesn't start with a combinator-friendly pattern."
+    "Key points: 1rem = root font-size (16px default), em compounds when nested, and vmin/vmax pick the smaller/larger viewport dimension."
   ],
   "quizRefs": [
     "css-quiz-20"
   ],
   "challengeRefs": [
-    "css-challenge-m4-2"
+    "css-challenge-m4-1"
   ],
   "nextLessonId": "lesson-21"
 }

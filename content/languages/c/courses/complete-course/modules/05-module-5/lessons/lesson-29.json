@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "#include <stdio.h>\n\nint main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Async and Concurrency — practice the example by changing values and predicting the output before running it."
     }

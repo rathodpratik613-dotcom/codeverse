@@ -30,6 +30,12 @@
       "language": "sql"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "UPDATE users SET age = 31 WHERE name = 'Amy';\nDELETE FROM logs WHERE created_at < '2020-01-01';\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
       "type": "tip",
       "content": "Summary: UPDATE and DELETE — practice the example by changing values and predicting the output before running it."
     }

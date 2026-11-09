@@ -32,7 +32,7 @@
     {
       "id": "html-q-tf-1",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: HTML is a full programming language with loops and variables.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

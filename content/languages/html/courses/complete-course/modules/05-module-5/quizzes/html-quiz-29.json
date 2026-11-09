@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-29",
+  "title": "Quiz: HTML Forms Security",
+  "description": "Check your understanding of HTML Forms Security.",
+  "questions": [
+    {
+      "id": "html-q-comment-29",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-29",
+      "type": "mcq",
+      "question": "Why is server-side validation still needed when HTML5 has built-in checks?",
+      "options": [
+        "Client validation can be bypassed — the server must enforce rules",
+        "HTML5 validation is too slow",
+        "Browsers do not support it",
+        "It is only for styling"
+      ],
+      "correctAnswer": "Client validation can be bypassed — the server must enforce rules",
+      "explanation": "Anyone can craft requests without a browser."
+    },
+    {
+      "id": "html-q-tf-29",
+      "type": "true-false",
+      "question": "True or False: A CSRF token proves a form submission originated from your site.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-29",
+      "type": "fill-blank",
+      "question": "Fill in the blank: escape user input to prevent ${xss} attacks",
+      "correctAnswer": "XSS",
+      "explanation": "Unescaped <script> in user text executes in victims' browsers."
+    },
+    {
+      "id": "html-q-out-29",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

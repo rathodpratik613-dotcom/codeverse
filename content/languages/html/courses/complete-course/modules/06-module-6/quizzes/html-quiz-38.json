@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-38",
+  "title": "Quiz: Capstone: Build a Page",
+  "description": "Check your understanding of Capstone: Build a Page.",
+  "questions": [
+    {
+      "id": "html-q-comment-38",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-38",
+      "type": "mcq",
+      "question": "What should you check before calling an HTML page done?",
+      "options": [
+        "Validation, accessibility, and semantic structure",
+        "Only that it opens in Chrome",
+        "That it has the most divs",
+        "That images are huge"
+      ],
+      "correctAnswer": "Validation, accessibility, and semantic structure",
+      "explanation": "Quality = valid + accessible + semantic."
+    },
+    {
+      "id": "html-q-tf-38",
+      "type": "true-false",
+      "question": "True or False: One page should have exactly one <h1>.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-38",
+      "type": "fill-blank",
+      "question": "Fill in the blank: validator.w3.org  // check your ${doc}",
+      "correctAnswer": "HTML",
+      "explanation": "Validate markup for correctness."
+    },
+    {
+      "id": "html-q-out-38",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

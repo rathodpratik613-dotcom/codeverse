@@ -32,7 +32,7 @@
     {
       "id": "php-q-tf-15",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: Statements after a return inside the same block can still execute.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

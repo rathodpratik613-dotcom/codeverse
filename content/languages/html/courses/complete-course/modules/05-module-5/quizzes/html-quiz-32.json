@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-32",
+  "title": "Quiz: Structured Data",
+  "description": "Check your understanding of Structured Data.",
+  "questions": [
+    {
+      "id": "html-q-comment-32",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-32",
+      "type": "mcq",
+      "question": "What does structured data add to a page?",
+      "options": [
+        "Machine-readable meaning that enables rich search results",
+        "Faster loading",
+        "User accounts",
+        "Comment sections"
+      ],
+      "correctAnswer": "Machine-readable meaning that enables rich search results",
+      "explanation": "It describes entities (products, articles) so engines can enhance listings."
+    },
+    {
+      "id": "html-q-tf-32",
+      "type": "true-false",
+      "question": "True or False: Structured data should describe only content visible on the page.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-32",
+      "type": "fill-blank",
+      "question": "Fill in the blank: \"@type\": \"${type}\"   // e.g. Article, Product, FAQPage",
+      "correctAnswer": "schema",
+      "explanation": "schema.org types classify your content."
+    },
+    {
+      "id": "html-q-out-32",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

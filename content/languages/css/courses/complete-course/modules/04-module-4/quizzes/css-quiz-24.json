@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-24",
+  "title": "Quiz: CSS Scroll Snap",
+  "description": "Check your understanding of CSS Scroll Snap.",
+  "questions": [
+    {
+      "id": "css-q-comment-24",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-24",
+      "type": "mcq",
+      "question": "scroll-snap-type: mandatory can cause problems because...",
+      "options": [
+        "it forces page reloads",
+        "it disables images",
+        "it requires JavaScript",
+        "it only works in print"
+      ],
+      "correctAnswer": "it can trap scrolling when content overflows unexpectedly",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-24",
+      "type": "true-false",
+      "question": "True or False: Mandatory snapping can fight the user — proximity is safer.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-24",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Scroll Snap technique shown in this lesson?",
+      "options": [
+        "CSS Scroll Snap",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Scroll Snap",
+      "explanation": "It exists to help you css scroll snap effectively."
+    },
+    {
+      "id": "css-q-out-24",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,7 +1,7 @@
 {
   "id": "sql-quiz-20",
-  "title": "Quiz: String Functions",
-  "description": "Check your understanding of String Functions.",
+  "title": "Quiz: NULL Handling",
+  "description": "Check your understanding of NULL Handling.",
   "questions": [
     {
       "id": "sql-q-comment-20",
@@ -19,35 +19,35 @@
     {
       "id": "sql-q-concept-20",
       "type": "mcq",
-      "question": "In most SQL dialects, SUBSTRING starts counting at...",
+      "question": "What does COALESCE(nickname, name) return?",
       "options": [
-        "1",
-        "0",
-        "-1",
-        "Depends"
+        "nickname else name",
+        "Always nickname",
+        "Always name",
+        "Empty string"
       ],
-      "correctAnswer": "1",
+      "correctAnswer": "nickname if not NULL, else name",
       "explanation": ""
     },
     {
       "id": "sql-q-tf-20",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: COALESCE returns first non-NULL argument.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "sql-q-fill-20",
       "type": "mcq",
-      "question": "What is the main purpose of the String Functions technique shown in this lesson?",
+      "question": "What is the main purpose of the NULL Handling technique shown in this lesson?",
       "options": [
-        "String Functions",
+        "NULL Handling",
         "Storing passwords",
         "Printing random numbers",
         "Deleting files"
       ],
-      "correctAnswer": "String Functions",
-      "explanation": "It exists to help you string functions effectively."
+      "correctAnswer": "NULL Handling",
+      "explanation": "It exists to help you null handling effectively."
     },
     {
       "id": "sql-q-out-20",

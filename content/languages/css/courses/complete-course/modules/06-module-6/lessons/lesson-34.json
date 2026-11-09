@@ -1,0 +1,53 @@
+{
+  "id": "lesson-34",
+  "title": "Cascade Layers",
+  "summary": "@layer establishes explicit cascade order for stylesheets — base, components, utilities — so file load order stops mattering. Layers beat sp",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand cascade layers",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "@layer establishes explicit cascade order for stylesheets — base, components, utilities — so file load order stops mattering. Layers beat specificity: later layers win regardless of selector strength."
+    },
+    {
+      "type": "text",
+      "content": "This kills !important wars and makes large teams sane: declare layer order once in :root or the first import, then slot rules into their layer."
+    },
+    {
+      "type": "text",
+      "content": "Key points: unlayered styles beat layered ones (wrap everything), @layer can be inline per-rule, and it composes with media/supports queries."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "@layer reset, base, components, utilities;\n@layer components {\n    .btn { padding: 0.5rem 1rem; }\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "@layer reset, base, components, utilities;\n@layer components {\n    .btn { padding: 0.5rem 1rem; }\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Cascade Layers — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: unlayered styles beat layered ones (wrap everything), @layer can be inline per-rule, and it composes with media/supports queries."
+  ],
+  "quizRefs": [
+    "css-quiz-34"
+  ],
+  "challengeRefs": [
+    "css-challenge-m6-3"
+  ],
+  "nextLessonId": "lesson-35"
+}

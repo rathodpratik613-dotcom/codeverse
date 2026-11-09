@@ -1,0 +1,53 @@
+{
+  "id": "lesson-30",
+  "title": "Database Security",
+  "summary": "Database security layers: least-privilege accounts (apps get SELECT/INSERT only, never DROP), encrypted connections (TLS), hashed passwords ",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand database security",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Database security layers: least-privilege accounts (apps get SELECT/INSERT only, never DROP), encrypted connections (TLS), hashed passwords (never plaintext), and audit logging."
+    },
+    {
+      "type": "text",
+      "content": "SQL injection remains the top breach vector — parameterized queries/prepared statements are non-negotiable. Backups need testing: an untested backup is not a backup."
+    },
+    {
+      "type": "text",
+      "content": "Key points: separate read/write credentials, rotate secrets, encrypt sensitive columns (PII), and restrict network access to the DB port."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "-- never do this:\n-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"\n-- always parameterize instead",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "-- never do this:\n-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"\n-- always parameterize instead\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Database Security — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: separate read/write credentials, rotate secrets, encrypt sensitive columns (PII), and restrict network access to the DB port."
+  ],
+  "quizRefs": [
+    "sql-quiz-30"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m5-3"
+  ],
+  "nextLessonId": "lesson-31"
+}

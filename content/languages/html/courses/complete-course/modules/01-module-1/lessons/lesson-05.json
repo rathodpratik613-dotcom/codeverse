@@ -30,6 +30,12 @@
       "language": "html"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<ol>\n    <li>First</li>\n    <li>Second</li>\n</ol>\n<table>\n    <tr><th>Name</th><th>Age</th></tr>\n    <tr><td>Amy</td><td>30</td></tr>\n</table>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
       "type": "tip",
       "content": "Summary: Lists and Tables — practice the example by changing values and predicting the output before running it."
     }

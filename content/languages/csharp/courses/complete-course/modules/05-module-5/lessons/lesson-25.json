@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "using System;\n\nclass Program {\n    static void Main() {\ntry {\n    risky_operation()\n} catch (error) {\n    Console.WriteLine(\"Something went wrong\");\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Error Handling — practice the example by changing values and predicting the output before running it."
     }

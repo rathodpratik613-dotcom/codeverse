@@ -1,0 +1,53 @@
+{
+  "id": "lesson-33",
+  "title": "Reading Documentation",
+  "summary": "Every language ships with official documentation — the authoritative reference for syntax, built-in functions, and standard libraries.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand reading documentation",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Every language ships with official documentation — the authoritative reference for syntax, built-in functions, and standard libraries."
+    },
+    {
+      "type": "text",
+      "content": "Docs follow patterns: a quick-start guide, then detailed references per topic. Learning to scan docs for \"how do I X\" turns you from guessing into working efficiently."
+    },
+    {
+      "type": "text",
+      "content": "Key points: official docs beat random tutorials, search the exact function name, and note version differences — APIs change between releases."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "# Docs pattern: Quick Start -> Guides -> API Reference\n# search for: function name + your language",
+      "language": "python"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "# Docs pattern: Quick Start -> Guides -> API Reference\n# search for: function name + your language\n# experiment: modify a value above and predict the new output",
+      "language": "python"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Reading Documentation — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: official docs beat random tutorials, search the exact function name, and note version differences — APIs change between releases."
+  ],
+  "quizRefs": [
+    "python-quiz-33"
+  ],
+  "challengeRefs": [
+    "python-challenge-m6-3"
+  ],
+  "nextLessonId": "lesson-34"
+}

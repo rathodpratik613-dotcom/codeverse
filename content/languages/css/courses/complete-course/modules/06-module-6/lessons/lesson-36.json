@@ -1,0 +1,53 @@
+{
+  "id": "lesson-36",
+  "title": "Anchor Positioning",
+  "summary": "CSS anchor positioning places tooltips, popovers, and menus relative to a trigger element — pure CSS, no JS measuring.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand anchor positioning",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "CSS anchor positioning places tooltips, popovers, and menus relative to a trigger element — pure CSS, no JS measuring."
+    },
+    {
+      "type": "text",
+      "content": "Set position-anchor on the positioned element, anchor-name on the trigger, then use anchor() and position-area/position-try for placement with automatic flipping when space runs out."
+    },
+    {
+      "type": "text",
+      "content": "Key points: solves the \"tooltip goes off-screen\" problem declaratively, pairs with popover API, and fallback positioning still needs care in older browsers."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".tooltip {\n    position: absolute;\n    position-anchor: --btn;\n    top: anchor(bottom);\n}\nbutton { anchor-name: --btn; }",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".tooltip {\n    position: absolute;\n    position-anchor: --btn;\n    top: anchor(bottom);\n}\nbutton { anchor-name: --btn; }\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Anchor Positioning — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: solves the \"tooltip goes off-screen\" problem declaratively, pairs with popover API, and fallback positioning still needs care in older browsers."
+  ],
+  "quizRefs": [
+    "css-quiz-36"
+  ],
+  "challengeRefs": [
+    "css-challenge-m6-2"
+  ],
+  "nextLessonId": "lesson-37"
+}

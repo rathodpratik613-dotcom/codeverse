@@ -1,47 +1,53 @@
 {
   "id": "lesson-22",
-  "title": "Capstone: Design a Schema",
-  "summary": "Design a database for a real app (blog, store, booking): list entities, define columns/types/constraints, sketch relationships, then write C",
+  "title": "Date and Time",
+  "summary": "Date functions handle timestamps: NOW()/CURRENT_TIMESTAMP for now, DATE_TRUNC for bucketing (day/hour), INTERVAL for arithmetic, EXTRACT for",
   "estimatedMinutes": 20,
   "difficulty": 4,
   "xpReward": 50,
   "learningObjectives": [
-    "Understand capstone: design a schema",
+    "Understand date and time",
     "Apply the concept in a small program",
     "Predict program output by reading code"
   ],
   "sections": [
     {
       "type": "text",
-      "content": "Design a database for a real app (blog, store, booking): list entities, define columns/types/constraints, sketch relationships, then write CREATE TABLE statements and sample queries."
+      "content": "Date functions handle timestamps: NOW()/CURRENT_TIMESTAMP for now, DATE_TRUNC for bucketing (day/hour), INTERVAL for arithmetic, EXTRACT for parts (year, month)."
     },
     {
       "type": "text",
-      "content": "Checklist: every table has a PK, FKs enforce relationships, junction tables for many-to-many, indexes on lookup columns, and seed data to test queries."
+      "content": "Store timestamps in UTC (TIMESTAMPTZ), convert for display in app layer, and index date columns you range-filter."
     },
     {
       "type": "text",
-      "content": "Key points: sketch on paper first, normalize reasonably (not perfectly), and validate with real queries — a schema you cannot query is not done."
+      "content": "Key points: date math differs per dialect (Postgres intervals vs MySQL DATE_ADD), always specify timezones, and \"today\" boundaries are a classic bug source."
     },
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": "-- blog schema sketch\nusers(id, name, email)\nposts(id, user_id FK, title, body, created_at)\ncomments(id, post_id FK, user_id FK, text)",
+      "codeExample": "SELECT DATE_TRUNC('day', created_at) AS day, COUNT(*)\nFROM events GROUP BY 1;",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "SELECT DATE_TRUNC('day', created_at) AS day, COUNT(*)\nFROM events GROUP BY 1;\n-- experiment: modify a value above and predict the new output",
       "language": "sql"
     },
     {
       "type": "tip",
-      "content": "Summary: Capstone: Design a Schema — practice the example by changing values and predicting the output before running it."
+      "content": "Summary: Date and Time — practice the example by changing values and predicting the output before running it."
     }
   ],
   "keyTakeaways": [
-    "Key points: sketch on paper first, normalize reasonably (not perfectly), and validate with real queries — a schema you cannot query is not done."
+    "Key points: date math differs per dialect (Postgres intervals vs MySQL DATE_ADD), always specify timezones, and \"today\" boundaries are a classic bug source."
   ],
   "quizRefs": [
     "sql-quiz-22"
   ],
   "challengeRefs": [
-    "sql-challenge-m4-2"
+    "sql-challenge-m4-1"
   ],
   "nextLessonId": "lesson-23"
 }

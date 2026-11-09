@@ -32,9 +32,9 @@
     {
       "id": "r-q-tf-5",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: User input is usually received as a string, even when the user typed a number.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "r-q-fill-5",

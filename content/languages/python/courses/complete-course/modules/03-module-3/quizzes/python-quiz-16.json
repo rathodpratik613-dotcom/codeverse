@@ -32,9 +32,9 @@
     {
       "id": "python-q-tf-16",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: A function can read a global variable in most languages.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "python-q-fill-16",

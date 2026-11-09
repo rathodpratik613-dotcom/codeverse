@@ -1,0 +1,53 @@
+{
+  "id": "lesson-31",
+  "title": "NoSQL vs SQL",
+  "summary": "NoSQL databases (MongoDB, Redis, Cassandra) trade relational guarantees for flexibility: document/key-value/wide-column stores scale horizon",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand nosql vs sql",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "NoSQL databases (MongoDB, Redis, Cassandra) trade relational guarantees for flexibility: document/key-value/wide-column stores scale horizontally and handle unstructured data."
+    },
+    {
+      "type": "text",
+      "content": "Choose SQL when data is structured with relationships and ACID matters; choose NoSQL for flexible schemas, massive scale, or simple key lookups. Many systems use both (polyglot persistence)."
+    },
+    {
+      "type": "text",
+      "content": "Key points: \"NoSQL\" means \"not only SQL\" not \"no SQL\", joins are rare in NoSQL (denormalize instead), and transactions exist but with caveats."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "// MongoDB document — flexible schema\n{ name: \"Ada\", tags: [\"admin\"], meta: { logins: 42 } }",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "// MongoDB document — flexible schema\n{ name: \"Ada\", tags: [\"admin\"], meta: { logins: 42 } }\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: NoSQL vs SQL — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: \"NoSQL\" means \"not only SQL\" not \"no SQL\", joins are rare in NoSQL (denormalize instead), and transactions exist but with caveats."
+  ],
+  "quizRefs": [
+    "sql-quiz-31"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m6-1"
+  ],
+  "nextLessonId": "lesson-32"
+}

@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "age = 20\nif age >= 18 {\n    puts \"Adult\"\n} else {\n    puts \"Minor\"\n}\n# experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: If Statements — practice the example by changing values and predicting the output before running it."
     }

@@ -1,0 +1,53 @@
+{
+  "id": "lesson-25",
+  "title": "Transactions and ACID",
+  "summary": "Transactions group statements so they all succeed or all roll back — bank transfers need debit+credit atomic, never half-done.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand transactions and acid",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Transactions group statements so they all succeed or all roll back — bank transfers need debit+credit atomic, never half-done."
+    },
+    {
+      "type": "text",
+      "content": "ACID: Atomicity (all-or-nothing), Consistency (constraints hold), Isolation (concurrent txns do not interfere), Durability (committed data survives crashes). Isolation levels trade safety for speed."
+    },
+    {
+      "type": "text",
+      "content": "Key points: BEGIN/COMMIT/ROLLBACK control the boundary, deadlocks happen under concurrency (retry logic helps), and read committed is the common default."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "BEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "BEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Transactions and ACID — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: BEGIN/COMMIT/ROLLBACK control the boundary, deadlocks happen under concurrency (retry logic helps), and read committed is the common default."
+  ],
+  "quizRefs": [
+    "sql-quiz-25"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m5-1"
+  ],
+  "nextLessonId": "lesson-26"
+}

@@ -32,9 +32,9 @@
     {
       "id": "csharp-q-tf-14",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: The number of arguments passed must match the number of parameters in most languages.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "csharp-q-fill-14",

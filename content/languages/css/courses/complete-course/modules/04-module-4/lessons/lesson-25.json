@@ -1,0 +1,53 @@
+{
+  "id": "lesson-25",
+  "title": "Container Queries",
+  "summary": "Container queries style elements based on their PARENT's size, not the viewport — finally solving \"component that adapts to its slot\".",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand container queries",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Container queries style elements based on their PARENT's size, not the viewport — finally solving \"component that adapts to its slot\"."
+    },
+    {
+      "type": "text",
+      "content": "Declare containment on a wrapper (container-type: inline-size), then use @container (min-width: 400px) rules inside. Perfect for cards in sidebars vs main columns."
+    },
+    {
+      "type": "text",
+      "content": "Key points: need containment context, units cqw/cqh/cqi express container-relative sizes, and support is now broad in modern browsers."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".card-wrapper { container-type: inline-size; }\n@container (min-width: 350px) {\n    .card { grid-template-columns: 1fr 1fr; }\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".card-wrapper { container-type: inline-size; }\n@container (min-width: 350px) {\n    .card { grid-template-columns: 1fr 1fr; }\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Container Queries — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: need containment context, units cqw/cqh/cqi express container-relative sizes, and support is now broad in modern browsers."
+  ],
+  "quizRefs": [
+    "css-quiz-25"
+  ],
+  "challengeRefs": [
+    "css-challenge-m4-3"
+  ],
+  "nextLessonId": "lesson-26"
+}

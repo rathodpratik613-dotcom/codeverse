@@ -32,7 +32,7 @@
     {
       "id": "html-q-tf-15",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: Client-side validation alone is enough to secure a form.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

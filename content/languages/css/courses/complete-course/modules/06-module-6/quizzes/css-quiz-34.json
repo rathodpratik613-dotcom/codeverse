@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-34",
+  "title": "Quiz: Cascade Layers",
+  "description": "Check your understanding of Cascade Layers.",
+  "questions": [
+    {
+      "id": "css-q-comment-34",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-34",
+      "type": "mcq",
+      "question": "What problem do cascade layers solve?",
+      "options": [
+        "Order-dependent cascade chaos",
+        "Slow page loads",
+        "Missing fonts",
+        "SEO"
+      ],
+      "correctAnswer": "Specificity conflicts regardless of selector strength",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-34",
+      "type": "true-false",
+      "question": "True or False: Layers give predictable ordering without !important.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-34",
+      "type": "mcq",
+      "question": "What is the main purpose of the Cascade Layers technique shown in this lesson?",
+      "options": [
+        "Cascade Layers",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Cascade Layers",
+      "explanation": "It exists to help you cascade layers effectively."
+    },
+    {
+      "id": "css-q-out-34",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -30,6 +30,12 @@
       "language": "html"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<!DOCTYPE html>\n<html>\n<head>\n    <title>My Page</title>\n</head>\n<body>\n    <h1>Hello</h1>\n</body>\n</html>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
       "type": "tip",
       "content": "Summary: Document Structure — practice the example by changing values and predicting the output before running it."
     }

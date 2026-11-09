@@ -32,9 +32,9 @@
     {
       "id": "go-q-tf-1",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: A program's output always appears exactly where the print/output statement is placed in the code.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "go-q-fill-1",

@@ -32,9 +32,9 @@
     {
       "id": "rust-q-tf-28",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Strings and lists behave like objects in many languages — they have methods.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "rust-q-fill-28",

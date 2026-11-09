@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-33",
+  "title": "Quiz: HTML in Modern Frameworks",
+  "description": "Check your understanding of HTML in Modern Frameworks.",
+  "questions": [
+    {
+      "id": "html-q-comment-33",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-33",
+      "type": "mcq",
+      "question": "What does JSX compile down to?",
+      "options": [
+        "Function calls that create DOM elements",
+        "Raw HTML files",
+        "CSS stylesheets",
+        "Database queries"
+      ],
+      "correctAnswer": "Function calls that create DOM elements",
+      "explanation": "JSX is syntax sugar; the framework builds real DOM nodes."
+    },
+    {
+      "id": "html-q-tf-33",
+      "type": "true-false",
+      "question": "True or False: Frameworks replace the need to understand HTML semantics.",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-33",
+      "type": "fill-blank",
+      "question": "Fill in the blank: frameworks render ${html} under the hood",
+      "correctAnswer": "HTML",
+      "explanation": "Everything ends up as DOM elements in the browser."
+    },
+    {
+      "id": "html-q-out-33",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

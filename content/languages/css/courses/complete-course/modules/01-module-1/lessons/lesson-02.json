@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".card {\n    border: 1px solid #ccc;\n    padding: 16px;\n}\n.card .title {\n    font-weight: bold;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: Selectors — practice the example by changing values and predicting the output before running it."
     }

@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-36",
+  "title": "Quiz: Anchor Positioning",
+  "description": "Check your understanding of Anchor Positioning.",
+  "questions": [
+    {
+      "id": "css-q-comment-36",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-36",
+      "type": "mcq",
+      "question": "What does anchor positioning replace?",
+      "options": [
+        "Manual JS positioning",
+        "Media queries",
+        "z-index hacks",
+        "iframes"
+      ],
+      "correctAnswer": "JavaScript that measures element positions for popovers",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-36",
+      "type": "true-false",
+      "question": "True or False: Declarative anchoring handles placement and flipping in CSS.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-36",
+      "type": "mcq",
+      "question": "What is the main purpose of the Anchor Positioning technique shown in this lesson?",
+      "options": [
+        "Anchor Positioning",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Anchor Positioning",
+      "explanation": "It exists to help you anchor positioning effectively."
+    },
+    {
+      "id": "css-q-out-36",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

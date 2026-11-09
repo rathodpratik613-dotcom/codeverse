@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-26",
+  "title": "Quiz: HTML Templates and Components",
+  "description": "Check your understanding of HTML Templates and Components.",
+  "questions": [
+    {
+      "id": "html-q-comment-26",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-26",
+      "type": "mcq",
+      "question": "What problem do HTML templates solve?",
+      "options": [
+        "Duplicating the same markup across many pages",
+        "Making pages load faster",
+        "Adding animations",
+        "Storing user passwords"
+      ],
+      "correctAnswer": "Duplicating the same markup across many pages",
+      "explanation": "Define shared structure once; templates fill in the differences."
+    },
+    {
+      "id": "html-q-tf-26",
+      "type": "true-false",
+      "question": "True or False: Templating engines let you write loops and conditionals inside HTML.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-26",
+      "type": "fill-blank",
+      "question": "Fill in the blank: render the ${part} once, reuse it on every page",
+      "correctAnswer": "header",
+      "explanation": "Shared regions like headers belong in templates/components."
+    },
+    {
+      "id": "html-q-out-26",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

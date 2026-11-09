@@ -1,0 +1,53 @@
+{
+  "id": "lesson-36",
+  "title": "Accessibility Auditing",
+  "summary": "Beyond basics, auditing means systematically checking: keyboard-only navigation, screen-reader output (headings order, landmarks, labels), c",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand accessibility auditing",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Beyond basics, auditing means systematically checking: keyboard-only navigation, screen-reader output (headings order, landmarks, labels), color contrast, zoom to 200%, and reduced-motion preferences."
+    },
+    {
+      "type": "text",
+      "content": "Tools help: axe DevTools and Lighthouse flag issues automatically, but manual keyboard and screen-reader passes catch what automation misses."
+    },
+    {
+      "type": "text",
+      "content": "Key points: WCAG levels A/AA/AAA define conformance, focus order should match visual order, and error messages must say how to fix the problem."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<!-- audit checklist -->\n<!-- 1. tab through the whole page -->\n<!-- 2. does every control have a label? -->\n<!-- 3. contrast >= 4.5:1 for text -->",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<!-- audit checklist -->\n<!-- 1. tab through the whole page -->\n<!-- 2. does every control have a label? -->\n<!-- 3. contrast >= 4.5:1 for text -->\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Accessibility Auditing — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: WCAG levels A/AA/AAA define conformance, focus order should match visual order, and error messages must say how to fix the problem."
+  ],
+  "quizRefs": [
+    "html-quiz-36"
+  ],
+  "challengeRefs": [
+    "html-challenge-m6-1"
+  ],
+  "nextLessonId": "lesson-37"
+}

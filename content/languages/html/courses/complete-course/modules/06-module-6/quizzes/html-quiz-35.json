@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-35",
+  "title": "Quiz: Web Performance",
+  "description": "Check your understanding of Web Performance.",
+  "questions": [
+    {
+      "id": "html-q-comment-35",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-35",
+      "type": "mcq",
+      "question": "What does loading=\"lazy\" do on an image?",
+      "options": [
+        "Defers loading until the image scrolls near the viewport",
+        "Compresses the image",
+        "Loads it twice",
+        "Hides it until clicked"
+      ],
+      "correctAnswer": "Defers loading until the image scrolls near the viewport",
+      "explanation": "Off-screen images no longer compete for bandwidth upfront."
+    },
+    {
+      "id": "html-q-tf-35",
+      "type": "true-false",
+      "question": "True or False: Setting width and height on images prevents layout shift (CLS).",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-35",
+      "type": "fill-blank",
+      "question": "Fill in the blank: <script ${attr} src=\"app.js\"></script>  // load after parsing",
+      "correctAnswer": "defer",
+      "explanation": "defer downloads in parallel but executes after HTML parses."
+    },
+    {
+      "id": "html-q-out-35",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

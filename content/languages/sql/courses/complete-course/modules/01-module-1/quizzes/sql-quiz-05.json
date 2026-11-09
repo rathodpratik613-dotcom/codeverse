@@ -32,9 +32,9 @@
     {
       "id": "sql-q-tf-5",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Binary floating point cannot represent decimals exactly.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "sql-q-fill-5",

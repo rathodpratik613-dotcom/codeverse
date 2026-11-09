@@ -32,9 +32,9 @@
     {
       "id": "kotlin-q-tf-24",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: You can access object fields using dot notation or bracket notation in many languages.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "kotlin-q-fill-24",

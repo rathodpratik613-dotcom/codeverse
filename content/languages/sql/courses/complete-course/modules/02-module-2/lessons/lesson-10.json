@@ -30,6 +30,12 @@
       "language": "sql"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "SELECT name FROM users\nWHERE id IN (\n    SELECT user_id FROM orders WHERE total > 100\n);\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
       "type": "tip",
       "content": "Summary: Subqueries — practice the example by changing values and predicting the output before running it."
     }

@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".hidden {\n    display: none;\n}\n.inline-block {\n    display: inline-block;\n    width: 100px;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: Display Property — practice the example by changing values and predicting the output before running it."
     }

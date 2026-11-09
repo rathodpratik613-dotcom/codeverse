@@ -32,9 +32,9 @@
     {
       "id": "html-q-tf-12",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: HTML comments are visible when you view page source.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "html-q-fill-12",

@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-30",
+  "title": "Quiz: Database Security",
+  "description": "Check your understanding of Database Security.",
+  "questions": [
+    {
+      "id": "sql-q-comment-30",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-30",
+      "type": "mcq",
+      "question": "The #1 database attack is...",
+      "options": [
+        "SQL injection",
+        "Slow queries",
+        "Big tables",
+        "Missing indexes"
+      ],
+      "correctAnswer": "SQL injection via unparameterized input",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-30",
+      "type": "true-false",
+      "question": "True or False: Prepared statements separate code from data.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-30",
+      "type": "mcq",
+      "question": "What is the main purpose of the Database Security technique shown in this lesson?",
+      "options": [
+        "Database Security",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Database Security",
+      "explanation": "It exists to help you database security effectively."
+    },
+    {
+      "id": "sql-q-out-30",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

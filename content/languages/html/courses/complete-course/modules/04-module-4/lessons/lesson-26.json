@@ -1,0 +1,53 @@
+{
+  "id": "lesson-26",
+  "title": "HTML Templates and Components",
+  "summary": "As sites grow, repeating header/nav/footer markup in every page becomes unmaintainable. Server-side templating or frontend components solve ",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand html templates and components",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "As sites grow, repeating header/nav/footer markup in every page becomes unmaintainable. Server-side templating or frontend components solve this: define once, render everywhere."
+    },
+    {
+      "type": "text",
+      "content": "Templating engines inject data into HTML (loops for lists, conditionals for sections); component frameworks (React, Vue) go further with reusable UI pieces and state."
+    },
+    {
+      "type": "text",
+      "content": "Key points: DRY applies to markup too, keep templates dumb (logic stays in JS/backend), and shared components guarantee visual consistency."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<!-- template: header rendered on every page -->\n<header><nav>...</nav></header>\n<main><!-- page content --></main>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<!-- template: header rendered on every page -->\n<header><nav>...</nav></header>\n<main><!-- page content --></main>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML Templates and Components — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: DRY applies to markup too, keep templates dumb (logic stays in JS/backend), and shared components guarantee visual consistency."
+  ],
+  "quizRefs": [
+    "html-quiz-26"
+  ],
+  "challengeRefs": [
+    "html-challenge-m4-3"
+  ],
+  "nextLessonId": "lesson-27"
+}

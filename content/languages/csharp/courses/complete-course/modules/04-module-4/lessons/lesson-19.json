@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "using System;\n\nclass Program {\n    static void Main() {\nitems = [\"a\", \"b\", \"c\"]\nConsole.WriteLine(items[0]);  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output\n    }\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Arrays and Lists — practice the example by changing values and predicting the output before running it."
     }

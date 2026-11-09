@@ -1,0 +1,53 @@
+{
+  "id": "lesson-33",
+  "title": "Database Capstone",
+  "summary": "Design and query a real schema end-to-end: pick a domain (library, gym, food delivery), write CREATE TABLEs with PKs/FKs/constraints, seed r",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand database capstone",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Design and query a real schema end-to-end: pick a domain (library, gym, food delivery), write CREATE TABLEs with PKs/FKs/constraints, seed realistic data, then solve 10 analytical queries using JOINs, aggregates, subqueries, and window functions."
+    },
+    {
+      "type": "text",
+      "content": "Deliverables: schema.sql, seed.sql, queries.sql with comments explaining each result. Every query must return correct, verified output."
+    },
+    {
+      "type": "text",
+      "content": "Key points: normalize first, add indexes after measuring, document assumptions, and test edge cases (empty tables, NULLs, duplicates)."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "-- deliverables\n-- schema.sql  seed.sql  queries.sql\n-- bonus: an ER diagram and index justification",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "-- deliverables\n-- schema.sql  seed.sql  queries.sql\n-- bonus: an ER diagram and index justification\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Database Capstone — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: normalize first, add indexes after measuring, document assumptions, and test edge cases (empty tables, NULLs, duplicates)."
+  ],
+  "quizRefs": [
+    "sql-quiz-33"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m6-3"
+  ],
+  "nextLessonId": "lesson-34"
+}

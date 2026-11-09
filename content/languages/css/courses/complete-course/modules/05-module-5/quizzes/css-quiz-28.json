@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-28",
+  "title": "Quiz: CSS Performance",
+  "description": "Check your understanding of CSS Performance.",
+  "questions": [
+    {
+      "id": "css-q-comment-28",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-28",
+      "type": "mcq",
+      "question": "Which properties are cheapest to animate?",
+      "options": [
+        "transform and opacity",
+        "width and height",
+        "top and left",
+        "margin"
+      ],
+      "correctAnswer": "transform and opacity",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-28",
+      "type": "true-false",
+      "question": "True or False: They only composite — no layout or paint work.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-28",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Performance technique shown in this lesson?",
+      "options": [
+        "CSS Performance",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Performance",
+      "explanation": "It exists to help you css performance effectively."
+    },
+    {
+      "id": "css-q-out-28",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,53 @@
+{
+  "id": "lesson-19",
+  "title": "CSS Transforms",
+  "summary": "transform moves, rotates, scales, and skews elements without affecting layout — translate, rotate, scale, skew, and matrix(). transform-orig",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand css transforms",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "transform moves, rotates, scales, and skews elements without affecting layout — translate, rotate, scale, skew, and matrix(). transform-origin sets the pivot point."
+    },
+    {
+      "type": "text",
+      "content": "Unlike margin/position changes, transforms are GPU-composited and smooth — prefer them for animations and hover effects."
+    },
+    {
+      "type": "text",
+      "content": "Key points: multiple functions chain left-to-right, percentages refer to element size, and 3D transforms need perspective on the parent."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".card:hover {\n    transform: translateY(-4px) scale(1.02);\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".card:hover {\n    transform: translateY(-4px) scale(1.02);\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Transforms — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: multiple functions chain left-to-right, percentages refer to element size, and 3D transforms need perspective on the parent."
+  ],
+  "quizRefs": [
+    "css-quiz-19"
+  ],
+  "challengeRefs": [
+    "css-challenge-m3-3"
+  ],
+  "nextLessonId": "lesson-20"
+}

@@ -30,6 +30,12 @@
       "language": "sql"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "-- BAD: order repeats customer info\n-- GOOD: orders.customer_id -> customers.id\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
       "type": "tip",
       "content": "Summary: Normalization — practice the example by changing values and predicting the output before running it."
     }

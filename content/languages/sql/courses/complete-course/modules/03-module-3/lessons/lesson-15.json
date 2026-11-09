@@ -30,6 +30,12 @@
       "language": "sql"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$\n    SELECT p * 2;\n$$ LANGUAGE SQL;\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
       "type": "tip",
       "content": "Summary: Functions and Procedures — practice the example by changing values and predicting the output before running it."
     }

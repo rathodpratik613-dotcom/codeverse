@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-30",
+  "title": "Quiz: Web Components",
+  "description": "Check your understanding of Web Components.",
+  "questions": [
+    {
+      "id": "html-q-comment-30",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-30",
+      "type": "mcq",
+      "question": "What does Shadow DOM provide?",
+      "options": [
+        "Style and DOM encapsulation for a component",
+        "Faster page loads",
+        "Database storage",
+        "Server rendering"
+      ],
+      "correctAnswer": "Style and DOM encapsulation for a component",
+      "explanation": "Shadow trees keep component internals separate from the page."
+    },
+    {
+      "id": "html-q-tf-30",
+      "type": "true-false",
+      "question": "True or False: Custom element names must contain a hyphen.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-30",
+      "type": "fill-blank",
+      "question": "Fill in the blank: customElements.${m}(\"my-element\", MyClass)",
+      "correctAnswer": "define",
+      "explanation": "define() registers the element with the browser."
+    },
+    {
+      "id": "html-q-out-30",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

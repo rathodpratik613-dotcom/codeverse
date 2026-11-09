@@ -32,9 +32,9 @@
     {
       "id": "sql-q-tf-17",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Window functions keep row detail while ranking.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "sql-q-fill-17",

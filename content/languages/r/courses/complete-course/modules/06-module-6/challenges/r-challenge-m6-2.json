@@ -1,0 +1,28 @@
+{
+  "id": "r-challenge-m6-2",
+  "title": "Projects & Mastery Practice 2",
+  "difficulty": 5,
+  "statement": "Module 6 (Projects & Mastery) covers: testing your code, debugging strategies, reading documentation, version control basics, asking good questions, capstone project. Solve this practice problem using what you learned.\n\nExercise 2: write a small program that demonstrates one concept from this module (Debugging Strategies).",
+  "starterCode": "# Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Debugging Strategies lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "print(\"Hello, World!\")",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 40,
+  "coinReward": 20,
+  "tags": [
+    "r",
+    "module-6"
+  ]
+}

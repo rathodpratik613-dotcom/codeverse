@@ -32,9 +32,9 @@
     {
       "id": "swift-q-tf-21",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Dictionary keys must be unique within one dictionary.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "swift-q-fill-21",

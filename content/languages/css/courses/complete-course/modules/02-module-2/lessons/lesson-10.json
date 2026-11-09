@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "@media (max-width: 768px) {\n    .nav { flex-direction: column; }\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: Responsive Design — practice the example by changing values and predicting the output before running it."
     }

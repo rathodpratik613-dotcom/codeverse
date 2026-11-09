@@ -32,9 +32,9 @@
     {
       "id": "rust-q-tf-23",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Binary search requires the data to be sorted first.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "rust-q-fill-23",

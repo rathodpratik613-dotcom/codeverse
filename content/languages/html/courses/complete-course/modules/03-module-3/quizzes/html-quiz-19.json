@@ -32,7 +32,7 @@
     {
       "id": "html-q-tf-19",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: <meter> and <progress> are interchangeable elements.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

@@ -3,7 +3,7 @@
   "name": "Python",
   "icon": "🐍",
   "color": "#3776AB",
-  "description": "Python complete beginner-to-advanced course: 30 lessons across 5 modules with quizzes and practice challenges.",
+  "description": "Python complete beginner-to-advanced course with quizzes and practice challenges.",
   "difficulty": "beginner",
   "runtimeType": "browser",
   "tags": [

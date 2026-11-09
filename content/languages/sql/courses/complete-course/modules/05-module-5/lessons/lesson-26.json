@@ -1,0 +1,53 @@
+{
+  "id": "lesson-26",
+  "title": "Indexes Deep Dive",
+  "summary": "Indexes are sorted lookup structures (B-trees) that turn full table scans into fast seeks — huge wins on large tables for WHERE/JOIN/ORDER B",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand indexes deep dive",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Indexes are sorted lookup structures (B-trees) that turn full table scans into fast seeks — huge wins on large tables for WHERE/JOIN/ORDER BY columns."
+    },
+    {
+      "type": "text",
+      "content": "Costs: every INSERT/UPDATE/DELETE maintains indexes (write slowdown + storage). Create them on columns you filter/join/sort by, not speculatively everywhere."
+    },
+    {
+      "type": "text",
+      "content": "Key points: composite indexes follow leftmost-prefix rule, covering indexes include all queried columns, and EXPLAIN shows whether indexes are used."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "CREATE INDEX idx_users_email ON users(email);\n-- speeds up: SELECT * FROM users WHERE email = ?",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "CREATE INDEX idx_users_email ON users(email);\n-- speeds up: SELECT * FROM users WHERE email = ?\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Indexes Deep Dive — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: composite indexes follow leftmost-prefix rule, covering indexes include all queried columns, and EXPLAIN shows whether indexes are used."
+  ],
+  "quizRefs": [
+    "sql-quiz-26"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m5-2"
+  ],
+  "nextLessonId": "lesson-27"
+}

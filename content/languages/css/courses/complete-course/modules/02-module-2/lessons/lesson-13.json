@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".card {\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n.card:hover {\n    transform: translateY(-4px);\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: Transitions and Animations — practice the example by changing values and predicting the output before running it."
     }

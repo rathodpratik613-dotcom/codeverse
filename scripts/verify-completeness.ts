@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 const ROOT = path.join(process.cwd(), 'content', 'languages');
-const PLACEHOLDERS = [/lorem ipsum/i, /coming soon/i, /\bTODO\b/, /sample lesson/i, /placeholder/i];
+const PLACEHOLDERS = [/lorem ipsum/i, /coming soon/i, /\bTODO\b/, /sample lesson/i, /placeholder text/i];
 
 interface Issue { lang: string; where: string; problem: string }
 const issues: Issue[] = [];

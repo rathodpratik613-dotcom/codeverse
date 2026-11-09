@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".row {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 16px;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: Flexbox — practice the example by changing values and predicting the output before running it."
     }

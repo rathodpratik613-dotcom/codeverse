@@ -30,6 +30,12 @@
       "language": "sql"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "SELECT name, age FROM users;\nSELECT DISTINCT city FROM customers;\nSELECT price AS cost FROM products;\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
       "type": "tip",
       "content": "Summary: SELECT Basics — practice the example by changing values and predicting the output before running it."
     }

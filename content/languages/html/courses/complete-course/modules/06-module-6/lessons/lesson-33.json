@@ -1,0 +1,53 @@
+{
+  "id": "lesson-33",
+  "title": "HTML in Modern Frameworks",
+  "summary": "Modern frameworks (React, Vue, Svelte, Angular) still emit HTML — JSX/templating is HTML plus expressions. Understanding raw HTML transfers ",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand html in modern frameworks",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Modern frameworks (React, Vue, Svelte, Angular) still emit HTML — JSX/templating is HTML plus expressions. Understanding raw HTML transfers directly."
+    },
+    {
+      "type": "text",
+      "content": "Key differences: the framework owns the DOM and re-renders on state change, attributes map to properties (className in React), and hydration attaches behavior to server-rendered HTML."
+    },
+    {
+      "type": "text",
+      "content": "Key points: learn HTML first — frameworks assume it, accessibility still applies, and view-source shows the final markup."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "// React JSX — HTML with expressions\n<div className=\"card\">\n  <h2>{post.title}</h2>\n  <p>{post.body}</p>\n</div>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "// React JSX — HTML with expressions\n<div className=\"card\">\n  <h2>{post.title}</h2>\n  <p>{post.body}</p>\n</div>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML in Modern Frameworks — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: learn HTML first — frameworks assume it, accessibility still applies, and view-source shows the final markup."
+  ],
+  "quizRefs": [
+    "html-quiz-33"
+  ],
+  "challengeRefs": [
+    "html-challenge-m6-1"
+  ],
+  "nextLessonId": "lesson-34"
+}

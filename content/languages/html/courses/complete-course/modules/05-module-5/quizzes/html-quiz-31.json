@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-31",
+  "title": "Quiz: Print and Media Queries",
+  "description": "Check your understanding of Print and Media Queries.",
+  "questions": [
+    {
+      "id": "html-q-comment-31",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-31",
+      "type": "mcq",
+      "question": "What does prefers-reduced-motion do?",
+      "options": [
+        "Lets users request less animation for accessibility",
+        "Speeds up animations",
+        "Removes all CSS",
+        "Enables dark mode"
+      ],
+      "correctAnswer": "Lets users request less animation for accessibility",
+      "explanation": "Vestibular disorders make motion sickness real — respect the setting."
+    },
+    {
+      "id": "html-q-tf-31",
+      "type": "true-false",
+      "question": "True or False: You can hide navigation and buttons when printing a page.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-31",
+      "type": "fill-blank",
+      "question": "Fill in the blank: @media (max-width: 600px) { ... }  // target ${screens}",
+      "correctAnswer": "small",
+      "explanation": "Media queries branch styles on device conditions."
+    },
+    {
+      "id": "html-q-out-31",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

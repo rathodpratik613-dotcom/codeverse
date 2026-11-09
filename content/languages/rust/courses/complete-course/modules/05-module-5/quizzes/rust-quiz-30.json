@@ -1,7 +1,7 @@
 {
   "id": "rust-quiz-30",
-  "title": "Quiz: Capstone Project",
-  "description": "Check your understanding of Capstone Project.",
+  "title": "Quiz: Naming and Readable Code",
+  "description": "Check your understanding of Naming and Readable Code.",
   "questions": [
     {
       "id": "rust-q-comment-30",
@@ -19,29 +19,29 @@
     {
       "id": "rust-q-concept-30",
       "type": "mcq",
-      "question": "What is the best first step for a capstone project?",
+      "question": "Which name is best for a function that checks email format?",
       "options": [
-        "Define the smallest version that works end-to-end",
-        "Write every feature at once",
-        "Design the perfect architecture first",
-        "Copy a large open-source project"
+        "isValidEmail",
+        "check",
+        "doStuff2",
+        "emailFunc"
       ],
-      "correctAnswer": "Define the smallest version that works end-to-end",
-      "explanation": "Working software beats perfect plans."
+      "correctAnswer": "isValidEmail",
+      "explanation": "Names should reveal purpose — isValidEmail says exactly what it answers."
     },
     {
       "id": "rust-q-tf-30",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: Comments should explain WHAT the code does line by line.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },
     {
       "id": "rust-q-fill-30",
       "type": "fill-blank",
-      "question": "Fill in the blank: while game_running { play_round() }  // the main ___",
-      "correctAnswer": "loop",
-      "explanation": "Games and tools center on a main loop."
+      "question": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+      "correctAnswer": "magic",
+      "explanation": "Named constants replace unexplained literal values."
     },
     {
       "id": "rust-q-out-30",

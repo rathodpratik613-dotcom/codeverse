@@ -30,6 +30,12 @@
       "language": "html"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<img src=\"hero.webp\" alt=\"Team working\" width=\"1200\" height=\"600\" loading=\"lazy\">\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
       "type": "tip",
       "content": "Summary: Images Best Practices — practice the example by changing values and predicting the output before running it."
     }

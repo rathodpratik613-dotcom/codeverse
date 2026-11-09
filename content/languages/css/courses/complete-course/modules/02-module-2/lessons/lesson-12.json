@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ":root {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n.button {\n    background: var(--color-primary);\n    padding: var(--space-md);\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: CSS Variables — practice the example by changing values and predicting the output before running it."
     }

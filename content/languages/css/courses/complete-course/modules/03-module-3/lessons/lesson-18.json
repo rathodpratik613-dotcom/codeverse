@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".glass {\n    backdrop-filter: blur(12px);\n    background: rgba(255,255,255,0.1);\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: Filters and Blend Modes — practice the example by changing values and predicting the output before running it."
     }

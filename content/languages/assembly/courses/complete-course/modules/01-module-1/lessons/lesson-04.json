@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "mov eax, 42\tmov ebx, 7\n; Common types: \"text\" is a string, 42 is a number, nonzero / zero is a boolean\n; experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Data Types — practice the example by changing values and predicting the output before running it."
     }

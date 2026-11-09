@@ -1,0 +1,53 @@
+{
+  "id": "lesson-32",
+  "title": "Debugging Strategies",
+  "summary": "Debugging is systematic hunting for bugs. The worst approach is randomly changing code — the best is narrowing down where reality diverges f",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand debugging strategies",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Debugging is systematic hunting for bugs. The worst approach is randomly changing code — the best is narrowing down where reality diverges from expectation."
+    },
+    {
+      "type": "text",
+      "content": "Print or log values at each step, reproduce the bug reliably, then bisect: comment out halves of the code until the bug disappears, revealing the culprit."
+    },
+    {
+      "type": "text",
+      "content": "Key points: read the error message fully, reproduce before fixing, and fix the cause — not the symptom."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nconsole.log(total);",
+      "language": "javascript"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nconsole.log(total);\n// experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Debugging Strategies — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: read the error message fully, reproduce before fixing, and fix the cause — not the symptom."
+  ],
+  "quizRefs": [
+    "typescript-quiz-32"
+  ],
+  "challengeRefs": [
+    "typescript-challenge-m6-2"
+  ],
+  "nextLessonId": "lesson-33"
+}

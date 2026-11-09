@@ -32,9 +32,9 @@
     {
       "id": "sql-q-tf-7",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Missing WHERE targets the whole table.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "sql-q-fill-7",

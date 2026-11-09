@@ -32,7 +32,7 @@
     {
       "id": "html-q-tf-5",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: Tables should be used for page layout in modern HTML.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

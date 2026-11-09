@@ -1,0 +1,53 @@
+{
+  "id": "lesson-29",
+  "title": "HTML Forms Security",
+  "summary": "Forms are the main attack surface of websites: they accept arbitrary user input, so everything submitted must be treated as hostile.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand html forms security",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Forms are the main attack surface of websites: they accept arbitrary user input, so everything submitted must be treated as hostile."
+    },
+    {
+      "type": "text",
+      "content": "Defenses: CSRF tokens prove submissions came from your site, server-side validation checks types/ranges, output escaping prevents XSS, and HTTPS encrypts data in transit. Password fields should use autocomplete=\"new-password\" hints and never log values."
+    },
+    {
+      "type": "text",
+      "content": "Key points: client-side checks are UX only — the server must re-validate everything."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<form method=\"post\" action=\"/signup\">\n<input type=\"hidden\" name=\"csrf\" value=\"TOKEN\">\n<input type=\"email\" name=\"email\" required>\n</form>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<form method=\"post\" action=\"/signup\">\n<input type=\"hidden\" name=\"csrf\" value=\"TOKEN\">\n<input type=\"email\" name=\"email\" required>\n</form>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML Forms Security — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: client-side checks are UX only — the server must re-validate everything."
+  ],
+  "quizRefs": [
+    "html-quiz-29"
+  ],
+  "challengeRefs": [
+    "html-challenge-m5-3"
+  ],
+  "nextLessonId": "lesson-30"
+}

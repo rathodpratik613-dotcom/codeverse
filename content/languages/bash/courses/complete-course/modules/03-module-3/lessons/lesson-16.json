@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "total = 0  # global\nfunction add(x) {\n    total = total + x  # needs special handling in strict languages\n}\n# experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Scope — practice the example by changing values and predicting the output before running it."
     }

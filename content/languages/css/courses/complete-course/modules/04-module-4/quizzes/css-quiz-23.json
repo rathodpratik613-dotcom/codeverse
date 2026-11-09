@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-23",
+  "title": "Quiz: CSS for Forms",
+  "description": "Check your understanding of CSS for Forms.",
+  "questions": [
+    {
+      "id": "css-q-comment-23",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-23",
+      "type": "mcq",
+      "question": ":focus-visible is preferred over :focus because...",
+      "options": [
+        ":focus-visible shows for keyboard only",
+        ":focus is deprecated",
+        "It is faster",
+        "It is required for forms"
+      ],
+      "correctAnswer": "it only shows for keyboard focus, not mouse clicks",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-23",
+      "type": "true-false",
+      "question": "True or False: focus-visible targets keyboard navigation specifically.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-23",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS for Forms technique shown in this lesson?",
+      "options": [
+        "CSS for Forms",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS for Forms",
+      "explanation": "It exists to help you css for forms effectively."
+    },
+    {
+      "id": "css-q-out-23",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

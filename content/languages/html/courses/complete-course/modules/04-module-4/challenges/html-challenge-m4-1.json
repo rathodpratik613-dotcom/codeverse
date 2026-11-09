@@ -2,7 +2,7 @@
   "id": "html-challenge-m4-1",
   "title": "Data Structures Practice 1",
   "difficulty": 4,
-  "statement": "Module 4 (Data Structures) covers: forms and validation, tables advanced, html and javascript hooks, svg and canvas. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Forms and Validation).",
+  "statement": "Module 4 (Data Structures) covers: forms and validation, tables advanced, html and javascript hooks, svg and canvas, project: build a page, html templates and components. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Forms and Validation).",
   "starterCode": "<!-- --> Your code here\n",
   "visibleTests": [
     {

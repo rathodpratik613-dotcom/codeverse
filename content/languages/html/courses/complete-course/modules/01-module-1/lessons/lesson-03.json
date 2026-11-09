@@ -30,6 +30,12 @@
       "language": "html"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<h1>Main Title</h1>\n<h2>Section</h2>\n<p>Some <strong>bold</strong> and <em>italic</em> text.</p>\n<ul>\n    <li>First item</li>\n    <li>Second item</li>\n</ul>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
       "type": "tip",
       "content": "Summary: Text Elements — practice the example by changing values and predicting the output before running it."
     }

@@ -1,47 +1,53 @@
 {
   "id": "lesson-23",
-  "title": "SVG and Canvas",
-  "summary": "SVG is markup for vector graphics — scalable, styleable with CSS, scriptable. Canvas is a bitmap drawing surface for pixels — charts, games,",
+  "title": "HTML and JavaScript Hooks",
+  "summary": "HTML exposes hooks for scripts: ids and classes for selection, data-* attributes for custom data, and semantic elements for behavior (detail",
   "estimatedMinutes": 20,
   "difficulty": 4,
   "xpReward": 50,
   "learningObjectives": [
-    "Understand svg and canvas",
+    "Understand html and javascript hooks",
     "Apply the concept in a small program",
     "Predict program output by reading code"
   ],
   "sections": [
     {
       "type": "text",
-      "content": "SVG is markup for vector graphics — scalable, styleable with CSS, scriptable. Canvas is a bitmap drawing surface for pixels — charts, games, image processing."
+      "content": "HTML exposes hooks for scripts: ids and classes for selection, data-* attributes for custom data, and semantic elements for behavior (details toggles natively)."
     },
     {
       "type": "text",
-      "content": "Use SVG for icons/logos/diagrams (crisp at any size), canvas for dynamic pixel work. Both live inside HTML pages natively."
+      "content": "The DOM (Document Object Model) is the live tree scripts manipulate — every element becomes a node with properties, methods, and events."
     },
     {
       "type": "text",
-      "content": "Key points: SVG elements are DOM nodes (styleable/animatable), canvas needs JS to draw, and prefer CSS/SVG animations over canvas for UI effects."
+      "content": "Key points: querySelector('#id') / querySelector('.class') are the main selectors, events (click, input) attach behavior, and innerHTML rebuilds content (careful with injection)."
     },
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": "<svg width=\"100\" height=\"100\">\n    <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"blue\"/>\n</svg>\n<canvas id=\"game\" width=\"300\" height=\"150\"></canvas>",
+      "codeExample": "<button id=\"save\" data-action=\"save\">Save</button>\n<script>\ndocument.getElementById(\"save\").addEventListener(\"click\", () => {\n    console.log(\"saved!\");\n});\n</script>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<button id=\"save\" data-action=\"save\">Save</button>\n<script>\ndocument.getElementById(\"save\").addEventListener(\"click\", () => {\n    console.log(\"saved!\");\n});\n</script>\n<!-- --> experiment: modify a value above and predict the new output",
       "language": "html"
     },
     {
       "type": "tip",
-      "content": "Summary: SVG and Canvas — practice the example by changing values and predicting the output before running it."
+      "content": "Summary: HTML and JavaScript Hooks — practice the example by changing values and predicting the output before running it."
     }
   ],
   "keyTakeaways": [
-    "Key points: SVG elements are DOM nodes (styleable/animatable), canvas needs JS to draw, and prefer CSS/SVG animations over canvas for UI effects."
+    "Key points: querySelector('#id') / querySelector('.class') are the main selectors, events (click, input) attach behavior, and innerHTML rebuilds content (careful with injection)."
   ],
   "quizRefs": [
     "html-quiz-23"
   ],
   "challengeRefs": [
-    "html-challenge-m4-1"
+    "html-challenge-m4-3"
   ],
   "nextLessonId": "lesson-24"
 }

@@ -1,7 +1,7 @@
 {
   "id": "css-quiz-22",
-  "title": "Quiz: CSS for Forms",
-  "description": "Check your understanding of CSS for Forms.",
+  "title": "Quiz: Print Styles",
+  "description": "Check your understanding of Print Styles.",
   "questions": [
     {
       "id": "css-q-comment-22",
@@ -19,35 +19,35 @@
     {
       "id": "css-q-concept-22",
       "type": "mcq",
-      "question": ":focus-visible is preferred over :focus because...",
+      "question": "How do you hide navigation when printing?",
       "options": [
-        ":focus-visible shows for keyboard only",
-        ":focus is deprecated",
-        "It is faster",
-        "It is required for forms"
+        "@media print { nav { display:none } }",
+        "nav { print: none }",
+        "visibility: print",
+        "You cannot"
       ],
-      "correctAnswer": "it only shows for keyboard focus, not mouse clicks",
+      "correctAnswer": "@media print { nav { display:none } }",
       "explanation": ""
     },
     {
       "id": "css-q-tf-22",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Print media queries target paper output.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "css-q-fill-22",
       "type": "mcq",
-      "question": "What is the main purpose of the CSS for Forms technique shown in this lesson?",
+      "question": "What is the main purpose of the Print Styles technique shown in this lesson?",
       "options": [
-        "CSS for Forms",
+        "Print Styles",
         "Storing passwords",
         "Printing random numbers",
         "Deleting files"
       ],
-      "correctAnswer": "CSS for Forms",
-      "explanation": "It exists to help you css for forms effectively."
+      "correctAnswer": "Print Styles",
+      "explanation": "It exists to help you print styles effectively."
     },
     {
       "id": "css-q-out-22",

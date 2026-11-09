@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-32",
+  "title": "Quiz: CSS Architecture at Scale",
+  "description": "Check your understanding of CSS Architecture at Scale.",
+  "questions": [
+    {
+      "id": "css-q-comment-32",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-32",
+      "type": "mcq",
+      "question": "What are design tokens?",
+      "options": [
+        "Named design variables",
+        "Encryption keys",
+        "CSS frameworks",
+        "Server configs"
+      ],
+      "correctAnswer": "Named variables for repeated design values (colors, spacing)",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-32",
+      "type": "true-false",
+      "question": "True or False: Tokens let a palette change propagate everywhere at once.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-32",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Architecture at Scale technique shown in this lesson?",
+      "options": [
+        "CSS Architecture at Scale",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Architecture at Scale",
+      "explanation": "It exists to help you css architecture at scale effectively."
+    },
+    {
+      "id": "css-q-out-32",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

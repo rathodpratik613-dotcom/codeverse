@@ -2,7 +2,7 @@
   "id": "html-challenge-m3-1",
   "title": "Functions Practice 1",
   "difficulty": 3,
-  "statement": "Module 3 (Functions) covers: html5 forms advanced, accessibility basics, seo and meta tags, html templates and boilerplate, interactive elements. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (HTML5 Forms Advanced).",
+  "statement": "Module 3 (Functions) covers: html5 forms advanced, accessibility basics, seo and meta tags, html templates and boilerplate, interactive elements, html emails and newsletters. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (HTML5 Forms Advanced).",
   "starterCode": "<!-- --> Your code here\n",
   "visibleTests": [
     {

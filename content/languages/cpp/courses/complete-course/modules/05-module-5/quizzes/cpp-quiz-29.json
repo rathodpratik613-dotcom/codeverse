@@ -32,7 +32,7 @@
     {
       "id": "cpp-q-tf-29",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: await pauses the entire program until the operation finishes.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

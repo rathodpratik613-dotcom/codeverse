@@ -2,7 +2,7 @@
   "id": "sql-challenge-m5-1",
   "title": "Advanced Topics Practice 1",
   "difficulty": 5,
-  "statement": "Module 5 (Advanced Topics) covers: advanced topics. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Advanced Topics).",
+  "statement": "Module 5 (Advanced Topics) covers: transactions and acid, indexes deep dive, explain and query tuning, window functions in depth, stored procedures and functions, database security. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Transactions and ACID).",
   "starterCode": "-- Your code here\n",
   "visibleTests": [
     {
@@ -13,7 +13,7 @@
   ],
   "hiddenTests": [],
   "hints": [
-    "Re-read the Advanced Topics lesson example.",
+    "Re-read the Transactions and ACID lesson example.",
     "Start by declaring your variables, then add the core logic.",
     "Test with the simplest input first, then edge cases."
   ],

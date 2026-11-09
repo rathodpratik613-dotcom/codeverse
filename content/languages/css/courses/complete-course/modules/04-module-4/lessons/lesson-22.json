@@ -1,47 +1,53 @@
 {
   "id": "lesson-22",
-  "title": "CSS for Forms",
-  "summary": "Form styling needs :focus-visible rings for keyboard users, styled checkboxes/radios (accent-color or custom), and :placeholder-shown tricks",
+  "title": "Print Styles",
+  "summary": "print media queries (@media print) tailor pages for paper: hide nav/ads, expand content, force black-on-white, avoid page-break-inside on ca",
   "estimatedMinutes": 20,
   "difficulty": 4,
   "xpReward": 50,
   "learningObjectives": [
-    "Understand css for forms",
+    "Understand print styles",
     "Apply the concept in a small program",
     "Predict program output by reading code"
   ],
   "sections": [
     {
       "type": "text",
-      "content": "Form styling needs :focus-visible rings for keyboard users, styled checkboxes/radios (accent-color or custom), and :placeholder-shown tricks. Disabled/readonly states need visual distinction."
+      "content": "print media queries (@media print) tailor pages for paper: hide nav/ads, expand content, force black-on-white, avoid page-break-inside on cards."
     },
     {
       "type": "text",
-      "content": "accent-color recolors native controls cheaply; custom checkbox = hidden input + styled label + :checked sibling selector."
+      "content": "Use cm/mm/inch units for print sizing, display:none for chrome, and link elements with media=\"print\" for print-only stylesheets."
     },
     {
       "type": "text",
-      "content": "Key points: never remove outlines without replacement, error states need text not just red, and input font-size ≥16px prevents iOS zoom."
+      "content": "Key points: browsers ignore most screen colors on print anyway, page-break-before/after control flow, and test with browser print preview."
     },
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": "input:focus-visible {\n    outline: 2px solid blue;\n    outline-offset: 2px;\n}\ninput[type=\"checkbox\"] {\n    accent-color: #6366f1;\n}",
+      "codeExample": "@media print {\n    nav, .ads { display: none; }\n    .card { page-break-inside: avoid; }\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "@media print {\n    nav, .ads { display: none; }\n    .card { page-break-inside: avoid; }\n}\n/* */ experiment: modify a value above and predict the new output",
       "language": "css"
     },
     {
       "type": "tip",
-      "content": "Summary: CSS for Forms — practice the example by changing values and predicting the output before running it."
+      "content": "Summary: Print Styles — practice the example by changing values and predicting the output before running it."
     }
   ],
   "keyTakeaways": [
-    "Key points: never remove outlines without replacement, error states need text not just red, and input font-size ≥16px prevents iOS zoom."
+    "Key points: browsers ignore most screen colors on print anyway, page-break-before/after control flow, and test with browser print preview."
   ],
   "quizRefs": [
     "css-quiz-22"
   ],
   "challengeRefs": [
-    "css-challenge-m4-1"
+    "css-challenge-m4-3"
   ],
   "nextLessonId": "lesson-23"
 }

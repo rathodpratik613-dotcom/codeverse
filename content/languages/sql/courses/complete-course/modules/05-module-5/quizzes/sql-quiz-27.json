@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-27",
+  "title": "Quiz: EXPLAIN and Query Tuning",
+  "description": "Check your understanding of EXPLAIN and Query Tuning.",
+  "questions": [
+    {
+      "id": "sql-q-comment-27",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-27",
+      "type": "mcq",
+      "question": "Why does WHERE YEAR(created_at)=2024 prevent index use?",
+      "options": [
+        "Functions block indexes",
+        "YEAR() is slow",
+        "It scans anyway",
+        "Indexes ignore dates"
+      ],
+      "correctAnswer": "The function wraps the column — the index sees transformed values",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-27",
+      "type": "true-false",
+      "question": "True or False: Rewrite as created_at >= ... AND < ... to keep the index usable.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-27",
+      "type": "mcq",
+      "question": "What is the main purpose of the EXPLAIN and Query Tuning technique shown in this lesson?",
+      "options": [
+        "EXPLAIN and Query Tuning",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "EXPLAIN and Query Tuning",
+      "explanation": "It exists to help you explain and query tuning effectively."
+    },
+    {
+      "id": "sql-q-out-27",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,47 +1,53 @@
 {
   "id": "lesson-21",
-  "title": "Tables Advanced",
-  "summary": "Real data tables need structure: <caption> for titles, <thead>/<tbody>/<tfoot> for grouping, scope attributes on <th> to associate headers, ",
+  "title": "Forms and Validation",
+  "summary": "HTML5 validation attributes — required, pattern, min, max, minlength — give instant feedback before submission, but they are UX sugar, not s",
   "estimatedMinutes": 20,
   "difficulty": 4,
   "xpReward": 50,
   "learningObjectives": [
-    "Understand tables advanced",
+    "Understand forms and validation",
     "Apply the concept in a small program",
     "Predict program output by reading code"
   ],
   "sections": [
     {
       "type": "text",
-      "content": "Real data tables need structure: <caption> for titles, <thead>/<tbody>/<tfoot> for grouping, scope attributes on <th> to associate headers, and colspan/rowspan for merged cells."
+      "content": "HTML5 validation attributes — required, pattern, min, max, minlength — give instant feedback before submission, but they are UX sugar, not security."
     },
     {
       "type": "text",
-      "content": "Complex tables become unreadable fast — if you need nested tables or heavy merging, reconsider whether a list or cards layout serves users better."
+      "content": "The Constraint Validation API (checkValidity(), validationMessage) lets scripts react to validity states; :valid/:invalid CSS styles reflect them live."
     },
     {
       "type": "text",
-      "content": "Key points: caption describes the table, scope=\"col\"/\"row\" links headers to cells for screen readers, and zebra striping is CSS, not HTML."
+      "content": "Key points: novalidate disables browser checks when you handle them in JS, always pair client checks with server validation."
     },
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": "<table>\n    <caption>Monthly sales</caption>\n    <thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>\n    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>\n</table>",
+      "codeExample": "<input type=\"text\" required minlength=\"3\" pattern=\"[A-Za-z]+\">\n<p class=\"error\" hidden>Invalid input</p>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<input type=\"text\" required minlength=\"3\" pattern=\"[A-Za-z]+\">\n<p class=\"error\" hidden>Invalid input</p>\n<!-- --> experiment: modify a value above and predict the new output",
       "language": "html"
     },
     {
       "type": "tip",
-      "content": "Summary: Tables Advanced — practice the example by changing values and predicting the output before running it."
+      "content": "Summary: Forms and Validation — practice the example by changing values and predicting the output before running it."
     }
   ],
   "keyTakeaways": [
-    "Key points: caption describes the table, scope=\"col\"/\"row\" links headers to cells for screen readers, and zebra striping is CSS, not HTML."
+    "Key points: novalidate disables browser checks when you handle them in JS, always pair client checks with server validation."
   ],
   "quizRefs": [
     "html-quiz-21"
   ],
   "challengeRefs": [
-    "html-challenge-m4-2"
+    "html-challenge-m4-1"
   ],
   "nextLessonId": "lesson-22"
 }

@@ -32,9 +32,9 @@
     {
       "id": "assembly-q-tf-26",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Write mode (\"w\") overwrites an existing file completely.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "assembly-q-fill-26",

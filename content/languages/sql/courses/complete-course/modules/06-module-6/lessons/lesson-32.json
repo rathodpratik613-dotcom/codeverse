@@ -1,0 +1,53 @@
+{
+  "id": "lesson-32",
+  "title": "Data Warehousing Basics",
+  "summary": "Analytics workloads differ from OLTP: warehouses (BigQuery, Snowflake, Redshift) store historical data columnar-style for fast aggregations ",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand data warehousing basics",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Analytics workloads differ from OLTP: warehouses (BigQuery, Snowflake, Redshift) store historical data columnar-style for fast aggregations over billions of rows."
+    },
+    {
+      "type": "text",
+      "content": "ETL/ELT pipelines move data from production DBs into the warehouse nightly; star schemas (fact + dimension tables) are the standard modeling pattern."
+    },
+    {
+      "type": "text",
+      "content": "Key points: OLTP optimizes writes+point reads, OLAP optimizes scans+aggregates, never run analytics on production OLTP, and partition large tables by date."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "-- star schema\nfact_sales(sale_id, date_id, product_id, amount)\ndim_products(product_id, name, category)",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "-- star schema\nfact_sales(sale_id, date_id, product_id, amount)\ndim_products(product_id, name, category)\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Data Warehousing Basics — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: OLTP optimizes writes+point reads, OLAP optimizes scans+aggregates, never run analytics on production OLTP, and partition large tables by date."
+  ],
+  "quizRefs": [
+    "sql-quiz-32"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m6-2"
+  ],
+  "nextLessonId": "lesson-33"
+}

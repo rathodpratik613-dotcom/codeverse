@@ -32,9 +32,9 @@
     {
       "id": "html-q-tf-9",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: The data-* attributes store custom information for scripts.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "html-q-fill-9",

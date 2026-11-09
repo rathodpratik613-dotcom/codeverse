@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-28",
+  "title": "Quiz: Window Functions in Depth",
+  "description": "Check your understanding of Window Functions in Depth.",
+  "questions": [
+    {
+      "id": "sql-q-comment-28",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-28",
+      "type": "mcq",
+      "question": "What does PARTITION BY do in a window function?",
+      "options": [
+        "Splits rows into groups",
+        "Deletes duplicates",
+        "Joins tables",
+        "Sorts output"
+      ],
+      "correctAnswer": "Groups rows into independent windows for calculation",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-28",
+      "type": "true-false",
+      "question": "True or False: Each partition computes rankings/sums independently.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-28",
+      "type": "mcq",
+      "question": "What is the main purpose of the Window Functions in Depth technique shown in this lesson?",
+      "options": [
+        "Window Functions in Depth",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Window Functions in Depth",
+      "explanation": "It exists to help you window functions in depth effectively."
+    },
+    {
+      "id": "sql-q-out-28",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,59 @@
+{
+  "id": "kotlin-quiz-31",
+  "title": "Quiz: Testing Your Code",
+  "description": "Check your understanding of Testing Your Code.",
+  "questions": [
+    {
+      "id": "kotlin-q-comment-31",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Kotlin?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Kotlin, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "kotlin-q-concept-31",
+      "type": "mcq",
+      "question": "What is the most valuable first test for a new function?",
+      "options": [
+        "A normal input with a known expected output",
+        "The fastest possible input",
+        "Input that crashes the program",
+        "Random data with no expected result"
+      ],
+      "correctAnswer": "A normal input with a known expected output",
+      "explanation": "One known-good case proves the function basically works."
+    },
+    {
+      "id": "kotlin-q-tf-31",
+      "type": "true-false",
+      "question": "True or False: Code that runs without errors is always correct.",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "kotlin-q-fill-31",
+      "type": "fill-blank",
+      "question": "Fill in the blank: assert result == ___   // check the expected value",
+      "correctAnswer": "expected",
+      "explanation": "Assertions compare actual output to expected output."
+    },
+    {
+      "id": "kotlin-q-out-31",
+      "type": "mcq",
+      "question": "In Kotlin, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

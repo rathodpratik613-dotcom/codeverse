@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "with open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n# file is auto-closed here\n# experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Files — practice the example by changing values and predicting the output before running it."
     }

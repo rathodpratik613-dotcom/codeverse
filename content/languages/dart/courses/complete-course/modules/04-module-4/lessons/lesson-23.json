@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "void main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the new output\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Sorting and Searching — practice the example by changing values and predicting the output before running it."
     }

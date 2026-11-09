@@ -32,9 +32,9 @@
     {
       "id": "ruby-q-tf-7",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: You can put an if statement inside another if statement.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "ruby-q-fill-7",

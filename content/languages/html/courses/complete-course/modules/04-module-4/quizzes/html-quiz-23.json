@@ -1,7 +1,7 @@
 {
   "id": "html-quiz-23",
-  "title": "Quiz: SVG and Canvas",
-  "description": "Check your understanding of SVG and Canvas.",
+  "title": "Quiz: HTML and JavaScript Hooks",
+  "description": "Check your understanding of HTML and JavaScript Hooks.",
   "questions": [
     {
       "id": "html-q-comment-23",
@@ -19,29 +19,29 @@
     {
       "id": "html-q-concept-23",
       "type": "mcq",
-      "question": "When should you choose SVG over Canvas?",
+      "question": "What is the DOM?",
       "options": [
-        "For scalable icons and diagrams that need CSS/DOM control",
-        "For photo-realistic rendering",
-        "For 3D games only",
-        "Never — canvas is always better"
+        "The tree representation of the page that scripts can modify",
+        "A type of CSS file",
+        "The server database",
+        "A JavaScript framework"
       ],
-      "correctAnswer": "For scalable icons and diagrams that need CSS/DOM control",
-      "explanation": "SVG = vectors in the DOM; canvas = raw pixels."
+      "correctAnswer": "The tree representation of the page that scripts can modify",
+      "explanation": "DOM = live, scriptable page structure."
     },
     {
       "id": "html-q-tf-23",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Setting innerHTML with user input can create XSS vulnerabilities.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "html-q-fill-23",
       "type": "fill-blank",
-      "question": "Fill in the blank: <svg><${shape} .../></svg>",
-      "correctAnswer": "circle/rect/path",
-      "explanation": "SVG uses shape elements."
+      "question": "Fill in the blank: document.querySelector(\"${sel}\")  // find an element",
+      "correctAnswer": "#id/.class/tag",
+      "explanation": "Selectors find DOM nodes."
     },
     {
       "id": "html-q-out-23",

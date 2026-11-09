@@ -1,0 +1,53 @@
+{
+  "id": "lesson-35",
+  "title": "Specialized Databases",
+  "summary": "Beyond relational: graph DBs (Neo4j) excel at relationship queries (friend-of-friend, fraud rings); time-series DBs (InfluxDB, TimescaleDB) ",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand specialized databases",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Beyond relational: graph DBs (Neo4j) excel at relationship queries (friend-of-friend, fraud rings); time-series DBs (InfluxDB, TimescaleDB) optimize timestamped metrics; search engines (Elasticsearch) do full-text and fuzzy matching."
+    },
+    {
+      "type": "text",
+      "content": "Polyglot persistence means choosing per use-case: Postgres for users/orders, Elasticsearch for product search, Redis for sessions/cache."
+    },
+    {
+      "type": "text",
+      "content": "Key points: each tool optimizes a query shape relational DBs handle poorly, and \"one database for everything\" is usually a compromise."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "-- graph: friends of friends\nMATCH (a:Person {name:\"Ada\"})-[:KNOWS]->(b)-[:KNOWS]->(c)\nRETURN c.name",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "-- graph: friends of friends\nMATCH (a:Person {name:\"Ada\"})-[:KNOWS]->(b)-[:KNOWS]->(c)\nRETURN c.name\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Specialized Databases — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: each tool optimizes a query shape relational DBs handle poorly, and \"one database for everything\" is usually a compromise."
+  ],
+  "quizRefs": [
+    "sql-quiz-35"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m6-2"
+  ],
+  "nextLessonId": "lesson-36"
+}

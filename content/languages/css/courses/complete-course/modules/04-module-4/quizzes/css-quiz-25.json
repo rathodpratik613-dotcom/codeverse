@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-25",
+  "title": "Quiz: Container Queries",
+  "description": "Check your understanding of Container Queries.",
+  "questions": [
+    {
+      "id": "css-q-comment-25",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-25",
+      "type": "mcq",
+      "question": "What problem do container queries solve?",
+      "options": [
+        "Styling by container size",
+        "Faster animations",
+        "Print layouts",
+        "SEO"
+      ],
+      "correctAnswer": "Styling components based on their container, not the viewport",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-25",
+      "type": "true-false",
+      "question": "True or False: Components can now adapt to wherever they are placed.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-25",
+      "type": "mcq",
+      "question": "What is the main purpose of the Container Queries technique shown in this lesson?",
+      "options": [
+        "Container Queries",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Container Queries",
+      "explanation": "It exists to help you container queries effectively."
+    },
+    {
+      "id": "css-q-out-25",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "* {\n    box-sizing: border-box;\n}\n.card {\n    width: 300px;\n    padding: 20px;\n    border: 1px solid #ddd;\n    margin: 10px auto;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: The Box Model — practice the example by changing values and predicting the output before running it."
     }

@@ -1,0 +1,53 @@
+{
+  "id": "lesson-27",
+  "title": "Capstone: Style a Page",
+  "summary": "Take your HTML capstone page and style it completely: layout with Grid/Flexbox, responsive breakpoints, hover/focus states, typography scale",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand capstone: style a page",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Take your HTML capstone page and style it completely: layout with Grid/Flexbox, responsive breakpoints, hover/focus states, typography scale, and a dark-mode-ready variable palette."
+    },
+    {
+      "type": "text",
+      "content": "Checklist: mobile-first, no horizontal scroll at 320px, keyboard focus visible everywhere, prefers-reduced-motion respected, Lighthouse performance >90."
+    },
+    {
+      "type": "text",
+      "content": "Key points: style mobile first then enhance, test at real device widths, and keep stylesheets organized by component."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ":root { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :root { --bg: #111; --text: #eee; }\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ":root { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :root { --bg: #111; --text: #eee; }\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Capstone: Style a Page — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: style mobile first then enhance, test at real device widths, and keep stylesheets organized by component."
+  ],
+  "quizRefs": [
+    "css-quiz-27"
+  ],
+  "challengeRefs": [
+    "css-challenge-m5-2"
+  ],
+  "nextLessonId": "lesson-28"
+}

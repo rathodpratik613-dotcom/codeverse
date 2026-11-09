@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "fun main() {\nclass Dog {\n    name = \"Buddy\"\n    fun bark() { println(\"Woof!\") }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Classes and OOP Basics — practice the example by changing values and predicting the output before running it."
     }

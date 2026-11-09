@@ -1,0 +1,53 @@
+{
+  "id": "lesson-34",
+  "title": "Version Control Basics",
+  "summary": "Version control (Git) tracks every change to your code, lets you undo mistakes, and enables collaboration. Even solo projects benefit — \"wha",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand version control basics",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Version control (Git) tracks every change to your code, lets you undo mistakes, and enables collaboration. Even solo projects benefit — \"what did I change yesterday?\" becomes answerable."
+    },
+    {
+      "type": "text",
+      "content": "The core loop: save snapshots (commits) with clear messages, work on branches for experiments, and merge back when ready. Platforms like GitHub host your repositories."
+    },
+    {
+      "type": "text",
+      "content": "Key points: commit small and often, write messages that explain WHY, and never commit secrets or passwords."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "fun main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "fun main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n// experiment: modify a value above and predict the new output\n}",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Version Control Basics — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: commit small and often, write messages that explain WHY, and never commit secrets or passwords."
+  ],
+  "quizRefs": [
+    "kotlin-quiz-34"
+  ],
+  "challengeRefs": [
+    "kotlin-challenge-m6-1"
+  ],
+  "nextLessonId": "lesson-35"
+}

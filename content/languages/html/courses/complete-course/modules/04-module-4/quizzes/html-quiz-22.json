@@ -1,7 +1,7 @@
 {
   "id": "html-quiz-22",
-  "title": "Quiz: HTML and JavaScript Hooks",
-  "description": "Check your understanding of HTML and JavaScript Hooks.",
+  "title": "Quiz: Tables Advanced",
+  "description": "Check your understanding of Tables Advanced.",
   "questions": [
     {
       "id": "html-q-comment-22",
@@ -19,29 +19,29 @@
     {
       "id": "html-q-concept-22",
       "type": "mcq",
-      "question": "What is the DOM?",
+      "question": "What does scope=\"col\" on a <th> tell assistive tech?",
       "options": [
-        "The tree representation of the page that scripts can modify",
-        "A type of CSS file",
-        "The server database",
-        "A JavaScript framework"
+        "This header applies to the cells below it in the column",
+        "The column is sortable",
+        "The cell is hidden",
+        "The table has 5 columns"
       ],
-      "correctAnswer": "The tree representation of the page that scripts can modify",
-      "explanation": "DOM = live, scriptable page structure."
+      "correctAnswer": "This header applies to the cells below it in the column",
+      "explanation": "scope associates headers with their data cells."
     },
     {
       "id": "html-q-tf-22",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: <caption> provides a title that screen readers announce for the table.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "html-q-fill-22",
       "type": "fill-blank",
-      "question": "Fill in the blank: document.querySelector(\"${sel}\")  // find an element",
-      "correctAnswer": "#id/.class/tag",
-      "explanation": "Selectors find DOM nodes."
+      "question": "Fill in the blank: colspan=\"${n}\"  // cell spans n columns",
+      "correctAnswer": "2/3/etc",
+      "explanation": "colspan merges cells horizontally."
     },
     {
       "id": "html-q-out-22",

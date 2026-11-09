@@ -1,0 +1,59 @@
+{
+  "id": "csharp-quiz-32",
+  "title": "Quiz: Debugging Strategies",
+  "description": "Check your understanding of Debugging Strategies.",
+  "questions": [
+    {
+      "id": "csharp-q-comment-32",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C#?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C#, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "csharp-q-concept-32",
+      "type": "mcq",
+      "question": "What should you do FIRST when you find a bug?",
+      "options": [
+        "Reproduce it reliably and note the exact steps",
+        "Rewrite the whole program",
+        "Delete the suspicious function",
+        "Restart the computer"
+      ],
+      "correctAnswer": "Reproduce it reliably and note the exact steps",
+      "explanation": "You cannot fix what you cannot reproduce."
+    },
+    {
+      "id": "csharp-q-tf-32",
+      "type": "true-false",
+      "question": "True or False: Adding print statements to inspect values is a legitimate debugging technique.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "csharp-q-fill-32",
+      "type": "fill-blank",
+      "question": "Fill in the blank: console/log the value of ___ to see what it holds",
+      "correctAnswer": "variable",
+      "explanation": "Inspecting variable values reveals logic errors."
+    },
+    {
+      "id": "csharp-q-out-32",
+      "type": "mcq",
+      "question": "In C#, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

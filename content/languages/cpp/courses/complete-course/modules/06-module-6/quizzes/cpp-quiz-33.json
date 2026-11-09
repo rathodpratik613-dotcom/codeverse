@@ -1,0 +1,59 @@
+{
+  "id": "cpp-quiz-33",
+  "title": "Quiz: Reading Documentation",
+  "description": "Check your understanding of Reading Documentation.",
+  "questions": [
+    {
+      "id": "cpp-q-comment-33",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C++?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C++, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "cpp-q-concept-33",
+      "type": "mcq",
+      "question": "Where should you look FIRST for accurate syntax questions?",
+      "options": [
+        "The official language documentation",
+        "A random blog post",
+        "Guessing from memory",
+        "Asking in chat without checking"
+      ],
+      "correctAnswer": "The official language documentation",
+      "explanation": "Official docs are maintained and version-correct."
+    },
+    {
+      "id": "cpp-q-tf-33",
+      "type": "true-false",
+      "question": "True or False: Tutorials are always more reliable than official documentation.",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "cpp-q-fill-33",
+      "type": "fill-blank",
+      "question": "Fill in the blank: look up the ___ before using an unfamiliar function",
+      "correctAnswer": "docs",
+      "explanation": "Documentation describes exactly how functions behave."
+    },
+    {
+      "id": "cpp-q-out-33",
+      "type": "mcq",
+      "question": "In C++, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

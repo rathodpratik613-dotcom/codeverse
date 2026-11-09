@@ -30,6 +30,12 @@
       "language": "html"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<head>\n    <title>Learn HTML - Guide</title>\n    <meta name=\"description\" content=\"A beginner guide to HTML.\">\n    <link rel=\"canonical\" href=\"https://site.com/page\">\n</head>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
       "type": "tip",
       "content": "Summary: SEO and Meta Tags — practice the example by changing values and predicting the output before running it."
     }

@@ -1,0 +1,59 @@
+{
+  "id": "rust-quiz-35",
+  "title": "Quiz: Asking Good Questions",
+  "description": "Check your understanding of Asking Good Questions.",
+  "questions": [
+    {
+      "id": "rust-q-comment-35",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Rust?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Rust, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "rust-q-concept-35",
+      "type": "mcq",
+      "question": "Which question is most likely to get a helpful answer?",
+      "options": [
+        "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\"",
+        "\"My code is broken, help\"",
+        "\"How do I code?\"",
+        "\"Why is programming hard?\""
+      ],
+      "correctAnswer": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\"",
+      "explanation": "Specific context lets others reproduce and diagnose quickly."
+    },
+    {
+      "id": "rust-q-tf-35",
+      "type": "true-false",
+      "question": "True or False: Simplifying failing code to the smallest example helps debugging AND helps others help you.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "rust-q-fill-35",
+      "type": "fill-blank",
+      "question": "Fill in the blank: include expected vs ___ output in your question",
+      "correctAnswer": "actual",
+      "explanation": "Comparing expected and actual reveals the gap precisely."
+    },
+    {
+      "id": "rust-q-out-35",
+      "type": "mcq",
+      "question": "In Rust, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

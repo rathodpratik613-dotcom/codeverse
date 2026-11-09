@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ":root {\n    --primary: #6366f1;\n}\nbutton {\n    background: var(--primary);\n    color: white;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: Colors and Backgrounds — practice the example by changing values and predicting the output before running it."
     }

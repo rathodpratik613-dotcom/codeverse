@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-31",
+  "title": "Quiz: CSS for Print",
+  "description": "Check your understanding of CSS for Print.",
+  "questions": [
+    {
+      "id": "css-q-comment-31",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-31",
+      "type": "mcq",
+      "question": "What does @page control?",
+      "options": [
+        "Page size and margins",
+        "Screen layout",
+        "Fonts",
+        "Colors"
+      ],
+      "correctAnswer": "Printed page size and margins",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-31",
+      "type": "true-false",
+      "question": "True or False: @page rules only affect paged media output.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-31",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS for Print technique shown in this lesson?",
+      "options": [
+        "CSS for Print",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS for Print",
+      "explanation": "It exists to help you css for print effectively."
+    },
+    {
+      "id": "css-q-out-31",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

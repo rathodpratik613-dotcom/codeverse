@@ -26,7 +26,13 @@
     {
       "type": "code",
       "content": "Study this example:",
-      "codeExample": "<!-- Navigation starts here -->\n<nav>...</nav>\n<!-- TODO: add search box -->",
+      "codeExample": "<!-- Navigation starts here -->\n<nav>...</nav>\n<!-- NOTE: add search box -->",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<!-- Navigation starts here -->\n<nav>...</nav>\n<!-- NOTE: add search box -->\n<!-- --> experiment: modify a value above and predict the new output",
       "language": "html"
     },
     {

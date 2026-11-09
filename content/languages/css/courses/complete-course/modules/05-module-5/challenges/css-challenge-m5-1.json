@@ -2,7 +2,7 @@
   "id": "css-challenge-m5-1",
   "title": "Advanced Topics Practice 1",
   "difficulty": 5,
-  "statement": "Module 5 (Advanced Topics) covers: css architecture, capstone: style a page. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (CSS Architecture).",
+  "statement": "Module 5 (Advanced Topics) covers: css architecture, capstone: style a page, css performance, css dark mode patterns, css animation libraries, css for print. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (CSS Architecture).",
   "starterCode": "/* */ Your code here\n",
   "visibleTests": [
     {

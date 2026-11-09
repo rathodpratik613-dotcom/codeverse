@@ -1,0 +1,53 @@
+{
+  "id": "lesson-31",
+  "title": "Print and Media Queries",
+  "summary": "@media queries adapt CSS (and thus HTML layout expectations) to conditions: screen width, print, dark mode, reduced motion.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand print and media queries",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "@media queries adapt CSS (and thus HTML layout expectations) to conditions: screen width, print, dark mode, reduced motion."
+    },
+    {
+      "type": "text",
+      "content": "For printing, browsers offer print-specific styles: hide nav/buttons, expand links, avoid page-break inside cards. Users print documentation and receipts — design for paper too."
+    },
+    {
+      "type": "text",
+      "content": "Key points: mobile-first media queries (min-width), prefers-reduced-motion respects accessibility settings, and @page controls print margins."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "@media print {\n  nav, .no-print { display: none; }\n  a::after { content: \" (\" attr(href) \")\"; }\n}",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "@media print {\n  nav, .no-print { display: none; }\n  a::after { content: \" (\" attr(href) \")\"; }\n}\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Print and Media Queries — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: mobile-first media queries (min-width), prefers-reduced-motion respects accessibility settings, and @page controls print margins."
+  ],
+  "quizRefs": [
+    "html-quiz-31"
+  ],
+  "challengeRefs": [
+    "html-challenge-m5-2"
+  ],
+  "nextLessonId": "lesson-32"
+}

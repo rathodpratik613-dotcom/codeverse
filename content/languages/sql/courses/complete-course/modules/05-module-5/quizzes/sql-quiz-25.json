@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-25",
+  "title": "Quiz: Transactions and ACID",
+  "description": "Check your understanding of Transactions and ACID.",
+  "questions": [
+    {
+      "id": "sql-q-comment-25",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-25",
+      "type": "mcq",
+      "question": "What does Atomicity guarantee?",
+      "options": [
+        "All-or-nothing execution",
+        "Fast queries",
+        "Encrypted data",
+        "Auto-backup"
+      ],
+      "correctAnswer": "All statements in a transaction succeed or none do",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-25",
+      "type": "true-false",
+      "question": "True or False: Partial failure must roll everything back.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-25",
+      "type": "mcq",
+      "question": "What is the main purpose of the Transactions and ACID technique shown in this lesson?",
+      "options": [
+        "Transactions and ACID",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Transactions and ACID",
+      "explanation": "It exists to help you transactions and acid effectively."
+    },
+    {
+      "id": "sql-q-out-25",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

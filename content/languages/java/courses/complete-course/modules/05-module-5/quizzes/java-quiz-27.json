@@ -32,7 +32,7 @@
     {
       "id": "java-q-tf-27",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: Every program must import at least one module to run.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },

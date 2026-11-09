@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "package main\n\nimport \"fmt\"\n\nfunc main() {\n// This program greets the world\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n// experiment: modify a value above and predict the new output\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Comments — practice the example by changing values and predicting the output before running it."
     }

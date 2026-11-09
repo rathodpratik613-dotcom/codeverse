@@ -1,0 +1,53 @@
+{
+  "id": "lesson-20",
+  "title": "HTML Emails and Newsletters",
+  "summary": "HTML email is a strange cousin of web HTML: email clients strip <style> blocks, ignore most modern CSS, and require table-based layouts for ",
+  "estimatedMinutes": 20,
+  "difficulty": 3,
+  "xpReward": 40,
+  "learningObjectives": [
+    "Understand html emails and newsletters",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "HTML email is a strange cousin of web HTML: email clients strip <style> blocks, ignore most modern CSS, and require table-based layouts for reliable rendering."
+    },
+    {
+      "type": "text",
+      "content": "Inline styles are mandatory, images need absolute URLs, and interactive elements mostly fail. The golden rule: test in real clients (Gmail, Outlook, Apple Mail) because they all render differently."
+    },
+    {
+      "type": "text",
+      "content": "Key points: tables for layout, inline CSS only, alt text on every image, and keep the width near 600px."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">\n<tr><td style=\"padding:16px;\">Hello!</td></tr>\n</table>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">\n<tr><td style=\"padding:16px;\">Hello!</td></tr>\n</table>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML Emails and Newsletters — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: tables for layout, inline CSS only, alt text on every image, and keep the width near 600px."
+  ],
+  "quizRefs": [
+    "html-quiz-20"
+  ],
+  "challengeRefs": [
+    "html-challenge-m3-3"
+  ],
+  "nextLessonId": "lesson-21"
+}

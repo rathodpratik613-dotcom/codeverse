@@ -1,0 +1,53 @@
+{
+  "id": "lesson-34",
+  "title": "Migrations and Schema Evolution",
+  "summary": "Schemas change in production — never ALTER by hand. Migration tools (Flyway, Liquibase, Alembic, Prisma Migrate) version schema changes as o",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand migrations and schema evolution",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Schemas change in production — never ALTER by hand. Migration tools (Flyway, Liquibase, Alembic, Prisma Migrate) version schema changes as ordered scripts applied exactly once per environment."
+    },
+    {
+      "type": "text",
+      "content": "Rules: every change is reversible or documented, never edit an applied migration, test migrations against production-like data, and keep them small and fast."
+    },
+    {
+      "type": "text",
+      "content": "Key points: migrations run at deploy time, backfills for new NOT NULL columns need defaults, and rollbacks should be planned even if rarely used."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "-- migrations/0001_create_users.sql\n-- migrations/0002_add_email_index.sql\n-- applied in order, tracked in a schema_migrations table",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "-- migrations/0001_create_users.sql\n-- migrations/0002_add_email_index.sql\n-- applied in order, tracked in a schema_migrations table\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Migrations and Schema Evolution — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: migrations run at deploy time, backfills for new NOT NULL columns need defaults, and rollbacks should be planned even if rarely used."
+  ],
+  "quizRefs": [
+    "sql-quiz-34"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m6-1"
+  ],
+  "nextLessonId": "lesson-35"
+}

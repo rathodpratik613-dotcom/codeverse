@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "#include <iostream>\n#include <string>\n\nint main() {\nstd::cout << \"Alice\" << std::endl;\n// The line above sends text to the screen\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Input and Output — practice the example by changing values and predicting the output before running it."
     }

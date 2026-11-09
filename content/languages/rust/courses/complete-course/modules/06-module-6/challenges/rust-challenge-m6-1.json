@@ -1,0 +1,28 @@
+{
+  "id": "rust-challenge-m6-1",
+  "title": "Projects & Mastery Practice 1",
+  "difficulty": 5,
+  "statement": "Module 6 (Projects & Mastery) covers: testing your code, debugging strategies, reading documentation, version control basics, asking good questions, capstone project. Solve this practice problem using what you learned.\n\nExercise 1: write a small program that demonstrates one concept from this module (Testing Your Code).",
+  "starterCode": "// Your code here\n",
+  "visibleTests": [
+    {
+      "input": "",
+      "expectedOutput": "Hello, World!",
+      "isHidden": false
+    }
+  ],
+  "hiddenTests": [],
+  "hints": [
+    "Re-read the Testing Your Code lesson example.",
+    "Start by declaring your variables, then add the core logic.",
+    "Test with the simplest input first, then edge cases."
+  ],
+  "solution": "fn main() {\nfn main() {\n    println!(\"Hello, World!\");\n}\n}",
+  "solutionExplanation": "A correct solution applies the module concepts in a small working program.",
+  "xpReward": 30,
+  "coinReward": 15,
+  "tags": [
+    "rust",
+    "module-6"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "sql-quiz-21",
-  "title": "Quiz: Date and Time",
-  "description": "Check your understanding of Date and Time.",
+  "title": "Quiz: String Functions",
+  "description": "Check your understanding of String Functions.",
   "questions": [
     {
       "id": "sql-q-comment-21",
@@ -19,35 +19,35 @@
     {
       "id": "sql-q-concept-21",
       "type": "mcq",
-      "question": "Why store timestamps in UTC?",
+      "question": "In most SQL dialects, SUBSTRING starts counting at...",
       "options": [
-        "Timezone/DST safety",
-        "Smaller storage",
-        "Faster queries",
-        "Required by SQL"
+        "1",
+        "0",
+        "-1",
+        "Depends"
       ],
-      "correctAnswer": "Avoids timezone ambiguity and DST bugs",
+      "correctAnswer": "1",
       "explanation": ""
     },
     {
       "id": "sql-q-tf-21",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: SQL strings are 1-indexed unlike most languages.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "sql-q-fill-21",
       "type": "mcq",
-      "question": "What is the main purpose of the Date and Time technique shown in this lesson?",
+      "question": "What is the main purpose of the String Functions technique shown in this lesson?",
       "options": [
-        "Date and Time",
+        "String Functions",
         "Storing passwords",
         "Printing random numbers",
         "Deleting files"
       ],
-      "correctAnswer": "Date and Time",
-      "explanation": "It exists to help you date and time effectively."
+      "correctAnswer": "String Functions",
+      "explanation": "It exists to help you string functions effectively."
     },
     {
       "id": "sql-q-out-21",

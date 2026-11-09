@@ -1,0 +1,52 @@
+{
+  "id": "lesson-36",
+  "title": "Query Review Checklist",
+  "summary": "Before shipping SQL to production, review: does it use indexes (EXPLAIN)? Is it parameterized? Does it paginate? Are NULLs and duplicates ha",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand query review checklist",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Before shipping SQL to production, review: does it use indexes (EXPLAIN)? Is it parameterized? Does it paginate? Are NULLs and duplicates handled? What happens at 10x data volume?"
+    },
+    {
+      "type": "text",
+      "content": "Code review for queries matters as much as for app code — a bad query at scale takes down the whole app. Pair reviews and EXPLAIN-everything culture prevent incidents."
+    },
+    {
+      "type": "text",
+      "content": "Key points: SELECT * hides cost, OFFSET pagination degrades on deep pages (use keyset), and monitoring slow-query logs catches regressions early."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "-- review checklist\n-- [ ] EXPLAIN shows index usage\n-- [ ] parameterized, no string concat\n-- [ ] paginated (LIMIT/keyset)\n-- [ ] NULL + duplicate edge cases tested",
+      "language": "sql"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "-- review checklist\n-- [ ] EXPLAIN shows index usage\n-- [ ] parameterized, no string concat\n-- [ ] paginated (LIMIT/keyset)\n-- [ ] NULL + duplicate edge cases tested\n-- experiment: modify a value above and predict the new output",
+      "language": "sql"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Query Review Checklist — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: SELECT * hides cost, OFFSET pagination degrades on deep pages (use keyset), and monitoring slow-query logs catches regressions early."
+  ],
+  "quizRefs": [
+    "sql-quiz-36"
+  ],
+  "challengeRefs": [
+    "sql-challenge-m6-3"
+  ]
+}

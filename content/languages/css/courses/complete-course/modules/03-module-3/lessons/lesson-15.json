@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".button {\n    border: 2px solid #333;\n    border-radius: 999px;\n    outline: 3px solid transparent;\n}\n.button:focus-visible {\n    outline-color: blue;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: Borders and Outlines — practice the example by changing values and predicting the output before running it."
     }

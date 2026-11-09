@@ -1,0 +1,53 @@
+{
+  "id": "lesson-27",
+  "title": "HTML Performance",
+  "summary": "Page weight kills performance: images dominate bytes, render-blocking CSS/JS delays first paint, and too many DOM nodes slow everything.",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand html performance",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Page weight kills performance: images dominate bytes, render-blocking CSS/JS delays first paint, and too many DOM nodes slow everything."
+    },
+    {
+      "type": "text",
+      "content": "Fixes: lazy-load off-screen media, defer non-critical scripts, inline critical CSS, subset fonts, and keep DOM shallow. Measure with Lighthouse before optimizing."
+    },
+    {
+      "type": "text",
+      "content": "Key points: preload key assets, avoid layout-thrashing JS, and HTTP/2+ makes many small files cheap — but bytes still matter on mobile."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\">\n<script src=\"app.js\" defer></script>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\">\n<script src=\"app.js\" defer></script>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: HTML Performance — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: preload key assets, avoid layout-thrashing JS, and HTTP/2+ makes many small files cheap — but bytes still matter on mobile."
+  ],
+  "quizRefs": [
+    "html-quiz-27"
+  ],
+  "challengeRefs": [
+    "html-challenge-m5-1"
+  ],
+  "nextLessonId": "lesson-28"
+}

@@ -32,9 +32,9 @@
     {
       "id": "c-q-tf-11",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: NOT flips a boolean: NOT true is false.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "c-q-fill-11",

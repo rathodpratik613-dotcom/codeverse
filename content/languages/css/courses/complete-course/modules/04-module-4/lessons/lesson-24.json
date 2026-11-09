@@ -1,0 +1,53 @@
+{
+  "id": "lesson-24",
+  "title": "CSS Scroll Snap",
+  "summary": "scroll-snap-type on a container + scroll-snap-align on children creates carousels and paged scrollers that settle on items instead of stoppi",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand css scroll snap",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "scroll-snap-type on a container + scroll-snap-align on children creates carousels and paged scrollers that settle on items instead of stopping mid-way."
+    },
+    {
+      "type": "text",
+      "content": "mandatory vs proximity: mandatory always snaps (can trap users), proximity snaps only when close — prefer proximity for accessibility."
+    },
+    {
+      "type": "text",
+      "content": "Key points: works on any scroll container, combine with scroll-behavior: smooth, and test keyboard scrolling."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": ".carousel {\n    display: flex;\n    overflow-x: auto;\n    scroll-snap-type: x proximity;\n}\n.slide { scroll-snap-align: start; }",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": ".carousel {\n    display: flex;\n    overflow-x: auto;\n    scroll-snap-type: x proximity;\n}\n.slide { scroll-snap-align: start; }\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Scroll Snap — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: works on any scroll container, combine with scroll-behavior: smooth, and test keyboard scrolling."
+  ],
+  "quizRefs": [
+    "css-quiz-24"
+  ],
+  "challengeRefs": [
+    "css-challenge-m4-2"
+  ],
+  "nextLessonId": "lesson-25"
+}

@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "tags = {\"python\", \"code\", \"python\"}\n; tags now holds only 2 unique values\n; experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Sets — practice the example by changing values and predicting the output before running it."
     }

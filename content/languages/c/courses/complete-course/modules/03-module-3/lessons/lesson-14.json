@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "#include <stdio.h>\n\nint main() {\nvoid add(a, b) {\n    return a + b\n}\nprintf(\"%s\\n\", add(2, 3));  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Parameters and Arguments — practice the example by changing values and predicting the output before running it."
     }

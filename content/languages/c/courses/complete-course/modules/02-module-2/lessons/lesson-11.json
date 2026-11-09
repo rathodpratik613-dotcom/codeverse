@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "#include <stdio.h>\n\nint main() {\nif age >= 18 AND hasTicket {\n    printf(\"%s\\n\", \"Welcome in\");\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Conditionals Deep Dive — practice the example by changing values and predicting the output before running it."
     }

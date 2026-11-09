@@ -1,7 +1,7 @@
 {
   "id": "sql-quiz-22",
-  "title": "Quiz: Capstone: Design a Schema",
-  "description": "Check your understanding of Capstone: Design a Schema.",
+  "title": "Quiz: Date and Time",
+  "description": "Check your understanding of Date and Time.",
   "questions": [
     {
       "id": "sql-q-comment-22",
@@ -19,35 +19,35 @@
     {
       "id": "sql-q-concept-22",
       "type": "mcq",
-      "question": "What solves a many-to-many relationship?",
+      "question": "Why store timestamps in UTC?",
       "options": [
-        "Junction table",
-        "Duplicate columns",
-        "JSON blob",
-        "Nothing needed"
+        "Timezone/DST safety",
+        "Smaller storage",
+        "Faster queries",
+        "Required by SQL"
       ],
-      "correctAnswer": "A junction/link table",
+      "correctAnswer": "Avoids timezone ambiguity and DST bugs",
       "explanation": ""
     },
     {
       "id": "sql-q-tf-22",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: UTC is unambiguous; convert at display time.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "sql-q-fill-22",
       "type": "mcq",
-      "question": "What is the main purpose of the Capstone: Design a Schema technique shown in this lesson?",
+      "question": "What is the main purpose of the Date and Time technique shown in this lesson?",
       "options": [
-        "Capstone: Design a Schema",
+        "Date and Time",
         "Storing passwords",
         "Printing random numbers",
         "Deleting files"
       ],
-      "correctAnswer": "Capstone: Design a Schema",
-      "explanation": "It exists to help you capstone: design a schema effectively."
+      "correctAnswer": "Date and Time",
+      "explanation": "It exists to help you date and time effectively."
     },
     {
       "id": "sql-q-out-22",

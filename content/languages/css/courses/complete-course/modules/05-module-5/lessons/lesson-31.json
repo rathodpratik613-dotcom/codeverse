@@ -1,0 +1,53 @@
+{
+  "id": "lesson-31",
+  "title": "CSS for Print",
+  "summary": "Print stylesheets adapt web pages for paper: @page sets margins/size, @media print hides navigation, expands content, forces light colors, a",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand css for print",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Print stylesheets adapt web pages for paper: @page sets margins/size, @media print hides navigation, expands content, forces light colors, and prevents elements splitting across pages."
+    },
+    {
+      "type": "text",
+      "content": "Use physical units (cm, mm, pt) for print, page-break-inside: avoid on cards/tables, and link rel=stylesheet media=\"print\" for dedicated print CSS."
+    },
+    {
+      "type": "text",
+      "content": "Key points: browsers strip backgrounds by default (print-color-adjust), links need url() text appended, and always preview before shipping."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "@page { margin: 2cm; }\n@media print {\n    nav, footer { display: none; }\n    .card { break-inside: avoid; }\n}",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "@page { margin: 2cm; }\n@media print {\n    nav, footer { display: none; }\n    .card { break-inside: avoid; }\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS for Print — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: browsers strip backgrounds by default (print-color-adjust), links need url() text appended, and always preview before shipping."
+  ],
+  "quizRefs": [
+    "css-quiz-31"
+  ],
+  "challengeRefs": [
+    "css-challenge-m5-3"
+  ],
+  "nextLessonId": "lesson-32"
+}

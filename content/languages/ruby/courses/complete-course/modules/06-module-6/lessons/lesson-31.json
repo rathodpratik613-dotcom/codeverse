@@ -1,0 +1,53 @@
+{
+  "id": "lesson-31",
+  "title": "Testing Your Code",
+  "summary": "Testing means checking that code produces the results you expect — not just that it runs without crashing. Even a tiny test saves hours late",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 70,
+  "learningObjectives": [
+    "Understand testing your code",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Testing means checking that code produces the results you expect — not just that it runs without crashing. Even a tiny test saves hours later."
+    },
+    {
+      "type": "text",
+      "content": "Start manual: run the program with normal input, edge cases (empty, zero, negative), and bad input. Then automate repeated checks as functions so you can re-run them after every change."
+    },
+    {
+      "type": "text",
+      "content": "Key points: test the boundaries, test what users will actually do, and a failing test tells you exactly what broke."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "# Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n# expected result: 10",
+      "language": "javascript"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "# Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n# expected result: 10\n# experiment: modify a value above and predict the new output",
+      "language": "javascript"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Testing Your Code — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: test the boundaries, test what users will actually do, and a failing test tells you exactly what broke."
+  ],
+  "quizRefs": [
+    "ruby-quiz-31"
+  ],
+  "challengeRefs": [
+    "ruby-challenge-m6-1"
+  ],
+  "nextLessonId": "lesson-32"
+}

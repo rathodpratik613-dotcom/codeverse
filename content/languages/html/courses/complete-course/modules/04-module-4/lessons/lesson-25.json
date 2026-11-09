@@ -1,0 +1,53 @@
+{
+  "id": "lesson-25",
+  "title": "Project: Build a Page",
+  "summary": "Build a complete personal page: semantic layout (header/nav/main/footer), hero section, about, projects list, contact form, and footer. Styl",
+  "estimatedMinutes": 20,
+  "difficulty": 4,
+  "xpReward": 50,
+  "learningObjectives": [
+    "Understand project: build a page",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "Build a complete personal page: semantic layout (header/nav/main/footer), hero section, about, projects list, contact form, and footer. Style it later with CSS."
+    },
+    {
+      "type": "text",
+      "content": "Requirements checklist: valid HTML5, one h1, alt text on all images, labeled form fields, keyboard-navigable, and passes an HTML validator with zero errors."
+    },
+    {
+      "type": "text",
+      "content": "Key points: validate at validator.w3.org, test with a screen reader or keyboard only, and view-source to see exactly what you shipped."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "<!DOCTYPE html>\n<html lang=\"en\">\n<head><title>My Page</title></head>\n<body>\n<header>...</header>\n<main>...</main>\n<footer>...</footer>\n</body>\n</html>",
+      "language": "html"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<!DOCTYPE html>\n<html lang=\"en\">\n<head><title>My Page</title></head>\n<body>\n<header>...</header>\n<main>...</main>\n<footer>...</footer>\n</body>\n</html>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: Project: Build a Page — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: validate at validator.w3.org, test with a screen reader or keyboard only, and view-source to see exactly what you shipped."
+  ],
+  "quizRefs": [
+    "html-quiz-25"
+  ],
+  "challengeRefs": [
+    "html-challenge-m4-2"
+  ],
+  "nextLessonId": "lesson-26"
+}

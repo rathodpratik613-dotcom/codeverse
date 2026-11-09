@@ -32,9 +32,9 @@
     {
       "id": "html-q-tf-18",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: The viewport meta tag is essential for mobile-friendly pages.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "html-q-fill-18",

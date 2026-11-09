@@ -32,9 +32,9 @@
     {
       "id": "php-q-tf-9",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: A while loop checks its condition before each iteration.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "php-q-fill-9",

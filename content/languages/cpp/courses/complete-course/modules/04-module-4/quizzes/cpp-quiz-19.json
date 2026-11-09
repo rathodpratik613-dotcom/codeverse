@@ -32,9 +32,9 @@
     {
       "id": "cpp-q-tf-19",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Lists can store values of mixed types in dynamically typed languages.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "cpp-q-fill-19",

@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-35",
+  "title": "Quiz: View Transitions",
+  "description": "Check your understanding of View Transitions.",
+  "questions": [
+    {
+      "id": "css-q-comment-35",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-35",
+      "type": "mcq",
+      "question": "What triggers a view transition?",
+      "options": [
+        "A CSS class alone",
+        "Page reload only",
+        "The browser randomly",
+        "meta refresh"
+      ],
+      "correctAnswer": "document.startViewTransition() wrapping a DOM update",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-35",
+      "type": "true-false",
+      "question": "True or False: JS wraps the state change; the browser animates the diff.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-35",
+      "type": "mcq",
+      "question": "What is the main purpose of the View Transitions technique shown in this lesson?",
+      "options": [
+        "View Transitions",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "View Transitions",
+      "explanation": "It exists to help you view transitions effectively."
+    },
+    {
+      "id": "css-q-out-35",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

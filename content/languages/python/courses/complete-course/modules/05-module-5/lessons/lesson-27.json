@@ -30,6 +30,12 @@
       "language": "python"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "# import the tools you need\n# e.g. math functions, date handling, file helpers\n# experiment: modify a value above and predict the new output",
+      "language": "python"
+    },
+    {
       "type": "tip",
       "content": "Summary: Modules and Imports — practice the example by changing values and predicting the output before running it."
     }

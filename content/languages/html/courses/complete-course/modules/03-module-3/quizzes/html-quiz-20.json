@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-20",
+  "title": "Quiz: HTML Emails and Newsletters",
+  "description": "Check your understanding of HTML Emails and Newsletters.",
+  "questions": [
+    {
+      "id": "html-q-comment-20",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-20",
+      "type": "mcq",
+      "question": "Why do HTML emails use table layouts?",
+      "options": [
+        "Email clients have poor CSS support — tables render reliably",
+        "Tables are required by law",
+        "It is faster to write",
+        "Modern CSS is banned"
+      ],
+      "correctAnswer": "Email clients have poor CSS support — tables render reliably",
+      "explanation": "Outlook-era rendering engines only handle tables well."
+    },
+    {
+      "id": "html-q-tf-20",
+      "type": "true-false",
+      "question": "True or False: You can rely on <style> blocks and flexbox in HTML emails.",
+      "correctAnswer": "False",
+      "explanation": "This statement is incorrect — review the lesson."
+    },
+    {
+      "id": "html-q-fill-20",
+      "type": "fill-blank",
+      "question": "Fill in the blank: use ${css} styles in emails — clients strip <style>",
+      "correctAnswer": "inline",
+      "explanation": "Inline style=\"...\" attributes survive everywhere."
+    },
+    {
+      "id": "html-q-out-20",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

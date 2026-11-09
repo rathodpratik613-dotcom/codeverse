@@ -1,0 +1,53 @@
+{
+  "id": "lesson-30",
+  "title": "CSS Animation Libraries",
+  "summary": "While CSS transitions/keyframes handle most needs, libraries like GSAP, Framer Motion, and Animate.css add timelines, scroll triggers, and p",
+  "estimatedMinutes": 20,
+  "difficulty": 5,
+  "xpReward": 60,
+  "learningObjectives": [
+    "Understand css animation libraries",
+    "Apply the concept in a small program",
+    "Predict program output by reading code"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "While CSS transitions/keyframes handle most needs, libraries like GSAP, Framer Motion, and Animate.css add timelines, scroll triggers, and physics."
+    },
+    {
+      "type": "text",
+      "content": "Rule of thumb: CSS-first for simple hover/state changes, JS libraries only when you need sequencing, scroll-linked, or complex choreography. Over-animating hurts UX and performance."
+    },
+    {
+      "type": "text",
+      "content": "Key points: respect prefers-reduced-motion in every animation, transform/opacity only for smooth 60fps, and exit animations need JS or view transitions."
+    },
+    {
+      "type": "code",
+      "content": "Study this example:",
+      "codeExample": "@keyframes fadeUp {\n    from { opacity: 0; transform: translateY(20px); }\n    to { opacity: 1; transform: none; }\n}\n.card { animation: fadeUp .4s ease both; }",
+      "language": "css"
+    },
+    {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "@keyframes fadeUp {\n    from { opacity: 0; transform: translateY(20px); }\n    to { opacity: 1; transform: none; }\n}\n.card { animation: fadeUp .4s ease both; }\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
+      "type": "tip",
+      "content": "Summary: CSS Animation Libraries — practice the example by changing values and predicting the output before running it."
+    }
+  ],
+  "keyTakeaways": [
+    "Key points: respect prefers-reduced-motion in every animation, transform/opacity only for smooth 60fps, and exit animations need JS or view transitions."
+  ],
+  "quizRefs": [
+    "css-quiz-30"
+  ],
+  "challengeRefs": [
+    "css-challenge-m5-2"
+  ],
+  "nextLessonId": "lesson-31"
+}

@@ -30,6 +30,12 @@
       "language": "css"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "body {\n    font-family: sans-serif;\n    color: #333;\n}\nh1 {\n    color: navy;\n}\n/* */ experiment: modify a value above and predict the new output",
+      "language": "css"
+    },
+    {
       "type": "tip",
       "content": "Summary: How CSS Works — practice the example by changing values and predicting the output before running it."
     }

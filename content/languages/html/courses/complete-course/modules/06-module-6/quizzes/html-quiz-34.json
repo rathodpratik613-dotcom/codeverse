@@ -1,0 +1,59 @@
+{
+  "id": "html-quiz-34",
+  "title": "Quiz: Progressive Web Apps Basics",
+  "description": "Check your understanding of Progressive Web Apps Basics.",
+  "questions": [
+    {
+      "id": "html-q-comment-34",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-34",
+      "type": "mcq",
+      "question": "What makes a site installable as a PWA?",
+      "options": [
+        "HTTPS + manifest + service worker",
+        "Only a mobile app store listing",
+        "A .exe file",
+        "Native code"
+      ],
+      "correctAnswer": "HTTPS + manifest + service worker",
+      "explanation": "The three pillars Chrome requires for the install prompt."
+    },
+    {
+      "id": "html-q-tf-34",
+      "type": "true-false",
+      "question": "True or False: Service workers can serve cached pages when the network is down.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "html-q-fill-34",
+      "type": "fill-blank",
+      "question": "Fill in the blank: the ${manifest} file declares app name, icons, and display mode",
+      "correctAnswer": "manifest",
+      "explanation": "manifest.json (or link tag) describes the installable app."
+    },
+    {
+      "id": "html-q-out-34",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

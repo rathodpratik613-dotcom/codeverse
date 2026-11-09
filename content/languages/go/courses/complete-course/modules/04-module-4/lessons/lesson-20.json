@@ -30,6 +30,12 @@
       "language": "javascript"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "package main\n\nimport \"fmt\"\n\nfunc main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the new output\n}",
+      "language": "javascript"
+    },
+    {
       "type": "tip",
       "content": "Summary: Strings — practice the example by changing values and predicting the output before running it."
     }

@@ -1,0 +1,65 @@
+{
+  "id": "sql-quiz-24",
+  "title": "Quiz: Common Table Expressions",
+  "description": "Check your understanding of Common Table Expressions.",
+  "questions": [
+    {
+      "id": "sql-q-comment-24",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-24",
+      "type": "mcq",
+      "question": "What is the main readability benefit of a CTE?",
+      "options": [
+        "Virtual table naming",
+        "Faster execution always",
+        "Auto-indexing",
+        "Less typing"
+      ],
+      "correctAnswer": "Naming a subquery as a reusable \"virtual table\"",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-tf-24",
+      "type": "true-false",
+      "question": "True or False: CTEs document intent — each step gets a name.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "sql-q-fill-24",
+      "type": "mcq",
+      "question": "What is the main purpose of the Common Table Expressions technique shown in this lesson?",
+      "options": [
+        "Common Table Expressions",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Common Table Expressions",
+      "explanation": "It exists to help you common table expressions effectively."
+    },
+    {
+      "id": "sql-q-out-24",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

@@ -1,0 +1,65 @@
+{
+  "id": "css-quiz-29",
+  "title": "Quiz: CSS Dark Mode Patterns",
+  "description": "Check your understanding of CSS Dark Mode Patterns.",
+  "questions": [
+    {
+      "id": "css-q-comment-29",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-29",
+      "type": "mcq",
+      "question": "Why use CSS variables for dark mode?",
+      "options": [
+        "Variables centralize colors",
+        "Dark mode requires them",
+        "They are faster",
+        "Browsers mandate them"
+      ],
+      "correctAnswer": "One token change re-themes the whole site",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-tf-29",
+      "type": "true-false",
+      "question": "True or False: Semantic tokens let themes swap without touching components.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
+    },
+    {
+      "id": "css-q-fill-29",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Dark Mode Patterns technique shown in this lesson?",
+      "options": [
+        "CSS Dark Mode Patterns",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Dark Mode Patterns",
+      "explanation": "It exists to help you css dark mode patterns effectively."
+    },
+    {
+      "id": "css-q-out-29",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    }
+  ],
+  "passingScore": 60,
+  "xpReward": 20
+}

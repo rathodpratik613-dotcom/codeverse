@@ -32,9 +32,9 @@
     {
       "id": "html-q-tf-13",
       "type": "true-false",
-      "question": "True or False: undefined",
-      "correctAnswer": "False",
-      "explanation": "This statement is incorrect — review the lesson."
+      "question": "True or False: Links with target=\"_blank\" should use rel=\"noopener\" for security.",
+      "correctAnswer": "True",
+      "explanation": "This statement is correct."
     },
     {
       "id": "html-q-fill-13",

@@ -30,6 +30,12 @@
       "language": "html"
     },
     {
+      "type": "code",
+      "content": "Try this variation — change a value, predict the output, then run it:",
+      "codeExample": "<div class=\"card\">\n    <h2>Title</h2>\n    <p>Text with a <span class=\"highlight\">highlighted</span> word.</p>\n</div>\n<!-- --> experiment: modify a value above and predict the new output",
+      "language": "html"
+    },
+    {
       "type": "tip",
       "content": "Summary: Divs and Spans — practice the example by changing values and predicting the output before running it."
     }

@@ -32,7 +32,7 @@
     {
       "id": "kotlin-q-tf-4",
       "type": "true-false",
-      "question": "True or False: undefined",
+      "question": "True or False: In most languages, \"42\" (with quotes) and 42 (without quotes) are the same value.",
       "correctAnswer": "False",
       "explanation": "This statement is incorrect — review the lesson."
     },
