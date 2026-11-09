@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
 
     const db = await getDb();
     let progress = db.data.lessonProgress.find(
-      (p: any) => p.userId === auth.userId && p.contentId === data.contentId
+      (p: any) => p.userId === auth.userId && p.contentId === data.contentId && p.languageSlug === data.languageSlug
     );
 
     if (progress) {

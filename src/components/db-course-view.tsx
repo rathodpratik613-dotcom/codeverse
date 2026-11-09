@@ -18,6 +18,7 @@ interface CourseItem {
   description?: string;
   level?: string;
   language?: string;
+  filePath?: string;
 }
 
 export default function DbCourseView({ courseId }: { courseId: string }) {
@@ -44,9 +45,13 @@ export default function DbCourseView({ courseId }: { courseId: string }) {
         }
         if (!cancelled) setCourse(found);
         const lang = found.language;
+        const dir = String(found.filePath || '').match(/courses\/([^/]+)/)?.[1] || '';
         const all = await fetch(`/api/content?type=lesson&language=${lang}`);
         const allData = await all.json();
-        if (!cancelled) setLessons((allData.items || []) as LessonItem[]);
+        const scoped = (allData.items || []).filter((l: any) =>
+          !dir || String(l.filePath || '').includes(`/courses/${dir}/`)
+        );
+        if (!cancelled) setLessons(scoped as LessonItem[]);
       } catch {
         if (!cancelled) setError('Failed to load course');
       } finally {
@@ -57,7 +62,12 @@ export default function DbCourseView({ courseId }: { courseId: string }) {
     return () => { cancelled = true; };
   }, [courseId, langParam]);
 
-  const lessonIds = useMemo(() => lessons.map((l) => l.id), [lessons]);
+  const courseDir = useMemo(
+    () => String(course?.filePath || '').match(/courses\/([^/]+)/)?.[1] || '',
+    [course]
+  );
+  const pid = (id: string) => `${courseDir}/${id}`;
+  const lessonIds = useMemo(() => lessons.map((l) => pid(l.id)), [lessons, courseDir]);
   const progress = useLessonProgress(course?.language, lessonIds);
   const { completedIds } = progress;
 
@@ -71,7 +81,7 @@ export default function DbCourseView({ courseId }: { courseId: string }) {
     return [...map.entries()];
   }, [lessons]);
 
-  const firstIncomplete = lessons.find((l) => !completedIds.has(l.id));
+  const firstIncomplete = lessons.find((l) => !completedIds.has(pid(l.id)));
   const continueId = firstIncomplete?.id || lessons[0]?.id;
   const completed = progress.completedCount;
   const total = progress.totalCount;
@@ -155,7 +165,7 @@ export default function DbCourseView({ courseId }: { courseId: string }) {
             </h2>
             <div className="space-y-2">
               {items.map((l, i) => {
-                const done = completedIds.has(l.id);
+                const done = completedIds.has(pid(l.id));
                 return (
                   <button key={l.id} onClick={() => router.push(`/lesson/${l.id}`)}
                     className={`w-full flex items-center gap-3 p-4 rounded-lg border transition-all text-left ${

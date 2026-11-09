@@ -28,6 +28,7 @@ export default function DbLessonView({ lessonId }: { lessonId: string }) {
   const [lesson, setLesson] = useState<DbLesson | null>(null);
   const [siblings, setSiblings] = useState<DbLesson[]>([]);
   const [courseId, setCourseId] = useState<string>('');
+  const [courseDir, setCourseDir] = useState<string>('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
@@ -43,13 +44,18 @@ export default function DbLessonView({ lessonId }: { lessonId: string }) {
           return;
         }
         setLesson(found);
-        setCourseId(String(found.filePath || '').split('/courses/')[1]?.split('/')[0] || '');
+        const dir = String(found.filePath || '').match(/courses\/([^/]+)/)?.[1] || '';
+        setCourseId(dir);
+        setCourseDir(dir);
 
-        // Load all lessons for this language to build prev/next
+        // Load all lessons for this language, scoped to the same course dir
         const lang = found.language;
         const all = await fetch(`/api/content?type=lesson&language=${lang}`);
         const allData = await all.json();
-        if (!cancelled) setSiblings((allData.items || []) as DbLesson[]);
+        const scoped = (allData.items || []).filter((l: any) =>
+          !courseDir || String(l.filePath || '').includes(`/courses/${courseDir}/`)
+        );
+        if (!cancelled) setSiblings(scoped as DbLesson[]);
       } catch {
         if (!cancelled) setError('Failed to load lesson');
       } finally {
@@ -60,19 +66,20 @@ export default function DbLessonView({ lessonId }: { lessonId: string }) {
     return () => { cancelled = true; };
   }, [lessonId]);
 
-  const lessonIds = useMemo(() => siblings.map((l) => l.id), [siblings]);
+  const pid = (id: string) => `${courseDir}/${id}`;
+  const lessonIds = useMemo(() => siblings.map((l) => pid(l.id)), [siblings, courseDir]);
   const progress = useLessonProgress(lesson?.language, lessonIds);
 
   const idx = siblings.findIndex((l) => l.id === lessonId);
   const prev = idx > 0 ? siblings[idx - 1] : null;
   const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
-  const isCompleted = progress.completedIds.has(lessonId);
+  const isCompleted = progress.completedIds.has(pid(lessonId));
   const completedCount = progress.completedCount;
   const totalCount = progress.totalCount;
   const pct = progress.percent;
 
   const markComplete = async () => {
-    await progress.markComplete(lessonId);
+    await progress.markComplete(pid(lessonId));
     if (next) router.push(`/lesson/${next.id}`);
   };
 

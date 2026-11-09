@@ -25,6 +25,8 @@ interface DatabaseSchema {
   notifications: any[];
   passwordResetTokens: any[];
   contentItems: any[];
+  languageSuggestions: any[];
+  gameHistory: any[];
 }
 
 const defaultData: DatabaseSchema = {
@@ -42,6 +44,8 @@ const defaultData: DatabaseSchema = {
   notifications: [],
   passwordResetTokens: [],
   contentItems: [],
+  languageSuggestions: [],
+  gameHistory: [],
 };
 
 let db: Low<DatabaseSchema> | null = null;
