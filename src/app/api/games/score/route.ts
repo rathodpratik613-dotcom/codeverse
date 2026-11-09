@@ -35,9 +35,72 @@ export async function POST(request: NextRequest) {
       playedAt: new Date().toISOString(),
     };
     (db.data.gameHistory as any[]).push(record);
-    await saveDb();
 
-    return NextResponse.json({ success: true, id: record.id });
+    // --- Streak: consecutive days with at least one game ---
+    const history = db.data.gameHistory as any[];
+    const days = new Set(
+      history.filter((h) => h.userId === auth.userId).map((h) => String(h.playedAt).slice(0, 10))
+    );
+    const dayMs = 24 * 3600e3;
+    let streak = 0;
+    const cursor = new Date();
+    // allow today or yesterday as the streak anchor
+    if (!days.has(cursor.toISOString().slice(0, 10))) cursor.setTime(cursor.getTime() - dayMs);
+    while (days.has(cursor.toISOString().slice(0, 10))) {
+      streak++;
+      cursor.setTime(cursor.getTime() - dayMs);
+    }
+    const user = (db.data.users as any[]).find((u) => u.id === auth.userId);
+    if (user) {
+      user.streak = streak;
+      user.longestStreak = Math.max(user.longestStreak || 0, streak);
+      user.lastGameDate = new Date().toISOString().slice(0, 10);
+    }
+
+    // --- Badges ---
+    const BADGES: { id: string; test: (ctx: any) => boolean }[] = [
+      { id: 'first-game', test: (c) => c.games >= 1 },
+      { id: 'getting-started', test: (c) => c.games >= 5 },
+      { id: 'regular', test: (c) => c.games >= 25 },
+      { id: 'sharpshooter', test: (c) => c.accuracy >= 0.8 && c.games >= 10 },
+      { id: 'perfectionist', test: (c) => c.perfect },
+      { id: 'streak-3', test: (c) => c.streak >= 3 },
+      { id: 'streak-7', test: (c) => c.streak >= 7 },
+      { id: 'streak-30', test: (c) => c.streak >= 30 },
+      { id: 'polyglot', test: (c) => c.languages >= 3 },
+      { id: 'decathlete', test: (c) => c.languages >= 10 },
+      { id: 'score-1000', test: (c) => c.bestScore >= 1000 },
+      { id: 'centurion', test: (c) => c.games >= 100 },
+      { id: 'quiz-master', test: (c) => c.game === 'quiz-battle' && c.games >= 10 },
+      { id: 'puzzle-solver', test: (c) => c.game === 'code-puzzle' && c.games >= 10 },
+      { id: 'bug-squasher', test: (c) => c.game === 'bug-hunter' && c.games >= 10 },
+    ];
+    const myHistory = history.filter((h) => h.userId === auth.userId);
+    const langs = new Set(myHistory.map((h) => h.language));
+    const ctx = {
+      games: myHistory.length,
+      accuracy: myHistory.length ? myHistory.reduce((a: number, h: any) => a + h.correct / Math.max(1, h.total), 0) / myHistory.length : 0,
+      perfect: data.correct === data.total && data.total >= 5,
+      streak,
+      languages: langs.size,
+      bestScore: Math.max(0, ...myHistory.map((h: any) => h.score || 0)),
+      game: data.game,
+    };
+    const achievements = db.data.userAchievements as any[];
+    const newBadges: string[] = [];
+    for (const b of BADGES) {
+      const already = achievements.some((a) => a.userId === auth.userId && a.badgeId === b.id);
+      if (!already && b.test(ctx)) {
+        achievements.push({
+          id: crypto.randomUUID(), userId: auth.userId, badgeId: b.id,
+          earnedAt: new Date().toISOString(),
+        });
+        newBadges.push(b.id);
+      }
+    }
+
+    await saveDb();
+    return NextResponse.json({ success: true, id: record.id, streak, newBadges });
   } catch (error) {
     if (error instanceof z.ZodError) {
       return NextResponse.json({ error: 'Invalid input' }, { status: 400 });

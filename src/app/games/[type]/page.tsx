@@ -55,6 +55,8 @@ function Game() {
   const [roundCorrect, setRoundCorrect] = useState<boolean[]>([]);
   const [roundExplanations, setRoundExplanations] = useState<string[]>([]);
   const [saving, setSaving] = useState(false);
+  const [earnedBadges, setEarnedBadges] = useState<string[]>([]);
+  const [streak, setStreak] = useState<number | null>(null);
   const savedRef = useRef(false);
 
   const langName = languages.find((l) => l.id === lang)?.name || lang;
@@ -143,6 +145,8 @@ function Game() {
           body: JSON.stringify({ game: type, language: lang, score, correct: roundCorrect.filter(Boolean).length, total: roundCorrect.length }),
         });
         const data = await res.json();
+        if (data.streak) setStreak(data.streak);
+        if (data.newBadges?.length) setEarnedBadges(data.newBadges);
         if (data.id) {
           await fetch('/api/xp', {
             method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'include',
@@ -323,6 +327,14 @@ function Game() {
               <h2 className="text-3xl font-bold text-white mb-2">{correctCount}/{totalCount} Correct</h2>
               <p className="text-2xl text-purple-300 font-bold mb-1">{score} points</p>
               <p className="text-gray-400 text-sm">{isAuthenticated ? (saving ? 'Saving score…' : 'Score saved') : 'Log in to save your score'}</p>
+              {streak !== null && <p className="text-orange-400 text-sm mt-1">🔥 {streak}-day streak</p>}
+              {earnedBadges.length > 0 && (
+                <div className="mt-3 flex flex-wrap gap-2 justify-center">
+                  {earnedBadges.map((b) => (
+                    <span key={b} className="px-3 py-1 bg-yellow-500/20 border border-yellow-500/40 text-yellow-300 rounded-full text-xs font-medium">🏅 {b.replace(/-/g, ' ')}</span>
+                  ))}
+                </div>
+              )}
               <div className="flex gap-4 justify-center mt-6">
                 <button onClick={reset} className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50">
                   <RotateCcw className="w-4 h-4" /> Play Again

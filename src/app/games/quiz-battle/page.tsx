@@ -43,6 +43,8 @@ function QuizBattle() {
   const [results, setResults] = useState<RoundResult[]>([]);
   const [sound, setSound] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [streak, setStreak] = useState<number | null>(null);
+  const [earnedBadges, setEarnedBadges] = useState<string[]>([]);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const langName = languages.find((l) => l.id === lang)?.name || lang;
@@ -147,6 +149,8 @@ function QuizBattle() {
           }),
         });
         const data = await res.json();
+        if (data.streak) setStreak(data.streak);
+        if (data.newBadges?.length) setEarnedBadges(data.newBadges);
         if (data.id) {
           await fetch('/api/xp', {
             method: 'POST',
@@ -257,6 +261,14 @@ function QuizBattle() {
               <p className="text-gray-400 text-sm">
                 {isAuthenticated ? (saving ? 'Saving score…' : 'Score saved to leaderboard') : 'Log in to save your score'}
               </p>
+              {streak !== null && <p className="text-orange-400 text-sm mt-1">🔥 {streak}-day streak</p>}
+              {earnedBadges.length > 0 && (
+                <div className="mt-3 flex flex-wrap gap-2 justify-center">
+                  {earnedBadges.map((b) => (
+                    <span key={b} className="px-3 py-1 bg-yellow-500/20 border border-yellow-500/40 text-yellow-300 rounded-full text-xs font-medium">🏅 {b.replace(/-/g, ' ')}</span>
+                  ))}
+                </div>
+              )}
               <div className="flex gap-4 justify-center mt-6">
                 <button onClick={playAgain} className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all">
                   Play Again
