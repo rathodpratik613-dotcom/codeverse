@@ -1,0 +1,902 @@
+[
+  {
+    "id": "csharp-bug-01",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": "public System;\nclass Program {\n    static void Main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "result = square(5)",
+      "public System;",
+      "using System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-02",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static void Main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nConsole.WriteLine(total);\n// experiment: modify a value above and predict the public output\n    }\n}",
+    "buggyLine": 8,
+    "options": [
+      "class Program {",
+      "class Program {",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the public output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 8 uses \"public\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-03",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static void Main() {\nfor i in range(10) {\n    if i == 5 { break }\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the public output\n    }\n}",
+    "buggyLine": 9,
+    "options": [
+      "// experiment: modify a value above and predict the public output",
+      "// await getData()  // pause THIS function only",
+      "// experiment: modify a value above and predict the new output",
+      "using System;"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 9 uses \"public\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-04",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static void Main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n// experiment: modify a value above and predict the public output\n    }\n}",
+    "buggyLine": 9,
+    "options": [
+      "if age >= 18 AND hasTicket {",
+      "class Program {",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the public output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 9 uses \"public\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-05",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "code": "using System;\npublic Program {\n    static void Main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "Console.WriteLine(\"Hello, World!\");",
+      "public Program {",
+      "class Program {",
+      "// prints 0 1 2 3 4"
+    ],
+    "answer": "class Program {",
+    "explanation": "Line 2 uses \"public\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-06",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "public System;\nclass Program {\n    static void Main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "using System;",
+      "public System;",
+      "class Program {",
+      "int age = 30;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-07",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "public System;\nclass Program {\n    static void Main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "static void Main() {",
+      "public System;",
+      "nums = [3, 1, 2]",
+      "using System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-08",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static void Main() {\nclass Dog {\n    name = \"Buddy\"\n    public bark() { Console.WriteLine(\"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 6,
+    "options": [
+      "int age = 30;",
+      "return n * factorial(n - 1)",
+      "public bark() { Console.WriteLine(\"Woof!\"); }",
+      "void bark() { Console.WriteLine(\"Woof!\"); }"
+    ],
+    "answer": "void bark() { Console.WriteLine(\"Woof!\"); }",
+    "explanation": "Line 6 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-09",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static public Main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static void Main() {",
+      "// experiment: modify a value above and predict the new output",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "static public Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-10",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "code": "public System;\nclass Program {\n    static void Main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "using System;",
+      "using System;",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "public System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-11",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "public System;\nclass Program {\n    static void Main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "public System;",
+      "using System;",
+      "class Program {",
+      "using System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-12",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static void Main() {\n// fetch data without blocking the UI\n// public getData()  // pause THIS function only\n    }\n}",
+    "buggyLine": 5,
+    "options": [
+      "static void Main() {",
+      "// await getData()  // pause THIS function only",
+      "class Program {",
+      "// public getData()  // pause THIS function only"
+    ],
+    "answer": "// await getData()  // pause THIS function only",
+    "explanation": "Line 5 uses \"public\" where \"await\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-13",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "using System;\npublic Program {\n    static void Main() {\nstring name = \"Alice\";\nint age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "using System;",
+      "// experiment: modify a value above and predict the new output",
+      "public Program {",
+      "class Program {"
+    ],
+    "answer": "class Program {",
+    "explanation": "Line 2 uses \"public\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-14",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "using System;\npublic Program {\n    static void Main() {\nfor i in range(10) {\n    if i == 5 { break }\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "// result is now 25",
+      "public Program {",
+      "class Program {",
+      "// text.upper() / text.length style helpers exist per language"
+    ],
+    "answer": "class Program {",
+    "explanation": "Line 2 uses \"public\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-15",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "using System;\npublic Program {\n    static void Main() {\nfor row in range(3) {\n    for col in range(3) {\n        Console.WriteLine(\"*\");\n    }\n}\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "Console.WriteLine(i);",
+      "class Program {",
+      "void factorial(n) {",
+      "public Program {"
+    ],
+    "answer": "class Program {",
+    "explanation": "Line 2 uses \"public\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-16",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static void Main() {\npublic add(a, b) {\n    return a + b\n}\nConsole.WriteLine(add(2, 3));  // passes 2 and 3 as arguments\n    }\n}",
+    "buggyLine": 4,
+    "options": [
+      "public add(a, b) {",
+      "x{assign}5 + 3 * 2",
+      "Console.WriteLine(i);",
+      "void add(a, b) {"
+    ],
+    "answer": "void add(a, b) {",
+    "explanation": "Line 4 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-17",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "public System;\nclass Program {\n    static void Main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "public System;",
+      "using System;",
+      "class Program {"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-18",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static void Main() {\npublic age >= 18 AND hasTicket {\n    Console.WriteLine(\"Welcome in\");\n}\n    }\n}",
+    "buggyLine": 4,
+    "options": [
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "total = 0",
+      "public age >= 18 AND hasTicket {",
+      "if age >= 18 AND hasTicket {"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 4 uses \"public\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-19",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static public Main() {\nclass Dog {\n    name = \"Buddy\"\n    void bark() { Console.WriteLine(\"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "total = total + x  // needs special handling in strict languages",
+      "static void Main() {",
+      "class Program {",
+      "static public Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-20",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static void Main() {\nstring name = \"Alice\";\nint age = 30;\n// Common types: \"Alice\" is a public, 42 is a number, true is a boolean\n    }\n}",
+    "buggyLine": 6,
+    "options": [
+      "// 3. smallest code that reproduces it",
+      "with open(\"data.txt\", \"r\") as file {",
+      "// Common types: \"Alice\" is a public, 42 is a number, true is a boolean",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean"
+    ],
+    "answer": "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "explanation": "Line 6 uses \"public\" where \"string\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-21",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static public Main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "count = count + 1",
+      "static void Main() {",
+      "using System;",
+      "static public Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-22",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "code": "using System;\nclass Program {\n    static public Main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static void Main() {",
+      "static void Main() {",
+      "static public Main() {",
+      "// text.upper() / text.length style helpers exist per language"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-23",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "code": "using System;\npublic Program {\n    static void Main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nConsole.WriteLine(user[\"name\"]);  // look up by key\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "// Variables hold reusable values",
+      "using System;",
+      "class Program {",
+      "public Program {"
+    ],
+    "answer": "class Program {",
+    "explanation": "Line 2 uses \"public\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-24",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static void Main() {\nstring name = \"Alice\";\npublic age = 30;\n// Variables hold reusable values\n    }\n}",
+    "buggyLine": 5,
+    "options": [
+      "public age = 30;",
+      "int age = 30;",
+      "class Program {",
+      "class Program {"
+    ],
+    "answer": "int age = 30;",
+    "explanation": "Line 5 uses \"public\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-25",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static public Main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "using System;",
+      "if age >= 18 AND hasTicket {",
+      "static public Main() {",
+      "static void Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-26",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static void Main() {\n// This program greets the world\npublic System;\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}\n    }\n}",
+    "buggyLine": 5,
+    "options": [
+      "public System;",
+      "using System;",
+      "count = 0",
+      "static void Main() {"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 5 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-27",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static public Main() {\n// This program greets the world\nusing System;\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "userCount = 0",
+      "static void Main() {",
+      "static public Main() {",
+      "static void Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-28",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static void Main() {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the public output\n    }\n}",
+    "buggyLine": 8,
+    "options": [
+      "static void Main() {",
+      "// experiment: modify a value above and predict the public output",
+      "static void Main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 8 uses \"public\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-29",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static void Main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search public: function name + your language\n    }\n}",
+    "buggyLine": 5,
+    "options": [
+      "// search public: function name + your language",
+      "using System;",
+      "// search for: function name + your language",
+      "// The line above sends text to the screen"
+    ],
+    "answer": "// search for: function name + your language",
+    "explanation": "Line 5 uses \"public\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-30",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "code": "using System;\npublic Program {\n    static void Main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "static void Main() {",
+      "using System;",
+      "class Program {",
+      "public Program {"
+    ],
+    "answer": "class Program {",
+    "explanation": "Line 2 uses \"public\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-31",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "code": "public System;\nclass Program {\n    static void Main() {\nusing System;\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "public System;",
+      "static void Main() {",
+      "} catch (error) {",
+      "using System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-32",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static public Main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static public Main() {",
+      "// experiment: modify a value above and predict the new output",
+      "static void Main() {",
+      "class Program {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-33",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static public Main() {\nfor i in range(5) {\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "return n * n",
+      "static public Main() {",
+      "static void Main() {",
+      "Console.WriteLine(\"Hello, World!\");"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-34",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "public System;\nclass Program {\n    static void Main() {\ntry {\n    risky_operation()\n} catch (error) {\n    Console.WriteLine(\"Something went wrong\");\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "content = file.read()",
+      "static void Main() {",
+      "using System;",
+      "public System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-35",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static void Main() {\npublic square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n    }\n}",
+    "buggyLine": 4,
+    "options": [
+      "using System;",
+      "static void Main() {",
+      "void square(n) {",
+      "public square(n) {"
+    ],
+    "answer": "void square(n) {",
+    "explanation": "Line 4 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-36",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "code": "public System;\nclass Program {\n    static void Main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "// result is now 25",
+      "using System;",
+      "public System;",
+      "class Program {"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-37",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static public Main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nConsole.WriteLine(user[\"name\"]);  // look up by key\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static void Main() {",
+      "static public Main() {",
+      "class Program {",
+      "static void Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-38",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "public System;\nclass Program {\n    static void Main() {\nfor i in range(5) {\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "using System;",
+      "int age = 30;",
+      "class Program {",
+      "public System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-39",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static public Main() {\ncount = 0\nwhile count < 5 {\n    Console.WriteLine(count);\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static public Main() {",
+      "static void Main() {",
+      "class Program {",
+      "using System;"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-40",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "public System;\nclass Program {\n    static void Main() {\ntry {\n    risky_operation()\n} catch (error) {\n    Console.WriteLine(\"Something went wrong\");\n}\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "public System;",
+      "class Program {",
+      "using System;",
+      "static void Main() {"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-41",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "public System;\nclass Program {\n    static void Main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "public System;",
+      "class Program {",
+      "static void Main() {",
+      "using System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-42",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "using System;\nclass Program {\n    static public Main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static void Main() {",
+      "static public Main() {",
+      "with open(\"data.txt\", \"r\") as file {",
+      "static void Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-43",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "code": "public System;\nclass Program {\n    static void Main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "public System;",
+      "using System;",
+      "void greet(name) {",
+      "static void Main() {"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-44",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "code": "public System;\nclass Program {\n    static void Main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "// Common built-ins you will meet:",
+      "using System;",
+      "public System;",
+      "static void Main() {"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-45",
+    "lesson": "lesson-36",
+    "difficulty": "hard",
+    "code": "public System;\nclass Program {\n    static void Main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "} catch (error) {",
+      "using System;",
+      "Console.WriteLine(\"Adult\");",
+      "public System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-46",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "code": "public System;\nclass Program {\n    static void Main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "// git add .     - stage changes",
+      "using System;",
+      "public System;",
+      "return \"Hello, \" + name"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-47",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "code": "using System;\nclass Program {\n    static void Main() {\nvoid add(a, b) {\n    return a + b\n}\nConsole.WriteLine(add(2, 3));  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the public output\n    }\n}",
+    "buggyLine": 8,
+    "options": [
+      "static void Main() {",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the public output",
+      "result = square(5)"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 8 uses \"public\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-48",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "code": "public System;\nclass Program {\n    static void Main() {\nConsole.WriteLine(\"Alice\");\n// The line above sends text to the screen\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "using System;",
+      "public System;",
+      "static void Main() {"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-49",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "using System;\nclass Program {\n    static public Main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static public Main() {",
+      "using System;",
+      "if age >= 18 {",
+      "static void Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-50",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "code": "using System;\nclass Program {\n    static public Main() {\nitems = [\"a\", \"b\", \"c\"]\nConsole.WriteLine(items[0]);  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "class Program {",
+      "// experiment: modify a value above and predict the new output",
+      "static void Main() {",
+      "static public Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-51",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "code": "using System;\nclass Program {\n    static public Main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nConsole.WriteLine(total);\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static public Main() {",
+      "// experiment: modify a value above and predict the new output",
+      "userCount = 0",
+      "static void Main() {"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-52",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "code": "public System;\nclass Program {\n    static void Main() {\ncount = 0\nwhile count < 5 {\n    Console.WriteLine(count);\n    count = count + 1\n}\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "static void Main() {",
+      "using System;",
+      "Console.WriteLine(\"Minor\");",
+      "public System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-53",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "code": "using System;\npublic Program {\n    static void Main() {\nvoid square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "public Program {",
+      "class Program {",
+      "// experiment: modify a value above and predict the new output",
+      "static void Main() {"
+    ],
+    "answer": "class Program {",
+    "explanation": "Line 2 uses \"public\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-54",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "using System;\nclass Program {\n    static void Main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n// experiment: modify a value above and predict the public output\n    }\n}",
+    "buggyLine": 7,
+    "options": [
+      "// experiment: modify a value above and predict the public output",
+      "for col in range(3) {",
+      "// experiment: modify a value above and predict the new output",
+      "items = [\"a\", \"b\", \"c\"]"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 7 uses \"public\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-55",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "code": "using System;\nclass Program {\n    static void Main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the public output\n    }\n}",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the public output",
+      "// experiment: modify a value above and predict the new output",
+      "void square(n) {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"public\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-56",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "code": "public System;\nclass Program {\n    static void Main() {\nitems = [\"a\", \"b\", \"c\"]\nConsole.WriteLine(items[0]);  // first item\n// items[1], items[2] ... indexes count from 0\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "static void Main() {",
+      "using System;",
+      "// 2. what actually happened",
+      "public System;"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-57",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "code": "public System;\nclass Program {\n    static void Main() {\nstring name = \"Alice\";\nint age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "buggyLine": 1,
+    "options": [
+      "public System;",
+      "using System;",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "using System;",
+    "explanation": "Line 1 uses \"public\" where \"using\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-58",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "using System;\nclass Program {\n    static void Main() {\nfor row in range(3) {\n    for col in range(3) {\n        Console.WriteLine(\"*\");\n    }\n}\n// experiment: modify a value above and predict the public output\n    }\n}",
+    "buggyLine": 9,
+    "options": [
+      "// experiment: modify a value above and predict the public output",
+      "using System;",
+      "// experiment: modify a value above and predict the new output",
+      "using System;"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 9 uses \"public\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-59",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "using System;\npublic Program {\n    static void Main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "public Program {",
+      "// prints 0 1 2 3 4",
+      "using System;",
+      "class Program {"
+    ],
+    "answer": "class Program {",
+    "explanation": "Line 2 uses \"public\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "csharp-bug-60",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "code": "using System;\nclass Program {\n    static public Main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "static public Main() {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "static void Main() {",
+      "using System;"
+    ],
+    "answer": "static void Main() {",
+    "explanation": "Line 3 uses \"public\" where \"void\" belongs. Check keyword spelling and context."
+  }
+]

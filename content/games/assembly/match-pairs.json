@@ -1,0 +1,362 @@
+[
+  {
+    "id": "assembly-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "A for loop is best when...",
+        "right": "you know how many times to repeat"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "assembly-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "What happens when an if condition is false and there is no else?",
+        "right": "Nothing — the block is skipped"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "assembly-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      },
+      {
+        "left": "In boolean logic, A AND B is true when...",
+        "right": "both A and B are true"
+      },
+      {
+        "left": "What problem does async programming solve?",
+        "right": "Long-running tasks without freezing the program"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "20 times"
+    ]
+  },
+  {
+    "id": "assembly-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      }
+    ],
+    "distractors": [
+      "0"
+    ]
+  },
+  {
+    "id": "assembly-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      }
+    ],
+    "distractors": [
+      "you know how many times to repeat",
+      "A saved snapshot of your code at a point in time"
+    ]
+  },
+  {
+    "id": "assembly-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      }
+    ],
+    "distractors": [
+      "Nothing — the block is skipped",
+      "Sends text or values to the screen or console"
+    ]
+  },
+  {
+    "id": "assembly-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does concatenation mean for strings?",
+        "right": "Joining them end to end into one string"
+      },
+      {
+        "left": "A variable declared inside a function is...",
+        "right": "local — visible only within that function"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Skips to the next iteration",
+      ";"
+    ]
+  },
+  {
+    "id": "assembly-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      },
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "A saved snapshot of your code at a point in time",
+      "both A and B are true",
+      "To reuse code and organize logic"
+    ]
+  },
+  {
+    "id": "assembly-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      },
+      {
+        "left": "Where should you look FIRST for accurate syntax questions?",
+        "right": "The official language documentation"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Groups related data (and often behavior) under one name",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "assembly-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "What is a variable?",
+        "right": "A named storage location for a value"
+      },
+      {
+        "left": "What is a commit?",
+        "right": "A saved snapshot of your code at a point in time"
+      }
+    ],
+    "distractors": [
+      "The official language documentation",
+      "you know how many times to repeat",
+      "A base case that stops the recursion",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "assembly-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      }
+    ],
+    "distractors": [
+      "It halves the remaining items each step",
+      "Groups related data (and often behavior) under one name"
+    ]
+  },
+  {
+    "id": "assembly-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "A ready-made function provided by the language",
+      "Nothing — the block is skipped",
+      "A saved snapshot of your code at a point in time"
+    ]
+  },
+  {
+    "id": "assembly-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is the best first step for a capstone project?",
+        "right": "Define the smallest version that works end-to-end"
+      },
+      {
+        "left": "Which of these is typically a boolean value?",
+        "right": "nonzero / zero"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does a \"Hello World\" program mainly teach you?",
+        "right": "That your code runs and produces output"
+      }
+    ],
+    "distractors": [
+      ";",
+      ";"
+    ]
+  },
+  {
+    "id": "assembly-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Assembly?",
+        "right": ";"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      },
+      {
+        "left": "In Assembly, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": "go-bug-01",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n}",
+    "buggyLine": 2,
+    "options": [
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "func \"fmt\"",
+      "package main",
+      "import \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-02",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the func output\n}",
+    "buggyLine": 7,
+    "options": [
+      "if age >= 18 {",
+      "// git init      - start tracking",
+      "// experiment: modify a value above and predict the func output",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 7 uses \"func\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-03",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\nclass Dog {\n    name = \"Buddy\"\n    func bark() { fmt.Println(\"Woof!\") }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "fmt.Println(i)",
+      "fmt.Println(\"Something went wrong\")",
+      "import \"fmt\"",
+      "func \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-04",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\npackage main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "func main() {",
+      "func main() {",
+      "package main() {",
+      "package main"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-05",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\npackage main() {\ntotal = 0  // global\nfunc add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n}",
+    "buggyLine": 3,
+    "options": [
+      "import \"fmt\"",
+      "package main() {",
+      "import \"fmt\"",
+      "func main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-06",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n}",
+    "buggyLine": 2,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "import \"fmt\"",
+      "// experiment: modify a value above and predict the new output",
+      "func \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-07",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\ntry {\n    risky_operation()\n} catch (error) {\n    fmt.Println(\"Something went wrong\")\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// items[1], items[2] ... indexes count from 0",
+      "package main",
+      "func main"
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-08",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// This program greets the world\npackage main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "content = file.read()",
+      "func \"fmt\"",
+      "import \"fmt\"",
+      "package main"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-09",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n}",
+    "buggyLine": 2,
+    "options": [
+      "func \"fmt\"",
+      "// experiment: modify a value above and predict the new output",
+      "import \"fmt\"",
+      "func main() {"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-10",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n}",
+    "buggyLine": 1,
+    "options": [
+      "func main",
+      "package main",
+      "func main() {",
+      "package main"
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-11",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n}",
+    "buggyLine": 2,
+    "options": [
+      "func main() {",
+      "package main",
+      "func \"fmt\"",
+      "import \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-12",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\ncount = 0\nwhile count < 5 {\n    fmt.Println(count)\n    count = count + 1\n}\n}",
+    "buggyLine": 2,
+    "options": [
+      "func \"fmt\"",
+      "import \"fmt\"",
+      "import \"fmt\"",
+      "// git init      - start tracking"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-13",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "import \"fmt\"",
+      "import \"fmt\"",
+      "package main",
+      "func \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-14",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\nfunc add(a, b) {\n    return a + b\n}\nfmt.Println(add(2, 3))  // passes 2 and 3 as arguments\n}",
+    "buggyLine": 2,
+    "options": [
+      "fmt.Println(\"Alice\")",
+      "import \"fmt\"",
+      "func \"fmt\"",
+      "package main"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-15",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\npackage main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "import \"fmt\"",
+      "package main() {",
+      "func main() {",
+      "func main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-16",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\npackage main() {\nname := \"Alice\"\nage := 30\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "func main() {",
+      "return n * n",
+      "func main() {",
+      "package main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-17",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\npackage main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nfmt.Println(total)\n}",
+    "buggyLine": 3,
+    "options": [
+      "func main() {",
+      "package main() {",
+      "// experiment: modify a value above and predict the new output",
+      "age := 30"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-18",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\npackage main() {\nfunc square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "content = file.read()",
+      "func main() {",
+      "import \"fmt\"",
+      "package main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-19",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nfor row in range(3) {\n    func col in range(3) {\n        fmt.Println(\"*\")\n    }\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 5,
+    "options": [
+      "func col in range(3) {",
+      "// 1. what I expected",
+      "for col in range(3) {",
+      "package main"
+    ],
+    "answer": "for col in range(3) {",
+    "explanation": "Line 5 uses \"func\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-20",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\nif age >= 18 AND hasTicket {\n    fmt.Println(\"Welcome in\")\n}\n}",
+    "buggyLine": 2,
+    "options": [
+      "// import the tools you need",
+      "import \"fmt\"",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "func \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-21",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "code": "package main\nimport \"fmt\"\npackage main() {\nfmt.Println(\"Alice\")\n// The line above sends text to the screen\n}",
+    "buggyLine": 3,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "func main() {",
+      "func main() {",
+      "package main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-22",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "func main",
+      "fmt.Println(i)",
+      "// file is auto-closed here",
+      "package main"
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-23",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\ntry {\n    risky_operation()\n} catch (error) {\n    fmt.Println(\"Something went wrong\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "import \"fmt\"",
+      "import \"fmt\"",
+      "func main",
+      "package main"
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-24",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "code": "package main\nimport \"fmt\"\npackage main() {\nname := \"Alice\"\nage := 30\n// Variables hold reusable values\n}",
+    "buggyLine": 3,
+    "options": [
+      "package main",
+      "package main() {",
+      "package main",
+      "func main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-25",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n}",
+    "buggyLine": 2,
+    "options": [
+      "package main",
+      "package main",
+      "func \"fmt\"",
+      "import \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-26",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n}",
+    "buggyLine": 2,
+    "options": [
+      "func main() {",
+      "import \"fmt\"",
+      "func \"fmt\"",
+      "import \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-27",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n}",
+    "buggyLine": 1,
+    "options": [
+      "name := \"Alice\"",
+      "package main",
+      "func main",
+      "func main() {"
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-28",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "func \"fmt\"",
+      "import \"fmt\"",
+      "nums = [3, 1, 2]",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-29",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nfunc add(a, b) {\n    func a + b\n}\nfmt.Println(add(2, 3))  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 5,
+    "options": [
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "return a + b",
+      "// Bad:  x = calc(a,b)",
+      "func a + b"
+    ],
+    "answer": "return a + b",
+    "explanation": "Line 5 uses \"func\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-30",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nfunc row in range(3) {\n    for col in range(3) {\n        fmt.Println(\"*\")\n    }\n}\n}",
+    "buggyLine": 4,
+    "options": [
+      "for row in range(3) {",
+      "import \"fmt\"",
+      "func row in range(3) {",
+      "func main() {"
+    ],
+    "answer": "for row in range(3) {",
+    "explanation": "Line 4 uses \"func\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-31",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\ntotal = 0  // global\npackage add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 5,
+    "options": [
+      "func main() {",
+      "package add(x) {",
+      "func add(x) {",
+      "while count < 5 {"
+    ],
+    "answer": "func add(x) {",
+    "explanation": "Line 5 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-32",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "func main",
+      "package main",
+      "// experiment: modify a value above and predict the new output",
+      "import \"fmt\""
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-33",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\nfunc factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n}",
+    "buggyLine": 2,
+    "options": [
+      "func \"fmt\"",
+      "import \"fmt\"",
+      "// experiment: modify a value above and predict the new output",
+      "// 2. what actually happened"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-34",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nfmt.Println(total)\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "import \"fmt\"",
+      "import \"fmt\"",
+      "// result is now 25",
+      "func \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-35",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\nfunc factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "func \"fmt\"",
+      "// git push     - share to remote",
+      "import \"fmt\"",
+      "// Good question template:"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-36",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "func main() {",
+      "package main",
+      "func \"fmt\"",
+      "import \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-37",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "code": "package main\nimport \"fmt\"\npackage main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "func main() {",
+      "package main() {",
+      "// The line above sends text to the screen",
+      "userCount = 0"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-38",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nfor i in range(10) {\n    func i == 5 { break }\n    fmt.Println(i)\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 5,
+    "options": [
+      "if i == 5 { break }",
+      "func main() {",
+      "import \"fmt\"",
+      "func i == 5 { break }"
+    ],
+    "answer": "if i == 5 { break }",
+    "explanation": "Line 5 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-39",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n// experiment: modify a value above and predict the func output\n}",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the func output",
+      "package main",
+      "import \"fmt\""
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"func\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-40",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\nitems = [\"a\", \"b\", \"c\"]\nfmt.Println(items[0])  // first item\n// items[1], items[2] ... indexes count from 0\n}",
+    "buggyLine": 1,
+    "options": [
+      "package main",
+      "func main",
+      "fmt.Println(\"Hello, World!\")",
+      "package main"
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-41",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nfunc greet(name) {\n    func \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 5,
+    "options": [
+      "return \"Hello, \" + name",
+      "func \"Hello, \" + name",
+      "import \"fmt\"",
+      "content = file.read()"
+    ],
+    "answer": "return \"Hello, \" + name",
+    "explanation": "Line 5 uses \"func\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-42",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n}",
+    "buggyLine": 2,
+    "options": [
+      "package main",
+      "import \"fmt\"",
+      "func \"fmt\"",
+      "func main() {"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-43",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nage = 20\nfunc age >= 18 {\n    fmt.Println(\"Adult\")\n} else {\n    fmt.Println(\"Minor\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 5,
+    "options": [
+      "// tags now holds only 2 unique values",
+      "if age >= 18 {",
+      "func age >= 18 {",
+      "func add(x) {"
+    ],
+    "answer": "if age >= 18 {",
+    "explanation": "Line 5 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-44",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "func main",
+      "func bark() { fmt.Println(\"Woof!\") }",
+      "// items[1], items[2] ... indexes count from 0",
+      "package main"
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-45",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nage = 20\nfunc age >= 18 {\n    fmt.Println(\"Adult\")\n} else {\n    fmt.Println(\"Minor\")\n}\n}",
+    "buggyLine": 5,
+    "options": [
+      "if age >= 18 {",
+      "package main",
+      "func main() {",
+      "func age >= 18 {"
+    ],
+    "answer": "if age >= 18 {",
+    "explanation": "Line 5 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-46",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\npackage main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n}",
+    "buggyLine": 3,
+    "options": [
+      "package main",
+      "package main() {",
+      "for i in range(5) {",
+      "func main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-47",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nfmt.Println(user[\"name\"])  // look up by key\n// experiment: modify a value above and predict the func output\n}",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the func output",
+      "fmt.Println(items[0])  // first item",
+      "package main"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"func\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-48",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\npackage main\nfunc \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n}",
+    "buggyLine": 5,
+    "options": [
+      "} else {",
+      "package main",
+      "func \"fmt\"",
+      "import \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 5 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-49",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nfunc age >= 18 AND hasTicket {\n    fmt.Println(\"Welcome in\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 4,
+    "options": [
+      "if age >= 18 {",
+      "fmt.Println(\"Hello, World!\")",
+      "if age >= 18 AND hasTicket {",
+      "func age >= 18 AND hasTicket {"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 4 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-50",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\npackage greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n}",
+    "buggyLine": 4,
+    "options": [
+      "func greet(name) {",
+      "package main",
+      "import \"fmt\"",
+      "package greet(name) {"
+    ],
+    "answer": "func greet(name) {",
+    "explanation": "Line 4 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-51",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "code": "func main\nimport \"fmt\"\nfunc main() {\n// This program greets the world\npackage main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "func square(n) {",
+      "package main",
+      "func main",
+      "package main"
+    ],
+    "answer": "package main",
+    "explanation": "Line 1 uses \"func\" where \"package\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-52",
+    "lesson": "lesson-24",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\npackage main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "age := 30",
+      "func main() {",
+      "package main() {",
+      "for i in range(10) {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-53",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n}",
+    "buggyLine": 2,
+    "options": [
+      "// an object groups related fields under one name",
+      "import \"fmt\"",
+      "func \"fmt\"",
+      "import \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-54",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nfmt.Println(\"Alice\")\n// The line above sends text to the screen\n// experiment: modify a value above and predict the func output\n}",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the func output",
+      "package main",
+      "if i == 5 { break }"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"func\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-55",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\nclass Dog {\n    name = \"Buddy\"\n    func bark() { fmt.Println(\"Woof!\") }\n}\n// dog = Dog()  then  dog.bark()\n}",
+    "buggyLine": 2,
+    "options": [
+      "import \"fmt\"",
+      "import \"fmt\"",
+      "fmt.Println(total)",
+      "func \"fmt\""
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-56",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "package main\nfunc \"fmt\"\nfunc main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "func \"fmt\"",
+      "import \"fmt\"",
+      "// text + \" World\" joins strings",
+      "func main() {"
+    ],
+    "answer": "import \"fmt\"",
+    "explanation": "Line 2 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-57",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\npackage main() {\nfor i in range(5) {\n    fmt.Println(i)\n}\n// prints 0 1 2 3 4\n}",
+    "buggyLine": 3,
+    "options": [
+      "try {",
+      "} catch (error) {",
+      "package main() {",
+      "func main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-58",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the func output\n}",
+    "buggyLine": 7,
+    "options": [
+      "// experiment: modify a value above and predict the func output",
+      "func main() {",
+      "// experiment: modify a value above and predict the new output",
+      "import \"fmt\""
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 7 uses \"func\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-59",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\nfunc main() {\nname := \"Alice\"\nage := 30\n// Common types: \"Alice\" is a string, 42 is a number, func is a boolean\n}",
+    "buggyLine": 6,
+    "options": [
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "name = \"Buddy\"",
+      "// Common types: \"Alice\" is a string, 42 is a number, func is a boolean"
+    ],
+    "answer": "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "explanation": "Line 6 uses \"func\" where \"true\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "go-bug-60",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "code": "package main\nimport \"fmt\"\npackage main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n}",
+    "buggyLine": 3,
+    "options": [
+      "func main() {",
+      "// prints 0 1 2 3 4",
+      "package main",
+      "package main() {"
+    ],
+    "answer": "func main() {",
+    "explanation": "Line 3 uses \"package\" where \"func\" belongs. Check keyword spelling and context."
+  }
+]

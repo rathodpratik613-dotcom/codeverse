@@ -1,0 +1,902 @@
+[
+  {
+    "id": "rust-bug-01",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "let main() {\n// This program greets the world\nfn main() {\n    println!(\"Hello, World!\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// 2. what actually happened",
+      "// result is now 25",
+      "fn main() {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-02",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "let main() {\ntry {\n    risky_operation()\n} catch (error) {\n    println!(\"{}\", \"Something went wrong\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "let main() {",
+      "result = square(5)"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-03",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "code": "let main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "fn main() {",
+      "// prints 0 1 2 3 4"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-04",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "let main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n}",
+    "buggyLine": 1,
+    "options": [
+      "let main() {",
+      "fn main() {",
+      "// prints 0 1 2 3 4",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-05",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "code": "let main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "println!(\"{}\", user[\"name\"]);  // look up by key",
+      "fn main() {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-06",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "let main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "total = total + x  // needs special handling in strict languages",
+      "// This program greets the world"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-07",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "let main() {\nlet name = \"Alice\";\nlet age = 30;\n// Variables hold reusable values\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "fn main() {",
+      "let main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-08",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "code": "let main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "let main() {",
+      "// await getData()  // pause THIS function only",
+      "fn main() {",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-09",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "code": "let main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n}",
+    "buggyLine": 1,
+    "options": [
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// prints 0 1 2 3 4",
+      "fn main() {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-10",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "let main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "fn main() {",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-11",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "fn main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (fn the built-in sort)\n// binary search finds a target in O(log n) steps\n}",
+    "buggyLine": 3,
+    "options": [
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// sorted -> [1, 2, 3]  (fn the built-in sort)",
+      "return n * n",
+      "// 1. plan features  2. build core loop  3. add one feature at a time"
+    ],
+    "answer": "// sorted -> [1, 2, 3]  (use the built-in sort)",
+    "explanation": "Line 3 uses \"fn\" where \"use\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-12",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "code": "let main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "fn main() {",
+      "fn main() {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-13",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "let main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "user = { name: \"Alice\", age: 30 }",
+      "fn factorial(n) {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-14",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "code": "let main() {\nitems = [\"a\", \"b\", \"c\"]\nprintln!(\"{}\", items[0]);  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// prints 0 1 2 3 4",
+      "let main() {",
+      "fn main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-15",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "code": "let main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "fn main() {",
+      "let main() {",
+      "println!(\"{}\", i);"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-16",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "let main() {\ntotal = 0  // global\nfn add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "fn main() {",
+      "fn main() {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-17",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "fn main() {\nfn factorial(n) {\n    if n <= 1 { return 1 }\n    fn n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 4,
+    "options": [
+      "return n * factorial(n - 1)",
+      "fn main() {",
+      "fn n * factorial(n - 1)",
+      "// prints 0 1 2 3 4"
+    ],
+    "answer": "return n * factorial(n - 1)",
+    "explanation": "Line 4 uses \"fn\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-18",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "code": "let main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nprintln!(\"{}\", total);\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "class Dog {",
+      "let main() {",
+      "fn factorial(n) {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-19",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "let main() {\nfn greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "let main() {",
+      "// experiment: modify a value above and predict the new output",
+      "fn main() {",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-20",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "let main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nprintln!(\"{}\", user[\"name\"]);  // look up by key\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "let main() {",
+      "fn main() {",
+      "return \"Hello, \" + name",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-21",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "let main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n}",
+    "buggyLine": 1,
+    "options": [
+      "let main() {",
+      "// experiment: modify a value above and predict the new output",
+      "// The line above sends text to the screen",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-22",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "fn main() {\nfor i in range(10) {\n    fn i == 5 { break }\n    println!(\"{}\", i);\n}\n// prints 0 1 2 3 4\n}",
+    "buggyLine": 3,
+    "options": [
+      "fn i == 5 { break }",
+      "// Common built-ins you will meet:",
+      "fn main() {",
+      "if i == 5 { break }"
+    ],
+    "answer": "if i == 5 { break }",
+    "explanation": "Line 3 uses \"fn\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-23",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "code": "let main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "fn main() {",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-24",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "let main() {\nclass Dog {\n    name = \"Buddy\"\n    fn bark() { println!(\"{}\", \"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "fn main() {",
+      "let main() {",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-25",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "let main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nprintln!(\"{}\", total);\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "fn main() {",
+      "let main() {",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-26",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "let main() {\nprintln!(\"{}\", \"Alice\");\n// The line above sends text to the screen\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "println!(\"{}\", i);",
+      "total = total + x  // needs special handling in strict languages",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-27",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "let main() {\ntry {\n    risky_operation()\n} catch (error) {\n    println!(\"{}\", \"Something went wrong\");\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "fn main() {",
+      "let main() {",
+      "// git commit -m \"describe why\""
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-28",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "code": "fn main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core fn  3. add one feature at a time\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "// experiment: modify a value above and predict the new output",
+      "// 1. plan features  2. build core fn  3. add one feature at a time",
+      "if n <= 1 { return 1 }"
+    ],
+    "answer": "// 1. plan features  2. build core loop  3. add one feature at a time",
+    "explanation": "Line 3 uses \"fn\" where \"loop\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-29",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "code": "fn main() {\n// fetch data without blocking the UI\n// fn getData()  // pause THIS function only\n}",
+    "buggyLine": 3,
+    "options": [
+      "count = count + 1",
+      "risky_operation()",
+      "// fn getData()  // pause THIS function only",
+      "// await getData()  // pause THIS function only"
+    ],
+    "answer": "// await getData()  // pause THIS function only",
+    "explanation": "Line 3 uses \"fn\" where \"await\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-30",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "let main() {\nclass Dog {\n    name = \"Buddy\"\n    fn bark() { println!(\"{}\", \"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "// prints 0 1 2 3 4",
+      "let main() {",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-31",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "fn main() {\nfn add(a, b) {\n    fn a + b\n}\nprintln!(\"{}\", add(2, 3));  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "fn a + b",
+      "// experiment: modify a value above and predict the new output",
+      "return a + b"
+    ],
+    "answer": "return a + b",
+    "explanation": "Line 3 uses \"fn\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-32",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "let main() {\nfn add(a, b) {\n    return a + b\n}\nprintln!(\"{}\", add(2, 3));  // passes 2 and 3 as arguments\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "// experiment: modify a value above and predict the new output",
+      "// git basics"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-33",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "code": "fn main() {\nfn row in range(3) {\n    for col in range(3) {\n        println!(\"{}\", \"*\");\n    }\n}\n}",
+    "buggyLine": 2,
+    "options": [
+      "fn row in range(3) {",
+      "// experiment: modify a value above and predict the new output",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "for row in range(3) {"
+    ],
+    "answer": "for row in range(3) {",
+    "explanation": "Line 2 uses \"fn\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-34",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "code": "let main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "nums = [3, 1, 2]"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-35",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "code": "fn main() {\nage = 20\nfn age >= 18 {\n    println!(\"{}\", \"Adult\");\n} else {\n    println!(\"{}\", \"Minor\");\n}\n}",
+    "buggyLine": 3,
+    "options": [
+      "if age >= 18 {",
+      "fn age >= 18 {",
+      "println!(\"Hello, World!\");",
+      "fn main() {"
+    ],
+    "answer": "if age >= 18 {",
+    "explanation": "Line 3 uses \"fn\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-36",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "fn main() {\n// This program greets the world\nlet main() {\n    println!(\"Hello, World!\");\n}\n}",
+    "buggyLine": 3,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "text = \"Hello\"",
+      "println!(\"{}\", \"*\");"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 3 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-37",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "code": "let main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nprintln!(\"{}\", user[\"name\"]);  // look up by key\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn square(n) {",
+      "let main() {",
+      "fn main() {",
+      "count = 0"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-38",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "code": "let main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "x{assign}5 + 3 * 2",
+      "let main() {",
+      "fn main() {",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-39",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "fn main() {\nlet name = \"Alice\";\nlet age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, fn is a boolean\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 4,
+    "options": [
+      "// Common types: \"Alice\" is a string, 42 is a number, fn is a boolean",
+      "fn bark() { println!(\"{}\", \"Woof!\"); }",
+      "// 3. smallest code that reproduces it",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean"
+    ],
+    "answer": "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "explanation": "Line 4 uses \"fn\" where \"true\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-40",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "code": "let main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "// dog = Dog()  then  dog.bark()",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-41",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "code": "let main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "} else {",
+      "fn main() {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-42",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "let main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n}",
+    "buggyLine": 1,
+    "options": [
+      "let main() {",
+      "total = total + x  // needs special handling in strict languages",
+      "userCount = 0",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-43",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "code": "let main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n}",
+    "buggyLine": 1,
+    "options": [
+      "let main() {",
+      "fn main() {",
+      "println!(\"{}\", \"Welcome in\");",
+      "// Variables hold reusable values"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-44",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "code": "fn main() {\n// fetch data without blocking the UI\n// fn getData()  // pause THIS function only\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "// await getData()  // pause THIS function only",
+      "// fn getData()  // pause THIS function only",
+      "// experiment: modify a value above and predict the new output",
+      "fn main() {"
+    ],
+    "answer": "// await getData()  // pause THIS function only",
+    "explanation": "Line 3 uses \"fn\" where \"await\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-45",
+    "lesson": "lesson-36",
+    "difficulty": "hard",
+    "code": "let main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "fn main() {",
+      "let main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-46",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "code": "fn main() {\nfn age >= 18 AND hasTicket {\n    println!(\"{}\", \"Welcome in\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "fn age >= 18 AND hasTicket {",
+      "if age >= 18 AND hasTicket {",
+      "// git init      - start tracking",
+      "return n * n"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 2 uses \"fn\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-47",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "code": "fn main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (fn the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "fn main() {",
+      "// This program greets the world",
+      "// sorted -> [1, 2, 3]  (fn the built-in sort)"
+    ],
+    "answer": "// sorted -> [1, 2, 3]  (use the built-in sort)",
+    "explanation": "Line 3 uses \"fn\" where \"use\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-48",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "code": "fn main() {\nfn factorial(n) {\n    if n <= 1 { return 1 }\n    fn n * factorial(n - 1)\n}\n}",
+    "buggyLine": 4,
+    "options": [
+      "return n * factorial(n - 1)",
+      "fn n * factorial(n - 1)",
+      "// git commit -m \"describe why\"",
+      "// 1. plan features  2. build core loop  3. add one feature at a time"
+    ],
+    "answer": "return n * factorial(n - 1)",
+    "explanation": "Line 4 uses \"fn\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-49",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "code": "fn main() {\nfn square(n) {\n    fn n * n\n}\nresult = square(5)\n// result is now 25\n}",
+    "buggyLine": 3,
+    "options": [
+      "fn n * n",
+      "// e.g. math functions, date handling, file helpers",
+      "return n * n",
+      "// 1. plan features  2. build core loop  3. add one feature at a time"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 3 uses \"fn\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-50",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "code": "fn main() {\nfn i in range(5) {\n    println!(\"{}\", i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "fn i in range(5) {",
+      "// Good question template:",
+      "for i in range(5) {",
+      "fn main() {"
+    ],
+    "answer": "for i in range(5) {",
+    "explanation": "Line 2 uses \"fn\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-51",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "code": "let main() {\nage = 20\nif age >= 18 {\n    println!(\"{}\", \"Adult\");\n} else {\n    println!(\"{}\", \"Minor\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "let main() {",
+      "// an object groups related fields under one name",
+      "fn main() {",
+      "// await getData()  // pause THIS function only"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-52",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "code": "fn main() {\ntotal = 0  // global\nlet add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n}",
+    "buggyLine": 3,
+    "options": [
+      "let add(x) {",
+      "fn add(x) {",
+      "fn main() {",
+      "// Good question template:"
+    ],
+    "answer": "fn add(x) {",
+    "explanation": "Line 3 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-53",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "let main() {\nfor row in range(3) {\n    for col in range(3) {\n        println!(\"{}\", \"*\");\n    }\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// git basics",
+      "// 1. what I expected",
+      "fn main() {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-54",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "code": "fn main() {\nfor i in range(10) {\n    fn i == 5 { break }\n    println!(\"{}\", i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "if i == 5 { break }",
+      "// experiment: modify a value above and predict the new output",
+      "fn i == 5 { break }",
+      "fn greet(name) {"
+    ],
+    "answer": "if i == 5 { break }",
+    "explanation": "Line 3 uses \"fn\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-55",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "code": "fn main() {\ncount = 0\nfn count < 5 {\n    println!(\"{}\", count);\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "fn main() {",
+      "fn count < 5 {",
+      "while count < 5 {",
+      "println!(\"{}\", \"Something went wrong\");"
+    ],
+    "answer": "while count < 5 {",
+    "explanation": "Line 3 uses \"fn\" where \"while\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-56",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "code": "let main() {\nprintln!(\"{}\", \"Alice\");\n// The line above sends text to the screen\n}",
+    "buggyLine": 1,
+    "options": [
+      "content = file.read()",
+      "let main() {",
+      "user = { name: \"Alice\", age: 30 }",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-57",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "code": "let main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n}",
+    "buggyLine": 1,
+    "options": [
+      "fn main() {",
+      "let main() {",
+      "println!(\"{}\", \"Adult\");",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-58",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "code": "fn main() {\nlet main() {\n    println!(\"Hello, World!\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "let main() {",
+      "// experiment: modify a value above and predict the new output",
+      "fn main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 2 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-59",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "let main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "fn main() {",
+      "fn main() {",
+      "let main() {"
+    ],
+    "answer": "fn main() {",
+    "explanation": "Line 1 uses \"let\" where \"fn\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "rust-bug-60",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "code": "fn main() {\nfn square(n) {\n    fn n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "fn n * n",
+      "// experiment: modify a value above and predict the new output",
+      "return n * n",
+      "for row in range(3) {"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 3 uses \"fn\" where \"return\" belongs. Check keyword spelling and context."
+  }
+]

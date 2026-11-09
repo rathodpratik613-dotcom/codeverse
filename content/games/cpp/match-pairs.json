@@ -1,0 +1,359 @@
+[
+  {
+    "id": "cpp-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "What is the most valuable first test for a new function?",
+        "right": "A normal input with a known expected output"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "cpp-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      },
+      {
+        "left": "What does \"continue\" do inside a loop?",
+        "right": "Skips to the next iteration"
+      },
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "cpp-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "What does the print/output function do?",
+        "right": "Sends text or values to the screen or console"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "cpp-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "What does \"return\" do?",
+        "right": "Sends a value back and ends the function"
+      },
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Skips to the next iteration"
+    ]
+  },
+  {
+    "id": "cpp-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Sends text or values to the screen or console"
+    ]
+  },
+  {
+    "id": "cpp-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "What is 10 % 3 in most languages?",
+        "right": "1 (the remainder)"
+      },
+      {
+        "left": "What happens when an if condition is false and there is no else?",
+        "right": "Nothing — the block is skipped"
+      },
+      {
+        "left": "What does a \"Hello World\" program mainly teach you?",
+        "right": "That your code runs and produces output"
+      }
+    ],
+    "distractors": [
+      "Parameters are placeholders; arguments are the real values passed",
+      "Groups related data (and often behavior) under one name",
+      "Depends on the code — trace it line by line",
+      "Makes functions/code from another module available"
+    ]
+  },
+  {
+    "id": "cpp-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In boolean logic, A AND B is true when...",
+        "right": "both A and B are true"
+      },
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+    ]
+  },
+  {
+    "id": "cpp-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      }
+    ],
+    "distractors": [
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "cpp-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Parameters are placeholders; arguments are the real values passed"
+    ]
+  },
+  {
+    "id": "cpp-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What makes a while loop safe?",
+        "right": "Its condition eventually becomes false"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "//"
+    ]
+  },
+  {
+    "id": "cpp-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "A variable declared inside a function is...",
+        "right": "local — visible only within that function"
+      },
+      {
+        "left": "A for loop is best when...",
+        "right": "you know how many times to repeat"
+      }
+    ],
+    "distractors": [
+      "Groups related data (and often behavior) under one name",
+      "A normal input with a known expected output",
+      "It halves the remaining items each step"
+    ]
+  },
+  {
+    "id": "cpp-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "cpp-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Sends text or values to the screen or console",
+      "Groups related data (and often behavior) under one name"
+    ]
+  },
+  {
+    "id": "cpp-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C++?",
+        "right": "//"
+      },
+      {
+        "left": "In C++, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Skips to the next iteration"
+    ]
+  }
+]

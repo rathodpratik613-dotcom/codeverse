@@ -1,0 +1,1186 @@
+[
+  {
+    "id": "css-puzzle-01",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "lines": [
+      ".card {",
+      "}",
+      "* {",
+      "    margin: 10px auto;",
+      "    border: 1px solid #ddd;",
+      "}",
+      "    width: 300px;",
+      "    padding: 20px;",
+      "    box-sizing: border-box;"
+    ],
+    "answer": [
+      "* {",
+      "    box-sizing: border-box;",
+      "}",
+      ".card {",
+      "    width: 300px;",
+      "    padding: 20px;",
+      "    border: 1px solid #ddd;",
+      "    margin: 10px auto;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-02",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "}",
+      ".inline-block {",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    width: 100px;",
+      "    display: inline-block;",
+      ".hidden {",
+      "    display: none;"
+    ],
+    "answer": [
+      ".hidden {",
+      "    display: none;",
+      "}",
+      ".inline-block {",
+      "    display: inline-block;",
+      "    width: 100px;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-03",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "lines": [
+      ".card__title { }",
+      ".card--featured { }",
+      "/* */ experiment: modify a value above and predict the new output",
+      "/* BEM: block__element--modifier */",
+      ".card { }"
+    ],
+    "answer": [
+      ".card { }",
+      ".card__title { }",
+      ".card--featured { }",
+      "/* BEM: block__element--modifier */",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-04",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "lines": [
+      "    display: flex;",
+      ".carousel {",
+      "    overflow-x: auto;",
+      ".slide { scroll-snap-align: start; }",
+      "    scroll-snap-type: x proximity;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      ".carousel {",
+      "    display: flex;",
+      "    overflow-x: auto;",
+      "    scroll-snap-type: x proximity;",
+      "}",
+      ".slide { scroll-snap-align: start; }",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-05",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      ".card:hover {",
+      "    transform: translateY(-4px);",
+      "}",
+      "    transition: transform 0.2s ease, box-shadow 0.2s ease;",
+      "}",
+      ".card {"
+    ],
+    "answer": [
+      ".card {",
+      "    transition: transform 0.2s ease, box-shadow 0.2s ease;",
+      "}",
+      ".card:hover {",
+      "    transform: translateY(-4px);",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-06",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "    overflow: hidden;",
+      ".card {",
+      "    white-space: nowrap;",
+      "    text-overflow: ellipsis;"
+    ],
+    "answer": [
+      ".card {",
+      "    overflow: hidden;",
+      "    text-overflow: ellipsis;",
+      "    white-space: nowrap;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-07",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "lines": [
+      "    background: var(--primary);",
+      ":root {",
+      "}",
+      "button {",
+      "    --primary: #6366f1;",
+      "    color: white;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      ":root {",
+      "    --primary: #6366f1;",
+      "}",
+      "button {",
+      "    background: var(--primary);",
+      "    color: white;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-08",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "lines": [
+      ".card:hover {",
+      "/* */ experiment: modify a value above and predict the new output",
+      "}",
+      "    transform: translateY(-4px) scale(1.02);"
+    ],
+    "answer": [
+      ".card:hover {",
+      "    transform: translateY(-4px) scale(1.02);",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-09",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "lines": [
+      ".hero {",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    width: min(90%, 1200px);",
+      "    margin: 0 auto;",
+      "}",
+      "    font-size: clamp(1.5rem, 4vw, 3rem);"
+    ],
+    "answer": [
+      ".hero {",
+      "    font-size: clamp(1.5rem, 4vw, 3rem);",
+      "    width: min(90%, 1200px);",
+      "    margin: 0 auto;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-10",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "lines": [
+      "@media print {",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    nav, .ads { display: none; }",
+      "}",
+      "    .card { page-break-inside: avoid; }"
+    ],
+    "answer": [
+      "@media print {",
+      "    nav, .ads { display: none; }",
+      "    .card { page-break-inside: avoid; }",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-11",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "    padding: 1rem;",
+      "}",
+      "    &:hover { box-shadow: 0 4px 12px #0002; }",
+      "    .title { font-weight: bold; }",
+      ".card {"
+    ],
+    "answer": [
+      ".card {",
+      "    padding: 1rem;",
+      "    .title { font-weight: bold; }",
+      "    &:hover { box-shadow: 0 4px 12px #0002; }",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-12",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "lines": [
+      "    transform: translateY(-4px) scale(1.02);",
+      "}",
+      ".card:hover {"
+    ],
+    "answer": [
+      ".card:hover {",
+      "    transform: translateY(-4px) scale(1.02);",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-13",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "lines": [
+      "    margin: 10px auto;",
+      "    box-sizing: border-box;",
+      "* {",
+      "    width: 300px;",
+      "    border: 1px solid #ddd;",
+      ".card {",
+      "    padding: 20px;",
+      "}",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "* {",
+      "    box-sizing: border-box;",
+      "}",
+      ".card {",
+      "    width: 300px;",
+      "    padding: 20px;",
+      "    border: 1px solid #ddd;",
+      "    margin: 10px auto;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-14",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "lines": [
+      ".grid { display: grid; gap: var(--space); }",
+      "/* */ experiment: modify a value above and predict the new output",
+      "}",
+      ":root {",
+      "    --radius: 12px; --space: clamp(1rem, 4vw, 2rem);",
+      "    --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0;"
+    ],
+    "answer": [
+      ":root {",
+      "    --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0;",
+      "    --radius: 12px; --space: clamp(1rem, 4vw, 2rem);",
+      "}",
+      ".grid { display: grid; gap: var(--space); }",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-15",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "    .card { break-inside: avoid; }",
+      "@page { margin: 2cm; }",
+      "@media print {",
+      "    nav, footer { display: none; }"
+    ],
+    "answer": [
+      "@page { margin: 2cm; }",
+      "@media print {",
+      "    nav, footer { display: none; }",
+      "    .card { break-inside: avoid; }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-16",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "lines": [
+      ".card {",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    padding: 16px;",
+      "    font-weight: bold;",
+      "}",
+      "}",
+      "    border: 1px solid #ccc;",
+      ".card .title {"
+    ],
+    "answer": [
+      ".card {",
+      "    border: 1px solid #ccc;",
+      "    padding: 16px;",
+      "}",
+      ".card .title {",
+      "    font-weight: bold;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-17",
+    "lesson": "lesson-37",
+    "difficulty": "easy",
+    "lines": [
+      "/* compiles modern CSS for older targets */",
+      "> 0.5%, last 2 versions, not dead",
+      "/* browserslist */"
+    ],
+    "answer": [
+      "/* browserslist */",
+      "> 0.5%, last 2 versions, not dead",
+      "/* compiles modern CSS for older targets */"
+    ],
+    "explanation": "This snippet comes from lesson lesson-37. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-18",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "body {",
+      "h1 {",
+      "    font-family: sans-serif;",
+      "}",
+      "    color: navy;",
+      "}",
+      "    color: #333;"
+    ],
+    "answer": [
+      "body {",
+      "    font-family: sans-serif;",
+      "    color: #333;",
+      "}",
+      "h1 {",
+      "    color: navy;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-19",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "    from { opacity: 0; transform: translateY(20px); }",
+      "    to { opacity: 1; transform: none; }",
+      ".card { animation: fadeUp .4s ease both; }",
+      "@keyframes fadeUp {"
+    ],
+    "answer": [
+      "@keyframes fadeUp {",
+      "    from { opacity: 0; transform: translateY(20px); }",
+      "    to { opacity: 1; transform: none; }",
+      "}",
+      ".card { animation: fadeUp .4s ease both; }"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-20",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "    color: purple;",
+      "}",
+      "    content: \"→ \";",
+      "li::before {",
+      "a:hover {"
+    ],
+    "answer": [
+      "a:hover {",
+      "    color: purple;",
+      "}",
+      "li::before {",
+      "    content: \"→ \";",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-21",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "lines": [
+      "body {",
+      "    line-height: 1.6;",
+      "}",
+      "    font-family: system-ui, sans-serif;",
+      "    font-size: 1rem;"
+    ],
+    "answer": [
+      "body {",
+      "    font-family: system-ui, sans-serif;",
+      "    font-size: 1rem;",
+      "    line-height: 1.6;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-22",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      ".grid { display: grid; gap: var(--space); }",
+      ":root {",
+      "    --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0;",
+      "    --radius: 12px; --space: clamp(1rem, 4vw, 2rem);"
+    ],
+    "answer": [
+      ":root {",
+      "    --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0;",
+      "    --radius: 12px; --space: clamp(1rem, 4vw, 2rem);",
+      "}",
+      ".grid { display: grid; gap: var(--space); }"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-23",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "    content-visibility: auto;",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    contain-intrinsic-size: auto 500px;",
+      ".panel {"
+    ],
+    "answer": [
+      ".panel {",
+      "    content-visibility: auto;",
+      "    contain-intrinsic-size: auto 500px;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-24",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "    outline-offset: 2px;",
+      "    accent-color: #6366f1;",
+      "}",
+      "}",
+      "input[type=\"checkbox\"] {",
+      "    outline: 2px solid blue;",
+      "input:focus-visible {"
+    ],
+    "answer": [
+      "input:focus-visible {",
+      "    outline: 2px solid blue;",
+      "    outline-offset: 2px;",
+      "}",
+      "input[type=\"checkbox\"] {",
+      "    accent-color: #6366f1;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-25",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "@layer reset, base, components, utilities;",
+      "}",
+      "    .btn { padding: 0.5rem 1rem; }",
+      "@layer components {"
+    ],
+    "answer": [
+      "@layer reset, base, components, utilities;",
+      "@layer components {",
+      "    .btn { padding: 0.5rem 1rem; }",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-26",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "lines": [
+      "    font-size: 1rem;",
+      "}",
+      "body {",
+      "    line-height: 1.6;",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    font-family: system-ui, sans-serif;"
+    ],
+    "answer": [
+      "body {",
+      "    font-family: system-ui, sans-serif;",
+      "    font-size: 1rem;",
+      "    line-height: 1.6;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-27",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "lines": [
+      ".card { animation: fadeUp .4s ease both; }",
+      "}",
+      "    to { opacity: 1; transform: none; }",
+      "/* */ experiment: modify a value above and predict the new output",
+      "@keyframes fadeUp {",
+      "    from { opacity: 0; transform: translateY(20px); }"
+    ],
+    "answer": [
+      "@keyframes fadeUp {",
+      "    from { opacity: 0; transform: translateY(20px); }",
+      "    to { opacity: 1; transform: none; }",
+      "}",
+      ".card { animation: fadeUp .4s ease both; }",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-28",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "    position: sticky;",
+      ".nav {",
+      "}",
+      "    top: 0;",
+      "    z-index: 100;"
+    ],
+    "answer": [
+      ".nav {",
+      "    position: sticky;",
+      "    top: 0;",
+      "    z-index: 100;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-29",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "lines": [
+      ".card-wrapper { container-type: inline-size; }",
+      "/* */ experiment: modify a value above and predict the new output",
+      "}",
+      "@container (min-width: 350px) {",
+      "    .card { grid-template-columns: 1fr 1fr; }"
+    ],
+    "answer": [
+      ".card-wrapper { container-type: inline-size; }",
+      "@container (min-width: 350px) {",
+      "    .card { grid-template-columns: 1fr 1fr; }",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-30",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "lines": [
+      "    :root { --bg: #111; --text: #eee; }",
+      "}",
+      "@media (prefers-color-scheme: dark) {",
+      ":root { --bg: #fff; --text: #111; }"
+    ],
+    "answer": [
+      ":root { --bg: #fff; --text: #111; }",
+      "@media (prefers-color-scheme: dark) {",
+      "    :root { --bg: #111; --text: #eee; }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-31",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "lines": [
+      ".hero {",
+      "    width: min(90%, 1200px);",
+      "    margin: 0 auto;",
+      "    font-size: clamp(1.5rem, 4vw, 3rem);",
+      "}"
+    ],
+    "answer": [
+      ".hero {",
+      "    font-size: clamp(1.5rem, 4vw, 3rem);",
+      "    width: min(90%, 1200px);",
+      "    margin: 0 auto;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-32",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "lines": [
+      ".card {",
+      "    border: 1px solid #ccc;",
+      "}",
+      "    padding: 16px;",
+      "    font-weight: bold;",
+      ".card .title {",
+      "}"
+    ],
+    "answer": [
+      ".card {",
+      "    border: 1px solid #ccc;",
+      "    padding: 16px;",
+      "}",
+      ".card .title {",
+      "    font-weight: bold;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-33",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "lines": [
+      "    .nav { flex-direction: column; }",
+      "@media (max-width: 768px) {",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "@media (max-width: 768px) {",
+      "    .nav { flex-direction: column; }",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-34",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "lines": [
+      ":root {",
+      "}",
+      ".button {",
+      "    background: var(--color-primary);",
+      "    --space-md: 1rem;",
+      "    padding: var(--space-md);",
+      "}",
+      "    --color-primary: #6366f1;"
+    ],
+    "answer": [
+      ":root {",
+      "    --color-primary: #6366f1;",
+      "    --space-md: 1rem;",
+      "}",
+      ".button {",
+      "    background: var(--color-primary);",
+      "    padding: var(--space-md);",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-35",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "lines": [
+      ".card {",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    overflow: hidden;",
+      "    text-overflow: ellipsis;",
+      "    white-space: nowrap;"
+    ],
+    "answer": [
+      ".card {",
+      "    overflow: hidden;",
+      "    text-overflow: ellipsis;",
+      "    white-space: nowrap;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-36",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "lines": [
+      "    .btn { padding: 0.5rem 1rem; }",
+      "@layer components {",
+      "@layer reset, base, components, utilities;",
+      "}"
+    ],
+    "answer": [
+      "@layer reset, base, components, utilities;",
+      "@layer components {",
+      "    .btn { padding: 0.5rem 1rem; }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-37",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "lines": [
+      ".button {",
+      "}",
+      ":root {",
+      "    --color-primary: #6366f1;",
+      "    padding: var(--space-md);",
+      "/* */ experiment: modify a value above and predict the new output",
+      "}",
+      "    background: var(--color-primary);",
+      "    --space-md: 1rem;"
+    ],
+    "answer": [
+      ":root {",
+      "    --color-primary: #6366f1;",
+      "    --space-md: 1rem;",
+      "}",
+      ".button {",
+      "    background: var(--color-primary);",
+      "    padding: var(--space-md);",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-38",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "lines": [
+      "@container (min-width: 350px) {",
+      "    .card { grid-template-columns: 1fr 1fr; }",
+      "}",
+      ".card-wrapper { container-type: inline-size; }"
+    ],
+    "answer": [
+      ".card-wrapper { container-type: inline-size; }",
+      "@container (min-width: 350px) {",
+      "    .card { grid-template-columns: 1fr 1fr; }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-39",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "lines": [
+      ".layout {",
+      "    display: grid;",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    gap: 20px;",
+      "    grid-template-columns: 250px 1fr;",
+      "}"
+    ],
+    "answer": [
+      ".layout {",
+      "    display: grid;",
+      "    grid-template-columns: 250px 1fr;",
+      "    gap: 20px;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-40",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      ".badge {",
+      "    transform: rotate(-5deg) scale(1.1);",
+      "}",
+      "    transform-origin: center;"
+    ],
+    "answer": [
+      ".badge {",
+      "    transform: rotate(-5deg) scale(1.1);",
+      "    transform-origin: center;",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-41",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "::view-transition-old(root),",
+      "    animation-duration: 0.3s;",
+      "::view-transition-new(root) {"
+    ],
+    "answer": [
+      "::view-transition-old(root),",
+      "::view-transition-new(root) {",
+      "    animation-duration: 0.3s;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-42",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "lines": [
+      ":root {",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    --space-md: 1rem;",
+      "    --color-primary: #6366f1;",
+      "/* tokens -> base -> components -> utilities */"
+    ],
+    "answer": [
+      ":root {",
+      "    --color-primary: #6366f1;",
+      "    --space-md: 1rem;",
+      "}",
+      "/* tokens -> base -> components -> utilities */",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-43",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "lines": [
+      ".card { }",
+      "/* BEM: block__element--modifier */",
+      ".card--featured { }",
+      ".card__title { }"
+    ],
+    "answer": [
+      ".card { }",
+      ".card__title { }",
+      ".card--featured { }",
+      "/* BEM: block__element--modifier */"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-44",
+    "lesson": "lesson-37",
+    "difficulty": "hard",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "/* compiles modern CSS for older targets */",
+      "/* browserslist */",
+      "> 0.5%, last 2 versions, not dead"
+    ],
+    "answer": [
+      "/* browserslist */",
+      "> 0.5%, last 2 versions, not dead",
+      "/* compiles modern CSS for older targets */",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-37. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-45",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "lines": [
+      "    :root { --bg: #111; --text: #eee; }",
+      ":root { --bg: #fff; --text: #111; }",
+      "@media (prefers-color-scheme: dark) {",
+      "/* */ experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "answer": [
+      ":root { --bg: #fff; --text: #111; }",
+      "@media (prefers-color-scheme: dark) {",
+      "    :root { --bg: #111; --text: #eee; }",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-46",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "lines": [
+      ".card {",
+      "}",
+      "    transform: translateY(-4px);",
+      "    transition: transform 0.2s ease, box-shadow 0.2s ease;",
+      ".card:hover {",
+      "}"
+    ],
+    "answer": [
+      ".card {",
+      "    transition: transform 0.2s ease, box-shadow 0.2s ease;",
+      "}",
+      ".card:hover {",
+      "    transform: translateY(-4px);",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-47",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "lines": [
+      "    padding: 1rem;",
+      "    &:hover { box-shadow: 0 4px 12px #0002; }",
+      ".card {",
+      "}",
+      "    .title { font-weight: bold; }"
+    ],
+    "answer": [
+      ".card {",
+      "    padding: 1rem;",
+      "    .title { font-weight: bold; }",
+      "    &:hover { box-shadow: 0 4px 12px #0002; }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-48",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "lines": [
+      "    color: navy;",
+      "}",
+      "    color: #333;",
+      "body {",
+      "}",
+      "    font-family: sans-serif;",
+      "h1 {"
+    ],
+    "answer": [
+      "body {",
+      "    font-family: sans-serif;",
+      "    color: #333;",
+      "}",
+      "h1 {",
+      "    color: navy;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-49",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "lines": [
+      ".glass {",
+      "/* */ experiment: modify a value above and predict the new output",
+      "    background: rgba(255,255,255,0.1);",
+      "}",
+      "    backdrop-filter: blur(12px);"
+    ],
+    "answer": [
+      ".glass {",
+      "    backdrop-filter: blur(12px);",
+      "    background: rgba(255,255,255,0.1);",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-50",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "lines": [
+      ":root { --bg: #fff; --text: #111; }",
+      "    :root { --bg: #141414; --text: #eee; }",
+      "@media (prefers-color-scheme: dark) {",
+      "body { background: var(--bg); color: var(--text); }",
+      "}",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      ":root { --bg: #fff; --text: #111; }",
+      "@media (prefers-color-scheme: dark) {",
+      "    :root { --bg: #141414; --text: #eee; }",
+      "}",
+      "body { background: var(--bg); color: var(--text); }",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-51",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "lines": [
+      "    display: inline-block;",
+      ".hidden {",
+      "}",
+      "    width: 100px;",
+      ".inline-block {",
+      "}",
+      "    display: none;"
+    ],
+    "answer": [
+      ".hidden {",
+      "    display: none;",
+      "}",
+      ".inline-block {",
+      "    display: inline-block;",
+      "    width: 100px;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-52",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "lines": [
+      "    justify-content: space-between;",
+      "    display: flex;",
+      "    align-items: center;",
+      "    gap: 16px;",
+      "}",
+      ".row {"
+    ],
+    "answer": [
+      ".row {",
+      "    display: flex;",
+      "    justify-content: space-between;",
+      "    align-items: center;",
+      "    gap: 16px;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-53",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "lines": [
+      ".panel {",
+      "    contain-intrinsic-size: auto 500px;",
+      "}",
+      "    content-visibility: auto;"
+    ],
+    "answer": [
+      ".panel {",
+      "    content-visibility: auto;",
+      "    contain-intrinsic-size: auto 500px;",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-54",
+    "lesson": "lesson-36",
+    "difficulty": "hard",
+    "lines": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "button { anchor-name: --btn; }",
+      "    position-anchor: --btn;",
+      "    top: anchor(bottom);",
+      "}",
+      ".tooltip {",
+      "    position: absolute;"
+    ],
+    "answer": [
+      ".tooltip {",
+      "    position: absolute;",
+      "    position-anchor: --btn;",
+      "    top: anchor(bottom);",
+      "}",
+      "button { anchor-name: --btn; }",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "css-puzzle-55",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "lines": [
+      "    background: rgba(255,255,255,0.1);",
+      "    backdrop-filter: blur(12px);",
+      ".glass {",
+      "}"
+    ],
+    "answer": [
+      ".glass {",
+      "    backdrop-filter: blur(12px);",
+      "    background: rgba(255,255,255,0.1);",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  }
+]

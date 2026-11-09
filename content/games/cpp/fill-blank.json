@@ -1,0 +1,650 @@
+[
+  {
+    "id": "cpp-fill-q-cpp-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: // write a note here",
+    "code": null,
+    "answer": "//",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9;",
+    "code": null,
+    "answer": ";",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: std::cout << \"Hello\" << std::endl;",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $void add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "cpp-fill-q-cpp-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "cpp-fill-37",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nstd::cout << total << std::endl;\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "using",
+      "include",
+      "char",
+      "private"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "cpp-fill-38",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nstd::cout << total << std::endl;\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "return",
+      "include",
+      "if",
+      "typename"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "cpp-fill-39",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "override",
+      "while",
+      "include",
+      "namespace"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "cpp-fill-40",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "else",
+      "include",
+      "nullptr",
+      "static"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "cpp-fill-41",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "bool",
+      "nullptr",
+      "override",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "cpp-fill-42",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "for",
+      "return",
+      "public",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "cpp-fill-43",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "include",
+      "true",
+      "static",
+      "public"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "cpp-fill-44",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "include",
+      "bool",
+      "true",
+      "class"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "cpp-fill-45",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\nclass Dog {\n    name = \"Buddy\"\n    void bark() { std::cout << \"Woof!\" << std::endl; }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "namespace",
+      "include",
+      "bool",
+      "nullptr"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "cpp-fill-46",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\nclass Dog {\n    name = \"Buddy\"\n    void bark() { std::cout << \"Woof!\" << std::endl; }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "float",
+      "namespace",
+      "include",
+      "using"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "cpp-fill-47",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\ncount = 0\nwhile count < 5 {\n    std::cout << count << std::endl;\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "struct",
+      "char",
+      "float",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "cpp-fill-48",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\ncount = 0\nwhile count < 5 {\n    std::cout << count << std::endl;\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "include",
+      "namespace",
+      "using",
+      "char"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "cpp-fill-49",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "if",
+      "const",
+      "bool",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-22 for context."
+  },
+  {
+    "id": "cpp-fill-50",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "override",
+      "throw",
+      "struct",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-22 for context."
+  },
+  {
+    "id": "cpp-fill-51",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "return",
+      "virtual",
+      "for",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "cpp-fill-52",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "public",
+      "else",
+      "include",
+      "for"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "cpp-fill-53",
+    "lesson": "lesson-36",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "void",
+      "true",
+      "include",
+      "this"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-36 for context."
+  },
+  {
+    "id": "cpp-fill-54",
+    "lesson": "lesson-36",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "void",
+      "return",
+      "for",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-36 for context."
+  },
+  {
+    "id": "cpp-fill-55",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nstd::cout << user[\"name\"] << std::endl;  // look up by key\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "using",
+      "namespace",
+      "this",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "cpp-fill-56",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nstd::cout << user[\"name\"] << std::endl;  // look up by key\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "char",
+      "static",
+      "float",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "cpp-fill-57",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\nage = 20\nif age >= 18 {\n    std::cout << \"Adult\" << std::endl;\n} else {\n    std::cout << \"Minor\" << std::endl;\n}\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "include",
+      "using",
+      "double",
+      "bool"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "cpp-fill-58",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\nage = 20\nif age >= 18 {\n    std::cout << \"Adult\" << std::endl;\n} else {\n    std::cout << \"Minor\" << std::endl;\n}\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "else",
+      "catch",
+      "if",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "cpp-fill-59",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#_____ <iostream>\n#include <string>\n\nint main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "char",
+      "true",
+      "throw",
+      "include"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-29 for context."
+  },
+  {
+    "id": "cpp-fill-60",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this cpp code:",
+    "code": "#include <iostream>\n#_____ <string>\n\nint main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n    return 0;\n}",
+    "answer": "include",
+    "options": [
+      "static",
+      "include",
+      "try",
+      "char"
+    ],
+    "explanation": "\"include\" is the correct keyword here — check the lesson on lesson-29 for context."
+  }
+]

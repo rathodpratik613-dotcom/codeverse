@@ -1,0 +1,650 @@
+[
+  {
+    "id": "r-fill-q-r-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: # write a note here",
+    "code": null,
+    "answer": "#",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9(no semicolon)",
+    "code": null,
+    "answer": "(no semicolon)",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: print(\"Hello\")",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $function add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "r-fill-q-r-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "r-fill-37",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "items = [\"a\", \"b\", \"_____\"]\nprint(items[0])  # first item\n# items[1], items[2] ... indexes count from 0",
+    "answer": "c",
+    "options": [
+      "c",
+      "parse",
+      "sqrt",
+      "within"
+    ],
+    "explanation": "\"c\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "r-fill-38",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n_____(items[0])  # first item\n# items[1], items[2] ... indexes count from 0",
+    "answer": "print",
+    "options": [
+      "cumsum",
+      "evalq",
+      "print",
+      "Inf"
+    ],
+    "explanation": "\"print\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "r-fill-39",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "name <- \"Alice\"\nage <- 30\n# Common types: \"Alice\" is a string, 42 is a number, _____ is a boolean",
+    "answer": "TRUE",
+    "options": [
+      "subset",
+      "outer",
+      "TRUE",
+      "grepl"
+    ],
+    "explanation": "\"TRUE\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "r-fill-40",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "# Common built-ins you will meet:\n# _____/count, round/floor/ceil, min/max, sort, join/split\n# experiment: modify a value above and predict the new output",
+    "answer": "length",
+    "options": [
+      "charmatch",
+      "nchar",
+      "is.factor",
+      "length"
+    ],
+    "explanation": "\"length\" is the correct keyword here — check the lesson on lesson-18 for context."
+  },
+  {
+    "id": "r-fill-41",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "# Common built-ins you will meet:\n# length/count, round/floor/ceil, min/max, sort, join/split\n# experiment: modify a value above and _____ the new output",
+    "answer": "predict",
+    "options": [
+      "deparse",
+      "levels<-",
+      "library",
+      "predict"
+    ],
+    "explanation": "\"predict\" is the correct keyword here — check the lesson on lesson-18 for context."
+  },
+  {
+    "id": "r-fill-42",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "x{assign}5 + 3 * 2\n# Multiplication happens first: result is 11\n# experiment: modify a value above and _____ the new output",
+    "answer": "predict",
+    "options": [
+      "solve",
+      "nlevels",
+      "predict",
+      "repeat"
+    ],
+    "explanation": "\"predict\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "r-fill-43",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "_____ i in range(5) {\n    print(i)\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "answer": "for",
+    "options": [
+      "for",
+      "break",
+      "detach",
+      "length"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "r-fill-44",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "for i in range(5) {\n    _____(i)\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "answer": "print",
+    "options": [
+      "print",
+      "cumprod",
+      "setOldClass",
+      "exp"
+    ],
+    "explanation": "\"print\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "r-fill-45",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "# git basics\n# git init      - start tracking\n# git add .     - stage changes\n# git commit -m \"describe why\"\n# git push     - share to remote\n# experiment: modify a value above and _____ the new output",
+    "answer": "predict",
+    "options": [
+      "match",
+      "which.min",
+      "predict",
+      "cast"
+    ],
+    "explanation": "\"predict\" is the correct keyword here — check the lesson on lesson-34 for context."
+  },
+  {
+    "id": "r-fill-46",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "_____ factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}",
+    "answer": "function",
+    "options": [
+      "function",
+      "deparse1",
+      "cummax",
+      "attach"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "r-fill-47",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "function factorial(n) {\n    _____ n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}",
+    "answer": "if",
+    "options": [
+      "cumprod",
+      "is.array",
+      "apply",
+      "if"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "r-fill-48",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "items = [\"a\", \"b\", \"_____\"]\nprint(items[0])  # first item\n# items[1], items[2] ... indexes count from 0\n# experiment: modify a value above and predict the new output",
+    "answer": "c",
+    "options": [
+      "duplicated",
+      "sys.function",
+      "c",
+      "table"
+    ],
+    "explanation": "\"c\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "r-fill-49",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n_____(items[0])  # first item\n# items[1], items[2] ... indexes count from 0\n# experiment: modify a value above and predict the new output",
+    "answer": "print",
+    "options": [
+      "expand.grid",
+      "print",
+      "sum",
+      "cummin"
+    ],
+    "explanation": "\"print\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "r-fill-50",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "_____ open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n# file is auto-closed here\n# experiment: modify a value above and predict the new output",
+    "answer": "with",
+    "options": [
+      "with",
+      "eval.parent",
+      "NULL",
+      "scale"
+    ],
+    "explanation": "\"with\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "r-fill-51",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "with open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n# file is auto-closed here\n# experiment: modify a value above and _____ the new output",
+    "answer": "predict",
+    "options": [
+      "predict",
+      "match.call",
+      "with",
+      "rank"
+    ],
+    "explanation": "\"predict\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "r-fill-52",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "_____ Dog {\n    name = \"Buddy\"\n    function bark() { print(\"Woof!\") }\n}\n# dog = Dog()  then  dog.bark()",
+    "answer": "class",
+    "options": [
+      "dump",
+      "svd",
+      "class",
+      "quote"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "r-fill-53",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "class Dog {\n    name = \"Buddy\"\n    _____ bark() { print(\"Woof!\") }\n}\n# dog = Dog()  then  dog.bark()",
+    "answer": "function",
+    "options": [
+      "function",
+      "paste",
+      "transform",
+      "dim<-"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "r-fill-54",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "_____ i in range(10) {\n    if i == 5 { break }\n    print(i)\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "answer": "for",
+    "options": [
+      "for",
+      "unstack",
+      "prop.table",
+      "class"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "r-fill-55",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "for i in range(10) {\n    _____ i == 5 { break }\n    print(i)\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "answer": "if",
+    "options": [
+      "sin",
+      "library",
+      "embed",
+      "if"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "r-fill-56",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "_____ greet(name) {\n    return \"Hello, \" + name\n}\n# call it: greet(\"Sam\")\n# experiment: modify a value above and predict the new output",
+    "answer": "function",
+    "options": [
+      "function",
+      "unclass",
+      "vapply",
+      "exp"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "r-fill-57",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "function greet(name) {\n    _____ \"Hello, \" + name\n}\n# call it: greet(\"Sam\")\n# experiment: modify a value above and predict the new output",
+    "answer": "return",
+    "options": [
+      "which.max",
+      "args",
+      "anova",
+      "return"
+    ],
+    "explanation": "\"return\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "r-fill-58",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "age = 20\n_____ age >= 18 {\n    print(\"Adult\")\n} else {\n    print(\"Minor\")\n}\n# experiment: modify a value above and predict the new output",
+    "answer": "if",
+    "options": [
+      "sd",
+      "require",
+      "vector",
+      "if"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "r-fill-59",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "age = 20\nif age >= 18 {\n    _____(\"Adult\")\n} else {\n    print(\"Minor\")\n}\n# experiment: modify a value above and predict the new output",
+    "answer": "print",
+    "options": [
+      "dim<-",
+      "sweep",
+      "print",
+      "sample"
+    ],
+    "explanation": "\"print\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "r-fill-60",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this r code:",
+    "code": "# Docs pattern: Quick Start -> Guides -> API Reference\n# search for: _____ name + your language\n# experiment: modify a value above and predict the new output",
+    "answer": "function",
+    "options": [
+      "data.frame",
+      "function",
+      "UseMethod",
+      "print"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-33 for context."
+  }
+]

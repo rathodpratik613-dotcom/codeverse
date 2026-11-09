@@ -1,0 +1,1210 @@
+[
+  {
+    "id": "kotlin-puzzle-01",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "lines": [
+      "    fun bark() { println(\"Woof!\") }",
+      "}",
+      "    name = \"Buddy\"",
+      "// dog = Dog()  then  dog.bark()",
+      "fun main() {",
+      "class Dog {",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "    fun bark() { println(\"Woof!\") }",
+      "}",
+      "// dog = Dog()  then  dog.bark()",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-02",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "lines": [
+      "    return n * n",
+      "fun main() {",
+      "// result is now 25",
+      "}",
+      "}",
+      "fun square(n) {",
+      "result = square(5)"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "// result is now 25",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-03",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "lines": [
+      "    println(\"Welcome in\")",
+      "if age >= 18 AND hasTicket {",
+      "}",
+      "fun main() {",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "if age >= 18 AND hasTicket {",
+      "    println(\"Welcome in\")",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-04",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "    risky_operation()",
+      "try {",
+      "    println(\"Something went wrong\")",
+      "fun main() {",
+      "} catch (error) {",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    println(\"Something went wrong\")",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-05",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "lines": [
+      "// items[1], items[2] ... indexes count from 0",
+      "println(items[0])  // first item",
+      "fun main() {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "println(items[0])  // first item",
+      "// items[1], items[2] ... indexes count from 0",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-06",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "lines": [
+      "fun main() {",
+      "// git add .     - stage changes",
+      "// experiment: modify a value above and predict the new output",
+      "// git push     - share to remote",
+      "// git basics",
+      "}",
+      "// git init      - start tracking",
+      "// git commit -m \"describe why\""
+    ],
+    "answer": [
+      "fun main() {",
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\"",
+      "// git push     - share to remote",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-07",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "    fun bark() { println(\"Woof!\") }",
+      "// dog = Dog()  then  dog.bark()",
+      "}",
+      "fun main() {",
+      "    name = \"Buddy\"",
+      "// experiment: modify a value above and predict the new output",
+      "class Dog {"
+    ],
+    "answer": [
+      "fun main() {",
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "    fun bark() { println(\"Woof!\") }",
+      "}",
+      "// dog = Dog()  then  dog.bark()",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-08",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "lines": [
+      "// Variables hold reusable values",
+      "// experiment: modify a value above and predict the new output",
+      "val name = \"Alice\"",
+      "fun main() {",
+      "}",
+      "var age = 30"
+    ],
+    "answer": [
+      "fun main() {",
+      "val name = \"Alice\"",
+      "var age = 30",
+      "// Variables hold reusable values",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-09",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "lines": [
+      "    println(count)",
+      "while count < 5 {",
+      "}",
+      "count = 0",
+      "}",
+      "    count = count + 1",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "count = 0",
+      "while count < 5 {",
+      "    println(count)",
+      "    count = count + 1",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-10",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "lines": [
+      "println(items[0])  // first item",
+      "fun main() {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "// items[1], items[2] ... indexes count from 0",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "println(items[0])  // first item",
+      "// items[1], items[2] ... indexes count from 0",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-11",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "lines": [
+      "// tags now holds only 2 unique values",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "fun main() {",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// tags now holds only 2 unique values",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-12",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "fun main() {",
+      "// expected result: 10",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "// expected result: 10",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-13",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "// Bad:  x = calc(a,b)",
+      "fun main() {",
+      "userCount = 0",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)"
+    ],
+    "answer": [
+      "fun main() {",
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-14",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "lines": [
+      "fun main() {",
+      "}",
+      "val name = \"Alice\"",
+      "// experiment: modify a value above and predict the new output",
+      "var age = 30",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean"
+    ],
+    "answer": [
+      "fun main() {",
+      "val name = \"Alice\"",
+      "var age = 30",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-15",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "lines": [
+      "// call it: greet(\"Sam\")",
+      "fun main() {",
+      "fun greet(name) {",
+      "}",
+      "}",
+      "    return \"Hello, \" + name"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "// call it: greet(\"Sam\")",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-16",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "count = 0",
+      "    println(count)",
+      "}",
+      "    count = count + 1",
+      "while count < 5 {",
+      "fun main() {",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "count = 0",
+      "while count < 5 {",
+      "    println(count)",
+      "    count = count + 1",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-17",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "lines": [
+      "    println(\"Hello, World!\")",
+      "fun main() {",
+      "}",
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "// This program greets the world"
+    ],
+    "answer": [
+      "fun main() {",
+      "// This program greets the world",
+      "fun main() {",
+      "    println(\"Hello, World!\")",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-18",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "lines": [
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "fun main() {",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "fun main() {",
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-19",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "lines": [
+      "text = \"Hello\"",
+      "// text + \" World\" joins strings",
+      "// text.upper() / text.length style helpers exist per language",
+      "}",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "text = \"Hello\"",
+      "// text + \" World\" joins strings",
+      "// text.upper() / text.length style helpers exist per language",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-20",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "lines": [
+      "println(user[\"name\"])  // look up by key",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "println(user[\"name\"])  // look up by key",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-21",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "lines": [
+      "var age = 30",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "}",
+      "val name = \"Alice\"",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "val name = \"Alice\"",
+      "var age = 30",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-22",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "lines": [
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "}",
+      "// search for: function name + your language",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "// search for: function name + your language",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-23",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "lines": [
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps",
+      "nums = [3, 1, 2]"
+    ],
+    "answer": [
+      "fun main() {",
+      "nums = [3, 1, 2]",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-24",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "lines": [
+      "        println(\"*\")",
+      "fun main() {",
+      "    for col in range(3) {",
+      "}",
+      "for row in range(3) {",
+      "    }",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "        println(\"*\")",
+      "    }",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-25",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "// import the tools you need",
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {",
+      "// e.g. math functions, date handling, file helpers"
+    ],
+    "answer": [
+      "fun main() {",
+      "// import the tools you need",
+      "// e.g. math functions, date handling, file helpers",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-26",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "}",
+      "    return n * factorial(n - 1)",
+      "fun factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    return n * factorial(n - 1)",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-27",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "fun main() {",
+      "// search for: function name + your language"
+    ],
+    "answer": [
+      "fun main() {",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "// search for: function name + your language",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-28",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "}",
+      "fun main() {",
+      "    println(\"Hello, World!\")",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun main() {",
+      "    println(\"Hello, World!\")",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-29",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "lines": [
+      "fun square(n) {",
+      "}",
+      "fun main() {",
+      "    return n * n",
+      "result = square(5)",
+      "// result is now 25",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "// result is now 25",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-30",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "lines": [
+      "// Bad:  x = calc(a,b)",
+      "userCount = 0",
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-31",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "lines": [
+      "        println(\"*\")",
+      "    }",
+      "}",
+      "for row in range(3) {",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {",
+      "    for col in range(3) {"
+    ],
+    "answer": [
+      "fun main() {",
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "        println(\"*\")",
+      "    }",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-32",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "lines": [
+      "if age >= 18 {",
+      "}",
+      "}",
+      "} else {",
+      "fun main() {",
+      "    println(\"Minor\")",
+      "age = 20",
+      "    println(\"Adult\")"
+    ],
+    "answer": [
+      "fun main() {",
+      "age = 20",
+      "if age >= 18 {",
+      "    println(\"Adult\")",
+      "} else {",
+      "    println(\"Minor\")",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-33",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "fun main() {",
+      "    return a + b",
+      "fun add(a, b) {",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "println(add(2, 3))  // passes 2 and 3 as arguments"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun add(a, b) {",
+      "    return a + b",
+      "}",
+      "println(add(2, 3))  // passes 2 and 3 as arguments",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-34",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "lines": [
+      "fun main() {",
+      "fun add(a, b) {",
+      "    return a + b",
+      "println(add(2, 3))  // passes 2 and 3 as arguments",
+      "}",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun add(a, b) {",
+      "    return a + b",
+      "}",
+      "println(add(2, 3))  // passes 2 and 3 as arguments",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-35",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "}",
+      "fun main() {",
+      "fun main() {",
+      "    println(\"Hello, World!\")"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun main() {",
+      "    println(\"Hello, World!\")",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-36",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    if n <= 1 { return 1 }",
+      "fun main() {",
+      "}",
+      "    return n * factorial(n - 1)",
+      "fun factorial(n) {"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    return n * factorial(n - 1)",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-37",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "println(\"Alice\")",
+      "// The line above sends text to the screen",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "println(\"Alice\")",
+      "// The line above sends text to the screen",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-38",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "lines": [
+      "try {",
+      "    risky_operation()",
+      "}",
+      "    println(\"Something went wrong\")",
+      "} catch (error) {",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    println(\"Something went wrong\")",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-39",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "lines": [
+      "// an object groups related fields under one name",
+      "user = { name: \"Alice\", age: 30 }",
+      "}",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "user = { name: \"Alice\", age: 30 }",
+      "// an object groups related fields under one name",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-40",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "// YOUR PROJECT GOES HERE",
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "// YOUR PROJECT GOES HERE",
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-41",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "lines": [
+      "tags = {\"python\", \"code\", \"python\"}",
+      "}",
+      "// tags now holds only 2 unique values",
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "fun main() {",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// tags now holds only 2 unique values",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-42",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "lines": [
+      "val name = \"Alice\"",
+      "fun main() {",
+      "// Variables hold reusable values",
+      "}",
+      "var age = 30"
+    ],
+    "answer": [
+      "fun main() {",
+      "val name = \"Alice\"",
+      "var age = 30",
+      "// Variables hold reusable values",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-43",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "lines": [
+      "    return \"Hello, \" + name",
+      "// call it: greet(\"Sam\")",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "fun main() {",
+      "}",
+      "fun greet(name) {"
+    ],
+    "answer": [
+      "fun main() {",
+      "fun greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "// call it: greet(\"Sam\")",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-44",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "fun main() {",
+      "    content = file.read()",
+      "// file is auto-closed here",
+      "}",
+      "with open(\"data.txt\", \"r\") as file {"
+    ],
+    "answer": [
+      "fun main() {",
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "// file is auto-closed here",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-45",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "lines": [
+      "// e.g. math functions, date handling, file helpers",
+      "fun main() {",
+      "}",
+      "// import the tools you need"
+    ],
+    "answer": [
+      "fun main() {",
+      "// import the tools you need",
+      "// e.g. math functions, date handling, file helpers",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-46",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "lines": [
+      "fun main() {",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "}",
+      "// Common built-ins you will meet:"
+    ],
+    "answer": [
+      "fun main() {",
+      "// Common built-ins you will meet:",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-47",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "lines": [
+      "// git basics",
+      "// git push     - share to remote",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "fun main() {",
+      "}",
+      "// git commit -m \"describe why\""
+    ],
+    "answer": [
+      "fun main() {",
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\"",
+      "// git push     - share to remote",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-48",
+    "lesson": "lesson-35",
+    "difficulty": "hard",
+    "lines": [
+      "fun main() {",
+      "}",
+      "// 3. smallest code that reproduces it",
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 2. what actually happened"
+    ],
+    "answer": [
+      "fun main() {",
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 2. what actually happened",
+      "// 3. smallest code that reproduces it",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-49",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "lines": [
+      "    if i == 5 { break }",
+      "    println(i)",
+      "// prints 0 1 2 3 4",
+      "fun main() {",
+      "}",
+      "for i in range(10) {",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    println(i)",
+      "}",
+      "// prints 0 1 2 3 4",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-50",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "lines": [
+      "// expected result: 10",
+      "// experiment: modify a value above and predict the new output",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "fun main() {",
+      "}",
+      "result = double(5)"
+    ],
+    "answer": [
+      "fun main() {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "// expected result: 10",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-51",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {",
+      "    println(i)",
+      "// prints 0 1 2 3 4",
+      "    if i == 5 { break }",
+      "for i in range(10) {",
+      "}",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    println(i)",
+      "}",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-52",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "lines": [
+      "println(user[\"name\"])  // look up by key",
+      "fun main() {",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "}"
+    ],
+    "answer": [
+      "fun main() {",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "println(user[\"name\"])  // look up by key",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-53",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "lines": [
+      "    println(i)",
+      "}",
+      "fun main() {",
+      "}",
+      "// prints 0 1 2 3 4",
+      "for i in range(5) {"
+    ],
+    "answer": [
+      "fun main() {",
+      "for i in range(5) {",
+      "    println(i)",
+      "}",
+      "// prints 0 1 2 3 4",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-54",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "lines": [
+      "total = 0",
+      "println(total)",
+      "    total = total + item",
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "// DEBUG: print intermediate values"
+    ],
+    "answer": [
+      "fun main() {",
+      "// DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "println(total)",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "kotlin-puzzle-55",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "fun main() {"
+    ],
+    "answer": [
+      "fun main() {",
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": "css-bug-01",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": ":root { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :color { --bg: #141414; --text: #eee; }\n}\nbody { background: var(--bg); color: var(--text); }",
+    "buggyLine": 3,
+    "options": [
+      ":color { --bg: #141414; --text: #eee; }",
+      ":root { --bg: #141414; --text: #eee; }",
+      ".card--featured { }",
+      "button {"
+    ],
+    "answer": ":root { --bg: #141414; --text: #eee; }",
+    "explanation": "Line 3 uses \"color\" where \"root\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-02",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": ".tooltip {\n    color: absolute;\n    position-anchor: --btn;\n    top: anchor(bottom);\n}\nbutton { anchor-name: --btn; }\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "position: absolute;",
+      "color: absolute;",
+      ":root { --bg: #fff; --text: #111; }",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "answer": "position: absolute;",
+    "explanation": "Line 2 uses \"color\" where \"position\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-03",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": ":root { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :color { --bg: #141414; --text: #eee; }\n}\nbody { background: var(--bg); color: var(--text); }\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      ":color { --bg: #141414; --text: #eee; }",
+      "/* */ experiment: modify a value above and predict the new output",
+      ":root { --bg: #141414; --text: #eee; }",
+      ".grid { display: grid; gap: var(--space); }"
+    ],
+    "answer": ":root { --bg: #141414; --text: #eee; }",
+    "explanation": "Line 3 uses \"color\" where \"root\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-04",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": ".glass {\n    backdrop-filter: blur(12px);\n    color: rgba(255,255,255,0.1);\n}",
+    "buggyLine": 3,
+    "options": [
+      "display: inline-block;",
+      "/* */ experiment: modify a value above and predict the new output",
+      "color: rgba(255,255,255,0.1);",
+      "background: rgba(255,255,255,0.1);"
+    ],
+    "answer": "background: rgba(255,255,255,0.1);",
+    "explanation": "Line 3 uses \"color\" where \"background\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-05",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": ".button {\n    border: 2px solid #333;\n    border-radius: 999px;\n    outline: 3px solid transparent;\n}\n.button:focus-visible {\n    outline-background: blue;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 7,
+    "options": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "outline-background: blue;",
+      "outline-color: blue;",
+      ".card:hover {"
+    ],
+    "answer": "outline-color: blue;",
+    "explanation": "Line 7 uses \"background\" where \"color\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-06",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": ".layout {\n    display: grid;\n    grid-template-columns: 250px 1fr;\n    color: 20px;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "gap: 20px;",
+      "overflow: hidden;",
+      "color: 20px;",
+      "width: 300px;"
+    ],
+    "answer": "gap: 20px;",
+    "explanation": "Line 4 uses \"color\" where \"gap\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-07",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": ":root {\n    --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0;\n    --radius: 12px; --space: clamp(1rem, 4vw, 2rem);\n}\n.grid { color: grid; gap: var(--space); }",
+    "buggyLine": 5,
+    "options": [
+      "grid-template-columns: 250px 1fr;",
+      ".card {",
+      ".grid { color: grid; gap: var(--space); }",
+      ".grid { display: grid; gap: var(--space); }"
+    ],
+    "answer": ".grid { display: grid; gap: var(--space); }",
+    "explanation": "Line 5 uses \"color\" where \"display\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-08",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": ":root { --bg: #fff; --text: #111; }\n@media (prefers-background-scheme: dark) {\n    :root { --bg: #111; --text: #eee; }\n}",
+    "buggyLine": 2,
+    "options": [
+      "outline-offset: 2px;",
+      "accent-color: #6366f1;",
+      "@media (prefers-background-scheme: dark) {",
+      "@media (prefers-color-scheme: dark) {"
+    ],
+    "answer": "@media (prefers-color-scheme: dark) {",
+    "explanation": "Line 2 uses \"background\" where \"color\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-09",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "code": ":color {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n/* tokens -> base -> components -> utilities */\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      ":color {",
+      "@media print {",
+      "position: sticky;",
+      ":root {"
+    ],
+    "answer": ":root {",
+    "explanation": "Line 1 uses \"color\" where \"root\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-10",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": ":root {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n.button {\n    background: var(--background-color-primary);\n    padding: var(--space-md);\n}",
+    "buggyLine": 6,
+    "options": [
+      "background: var(--color-primary);",
+      "background: var(--background-color-primary);",
+      "overflow-x: auto;",
+      "input:focus-visible {"
+    ],
+    "answer": "background: var(--color-primary);",
+    "explanation": "Line 6 uses \"background-color\" where \"color\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-11",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": ".tooltip {\n    position: absolute;\n    position-anchor: --btn;\n    top: anchor(bottom);\n}\nbutton { color: --btn; }",
+    "buggyLine": 6,
+    "options": [
+      "button { color: --btn; }",
+      "--color-primary: #6366f1;",
+      "from { opacity: 0; transform: translateY(20px); }",
+      "button { anchor-name: --btn; }"
+    ],
+    "answer": "button { anchor-name: --btn; }",
+    "explanation": "Line 6 uses \"color\" where \"anchor-name\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-12",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": ".nav {\n    position: sticky;\n    top: 0;\n    color: 100;\n}",
+    "buggyLine": 4,
+    "options": [
+      "z-index: 100;",
+      "/* */ experiment: modify a value above and predict the new output",
+      "from { opacity: 0; transform: translateY(20px); }",
+      "color: 100;"
+    ],
+    "answer": "z-index: 100;",
+    "explanation": "Line 4 uses \"color\" where \"z-index\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-13",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "code": "@layer reset, base, components, utilities;\n@layer components {\n    .btn { color: 0.5rem 1rem; }\n}",
+    "buggyLine": 3,
+    "options": [
+      "justify-content: space-between;",
+      ".btn { color: 0.5rem 1rem; }",
+      "outline-color: blue;",
+      ".btn { padding: 0.5rem 1rem; }"
+    ],
+    "answer": ".btn { padding: 0.5rem 1rem; }",
+    "explanation": "Line 3 uses \"color\" where \"padding\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-14",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "input:focus-visible {\n    color: 2px solid blue;\n    outline-offset: 2px;\n}\ninput[type=\"checkbox\"] {\n    accent-color: #6366f1;\n}",
+    "buggyLine": 2,
+    "options": [
+      "white-space: nowrap;",
+      "outline: 2px solid blue;",
+      "color: 2px solid blue;",
+      "transform: translateY(-4px);"
+    ],
+    "answer": "outline: 2px solid blue;",
+    "explanation": "Line 2 uses \"color\" where \"outline\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-15",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "@color print {\n    nav, .ads { display: none; }\n    .card { page-break-inside: avoid; }\n}",
+    "buggyLine": 1,
+    "options": [
+      "@color print {",
+      "background: var(--primary);",
+      "@media print {",
+      "scroll-snap-type: x proximity;"
+    ],
+    "answer": "@media print {",
+    "explanation": "Line 1 uses \"color\" where \"media\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-16",
+    "lesson": "lesson-37",
+    "difficulty": "easy",
+    "code": "/* browserslist */\n> 0.5%, last 2 versions, color dead\n/* compiles modern CSS for older targets */",
+    "buggyLine": 2,
+    "options": [
+      "> 0.5%, last 2 versions, not dead",
+      "/* */ experiment: modify a value above and predict the new output",
+      "> 0.5%, last 2 versions, color dead",
+      ":root {"
+    ],
+    "answer": "> 0.5%, last 2 versions, not dead",
+    "explanation": "Line 2 uses \"color\" where \"not\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-17",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "code": ".carousel {\n    display: flex;\n    overflow-x: auto;\n    color: x proximity;\n}\n.slide { scroll-snap-align: start; }\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "scroll-snap-type: x proximity;",
+      "color: x proximity;",
+      "color: purple;",
+      ".panel {"
+    ],
+    "answer": "scroll-snap-type: x proximity;",
+    "explanation": "Line 4 uses \"color\" where \"scroll-snap-type\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-18",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": ":root {\n    --primary: #6366f1;\n}\nbutton {\n    color: var(--primary);\n    color: white;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "font-size: 1rem;",
+      ":root {",
+      "background: var(--primary);",
+      "color: var(--primary);"
+    ],
+    "answer": "background: var(--primary);",
+    "explanation": "Line 5 uses \"color\" where \"background\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-19",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "body {\n    font-family: sans-serif;\n    background: #333;\n}\nh1 {\n    color: navy;\n}",
+    "buggyLine": 3,
+    "options": [
+      "background: #333;",
+      ":root {",
+      "color: #333;",
+      "content-visibility: auto;"
+    ],
+    "answer": "color: #333;",
+    "explanation": "Line 3 uses \"background\" where \"color\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-20",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "code": "::view-color-old(root),\n::view-transition-new(root) {\n    animation-duration: 0.3s;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "top: anchor(bottom);",
+      "::view-transition-old(root),",
+      "::view-color-old(root),",
+      "input[type=\"checkbox\"] {"
+    ],
+    "answer": "::view-transition-old(root),",
+    "explanation": "Line 1 uses \"color\" where \"transition\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-21",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": ".card {\n    color: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}",
+    "buggyLine": 2,
+    "options": [
+      "transform: translateY(-4px);",
+      "/* */ experiment: modify a value above and predict the new output",
+      "overflow: hidden;",
+      "color: hidden;"
+    ],
+    "answer": "overflow: hidden;",
+    "explanation": "Line 2 uses \"color\" where \"overflow\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-22",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "code": "@keyframes fadeUp {\n    from { opacity: 0; transform: translateY(20px); }\n    to { color: 1; transform: none; }\n}\n.card { animation: fadeUp .4s ease both; }\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "border: 1px solid #ddd;",
+      "a:hover {",
+      "to { color: 1; transform: none; }",
+      "to { opacity: 1; transform: none; }"
+    ],
+    "answer": "to { opacity: 1; transform: none; }",
+    "explanation": "Line 3 uses \"color\" where \"opacity\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-23",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "code": ".carousel {\n    display: flex;\n    overflow-x: auto;\n    scroll-snap-type: x proximity;\n}\n.slide { color: start; }",
+    "buggyLine": 6,
+    "options": [
+      ".slide { scroll-snap-align: start; }",
+      ".layout {",
+      ".slide { color: start; }",
+      ":root {"
+    ],
+    "answer": ".slide { scroll-snap-align: start; }",
+    "explanation": "Line 6 uses \"color\" where \"scroll-snap-align\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-24",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": ".card {\n    border: 1px solid #ccc;\n    padding: 16px;\n}\n.card .title {\n    color: bold;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "font-weight: bold;",
+      "border-radius: 999px;",
+      ".hidden {",
+      "color: bold;"
+    ],
+    "answer": "font-weight: bold;",
+    "explanation": "Line 6 uses \"color\" where \"font-weight\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-25",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": ".card:hover {\n    color: translateY(-4px) scale(1.02);\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "color: translateY(-4px) scale(1.02);",
+      "transform: translateY(-4px) scale(1.02);",
+      "animation-duration: 0.3s;",
+      "gap: 20px;"
+    ],
+    "answer": "transform: translateY(-4px) scale(1.02);",
+    "explanation": "Line 2 uses \"color\" where \"transform\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-26",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "code": "a:hover {\n    color: purple;\n}\nli::before {\n    color: \"→ \";\n}",
+    "buggyLine": 5,
+    "options": [
+      "content: \"→ \";",
+      ".panel {",
+      ".button {",
+      "color: \"→ \";"
+    ],
+    "answer": "content: \"→ \";",
+    "explanation": "Line 5 uses \"color\" where \"content\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-27",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "code": "@layer reset, base, components, utilities;\n@layer components {\n    .btn { color: 0.5rem 1rem; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "scroll-snap-type: x proximity;",
+      ".btn { padding: 0.5rem 1rem; }",
+      ".btn { color: 0.5rem 1rem; }",
+      "/* compiles modern CSS for older targets */"
+    ],
+    "answer": ".btn { padding: 0.5rem 1rem; }",
+    "explanation": "Line 3 uses \"color\" where \"padding\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-28",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": ".button {\n    border: 2px solid #333;\n    color-radius: 999px;\n    outline: 3px solid transparent;\n}\n.button:focus-visible {\n    outline-color: blue;\n}",
+    "buggyLine": 3,
+    "options": [
+      "border-radius: 999px;",
+      "color-radius: 999px;",
+      "animation-duration: 0.3s;",
+      "padding: var(--space-md);"
+    ],
+    "answer": "border-radius: 999px;",
+    "explanation": "Line 3 uses \"color\" where \"border\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-29",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": ".card:hover {\n    color: translateY(-4px) scale(1.02);\n}",
+    "buggyLine": 2,
+    "options": [
+      ".card--featured { }",
+      "@media (prefers-color-scheme: dark) {",
+      "transform: translateY(-4px) scale(1.02);",
+      "color: translateY(-4px) scale(1.02);"
+    ],
+    "answer": "transform: translateY(-4px) scale(1.02);",
+    "explanation": "Line 2 uses \"color\" where \"transform\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-30",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "code": "input:focus-visible {\n    outline: 2px solid blue;\n    outline-offset: 2px;\n}\ninput[type=\"checkbox\"] {\n    accent-background: #6366f1;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "accent-background: #6366f1;",
+      "scroll-snap-type: x proximity;",
+      "accent-color: #6366f1;",
+      "background: var(--primary);"
+    ],
+    "answer": "accent-color: #6366f1;",
+    "explanation": "Line 6 uses \"background\" where \"color\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-31",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": ".card {\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n.cardcolor {\n    transform: translateY(-4px);\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      ":root { --bg: #111; --text: #eee; }",
+      ".card:hover {",
+      "/* */ experiment: modify a value above and predict the new output",
+      ".cardcolor {"
+    ],
+    "answer": ".card:hover {",
+    "explanation": "Line 4 uses \"color\" where \":hover\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-32",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "* {\n    box-sizing: border-box;\n}\n.card {\n    color: 300px;\n    padding: 20px;\n    border: 1px solid #ddd;\n    margin: 10px auto;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "width: 300px;",
+      "position: absolute;",
+      "color: 300px;",
+      "/* tokens -> base -> components -> utilities */"
+    ],
+    "answer": "width: 300px;",
+    "explanation": "Line 5 uses \"color\" where \"width\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-33",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": ".badge {\n    transform: rotate(-5deg) scale(1.1);\n    color-origin: center;\n}",
+    "buggyLine": 3,
+    "options": [
+      "transform-origin: center;",
+      "color-origin: center;",
+      ".button {",
+      ":root { --bg: #fff; --text: #111; }"
+    ],
+    "answer": "transform-origin: center;",
+    "explanation": "Line 3 uses \"color\" where \"transform\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-34",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": ":color { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :root { --bg: #111; --text: #eee; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "font-weight: bold;",
+      ".slide { scroll-snap-align: start; }",
+      ":color { --bg: #fff; --text: #111; }",
+      ":root { --bg: #fff; --text: #111; }"
+    ],
+    "answer": ":root { --bg: #fff; --text: #111; }",
+    "explanation": "Line 1 uses \"color\" where \"root\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-35",
+    "lesson": "lesson-37",
+    "difficulty": "medium",
+    "code": "/* browserslist */\n> 0.5%, last 2 versions, color dead\n/* compiles modern CSS for older targets */\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "> 0.5%, last 2 versions, not dead",
+      "/* */ experiment: modify a value above and predict the new output",
+      "@media print {",
+      "> 0.5%, last 2 versions, color dead"
+    ],
+    "answer": "> 0.5%, last 2 versions, not dead",
+    "explanation": "Line 2 uses \"color\" where \"not\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-36",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "code": "@page { margin: 2cm; }\n@media print {\n    nav, footer { color: none; }\n    .card { break-inside: avoid; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "nav, footer { display: none; }",
+      "nav, footer { color: none; }",
+      "@media print {",
+      "top: anchor(bottom);"
+    ],
+    "answer": "nav, footer { display: none; }",
+    "explanation": "Line 3 uses \"color\" where \"display\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-37",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "#nav .link { background: red; }\n.link { color: blue; }  /* red wins: higher specificity */\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "--radius: 12px; --space: clamp(1rem, 4vw, 2rem);",
+      "#nav .link { background: red; }",
+      "top: 0;",
+      "#nav .link { color: red; }"
+    ],
+    "answer": "#nav .link { color: red; }",
+    "explanation": "Line 1 uses \"background\" where \"color\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-38",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "code": ".row {\n    display: flex;\n    color: space-between;\n    align-items: center;\n    gap: 16px;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "/* */ experiment: modify a value above and predict the new output",
+      "display: flex;",
+      "justify-content: space-between;",
+      "color: space-between;"
+    ],
+    "answer": "justify-content: space-between;",
+    "explanation": "Line 3 uses \"color\" where \"justify-content\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-39",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": ".card {\n    color: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      ".card { break-inside: avoid; }",
+      ".card {",
+      "color: hidden;",
+      "overflow: hidden;"
+    ],
+    "answer": "overflow: hidden;",
+    "explanation": "Line 2 uses \"color\" where \"overflow\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-40",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "@media (max-width: 768px) {\n    .nav { flex-color: column; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      ".nav { flex-direction: column; }",
+      ".nav { flex-color: column; }",
+      "/* */ experiment: modify a value above and predict the new output",
+      "top: 0;"
+    ],
+    "answer": ".nav { flex-direction: column; }",
+    "explanation": "Line 2 uses \"color\" where \"direction\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-41",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": ":color {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n/* tokens -> base -> components -> utilities */",
+    "buggyLine": 1,
+    "options": [
+      ":color {",
+      ":root {",
+      "/* */ experiment: modify a value above and predict the new output",
+      "top: anchor(bottom);"
+    ],
+    "answer": ":root {",
+    "explanation": "Line 1 uses \"color\" where \"root\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-42",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": ".card-wrapper { container-type: inline-size; }\n@container (min-width: 350px) {\n    .card { color-template-columns: 1fr 1fr; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      ".card { grid-template-columns: 1fr 1fr; }",
+      ".card { color-template-columns: 1fr 1fr; }",
+      "outline: 2px solid blue;",
+      "padding: 20px;"
+    ],
+    "answer": ".card { grid-template-columns: 1fr 1fr; }",
+    "explanation": "Line 3 uses \"color\" where \"grid\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-43",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "code": ":color {\n    --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0;\n    --radius: 12px; --space: clamp(1rem, 4vw, 2rem);\n}\n.grid { display: grid; gap: var(--space); }\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "/* */ experiment: modify a value above and predict the new output",
+      ":root {",
+      "accent-color: #6366f1;",
+      ":color {"
+    ],
+    "answer": ":root {",
+    "explanation": "Line 1 uses \"color\" where \"root\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-44",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "code": "@keyframes fadeUp {\n    from { opacity: 0; transform: translateY(20px); }\n    to { opacity: 1; transform: none; }\n}\n.card { color: fadeUp .4s ease both; }",
+    "buggyLine": 5,
+    "options": [
+      ".card { color: fadeUp .4s ease both; }",
+      ".card { animation: fadeUp .4s ease both; }",
+      "@media (max-width: 768px) {",
+      "font-family: system-ui, sans-serif;"
+    ],
+    "answer": ".card { animation: fadeUp .4s ease both; }",
+    "explanation": "Line 5 uses \"color\" where \"animation\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-45",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "code": ".badge {\n    transform: rotate(-5deg) scale(1.1);\n    color-origin: center;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "display: flex;",
+      ".card-wrapper { container-type: inline-size; }",
+      "color-origin: center;",
+      "transform-origin: center;"
+    ],
+    "answer": "transform-origin: center;",
+    "explanation": "Line 3 uses \"color\" where \"transform\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-46",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": ":root {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n.button {\n    background: var(--background-color-primary);\n    padding: var(--space-md);\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 6,
+    "options": [
+      ".card__title { }",
+      "background: var(--background-color-primary);",
+      "a:hover {",
+      "background: var(--color-primary);"
+    ],
+    "answer": "background: var(--color-primary);",
+    "explanation": "Line 6 uses \"background-color\" where \"color\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-47",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "code": ".hidden {\n    display: none;\n}\n.inline-block {\n    color: inline-block;\n    width: 100px;\n}",
+    "buggyLine": 5,
+    "options": [
+      "padding: var(--space-md);",
+      "color: inline-block;",
+      "/* */ experiment: modify a value above and predict the new output",
+      "display: inline-block;"
+    ],
+    "answer": "display: inline-block;",
+    "explanation": "Line 5 uses \"color\" where \"display\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-48",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "code": ".hidden {\n    color: none;\n}\n.inline-block {\n    display: inline-block;\n    width: 100px;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "content: \"→ \";",
+      "/* */ experiment: modify a value above and predict the new output",
+      "color: none;",
+      "display: none;"
+    ],
+    "answer": "display: none;",
+    "explanation": "Line 2 uses \"color\" where \"display\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-49",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "code": "a:hover {\n    color: purple;\n}\nlicolor {\n    content: \"→ \";\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "::view-transition-old(root),",
+      "li::before {",
+      ".hidden {",
+      "licolor {"
+    ],
+    "answer": "li::before {",
+    "explanation": "Line 4 uses \"color\" where \"::before\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-50",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "code": ".card-wrapper { container-type: inline-size; }\n@container (min-color: 350px) {\n    .card { grid-template-columns: 1fr 1fr; }\n}",
+    "buggyLine": 2,
+    "options": [
+      "@container (min-width: 350px) {",
+      "font-weight: bold;",
+      "@container (min-color: 350px) {",
+      ":root { --bg: #111; --text: #eee; }"
+    ],
+    "answer": "@container (min-width: 350px) {",
+    "explanation": "Line 2 uses \"color\" where \"width\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-51",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "code": ".card {\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n.card:hover {\n    color: translateY(-4px);\n}",
+    "buggyLine": 5,
+    "options": [
+      "color: translateY(-4px);",
+      "transform: translateY(-4px);",
+      "body { background: var(--bg); color: var(--text); }",
+      "nav, footer { display: none; }"
+    ],
+    "answer": "transform: translateY(-4px);",
+    "explanation": "Line 5 uses \"color\" where \"transform\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-52",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "code": ".row {\n    display: flex;\n    color: space-between;\n    align-items: center;\n    gap: 16px;\n}",
+    "buggyLine": 3,
+    "options": [
+      "justify-content: space-between;",
+      "> 0.5%, last 2 versions, not dead",
+      "color: space-between;",
+      ".grid { display: grid; gap: var(--space); }"
+    ],
+    "answer": "justify-content: space-between;",
+    "explanation": "Line 3 uses \"color\" where \"justify-content\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-53",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": ".hero {\n    font-size: clamp(1.5rem, 4vw, 3rem);\n    width: min(90%, 1200px);\n    color: 0 auto;\n}",
+    "buggyLine": 4,
+    "options": [
+      "margin: 0 auto;",
+      "color: 0 auto;",
+      ":root { --bg: #141414; --text: #eee; }",
+      "to { opacity: 1; transform: none; }"
+    ],
+    "answer": "margin: 0 auto;",
+    "explanation": "Line 4 uses \"color\" where \"margin\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-54",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "code": ".card {\n    padding: 1rem;\n    .title { color: bold; }\n    &:hover { box-shadow: 0 4px 12px #0002; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      ".title { font-weight: bold; }",
+      ".title { color: bold; }",
+      ".inline-block {",
+      "border: 2px solid #333;"
+    ],
+    "answer": ".title { font-weight: bold; }",
+    "explanation": "Line 3 uses \"color\" where \"font-weight\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-55",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "code": "@media print {\n    nav, .ads { display: none; }\n    .card { page-color: avoid; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      ".card { page-color: avoid; }",
+      "to { opacity: 1; transform: none; }",
+      ".card { page-break-inside: avoid; }",
+      "/* */ experiment: modify a value above and predict the new output"
+    ],
+    "answer": ".card { page-break-inside: avoid; }",
+    "explanation": "Line 3 uses \"color\" where \"break-inside\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-56",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "code": ".panel {\n    content-visibility: auto;\n    color-intrinsic-size: auto 500px;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "transform-origin: center;",
+      "color-intrinsic-size: auto 500px;",
+      "contain-intrinsic-size: auto 500px;",
+      ".card:hover {"
+    ],
+    "answer": "contain-intrinsic-size: auto 500px;",
+    "explanation": "Line 3 uses \"color\" where \"contain\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-57",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "code": ".card {\n    color: 1px solid #ccc;\n    padding: 16px;\n}\n.card .title {\n    font-weight: bold;\n}",
+    "buggyLine": 2,
+    "options": [
+      "align-items: center;",
+      "color: 1px solid #ccc;",
+      "body {",
+      "border: 1px solid #ccc;"
+    ],
+    "answer": "border: 1px solid #ccc;",
+    "explanation": "Line 2 uses \"color\" where \"border\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-58",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "code": "body {\n    font-family: sans-serif;\n    color: #333;\n}\nh1 {\n    background: navy;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "color: navy;",
+      "text-overflow: ellipsis;",
+      ".card {",
+      "background: navy;"
+    ],
+    "answer": "color: navy;",
+    "explanation": "Line 6 uses \"background\" where \"color\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-59",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "code": ".panel {\n    content-visibility: auto;\n    color-intrinsic-size: auto 500px;\n}",
+    "buggyLine": 3,
+    "options": [
+      "contain-intrinsic-size: auto 500px;",
+      "color-intrinsic-size: auto 500px;",
+      "margin: 10px auto;",
+      "h1 {"
+    ],
+    "answer": "contain-intrinsic-size: auto 500px;",
+    "explanation": "Line 3 uses \"color\" where \"contain\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "css-bug-60",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "code": "body {\n    font-family: system-ui, sans-serif;\n    font-size: 1rem;\n    color: 1.6;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "animation-duration: 0.3s;",
+      ".card { page-break-inside: avoid; }",
+      "line-height: 1.6;",
+      "color: 1.6;"
+    ],
+    "answer": "line-height: 1.6;",
+    "explanation": "Line 4 uses \"color\" where \"line-height\" belongs. Check keyword spelling and context."
+  }
+]

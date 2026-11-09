@@ -1,0 +1,797 @@
+[
+  {
+    "id": "python-bug-01",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "code": "x{assign}5 + 3 * 2\n# Multiplication happens first: result is 11\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# experiment: modify a value above def predict the new output",
+      "print(\"Hello, World!\")",
+      "# text + \" World\" joins strings"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-02",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "code": "with open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n# file def auto-closed here\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "# file is auto-closed here",
+      "# experiment: modify a value above and predict the new output",
+      "if n <= 1 { return 1 }",
+      "# file def auto-closed here"
+    ],
+    "answer": "# file is auto-closed here",
+    "explanation": "Line 4 uses \"def\" where \"is\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-03",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "if age >= 18 AND hasTicket {\n    def(\"Welcome in\")\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "print(\"Welcome in\")",
+      "# result is now 25",
+      "def(\"Welcome in\")",
+      "if n <= 1 { return 1 }"
+    ],
+    "answer": "print(\"Welcome in\")",
+    "explanation": "Line 2 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-04",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "nums = [3, 1, 2]\n# sorted -> [1, 2, 3]  (use the built-in sort)\n# binary search finds a target def O(log n) steps",
+    "buggyLine": 3,
+    "options": [
+      "print(i)",
+      "# binary search finds a target def O(log n) steps",
+      "# binary search finds a target in O(log n) steps",
+      "print(\"Something went wrong\")"
+    ],
+    "answer": "# binary search finds a target in O(log n) steps",
+    "explanation": "Line 3 uses \"def\" where \"in\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-05",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": "# YOUR PROJECT GOES HERE\n# 1. plan features  2. build core loop  3. add one feature at a time\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# text + \" World\" joins strings",
+      "# experiment: modify a value above def predict the new output",
+      "# Variables hold reusable values",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-06",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "total = 0  # def\ndef add(x) {\n    total = total + x  # needs special handling in strict languages\n}",
+    "buggyLine": 1,
+    "options": [
+      "try {",
+      "total = 0  # def",
+      "total = 0  # global",
+      "# Multiplication happens first: result is 11"
+    ],
+    "answer": "total = 0  # global",
+    "explanation": "Line 1 uses \"def\" where \"global\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-07",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "for row in range(3) {\n    for col in range(3) {\n        print(\"*\")\n    }\n}\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "name = \"Alice\"",
+      "print(\"Alice\")",
+      "# experiment: modify a value above def predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-08",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "age = 20\nif age >= 18 {\n    print(\"Adult\")\n} elif/else {\n    def(\"Minor\")\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "print(\"Minor\")",
+      "# Variables hold reusable values",
+      "def(\"Minor\")"
+    ],
+    "answer": "print(\"Minor\")",
+    "explanation": "Line 5 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-09",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "code": "def(\"Alice\")\n# The line above sends text to the screen\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "def(\"Alice\")",
+      "print(\"Alice\")",
+      "age = 30",
+      "# fetch data without blocking the UI"
+    ],
+    "answer": "print(\"Alice\")",
+    "explanation": "Line 1 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-10",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "count = 0\nwhile count < 5 {\n    def(count)\n    count = count + 1\n}",
+    "buggyLine": 3,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# 1. what I expected",
+      "print(count)",
+      "def(count)"
+    ],
+    "answer": "print(count)",
+    "explanation": "Line 3 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-11",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "def greet(name) {\n    def \"Hello, \" + name\n}\n# call it: greet(\"Sam\")",
+    "buggyLine": 2,
+    "options": [
+      "def \"Hello, \" + name",
+      "return \"Hello, \" + name",
+      "# experiment: modify a value above and predict the new output",
+      "if age >= 18 AND hasTicket {"
+    ],
+    "answer": "return \"Hello, \" + name",
+    "explanation": "Line 2 uses \"def\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-12",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "nums = [3, 1, 2]\n# sorted -> [1, 2, 3]  (use the built-in sort)\n# binary search finds a target in O(log n) steps\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# experiment: modify a value above def predict the new output",
+      "if i == 5 { break }",
+      "print(add(2, 3))  # passes 2 and 3 as arguments"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-13",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "if age >= 18 AND hasTicket {\n    def(\"Welcome in\")\n}",
+    "buggyLine": 2,
+    "options": [
+      "# 3. smallest code that reproduces it",
+      "age = 30",
+      "def(\"Welcome in\")",
+      "print(\"Welcome in\")"
+    ],
+    "answer": "print(\"Welcome in\")",
+    "explanation": "Line 2 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-14",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "def factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "total = total + item",
+      "print(i)",
+      "# experiment: modify a value above and predict the new output",
+      "# experiment: modify a value above def predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-15",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "name = \"Alice\"\nage = 30\n# Common types: \"Alice\" is a string, 42 is a number, def is a boolean",
+    "buggyLine": 3,
+    "options": [
+      "# DEBUG: print intermediate values",
+      "name = \"Alice\"",
+      "# Common types: \"Alice\" is a string, 42 is a number, True is a boolean",
+      "# Common types: \"Alice\" is a string, 42 is a number, def is a boolean"
+    ],
+    "answer": "# Common types: \"Alice\" is a string, 42 is a number, True is a boolean",
+    "explanation": "Line 3 uses \"def\" where \"True\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-16",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "user = { \"name\": \"Alice\", \"age\": 30 }\ndef(user[\"name\"])  # look up by key\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "# text + \" World\" joins strings",
+      "def(user[\"name\"])  # look up by key",
+      "print(user[\"name\"])  # look up by key",
+      "total = 0  # global"
+    ],
+    "answer": "print(user[\"name\"])  # look up by key",
+    "explanation": "Line 2 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-17",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "# Common built-ins you will meet:\n# length/count, round/floor/ceil, min/max, sort, join/split\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# experiment: modify a value above def predict the new output",
+      "print(\"Minor\")",
+      "# experiment: modify a value above and predict the new output",
+      "print(\"Welcome in\")"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-18",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "def square(n) {\n    def n * n\n}\nresult = square(5)\n# result is now 25",
+    "buggyLine": 2,
+    "options": [
+      "def add(x) {",
+      "def n * n",
+      "return n * n",
+      "# git commit -m \"describe why\""
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 2 uses \"def\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-19",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "age = 20\nif age >= 18 {\n    def(\"Adult\")\n} elif/else {\n    print(\"Minor\")\n}",
+    "buggyLine": 3,
+    "options": [
+      "if n <= 1 { return 1 }",
+      "age = 30",
+      "def(\"Adult\")",
+      "print(\"Adult\")"
+    ],
+    "answer": "print(\"Adult\")",
+    "explanation": "Line 3 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-20",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "def square(n) {\n    return n * n\n}\nresult = square(5)\n# result is now 25\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# experiment: modify a value above def predict the new output",
+      "if i == 5 { break }",
+      "# DEBUG: print intermediate values"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-21",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "code": "# Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n# expected result: 10\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# experiment: modify a value above def predict the new output",
+      "while count < 5 {",
+      "print(\"Welcome in\")"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-22",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    def(\"Something went wrong\")\n}",
+    "buggyLine": 4,
+    "options": [
+      "def(\"Something went wrong\")",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "print(total)",
+      "print(\"Something went wrong\")"
+    ],
+    "answer": "print(\"Something went wrong\")",
+    "explanation": "Line 4 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-23",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": "# import the tools you need\n# e.g. math functions, date handling, file helpers\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# 3. smallest code that reproduces it",
+      "print(\"Something went wrong\")",
+      "# experiment: modify a value above def predict the new output",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-24",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "def i in range(10) {\n    if i == 5 { break }\n    print(i)\n}\n# prints 0 1 2 3 4",
+    "buggyLine": 1,
+    "options": [
+      "def i in range(10) {",
+      "age = 20",
+      "for i in range(10) {",
+      "# DEBUG: print intermediate values"
+    ],
+    "answer": "for i in range(10) {",
+    "explanation": "Line 1 uses \"def\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-25",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "code": "name = \"Alice\"\nage = 30\n# Variables hold reusable values\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# await getData()  // pause THIS function only",
+      "# experiment: modify a value above def predict the new output",
+      "print(\"Hello, World!\")"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-26",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": "if factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}",
+    "buggyLine": 1,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "if factorial(n) {",
+      "def factorial(n) {",
+      "for row in range(3) {"
+    ],
+    "answer": "def factorial(n) {",
+    "explanation": "Line 1 uses \"if\" where \"def\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-27",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "class Dog {\n    name = \"Buddy\"\n    if bark() { print(\"Woof!\") }\n}\n# dog = Dog()  then  dog.bark()",
+    "buggyLine": 3,
+    "options": [
+      "if bark() { print(\"Woof!\") }",
+      "def bark() { print(\"Woof!\") }",
+      "print(add(2, 3))  # passes 2 and 3 as arguments",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "def bark() { print(\"Woof!\") }",
+    "explanation": "Line 3 uses \"if\" where \"def\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-28",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "code": "# Good question template:\n# 1. what I expected\n# 2. what actually happened\n# 3. smallest code that reproduces it\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "name = \"Buddy\"",
+      "# experiment: modify a value above and predict the new output",
+      "# sorted -> [1, 2, 3]  (use the built-in sort)",
+      "# experiment: modify a value above def predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-29",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "items = [\"a\", \"b\", \"c\"]\ndef(items[0])  # first item\n# items[1], items[2] ... indexes count from 0\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "return n * factorial(n - 1)",
+      "# git push     - share to remote",
+      "def(items[0])  # first item",
+      "print(items[0])  # first item"
+    ],
+    "answer": "print(items[0])  # first item",
+    "explanation": "Line 2 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-30",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "def add(a, b) {\n    return a + b\n}\ndef(add(2, 3))  # passes 2 and 3 as arguments",
+    "buggyLine": 4,
+    "options": [
+      "age = 20",
+      "def greet(name) {",
+      "print(add(2, 3))  # passes 2 and 3 as arguments",
+      "def(add(2, 3))  # passes 2 and 3 as arguments"
+    ],
+    "answer": "print(add(2, 3))  # passes 2 and 3 as arguments",
+    "explanation": "Line 4 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-31",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "for i in range(10) {\n    if i == 5 { break }\n    def(i)\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "def(i)",
+      "print(i)",
+      "# experiment: modify a value above and predict the new output",
+      "# length/count, round/floor/ceil, min/max, sort, join/split"
+    ],
+    "answer": "print(i)",
+    "explanation": "Line 3 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-32",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "code": "text = \"Hello\"\n# text + \" World\" joins strings\n# text.upper() / text.length style helpers exist per language\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "# experiment: modify a value above def predict the new output",
+      "# experiment: modify a value above and predict the new output",
+      "# 1. plan features  2. build core loop  3. add one feature at a time",
+      "# git add .     - stage changes"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-33",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "# Bad:  x = calc(a,b)\n# Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "# e.g. math functions, date handling, file helpers",
+      "# experiment: modify a value above def predict the new output",
+      "# experiment: modify a value above and predict the new output",
+      "print(\"Adult\")"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-34",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "code": "user = { name: \"Alice\", age: 30 }\n# an object groups related fields under one name\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "if n <= 1 { return 1 }",
+      "# experiment: modify a value above and predict the new output",
+      "risky_operation()",
+      "# experiment: modify a value above def predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-35",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "code": "for row in range(3) {\n    def col in range(3) {\n        print(\"*\")\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "def col in range(3) {",
+      "for col in range(3) {",
+      "# git init      - start tracking",
+      "print(user[\"name\"])  # look up by key"
+    ],
+    "answer": "for col in range(3) {",
+    "explanation": "Line 2 uses \"def\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-36",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "# DEBUG: def intermediate values\ntotal = 0\n    total = total + item\nprint(total)",
+    "buggyLine": 1,
+    "options": [
+      "if i == 5 { break }",
+      "# DEBUG: def intermediate values",
+      "# DEBUG: print intermediate values",
+      "result = double(5)"
+    ],
+    "answer": "# DEBUG: print intermediate values",
+    "explanation": "Line 1 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-37",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "items = [\"a\", \"b\", \"c\"]\ndef(items[0])  # first item\n# items[1], items[2] ... indexes count from 0",
+    "buggyLine": 2,
+    "options": [
+      "return a + b",
+      "def(items[0])  # first item",
+      "print(items[0])  # first item",
+      "# 2. what actually happened"
+    ],
+    "answer": "print(items[0])  # first item",
+    "explanation": "Line 2 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-38",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "def greet(name) {\n    def \"Hello, \" + name\n}\n# call it: greet(\"Sam\")\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "return \"Hello, \" + name",
+      "# Docs pattern: Quick Start -> Guides -> API Reference",
+      "for row in range(3) {",
+      "def \"Hello, \" + name"
+    ],
+    "answer": "return \"Hello, \" + name",
+    "explanation": "Line 2 uses \"def\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-39",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "def add(a, b) {\n    def a + b\n}\nprint(add(2, 3))  # passes 2 and 3 as arguments\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "def a + b",
+      "return a + b",
+      "while count < 5 {",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "return a + b",
+    "explanation": "Line 2 uses \"def\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-40",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "for i in range(5) {\n    def(i)\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "print(i)",
+      "name = \"Buddy\"",
+      "# Bad:  x = calc(a,b)",
+      "def(i)"
+    ],
+    "answer": "print(i)",
+    "explanation": "Line 2 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-41",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "count = 0\nwhile count < 5 {\n    def(count)\n    count = count + 1\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "def(count)",
+      "# experiment: modify a value above and predict the new output",
+      "print(count)"
+    ],
+    "answer": "print(count)",
+    "explanation": "Line 3 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-42",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "class Dog {\n    name = \"Buddy\"\n    if bark() { print(\"Woof!\") }\n}\n# dog = Dog()  then  dog.bark()\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "userCount = 0",
+      "def bark() { print(\"Woof!\") }",
+      "if bark() { print(\"Woof!\") }",
+      "try {"
+    ],
+    "answer": "def bark() { print(\"Woof!\") }",
+    "explanation": "Line 3 uses \"if\" where \"def\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-43",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "code": "tags = {\"python\", \"code\", \"python\"}\n# tags now holds only 2 unique values\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# experiment: modify a value above def predict the new output",
+      "# length/count, round/floor/ceil, min/max, sort, join/split",
+      "for row in range(3) {",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-44",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "code": "def open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n# file is auto-closed here",
+    "buggyLine": 1,
+    "options": [
+      "def open(\"data.txt\", \"r\") as file {",
+      "# items[1], items[2] ... indexes count from 0",
+      "# experiment: modify a value above and predict the new output",
+      "with open(\"data.txt\", \"r\") as file {"
+    ],
+    "answer": "with open(\"data.txt\", \"r\") as file {",
+    "explanation": "Line 1 uses \"def\" where \"with\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-45",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "code": "# DEBUG: def intermediate values\ntotal = 0\n    total = total + item\nprint(total)\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "# DEBUG: print intermediate values",
+      "# DEBUG: def intermediate values",
+      "# 3. smallest code that reproduces it",
+      "name = \"Alice\""
+    ],
+    "answer": "# DEBUG: print intermediate values",
+    "explanation": "Line 1 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-46",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "code": "# git basics\n# git init      - start tracking\n# git add .     - stage changes\n# git commit -m \"describe why\"\n# git push     - share to remote\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "userCount = 0",
+      "result = square(5)",
+      "# experiment: modify a value above def predict the new output",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-47",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "code": "total = 0  # global\ndef add(x) {\n    total = total + x  # needs special handling def strict languages\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "total = total + x  # needs special handling in strict languages",
+      "# experiment: modify a value above and predict the new output",
+      "total = total + x  # needs special handling def strict languages"
+    ],
+    "answer": "total = total + x  # needs special handling in strict languages",
+    "explanation": "Line 3 uses \"def\" where \"in\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-48",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "code": "name = \"Alice\"\nage = 30\n# Common types: \"Alice\" is a string, 42 is a number, def is a boolean\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# sorted -> [1, 2, 3]  (use the built-in sort)",
+      "# Common types: \"Alice\" is a string, 42 is a number, True is a boolean",
+      "age = 30",
+      "# Common types: \"Alice\" is a string, 42 is a number, def is a boolean"
+    ],
+    "answer": "# Common types: \"Alice\" is a string, 42 is a number, True is a boolean",
+    "explanation": "Line 3 uses \"def\" where \"True\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-49",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "code": "# Docs pattern: Quick Start -> Guides -> API Reference\n# search for: function name + your language\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# experiment: modify a value above and predict the new output",
+      "# experiment: modify a value above def predict the new output",
+      "# Multiplication happens first: result is 11"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-50",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "code": "# fetch data without blocking the UI\n# await getData()  // pause THIS function only\n# experiment: modify a value above def predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# git add .     - stage changes",
+      "print(\"Welcome in\")",
+      "# experiment: modify a value above def predict the new output"
+    ],
+    "answer": "# experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"def\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-51",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "code": "# This program greets the world\ndef(\"Hello, World!\")\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "# text + \" World\" joins strings",
+      "def(\"Hello, World!\")",
+      "print(\"Hello, World!\")",
+      "for col in range(3) {"
+    ],
+    "answer": "print(\"Hello, World!\")",
+    "explanation": "Line 2 uses \"def\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-52",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "code": "def i in range(5) {\n    print(i)\n}\n# prints 0 1 2 3 4",
+    "buggyLine": 1,
+    "options": [
+      "def i in range(5) {",
+      "for i in range(5) {",
+      "# git basics",
+      "# Common built-ins you will meet:"
+    ],
+    "answer": "for i in range(5) {",
+    "explanation": "Line 1 uses \"def\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "python-bug-53",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "code": "def {\n    risky_operation()\n} catch (error) {\n    print(\"Something went wrong\")\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# dog = Dog()  then  dog.bark()",
+      "def {",
+      "try {"
+    ],
+    "answer": "try {",
+    "explanation": "Line 1 uses \"def\" where \"try\" belongs. Check keyword spelling and context."
+  }
+]

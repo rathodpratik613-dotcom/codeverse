@@ -1,0 +1,650 @@
+[
+  {
+    "id": "csharp-fill-q-csharp-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: // write a note here",
+    "code": null,
+    "answer": "//",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9;",
+    "code": null,
+    "answer": ";",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: Console.WriteLine(\"Hello\");",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $void add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "csharp-fill-q-csharp-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "csharp-fill-37",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "using",
+    "options": [
+      "public",
+      "finally",
+      "false",
+      "using"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "csharp-fill-38",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "class",
+    "options": [
+      "class",
+      "string",
+      "catch",
+      "void"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "csharp-fill-39",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n    }\n}",
+    "answer": "using",
+    "options": [
+      "virtual",
+      "protected",
+      "while",
+      "using"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "csharp-fill-40",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n    }\n}",
+    "answer": "class",
+    "options": [
+      "this",
+      "return",
+      "class",
+      "enum"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "csharp-fill-41",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nfor i in range(10) {\n    if i == 5 { break }\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n    }\n}",
+    "answer": "using",
+    "options": [
+      "using",
+      "override",
+      "throw",
+      "await"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "csharp-fill-42",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nfor i in range(10) {\n    if i == 5 { break }\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n    }\n}",
+    "answer": "class",
+    "options": [
+      "enum",
+      "static",
+      "class",
+      "return"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "csharp-fill-43",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n    }\n}",
+    "answer": "using",
+    "options": [
+      "internal",
+      "return",
+      "using",
+      "readonly"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "csharp-fill-44",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n    }\n}",
+    "answer": "class",
+    "options": [
+      "for",
+      "try",
+      "class",
+      "while"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "csharp-fill-45",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "using",
+    "options": [
+      "using",
+      "throw",
+      "enum",
+      "null"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "csharp-fill-46",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "class",
+    "options": [
+      "using",
+      "enum",
+      "await",
+      "class"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "csharp-fill-47",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nvoid square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "using",
+    "options": [
+      "using",
+      "true",
+      "string",
+      "new"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "csharp-fill-48",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nvoid square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "class",
+    "options": [
+      "class",
+      "try",
+      "null",
+      "private"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "csharp-fill-49",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nfor i in range(5) {\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "using",
+    "options": [
+      "var",
+      "this",
+      "while",
+      "using"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "csharp-fill-50",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nfor i in range(5) {\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "class",
+    "options": [
+      "private",
+      "interface",
+      "class",
+      "var"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "csharp-fill-51",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nage = 20\nif age >= 18 {\n    Console.WriteLine(\"Adult\");\n} else {\n    Console.WriteLine(\"Minor\");\n}\n    }\n}",
+    "answer": "using",
+    "options": [
+      "null",
+      "foreach",
+      "finally",
+      "using"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "csharp-fill-52",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nage = 20\nif age >= 18 {\n    Console.WriteLine(\"Adult\");\n} else {\n    Console.WriteLine(\"Minor\");\n}\n    }\n}",
+    "answer": "class",
+    "options": [
+      "true",
+      "catch",
+      "class",
+      "var"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "csharp-fill-53",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "using",
+    "options": [
+      "throw",
+      "readonly",
+      "using",
+      "false"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "csharp-fill-54",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "class",
+    "options": [
+      "protected",
+      "null",
+      "class",
+      "int"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "csharp-fill-55",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nfor i in range(10) {\n    if i == 5 { break }\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "using",
+    "options": [
+      "private",
+      "foreach",
+      "readonly",
+      "using"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "csharp-fill-56",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nfor i in range(10) {\n    if i == 5 { break }\n    Console.WriteLine(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "class",
+    "options": [
+      "true",
+      "async",
+      "await",
+      "class"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "csharp-fill-57",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n    }\n}",
+    "answer": "using",
+    "options": [
+      "using",
+      "new",
+      "throw",
+      "protected"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "csharp-fill-58",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n    }\n}",
+    "answer": "class",
+    "options": [
+      "class",
+      "throw",
+      "this",
+      "false"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "csharp-fill-59",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "_____ System;\n\nclass Program {\n    static void Main() {\nvoid square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n    }\n}",
+    "answer": "using",
+    "options": [
+      "async",
+      "string",
+      "class",
+      "using"
+    ],
+    "explanation": "\"using\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "csharp-fill-60",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this csharp code:",
+    "code": "using System;\n\n_____ Program {\n    static void Main() {\nvoid square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n    }\n}",
+    "answer": "class",
+    "options": [
+      "int",
+      "var",
+      "class",
+      "static"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-15 for context."
+  }
+]

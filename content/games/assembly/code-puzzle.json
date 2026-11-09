@@ -1,0 +1,1098 @@
+[
+  {
+    "id": "assembly-puzzle-01",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "    cmp/jcc n <= 1 { ret 1 }",
+      "}",
+      "    ret n * factorial(n - 1)",
+      "label: factorial(n) {"
+    ],
+    "answer": [
+      "label: factorial(n) {",
+      "    cmp/jcc n <= 1 { ret 1 }",
+      "    ret n * factorial(n - 1)",
+      "}",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-02",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "lines": [
+      "section .data",
+      "    xor ebx, ebx",
+      "    msg db \"Hello, World!\", 10",
+      "    int 0x80",
+      "    global _start",
+      "    int 0x80",
+      "    mov eax, 1",
+      "    mov eax, 4",
+      "    mov ecx, msg",
+      "; experiment: modify a value above and predict the new output",
+      "section .text",
+      "; This program greets the world",
+      "    mov edx, 14",
+      "_start:",
+      "    mov ebx, 1"
+    ],
+    "answer": [
+      "; This program greets the world",
+      "section .data",
+      "    msg db \"Hello, World!\", 10",
+      "section .text",
+      "    global _start",
+      "_start:",
+      "    mov eax, 4",
+      "    mov ebx, 1",
+      "    mov ecx, msg",
+      "    mov edx, 14",
+      "    int 0x80",
+      "    mov eax, 1",
+      "    xor ebx, ebx",
+      "    int 0x80",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-03",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "class Dog {",
+      "; dog = Dog()  then  dog.bark()",
+      "}",
+      "    name = \"Buddy\"",
+      "    label: bark() { ; output via syscall write (int 0x80) }"
+    ],
+    "answer": [
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "    label: bark() { ; output via syscall write (int 0x80) }",
+      "}",
+      "; dog = Dog()  then  dog.bark()",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-04",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "lines": [
+      "; prints 0 1 2 3 4",
+      "loop i in range(5) {",
+      "    ; output via syscall write (int 0x80)",
+      "; experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "answer": [
+      "loop i in range(5) {",
+      "    ; output via syscall write (int 0x80)",
+      "}",
+      "; prints 0 1 2 3 4",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-05",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "lines": [
+      "; binary search finds a target in O(log n) steps",
+      "; sorted -> [1, 2, 3]  (use the built-in sort)",
+      "; experiment: modify a value above and predict the new output",
+      "nums = [3, 1, 2]"
+    ],
+    "answer": [
+      "nums = [3, 1, 2]",
+      "; sorted -> [1, 2, 3]  (use the built-in sort)",
+      "; binary search finds a target in O(log n) steps",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-06",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "lines": [
+      "label: greet(name) {",
+      "; call it: greet(\"Sam\")",
+      "    ret \"Hello, \" + name",
+      "; experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "answer": [
+      "label: greet(name) {",
+      "    ret \"Hello, \" + name",
+      "}",
+      "; call it: greet(\"Sam\")",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-07",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "lines": [
+      "; result is now 25",
+      "label: square(n) {",
+      "    ret n * n",
+      "}",
+      "result = square(5)"
+    ],
+    "answer": [
+      "label: square(n) {",
+      "    ret n * n",
+      "}",
+      "result = square(5)",
+      "; result is now 25"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-08",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "lines": [
+      "; 1. plan features  2. build core loop  3. add one feature at a time",
+      "; YOUR PROJECT GOES HERE",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "; YOUR PROJECT GOES HERE",
+      "; 1. plan features  2. build core loop  3. add one feature at a time",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-09",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "lines": [
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above and predict the new output",
+      "; DEBUG: print intermediate values",
+      "    total = total + item",
+      "total = 0"
+    ],
+    "answer": [
+      "; DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-10",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "result = square(5)",
+      "    ret n * n",
+      "}",
+      "label: square(n) {",
+      "; result is now 25"
+    ],
+    "answer": [
+      "label: square(n) {",
+      "    ret n * n",
+      "}",
+      "result = square(5)",
+      "; result is now 25",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-11",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "; Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "; expected result: 10"
+    ],
+    "answer": [
+      "; Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "; expected result: 10"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-12",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "lines": [
+      "cmp/jcc age >= 18 AND hasTicket {",
+      "; experiment: modify a value above and predict the new output",
+      "}",
+      "    ; output via syscall write (int 0x80)"
+    ],
+    "answer": [
+      "cmp/jcc age >= 18 AND hasTicket {",
+      "    ; output via syscall write (int 0x80)",
+      "}",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-13",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "lines": [
+      "; output via syscall write (int 0x80)  ; look up by key",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "; output via syscall write (int 0x80)  ; look up by key",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-14",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "lines": [
+      "cmp/jcc age >= 18 {",
+      "    ; output via syscall write (int 0x80)",
+      "} else {",
+      "}",
+      "age = 20",
+      "; experiment: modify a value above and predict the new output",
+      "    ; output via syscall write (int 0x80)"
+    ],
+    "answer": [
+      "age = 20",
+      "cmp/jcc age >= 18 {",
+      "    ; output via syscall write (int 0x80)",
+      "} else {",
+      "    ; output via syscall write (int 0x80)",
+      "}",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-15",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "lines": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "; experiment: modify a value above and predict the new output",
+      "; output via syscall write (int 0x80)  ; first item",
+      "; items[1], items[2] ... indexes count from 0"
+    ],
+    "answer": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "; output via syscall write (int 0x80)  ; first item",
+      "; items[1], items[2] ... indexes count from 0",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-16",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "lines": [
+      "; output via syscall write (int 0x80)  ; passes 2 and 3 as arguments",
+      "}",
+      "    ret a + b",
+      "label: add(a, b) {"
+    ],
+    "answer": [
+      "label: add(a, b) {",
+      "    ret a + b",
+      "}",
+      "; output via syscall write (int 0x80)  ; passes 2 and 3 as arguments"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-17",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "lines": [
+      "try {",
+      "    risky_operation()",
+      "; experiment: modify a value above and predict the new output",
+      "} catch (error) {",
+      "}",
+      "    ; output via syscall write (int 0x80)"
+    ],
+    "answer": [
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    ; output via syscall write (int 0x80)",
+      "}",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-18",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "lines": [
+      "    name = \"Buddy\"",
+      "class Dog {",
+      "; dog = Dog()  then  dog.bark()",
+      "}",
+      "    label: bark() { ; output via syscall write (int 0x80) }"
+    ],
+    "answer": [
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "    label: bark() { ; output via syscall write (int 0x80) }",
+      "}",
+      "; dog = Dog()  then  dog.bark()"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-19",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "lines": [
+      "    global _start",
+      "    mov ecx, msg",
+      "    int 0x80",
+      "    mov ebx, 1",
+      "    int 0x80",
+      "section .data",
+      "section .text",
+      "    mov edx, 14",
+      "    xor ebx, ebx",
+      "    msg db \"Hello, World!\", 10",
+      "    mov eax, 1",
+      "_start:",
+      "    mov eax, 4"
+    ],
+    "answer": [
+      "section .data",
+      "    msg db \"Hello, World!\", 10",
+      "section .text",
+      "    global _start",
+      "_start:",
+      "    mov eax, 4",
+      "    mov ebx, 1",
+      "    mov ecx, msg",
+      "    mov edx, 14",
+      "    int 0x80",
+      "    mov eax, 1",
+      "    xor ebx, ebx",
+      "    int 0x80"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-20",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "lines": [
+      "mov eax, 42\tmov ebx, 7",
+      "; Variables hold reusable values",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "mov eax, 42\tmov ebx, 7",
+      "; Variables hold reusable values",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-21",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "lines": [
+      "user = { name: \"Alice\", age: 30 }",
+      "; an object groups related fields under one name",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "user = { name: \"Alice\", age: 30 }",
+      "; an object groups related fields under one name",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-22",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "lines": [
+      "; Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "; Bad:  x = calc(a,b)",
+      "userCount = 0"
+    ],
+    "answer": [
+      "; Bad:  x = calc(a,b)",
+      "; Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-23",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "lines": [
+      "    mov edx, 14",
+      "    int 0x80",
+      "    global _start",
+      "section .text",
+      "; This program greets the world",
+      "    mov eax, 1",
+      "    mov ebx, 1",
+      "_start:",
+      "section .data",
+      "    mov ecx, msg",
+      "    msg db \"Hello, World!\", 10",
+      "    mov eax, 4",
+      "    int 0x80",
+      "    xor ebx, ebx"
+    ],
+    "answer": [
+      "; This program greets the world",
+      "section .data",
+      "    msg db \"Hello, World!\", 10",
+      "section .text",
+      "    global _start",
+      "_start:",
+      "    mov eax, 4",
+      "    mov ebx, 1",
+      "    mov ecx, msg",
+      "    mov edx, 14",
+      "    int 0x80",
+      "    mov eax, 1",
+      "    xor ebx, ebx",
+      "    int 0x80"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-24",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "; tags now holds only 2 unique values"
+    ],
+    "answer": [
+      "tags = {\"python\", \"code\", \"python\"}",
+      "; tags now holds only 2 unique values",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-25",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "lines": [
+      "    ret n * factorial(n - 1)",
+      "label: factorial(n) {",
+      "    cmp/jcc n <= 1 { ret 1 }",
+      "}"
+    ],
+    "answer": [
+      "label: factorial(n) {",
+      "    cmp/jcc n <= 1 { ret 1 }",
+      "    ret n * factorial(n - 1)",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-26",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "lines": [
+      "label: add(x) {",
+      "    total = total + x  ; needs special handling in strict languages",
+      "total = 0  ; global",
+      "}"
+    ],
+    "answer": [
+      "total = 0  ; global",
+      "label: add(x) {",
+      "    total = total + x  ; needs special handling in strict languages",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-27",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "lines": [
+      "; git add .     - stage changes",
+      "; git init      - start tracking",
+      "; git commit -m \"describe why\"",
+      "; git basics",
+      "; git push     - share to remote"
+    ],
+    "answer": [
+      "; git basics",
+      "; git init      - start tracking",
+      "; git add .     - stage changes",
+      "; git commit -m \"describe why\"",
+      "; git push     - share to remote"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-28",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "lines": [
+      "    content = file.read()",
+      "; file is auto-closed here",
+      "; experiment: modify a value above and predict the new output",
+      "}",
+      "with open(\"data.txt\", \"r\") as file {"
+    ],
+    "answer": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "; file is auto-closed here",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-29",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "lines": [
+      "    content = file.read()",
+      "}",
+      "with open(\"data.txt\", \"r\") as file {",
+      "; file is auto-closed here"
+    ],
+    "answer": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "; file is auto-closed here"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-30",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "lines": [
+      "; Multiplication happens first: result is 11",
+      "eax{assign}5 + 3 * 2",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "eax{assign}5 + 3 * 2",
+      "; Multiplication happens first: result is 11",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-31",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "lines": [
+      "text = \"Hello\"",
+      "; text + \" World\" joins strings",
+      "; text.upper() / text.length style helpers exist per language"
+    ],
+    "answer": [
+      "text = \"Hello\"",
+      "; text + \" World\" joins strings",
+      "; text.upper() / text.length style helpers exist per language"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-32",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "lines": [
+      "    ; output via syscall write (int 0x80)",
+      "} catch (error) {",
+      "    risky_operation()",
+      "}",
+      "try {"
+    ],
+    "answer": [
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    ; output via syscall write (int 0x80)",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-33",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "lines": [
+      "; Docs pattern: Quick Start -> Guides -> API Reference",
+      "; search for: function name + your language",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "; Docs pattern: Quick Start -> Guides -> API Reference",
+      "; search for: function name + your language",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-34",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "lines": [
+      "    ; output via syscall write (int 0x80)",
+      "}",
+      "    cmp/jcc i == 5 { break }",
+      "loop i in range(10) {",
+      "; prints 0 1 2 3 4",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "loop i in range(10) {",
+      "    cmp/jcc i == 5 { break }",
+      "    ; output via syscall write (int 0x80)",
+      "}",
+      "; prints 0 1 2 3 4",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-35",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "; Good question template:",
+      "; 3. smallest code that reproduces it",
+      "; 2. what actually happened",
+      "; 1. what I expected"
+    ],
+    "answer": [
+      "; Good question template:",
+      "; 1. what I expected",
+      "; 2. what actually happened",
+      "; 3. smallest code that reproduces it",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-36",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "lines": [
+      "    ; output via syscall write (int 0x80)",
+      "loop i in range(5) {",
+      "}",
+      "; prints 0 1 2 3 4"
+    ],
+    "answer": [
+      "loop i in range(5) {",
+      "    ; output via syscall write (int 0x80)",
+      "}",
+      "; prints 0 1 2 3 4"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-37",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "lines": [
+      "    ret \"Hello, \" + name",
+      "label: greet(name) {",
+      "; call it: greet(\"Sam\")",
+      "}"
+    ],
+    "answer": [
+      "label: greet(name) {",
+      "    ret \"Hello, \" + name",
+      "}",
+      "; call it: greet(\"Sam\")"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-38",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "lines": [
+      "section .text",
+      "    msg db \"Hello, World!\", 10",
+      "    mov edx, 14",
+      "    mov eax, 4",
+      "    mov eax, 1",
+      "    int 0x80",
+      "    int 0x80",
+      "_start:",
+      "    mov ecx, msg",
+      "    xor ebx, ebx",
+      "section .data",
+      "    mov ebx, 1",
+      "; experiment: modify a value above and predict the new output",
+      "    global _start"
+    ],
+    "answer": [
+      "section .data",
+      "    msg db \"Hello, World!\", 10",
+      "section .text",
+      "    global _start",
+      "_start:",
+      "    mov eax, 4",
+      "    mov ebx, 1",
+      "    mov ecx, msg",
+      "    mov edx, 14",
+      "    int 0x80",
+      "    mov eax, 1",
+      "    xor ebx, ebx",
+      "    int 0x80",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-39",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "lines": [
+      "cmp/jcc age >= 18 AND hasTicket {",
+      "    ; output via syscall write (int 0x80)",
+      "}"
+    ],
+    "answer": [
+      "cmp/jcc age >= 18 AND hasTicket {",
+      "    ; output via syscall write (int 0x80)",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-40",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "lines": [
+      "; Common built-ins you will meet:",
+      "; length/count, round/floor/ceil, min/max, sort, join/split",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "; Common built-ins you will meet:",
+      "; length/count, round/floor/ceil, min/max, sort, join/split",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-41",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "lines": [
+      "; fetch data without blocking the UI",
+      "; await getData()  // pause THIS function only",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "; fetch data without blocking the UI",
+      "; await getData()  // pause THIS function only",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-42",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "    count = count + 1",
+      "; experiment: modify a value above and predict the new output",
+      "count = 0",
+      "    ; output via syscall write (int 0x80)",
+      "loop count < 5 {"
+    ],
+    "answer": [
+      "count = 0",
+      "loop count < 5 {",
+      "    ; output via syscall write (int 0x80)",
+      "    count = count + 1",
+      "}",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-43",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "; Test checklist: normal input, empty input, huge input, bad input",
+      "; expected result: 10",
+      "result = double(5)"
+    ],
+    "answer": [
+      "; Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "; expected result: 10",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-44",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "lines": [
+      "; output via syscall write (int 0x80)",
+      "total = 0",
+      "; DEBUG: print intermediate values",
+      "    total = total + item"
+    ],
+    "answer": [
+      "; DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "; output via syscall write (int 0x80)"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-45",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "lines": [
+      "; Common types: \"text\" is a string, 42 is a number, nonzero / zero is a boolean",
+      "mov eax, 42\tmov ebx, 7",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "mov eax, 42\tmov ebx, 7",
+      "; Common types: \"text\" is a string, 42 is a number, nonzero / zero is a boolean",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-46",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "}",
+      "; output via syscall write (int 0x80)  ; passes 2 and 3 as arguments",
+      "    ret a + b",
+      "label: add(a, b) {"
+    ],
+    "answer": [
+      "label: add(a, b) {",
+      "    ret a + b",
+      "}",
+      "; output via syscall write (int 0x80)  ; passes 2 and 3 as arguments",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-47",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "lines": [
+      "; The line above sends text to the screen",
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "; output via syscall write (int 0x80)",
+      "; The line above sends text to the screen",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-48",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "; import the tools you need",
+      "; e.g. math functions, date handling, file helpers"
+    ],
+    "answer": [
+      "; import the tools you need",
+      "; e.g. math functions, date handling, file helpers",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-49",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "lines": [
+      "; git init      - start tracking",
+      "; git push     - share to remote",
+      "; git commit -m \"describe why\"",
+      "; experiment: modify a value above and predict the new output",
+      "; git basics",
+      "; git add .     - stage changes"
+    ],
+    "answer": [
+      "; git basics",
+      "; git init      - start tracking",
+      "; git add .     - stage changes",
+      "; git commit -m \"describe why\"",
+      "; git push     - share to remote",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-50",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "lines": [
+      "    ; output via syscall write (int 0x80)",
+      "; prints 0 1 2 3 4",
+      "loop i in range(10) {",
+      "    cmp/jcc i == 5 { break }",
+      "}"
+    ],
+    "answer": [
+      "loop i in range(10) {",
+      "    cmp/jcc i == 5 { break }",
+      "    ; output via syscall write (int 0x80)",
+      "}",
+      "; prints 0 1 2 3 4"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-51",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "lines": [
+      "; experiment: modify a value above and predict the new output",
+      "}",
+      "label: add(x) {",
+      "    total = total + x  ; needs special handling in strict languages",
+      "total = 0  ; global"
+    ],
+    "answer": [
+      "total = 0  ; global",
+      "label: add(x) {",
+      "    total = total + x  ; needs special handling in strict languages",
+      "}",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-52",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "lines": [
+      "; sorted -> [1, 2, 3]  (use the built-in sort)",
+      "nums = [3, 1, 2]",
+      "; binary search finds a target in O(log n) steps"
+    ],
+    "answer": [
+      "nums = [3, 1, 2]",
+      "; sorted -> [1, 2, 3]  (use the built-in sort)",
+      "; binary search finds a target in O(log n) steps"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-53",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "lines": [
+      "; text.upper() / text.length style helpers exist per language",
+      "text = \"Hello\"",
+      "; text + \" World\" joins strings",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "text = \"Hello\"",
+      "; text + \" World\" joins strings",
+      "; text.upper() / text.length style helpers exist per language",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-54",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "lines": [
+      "loop count < 5 {",
+      "}",
+      "    count = count + 1",
+      "count = 0",
+      "    ; output via syscall write (int 0x80)"
+    ],
+    "answer": [
+      "count = 0",
+      "loop count < 5 {",
+      "    ; output via syscall write (int 0x80)",
+      "    count = count + 1",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "assembly-puzzle-55",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "lines": [
+      "    }",
+      "    loop col in range(3) {",
+      "}",
+      "loop row in range(3) {",
+      "        ; output via syscall write (int 0x80)"
+    ],
+    "answer": [
+      "loop row in range(3) {",
+      "    loop col in range(3) {",
+      "        ; output via syscall write (int 0x80)",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  }
+]

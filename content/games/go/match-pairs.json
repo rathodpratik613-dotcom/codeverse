@@ -1,0 +1,353 @@
+[
+  {
+    "id": "go-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "go-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Groups related data (and often behavior) under one name",
+      "A normal input with a known expected output"
+    ]
+  },
+  {
+    "id": "go-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "Where should you look FIRST for accurate syntax questions?",
+        "right": "The official language documentation"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "go-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      },
+      {
+        "left": "What does concatenation mean for strings?",
+        "right": "Joining them end to end into one string"
+      },
+      {
+        "left": "What does the print/output function do?",
+        "right": "Sends text or values to the screen or console"
+      },
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      }
+    ],
+    "distractors": [
+      "//",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "go-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Define the smallest version that works end-to-end",
+      "both A and B are true",
+      "Sends text or values to the screen or console"
+    ]
+  },
+  {
+    "id": "go-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "go-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What is the correct comment syntax?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Sends text or values to the screen or console"
+    ]
+  },
+  {
+    "id": "go-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "What is a variable?",
+        "right": "A named storage location for a value"
+      },
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      }
+    ],
+    "distractors": [
+      "you know how many times to repeat",
+      "A base case that stops the recursion"
+    ]
+  },
+  {
+    "id": "go-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Its condition eventually becomes false",
+      "20 times",
+      "It halves the remaining items each step"
+    ]
+  },
+  {
+    "id": "go-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What should you do FIRST when you find a bug?",
+        "right": "Reproduce it reliably and note the exact steps"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "1 (the remainder)",
+      "local — visible only within that function"
+    ]
+  },
+  {
+    "id": "go-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\"",
+      "Long-running tasks without freezing the program"
+    ]
+  },
+  {
+    "id": "go-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "A for loop is best when...",
+        "right": "you know how many times to repeat"
+      },
+      {
+        "left": "What does a \"Hello World\" program mainly teach you?",
+        "right": "That your code runs and produces output"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Groups related data (and often behavior) under one name"
+    ]
+  },
+  {
+    "id": "go-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "go-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Go?",
+        "right": "//"
+      },
+      {
+        "left": "In Go, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  }
+]

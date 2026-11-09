@@ -1,0 +1,902 @@
+[
+  {
+    "id": "cpp-bug-01",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#int <string>\nint main() {\nstd::string name = \"Alice\";\nint age = 30;\n// Variables hold reusable values\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#include <iostream>",
+      "#int <string>",
+      "#include <string>",
+      "#include <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-02",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nfor i in range(10) {\n    if i == 5 { break }\n    std::cout << i << std::endl;\n}\n// prints 0 1 2 3 4\n    int 0;\n}",
+    "buggyLine": 9,
+    "options": [
+      "// fetch data without blocking the UI",
+      "int 0;",
+      "return 0;",
+      "// Multiplication happens first: result is 11"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 9 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-03",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#int <string>\nint main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#include <string>",
+      "} catch (error) {",
+      "#int <string>",
+      "#include <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-04",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\n#include <iostream>\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}\n    int 0;\n}",
+    "buggyLine": 9,
+    "options": [
+      "return 0;",
+      "int 0;",
+      "#include <string>",
+      "int main() {"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 9 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-05",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nint age >= 18 AND hasTicket {\n    std::cout << \"Welcome in\" << std::endl;\n}\n    return 0;\n}",
+    "buggyLine": 4,
+    "options": [
+      "int age >= 18 AND hasTicket {",
+      "int main() {",
+      "// items[1], items[2] ... indexes count from 0",
+      "if age >= 18 AND hasTicket {"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 4 uses \"int\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-06",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nchar main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "int main() {",
+      "#include <string>",
+      "char main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 3 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-07",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#int <string>\nint main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "return 0;",
+      "#int <string>",
+      "#include <iostream>",
+      "#include <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-08",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nchar main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "char main() {",
+      "int main() {",
+      "age = 20",
+      "#include <string>"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 3 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-09",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#int <string>\nint main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#include <string>",
+      "#include <iostream>",
+      "#int <string>",
+      "// DEBUG: print intermediate values"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-10",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nchar main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "int main() {",
+      "#include <string>",
+      "#include <string>",
+      "char main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 3 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-11",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#int <string>\nint main() {\nage = 20\nif age >= 18 {\n    std::cout << \"Adult\" << std::endl;\n} else {\n    std::cout << \"Minor\" << std::endl;\n}\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#int <string>",
+      "#include <string>",
+      "#include <string>",
+      "return 0;"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-12",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 9,
+    "options": [
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "#include <string>",
+      "int 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 9 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-13",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nint add(a, b) {\n    return a + b\n}\nstd::cout << add(2, 3) << std::endl;  // passes 2 and 3 as arguments\n    return 0;\n}",
+    "buggyLine": 4,
+    "options": [
+      "int add(a, b) {",
+      "void add(a, b) {",
+      "// result is now 25",
+      "// e.g. math functions, date handling, file helpers"
+    ],
+    "answer": "void add(a, b) {",
+    "explanation": "Line 4 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-14",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "#int <iostream>\n#include <string>\nint main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <iostream>",
+      "#int <iostream>",
+      "#include <iostream>",
+      "#include <iostream>"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-15",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "#int <iostream>\n#include <string>\nint main() {\ncount = 0\nwhile count < 5 {\n    std::cout << count << std::endl;\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#int <iostream>",
+      "#include <string>",
+      "#include <iostream>",
+      "#include <iostream>"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-16",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nchar main() {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "char main() {",
+      "// experiment: modify a value above and predict the new output",
+      "int main() {",
+      "#include <string>"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 3 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-17",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\n// This program greets the world\n#int <iostream>\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}\n    return 0;\n}",
+    "buggyLine": 5,
+    "options": [
+      "#int <iostream>",
+      "total = 0",
+      "#include <iostream>",
+      "// 2. what actually happened"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 5 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-18",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#int <string>\nint main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#int <string>",
+      "// This program greets the world",
+      "return 0;",
+      "#include <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-19",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 8,
+    "options": [
+      "#include <iostream>",
+      "int 0;",
+      "#include <iostream>",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 8 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-20",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#int <string>\nint main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "// git add .     - stage changes",
+      "#include <iostream>",
+      "#int <string>",
+      "#include <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-21",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nstd::cout << \"Alice\" << std::endl;\n// The line above sends text to the screen\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "int 0;",
+      "int main() {",
+      "return 0;",
+      "int main() {"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-22",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": "#include <iostream>\n#include <string>\nint main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "return 0;",
+      "int main() {",
+      "while count < 5 {",
+      "int 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-23",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "#int <iostream>\n#include <string>\nint main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "// tags now holds only 2 unique values",
+      "#int <iostream>",
+      "#include <iostream>",
+      "class Dog {"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-24",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int 0;",
+      "return 0;",
+      "return n * n",
+      "int main() {"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-25",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#int <string>\nint main() {\ntry {\n    risky_operation()\n} catch (error) {\n    std::cout << \"Something went wrong\" << std::endl;\n}\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "return 0;",
+      "#int <string>",
+      "return 0;",
+      "#include <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-26",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "#int <iostream>\n#include <string>\nint main() {\ncount = 0\nwhile count < 5 {\n    std::cout << count << std::endl;\n    count = count + 1\n}\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <iostream>",
+      "std::cout << i << std::endl;",
+      "if age >= 18 AND hasTicket {",
+      "#int <iostream>"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-27",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nchar main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "char main() {",
+      "int main() {",
+      "#include <iostream>",
+      "std::cout << \"*\" << std::endl;"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 3 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-28",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = int(5)\n// expected result: 10\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 5,
+    "options": [
+      "result = int(5)",
+      "result = double(5)",
+      "#include <string>",
+      "#include <string>"
+    ],
+    "answer": "result = double(5)",
+    "explanation": "Line 5 uses \"int\" where \"double\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-29",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "int 0;",
+      "#include <iostream>",
+      "std::cout << items[0] << std::endl;  // first item",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-30",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nchar main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "int main() {",
+      "#include <iostream>",
+      "char main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 3 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-31",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n// experiment: modify a value above and predict the int output\n    return 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int main() {",
+      "risky_operation()",
+      "// experiment: modify a value above and predict the int output",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"int\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-32",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the int output\n    return 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int main() {",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the int output",
+      "return 0;"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"int\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-33",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nstd::string name = \"Alice\";\nint age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, int is a boolean\n    return 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "// Common types: \"Alice\" is a string, 42 is a number, int is a boolean",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "#include <iostream>",
+      "#include <string>"
+    ],
+    "answer": "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "explanation": "Line 6 uses \"int\" where \"true\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-34",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nstd::cout << user[\"name\"] << std::endl;  // look up by key\n// experiment: modify a value above and predict the int output\n    return 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "#include <string>",
+      "#include <iostream>",
+      "// experiment: modify a value above and predict the int output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"int\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-35",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "#int <iostream>\n#include <string>\nint main() {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "result = double(5)",
+      "#int <iostream>",
+      "#include <iostream>",
+      "#include <iostream>"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-36",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nstd::cout << \"Alice\" << std::endl;\n// The line above sends text to the screen\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int 0;",
+      "void greet(name) {",
+      "return 0;",
+      "int main() {"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-37",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "#int <iostream>\n#include <string>\nint main() {\nclass Dog {\n    name = \"Buddy\"\n    void bark() { std::cout << \"Woof!\" << std::endl; }\n}\n// dog = Dog()  then  dog.bark()\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "#int <iostream>",
+      "#include <iostream>",
+      "return 0;"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-38",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nchar main() {\nvoid square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "char main() {",
+      "name = \"Buddy\"",
+      "// experiment: modify a value above and predict the new output",
+      "int main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 3 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-39",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nvoid square(n) {\n    int n * n\n}\nresult = square(5)\n// result is now 25\n    return 0;\n}",
+    "buggyLine": 5,
+    "options": [
+      "return 0;",
+      "return n * n",
+      "// fetch data without blocking the UI",
+      "int n * n"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 5 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-40",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "code": "#int <iostream>\n#include <string>\nint main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "count = count + 1",
+      "#include <iostream>",
+      "#int <iostream>",
+      "#include <iostream>"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-41",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#int <string>\nint main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "while count < 5 {",
+      "#include <string>",
+      "#include <string>",
+      "#int <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-42",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "code": "#include <iostream>\n#include <string>\nint main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n// experiment: modify a value above and predict the int output\n    return 0;\n}",
+    "buggyLine": 9,
+    "options": [
+      "// experiment: modify a value above and predict the int output",
+      "// search for: function name + your language",
+      "// experiment: modify a value above and predict the new output",
+      "return 0;"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 9 uses \"int\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-43",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nclass Dog {\n    name = \"Buddy\"\n    int bark() { std::cout << \"Woof!\" << std::endl; }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "void bark() { std::cout << \"Woof!\" << std::endl; }",
+      "// 1. what I expected",
+      "#include <iostream>",
+      "int bark() { std::cout << \"Woof!\" << std::endl; }"
+    ],
+    "answer": "void bark() { std::cout << \"Woof!\" << std::endl; }",
+    "explanation": "Line 6 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-44",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nint main() {\ntry {\n    risky_operation()\n} catch (error) {\n    std::cout << \"Something went wrong\" << std::endl;\n}\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 10,
+    "options": [
+      "// tags now holds only 2 unique values",
+      "int main() {",
+      "int 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 10 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-45",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nvoid add(a, b) {\n    return a + b\n}\nstd::cout << add(2, 3) << std::endl;  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 9,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "return 0;",
+      "int 0;",
+      "void bark() { std::cout << \"Woof!\" << std::endl; }"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 9 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-46",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#int <string>\nint main() {\n#include <iostream>\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#include <string>",
+      "#include <iostream>",
+      "return 0;",
+      "#int <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-47",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#int <string>\nint main() {\nstd::string name = \"Alice\";\nint age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#int <string>",
+      "#include <string>",
+      "#include <string>",
+      "int main() {"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-48",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#int <string>\nint main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#include <string>",
+      "#int <string>",
+      "#include <string>",
+      "user = { \"name\": \"Alice\", \"age\": 30 }"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-49",
+    "lesson": "lesson-36",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nint main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int 0;",
+      "// experiment: modify a value above and predict the new output",
+      "#include <string>",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-50",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "code": "#int <iostream>\n#include <string>\nint main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nstd::cout << total << std::endl;\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#int <iostream>",
+      "// experiment: modify a value above and predict the new output",
+      "#include <iostream>",
+      "int main() {"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-51",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#int <string>\nint main() {\nitems = [\"a\", \"b\", \"c\"]\nstd::cout << items[0] << std::endl;  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#include <string>",
+      "return 0;",
+      "#int <string>",
+      "// 1. plan features  2. build core loop  3. add one feature at a time"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-52",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "code": "#int <iostream>\n#include <string>\nint main() {\nfor i in range(5) {\n    std::cout << i << std::endl;\n}\n// prints 0 1 2 3 4\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "return 0;",
+      "#int <iostream>",
+      "#include <iostream>",
+      "int main() {"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-53",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nif age >= 18 AND hasTicket {\n    std::cout << \"Welcome in\" << std::endl;\n}\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 8,
+    "options": [
+      "int 0;",
+      "// binary search finds a target in O(log n) steps",
+      "return 0;",
+      "#include <iostream>"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 8 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-54",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "code": "#int <iostream>\n#include <string>\nint main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nstd::cout << total << std::endl;\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <iostream>",
+      "#int <iostream>",
+      "int main() {",
+      "int age = 30;"
+    ],
+    "answer": "#include <iostream>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-55",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nint main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int 0;",
+      "#include <string>",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-56",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#int <string>\nint main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "#include <string>",
+      "#include <iostream>",
+      "#int <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-57",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#int <string>\nint main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#include <iostream>",
+      "return a + b",
+      "#int <string>",
+      "#include <string>"
+    ],
+    "answer": "#include <string>",
+    "explanation": "Line 2 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-58",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "int 0;",
+      "return 0;",
+      "// experiment: modify a value above and predict the new output",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-59",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nint main() {\nfor i in range(10) {\n    int i == 5 { break }\n    std::cout << i << std::endl;\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 5,
+    "options": [
+      "try {",
+      "return 0;",
+      "if i == 5 { break }",
+      "int i == 5 { break }"
+    ],
+    "answer": "if i == 5 { break }",
+    "explanation": "Line 5 uses \"int\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "cpp-bug-60",
+    "lesson": "lesson-35",
+    "difficulty": "hard",
+    "code": "#include <iostream>\n#include <string>\nchar main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "int main() {",
+      "std::cout << items[0] << std::endl;  // first item",
+      "// experiment: modify a value above and predict the new output",
+      "char main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 3 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  }
+]

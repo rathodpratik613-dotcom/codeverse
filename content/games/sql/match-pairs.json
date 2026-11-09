@@ -1,0 +1,372 @@
+[
+  {
+    "id": "sql-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "What is the difference between WHERE and HAVING?",
+        "right": "WHERE filters rows; HAVING filters groups"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      }
+    ],
+    "distractors": [
+      "Normalization",
+      "Environments track applied versions — edits cause drift and failures",
+      "Date and Time"
+    ]
+  },
+  {
+    "id": "sql-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the main purpose of the Filtering with WHERE technique shown in this lesson?",
+        "right": "Filtering with WHERE"
+      },
+      {
+        "left": "What is the main purpose of the Data Warehousing Basics technique shown in this lesson?",
+        "right": "Data Warehousing Basics"
+      }
+    ],
+    "distractors": [
+      "All rows from the left table appear",
+      "Aggregate Functions"
+    ]
+  },
+  {
+    "id": "sql-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "What is the main purpose of the Normalization technique shown in this lesson?",
+        "right": "Normalization"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Query Review Checklist",
+      "Window Functions",
+      "Subqueries"
+    ]
+  },
+  {
+    "id": "sql-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Keyset/cursor pagination on an indexed column",
+      "Rank of each row by salary, keeping all rows"
+    ]
+  },
+  {
+    "id": "sql-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "In most SQL dialects, SUBSTRING starts counting at...",
+        "right": "1"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      }
+    ],
+    "distractors": [
+      "Aggregate Functions"
+    ]
+  },
+  {
+    "id": "sql-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What does ON DELETE CASCADE do?",
+        "right": "Deletes child rows when the parent is deleted"
+      },
+      {
+        "left": "What does COALESCE(nickname, name) return?",
+        "right": "nickname if not NULL, else name"
+      },
+      {
+        "left": "Why use DECIMAL instead of FLOAT for money?",
+        "right": "FLOAT has rounding errors — DECIMAL is exact"
+      },
+      {
+        "left": "What is the main purpose of the JOINs technique shown in this lesson?",
+        "right": "JOINs"
+      }
+    ],
+    "distractors": [
+      "--",
+      "UPDATE and DELETE",
+      "Undoes all changes in the current transaction",
+      "NoSQL vs SQL"
+    ]
+  },
+  {
+    "id": "sql-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "What is the main purpose of the Subquery Patterns technique shown in this lesson?",
+        "right": "Subquery Patterns"
+      },
+      {
+        "left": "Why store timestamps in UTC?",
+        "right": "Avoids timezone ambiguity and DST bugs"
+      },
+      {
+        "left": "How do you check for missing values?",
+        "right": "IS NULL"
+      }
+    ],
+    "distractors": [
+      "NULL Handling",
+      "String Functions",
+      "Capstone: Design a Schema"
+    ]
+  },
+  {
+    "id": "sql-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "Function vs procedure — key difference?",
+        "right": "Functions return a value; procedures perform actions"
+      },
+      {
+        "left": "What does SELECT DISTINCT do?",
+        "right": "Removes duplicate rows from results"
+      }
+    ],
+    "distractors": [
+      "Indexes Deep Dive",
+      "Environments track applied versions — edits cause drift and failures"
+    ]
+  },
+  {
+    "id": "sql-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the main purpose of the UPDATE and DELETE technique shown in this lesson?",
+        "right": "UPDATE and DELETE"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Deletes child rows when the parent is deleted",
+      "On columns used in WHERE, JOIN, and ORDER BY"
+    ]
+  },
+  {
+    "id": "sql-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a SQL view?",
+        "right": "A saved query presented as a virtual table"
+      }
+    ],
+    "distractors": [
+      "Database Security",
+      "JOINs",
+      "--"
+    ]
+  },
+  {
+    "id": "sql-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What is the main purpose of the Stored Procedures and Functions technique shown in this...",
+        "right": "Stored Procedures and Functions"
+      },
+      {
+        "left": "What is graph databases' specialty?",
+        "right": "Traversing relationships between entities"
+      },
+      {
+        "left": "What does ORDER BY score DESC do?",
+        "right": "Sorts highest scores first"
+      },
+      {
+        "left": "What is the main risk of building INSERT with string concatenation?",
+        "right": "SQL injection"
+      }
+    ],
+    "distractors": [
+      "Faster reads, slower writes",
+      "Flexible schemas, massive scale, or simple key-value access",
+      "Migrations and Schema Evolution",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "sql-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What does WHERE x IN (SELECT ...) do?",
+        "right": "Keeps rows whose x matches any subquery result"
+      },
+      {
+        "left": "What is the main purpose of the Date and Time technique shown in this lesson?",
+        "right": "Date and Time"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "All rows from the left table appear"
+    ]
+  },
+  {
+    "id": "sql-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the main purpose of the Transactions and ACID technique shown in this lesson?",
+        "right": "Transactions and ACID"
+      },
+      {
+        "left": "In SQL, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "sql-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is the main purpose of the EXPLAIN and Query Tuning technique shown in this lesson?",
+        "right": "EXPLAIN and Query Tuning"
+      },
+      {
+        "left": "What replaces OFFSET for deep pagination at scale?",
+        "right": "Keyset/cursor pagination on an indexed column"
+      },
+      {
+        "left": "When is NoSQL typically the better fit?",
+        "right": "Flexible schemas, massive scale, or simple key-value access"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in SQL?",
+        "right": "--"
+      }
+    ],
+    "distractors": [
+      "Every row is updated",
+      "Stored Procedures and Functions"
+    ]
+  }
+]

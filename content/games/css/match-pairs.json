@@ -1,0 +1,371 @@
+[
+  {
+    "id": "css-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is the main purpose of the Filters and Blend Modes technique shown in this lesson?",
+        "right": "Filters and Blend Modes"
+      },
+      {
+        "left": "What is the main purpose of the Responsive Design technique shown in this lesson?",
+        "right": "Responsive Design"
+      },
+      {
+        "left": "Which selector targets an element with id=\"main\"?",
+        "right": "#main"
+      },
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Anchor Positioning",
+      "/* */",
+      "/* */"
+    ]
+  },
+  {
+    "id": "css-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Why use CSS variables for dark mode?",
+        "right": "One token change re-themes the whole site"
+      },
+      {
+        "left": "What does CSS control?",
+        "right": "Page presentation — colors, fonts, layout"
+      },
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the main purpose of the Overflow and Clipping technique shown in this lesson?",
+        "right": "Overflow and Clipping"
+      }
+    ],
+    "distractors": [
+      "Printed page size and margins",
+      "/* */",
+      "Cascade Layers"
+    ]
+  },
+  {
+    "id": "css-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In CSS nesting, what does & represent?",
+        "right": "The parent selector"
+      },
+      {
+        "left": "What is the main purpose of the Display Property technique shown in this lesson?",
+        "right": "Display Property"
+      },
+      {
+        "left": "What is the main purpose of the Transitions and Animations technique shown in this lesson?",
+        "right": "Transitions and Animations"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      }
+    ],
+    "distractors": [
+      "CSS Tooling",
+      "Depends on the code — trace it line by line",
+      "Overflow and Clipping"
+    ]
+  },
+  {
+    "id": "css-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is the main purpose of the CSS Units technique shown in this lesson?",
+        "right": "CSS Units"
+      },
+      {
+        "left": "What does clamp() give you in CSS?",
+        "right": "A value that scales fluidly between min and max"
+      },
+      {
+        "left": "What is the main purpose of the Flexbox technique shown in this lesson?",
+        "right": "Flexbox"
+      },
+      {
+        "left": "What is the main purpose of the Print Styles technique shown in this lesson?",
+        "right": "Print Styles"
+      }
+    ],
+    "distractors": [
+      "Applies effects to content behind the element",
+      "Depends on the code — trace it line by line",
+      "/* */",
+      "transform and opacity"
+    ]
+  },
+  {
+    "id": "css-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "What is the main purpose of the CSS Scroll Snap technique shown in this lesson?",
+        "right": "CSS Scroll Snap"
+      },
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      }
+    ],
+    "distractors": [
+      "One fraction of available free space",
+      "CSS for Print",
+      "JavaScript that measures element positions for popovers"
+    ]
+  },
+  {
+    "id": "css-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "Why use rem instead of px for font sizes?",
+        "right": "rem scales with user root settings — accessible"
+      },
+      {
+        "left": "When should you reach for a JS animation library?",
+        "right": "When you need timelines, scroll triggers, or complex sequencing"
+      }
+    ],
+    "distractors": [
+      "CSS Grid",
+      "it can trap scrolling when content overflows unexpectedly"
+    ]
+  },
+  {
+    "id": "css-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "What problem do cascade layers solve?",
+        "right": "Specificity conflicts regardless of selector strength"
+      },
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Anchor Positioning"
+    ]
+  },
+  {
+    "id": "css-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does Browserslist do?",
+        "right": "Declares which browsers your CSS must support"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": ":focus-visible is preferred over :focus because...",
+        "right": "it only shows for keyboard focus, not mouse clicks"
+      },
+      {
+        "left": "What is the main purpose of the CSS for Forms technique shown in this lesson?",
+        "right": "CSS for Forms"
+      }
+    ],
+    "distractors": [
+      "rem scales with user root settings — accessible",
+      "CSS Animation Libraries",
+      "transform and opacity"
+    ]
+  },
+  {
+    "id": "css-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the main purpose of the CSS Dark Mode Patterns technique shown in this lesson?",
+        "right": "CSS Dark Mode Patterns"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      }
+    ],
+    "distractors": [
+      "Specificity and Cascade"
+    ]
+  },
+  {
+    "id": "css-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does \"1fr\" mean in grid?",
+        "right": "One fraction of available free space"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "What does @page control?",
+        "right": "Printed page size and margins"
+      },
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "300px",
+      "When you need timelines, scroll triggers, or complex sequencing"
+    ]
+  },
+  {
+    "id": "css-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "What does anchor positioning replace?",
+        "right": "JavaScript that measures element positions for popovers"
+      },
+      {
+        "left": "What is the main purpose of the Cascade Layers technique shown in this lesson?",
+        "right": "Cascade Layers"
+      },
+      {
+        "left": "What is the main purpose of the Specificity and Cascade technique shown in this lesson?",
+        "right": "Specificity and Cascade"
+      }
+    ],
+    "distractors": [
+      "Declares which browsers your CSS must support",
+      "translate()",
+      "Inserts decorative content before the element",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "css-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "What problem do container queries solve?",
+        "right": "Styling components based on their container, not the viewport"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      }
+    ],
+    "distractors": [
+      "It does not affect layout",
+      "Responsive Design",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "css-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In CSS, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "What is the main purpose of the CSS Architecture at Scale technique shown in this lesson?",
+        "right": "CSS Architecture at Scale"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "css-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      },
+      {
+        "left": "Which position keeps an element visible while scrolling?",
+        "right": "fixed or sticky"
+      },
+      {
+        "left": "How do you hide navigation when printing?",
+        "right": "@media print { nav { display:none } }"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in CSS?",
+        "right": "/* */"
+      }
+    ],
+    "distractors": [
+      "none",
+      "Depends on the code — trace it line by line"
+    ]
+  }
+]

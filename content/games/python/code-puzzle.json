@@ -1,0 +1,1018 @@
+[
+  {
+    "id": "python-puzzle-01",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "lines": [
+      "    return \"Hello, \" + name",
+      "def greet(name) {",
+      "}",
+      "# call it: greet(\"Sam\")"
+    ],
+    "answer": [
+      "def greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "# call it: greet(\"Sam\")"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-02",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "lines": [
+      "# This program greets the world",
+      "# experiment: modify a value above and predict the new output",
+      "print(\"Hello, World!\")"
+    ],
+    "answer": [
+      "# This program greets the world",
+      "print(\"Hello, World!\")",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-03",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "lines": [
+      "# Common types: \"Alice\" is a string, 42 is a number, True is a boolean",
+      "# experiment: modify a value above and predict the new output",
+      "name = \"Alice\"",
+      "age = 30"
+    ],
+    "answer": [
+      "name = \"Alice\"",
+      "age = 30",
+      "# Common types: \"Alice\" is a string, 42 is a number, True is a boolean",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-04",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "# Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "# expected result: 10"
+    ],
+    "answer": [
+      "# Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "# expected result: 10"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-05",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "lines": [
+      "} catch (error) {",
+      "}",
+      "try {",
+      "    risky_operation()",
+      "    print(\"Something went wrong\")"
+    ],
+    "answer": [
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    print(\"Something went wrong\")",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-06",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "lines": [
+      "    print(\"Adult\")",
+      "if age >= 18 {",
+      "} elif/else {",
+      "age = 20",
+      "}",
+      "    print(\"Minor\")",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "age = 20",
+      "if age >= 18 {",
+      "    print(\"Adult\")",
+      "} elif/else {",
+      "    print(\"Minor\")",
+      "}",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-07",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "for i in range(5) {",
+      "    print(i)",
+      "# prints 0 1 2 3 4"
+    ],
+    "answer": [
+      "for i in range(5) {",
+      "    print(i)",
+      "}",
+      "# prints 0 1 2 3 4"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-08",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "lines": [
+      "    def bark() { print(\"Woof!\") }",
+      "# dog = Dog()  then  dog.bark()",
+      "    name = \"Buddy\"",
+      "class Dog {",
+      "}"
+    ],
+    "answer": [
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "    def bark() { print(\"Woof!\") }",
+      "}",
+      "# dog = Dog()  then  dog.bark()"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-09",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "lines": [
+      "# YOUR PROJECT GOES HERE",
+      "# 1. plan features  2. build core loop  3. add one feature at a time",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "# YOUR PROJECT GOES HERE",
+      "# 1. plan features  2. build core loop  3. add one feature at a time",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-10",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "lines": [
+      "name = \"Alice\"",
+      "# experiment: modify a value above and predict the new output",
+      "age = 30",
+      "# Variables hold reusable values"
+    ],
+    "answer": [
+      "name = \"Alice\"",
+      "age = 30",
+      "# Variables hold reusable values",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-11",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "lines": [
+      "    if n <= 1 { return 1 }",
+      "def factorial(n) {",
+      "    return n * factorial(n - 1)",
+      "}",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "def factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    return n * factorial(n - 1)",
+      "}",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-12",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "lines": [
+      "# experiment: modify a value above and predict the new output",
+      "# items[1], items[2] ... indexes count from 0",
+      "items = [\"a\", \"b\", \"c\"]",
+      "print(items[0])  # first item"
+    ],
+    "answer": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "print(items[0])  # first item",
+      "# items[1], items[2] ... indexes count from 0",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-13",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "lines": [
+      "# 3. smallest code that reproduces it",
+      "# Good question template:",
+      "# 2. what actually happened",
+      "# 1. what I expected"
+    ],
+    "answer": [
+      "# Good question template:",
+      "# 1. what I expected",
+      "# 2. what actually happened",
+      "# 3. smallest code that reproduces it"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-14",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "lines": [
+      "user = { name: \"Alice\", age: 30 }",
+      "# an object groups related fields under one name",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "user = { name: \"Alice\", age: 30 }",
+      "# an object groups related fields under one name",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-15",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "# experiment: modify a value above and predict the new output",
+      "count = 0",
+      "while count < 5 {",
+      "    print(count)",
+      "    count = count + 1"
+    ],
+    "answer": [
+      "count = 0",
+      "while count < 5 {",
+      "    print(count)",
+      "    count = count + 1",
+      "}",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-16",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "lines": [
+      "    content = file.read()",
+      "}",
+      "with open(\"data.txt\", \"r\") as file {",
+      "# file is auto-closed here"
+    ],
+    "answer": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "# file is auto-closed here"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-17",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "lines": [
+      "# experiment: modify a value above and predict the new output",
+      "nums = [3, 1, 2]",
+      "# sorted -> [1, 2, 3]  (use the built-in sort)",
+      "# binary search finds a target in O(log n) steps"
+    ],
+    "answer": [
+      "nums = [3, 1, 2]",
+      "# sorted -> [1, 2, 3]  (use the built-in sort)",
+      "# binary search finds a target in O(log n) steps",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-18",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "lines": [
+      "age = 20",
+      "}",
+      "if age >= 18 {",
+      "    print(\"Minor\")",
+      "    print(\"Adult\")",
+      "} elif/else {"
+    ],
+    "answer": [
+      "age = 20",
+      "if age >= 18 {",
+      "    print(\"Adult\")",
+      "} elif/else {",
+      "    print(\"Minor\")",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-19",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "lines": [
+      "total = 0  # global",
+      "    total = total + x  # needs special handling in strict languages",
+      "}",
+      "def add(x) {"
+    ],
+    "answer": [
+      "total = 0  # global",
+      "def add(x) {",
+      "    total = total + x  # needs special handling in strict languages",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-20",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "lines": [
+      "# text + \" World\" joins strings",
+      "# text.upper() / text.length style helpers exist per language",
+      "text = \"Hello\""
+    ],
+    "answer": [
+      "text = \"Hello\"",
+      "# text + \" World\" joins strings",
+      "# text.upper() / text.length style helpers exist per language"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-21",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "lines": [
+      "# experiment: modify a value above and predict the new output",
+      "text = \"Hello\"",
+      "# text + \" World\" joins strings",
+      "# text.upper() / text.length style helpers exist per language"
+    ],
+    "answer": [
+      "text = \"Hello\"",
+      "# text + \" World\" joins strings",
+      "# text.upper() / text.length style helpers exist per language",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-22",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "# Test checklist: normal input, empty input, huge input, bad input",
+      "# experiment: modify a value above and predict the new output",
+      "result = double(5)",
+      "# expected result: 10"
+    ],
+    "answer": [
+      "# Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "# expected result: 10",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-23",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "lines": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "# file is auto-closed here",
+      "}",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "# file is auto-closed here",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-24",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "lines": [
+      "print(items[0])  # first item",
+      "items = [\"a\", \"b\", \"c\"]",
+      "# items[1], items[2] ... indexes count from 0"
+    ],
+    "answer": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "print(items[0])  # first item",
+      "# items[1], items[2] ... indexes count from 0"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-25",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "lines": [
+      "    return n * factorial(n - 1)",
+      "def factorial(n) {",
+      "}",
+      "    if n <= 1 { return 1 }"
+    ],
+    "answer": [
+      "def factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    return n * factorial(n - 1)",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-26",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "lines": [
+      "for i in range(10) {",
+      "# prints 0 1 2 3 4",
+      "}",
+      "    print(i)",
+      "    if i == 5 { break }"
+    ],
+    "answer": [
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    print(i)",
+      "}",
+      "# prints 0 1 2 3 4"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-27",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "lines": [
+      "tags = {\"python\", \"code\", \"python\"}",
+      "# experiment: modify a value above and predict the new output",
+      "# tags now holds only 2 unique values"
+    ],
+    "answer": [
+      "tags = {\"python\", \"code\", \"python\"}",
+      "# tags now holds only 2 unique values",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-28",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "if age >= 18 AND hasTicket {",
+      "# experiment: modify a value above and predict the new output",
+      "    print(\"Welcome in\")"
+    ],
+    "answer": [
+      "if age >= 18 AND hasTicket {",
+      "    print(\"Welcome in\")",
+      "}",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-29",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "lines": [
+      "def add(a, b) {",
+      "print(add(2, 3))  # passes 2 and 3 as arguments",
+      "    return a + b",
+      "# experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "answer": [
+      "def add(a, b) {",
+      "    return a + b",
+      "}",
+      "print(add(2, 3))  # passes 2 and 3 as arguments",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-30",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "lines": [
+      "while count < 5 {",
+      "count = 0",
+      "}",
+      "    count = count + 1",
+      "    print(count)"
+    ],
+    "answer": [
+      "count = 0",
+      "while count < 5 {",
+      "    print(count)",
+      "    count = count + 1",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-31",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "lines": [
+      "# await getData()  // pause THIS function only",
+      "# experiment: modify a value above and predict the new output",
+      "# fetch data without blocking the UI"
+    ],
+    "answer": [
+      "# fetch data without blocking the UI",
+      "# await getData()  // pause THIS function only",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-32",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "lines": [
+      "# git commit -m \"describe why\"",
+      "# git basics",
+      "# git init      - start tracking",
+      "# git push     - share to remote",
+      "# git add .     - stage changes"
+    ],
+    "answer": [
+      "# git basics",
+      "# git init      - start tracking",
+      "# git add .     - stage changes",
+      "# git commit -m \"describe why\"",
+      "# git push     - share to remote"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-33",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "lines": [
+      "    return n * n",
+      "}",
+      "# result is now 25",
+      "result = square(5)",
+      "def square(n) {"
+    ],
+    "answer": [
+      "def square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "# result is now 25"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-34",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "lines": [
+      "# import the tools you need",
+      "# experiment: modify a value above and predict the new output",
+      "# e.g. math functions, date handling, file helpers"
+    ],
+    "answer": [
+      "# import the tools you need",
+      "# e.g. math functions, date handling, file helpers",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-35",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "lines": [
+      "# binary search finds a target in O(log n) steps",
+      "nums = [3, 1, 2]",
+      "# sorted -> [1, 2, 3]  (use the built-in sort)"
+    ],
+    "answer": [
+      "nums = [3, 1, 2]",
+      "# sorted -> [1, 2, 3]  (use the built-in sort)",
+      "# binary search finds a target in O(log n) steps"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-36",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "lines": [
+      "total = 0",
+      "print(total)",
+      "# DEBUG: print intermediate values",
+      "    total = total + item"
+    ],
+    "answer": [
+      "# DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "print(total)"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-37",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "lines": [
+      "# experiment: modify a value above and predict the new output",
+      "# search for: function name + your language",
+      "# Docs pattern: Quick Start -> Guides -> API Reference"
+    ],
+    "answer": [
+      "# Docs pattern: Quick Start -> Guides -> API Reference",
+      "# search for: function name + your language",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-38",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "lines": [
+      "    print(\"Something went wrong\")",
+      "# experiment: modify a value above and predict the new output",
+      "}",
+      "} catch (error) {",
+      "try {",
+      "    risky_operation()"
+    ],
+    "answer": [
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    print(\"Something went wrong\")",
+      "}",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-39",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "lines": [
+      "print(user[\"name\"])  # look up by key",
+      "# experiment: modify a value above and predict the new output",
+      "user = { \"name\": \"Alice\", \"age\": 30 }"
+    ],
+    "answer": [
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "print(user[\"name\"])  # look up by key",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-40",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "lines": [
+      "# 2. what actually happened",
+      "# 1. what I expected",
+      "# Good question template:",
+      "# experiment: modify a value above and predict the new output",
+      "# 3. smallest code that reproduces it"
+    ],
+    "answer": [
+      "# Good question template:",
+      "# 1. what I expected",
+      "# 2. what actually happened",
+      "# 3. smallest code that reproduces it",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-41",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "lines": [
+      "# experiment: modify a value above and predict the new output",
+      "}",
+      "# call it: greet(\"Sam\")",
+      "    return \"Hello, \" + name",
+      "def greet(name) {"
+    ],
+    "answer": [
+      "def greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "# call it: greet(\"Sam\")",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-42",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "lines": [
+      "    print(i)",
+      "# prints 0 1 2 3 4",
+      "# experiment: modify a value above and predict the new output",
+      "for i in range(5) {",
+      "}"
+    ],
+    "answer": [
+      "for i in range(5) {",
+      "    print(i)",
+      "}",
+      "# prints 0 1 2 3 4",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-43",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "lines": [
+      "    total = total + item",
+      "print(total)",
+      "total = 0",
+      "# experiment: modify a value above and predict the new output",
+      "# DEBUG: print intermediate values"
+    ],
+    "answer": [
+      "# DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "print(total)",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-44",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "lines": [
+      "# git commit -m \"describe why\"",
+      "# git basics",
+      "# git push     - share to remote",
+      "# git init      - start tracking",
+      "# git add .     - stage changes",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "# git basics",
+      "# git init      - start tracking",
+      "# git add .     - stage changes",
+      "# git commit -m \"describe why\"",
+      "# git push     - share to remote",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-45",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "lines": [
+      "# length/count, round/floor/ceil, min/max, sort, join/split",
+      "# Common built-ins you will meet:",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "# Common built-ins you will meet:",
+      "# length/count, round/floor/ceil, min/max, sort, join/split",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-46",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "lines": [
+      "# Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "# experiment: modify a value above and predict the new output",
+      "# Bad:  x = calc(a,b)",
+      "userCount = 0"
+    ],
+    "answer": [
+      "# Bad:  x = calc(a,b)",
+      "# Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-47",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "lines": [
+      "    for col in range(3) {",
+      "        print(\"*\")",
+      "}",
+      "    }",
+      "for row in range(3) {",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "        print(\"*\")",
+      "    }",
+      "}",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-48",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "        print(\"*\")",
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "    }"
+    ],
+    "answer": [
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "        print(\"*\")",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-49",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "lines": [
+      "    print(\"Welcome in\")",
+      "if age >= 18 AND hasTicket {",
+      "}"
+    ],
+    "answer": [
+      "if age >= 18 AND hasTicket {",
+      "    print(\"Welcome in\")",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-50",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "lines": [
+      "# Common types: \"Alice\" is a string, 42 is a number, True is a boolean",
+      "name = \"Alice\"",
+      "age = 30"
+    ],
+    "answer": [
+      "name = \"Alice\"",
+      "age = 30",
+      "# Common types: \"Alice\" is a string, 42 is a number, True is a boolean"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-51",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "lines": [
+      "# experiment: modify a value above and predict the new output",
+      "# prints 0 1 2 3 4",
+      "for i in range(10) {",
+      "    print(i)",
+      "    if i == 5 { break }",
+      "}"
+    ],
+    "answer": [
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    print(i)",
+      "}",
+      "# prints 0 1 2 3 4",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-52",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "lines": [
+      "print(\"Alice\")",
+      "# The line above sends text to the screen",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "print(\"Alice\")",
+      "# The line above sends text to the screen",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-53",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "lines": [
+      "def square(n) {",
+      "# experiment: modify a value above and predict the new output",
+      "result = square(5)",
+      "    return n * n",
+      "# result is now 25",
+      "}"
+    ],
+    "answer": [
+      "def square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "# result is now 25",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-54",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "lines": [
+      "name = \"Alice\"",
+      "# Variables hold reusable values",
+      "age = 30"
+    ],
+    "answer": [
+      "name = \"Alice\"",
+      "age = 30",
+      "# Variables hold reusable values"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "python-puzzle-55",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "lines": [
+      "x{assign}5 + 3 * 2",
+      "# experiment: modify a value above and predict the new output",
+      "# Multiplication happens first: result is 11"
+    ],
+    "answer": [
+      "x{assign}5 + 3 * 2",
+      "# Multiplication happens first: result is 11",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  }
+]

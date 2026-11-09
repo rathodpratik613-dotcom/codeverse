@@ -1,0 +1,368 @@
+[
+  {
+    "id": "java-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      },
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "It halves the remaining items each step",
+      "true"
+    ]
+  },
+  {
+    "id": "java-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      },
+      {
+        "left": "What makes a while loop safe?",
+        "right": "Its condition eventually becomes false"
+      },
+      {
+        "left": "Why is binary search faster than linear search?",
+        "right": "It halves the remaining items each step"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "The official language documentation",
+      "1 (the remainder)",
+      "//"
+    ]
+  },
+  {
+    "id": "java-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      },
+      {
+        "left": "What is 10 % 3 in most languages?",
+        "right": "1 (the remainder)"
+      }
+    ],
+    "distractors": [
+      "Nothing — the set keeps only one copy",
+      "Makes functions/code from another module available",
+      "Reproduce it reliably and note the exact steps"
+    ]
+  },
+  {
+    "id": "java-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Where should you look FIRST for accurate syntax questions?",
+        "right": "The official language documentation"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "It closes the file automatically, even on errors"
+    ]
+  },
+  {
+    "id": "java-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "A ready-made function provided by the language",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "java-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "In boolean logic, A AND B is true when...",
+        "right": "both A and B are true"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\"",
+      "Nothing — the set keeps only one copy",
+      "Makes functions/code from another module available"
+    ]
+  },
+  {
+    "id": "java-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is typically a boolean value?",
+        "right": "true"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "What does concatenation mean for strings?",
+        "right": "Joining them end to end into one string"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "java-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "20 times",
+      "Parameters are placeholders; arguments are the real values passed"
+    ]
+  },
+  {
+    "id": "java-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does \"continue\" do inside a loop?",
+        "right": "Skips to the next iteration"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "isValidEmail"
+    ]
+  },
+  {
+    "id": "java-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      },
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Handle failures without crashing the whole program",
+      "A saved snapshot of your code at a point in time",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "java-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "A variable declared inside a function is...",
+        "right": "local — visible only within that function"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "isValidEmail",
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "java-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      },
+      {
+        "left": "What should you do FIRST when you find a bug?",
+        "right": "Reproduce it reliably and note the exact steps"
+      }
+    ],
+    "distractors": [
+      "both A and B are true"
+    ]
+  },
+  {
+    "id": "java-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Java?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "both A and B are true"
+    ]
+  },
+  {
+    "id": "java-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Java, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "//",
+      "//",
+      "//"
+    ]
+  }
+]

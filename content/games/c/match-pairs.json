@@ -1,0 +1,358 @@
+[
+  {
+    "id": "c-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Handle failures without crashing the whole program"
+    ]
+  },
+  {
+    "id": "c-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Sends a value back and ends the function"
+    ]
+  },
+  {
+    "id": "c-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "A normal input with a known expected output",
+      "Sends text or values to the screen or console"
+    ]
+  },
+  {
+    "id": "c-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "c-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What does \"return\" do?",
+        "right": "Sends a value back and ends the function"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "c-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is a commit?",
+        "right": "A saved snapshot of your code at a point in time"
+      },
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Reproduce it reliably and note the exact steps",
+      "//",
+      "That your code runs and produces output"
+    ]
+  },
+  {
+    "id": "c-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "A ready-made function provided by the language",
+      "That your code runs and produces output"
+    ]
+  },
+  {
+    "id": "c-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Sends a value back and ends the function"
+    ]
+  },
+  {
+    "id": "c-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What makes a while loop safe?",
+        "right": "Its condition eventually becomes false"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Reproduce it reliably and note the exact steps",
+      "Depends on the code — trace it line by line",
+      "Sends a value back and ends the function"
+    ]
+  },
+  {
+    "id": "c-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "local — visible only within that function"
+    ]
+  },
+  {
+    "id": "c-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does \"continue\" do inside a loop?",
+        "right": "Skips to the next iteration"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "A saved snapshot of your code at a point in time"
+    ]
+  },
+  {
+    "id": "c-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "The official language documentation",
+      "A blueprint for creating objects"
+    ]
+  },
+  {
+    "id": "c-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "In C, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "It closes the file automatically, even on errors"
+    ]
+  },
+  {
+    "id": "c-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What problem does async programming solve?",
+        "right": "Long-running tasks without freezing the program"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      },
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "0",
+      "Depends on the code — trace it line by line"
+    ]
+  }
+]

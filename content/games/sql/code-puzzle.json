@@ -1,0 +1,990 @@
+[
+  {
+    "id": "sql-puzzle-01",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "lines": [
+      ");",
+      "    email VARCHAR(100) UNIQUE,",
+      "    created_at DATE DEFAULT CURRENT_DATE",
+      "CREATE TABLE users (",
+      "    name VARCHAR(50) NOT NULL,",
+      "    id INT PRIMARY KEY,"
+    ],
+    "answer": [
+      "CREATE TABLE users (",
+      "    id INT PRIMARY KEY,",
+      "    name VARCHAR(50) NOT NULL,",
+      "    email VARCHAR(100) UNIQUE,",
+      "    created_at DATE DEFAULT CURRENT_DATE",
+      ");"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-02",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "lines": [
+      "FROM employees;",
+      "SELECT name, salary,",
+      "    RANK() OVER (ORDER BY salary DESC) AS rank",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "SELECT name, salary,",
+      "    RANK() OVER (ORDER BY salary DESC) AS rank",
+      "FROM employees;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-03",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "lines": [
+      "-- [ ] paginated (LIMIT/keyset)",
+      "-- review checklist",
+      "-- [ ] parameterized, no string concat",
+      "-- experiment: modify a value above and predict the new output",
+      "-- [ ] NULL + duplicate edge cases tested",
+      "-- [ ] EXPLAIN shows index usage"
+    ],
+    "answer": [
+      "-- review checklist",
+      "-- [ ] EXPLAIN shows index usage",
+      "-- [ ] parameterized, no string concat",
+      "-- [ ] paginated (LIMIT/keyset)",
+      "-- [ ] NULL + duplicate edge cases tested",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-04",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "lines": [
+      "-- applied in order, tracked in a schema_migrations table",
+      "-- migrations/0001_create_users.sql",
+      "-- migrations/0002_add_email_index.sql"
+    ],
+    "answer": [
+      "-- migrations/0001_create_users.sql",
+      "-- migrations/0002_add_email_index.sql",
+      "-- applied in order, tracked in a schema_migrations table"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-05",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "lines": [
+      "-- migrations/0002_add_email_index.sql",
+      "-- migrations/0001_create_users.sql",
+      "-- applied in order, tracked in a schema_migrations table",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "-- migrations/0001_create_users.sql",
+      "-- migrations/0002_add_email_index.sql",
+      "-- applied in order, tracked in a schema_migrations table",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-06",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "lines": [
+      "WHERE age > (SELECT AVG(age) FROM users);",
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT name FROM users"
+    ],
+    "answer": [
+      "SELECT name FROM users",
+      "WHERE age > (SELECT AVG(age) FROM users);",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-07",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "lines": [
+      ");",
+      "SELECT name FROM users",
+      "    SELECT user_id FROM orders WHERE total > 100",
+      "WHERE id IN ("
+    ],
+    "answer": [
+      "SELECT name FROM users",
+      "WHERE id IN (",
+      "    SELECT user_id FROM orders WHERE total > 100",
+      ");"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-08",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "lines": [
+      "SELECT id, name FROM orders",
+      "EXPLAIN ANALYZE",
+      "WHERE created_at >= '2024-01-01'",
+      "LIMIT 20;",
+      "ORDER BY created_at"
+    ],
+    "answer": [
+      "EXPLAIN ANALYZE",
+      "SELECT id, name FROM orders",
+      "WHERE created_at >= '2024-01-01'",
+      "ORDER BY created_at",
+      "LIMIT 20;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-09",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "lines": [
+      "FROM users;",
+      "SELECT UPPER(name), SUBSTRING(email, 1, 3) AS prefix",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "SELECT UPPER(name), SUBSTRING(email, 1, 3) AS prefix",
+      "FROM users;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-10",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "lines": [
+      "-- review checklist",
+      "-- [ ] EXPLAIN shows index usage",
+      "-- [ ] parameterized, no string concat",
+      "-- [ ] NULL + duplicate edge cases tested",
+      "-- [ ] paginated (LIMIT/keyset)"
+    ],
+    "answer": [
+      "-- review checklist",
+      "-- [ ] EXPLAIN shows index usage",
+      "-- [ ] parameterized, no string concat",
+      "-- [ ] paginated (LIMIT/keyset)",
+      "-- [ ] NULL + duplicate edge cases tested"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-11",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "lines": [
+      "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score",
+      "HAVING COUNT(*) > 10;",
+      "FROM players",
+      "-- experiment: modify a value above and predict the new output",
+      "GROUP BY city"
+    ],
+    "answer": [
+      "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score",
+      "FROM players",
+      "GROUP BY city",
+      "HAVING COUNT(*) > 10;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-12",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "lines": [
+      "SELECT name, score FROM players",
+      "LIMIT 10;",
+      "ORDER BY score DESC"
+    ],
+    "answer": [
+      "SELECT name, score FROM players",
+      "ORDER BY score DESC",
+      "LIMIT 10;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-13",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "lines": [
+      "WITH adult_users AS (",
+      "    SELECT * FROM users WHERE age >= 18",
+      "-- experiment: modify a value above and predict the new output",
+      ")",
+      "SELECT count(*) FROM adult_users;"
+    ],
+    "answer": [
+      "WITH adult_users AS (",
+      "    SELECT * FROM users WHERE age >= 18",
+      ")",
+      "SELECT count(*) FROM adult_users;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-14",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "lines": [
+      "FROM events GROUP BY 1;",
+      "SELECT DATE_TRUNC('day', created_at) AS day, COUNT(*)",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "SELECT DATE_TRUNC('day', created_at) AS day, COUNT(*)",
+      "FROM events GROUP BY 1;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-15",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "lines": [
+      "SELECT * FROM orders WHERE user_id = 42;",
+      "-- experiment: modify a value above and predict the new output",
+      "EXPLAIN ANALYZE"
+    ],
+    "answer": [
+      "EXPLAIN ANALYZE",
+      "SELECT * FROM orders WHERE user_id = 42;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-16",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "lines": [
+      "WHERE created_at >= '2024-01-01'",
+      "-- experiment: modify a value above and predict the new output",
+      "LIMIT 20;",
+      "EXPLAIN ANALYZE",
+      "ORDER BY created_at",
+      "SELECT id, name FROM orders"
+    ],
+    "answer": [
+      "EXPLAIN ANALYZE",
+      "SELECT id, name FROM orders",
+      "WHERE created_at >= '2024-01-01'",
+      "ORDER BY created_at",
+      "LIMIT 20;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-17",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "lines": [
+      "dim_products(product_id, name, category)",
+      "-- star schema",
+      "fact_sales(sale_id, date_id, product_id, amount)"
+    ],
+    "answer": [
+      "-- star schema",
+      "fact_sales(sale_id, date_id, product_id, amount)",
+      "dim_products(product_id, name, category)"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-18",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "lines": [
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "-- experiment: modify a value above and predict the new output",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "BEGIN;",
+      "COMMIT;"
+    ],
+    "answer": [
+      "BEGIN;",
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "COMMIT;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-19",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "lines": [
+      "INSERT INTO users (name, email)",
+      "-- experiment: modify a value above and predict the new output",
+      "VALUES ('Amy', 'amy@mail.com'), ('Bob', 'bob@mail.com');"
+    ],
+    "answer": [
+      "INSERT INTO users (name, email)",
+      "VALUES ('Amy', 'amy@mail.com'), ('Bob', 'bob@mail.com');",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-20",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "// MongoDB document — flexible schema",
+      "-- experiment: modify a value above and predict the new output",
+      "{ name: \"Ada\", tags: [\"admin\"], meta: { logins: 42 } }"
+    ],
+    "answer": [
+      "// MongoDB document — flexible schema",
+      "{ name: \"Ada\", tags: [\"admin\"], meta: { logins: 42 } }",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-21",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "lines": [
+      "-- deliverables",
+      "-- schema.sql  seed.sql  queries.sql",
+      "-- bonus: an ER diagram and index justification"
+    ],
+    "answer": [
+      "-- deliverables",
+      "-- schema.sql  seed.sql  queries.sql",
+      "-- bonus: an ER diagram and index justification"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-22",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "lines": [
+      "RETURN c.name",
+      "MATCH (a:Person {name:\"Ada\"})-[:KNOWS]->(b)-[:KNOWS]->(c)",
+      "-- graph: friends of friends",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "-- graph: friends of friends",
+      "MATCH (a:Person {name:\"Ada\"})-[:KNOWS]->(b)-[:KNOWS]->(c)",
+      "RETURN c.name",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-23",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "lines": [
+      "-- experiment: modify a value above and predict the new output",
+      "END",
+      "CREATE PROCEDURE get_user(IN uid INT)",
+      "BEGIN",
+      "    SELECT * FROM users WHERE id = uid;"
+    ],
+    "answer": [
+      "CREATE PROCEDURE get_user(IN uid INT)",
+      "BEGIN",
+      "    SELECT * FROM users WHERE id = uid;",
+      "END",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-24",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "lines": [
+      "DELETE FROM logs WHERE created_at < '2020-01-01';",
+      "-- experiment: modify a value above and predict the new output",
+      "UPDATE users SET age = 31 WHERE name = 'Amy';"
+    ],
+    "answer": [
+      "UPDATE users SET age = 31 WHERE name = 'Amy';",
+      "DELETE FROM logs WHERE created_at < '2020-01-01';",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-25",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "lines": [
+      "SELECT name, age FROM users;",
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT DISTINCT city FROM customers;",
+      "SELECT price AS cost FROM products;"
+    ],
+    "answer": [
+      "SELECT name, age FROM users;",
+      "SELECT DISTINCT city FROM customers;",
+      "SELECT price AS cost FROM products;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-26",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "lines": [
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "COMMIT;",
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "BEGIN;"
+    ],
+    "answer": [
+      "BEGIN;",
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "COMMIT;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-27",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "lines": [
+      "dim_products(product_id, name, category)",
+      "-- experiment: modify a value above and predict the new output",
+      "-- star schema",
+      "fact_sales(sale_id, date_id, product_id, amount)"
+    ],
+    "answer": [
+      "-- star schema",
+      "fact_sales(sale_id, date_id, product_id, amount)",
+      "dim_products(product_id, name, category)",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-28",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "lines": [
+      "-- always parameterize instead",
+      "-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"",
+      "-- never do this:"
+    ],
+    "answer": [
+      "-- never do this:",
+      "-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"",
+      "-- always parameterize instead"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-29",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "lines": [
+      "LIMIT 10;",
+      "ORDER BY score DESC",
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT name, score FROM players"
+    ],
+    "answer": [
+      "SELECT name, score FROM players",
+      "ORDER BY score DESC",
+      "LIMIT 10;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-30",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "lines": [
+      "CREATE TABLE orders (",
+      "    user_id INT NOT NULL,",
+      ");",
+      "    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+      "    id INT PRIMARY KEY,"
+    ],
+    "answer": [
+      "CREATE TABLE orders (",
+      "    id INT PRIMARY KEY,",
+      "    user_id INT NOT NULL,",
+      "    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+      ");"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-31",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "lines": [
+      "INNER JOIN orders o ON o.user_id = u.id;",
+      "FROM users u",
+      "SELECT u.name, o.total"
+    ],
+    "answer": [
+      "SELECT u.name, o.total",
+      "FROM users u",
+      "INNER JOIN orders o ON o.user_id = u.id;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-32",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "lines": [
+      "-- experiment: modify a value above and predict the new output",
+      "comments(id, post_id FK, user_id FK, text)",
+      "posts(id, user_id FK, title, body, created_at)",
+      "-- blog schema sketch",
+      "users(id, name, email)"
+    ],
+    "answer": [
+      "-- blog schema sketch",
+      "users(id, name, email)",
+      "posts(id, user_id FK, title, body, created_at)",
+      "comments(id, post_id FK, user_id FK, text)",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-33",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "lines": [
+      "SELECT id, name FROM users WHERE active = true;",
+      "-- experiment: modify a value above and predict the new output",
+      "CREATE VIEW active_users AS"
+    ],
+    "answer": [
+      "CREATE VIEW active_users AS",
+      "SELECT id, name FROM users WHERE active = true;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-34",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "lines": [
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "BEGIN;",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "COMMIT;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "BEGIN;",
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "COMMIT;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-35",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "lines": [
+      "SELECT name FROM users",
+      "-- experiment: modify a value above and predict the new output",
+      "    SELECT user_id FROM orders WHERE total > 100",
+      ");",
+      "WHERE id IN ("
+    ],
+    "answer": [
+      "SELECT name FROM users",
+      "WHERE id IN (",
+      "    SELECT user_id FROM orders WHERE total > 100",
+      ");",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-36",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "lines": [
+      "$$ LANGUAGE SQL;",
+      "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$",
+      "    SELECT p * 2;"
+    ],
+    "answer": [
+      "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$",
+      "    SELECT p * 2;",
+      "$$ LANGUAGE SQL;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-37",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "lines": [
+      "posts(id, user_id FK, title, body, created_at)",
+      "comments(id, post_id FK, user_id FK, text)",
+      "-- blog schema sketch",
+      "users(id, name, email)"
+    ],
+    "answer": [
+      "-- blog schema sketch",
+      "users(id, name, email)",
+      "posts(id, user_id FK, title, body, created_at)",
+      "comments(id, post_id FK, user_id FK, text)"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-38",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "lines": [
+      "SELECT name, salary,",
+      "    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank",
+      "FROM employees;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "SELECT name, salary,",
+      "    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank",
+      "FROM employees;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-39",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "lines": [
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT u.name, o.total",
+      "INNER JOIN orders o ON o.user_id = u.id;",
+      "FROM users u"
+    ],
+    "answer": [
+      "SELECT u.name, o.total",
+      "FROM users u",
+      "INNER JOIN orders o ON o.user_id = u.id;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-40",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "lines": [
+      "SELECT name, salary,",
+      "FROM employees;",
+      "    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank"
+    ],
+    "answer": [
+      "SELECT name, salary,",
+      "    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank",
+      "FROM employees;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-41",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "lines": [
+      "    id INT PRIMARY KEY,",
+      "    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+      "CREATE TABLE orders (",
+      "    user_id INT NOT NULL,",
+      "-- experiment: modify a value above and predict the new output",
+      ");"
+    ],
+    "answer": [
+      "CREATE TABLE orders (",
+      "    id INT PRIMARY KEY,",
+      "    user_id INT NOT NULL,",
+      "    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE",
+      ");",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-42",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "lines": [
+      "-- speeds up: SELECT * FROM users WHERE email = ?",
+      "CREATE INDEX idx_users_email ON users(email);",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "CREATE INDEX idx_users_email ON users(email);",
+      "-- speeds up: SELECT * FROM users WHERE email = ?",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-43",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "lines": [
+      "-- schema.sql  seed.sql  queries.sql",
+      "-- bonus: an ER diagram and index justification",
+      "-- experiment: modify a value above and predict the new output",
+      "-- deliverables"
+    ],
+    "answer": [
+      "-- deliverables",
+      "-- schema.sql  seed.sql  queries.sql",
+      "-- bonus: an ER diagram and index justification",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-44",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "lines": [
+      "-- GOOD: orders.customer_id -> customers.id",
+      "-- experiment: modify a value above and predict the new output",
+      "-- BAD: order repeats customer info"
+    ],
+    "answer": [
+      "-- BAD: order repeats customer info",
+      "-- GOOD: orders.customer_id -> customers.id",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-45",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "lines": [
+      "-- always parameterize instead",
+      "-- experiment: modify a value above and predict the new output",
+      "-- never do this:",
+      "-- \"SELECT * FROM users WHERE name = '\" + input + \"'\""
+    ],
+    "answer": [
+      "-- never do this:",
+      "-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"",
+      "-- always parameterize instead",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-46",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "lines": [
+      "SELECT name, salary,",
+      "FROM employees;",
+      "    RANK() OVER (ORDER BY salary DESC) AS rank"
+    ],
+    "answer": [
+      "SELECT name, salary,",
+      "    RANK() OVER (ORDER BY salary DESC) AS rank",
+      "FROM employees;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-47",
+    "lesson": "lesson-35",
+    "difficulty": "hard",
+    "lines": [
+      "-- graph: friends of friends",
+      "MATCH (a:Person {name:\"Ada\"})-[:KNOWS]->(b)-[:KNOWS]->(c)",
+      "RETURN c.name"
+    ],
+    "answer": [
+      "-- graph: friends of friends",
+      "MATCH (a:Person {name:\"Ada\"})-[:KNOWS]->(b)-[:KNOWS]->(c)",
+      "RETURN c.name"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-48",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "lines": [
+      "    SELECT p * 2;",
+      "-- experiment: modify a value above and predict the new output",
+      "$$ LANGUAGE SQL;",
+      "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$"
+    ],
+    "answer": [
+      "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$",
+      "    SELECT p * 2;",
+      "$$ LANGUAGE SQL;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-49",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "lines": [
+      "    SELECT * FROM users WHERE id = uid;",
+      "BEGIN",
+      "END",
+      "CREATE PROCEDURE get_user(IN uid INT)"
+    ],
+    "answer": [
+      "CREATE PROCEDURE get_user(IN uid INT)",
+      "BEGIN",
+      "    SELECT * FROM users WHERE id = uid;",
+      "END"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-50",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "lines": [
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "COMMIT;",
+      "BEGIN;",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;"
+    ],
+    "answer": [
+      "BEGIN;",
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "COMMIT;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-51",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "lines": [
+      "SELECT name, age FROM users;",
+      "SELECT price AS cost FROM products;",
+      "SELECT DISTINCT city FROM customers;"
+    ],
+    "answer": [
+      "SELECT name, age FROM users;",
+      "SELECT DISTINCT city FROM customers;",
+      "SELECT price AS cost FROM products;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-52",
+    "lesson": "lesson-24",
+    "difficulty": "hard",
+    "lines": [
+      "SELECT count(*) FROM adult_users;",
+      "WITH adult_users AS (",
+      "    SELECT * FROM users WHERE age >= 18",
+      ")"
+    ],
+    "answer": [
+      "WITH adult_users AS (",
+      "    SELECT * FROM users WHERE age >= 18",
+      ")",
+      "SELECT count(*) FROM adult_users;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-53",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "lines": [
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT COALESCE(nickname, name) AS display_name",
+      "FROM users;"
+    ],
+    "answer": [
+      "SELECT COALESCE(nickname, name) AS display_name",
+      "FROM users;",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-54",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "lines": [
+      "    email VARCHAR(100) UNIQUE,",
+      "    id INT PRIMARY KEY,",
+      "    created_at DATE DEFAULT CURRENT_DATE",
+      "    name VARCHAR(50) NOT NULL,",
+      ");",
+      "-- experiment: modify a value above and predict the new output",
+      "CREATE TABLE users ("
+    ],
+    "answer": [
+      "CREATE TABLE users (",
+      "    id INT PRIMARY KEY,",
+      "    name VARCHAR(50) NOT NULL,",
+      "    email VARCHAR(100) UNIQUE,",
+      "    created_at DATE DEFAULT CURRENT_DATE",
+      ");",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "sql-puzzle-55",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "lines": [
+      "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score",
+      "GROUP BY city",
+      "HAVING COUNT(*) > 10;",
+      "FROM players"
+    ],
+    "answer": [
+      "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score",
+      "FROM players",
+      "GROUP BY city",
+      "HAVING COUNT(*) > 10;"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  }
+]

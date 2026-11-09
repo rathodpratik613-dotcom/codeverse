@@ -1,0 +1,662 @@
+[
+  {
+    "id": "sql-bug-01",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "FROM city, COUNT(*) AS n, AVG(score) AS avg_score\nFROM players\nGROUP BY city\nHAVING COUNT(*) > 10;",
+    "buggyLine": 1,
+    "options": [
+      "-- experiment: modify a value above and predict the new output",
+      "LIMIT 10;",
+      "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score",
+      "FROM city, COUNT(*) AS n, AVG(score) AS avg_score"
+    ],
+    "answer": "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score",
+    "explanation": "Line 1 uses \"FROM\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-02",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "code": "INSERT INTO users (name, email)\nSELECT ('Amy', 'amy@mail.com'), ('Bob', 'bob@mail.com');\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT ('Amy', 'amy@mail.com'), ('Bob', 'bob@mail.com');",
+      "-- experiment: modify a value above and predict the new output",
+      "VALUES ('Amy', 'amy@mail.com'), ('Bob', 'bob@mail.com');"
+    ],
+    "answer": "VALUES ('Amy', 'amy@mail.com'), ('Bob', 'bob@mail.com');",
+    "explanation": "Line 2 uses \"SELECT\" where \"VALUES\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-03",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "SELECT name, score FROM players\nORDER BY score DESC\nSELECT 10;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "LIMIT 10;",
+      "INNER JOIN orders o ON o.user_id = u.id;",
+      "SELECT u.name, o.total",
+      "SELECT 10;"
+    ],
+    "answer": "LIMIT 10;",
+    "explanation": "Line 3 uses \"SELECT\" where \"LIMIT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-04",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "SELECT name, salary,\n    RANK() OVER (ORDER BY salary DESC) AS rank\nSELECT employees;",
+    "buggyLine": 3,
+    "options": [
+      "email VARCHAR(100) UNIQUE,",
+      "CREATE TABLE orders (",
+      "SELECT employees;",
+      "FROM employees;"
+    ],
+    "answer": "FROM employees;",
+    "explanation": "Line 3 uses \"SELECT\" where \"FROM\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-05",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "SELECT DATE_TRUNC('day', created_at) AS day, COUNT(*)\nSELECT events GROUP BY 1;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "FROM events GROUP BY 1;",
+      "-- experiment: modify a value above and predict the new output",
+      "CREATE TABLE orders (",
+      "SELECT events GROUP BY 1;"
+    ],
+    "answer": "FROM events GROUP BY 1;",
+    "explanation": "Line 2 uses \"SELECT\" where \"FROM\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-06",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "SELECT u.name, o.total\nFROM users u\nINNER SELECT orders o ON o.user_id = u.id;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "INNER JOIN orders o ON o.user_id = u.id;",
+      "FROM employees;",
+      "BEGIN;",
+      "INNER SELECT orders o ON o.user_id = u.id;"
+    ],
+    "answer": "INNER JOIN orders o ON o.user_id = u.id;",
+    "explanation": "Line 3 uses \"SELECT\" where \"JOIN\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-07",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "WHERE name, age FROM users;\nSELECT DISTINCT city FROM customers;\nSELECT price AS cost FROM products;",
+    "buggyLine": 1,
+    "options": [
+      "-- star schema",
+      "WHERE name, age FROM users;",
+      "user_id INT NOT NULL,",
+      "SELECT name, age FROM users;"
+    ],
+    "answer": "SELECT name, age FROM users;",
+    "explanation": "Line 1 uses \"WHERE\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-08",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "EXPLAIN ANALYZE\nSELECT id, name FROM orders\nWHERE created_at >= '2024-01-01'\nSELECT BY created_at\nLIMIT 20;",
+    "buggyLine": 4,
+    "options": [
+      "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank",
+      "SELECT BY created_at",
+      "ORDER BY created_at",
+      "WITH adult_users AS ("
+    ],
+    "answer": "ORDER BY created_at",
+    "explanation": "Line 4 uses \"SELECT\" where \"ORDER\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-09",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "UPDATE users SET age = 31 WHERE name = 'Amy';\nDELETE SELECT logs WHERE created_at < '2020-01-01';\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "DELETE FROM logs WHERE created_at < '2020-01-01';",
+      "DELETE SELECT logs WHERE created_at < '2020-01-01';",
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT name, salary,"
+    ],
+    "answer": "DELETE FROM logs WHERE created_at < '2020-01-01';",
+    "explanation": "Line 2 uses \"SELECT\" where \"FROM\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-10",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "SELECT name FROM users\nWHERE age > (INSERT AVG(age) FROM users);\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "LIMIT 10;",
+      "WHERE age > (SELECT AVG(age) FROM users);",
+      "WHERE age > (INSERT AVG(age) FROM users);",
+      "CREATE TABLE orders ("
+    ],
+    "answer": "WHERE age > (SELECT AVG(age) FROM users);",
+    "explanation": "Line 2 uses \"INSERT\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-11",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "code": "SELECT ANALYZE\nSELECT * FROM orders WHERE user_id = 42;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "EXPLAIN ANALYZE",
+      "INSERT INTO users (name, email)",
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT ANALYZE"
+    ],
+    "answer": "EXPLAIN ANALYZE",
+    "explanation": "Line 1 uses \"SELECT\" where \"EXPLAIN\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-12",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "code": "WITH adult_users AS (\n    INSERT * FROM users WHERE age >= 18\n)\nSELECT count(*) FROM adult_users;",
+    "buggyLine": 2,
+    "options": [
+      "INSERT * FROM users WHERE age >= 18",
+      "GROUP BY city",
+      "SELECT * FROM users WHERE age >= 18",
+      "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score"
+    ],
+    "answer": "SELECT * FROM users WHERE age >= 18",
+    "explanation": "Line 2 uses \"INSERT\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-13",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": "-- review checklist\n-- [ ] EXPLAIN shows index usage\n-- [ ] parameterized, no string concat\n-- [ ] paginated (SELECT/keyset)\n-- [ ] NULL + duplicate edge cases tested",
+    "buggyLine": 4,
+    "options": [
+      "-- [ ] paginated (LIMIT/keyset)",
+      "users(id, name, email)",
+      "-- [ ] paginated (SELECT/keyset)",
+      "SELECT u.name, o.total"
+    ],
+    "answer": "-- [ ] paginated (LIMIT/keyset)",
+    "explanation": "Line 4 uses \"SELECT\" where \"LIMIT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-14",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": "SELECT PROCEDURE get_user(IN uid INT)\nBEGIN\n    SELECT * FROM users WHERE id = uid;\nEND\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "CREATE PROCEDURE get_user(IN uid INT)",
+      "WHERE id IN (",
+      "user_id INT NOT NULL,",
+      "SELECT PROCEDURE get_user(IN uid INT)"
+    ],
+    "answer": "CREATE PROCEDURE get_user(IN uid INT)",
+    "explanation": "Line 1 uses \"SELECT\" where \"CREATE\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-15",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "WHERE * FROM users\nWHERE age >= 18 AND city = 'Paris';\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "WHERE * FROM users",
+      "SELECT * FROM users",
+      "-- experiment: modify a value above and predict the new output",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": "SELECT * FROM users",
+    "explanation": "Line 1 uses \"WHERE\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-16",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": "-- review checklist\n-- [ ] SELECT shows index usage\n-- [ ] parameterized, no string concat\n-- [ ] paginated (LIMIT/keyset)\n-- [ ] NULL + duplicate edge cases tested\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "-- deliverables",
+      "-- [ ] SELECT shows index usage",
+      "-- [ ] EXPLAIN shows index usage",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": "-- [ ] EXPLAIN shows index usage",
+    "explanation": "Line 2 uses \"SELECT\" where \"EXPLAIN\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-17",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "code": "CREATE TABLE users (\n    id INT SELECT KEY,\n    name VARCHAR(50) NOT NULL,\n    email VARCHAR(100) UNIQUE,\n    created_at DATE DEFAULT CURRENT_DATE\n);\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "SELECT name, score FROM players",
+      "id INT PRIMARY KEY,",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "id INT SELECT KEY,"
+    ],
+    "answer": "id INT PRIMARY KEY,",
+    "explanation": "Line 2 uses \"SELECT\" where \"PRIMARY\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-18",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "code": "SELECT INDEX idx_users_email ON users(email);\n-- speeds up: SELECT * FROM users WHERE email = ?\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "SELECT INDEX idx_users_email ON users(email);",
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT u.name, o.total",
+      "CREATE INDEX idx_users_email ON users(email);"
+    ],
+    "answer": "CREATE INDEX idx_users_email ON users(email);",
+    "explanation": "Line 1 uses \"SELECT\" where \"CREATE\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-19",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$\n    FROM p * 2;\n$$ LANGUAGE SQL;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "FROM p * 2;",
+      "-- GOOD: orders.customer_id -> customers.id",
+      "UPDATE users SET age = 31 WHERE name = 'Amy';",
+      "SELECT p * 2;"
+    ],
+    "answer": "SELECT p * 2;",
+    "explanation": "Line 2 uses \"FROM\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-20",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": "CREATE PROCEDURE get_user(IN uid INT)\nBEGIN\n    SELECT * FROM users WHERE id = uid;\nSELECT",
+    "buggyLine": 4,
+    "options": [
+      "END",
+      "SELECT",
+      "SELECT name, salary,",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": "END",
+    "explanation": "Line 4 uses \"SELECT\" where \"END\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-21",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "WHERE name FROM users\nWHERE id IN (\n    SELECT user_id FROM orders WHERE total > 100\n);",
+    "buggyLine": 1,
+    "options": [
+      "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score",
+      "SELECT name FROM users",
+      "WHERE name FROM users",
+      "-- bonus: an ER diagram and index justification"
+    ],
+    "answer": "SELECT name FROM users",
+    "explanation": "Line 1 uses \"WHERE\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-22",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "SELECT name, salary,\n    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank\nSELECT employees;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "FROM employees;",
+      "dim_products(product_id, name, category)",
+      "SELECT employees;",
+      "-- never do this:"
+    ],
+    "answer": "FROM employees;",
+    "explanation": "Line 3 uses \"SELECT\" where \"FROM\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-23",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "WHERE name, score FROM players\nORDER BY score DESC\nLIMIT 10;",
+    "buggyLine": 1,
+    "options": [
+      "WHERE name, score FROM players",
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT name, score FROM players",
+      "$$ LANGUAGE SQL;"
+    ],
+    "answer": "SELECT name, score FROM players",
+    "explanation": "Line 1 uses \"WHERE\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-24",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "BEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 SELECT id = 2;\nCOMMIT;",
+    "buggyLine": 3,
+    "options": [
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "RANK() OVER (ORDER BY salary DESC) AS rank",
+      "-- blog schema sketch",
+      "UPDATE accounts SET balance = balance + 100 SELECT id = 2;"
+    ],
+    "answer": "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+    "explanation": "Line 3 uses \"SELECT\" where \"WHERE\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-25",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "WHERE name, age FROM users;\nSELECT DISTINCT city FROM customers;\nSELECT price AS cost FROM products;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "-- speeds up: SELECT * FROM users WHERE email = ?",
+      "RANK() OVER (ORDER BY salary DESC) AS rank",
+      "SELECT name, age FROM users;",
+      "WHERE name, age FROM users;"
+    ],
+    "answer": "SELECT name, age FROM users;",
+    "explanation": "Line 1 uses \"WHERE\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-26",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "SELECT;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "SELECT;",
+      "BEGIN;",
+      "SELECT DISTINCT city FROM customers;",
+      "INNER JOIN orders o ON o.user_id = u.id;"
+    ],
+    "answer": "BEGIN;",
+    "explanation": "Line 1 uses \"SELECT\" where \"BEGIN\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-27",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": "EXPLAIN ANALYZE\nWHERE id, name FROM orders\nWHERE created_at >= '2024-01-01'\nORDER BY created_at\nLIMIT 20;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "SELECT u.name, o.total",
+      "WHERE id, name FROM orders",
+      "SELECT id, name FROM orders",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": "SELECT id, name FROM orders",
+    "explanation": "Line 2 uses \"WHERE\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-28",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "SELECT;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;",
+    "buggyLine": 1,
+    "options": [
+      "BEGIN;",
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "SELECT;",
+      "-- review checklist"
+    ],
+    "answer": "BEGIN;",
+    "explanation": "Line 1 uses \"SELECT\" where \"BEGIN\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-29",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "code": "SELECT TABLE orders (\n    id INT PRIMARY KEY,\n    user_id INT NOT NULL,\n    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\n);\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "SELECT TABLE orders (",
+      "LIMIT 10;",
+      "CREATE TABLE orders (",
+      "-- experiment: modify a value above and predict the new output"
+    ],
+    "answer": "CREATE TABLE orders (",
+    "explanation": "Line 1 uses \"SELECT\" where \"CREATE\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-30",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "SELECT name FROM users\nWHERE id IN (\n    INSERT user_id FROM orders WHERE total > 100\n);\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "-- migrations/0002_add_email_index.sql",
+      "SELECT user_id FROM orders WHERE total > 100",
+      "INSERT user_id FROM orders WHERE total > 100",
+      "SELECT p * 2;"
+    ],
+    "answer": "SELECT user_id FROM orders WHERE total > 100",
+    "explanation": "Line 3 uses \"INSERT\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-31",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "BEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 SELECT id = 2;\nCOMMIT;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "RETURN c.name",
+      "UPDATE accounts SET balance = balance + 100 SELECT id = 2;",
+      "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+      "posts(id, user_id FK, title, body, created_at)"
+    ],
+    "answer": "UPDATE accounts SET balance = balance + 100 WHERE id = 2;",
+    "explanation": "Line 3 uses \"SELECT\" where \"WHERE\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-32",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "CREATE VIEW active_users AS\nINSERT id, name FROM users WHERE active = true;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT id, name FROM users WHERE active = true;",
+      "INSERT id, name FROM users WHERE active = true;",
+      "-- [ ] NULL + duplicate edge cases tested"
+    ],
+    "answer": "SELECT id, name FROM users WHERE active = true;",
+    "explanation": "Line 2 uses \"INSERT\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-33",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "SELECT u.name, o.total\nSELECT users u\nINNER JOIN orders o ON o.user_id = u.id;",
+    "buggyLine": 2,
+    "options": [
+      "CREATE TABLE users (",
+      "SELECT users u",
+      "FROM users u",
+      "CREATE VIEW active_users AS"
+    ],
+    "answer": "FROM users u",
+    "explanation": "Line 2 uses \"SELECT\" where \"FROM\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-34",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "code": "WITH adult_users AS (\n    INSERT * FROM users WHERE age >= 18\n)\nSELECT count(*) FROM adult_users;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "-- [ ] paginated (LIMIT/keyset)",
+      "INSERT * FROM users WHERE age >= 18",
+      "SELECT name, age FROM users;",
+      "SELECT * FROM users WHERE age >= 18"
+    ],
+    "answer": "SELECT * FROM users WHERE age >= 18",
+    "explanation": "Line 2 uses \"INSERT\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-35",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "-- never do this:\n-- \"INSERT * FROM users WHERE name = '\" + input + \"'\"\n-- always parameterize instead\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"",
+      "fact_sales(sale_id, date_id, product_id, amount)",
+      "-- [ ] parameterized, no string concat",
+      "-- \"INSERT * FROM users WHERE name = '\" + input + \"'\""
+    ],
+    "answer": "-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"",
+    "explanation": "Line 2 uses \"INSERT\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-36",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": "SELECT name, salary,\n    RANK() OVER (ORDER BY salary DESC) AS rank\nSELECT employees;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "name VARCHAR(50) NOT NULL,",
+      "SELECT name, score FROM players",
+      "SELECT employees;",
+      "FROM employees;"
+    ],
+    "answer": "FROM employees;",
+    "explanation": "Line 3 uses \"SELECT\" where \"FROM\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-37",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "SELECT name, salary,\n    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank\nSELECT employees;",
+    "buggyLine": 3,
+    "options": [
+      "FROM employees;",
+      "SELECT employees;",
+      "UPDATE accounts SET balance = balance - 100 WHERE id = 1;",
+      "-- schema.sql  seed.sql  queries.sql"
+    ],
+    "answer": "FROM employees;",
+    "explanation": "Line 3 uses \"SELECT\" where \"FROM\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-38",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "CREATE TABLE users (\n    id INT PRIMARY KEY,\n    name VARCHAR(50) SELECT NULL,\n    email VARCHAR(100) UNIQUE,\n    created_at DATE DEFAULT CURRENT_DATE\n);",
+    "buggyLine": 3,
+    "options": [
+      "name VARCHAR(50) SELECT NULL,",
+      "users(id, name, email)",
+      "SELECT id, name FROM users WHERE active = true;",
+      "name VARCHAR(50) NOT NULL,"
+    ],
+    "answer": "name VARCHAR(50) NOT NULL,",
+    "explanation": "Line 3 uses \"SELECT\" where \"NOT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-39",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$\n    FROM p * 2;\n$$ LANGUAGE SQL;",
+    "buggyLine": 2,
+    "options": [
+      "SELECT p * 2;",
+      "COMMIT;",
+      "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank",
+      "FROM p * 2;"
+    ],
+    "answer": "SELECT p * 2;",
+    "explanation": "Line 2 uses \"FROM\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-40",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "code": "SELECT COALESCE(nickname, name) AS display_name\nSELECT users;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "FROM users;",
+      "SELECT id, name FROM users WHERE active = true;",
+      "created_at DATE DEFAULT CURRENT_DATE",
+      "SELECT users;"
+    ],
+    "answer": "FROM users;",
+    "explanation": "Line 2 uses \"SELECT\" where \"FROM\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-41",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score\nFROM players\nGROUP SELECT city\nHAVING COUNT(*) > 10;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "ORDER BY created_at",
+      "posts(id, user_id FK, title, body, created_at)",
+      "GROUP SELECT city",
+      "GROUP BY city"
+    ],
+    "answer": "GROUP BY city",
+    "explanation": "Line 3 uses \"SELECT\" where \"BY\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-42",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "-- never do this:\n-- \"INSERT * FROM users WHERE name = '\" + input + \"'\"\n-- always parameterize instead",
+    "buggyLine": 2,
+    "options": [
+      "UPDATE users SET age = 31 WHERE name = 'Amy';",
+      "-- \"INSERT * FROM users WHERE name = '\" + input + \"'\"",
+      "-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"",
+      "BEGIN;"
+    ],
+    "answer": "-- \"SELECT * FROM users WHERE name = '\" + input + \"'\"",
+    "explanation": "Line 2 uses \"INSERT\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-43",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "code": "FROM UPPER(name), SUBSTRING(email, 1, 3) AS prefix\nFROM users;\n-- experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "-- always parameterize instead",
+      "FROM UPPER(name), SUBSTRING(email, 1, 3) AS prefix",
+      "-- experiment: modify a value above and predict the new output",
+      "SELECT UPPER(name), SUBSTRING(email, 1, 3) AS prefix"
+    ],
+    "answer": "SELECT UPPER(name), SUBSTRING(email, 1, 3) AS prefix",
+    "explanation": "Line 1 uses \"FROM\" where \"SELECT\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-44",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "code": "CREATE TABLE orders (\n    id INT SELECT KEY,\n    user_id INT NOT NULL,\n    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\n);",
+    "buggyLine": 2,
+    "options": [
+      "id INT PRIMARY KEY,",
+      "-- experiment: modify a value above and predict the new output",
+      "-- experiment: modify a value above and predict the new output",
+      "id INT SELECT KEY,"
+    ],
+    "answer": "id INT PRIMARY KEY,",
+    "explanation": "Line 2 uses \"SELECT\" where \"PRIMARY\" belongs. Check keyword spelling and context."
+  }
+]

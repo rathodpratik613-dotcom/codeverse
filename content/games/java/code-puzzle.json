@@ -1,0 +1,1428 @@
+[
+  {
+    "id": "java-puzzle-01",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "// result is now 25",
+      "}",
+      "    }",
+      "result = square(5)",
+      "    return n * n",
+      "public class Main {",
+      "}",
+      "void square(n) {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "void square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "// result is now 25",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-02",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "    }",
+      "public class Main {",
+      "    if i == 5 { break }",
+      "for i in range(10) {",
+      "}",
+      "// prints 0 1 2 3 4",
+      "}",
+      "    System.out.println(i);"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    System.out.println(i);",
+      "}",
+      "// prints 0 1 2 3 4",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-03",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "void add(x) {",
+      "    total = total + x  // needs special handling in strict languages",
+      "total = 0  // global",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    public static void main(String[] args) {",
+      "    }",
+      "public class Main {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "total = 0  // global",
+      "void add(x) {",
+      "    total = total + x  // needs special handling in strict languages",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-04",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "lines": [
+      "// git basics",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "// git init      - start tracking",
+      "    }",
+      "public class Main {",
+      "// git commit -m \"describe why\"",
+      "// git add .     - stage changes",
+      "// git push     - share to remote",
+      "    public static void main(String[] args) {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\"",
+      "// git push     - share to remote",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-05",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "// text + \" World\" joins strings",
+      "}",
+      "text = \"Hello\"",
+      "public class Main {",
+      "// text.upper() / text.length style helpers exist per language",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "text = \"Hello\"",
+      "// text + \" World\" joins strings",
+      "// text.upper() / text.length style helpers exist per language",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-06",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "// search for: function name + your language",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "    public static void main(String[] args) {",
+      "public class Main {",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "// search for: function name + your language",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-07",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "public class Main {",
+      "// tags now holds only 2 unique values",
+      "    public static void main(String[] args) {",
+      "    }",
+      "tags = {\"python\", \"code\", \"python\"}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// tags now holds only 2 unique values",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-08",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "lines": [
+      "public class Main {",
+      "    }",
+      "    public static void main(String[] args) {",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "    System.out.println(i);",
+      "}",
+      "for i in range(5) {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "for i in range(5) {",
+      "    System.out.println(i);",
+      "}",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-09",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "result = double(5)",
+      "    }",
+      "// expected result: 10",
+      "    public static void main(String[] args) {",
+      "public class Main {",
+      "}",
+      "// Test checklist: normal input, empty input, huge input, bad input"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "// expected result: 10",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-10",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "lines": [
+      "String name = \"Alice\";",
+      "int age = 30;",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "public class Main {",
+      "    }",
+      "    public static void main(String[] args) {",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "String name = \"Alice\";",
+      "int age = 30;",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-11",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "lines": [
+      "    }",
+      "    public static void main(String[] args) {",
+      "public class Main {",
+      "// DEBUG: print intermediate values",
+      "total = 0",
+      "}",
+      "System.out.println(total);",
+      "    total = total + item"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "System.out.println(total);",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-12",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "lines": [
+      "    }",
+      "if age >= 18 AND hasTicket {",
+      "// experiment: modify a value above and predict the new output",
+      "    public static void main(String[] args) {",
+      "}",
+      "}",
+      "public class Main {",
+      "    System.out.println(\"Welcome in\");"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "if age >= 18 AND hasTicket {",
+      "    System.out.println(\"Welcome in\");",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-13",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "lines": [
+      "// e.g. math functions, date handling, file helpers",
+      "    }",
+      "}",
+      "// import the tools you need",
+      "    public static void main(String[] args) {",
+      "public class Main {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// import the tools you need",
+      "// e.g. math functions, date handling, file helpers",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-14",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "}",
+      "public class Main {",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "    }",
+      "// Common built-ins you will meet:"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Common built-ins you will meet:",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-15",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "lines": [
+      "    }",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "    public static void main(String[] args) {",
+      "}",
+      "public class Main {",
+      "userCount = 0",
+      "// Bad:  x = calc(a,b)"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-16",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "    public static void main(String[] args) {",
+      "}",
+      "// The line above sends text to the screen",
+      "public class Main {",
+      "System.out.println(\"Alice\");"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "System.out.println(\"Alice\");",
+      "// The line above sends text to the screen",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-17",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "lines": [
+      "void square(n) {",
+      "public class Main {",
+      "// result is now 25",
+      "result = square(5)",
+      "}",
+      "    }",
+      "    return n * n",
+      "}",
+      "    public static void main(String[] args) {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "void square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "// result is now 25",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-18",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "result = double(5)",
+      "// expected result: 10",
+      "    }",
+      "    public static void main(String[] args) {",
+      "// experiment: modify a value above and predict the new output",
+      "public class Main {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "// expected result: 10",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-19",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "    return n * factorial(n - 1)",
+      "}",
+      "public class Main {",
+      "void factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    }",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "void factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    return n * factorial(n - 1)",
+      "}",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-20",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "lines": [
+      "public class Main {",
+      "    }",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps",
+      "// experiment: modify a value above and predict the new output",
+      "nums = [3, 1, 2]",
+      "    public static void main(String[] args) {",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "nums = [3, 1, 2]",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-21",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "lines": [
+      "    }",
+      "    public static void main(String[] args) {",
+      "} catch (error) {",
+      "public class Main {",
+      "}",
+      "    risky_operation()",
+      "    System.out.println(\"Something went wrong\");",
+      "}",
+      "try {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    System.out.println(\"Something went wrong\");",
+      "}",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-22",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "lines": [
+      "user = { name: \"Alice\", age: 30 }",
+      "    public static void main(String[] args) {",
+      "// an object groups related fields under one name",
+      "public class Main {",
+      "    }",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "user = { name: \"Alice\", age: 30 }",
+      "// an object groups related fields under one name",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-23",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "lines": [
+      "    System.out.println(i);",
+      "    public static void main(String[] args) {",
+      "// prints 0 1 2 3 4",
+      "for i in range(5) {",
+      "    }",
+      "}",
+      "public class Main {",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "for i in range(5) {",
+      "    System.out.println(i);",
+      "}",
+      "// prints 0 1 2 3 4",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-24",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "lines": [
+      "public class Main {",
+      "// an object groups related fields under one name",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "user = { name: \"Alice\", age: 30 }",
+      "}",
+      "    public static void main(String[] args) {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "user = { name: \"Alice\", age: 30 }",
+      "// an object groups related fields under one name",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-25",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "lines": [
+      "    }",
+      "}",
+      "}",
+      "for i in range(10) {",
+      "public class Main {",
+      "    System.out.println(i);",
+      "// experiment: modify a value above and predict the new output",
+      "// prints 0 1 2 3 4",
+      "    if i == 5 { break }",
+      "    public static void main(String[] args) {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    System.out.println(i);",
+      "}",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-26",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "    public static void main(String[] args) {",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "void add(a, b) {",
+      "    return a + b",
+      "System.out.println(add(2, 3));  // passes 2 and 3 as arguments",
+      "public class Main {",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "void add(a, b) {",
+      "    return a + b",
+      "}",
+      "System.out.println(add(2, 3));  // passes 2 and 3 as arguments",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-27",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "lines": [
+      "    }",
+      "    System.out.println(count);",
+      "while count < 5 {",
+      "// experiment: modify a value above and predict the new output",
+      "public class Main {",
+      "}",
+      "}",
+      "    public static void main(String[] args) {",
+      "count = 0",
+      "    count = count + 1"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "count = 0",
+      "while count < 5 {",
+      "    System.out.println(count);",
+      "    count = count + 1",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-28",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "    public static void main(String[] args) {",
+      "        System.out.println(\"Hello, World!\");",
+      "}",
+      "// This program greets the world",
+      "    }",
+      "public class Main {",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// This program greets the world",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "        System.out.println(\"Hello, World!\");",
+      "    }",
+      "}",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-29",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "lines": [
+      "public class Main {",
+      "// git basics",
+      "// git add .     - stage changes",
+      "// git push     - share to remote",
+      "// git init      - start tracking",
+      "    public static void main(String[] args) {",
+      "    }",
+      "// git commit -m \"describe why\"",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\"",
+      "// git push     - share to remote",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-30",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "lines": [
+      "String name = \"Alice\";",
+      "    public static void main(String[] args) {",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "int age = 30;",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "public class Main {",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "String name = \"Alice\";",
+      "int age = 30;",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-31",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "lines": [
+      "// 2. what actually happened",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// 1. what I expected",
+      "// experiment: modify a value above and predict the new output",
+      "// Good question template:",
+      "// 3. smallest code that reproduces it",
+      "    }",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 2. what actually happened",
+      "// 3. smallest code that reproduces it",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-32",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "    public static void main(String[] args) {",
+      "// experiment: modify a value above and predict the new output",
+      "public class Main {",
+      "// Common built-ins you will meet:",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Common built-ins you will meet:",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-33",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "// tags now holds only 2 unique values",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "    }",
+      "public class Main {",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// tags now holds only 2 unique values",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-34",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "lines": [
+      "x{assign}5 + 3 * 2",
+      "public class Main {",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    public static void main(String[] args) {",
+      "    }",
+      "// Multiplication happens first: result is 11"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-35",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "lines": [
+      "public class Main {",
+      "// 3. smallest code that reproduces it",
+      "// 2. what actually happened",
+      "// Good question template:",
+      "    }",
+      "}",
+      "    public static void main(String[] args) {",
+      "// 1. what I expected"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 2. what actually happened",
+      "// 3. smallest code that reproduces it",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-36",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "lines": [
+      "    }",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "}",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "System.out.println(user[\"name\"]);  // look up by key"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "System.out.println(user[\"name\"]);  // look up by key",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-37",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "String name = \"Alice\";",
+      "// experiment: modify a value above and predict the new output",
+      "// Variables hold reusable values",
+      "}",
+      "int age = 30;",
+      "public class Main {",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "String name = \"Alice\";",
+      "int age = 30;",
+      "// Variables hold reusable values",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-38",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "lines": [
+      "// Multiplication happens first: result is 11",
+      "    }",
+      "    public static void main(String[] args) {",
+      "x{assign}5 + 3 * 2",
+      "public class Main {",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-39",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "    }",
+      "    }",
+      "    for col in range(3) {",
+      "        System.out.println(\"*\");",
+      "for row in range(3) {",
+      "}",
+      "public class Main {",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "        System.out.println(\"*\");",
+      "    }",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-40",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "lines": [
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "public class Main {",
+      "    }",
+      "// YOUR PROJECT GOES HERE",
+      "    public static void main(String[] args) {",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// YOUR PROJECT GOES HERE",
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-41",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "lines": [
+      "    }",
+      "text = \"Hello\"",
+      "// text.upper() / text.length style helpers exist per language",
+      "public class Main {",
+      "// text + \" World\" joins strings",
+      "    public static void main(String[] args) {",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "text = \"Hello\"",
+      "// text + \" World\" joins strings",
+      "// text.upper() / text.length style helpers exist per language",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-42",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "lines": [
+      "    public static void main(String[] args) {",
+      "}",
+      "    }",
+      "total = 0  // global",
+      "    total = total + x  // needs special handling in strict languages",
+      "public class Main {",
+      "}",
+      "void add(x) {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "total = 0  // global",
+      "void add(x) {",
+      "    total = total + x  // needs special handling in strict languages",
+      "}",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-43",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "public class Main {",
+      "// await getData()  // pause THIS function only",
+      "    public static void main(String[] args) {",
+      "    }",
+      "// fetch data without blocking the UI"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// fetch data without blocking the UI",
+      "// await getData()  // pause THIS function only",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-44",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "    public static void main(String[] args) {",
+      "    public static void main(String[] args) {",
+      "public class Main {",
+      "        System.out.println(\"Hello, World!\");",
+      "}",
+      "public class Main {",
+      "}",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "        System.out.println(\"Hello, World!\");",
+      "    }",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-45",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "    return n * factorial(n - 1)",
+      "    }",
+      "// experiment: modify a value above and predict the new output",
+      "public class Main {",
+      "}",
+      "    if n <= 1 { return 1 }",
+      "void factorial(n) {",
+      "    public static void main(String[] args) {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "void factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    return n * factorial(n - 1)",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-46",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "lines": [
+      "    }",
+      "total = 0",
+      "// DEBUG: print intermediate values",
+      "}",
+      "    public static void main(String[] args) {",
+      "public class Main {",
+      "// experiment: modify a value above and predict the new output",
+      "System.out.println(total);",
+      "    total = total + item"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "System.out.println(total);",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-47",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "lines": [
+      "// call it: greet(\"Sam\")",
+      "// experiment: modify a value above and predict the new output",
+      "    return \"Hello, \" + name",
+      "    }",
+      "}",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "}",
+      "void greet(name) {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "void greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "// call it: greet(\"Sam\")",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-48",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "public class Main {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "    public static void main(String[] args) {",
+      "System.out.println(items[0]);  // first item",
+      "}",
+      "// items[1], items[2] ... indexes count from 0"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "System.out.println(items[0]);  // first item",
+      "// items[1], items[2] ... indexes count from 0",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-49",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "}",
+      "    content = file.read()",
+      "with open(\"data.txt\", \"r\") as file {",
+      "// file is auto-closed here",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "    }"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "// file is auto-closed here",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-50",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "    public static void main(String[] args) {",
+      "// The line above sends text to the screen",
+      "System.out.println(\"Alice\");",
+      "    }",
+      "public class Main {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "System.out.println(\"Alice\");",
+      "// The line above sends text to the screen",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-51",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "lines": [
+      "    System.out.println(\"Something went wrong\");",
+      "    risky_operation()",
+      "// experiment: modify a value above and predict the new output",
+      "try {",
+      "} catch (error) {",
+      "}",
+      "}",
+      "    public static void main(String[] args) {",
+      "    }",
+      "public class Main {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    System.out.println(\"Something went wrong\");",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-52",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "lines": [
+      "void greet(name) {",
+      "// call it: greet(\"Sam\")",
+      "}",
+      "    }",
+      "public class Main {",
+      "}",
+      "    public static void main(String[] args) {",
+      "    return \"Hello, \" + name"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "void greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "// call it: greet(\"Sam\")",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-53",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "lines": [
+      "    }",
+      "    return a + b",
+      "}",
+      "System.out.println(add(2, 3));  // passes 2 and 3 as arguments",
+      "}",
+      "void add(a, b) {",
+      "    public static void main(String[] args) {",
+      "public class Main {"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "void add(a, b) {",
+      "    return a + b",
+      "}",
+      "System.out.println(add(2, 3));  // passes 2 and 3 as arguments",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-54",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "public class Main {",
+      "// fetch data without blocking the UI",
+      "    }",
+      "    public static void main(String[] args) {",
+      "// await getData()  // pause THIS function only"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// fetch data without blocking the UI",
+      "// await getData()  // pause THIS function only",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "java-puzzle-55",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "lines": [
+      "userCount = 0",
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "    }",
+      "// Bad:  x = calc(a,b)",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "public class Main {",
+      "    public static void main(String[] args) {",
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0",
+      "// experiment: modify a value above and predict the new output",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  }
+]

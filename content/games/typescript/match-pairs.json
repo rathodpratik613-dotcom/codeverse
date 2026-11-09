@@ -1,0 +1,362 @@
+[
+  {
+    "id": "typescript-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "In boolean logic, A AND B is true when...",
+        "right": "both A and B are true"
+      },
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "It halves the remaining items each step"
+    ]
+  },
+  {
+    "id": "typescript-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "A variable declared inside a function is...",
+        "right": "local — visible only within that function"
+      },
+      {
+        "left": "A for loop is best when...",
+        "right": "you know how many times to repeat"
+      }
+    ],
+    "distractors": [
+      "It halves the remaining items each step"
+    ]
+  },
+  {
+    "id": "typescript-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "20 times",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Define the smallest version that works end-to-end"
+    ]
+  },
+  {
+    "id": "typescript-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      }
+    ],
+    "distractors": [
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "typescript-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is a variable?",
+        "right": "A named storage location for a value"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "typescript-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What does the print/output function do?",
+        "right": "Sends text or values to the screen or console"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "typescript-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "0"
+    ]
+  },
+  {
+    "id": "typescript-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "What does concatenation mean for strings?",
+        "right": "Joining them end to end into one string"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "typescript-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What is the most valuable first test for a new function?",
+        "right": "A normal input with a known expected output"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "true"
+    ]
+  },
+  {
+    "id": "typescript-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      },
+      {
+        "left": "What should you do FIRST when you find a bug?",
+        "right": "Reproduce it reliably and note the exact steps"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "It closes the file automatically, even on errors",
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "typescript-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Define the smallest version that works end-to-end",
+      "Depends on the code — trace it line by line",
+      "isValidEmail"
+    ]
+  },
+  {
+    "id": "typescript-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic",
+      "A saved snapshot of your code at a point in time"
+    ]
+  },
+  {
+    "id": "typescript-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic",
+      "//",
+      "A saved snapshot of your code at a point in time"
+    ]
+  },
+  {
+    "id": "typescript-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In TypeScript, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in TypeScript?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "A saved snapshot of your code at a point in time"
+    ]
+  }
+]

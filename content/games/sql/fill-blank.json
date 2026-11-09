@@ -1,0 +1,902 @@
+[
+  {
+    "id": "sql-fill-01",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ ANALYZE\nSELECT * FROM orders WHERE user_id = 42;\n-- experiment: modify a value above and predict the new output",
+    "answer": "EXPLAIN",
+    "options": [
+      "UNCOMMITTED",
+      "INDEX",
+      "VERBOSE",
+      "EXPLAIN"
+    ],
+    "explanation": "\"EXPLAIN\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "sql-fill-02",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "EXPLAIN ANALYZE\n_____ * FROM orders WHERE user_id = 42;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "DROP",
+      "SELECT",
+      "CHANGE",
+      "COLUMN"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "sql-fill-03",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name, score FROM players\nORDER BY score DESC\nLIMIT 10;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "TRIM",
+      "SELECT",
+      "OPTIMIZE",
+      "NULL"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "sql-fill-04",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name, score FROM players\n_____ BY score DESC\nLIMIT 10;\n-- experiment: modify a value above and predict the new output",
+    "answer": "ORDER",
+    "options": [
+      "PRIMARY",
+      "ORDER",
+      "CONSTRAINT",
+      "SHARE"
+    ],
+    "explanation": "\"ORDER\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "sql-fill-05",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name, score FROM players\nORDER BY score DESC\nLIMIT 10;",
+    "answer": "SELECT",
+    "options": [
+      "OUTER",
+      "FOREIGN",
+      "ALGORITHM",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "sql-fill-06",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name, score FROM players\n_____ BY score DESC\nLIMIT 10;",
+    "answer": "ORDER",
+    "options": [
+      "ORDER",
+      "NOWAIT",
+      "ROW_NUMBER",
+      "PARTITION"
+    ],
+    "explanation": "\"ORDER\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "sql-fill-07",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ VIEW active_users AS\nSELECT id, name FROM users WHERE active = true;\n-- experiment: modify a value above and predict the new output",
+    "answer": "CREATE",
+    "options": [
+      "FOR",
+      "GRANT",
+      "CREATE",
+      "ALGORITHM"
+    ],
+    "explanation": "\"CREATE\" is the correct keyword here — check the lesson on lesson-14 for context."
+  },
+  {
+    "id": "sql-fill-08",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "CREATE VIEW active_users AS\n_____ id, name FROM users WHERE active = true;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "INDEX",
+      "SELECT",
+      "ALGORITHM",
+      "UNCOMMITTED"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-14 for context."
+  },
+  {
+    "id": "sql-fill-09",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name, salary,\n    RANK() OVER (ORDER BY salary DESC) AS rank\nFROM employees;",
+    "answer": "SELECT",
+    "options": [
+      "LOCK",
+      "OPTION",
+      "SELECT",
+      "ADD"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "sql-fill-10",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name, salary,\n    RANK() OVER (ORDER BY salary DESC) _____ rank\nFROM employees;",
+    "answer": "AS",
+    "options": [
+      "AS",
+      "LOCK",
+      "TRANSACTION",
+      "DROP"
+    ],
+    "explanation": "\"AS\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "sql-fill-11",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ UPPER(name), SUBSTRING(email, 1, 3) AS prefix\nFROM users;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "ALTER",
+      "REPEATABLE",
+      "SELECT",
+      "GRANT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "sql-fill-12",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT UPPER(name), SUBSTRING(email, 1, 3) AS prefix\n_____ users;\n-- experiment: modify a value above and predict the new output",
+    "answer": "FROM",
+    "options": [
+      "VALIDATE",
+      "ADD",
+      "ACCOUNT",
+      "FROM"
+    ],
+    "explanation": "\"FROM\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "sql-fill-13",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name FROM users\nWHERE age > (SELECT AVG(age) FROM users);\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "ENGINE",
+      "SHARED",
+      "FOR",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-18 for context."
+  },
+  {
+    "id": "sql-fill-14",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name FROM users\nWHERE age > (_____ AVG(age) FROM users);\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "SELECT",
+      "TABLE",
+      "BY",
+      "LENGTH"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-18 for context."
+  },
+  {
+    "id": "sql-fill-15",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name FROM users\nWHERE id IN (\n    SELECT user_id FROM orders WHERE total > 100\n);\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "SESSION",
+      "KEYS",
+      "SELECT",
+      "WHEN"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "sql-fill-16",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name FROM users\n_____ id IN (\n    SELECT user_id FROM orders WHERE total > 100\n);\n-- experiment: modify a value above and predict the new output",
+    "answer": "WHERE",
+    "options": [
+      "ENABLE",
+      "CONSISTENT",
+      "WHERE",
+      "LOCK"
+    ],
+    "explanation": "\"WHERE\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "sql-fill-17",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "-- review checklist\n-- [ ] _____ shows index usage\n-- [ ] parameterized, no string concat\n-- [ ] paginated (LIMIT/keyset)\n-- [ ] NULL + duplicate edge cases tested\n-- experiment: modify a value above and predict the new output",
+    "answer": "EXPLAIN",
+    "options": [
+      "NONE",
+      "TRUNCATE",
+      "ADD",
+      "EXPLAIN"
+    ],
+    "explanation": "\"EXPLAIN\" is the correct keyword here — check the lesson on lesson-36 for context."
+  },
+  {
+    "id": "sql-fill-18",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "-- review checklist\n-- [ ] EXPLAIN shows index usage\n-- [ ] parameterized, no string concat\n-- [ ] paginated (_____/keyset)\n-- [ ] NULL + duplicate edge cases tested\n-- experiment: modify a value above and predict the new output",
+    "answer": "LIMIT",
+    "options": [
+      "YEAR",
+      "LIMIT",
+      "ADD",
+      "NTILE"
+    ],
+    "explanation": "\"LIMIT\" is the correct keyword here — check the lesson on lesson-36 for context."
+  },
+  {
+    "id": "sql-fill-19",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;",
+    "answer": "BEGIN",
+    "options": [
+      "BEGIN",
+      "PERCENT_RANK",
+      "COLUMN",
+      "OFFSET"
+    ],
+    "explanation": "\"BEGIN\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "sql-fill-20",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "BEGIN;\nUPDATE accounts SET balance = balance - 100 _____ id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;",
+    "answer": "WHERE",
+    "options": [
+      "WHERE",
+      "FOREIGN",
+      "ADD",
+      "INNODB"
+    ],
+    "explanation": "\"WHERE\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "sql-fill-21",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;\n-- experiment: modify a value above and predict the new output",
+    "answer": "BEGIN",
+    "options": [
+      "LEAD",
+      "BEGIN",
+      "INSTANT",
+      "ENGINE"
+    ],
+    "explanation": "\"BEGIN\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "sql-fill-22",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "BEGIN;\nUPDATE accounts SET balance = balance - 100 _____ id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;\n-- experiment: modify a value above and predict the new output",
+    "answer": "WHERE",
+    "options": [
+      "REVOKE",
+      "WHERE",
+      "OPTIMIZE",
+      "FOR"
+    ],
+    "explanation": "\"WHERE\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "sql-fill-23",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ ANALYZE\nSELECT id, name FROM orders\nWHERE created_at >= '2024-01-01'\nORDER BY created_at\nLIMIT 20;",
+    "answer": "EXPLAIN",
+    "options": [
+      "PROCESSLIST",
+      "EXPLAIN",
+      "HOUR",
+      "UNIQUE"
+    ],
+    "explanation": "\"EXPLAIN\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "sql-fill-24",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "EXPLAIN ANALYZE\n_____ id, name FROM orders\nWHERE created_at >= '2024-01-01'\nORDER BY created_at\nLIMIT 20;",
+    "answer": "SELECT",
+    "options": [
+      "SELECT",
+      "SHOW",
+      "OVER",
+      "LOCK"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "sql-fill-25",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "WITH adult_users _____ (\n    SELECT * FROM users WHERE age >= 18\n)\nSELECT count(*) FROM adult_users;\n-- experiment: modify a value above and predict the new output",
+    "answer": "AS",
+    "options": [
+      "KEY",
+      "ADD",
+      "DROP",
+      "AS"
+    ],
+    "explanation": "\"AS\" is the correct keyword here — check the lesson on lesson-24 for context."
+  },
+  {
+    "id": "sql-fill-26",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "WITH adult_users AS (\n    _____ * FROM users WHERE age >= 18\n)\nSELECT count(*) FROM adult_users;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "AVG",
+      "ALTER",
+      "SELECT",
+      "DROP"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-24 for context."
+  },
+  {
+    "id": "sql-fill-27",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name, age FROM users;\nSELECT DISTINCT city FROM customers;\nSELECT price AS cost FROM products;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "MODE",
+      "STATUS",
+      "CONSTRAINT",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-02 for context."
+  },
+  {
+    "id": "sql-fill-28",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name, age FROM users;\n_____ DISTINCT city FROM customers;\nSELECT price AS cost FROM products;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "ROLLBACK",
+      "DROP",
+      "CIPHER",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-02 for context."
+  },
+  {
+    "id": "sql-fill-29",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "-- never do this:\n-- \"_____ * FROM users WHERE name = '\" + input + \"'\"\n-- always parameterize instead\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "NOT",
+      "CREATE",
+      "ALGORITHM",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-30 for context."
+  },
+  {
+    "id": "sql-fill-30",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name, salary,\n    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank\nFROM employees;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "SELECT",
+      "COPY",
+      "PARTITION",
+      "OVER"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "sql-fill-31",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name, salary,\n    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) _____ rank\nFROM employees;\n-- experiment: modify a value above and predict the new output",
+    "answer": "AS",
+    "options": [
+      "AS",
+      "COLUMN",
+      "HOUR",
+      "UNLOCK"
+    ],
+    "explanation": "\"AS\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "sql-fill-32",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ FUNCTION double_price(p INT) RETURNS INT AS $$\n    SELECT p * 2;\n$$ LANGUAGE SQL;\n-- experiment: modify a value above and predict the new output",
+    "answer": "CREATE",
+    "options": [
+      "SNAPSHOT",
+      "CREATE",
+      "MAX",
+      "INPLACE"
+    ],
+    "explanation": "\"CREATE\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "sql-fill-33",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$\n    _____ p * 2;\n$$ LANGUAGE SQL;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "SKIP",
+      "TABLE",
+      "SELECT",
+      "FIRST_VALUE"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "sql-fill-34",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ FUNCTION double_price(p INT) RETURNS INT AS $$\n    SELECT p * 2;\n$$ LANGUAGE SQL;",
+    "answer": "CREATE",
+    "options": [
+      "SHARE",
+      "INNODB",
+      "CREATE",
+      "EXCLUSIVE"
+    ],
+    "explanation": "\"CREATE\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "sql-fill-35",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "CREATE FUNCTION double_price(p INT) RETURNS INT AS $$\n    _____ p * 2;\n$$ LANGUAGE SQL;",
+    "answer": "SELECT",
+    "options": [
+      "EXCEPT",
+      "DROP",
+      "RIGHT",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "sql-fill-36",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ ANALYZE\nSELECT id, name FROM orders\nWHERE created_at >= '2024-01-01'\nORDER BY created_at\nLIMIT 20;\n-- experiment: modify a value above and predict the new output",
+    "answer": "EXPLAIN",
+    "options": [
+      "EXPLAIN",
+      "UNLOCK",
+      "TABLE",
+      "ADD"
+    ],
+    "explanation": "\"EXPLAIN\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "sql-fill-37",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "EXPLAIN ANALYZE\n_____ id, name FROM orders\nWHERE created_at >= '2024-01-01'\nORDER BY created_at\nLIMIT 20;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "UNLOCK",
+      "SECOND",
+      "SUBSTRING",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "sql-fill-38",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ u.name, o.total\nFROM users u\nINNER JOIN orders o ON o.user_id = u.id;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "LAST_VALUE",
+      "SELECT",
+      "LEFT",
+      "ACCOUNT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "sql-fill-39",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT u.name, o.total\n_____ users u\nINNER JOIN orders o ON o.user_id = u.id;\n-- experiment: modify a value above and predict the new output",
+    "answer": "FROM",
+    "options": [
+      "ABS",
+      "FROM",
+      "OPTION",
+      "ADD"
+    ],
+    "explanation": "\"FROM\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "sql-fill-40",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name FROM users\nWHERE id IN (\n    SELECT user_id FROM orders WHERE total > 100\n);",
+    "answer": "SELECT",
+    "options": [
+      "ON",
+      "SSL",
+      "SELECT",
+      "REPEATABLE"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "sql-fill-41",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name FROM users\n_____ id IN (\n    SELECT user_id FROM orders WHERE total > 100\n);",
+    "answer": "WHERE",
+    "options": [
+      "LENGTH",
+      "WHERE",
+      "INSERT",
+      "INSTANT"
+    ],
+    "explanation": "\"WHERE\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "sql-fill-42",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ COALESCE(nickname, name) AS display_name\nFROM users;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "MIN",
+      "ENGINE",
+      "HAVING",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "sql-fill-43",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT COALESCE(nickname, name) AS display_name\n_____ users;\n-- experiment: modify a value above and predict the new output",
+    "answer": "FROM",
+    "options": [
+      "NOT",
+      "COLUMN",
+      "HAVING",
+      "FROM"
+    ],
+    "explanation": "\"FROM\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "sql-fill-44",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;",
+    "answer": "BEGIN",
+    "options": [
+      "COLUMN",
+      "ROUND",
+      "BEGIN",
+      "RESTRICT"
+    ],
+    "explanation": "\"BEGIN\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "sql-fill-45",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "BEGIN;\nUPDATE accounts SET balance = balance - 100 _____ id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;",
+    "answer": "WHERE",
+    "options": [
+      "UNION",
+      "INDEX",
+      "INDEX",
+      "WHERE"
+    ],
+    "explanation": "\"WHERE\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "sql-fill-46",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name, salary,\n    RANK() OVER (ORDER BY salary DESC) AS rank\nFROM employees;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "MAX_UPDATES_PER_HOUR",
+      "PRIMARY",
+      "ALL",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "sql-fill-47",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name, salary,\n    RANK() OVER (ORDER BY salary DESC) _____ rank\nFROM employees;\n-- experiment: modify a value above and predict the new output",
+    "answer": "AS",
+    "options": [
+      "COMMIT",
+      "ENABLE",
+      "UNLOCK",
+      "AS"
+    ],
+    "explanation": "\"AS\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "sql-fill-48",
+    "lesson": "lesson-24",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "WITH adult_users _____ (\n    SELECT * FROM users WHERE age >= 18\n)\nSELECT count(*) FROM adult_users;",
+    "answer": "AS",
+    "options": [
+      "VISIBLE",
+      "HAVING",
+      "PROCESSLIST",
+      "AS"
+    ],
+    "explanation": "\"AS\" is the correct keyword here — check the lesson on lesson-24 for context."
+  },
+  {
+    "id": "sql-fill-49",
+    "lesson": "lesson-24",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "WITH adult_users AS (\n    _____ * FROM users WHERE age >= 18\n)\nSELECT count(*) FROM adult_users;",
+    "answer": "SELECT",
+    "options": [
+      "VARIABLE",
+      "SHARE",
+      "SELECT",
+      "TRIM"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-24 for context."
+  },
+  {
+    "id": "sql-fill-50",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "UPDATE users SET age = 31 _____ name = 'Amy';\nDELETE FROM logs WHERE created_at < '2020-01-01';\n-- experiment: modify a value above and predict the new output",
+    "answer": "WHERE",
+    "options": [
+      "COALESCE",
+      "WHERE",
+      "DEADLOCK",
+      "END"
+    ],
+    "explanation": "\"WHERE\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "sql-fill-51",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "UPDATE users SET age = 31 WHERE name = 'Amy';\nDELETE _____ logs WHERE created_at < '2020-01-01';\n-- experiment: modify a value above and predict the new output",
+    "answer": "FROM",
+    "options": [
+      "VISIBLE",
+      "DROP",
+      "FROM",
+      "UNIQUE"
+    ],
+    "explanation": "\"FROM\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "sql-fill-52",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ city, COUNT(*) AS n, AVG(score) AS avg_score\nFROM players\nGROUP BY city\nHAVING COUNT(*) > 10;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "OR",
+      "TO",
+      "SELECT",
+      "REPLACE"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "sql-fill-53",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT city, COUNT(*) AS n, AVG(score) AS avg_score\n_____ players\nGROUP BY city\nHAVING COUNT(*) > 10;\n-- experiment: modify a value above and predict the new output",
+    "answer": "FROM",
+    "options": [
+      "FROM",
+      "ALTER",
+      "TO",
+      "BEGIN"
+    ],
+    "explanation": "\"FROM\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "sql-fill-54",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ name, salary,\n    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) AS rank\nFROM employees;",
+    "answer": "SELECT",
+    "options": [
+      "COMMITTED",
+      "OUTER",
+      "TABLE",
+      "SELECT"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "sql-fill-55",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "SELECT name, salary,\n    RANK() OVER (PARTITION BY dept ORDER BY salary DESC) _____ rank\nFROM employees;",
+    "answer": "AS",
+    "options": [
+      "AS",
+      "FOREIGN",
+      "ANALYZE",
+      "PRIMARY"
+    ],
+    "explanation": "\"AS\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "sql-fill-56",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;\n-- experiment: modify a value above and predict the new output",
+    "answer": "BEGIN",
+    "options": [
+      "PERCENT_RANK",
+      "BEGIN",
+      "OPTION",
+      "DATABASES"
+    ],
+    "explanation": "\"BEGIN\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "sql-fill-57",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "BEGIN;\nUPDATE accounts SET balance = balance - 100 _____ id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;\n-- experiment: modify a value above and predict the new output",
+    "answer": "WHERE",
+    "options": [
+      "CHECK",
+      "ADD",
+      "ADD",
+      "WHERE"
+    ],
+    "explanation": "\"WHERE\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "sql-fill-58",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ TABLE orders (\n    id INT PRIMARY KEY,\n    user_id INT NOT NULL,\n    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\n);",
+    "answer": "CREATE",
+    "options": [
+      "LEAD",
+      "CREATE",
+      "SHARE",
+      "LOWER"
+    ],
+    "explanation": "\"CREATE\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "sql-fill-59",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "CREATE TABLE orders (\n    id INT _____ KEY,\n    user_id INT NOT NULL,\n    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE\n);",
+    "answer": "PRIMARY",
+    "options": [
+      "SET",
+      "ADD",
+      "DATE",
+      "PRIMARY"
+    ],
+    "explanation": "\"PRIMARY\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "sql-fill-60",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this sql code:",
+    "code": "_____ DATE_TRUNC('day', created_at) AS day, COUNT(*)\nFROM events GROUP BY 1;\n-- experiment: modify a value above and predict the new output",
+    "answer": "SELECT",
+    "options": [
+      "GRANT",
+      "SELECT",
+      "CURRENT_TIMESTAMP",
+      "AS"
+    ],
+    "explanation": "\"SELECT\" is the correct keyword here — check the lesson on lesson-22 for context."
+  }
+]

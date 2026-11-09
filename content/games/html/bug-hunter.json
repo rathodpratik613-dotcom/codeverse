@@ -1,0 +1,902 @@
+[
+  {
+    "id": "html-bug-01",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "code": "<!-- template: header rendered on every page -->\n<<!DOCTYPE><nav>...</nav></header>\n<main><!-- page content --></main>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "Your browser does not support video.",
+      "<header><nav>...</nav></header>",
+      "<<!DOCTYPE><nav>...</nav></header>",
+      "</html>"
+    ],
+    "answer": "<header><nav>...</nav></header>",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"header\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-02",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "<<!DOCTYPE href=\"#pricing\">See pricing</a>\n<a href=\"mailto:hi@example.com\">Email us</a>\n<a href=\"file.zip\" download>Download</a>",
+    "buggyLine": 1,
+    "options": [
+      "<header>...</header>",
+      "<a href=\"#pricing\">See pricing</a>",
+      "</datalist>",
+      "<<!DOCTYPE href=\"#pricing\">See pricing</a>"
+    ],
+    "answer": "<a href=\"#pricing\">See pricing</a>",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-03",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "<head>\n    <<!DOCTYPE>Learn HTML - Guide</title>\n    <meta name=\"description\" content=\"A beginner guide to HTML.\">\n    <link rel=\"canonical\" href=\"https://site.com/page\">\n</head>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "<title>Learn HTML - Guide</title>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<<!DOCTYPE>Learn HTML - Guide</title>",
+      "<tbody><tr><td>Jan</td><td>100</td></tr></tbody>"
+    ],
+    "answer": "<title>Learn HTML - Guide</title>",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"title\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-04",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "<h1>Main Title</h1>\n<h2>Section</h2>\n<p>Some <strong>bold</strong> and <em>italic</em> text.</p>\n<ul>\n    <li>First item</li>\n    <<!DOCTYPE>Second item</li>\n</ul>",
+    "buggyLine": 6,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<<!DOCTYPE>Second item</li>",
+      "<li>Second item</li>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "answer": "<li>Second item</li>",
+    "explanation": "Line 6 uses \"<!DOCTYPE\" where \"li\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-05",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "<<!DOCTYPE id=\"save\" data-action=\"save\">Save</button>\n<script>\ndocument.getElementById(\"save\").addEventListener(\"click\", () => {\n    console.log(\"saved!\");\n});\n</script>",
+    "buggyLine": 1,
+    "options": [
+      "<<!DOCTYPE id=\"save\" data-action=\"save\">Save</button>",
+      "<button id=\"save\" data-action=\"save\">Save</button>",
+      "<caption>Monthly sales</caption>",
+      "<body>"
+    ],
+    "answer": "<button id=\"save\" data-action=\"save\">Save</button>",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"button\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-06",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "<<!DOCTYPE id=\"save\" data-action=\"save\">Save</button>\n<script>\ndocument.getElementById(\"save\").addEventListener(\"click\", () => {\n    console.log(\"saved!\");\n});\n</script>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "<canvas id=\"game\" width=\"300\" height=\"150\"></canvas>",
+      "<!DOCTYPE html>",
+      "<button id=\"save\" data-action=\"save\">Save</button>",
+      "<<!DOCTYPE id=\"save\" data-action=\"save\">Save</button>"
+    ],
+    "answer": "<button id=\"save\" data-action=\"save\">Save</button>",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"button\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-07",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "<video controls preload=\"metadata\">\n    <source src=\"clip.mp4\" type=\"<!DOCTYPE/mp4\">\n    Your browser does not support video.\n</video>",
+    "buggyLine": 2,
+    "options": [
+      "<tbody><tr><td>Jan</td><td>100</td></tr></tbody>",
+      "<source src=\"clip.mp4\" type=\"<!DOCTYPE/mp4\">",
+      "<source src=\"clip.mp4\" type=\"video/mp4\">",
+      "<tr><td>Amy</td><td>30</td></tr>"
+    ],
+    "answer": "<source src=\"clip.mp4\" type=\"video/mp4\">",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"video\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-08",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "<video controls preload=\"metadata\">\n    <source src=\"clip.mp4\" type=\"video/mp4\">\n    Your browser does not support video.\n</video>\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<table>",
+      "<head>",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-09",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "<h1>Page Title</h1>\n<p>This is a paragraph of text.</p>\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+      "<main>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-10",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "<input type=\"text\" required minlength=\"3\" pattern=\"[A-Za-z]+\">\n<<!DOCTYPE class=\"error\" hidden>Invalid input</p>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "<script type=\"application/ld+json\">",
+      "<<!DOCTYPE class=\"error\" hidden>Invalid input</p>",
+      "<p class=\"error\" hidden>Invalid input</p>",
+      "<p id=\"intro\" class=\"lead highlight\" title=\"A tooltip\">Text</p>"
+    ],
+    "answer": "<p class=\"error\" hidden>Invalid input</p>",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"p\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-11",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "// React JSX — HTML with expressions\n<<!DOCTYPE className=\"card\">\n  <h2>{post.title}</h2>\n  <p>{post.body}</p>\n</div>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<div className=\"card\">",
+      "<<!DOCTYPE className=\"card\">",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "answer": "<div className=\"card\">",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"div\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-12",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": "<!-- audit checklist -->\n<!-- 1. tab through the whole page -->\n<!-- 2. does every control have <!DOCTYPE label? -->\n<!-- 3. contrast >= 4.5:1 for text -->",
+    "buggyLine": 3,
+    "options": [
+      "<!-- 2. does every control have <!DOCTYPE label? -->",
+      "<html lang=\"en\">",
+      "<link rel=\"canonical\" href=\"https://site.com/page\">",
+      "<!-- 2. does every control have a label? -->"
+    ],
+    "answer": "<!-- 2. does every control have a label? -->",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-13",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "<head>\n    <title>Learn HTML - Guide</title>\n    <<!DOCTYPE name=\"description\" content=\"A beginner guide to HTML.\">\n    <link rel=\"canonical\" href=\"https://site.com/page\">\n</head>",
+    "buggyLine": 3,
+    "options": [
+      "<meta name=\"description\" content=\"A beginner guide to HTML.\">",
+      "<<!DOCTYPE name=\"description\" content=\"A beginner guide to HTML.\">",
+      "</form>",
+      "<li>First item</li>"
+    ],
+    "answer": "<meta name=\"description\" content=\"A beginner guide to HTML.\">",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"meta\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-14",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "code": "<ol>\n    <li>First</li>\n    <li>Second</li>\n</ol>\n<table>\n    <tr><th>Name</th><th>Age</th></tr>\n    <<!DOCTYPE><td>Amy</td><td>30</td></tr>\n</table>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 7,
+    "options": [
+      "<<!DOCTYPE><td>Amy</td><td>30</td></tr>",
+      "<main><!-- page content --></main>",
+      "<tr><td>Amy</td><td>30</td></tr>",
+      "<!-- Navigation starts here -->"
+    ],
+    "answer": "<tr><td>Amy</td><td>30</td></tr>",
+    "explanation": "Line 7 uses \"<!DOCTYPE\" where \"tr\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-15",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "<!-- Navigation starts here -->\n<nav>...</nav>\n<!-- NOTE: add search box -->\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "<img src=\"photo.jpg\" alt=\"A description of the photo\" width=\"400\">",
+      "connectedCallback() {",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-16",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "<<!DOCTYPE lang=\"en\">\n<body>\n    <a href=\"#main\" class=\"skip\">Skip to content</a>\n    <main id=\"main\">...</main>\n</body>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "<<!DOCTYPE lang=\"en\">",
+      "</ul>",
+      "<html lang=\"en\">",
+      "</body>"
+    ],
+    "answer": "<html lang=\"en\">",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"html\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-17",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "// React JSX — HTML with expressions\n<div className=\"card\">\n  <h2>{post.title}</h2>\n  <p>{post.body}</p>\n</<!DOCTYPE>",
+    "buggyLine": 5,
+    "options": [
+      "</div>",
+      "</<!DOCTYPE>",
+      "</html>",
+      "<video controls preload=\"metadata\">"
+    ],
+    "answer": "</div>",
+    "explanation": "Line 5 uses \"<!DOCTYPE\" where \"div\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-18",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "code": "<<!DOCTYPE type=\"application/ld+json\">\n{ \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"My Post\" }\n</script>",
+    "buggyLine": 1,
+    "options": [
+      "<p>{post.body}</p>",
+      "<<!DOCTYPE type=\"application/ld+json\">",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<script type=\"application/ld+json\">"
+    ],
+    "answer": "<script type=\"application/ld+json\">",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"script\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-19",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head><title>My Page</title></head>\n<body>\n<header>...</header>\n<main>...</main>\n<footer>...</footer>\n</body>\n</html>\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 10,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<ul>"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 10 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-20",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "<header>Site logo + nav</header>\n<main>\n    <<!DOCTYPE>Blog post</article>\n</main>\n<footer>Copyright</footer>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "<<!DOCTYPE>Blog post</article>",
+      "</body>",
+      "<article>Blog post</article>",
+      "</datalist>"
+    ],
+    "answer": "<article>Blog post</article>",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"article\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-21",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "<input list=\"colors\" name=\"fav\">\n<datalist id=\"colors\">\n    <<!DOCTYPE value=\"Red\">\n    <option value=\"Blue\">\n</datalist>",
+    "buggyLine": 3,
+    "options": [
+      "</video>",
+      "<body>",
+      "<<!DOCTYPE value=\"Red\">",
+      "<option value=\"Red\">"
+    ],
+    "answer": "<option value=\"Red\">",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"option\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-22",
+    "lesson": "lesson-38",
+    "difficulty": "easy",
+    "code": "<!DOCTYPE head>\n<html lang=\"en\">\n<head><title>My Page</title></head>\n<body>\n<header>...</header>\n<main>...</main>\n<footer>...</footer>\n</body>\n</html>",
+    "buggyLine": 1,
+    "options": [
+      "<li>First item</li>",
+      "<!DOCTYPE head>",
+      "<!DOCTYPE html>",
+      "<meta charset=\"UTF-8\">"
+    ],
+    "answer": "<!DOCTYPE html>",
+    "explanation": "Line 1 uses \"head\" where \"html\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-23",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "<p id=\"intro\" class=\"lead highlight\" <!DOCTYPE=\"A tooltip\">Text</p>\n<div data-user-id=\"42\">Custom data</div>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "</body>",
+      "<p id=\"intro\" class=\"lead highlight\" <!DOCTYPE=\"A tooltip\">Text</p>",
+      "<source src=\"clip.mp4\" type=\"video/mp4\">",
+      "<p id=\"intro\" class=\"lead highlight\" title=\"A tooltip\">Text</p>"
+    ],
+    "answer": "<p id=\"intro\" class=\"lead highlight\" title=\"A tooltip\">Text</p>",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"title\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-24",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "<<!DOCTYPE lang=\"en\">\n<body>\n    <a href=\"#main\" class=\"skip\">Skip to content</a>\n    <main id=\"main\">...</main>\n</body>",
+    "buggyLine": 1,
+    "options": [
+      "<script src=\"app.js\" defer></script>",
+      "<html lang=\"en\">",
+      "<body>",
+      "<<!DOCTYPE lang=\"en\">"
+    ],
+    "answer": "<html lang=\"en\">",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"html\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-25",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\">\n<script src=\"app.js\" defer></script>\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<h2>Title</h2>",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+      "nav, .no-print { display: none; }"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-26",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>My Page</title>\n</head>\n<<!DOCTYPE>\n    <h1>Hello</h1>\n</body>\n</html>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "<h2>Title</h2>",
+      "<<!DOCTYPE>",
+      "<body>",
+      "<h2>Section</h2>"
+    ],
+    "answer": "<body>",
+    "explanation": "Line 6 uses \"<!DOCTYPE\" where \"body\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-27",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n    <title>My Page</title>\n</<!DOCTYPE>\n<body>\n    <h1>Hello</h1>\n</body>\n</html>",
+    "buggyLine": 5,
+    "options": [
+      "<head><title>My Page</title></head>",
+      "<div class=\"card\">",
+      "</<!DOCTYPE>",
+      "</head>"
+    ],
+    "answer": "</head>",
+    "explanation": "Line 5 uses \"<!DOCTYPE\" where \"head\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-28",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "code": "<!-- audit checklist -->\n<!-- 1. tab through the whole page -->\n<!-- 2. does every control have a label? -->\n<!-- 3. contrast >= 4.5:1 for text -->\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+      "<link rel=\"canonical\" href=\"https://site.com/page\">",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<p>{post.body}</p>"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-29",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "<form action=\"/signup\" method=\"post\">\n    <label for=\"email\">Email</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required>\n    <button type=\"submit\">Sign Up</button>\n</<!DOCTYPE>",
+    "buggyLine": 5,
+    "options": [
+      "<!-- Navigation starts here -->",
+      "</form>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "</<!DOCTYPE>"
+    ],
+    "answer": "</form>",
+    "explanation": "Line 5 uses \"<!DOCTYPE\" where \"form\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-30",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Page</title>\n</head>\n<body>\n    <!-- content -->\n</body>\n</<!DOCTYPE>",
+    "buggyLine": 11,
+    "options": [
+      "</<!DOCTYPE>",
+      "<footer>...</footer>",
+      "</html>",
+      "</table>"
+    ],
+    "answer": "</html>",
+    "explanation": "Line 11 uses \"<!DOCTYPE\" where \"html\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-31",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "code": "{\n  \"name\": \"My App\",\n  \"short_name\": \"App\",\n  \"start_url\": \"/\",\n  \"display\": \"standalone\",\n  \"icons\": [{ \"src\": \"/icon.png\", \"sizes\": \"192x192\" }]\n}\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 8,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<!-- template: header rendered on every page -->",
+      "<input type=\"text\" required minlength=\"3\" pattern=\"[A-Za-z]+\">",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 8 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-32",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Page</title>\n</head>\n<body>\n    <!-- content -->\n</body>\n</<!DOCTYPE>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 11,
+    "options": [
+      "</html>",
+      "<body>",
+      "<h2>Title</h2>",
+      "</<!DOCTYPE>"
+    ],
+    "answer": "</html>",
+    "explanation": "Line 11 uses \"<!DOCTYPE\" where \"html\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-33",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "<a href=\"#pricing\">See pricing</a>\n<<!DOCTYPE href=\"mailto:hi@example.com\">Email us</a>\n<a href=\"file.zip\" download>Download</a>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<li>First item</li>",
+      "<<!DOCTYPE href=\"mailto:hi@example.com\">Email us</a>",
+      "<a href=\"mailto:hi@example.com\">Email us</a>"
+    ],
+    "answer": "<a href=\"mailto:hi@example.com\">Email us</a>",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-34",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "<script type=\"application/ld+json\">\n{ \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"My Post\" }\n</<!DOCTYPE>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "<input type=\"email\" id=\"email\" name=\"email\" required>",
+      "</details>",
+      "</script>",
+      "</<!DOCTYPE>"
+    ],
+    "answer": "</script>",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"script\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-35",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "<details>\n    <summary>Click to expand</summary>\n    <p>Hidden until opened.</p>\n</<!DOCTYPE>\n<progress value=\"70\" max=\"100\"></progress>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "</<!DOCTYPE>",
+      "<input type=\"email\" id=\"email\" name=\"email\" required>",
+      "<!-- NOTE: add search box -->",
+      "</details>"
+    ],
+    "answer": "</details>",
+    "explanation": "Line 4 uses \"<!DOCTYPE\" where \"details\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-36",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "code": "<header>Site logo + nav</header>\n<main>\n    <<!DOCTYPE>Blog post</article>\n</main>\n<footer>Copyright</footer>",
+    "buggyLine": 3,
+    "options": [
+      "<footer>...</footer>",
+      "<article>Blog post</article>",
+      "<video controls preload=\"metadata\">",
+      "<<!DOCTYPE>Blog post</article>"
+    ],
+    "answer": "<article>Blog post</article>",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"article\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-37",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "code": "<table>\n    <caption>Monthly sales</caption>\n    <thead><<!DOCTYPE><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>\n    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>\n</table>",
+    "buggyLine": 3,
+    "options": [
+      "<!DOCTYPE html>",
+      "<thead><<!DOCTYPE><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+      "<thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+      "<!-- NOTE: add search box -->"
+    ],
+    "answer": "<thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"tr\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-38",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "code": "@media print {\n  nav, .no-print { display: none; }\n  a::after { content: \" (\" attr(href) \")\"; }\n}\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "<head><title>My Page</title></head>",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "</main>"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-39",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "code": "<h1>Main Title</h1>\n<h2>Section</h2>\n<<!DOCTYPE>Some <strong>bold</strong> and <em>italic</em> text.</p>\n<ul>\n    <li>First item</li>\n    <li>Second item</li>\n</ul>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "<meta charset=\"UTF-8\">",
+      "<<!DOCTYPE>Some <strong>bold</strong> and <em>italic</em> text.</p>",
+      "<script>",
+      "<p>Some <strong>bold</strong> and <em>italic</em> text.</p>"
+    ],
+    "answer": "<p>Some <strong>bold</strong> and <em>italic</em> text.</p>",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"p\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-40",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "code": "<svg width=\"100\" height=\"100\">\n    <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"blue\"/>\n</<!DOCTYPE>\n<canvas id=\"game\" width=\"300\" height=\"150\"></canvas>",
+    "buggyLine": 3,
+    "options": [
+      "<head>",
+      "<thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+      "</<!DOCTYPE>",
+      "</svg>"
+    ],
+    "answer": "</svg>",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"svg\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-41",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "<form action=\"/signup\" method=\"post\">\n    <label for=\"email\">Email</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required>\n    <button type=\"submit\">Sign Up</button>\n</form>\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"blue\"/>"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-42",
+    "lesson": "lesson-37",
+    "difficulty": "medium",
+    "code": "<html lang=\"ar\" dir=\"rtl\">\n<<!DOCTYPE><meta charset=\"UTF-8\"></head>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "<meta charset=\"UTF-8\">",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<head><meta charset=\"UTF-8\"></head>",
+      "<<!DOCTYPE><meta charset=\"UTF-8\"></head>"
+    ],
+    "answer": "<head><meta charset=\"UTF-8\"></head>",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"head\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-43",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "code": "<ol>\n    <li>First</li>\n    <li>Second</li>\n</ol>\n<table>\n    <tr><th>Name</th><th>Age</th></tr>\n    <tr><td>Amy</td><td>30</td></tr>\n</<!DOCTYPE>",
+    "buggyLine": 8,
+    "options": [
+      "<tbody><tr><td>Jan</td><td>100</td></tr></tbody>",
+      "</table>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "</<!DOCTYPE>"
+    ],
+    "answer": "</table>",
+    "explanation": "Line 8 uses \"<!DOCTYPE\" where \"table\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-44",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "code": "<<!DOCTYPE href=\"https://example.com\">Visit Example</a>\n<img src=\"photo.jpg\" alt=\"A description of the photo\" width=\"400\">\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "<caption>Monthly sales</caption>",
+      "<option value=\"Red\">",
+      "<<!DOCTYPE href=\"https://example.com\">Visit Example</a>",
+      "<a href=\"https://example.com\">Visit Example</a>"
+    ],
+    "answer": "<a href=\"https://example.com\">Visit Example</a>",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-45",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "code": "class UserCard extends HTMLElement {\n  connectedCallback() {\n    this.innerHTML = `<<!DOCTYPE>${this.getAttribute(\"name\")}</strong>`;\n  }\n}\ncustomElements.define(\"user-card\", UserCard);",
+    "buggyLine": 3,
+    "options": [
+      "</head>",
+      "this.innerHTML = `<<!DOCTYPE>${this.getAttribute(\"name\")}</strong>`;",
+      "this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;",
+      "<body>"
+    ],
+    "answer": "this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"strong\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-46",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "code": "<<!DOCTYPE method=\"post\" action=\"/signup\">\n<input type=\"hidden\" name=\"csrf\" value=\"TOKEN\">\n<input type=\"email\" name=\"email\" required>\n</form>",
+    "buggyLine": 1,
+    "options": [
+      "\"short_name\": \"App\",",
+      "<<!DOCTYPE method=\"post\" action=\"/signup\">",
+      "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">",
+      "<form method=\"post\" action=\"/signup\">"
+    ],
+    "answer": "<form method=\"post\" action=\"/signup\">",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"form\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-47",
+    "lesson": "lesson-35",
+    "difficulty": "hard",
+    "code": "<img src=\"photo.webp\" width=\"800\" height=\"600\" loading=\"lazy\" alt=\"...\">\n<<!DOCTYPE src=\"app.js\" defer></script>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "document.getElementById(\"save\").addEventListener(\"click\", () => {",
+      "<script src=\"app.js\" defer></script>",
+      "<<!DOCTYPE src=\"app.js\" defer></script>",
+      "console.log(\"saved!\");"
+    ],
+    "answer": "<script src=\"app.js\" defer></script>",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"script\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-48",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">\n<tr><td style=\"padding:16px;\">Hello!</td></tr>\n</table>\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "<progress value=\"70\" max=\"100\"></progress>",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-49",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "code": "<form method=\"post\" action=\"/signup\">\n<input type=\"hidden\" name=\"csrf\" value=\"TOKEN\">\n<input type=\"email\" name=\"email\" required>\n</form>\n<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<!-- --> experiment: modify <!DOCTYPE value above and predict the new output",
+      "</body>",
+      "<link rel=\"canonical\" href=\"https://site.com/page\">"
+    ],
+    "answer": "<!-- --> experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<!DOCTYPE\" where \"a\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-50",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "@media print {\n  <!DOCTYPE, .no-print { display: none; }\n  a::after { content: \" (\" attr(href) \")\"; }\n}",
+    "buggyLine": 2,
+    "options": [
+      "<!DOCTYPE, .no-print { display: none; }",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "nav, .no-print { display: none; }",
+      "<summary>Click to expand</summary>"
+    ],
+    "answer": "nav, .no-print { display: none; }",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"nav\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-51",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "code": "<<!DOCTYPE list=\"colors\" name=\"fav\">\n<datalist id=\"colors\">\n    <option value=\"Red\">\n    <option value=\"Blue\">\n</datalist>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "<input list=\"colors\" name=\"fav\">",
+      "<!-- audit checklist -->",
+      "<p id=\"intro\" class=\"lead highlight\" title=\"A tooltip\">Text</p>",
+      "<<!DOCTYPE list=\"colors\" name=\"fav\">"
+    ],
+    "answer": "<input list=\"colors\" name=\"fav\">",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"input\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-52",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "<!-- Navigation starts here -->\n<nav>...</nav>\n<!-- NOTE: add <!DOCTYPE box -->",
+    "buggyLine": 3,
+    "options": [
+      "<p>This is a paragraph of text.</p>",
+      "<!-- 2. does every control have a label? -->",
+      "<!-- NOTE: add search box -->",
+      "<!-- NOTE: add <!DOCTYPE box -->"
+    ],
+    "answer": "<!-- NOTE: add search box -->",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"search\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-53",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "code": "<details>\n    <<!DOCTYPE>Click to expand</summary>\n    <p>Hidden until opened.</p>\n</details>\n<progress value=\"70\" max=\"100\"></progress>",
+    "buggyLine": 2,
+    "options": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "</body>",
+      "<summary>Click to expand</summary>",
+      "<<!DOCTYPE>Click to expand</summary>"
+    ],
+    "answer": "<summary>Click to expand</summary>",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"summary\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-54",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "code": "<div class=\"card\">\n    <<!DOCTYPE>Title</h2>\n    <p>Text with a <span class=\"highlight\">highlighted</span> word.</p>\n</div>",
+    "buggyLine": 2,
+    "options": [
+      "<h2>Title</h2>",
+      "</html>",
+      "<table>",
+      "<<!DOCTYPE>Title</h2>"
+    ],
+    "answer": "<h2>Title</h2>",
+    "explanation": "Line 2 uses \"<!DOCTYPE\" where \"h2\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-55",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head><title>My Page</title></head>\n<body>\n<header>...</header>\n<main>...</main>\n<footer>...</footer>\n</<!DOCTYPE>\n</html>",
+    "buggyLine": 8,
+    "options": [
+      "</<!DOCTYPE>",
+      "<button id=\"save\" data-action=\"save\">Save</button>",
+      "<label for=\"email\">Email</label>",
+      "</body>"
+    ],
+    "answer": "</body>",
+    "explanation": "Line 8 uses \"<!DOCTYPE\" where \"body\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-56",
+    "lesson": "lesson-38",
+    "difficulty": "hard",
+    "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head><title>My Page</title></head>\n<<!DOCTYPE>\n<header>...</header>\n<main>...</main>\n<footer>...</footer>\n</body>\n</html>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "<<!DOCTYPE>",
+      "<caption>Monthly sales</caption>",
+      "<h2>{post.title}</h2>",
+      "<body>"
+    ],
+    "answer": "<body>",
+    "explanation": "Line 4 uses \"<!DOCTYPE\" where \"body\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-57",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "code": "<table>\n    <caption>Monthly sales</caption>\n    <thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>\n    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>\n</<!DOCTYPE>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "</table>",
+      "<form method=\"post\" action=\"/signup\">",
+      "<svg width=\"100\" height=\"100\">",
+      "</<!DOCTYPE>"
+    ],
+    "answer": "</table>",
+    "explanation": "Line 5 uses \"<!DOCTYPE\" where \"table\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-58",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "code": "<div class=\"card\">\n    <h2>Title</h2>\n    <p>Text with a <<!DOCTYPE class=\"highlight\">highlighted</span> word.</p>\n</div>\n<!-- --> experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "<p>Text with a <span class=\"highlight\">highlighted</span> word.</p>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "</script>",
+      "<p>Text with a <<!DOCTYPE class=\"highlight\">highlighted</span> word.</p>"
+    ],
+    "answer": "<p>Text with a <span class=\"highlight\">highlighted</span> word.</p>",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"span\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-59",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "<<!DOCTYPE width=\"600\" cellpadding=\"0\" cellspacing=\"0\">\n<tr><td style=\"padding:16px;\">Hello!</td></tr>\n</table>",
+    "buggyLine": 1,
+    "options": [
+      "<!-- 2. does every control have a label? -->",
+      "<<!DOCTYPE width=\"600\" cellpadding=\"0\" cellspacing=\"0\">",
+      "<table>",
+      "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">"
+    ],
+    "answer": "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">",
+    "explanation": "Line 1 uses \"<!DOCTYPE\" where \"table\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "html-bug-60",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "code": "<!-- template: header rendered on every page -->\n<header><nav>...</nav></header>\n<<!DOCTYPE><!-- page content --></main>",
+    "buggyLine": 3,
+    "options": [
+      "<thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+      "<main><!-- page content --></main>",
+      "<<!DOCTYPE><!-- page content --></main>",
+      "</ol>"
+    ],
+    "answer": "<main><!-- page content --></main>",
+    "explanation": "Line 3 uses \"<!DOCTYPE\" where \"main\" belongs. Check keyword spelling and context."
+  }
+]

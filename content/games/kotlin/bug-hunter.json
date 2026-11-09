@@ -1,0 +1,902 @@
+[
+  {
+    "id": "kotlin-bug-01",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "fun main() {\n// This program greets the world\nval main() {\n    println(\"Hello, World!\")\n}\n}",
+    "buggyLine": 3,
+    "options": [
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "fun main() {",
+      "fun main() {",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 3 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-02",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": "val main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "val main() {",
+      "var age = 30",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-03",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "code": "fun main() {\nuser = { name: \"Alice\", age: 30 }\n// an fun groups related fields under one name\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "// an fun groups related fields under one name",
+      "// an object groups related fields under one name",
+      "with open(\"data.txt\", \"r\") as file {",
+      "// prints 0 1 2 3 4"
+    ],
+    "answer": "// an object groups related fields under one name",
+    "explanation": "Line 3 uses \"fun\" where \"object\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-04",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "code": "val main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "val main() {",
+      "fun main() {",
+      "total = total + item",
+      "for i in range(10) {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-05",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "val main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n}",
+    "buggyLine": 1,
+    "options": [
+      "return n * n",
+      "val main() {",
+      "fun main() {",
+      "result = double(5)"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-06",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": "val main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "total = 0  // global",
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-07",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "val main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "return \"Hello, \" + name",
+      "userCount = 0",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-08",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "val main() {\ntry {\n    risky_operation()\n} catch (error) {\n    println(\"Something went wrong\")\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "println(items[0])  // first item",
+      "val main() {",
+      "fun main() {",
+      "// git commit -m \"describe why\""
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-09",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "code": "val main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// 1. what I expected",
+      "val main() {",
+      "fun main() {",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-10",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": "val main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "// 1. what I expected",
+      "fun main() {",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-11",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "fun main() {\nfun row in range(3) {\n    for col in range(3) {\n        println(\"*\")\n    }\n}\n}",
+    "buggyLine": 2,
+    "options": [
+      "fun row in range(3) {",
+      "// import the tools you need",
+      "// 1. what I expected",
+      "for row in range(3) {"
+    ],
+    "answer": "for row in range(3) {",
+    "explanation": "Line 2 uses \"fun\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-12",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "code": "val main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "val main() {",
+      "println(items[0])  // first item",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-13",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "fun main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search val: function name + your language\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "fun main() {",
+      "println(i)",
+      "// search val: function name + your language",
+      "// search for: function name + your language"
+    ],
+    "answer": "// search for: function name + your language",
+    "explanation": "Line 3 uses \"val\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-14",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "fun main() {\nval name = \"Alice\"\nvar age = 30\n// Common types: \"Alice\" is a string, 42 is a number, fun is a boolean\n}",
+    "buggyLine": 4,
+    "options": [
+      "fun main() {",
+      "println(\"Something went wrong\")",
+      "// Common types: \"Alice\" is a string, 42 is a number, fun is a boolean",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean"
+    ],
+    "answer": "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "explanation": "Line 4 uses \"fun\" where \"true\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-15",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "val main() {\nfun main() {\n    println(\"Hello, World!\")\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "// call it: greet(\"Sam\")",
+      "fun main() {",
+      "val main() {",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-16",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "fun main() {\nif age >= 18 AND hasTicket {\n    println(\"Welcome fun\")\n}\n}",
+    "buggyLine": 3,
+    "options": [
+      "println(\"Welcome in\")",
+      "println(\"Welcome fun\")",
+      "println(i)",
+      "count = 0"
+    ],
+    "answer": "println(\"Welcome in\")",
+    "explanation": "Line 3 uses \"fun\" where \"in\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-17",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "val main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "val main() {",
+      "fun main() {",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-18",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "val main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "if age >= 18 {",
+      "val main() {",
+      "println(count)"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-19",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "val main() {\ncount = 0\nwhile count < 5 {\n    println(count)\n    count = count + 1\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "age = 20",
+      "// git init      - start tracking",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-20",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "code": "fun main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces fun\n}",
+    "buggyLine": 5,
+    "options": [
+      "fun main() {",
+      "// 3. smallest code that reproduces it",
+      "// 3. smallest code that reproduces fun",
+      "count = 0"
+    ],
+    "answer": "// 3. smallest code that reproduces it",
+    "explanation": "Line 5 uses \"fun\" where \"it\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-21",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "code": "val main() {\nitems = [\"a\", \"b\", \"c\"]\nprintln(items[0])  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "val main() {",
+      "fun main() {",
+      "val name = \"Alice\"",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-22",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "fun main() {\nclass Dog {\n    name = \"Buddy\"\n    val bark() { println(\"Woof!\") }\n}\n// dog = Dog()  then  dog.bark()\n}",
+    "buggyLine": 4,
+    "options": [
+      "val bark() { println(\"Woof!\") }",
+      "fun bark() { println(\"Woof!\") }",
+      "fun main() {",
+      "// search for: function name + your language"
+    ],
+    "answer": "fun bark() { println(\"Woof!\") }",
+    "explanation": "Line 4 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-23",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "code": "fun main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-fun sort)\n// binary search finds a target in O(log n) steps\n}",
+    "buggyLine": 3,
+    "options": [
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "fun main() {",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// sorted -> [1, 2, 3]  (use the built-fun sort)"
+    ],
+    "answer": "// sorted -> [1, 2, 3]  (use the built-in sort)",
+    "explanation": "Line 3 uses \"fun\" where \"in\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-24",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "code": "fun main() {\nwith open(\"fun.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n}",
+    "buggyLine": 2,
+    "options": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "total = total + item",
+      "fun main() {",
+      "with open(\"fun.txt\", \"r\") as file {"
+    ],
+    "answer": "with open(\"data.txt\", \"r\") as file {",
+    "explanation": "Line 2 uses \"fun\" where \"data\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-25",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "code": "val main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "val main() {",
+      "fun main() {",
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-26",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "val main() {\ntotal = 0  // global\nfun add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "val main() {",
+      "// experiment: modify a value above and predict the new output",
+      "x{assign}5 + 3 * 2"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-27",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "code": "fun main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces fun\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 5,
+    "options": [
+      "// 3. smallest code that reproduces it",
+      "// experiment: modify a value above and predict the new output",
+      "// 3. smallest code that reproduces fun",
+      "user = { \"name\": \"Alice\", \"age\": 30 }"
+    ],
+    "answer": "// 3. smallest code that reproduces it",
+    "explanation": "Line 5 uses \"fun\" where \"it\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-28",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "code": "val main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "fun main() {",
+      "with open(\"data.txt\", \"r\") as file {",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-29",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "fun main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result fun 11\n}",
+    "buggyLine": 3,
+    "options": [
+      "total = 0",
+      "// Multiplication happens first: result is 11",
+      "result = double(5)",
+      "// Multiplication happens first: result fun 11"
+    ],
+    "answer": "// Multiplication happens first: result is 11",
+    "explanation": "Line 3 uses \"fun\" where \"is\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-30",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "fun main() {\nfun square(n) {\n    return n * n\n}\nresult = square(5)\n// result fun now 25\n}",
+    "buggyLine": 6,
+    "options": [
+      "fun add(x) {",
+      "// result is now 25",
+      "// result fun now 25",
+      "with open(\"data.txt\", \"r\") as file {"
+    ],
+    "answer": "// result is now 25",
+    "explanation": "Line 6 uses \"fun\" where \"is\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-31",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "val main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nprintln(total)\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "val main() {",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-32",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "fun main() {\nfun name = \"Alice\"\nvar age = 30\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "val name = \"Alice\"",
+      "return n * n",
+      "fun name = \"Alice\"",
+      "x{assign}5 + 3 * 2"
+    ],
+    "answer": "val name = \"Alice\"",
+    "explanation": "Line 2 uses \"fun\" where \"val\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-33",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "fun main() {\nfun greet(name) {\n    return \"Hello, \" + name\n}\n// call fun: greet(\"Sam\")\n}",
+    "buggyLine": 5,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// call fun: greet(\"Sam\")",
+      "// call it: greet(\"Sam\")",
+      "// import the tools you need"
+    ],
+    "answer": "// call it: greet(\"Sam\")",
+    "explanation": "Line 5 uses \"fun\" where \"it\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-34",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": "fun main() {\n// fun the tools you need\n// e.g. math functions, date handling, file helpers\n}",
+    "buggyLine": 2,
+    "options": [
+      "fun main() {",
+      "// fun the tools you need",
+      "fun bark() { println(\"Woof!\") }",
+      "// import the tools you need"
+    ],
+    "answer": "// import the tools you need",
+    "explanation": "Line 2 uses \"fun\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-35",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "val main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n}",
+    "buggyLine": 1,
+    "options": [
+      "val main() {",
+      "class Dog {",
+      "fun main() {",
+      "result = square(5)"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-36",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "code": "val main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nprintln(user[\"name\"])  // look up by key\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "val main() {",
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-37",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "code": "val main() {\nif age >= 18 AND hasTicket {\n    println(\"Welcome in\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "val main() {",
+      "fun main() {",
+      "fun main() {",
+      "x{assign}5 + 3 * 2"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-38",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "val main() {\nclass Dog {\n    name = \"Buddy\"\n    fun bark() { println(\"Woof!\") }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "// result is now 25",
+      "val main() {",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-39",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "val main() {\nitems = [\"a\", \"b\", \"c\"]\nprintln(items[0])  // first item\n// items[1], items[2] ... indexes count from 0\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun square(n) {",
+      "fun main() {",
+      "fun main() {",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-40",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "fun main() {\nfun i in range(5) {\n    println(i)\n}\n// prints 0 1 2 3 4\n}",
+    "buggyLine": 2,
+    "options": [
+      "fun i in range(5) {",
+      "return \"Hello, \" + name",
+      "// experiment: modify a value above and predict the new output",
+      "for i in range(5) {"
+    ],
+    "answer": "for i in range(5) {",
+    "explanation": "Line 2 uses \"fun\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-41",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "val main() {\nfor i in range(5) {\n    println(i)\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// DEBUG: print intermediate values",
+      "val main() {",
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-42",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "fun main() {\nval greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "fun greet(name) {",
+      "val greet(name) {",
+      "count = count + 1",
+      "fun add(x) {"
+    ],
+    "answer": "fun greet(name) {",
+    "explanation": "Line 2 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-43",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "code": "val main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n}",
+    "buggyLine": 1,
+    "options": [
+      "val main() {",
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-44",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "val main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "val main() {",
+      "println(items[0])  // first item",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-45",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "code": "val main() {\nfun add(a, b) {\n    return a + b\n}\nprintln(add(2, 3))  // passes 2 and 3 as arguments\n}",
+    "buggyLine": 1,
+    "options": [
+      "// dog = Dog()  then  dog.bark()",
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-46",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "code": "val main() {\nfor i in range(10) {\n    if i == 5 { break }\n    println(i)\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "fun main() {",
+      "fun main() {",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-47",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "code": "fun main() {\nfun name = \"Alice\"\nvar age = 30\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "fun name = \"Alice\"",
+      "// file is auto-closed here",
+      "println(\"Minor\")",
+      "val name = \"Alice\""
+    ],
+    "answer": "val name = \"Alice\"",
+    "explanation": "Line 2 uses \"fun\" where \"val\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-48",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "val main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n}",
+    "buggyLine": 1,
+    "options": [
+      "println(user[\"name\"])  // look up by key",
+      "fun main() {",
+      "val main() {",
+      "for row in range(3) {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-49",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "code": "fun main() {\n// fun the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "// import the tools you need",
+      "fun main() {",
+      "// fun the tools you need",
+      "// DEBUG: print intermediate values"
+    ],
+    "answer": "// import the tools you need",
+    "explanation": "Line 2 uses \"fun\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-50",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "code": "fun main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nprintln(user[\"name\"])  // look up fun key\n}",
+    "buggyLine": 3,
+    "options": [
+      "println(user[\"name\"])  // look up fun key",
+      "// fetch data without blocking the UI",
+      "with open(\"data.txt\", \"r\") as file {",
+      "println(user[\"name\"])  // look up by key"
+    ],
+    "answer": "println(user[\"name\"])  // look up by key",
+    "explanation": "Line 3 uses \"fun\" where \"by\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-51",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "code": "fun main() {\nfun square(n) {\n    return n * n\n}\nresult = square(5)\n// result fun now 25\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// result fun now 25",
+      "// result is now 25",
+      "println(total)"
+    ],
+    "answer": "// result is now 25",
+    "explanation": "Line 6 uses \"fun\" where \"is\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-52",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "code": "fun main() {\nfun add(a, b) {\n    return a + b\n}\nprintln(add(2, 3))  // passes 2 and 3 fun arguments\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 5,
+    "options": [
+      "for i in range(5) {",
+      "// experiment: modify a value above and predict the new output",
+      "println(add(2, 3))  // passes 2 and 3 fun arguments",
+      "println(add(2, 3))  // passes 2 and 3 as arguments"
+    ],
+    "answer": "println(add(2, 3))  // passes 2 and 3 as arguments",
+    "explanation": "Line 5 uses \"fun\" where \"as\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-53",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "code": "val main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "// 2. what actually happened",
+      "val main() {",
+      "count = 0"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-54",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "code": "val main() {\ncount = 0\nwhile count < 5 {\n    println(count)\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "fun main() {",
+      "// import the tools you need",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-55",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "fun main() {\nfor row in range(3) {\n    fun col in range(3) {\n        println(\"*\")\n    }\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "for col in range(3) {",
+      "// Good question template:",
+      "fun col in range(3) {"
+    ],
+    "answer": "for col in range(3) {",
+    "explanation": "Line 3 uses \"fun\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-56",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "val main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "fun main() {",
+      "fun main() {",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-57",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "code": "fun main() {\ntry {\n    risky_operation()\n} fun (error) {\n    println(\"Something went wrong\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 4,
+    "options": [
+      "} fun (error) {",
+      "user = { name: \"Alice\", age: 30 }",
+      "// text.upper() / text.length style helpers exist per language",
+      "} catch (error) {"
+    ],
+    "answer": "} catch (error) {",
+    "explanation": "Line 4 uses \"fun\" where \"catch\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-58",
+    "lesson": "lesson-24",
+    "difficulty": "hard",
+    "code": "val main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "fun square(n) {",
+      "val main() {",
+      "println(i)"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-59",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "code": "val main() {\nfun main() {\n    println(\"Hello, World!\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "fun main() {",
+      "val main() {",
+      "// git commit -m \"describe why\""
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "kotlin-bug-60",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "code": "val main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n}",
+    "buggyLine": 1,
+    "options": [
+      "fun main() {",
+      "// experiment: modify a value above and predict the new output",
+      "risky_operation()",
+      "val main() {"
+    ],
+    "answer": "fun main() {",
+    "explanation": "Line 1 uses \"val\" where \"fun\" belongs. Check keyword spelling and context."
+  }
+]

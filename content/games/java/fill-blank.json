@@ -1,0 +1,650 @@
+[
+  {
+    "id": "java-fill-q-java-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: // write a note here",
+    "code": null,
+    "answer": "//",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9;",
+    "code": null,
+    "answer": ";",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: System.out.println(\"Hello\");",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $void add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "java-fill-q-java-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "java-fill-37",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nSystem.out.println(total);\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "null",
+      "String",
+      "implements",
+      "public"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "java-fill-38",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nSystem.out.println(total);\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "public",
+      "private",
+      "throw",
+      "for"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "java-fill-39",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n    }\n}",
+    "answer": "public",
+    "options": [
+      "public",
+      "private",
+      "while",
+      "static"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "java-fill-40",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n    }\n}",
+    "answer": "public",
+    "options": [
+      "void",
+      "public",
+      "class",
+      "extends"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "java-fill-41",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\nfor i in range(5) {\n    System.out.println(i);\n}\n// prints 0 1 2 3 4\n    }\n}",
+    "answer": "public",
+    "options": [
+      "try",
+      "case",
+      "implements",
+      "public"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "java-fill-42",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\nfor i in range(5) {\n    System.out.println(i);\n}\n// prints 0 1 2 3 4\n    }\n}",
+    "answer": "public",
+    "options": [
+      "interface",
+      "throw",
+      "public",
+      "void"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "java-fill-43",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\nfor row in range(3) {\n    for col in range(3) {\n        System.out.println(\"*\");\n    }\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "case",
+      "public",
+      "import",
+      "extends"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "java-fill-44",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\nfor row in range(3) {\n    for col in range(3) {\n        System.out.println(\"*\");\n    }\n}\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "int",
+      "case",
+      "public",
+      "true"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "java-fill-45",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "false",
+      "break",
+      "switch",
+      "public"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "java-fill-46",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "null",
+      "public",
+      "new",
+      "continue"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "java-fill-47",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\nage = 20\nif age >= 18 {\n    System.out.println(\"Adult\");\n} else {\n    System.out.println(\"Minor\");\n}\n    }\n}",
+    "answer": "public",
+    "options": [
+      "public",
+      "interface",
+      "if",
+      "extends"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "java-fill-48",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\nage = 20\nif age >= 18 {\n    System.out.println(\"Adult\");\n} else {\n    System.out.println(\"Minor\");\n}\n    }\n}",
+    "answer": "public",
+    "options": [
+      "String",
+      "while",
+      "public",
+      "throws"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "java-fill-49",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\ncount = 0\nwhile count < 5 {\n    System.out.println(count);\n    count = count + 1\n}\n    }\n}",
+    "answer": "public",
+    "options": [
+      "void",
+      "break",
+      "public",
+      "interface"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "java-fill-50",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\ncount = 0\nwhile count < 5 {\n    System.out.println(count);\n    count = count + 1\n}\n    }\n}",
+    "answer": "public",
+    "options": [
+      "break",
+      "catch",
+      "public",
+      "extends"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "java-fill-51",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n    }\n}",
+    "answer": "public",
+    "options": [
+      "package",
+      "continue",
+      "if",
+      "public"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "java-fill-52",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n    }\n}",
+    "answer": "public",
+    "options": [
+      "interface",
+      "throw",
+      "public",
+      "false"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "java-fill-53",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "public",
+      "class",
+      "package",
+      "case"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "java-fill-54",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "public",
+      "private",
+      "if",
+      "this"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "java-fill-55",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "this",
+      "public",
+      "false",
+      "else"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-30 for context."
+  },
+  {
+    "id": "java-fill-56",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "this",
+      "public",
+      "new",
+      "final"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-30 for context."
+  },
+  {
+    "id": "java-fill-57",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "int",
+      "public",
+      "if",
+      "class"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-33 for context."
+  },
+  {
+    "id": "java-fill-58",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n// experiment: modify a value above and predict the new output\n    }\n}",
+    "answer": "public",
+    "options": [
+      "class",
+      "implements",
+      "throw",
+      "public"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-33 for context."
+  },
+  {
+    "id": "java-fill-59",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "_____ class Main {\n    public static void main(String[] args) {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n    }\n}",
+    "answer": "public",
+    "options": [
+      "catch",
+      "package",
+      "public",
+      "false"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-30 for context."
+  },
+  {
+    "id": "java-fill-60",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this java code:",
+    "code": "public class Main {\n    _____ static void main(String[] args) {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n    }\n}",
+    "answer": "public",
+    "options": [
+      "public",
+      "switch",
+      "false",
+      "String"
+    ],
+    "explanation": "\"public\" is the correct keyword here — check the lesson on lesson-30 for context."
+  }
+]

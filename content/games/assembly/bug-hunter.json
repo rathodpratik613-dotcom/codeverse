@@ -1,0 +1,812 @@
+[
+  {
+    "id": "assembly-bug-01",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "; Common built-ins you will meet:\n; length/count, round/floor/ceil, min/max, sort, join/split\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output",
+      "result = square(5)"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-02",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "label: greet(name) {\n    ret \"Hello, \" + name\n}\n; mov it: greet(\"Sam\")\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "; call it: greet(\"Sam\")",
+      "xor ebx, ebx",
+      "; mov it: greet(\"Sam\")"
+    ],
+    "answer": "; call it: greet(\"Sam\")",
+    "explanation": "Line 4 uses \"mov\" where \"call\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-03",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "user = { \"name\": \"Alice\", \"age\": 30 }\n; output via syscall write (mov 0x80)  ; look up by key\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "mov eax, 42\tmov ebx, 7",
+      "; experiment: modify a value above and predict the new output",
+      "; output via syscall write (mov 0x80)  ; look up by key",
+      "; output via syscall write (int 0x80)  ; look up by key"
+    ],
+    "answer": "; output via syscall write (int 0x80)  ; look up by key",
+    "explanation": "Line 2 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-04",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "; import the tools you need\n; e.g. math functions, date handling, file helpers\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; experiment: modify a value above mov predict the new output",
+      "; experiment: modify a value above and predict the new output",
+      "; sorted -> [1, 2, 3]  (use the built-in sort)",
+      "; Good: totalPrice = calculateTotal(basePrice, taxRate)"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-05",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "mov eax, 42\tmov ebx, 7\n; Common types: \"text\" is a string, 42 is a number, nonzero / zero is a boolean\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "total = total + x  ; needs special handling in strict languages",
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-06",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "age = 20\ncmp/jcc age >= 18 {\n    ; output via syscall write (int 0x80)\n} else {\n    ; output via syscall write (mov 0x80)\n}\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "int 0x80",
+      "; text + \" World\" joins strings",
+      "; output via syscall write (mov 0x80)",
+      "; output via syscall write (int 0x80)"
+    ],
+    "answer": "; output via syscall write (int 0x80)",
+    "explanation": "Line 5 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-07",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "label: square(n) {\n    mov n * n\n}\nresult = square(5)\n; result is now 25",
+    "buggyLine": 2,
+    "options": [
+      "; output via syscall write (int 0x80)  ; passes 2 and 3 as arguments",
+      "mov ecx, msg",
+      "mov n * n",
+      "ret n * n"
+    ],
+    "answer": "ret n * n",
+    "explanation": "Line 2 uses \"mov\" where \"ret\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-08",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "count = 0\nloop count < 5 {\n    ; output via syscall write (mov 0x80)\n    count = count + 1\n}",
+    "buggyLine": 3,
+    "options": [
+      "; output via syscall write (int 0x80)",
+      "mov edx, 14",
+      "mov edx, 14",
+      "; output via syscall write (mov 0x80)"
+    ],
+    "answer": "; output via syscall write (int 0x80)",
+    "explanation": "Line 3 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-09",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "loop row in range(3) {\n    mov col in range(3) {\n        ; output via syscall write (int 0x80)\n    }\n}\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "loop col in range(3) {",
+      "mov col in range(3) {",
+      "_start:"
+    ],
+    "answer": "loop col in range(3) {",
+    "explanation": "Line 2 uses \"mov\" where \"loop\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-10",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "code": "; YOUR PROJECT GOES HERE\n; 1. plan features  2. build core loop  3. mov one feature at a time\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "; 1. plan features  2. build core loop  3. mov one feature at a time",
+      "xor ebx, ebx",
+      "; 1. plan features  2. build core loop  3. add one feature at a time",
+      "content = file.read()"
+    ],
+    "answer": "; 1. plan features  2. build core loop  3. add one feature at a time",
+    "explanation": "Line 2 uses \"mov\" where \"add\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-11",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "mov i in range(5) {\n    ; output via syscall write (int 0x80)\n}\n; prints 0 1 2 3 4\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "mov i in range(5) {",
+      "section .data",
+      "loop i in range(5) {",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": "loop i in range(5) {",
+    "explanation": "Line 1 uses \"mov\" where \"loop\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-12",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "code": "with open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n; file is auto-closed here\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above mov predict the new output",
+      "; output via syscall write (int 0x80)  ; first item"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-13",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "label: factorial(n) {\n    cmp/jcc n <= 1 { mov 1 }\n    ret n * factorial(n - 1)\n}",
+    "buggyLine": 2,
+    "options": [
+      "mov edx, 14",
+      "loop i in range(10) {",
+      "cmp/jcc n <= 1 { mov 1 }",
+      "cmp/jcc n <= 1 { ret 1 }"
+    ],
+    "answer": "cmp/jcc n <= 1 { ret 1 }",
+    "explanation": "Line 2 uses \"mov\" where \"ret\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-14",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "mov/jcc age >= 18 AND hasTicket {\n    ; output via syscall write (int 0x80)\n}\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "mov/jcc age >= 18 AND hasTicket {",
+      "try {",
+      "; experiment: modify a value above and predict the new output",
+      "cmp/jcc age >= 18 AND hasTicket {"
+    ],
+    "answer": "cmp/jcc age >= 18 AND hasTicket {",
+    "explanation": "Line 1 uses \"mov\" where \"cmp\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-15",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "section .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    add ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    int 0x80\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 7,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "total = total + x  ; needs special handling in strict languages",
+      "mov ebx, 1",
+      "add ebx, 1"
+    ],
+    "answer": "mov ebx, 1",
+    "explanation": "Line 7 uses \"add\" where \"mov\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-16",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "label: square(n) {\n    mov n * n\n}\nresult = square(5)\n; result is now 25\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "; sorted -> [1, 2, 3]  (use the built-in sort)",
+      "cmp/jcc age >= 18 AND hasTicket {",
+      "mov n * n",
+      "ret n * n"
+    ],
+    "answer": "ret n * n",
+    "explanation": "Line 2 uses \"mov\" where \"ret\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-17",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "loop i in range(10) {\n    cmp/jcc i == 5 { break }\n    ; output via syscall write (mov 0x80)\n}\n; prints 0 1 2 3 4\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "; output via syscall write (mov 0x80)",
+      "; output via syscall write (int 0x80)",
+      "loop count < 5 {"
+    ],
+    "answer": "; output via syscall write (int 0x80)",
+    "explanation": "Line 3 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-18",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "label: greet(name) {\n    ret \"Hello, \" + name\n}\n; mov it: greet(\"Sam\")",
+    "buggyLine": 4,
+    "options": [
+      "; call it: greet(\"Sam\")",
+      "; output via syscall write (int 0x80)",
+      "; mov it: greet(\"Sam\")",
+      "class Dog {"
+    ],
+    "answer": "; call it: greet(\"Sam\")",
+    "explanation": "Line 4 uses \"mov\" where \"call\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-19",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "label: add(a, b) {\n    ret a + b\n}\n; output via syscall write (int 0x80)  ; passes 2 and 3 as arguments\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output",
+      "; 2. what actually happened"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-20",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "tags = {\"python\", \"code\", \"python\"}\n; tags now holds only 2 unique values\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output",
+      "cmp/jcc age >= 18 {",
+      "result = square(5)"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-21",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "nums = [3, 1, 2]\n; sorted -> [1, 2, 3]  (use the built-in sort)\n; binary search finds a target in O(log n) steps\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "mov ecx, msg",
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-22",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "code": "user = { name: \"Alice\", age: 30 }\n; an object groups related fields under one name\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; experiment: modify a value above mov predict the new output",
+      "; experiment: modify a value above and predict the new output",
+      "; length/count, round/floor/ceil, min/max, sort, join/split",
+      "with open(\"data.txt\", \"r\") as file {"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-23",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "; Bad:  x = calc(a,b)\n; Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "; e.g. math functions, date handling, file helpers",
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above mov predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-24",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "loop i in range(10) {\n    mov/jcc i == 5 { break }\n    ; output via syscall write (int 0x80)\n}\n; prints 0 1 2 3 4",
+    "buggyLine": 2,
+    "options": [
+      "mov/jcc i == 5 { break }",
+      "; prints 0 1 2 3 4",
+      "cmp/jcc i == 5 { break }",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": "cmp/jcc i == 5 { break }",
+    "explanation": "Line 2 uses \"mov\" where \"cmp\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-25",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    ; output via syscall write (int 0x80)\n}\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "; experiment: modify a value above mov predict the new output",
+      "loop i in range(5) {",
+      "; experiment: modify a value above and predict the new output",
+      "mov edx, 14"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-26",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "items = [\"a\", \"b\", \"c\"]\n; output via syscall write (mov 0x80)  ; first item\n; items[1], items[2] ... indexes count from 0",
+    "buggyLine": 2,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "; output via syscall write (mov 0x80)  ; first item",
+      "; output via syscall write (int 0x80)  ; first item",
+      "mov eax, 4"
+    ],
+    "answer": "; output via syscall write (int 0x80)  ; first item",
+    "explanation": "Line 2 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-27",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "code": "; git basics\n; git init      - start tracking\n; git add .     - stage changes\n; git commit -m \"describe why\"\n; git push     - share to remote\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output",
+      "label: bark() { ; output via syscall write (int 0x80) }",
+      "int 0x80"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-28",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "; This program greets the world\nsection .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    mov ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    mov 0x80\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 14,
+    "options": [
+      "int 0x80",
+      "int 0x80",
+      "result = double(5)",
+      "mov 0x80"
+    ],
+    "answer": "int 0x80",
+    "explanation": "Line 14 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-29",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "; This program greets the world\nsection .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    add ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    int 0x80",
+    "buggyLine": 8,
+    "options": [
+      "add ebx, 1",
+      "; output via syscall write (int 0x80)",
+      "mov ebx, 1",
+      "; binary search finds a target in O(log n) steps"
+    ],
+    "answer": "mov ebx, 1",
+    "explanation": "Line 8 uses \"add\" where \"mov\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-30",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "total = 0  ; global\nlabel: add(x) {\n    total = total + x  ; needs special handling in strict languages\n}\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "msg db \"Hello, World!\", 10",
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above mov predict the new output",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-31",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "items = [\"a\", \"b\", \"c\"]\n; output via syscall write (mov 0x80)  ; first item\n; items[1], items[2] ... indexes count from 0\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "; output via syscall write (mov 0x80)  ; first item",
+      "; sorted -> [1, 2, 3]  (use the built-in sort)",
+      "; output via syscall write (int 0x80)  ; first item",
+      "; Good: totalPrice = calculateTotal(basePrice, taxRate)"
+    ],
+    "answer": "; output via syscall write (int 0x80)  ; first item",
+    "explanation": "Line 2 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-32",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "code": "loop row in range(3) {\n    loop col in range(3) {\n        ; output via syscall write (mov 0x80)\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "; tags now holds only 2 unique values",
+      "; output via syscall write (mov 0x80)",
+      "; output via syscall write (int 0x80)",
+      "tags = {\"python\", \"code\", \"python\"}"
+    ],
+    "answer": "; output via syscall write (int 0x80)",
+    "explanation": "Line 3 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-33",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "code": "section .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    mov ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    mov 0x80",
+    "buggyLine": 13,
+    "options": [
+      "mov 0x80",
+      "int 0x80",
+      "; This program greets the world",
+      "total = total + item"
+    ],
+    "answer": "int 0x80",
+    "explanation": "Line 13 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-34",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    ; output via syscall write (mov 0x80)\n}",
+    "buggyLine": 4,
+    "options": [
+      "; output via syscall write (mov 0x80)",
+      "; git init      - start tracking",
+      "userCount = 0",
+      "; output via syscall write (int 0x80)"
+    ],
+    "answer": "; output via syscall write (int 0x80)",
+    "explanation": "Line 4 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-35",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "code": "mov/jcc age >= 18 AND hasTicket {\n    ; output via syscall write (int 0x80)\n}",
+    "buggyLine": 1,
+    "options": [
+      "try {",
+      "; experiment: modify a value above and predict the new output",
+      "cmp/jcc age >= 18 AND hasTicket {",
+      "mov/jcc age >= 18 AND hasTicket {"
+    ],
+    "answer": "cmp/jcc age >= 18 AND hasTicket {",
+    "explanation": "Line 1 uses \"mov\" where \"cmp\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-36",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "total = 0  ; global\nlabel: mov(x) {\n    total = total + x  ; needs special handling in strict languages\n}",
+    "buggyLine": 2,
+    "options": [
+      "label: mov(x) {",
+      "mov ecx, msg",
+      "; items[1], items[2] ... indexes count from 0",
+      "label: add(x) {"
+    ],
+    "answer": "label: add(x) {",
+    "explanation": "Line 2 uses \"mov\" where \"add\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-37",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "code": "; git basics\n; git init      - start tracking\n; git add .     - stage changes\n; git commit -m \"describe why\"\n; git mov     - share to remote",
+    "buggyLine": 5,
+    "options": [
+      "; Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "; git push     - share to remote",
+      "; text.upper() / text.length style helpers exist per language",
+      "; git mov     - share to remote"
+    ],
+    "answer": "; git push     - share to remote",
+    "explanation": "Line 5 uses \"mov\" where \"push\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-38",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "count = 0\nloop count < 5 {\n    ; output via syscall write (int 0x80)\n    count = count + 1\n}\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 6,
+    "options": [
+      "; Docs pattern: Quick Start -> Guides -> API Reference",
+      "risky_operation()",
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-39",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "code": "text = \"Hello\"\n; text + \" World\" joins strings\n; text.upper() / text.length style helpers exist per language\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "label: square(n) {",
+      "; experiment: modify a value above mov predict the new output",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-40",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "; DEBUG: print intermediate values\ntotal = 0\n    total = total + item\n; output via syscall write (mov 0x80)",
+    "buggyLine": 4,
+    "options": [
+      "; output via syscall write (int 0x80)",
+      "; experiment: modify a value above and predict the new output",
+      "; output via syscall write (mov 0x80)",
+      "mov ebx, 1"
+    ],
+    "answer": "; output via syscall write (int 0x80)",
+    "explanation": "Line 4 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-41",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "code": "; Docs pattern: Quick Start -> Guides -> API Reference\n; search for: function name + your language\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; git commit -m \"describe why\"",
+      "ret \"Hello, \" + name",
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-42",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "label: mov(a, b) {\n    ret a + b\n}\n; output via syscall write (int 0x80)  ; passes 2 and 3 as arguments",
+    "buggyLine": 1,
+    "options": [
+      "label: mov(a, b) {",
+      "label: add(a, b) {",
+      "cmp/jcc age >= 18 AND hasTicket {",
+      "; output via syscall write (int 0x80)"
+    ],
+    "answer": "label: add(a, b) {",
+    "explanation": "Line 1 uses \"mov\" where \"add\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-43",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "code": "; fetch data without blocking the UI\n; await getData()  // pause THIS function only\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "risky_operation()",
+      "; experiment: modify a value above mov predict the new output",
+      "; experiment: modify a value above and predict the new output",
+      "; search for: function name + your language"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-44",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "code": "eax{assign}5 + 3 * 2\n; Multiplication happens first: result is 11\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; experiment: modify a value above mov predict the new output",
+      "userCount = 0",
+      "; experiment: modify a value above and predict the new output",
+      "mov ebx, 1"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-45",
+    "lesson": "lesson-35",
+    "difficulty": "hard",
+    "code": "; Good question template:\n; 1. what I expected\n; 2. what actually happened\n; 3. smallest code that reproduces it\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "mov eax, 4",
+      "total = 0",
+      "; experiment: modify a value above mov predict the new output",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-46",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "code": "class Dog {\n    name = \"Buddy\"\n    label: bark() { ; output via syscall write (mov 0x80) }\n}\n; dog = Dog()  then  dog.bark()",
+    "buggyLine": 3,
+    "options": [
+      "; e.g. math functions, date handling, file helpers",
+      "label: bark() { ; output via syscall write (int 0x80) }",
+      "label: bark() { ; output via syscall write (mov 0x80) }",
+      "; expected result: 10"
+    ],
+    "answer": "label: bark() { ; output via syscall write (int 0x80) }",
+    "explanation": "Line 3 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-47",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "; Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n; expected result: 10\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "; call it: greet(\"Sam\")",
+      "label: square(n) {",
+      "; experiment: modify a value above and predict the new output",
+      "; experiment: modify a value above mov predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-48",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "code": "age = 20\ncmp/jcc age >= 18 {\n    ; output via syscall write (int 0x80)\n} else {\n    ; output via syscall write (mov 0x80)\n}",
+    "buggyLine": 5,
+    "options": [
+      "; output via syscall write (mov 0x80)",
+      "; output via syscall write (int 0x80)",
+      "_start:",
+      "; 1. what I expected"
+    ],
+    "answer": "; output via syscall write (int 0x80)",
+    "explanation": "Line 5 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-49",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "code": "class Dog {\n    name = \"Buddy\"\n    label: bark() { ; output via syscall write (mov 0x80) }\n}\n; dog = Dog()  then  dog.bark()\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "age = 20",
+      "; output via syscall write (int 0x80)",
+      "label: bark() { ; output via syscall write (mov 0x80) }",
+      "label: bark() { ; output via syscall write (int 0x80) }"
+    ],
+    "answer": "label: bark() { ; output via syscall write (int 0x80) }",
+    "explanation": "Line 3 uses \"mov\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-50",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "code": "mov i in range(5) {\n    ; output via syscall write (int 0x80)\n}\n; prints 0 1 2 3 4",
+    "buggyLine": 1,
+    "options": [
+      "mov i in range(5) {",
+      "eax{assign}5 + 3 * 2",
+      "loop i in range(5) {",
+      "; experiment: modify a value above and predict the new output"
+    ],
+    "answer": "loop i in range(5) {",
+    "explanation": "Line 1 uses \"mov\" where \"loop\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-51",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "code": "mov eax, 42\tmov ebx, 7\n; Variables hold reusable values\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; experiment: modify a value above and predict the new output",
+      "global _start",
+      "loop col in range(3) {",
+      "; experiment: modify a value above mov predict the new output"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-52",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "code": "; DEBUG: print intermediate values\ntotal = 0\n    total = total + item\n; output via syscall write (int 0x80)\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "count = 0",
+      "; experiment: modify a value above mov predict the new output",
+      "; experiment: modify a value above and predict the new output",
+      "; output via syscall write (int 0x80)"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-53",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "code": "label: factorial(n) {\n    cmp/jcc n <= 1 { mov 1 }\n    ret n * factorial(n - 1)\n}\n; experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "mov edx, 14",
+      "cmp/jcc n <= 1 { mov 1 }",
+      "cmp/jcc n <= 1 { ret 1 }",
+      "; result is now 25"
+    ],
+    "answer": "cmp/jcc n <= 1 { ret 1 }",
+    "explanation": "Line 2 uses \"mov\" where \"ret\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "assembly-bug-54",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "code": "; output via syscall write (int 0x80)\n; The line above sends text to the screen\n; experiment: modify a value above mov predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "; experiment: modify a value above mov predict the new output",
+      "; experiment: modify a value above and predict the new output",
+      "int 0x80",
+      "label: add(x) {"
+    ],
+    "answer": "; experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"mov\" where \"and\" belongs. Check keyword spelling and context."
+  }
+]

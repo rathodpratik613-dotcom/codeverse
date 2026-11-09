@@ -1,0 +1,1170 @@
+[
+  {
+    "id": "html-puzzle-01",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "lines": [
+      "</table>",
+      "    <li>Second</li>",
+      "    <li>First</li>",
+      "<table>",
+      "    <tr><td>Amy</td><td>30</td></tr>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "    <tr><th>Name</th><th>Age</th></tr>",
+      "</ol>",
+      "<ol>"
+    ],
+    "answer": [
+      "<ol>",
+      "    <li>First</li>",
+      "    <li>Second</li>",
+      "</ol>",
+      "<table>",
+      "    <tr><th>Name</th><th>Age</th></tr>",
+      "    <tr><td>Amy</td><td>30</td></tr>",
+      "</table>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-02",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "lines": [
+      "<details>",
+      "<progress value=\"70\" max=\"100\"></progress>",
+      "</details>",
+      "    <p>Hidden until opened.</p>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "    <summary>Click to expand</summary>"
+    ],
+    "answer": [
+      "<details>",
+      "    <summary>Click to expand</summary>",
+      "    <p>Hidden until opened.</p>",
+      "</details>",
+      "<progress value=\"70\" max=\"100\"></progress>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-03",
+    "lesson": "lesson-37",
+    "difficulty": "easy",
+    "lines": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<head><meta charset=\"UTF-8\"></head>",
+      "<html lang=\"ar\" dir=\"rtl\">"
+    ],
+    "answer": [
+      "<html lang=\"ar\" dir=\"rtl\">",
+      "<head><meta charset=\"UTF-8\"></head>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-37. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-04",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "lines": [
+      "  \"short_name\": \"App\",",
+      "  \"name\": \"My App\",",
+      "  \"start_url\": \"/\",",
+      "  \"icons\": [{ \"src\": \"/icon.png\", \"sizes\": \"192x192\" }]",
+      "}",
+      "  \"display\": \"standalone\",",
+      "{"
+    ],
+    "answer": [
+      "{",
+      "  \"name\": \"My App\",",
+      "  \"short_name\": \"App\",",
+      "  \"start_url\": \"/\",",
+      "  \"display\": \"standalone\",",
+      "  \"icons\": [{ \"src\": \"/icon.png\", \"sizes\": \"192x192\" }]",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-05",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "lines": [
+      "</table>",
+      "    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>",
+      "    <thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+      "<table>",
+      "    <caption>Monthly sales</caption>"
+    ],
+    "answer": [
+      "<table>",
+      "    <caption>Monthly sales</caption>",
+      "    <thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+      "    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>",
+      "</table>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-06",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "lines": [
+      "    <title>Learn HTML - Guide</title>",
+      "</head>",
+      "    <link rel=\"canonical\" href=\"https://site.com/page\">",
+      "<head>",
+      "    <meta name=\"description\" content=\"A beginner guide to HTML.\">"
+    ],
+    "answer": [
+      "<head>",
+      "    <title>Learn HTML - Guide</title>",
+      "    <meta name=\"description\" content=\"A beginner guide to HTML.\">",
+      "    <link rel=\"canonical\" href=\"https://site.com/page\">",
+      "</head>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-07",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "lines": [
+      "<ol>",
+      "    <li>Second</li>",
+      "</ol>",
+      "    <tr><th>Name</th><th>Age</th></tr>",
+      "    <li>First</li>",
+      "</table>",
+      "    <tr><td>Amy</td><td>30</td></tr>",
+      "<table>"
+    ],
+    "answer": [
+      "<ol>",
+      "    <li>First</li>",
+      "    <li>Second</li>",
+      "</ol>",
+      "<table>",
+      "    <tr><th>Name</th><th>Age</th></tr>",
+      "    <tr><td>Amy</td><td>30</td></tr>",
+      "</table>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-08",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "  a::after { content: \" (\" attr(href) \")\"; }",
+      "@media print {",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "  nav, .no-print { display: none; }"
+    ],
+    "answer": [
+      "@media print {",
+      "  nav, .no-print { display: none; }",
+      "  a::after { content: \" (\" attr(href) \")\"; }",
+      "}",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-09",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "lines": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "{ \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"My Post\" }",
+      "</script>",
+      "<script type=\"application/ld+json\">"
+    ],
+    "answer": [
+      "<script type=\"application/ld+json\">",
+      "{ \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"My Post\" }",
+      "</script>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-10",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "lines": [
+      "<script src=\"app.js\" defer></script>",
+      "<img src=\"photo.webp\" width=\"800\" height=\"600\" loading=\"lazy\" alt=\"...\">",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "<img src=\"photo.webp\" width=\"800\" height=\"600\" loading=\"lazy\" alt=\"...\">",
+      "<script src=\"app.js\" defer></script>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-11",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "lines": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<a href=\"file.zip\" download>Download</a>",
+      "<a href=\"mailto:hi@example.com\">Email us</a>",
+      "<a href=\"#pricing\">See pricing</a>"
+    ],
+    "answer": [
+      "<a href=\"#pricing\">See pricing</a>",
+      "<a href=\"mailto:hi@example.com\">Email us</a>",
+      "<a href=\"file.zip\" download>Download</a>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-12",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "lines": [
+      "</div>",
+      "  <h2>{post.title}</h2>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "// React JSX — HTML with expressions",
+      "  <p>{post.body}</p>",
+      "<div className=\"card\">"
+    ],
+    "answer": [
+      "// React JSX — HTML with expressions",
+      "<div className=\"card\">",
+      "  <h2>{post.title}</h2>",
+      "  <p>{post.body}</p>",
+      "</div>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-13",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "lines": [
+      "<p id=\"intro\" class=\"lead highlight\" title=\"A tooltip\">Text</p>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<div data-user-id=\"42\">Custom data</div>"
+    ],
+    "answer": [
+      "<p id=\"intro\" class=\"lead highlight\" title=\"A tooltip\">Text</p>",
+      "<div data-user-id=\"42\">Custom data</div>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-14",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "lines": [
+      "    <source src=\"clip.mp4\" type=\"video/mp4\">",
+      "</video>",
+      "    Your browser does not support video.",
+      "<video controls preload=\"metadata\">"
+    ],
+    "answer": [
+      "<video controls preload=\"metadata\">",
+      "    <source src=\"clip.mp4\" type=\"video/mp4\">",
+      "    Your browser does not support video.",
+      "</video>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-15",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "lines": [
+      "</main>",
+      "<main>",
+      "<header>Site logo + nav</header>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "    <article>Blog post</article>",
+      "<footer>Copyright</footer>"
+    ],
+    "answer": [
+      "<header>Site logo + nav</header>",
+      "<main>",
+      "    <article>Blog post</article>",
+      "</main>",
+      "<footer>Copyright</footer>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-16",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "lines": [
+      "    <input type=\"email\" id=\"email\" name=\"email\" required>",
+      "    <button type=\"submit\">Sign Up</button>",
+      "</form>",
+      "<form action=\"/signup\" method=\"post\">",
+      "    <label for=\"email\">Email</label>"
+    ],
+    "answer": [
+      "<form action=\"/signup\" method=\"post\">",
+      "    <label for=\"email\">Email</label>",
+      "    <input type=\"email\" id=\"email\" name=\"email\" required>",
+      "    <button type=\"submit\">Sign Up</button>",
+      "</form>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-17",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "lines": [
+      "  }",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "}",
+      "    this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;",
+      "  connectedCallback() {",
+      "class UserCard extends HTMLElement {",
+      "customElements.define(\"user-card\", UserCard);"
+    ],
+    "answer": [
+      "class UserCard extends HTMLElement {",
+      "  connectedCallback() {",
+      "    this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;",
+      "  }",
+      "}",
+      "customElements.define(\"user-card\", UserCard);",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-18",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "lines": [
+      "<img src=\"photo.jpg\" alt=\"A description of the photo\" width=\"400\">",
+      "<a href=\"https://example.com\">Visit Example</a>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "<a href=\"https://example.com\">Visit Example</a>",
+      "<img src=\"photo.jpg\" alt=\"A description of the photo\" width=\"400\">",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-19",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "lines": [
+      "</html>",
+      "    <title>My Page</title>",
+      "<body>",
+      "    <h1>Hello</h1>",
+      "</head>",
+      "<!DOCTYPE html>",
+      "<head>",
+      "</body>",
+      "<html>"
+    ],
+    "answer": [
+      "<!DOCTYPE html>",
+      "<html>",
+      "<head>",
+      "    <title>My Page</title>",
+      "</head>",
+      "<body>",
+      "    <h1>Hello</h1>",
+      "</body>",
+      "</html>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-20",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "lines": [
+      "<h1>Main Title</h1>",
+      "    <li>First item</li>",
+      "<ul>",
+      "<p>Some <strong>bold</strong> and <em>italic</em> text.</p>",
+      "</ul>",
+      "    <li>Second item</li>",
+      "<h2>Section</h2>"
+    ],
+    "answer": [
+      "<h1>Main Title</h1>",
+      "<h2>Section</h2>",
+      "<p>Some <strong>bold</strong> and <em>italic</em> text.</p>",
+      "<ul>",
+      "    <li>First item</li>",
+      "    <li>Second item</li>",
+      "</ul>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-21",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "lines": [
+      "<a href=\"file.zip\" download>Download</a>",
+      "<a href=\"mailto:hi@example.com\">Email us</a>",
+      "<a href=\"#pricing\">See pricing</a>"
+    ],
+    "answer": [
+      "<a href=\"#pricing\">See pricing</a>",
+      "<a href=\"mailto:hi@example.com\">Email us</a>",
+      "<a href=\"file.zip\" download>Download</a>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-22",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "lines": [
+      "{ \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"My Post\" }",
+      "</script>",
+      "<script type=\"application/ld+json\">"
+    ],
+    "answer": [
+      "<script type=\"application/ld+json\">",
+      "{ \"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"My Post\" }",
+      "</script>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-23",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "lines": [
+      "<header><nav>...</nav></header>",
+      "<!-- template: header rendered on every page -->",
+      "<main><!-- page content --></main>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "<!-- template: header rendered on every page -->",
+      "<header><nav>...</nav></header>",
+      "<main><!-- page content --></main>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-24",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "lines": [
+      "  \"name\": \"My App\",",
+      "{",
+      "  \"icons\": [{ \"src\": \"/icon.png\", \"sizes\": \"192x192\" }]",
+      "  \"display\": \"standalone\",",
+      "}",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "  \"start_url\": \"/\",",
+      "  \"short_name\": \"App\","
+    ],
+    "answer": [
+      "{",
+      "  \"name\": \"My App\",",
+      "  \"short_name\": \"App\",",
+      "  \"start_url\": \"/\",",
+      "  \"display\": \"standalone\",",
+      "  \"icons\": [{ \"src\": \"/icon.png\", \"sizes\": \"192x192\" }]",
+      "}",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-25",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "customElements.define(\"user-card\", UserCard);",
+      "  connectedCallback() {",
+      "  }",
+      "class UserCard extends HTMLElement {",
+      "    this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;"
+    ],
+    "answer": [
+      "class UserCard extends HTMLElement {",
+      "  connectedCallback() {",
+      "    this.innerHTML = `<strong>${this.getAttribute(\"name\")}</strong>`;",
+      "  }",
+      "}",
+      "customElements.define(\"user-card\", UserCard);"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-26",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "lines": [
+      "    <main id=\"main\">...</main>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<html lang=\"en\">",
+      "</body>",
+      "<body>",
+      "    <a href=\"#main\" class=\"skip\">Skip to content</a>"
+    ],
+    "answer": [
+      "<html lang=\"en\">",
+      "<body>",
+      "    <a href=\"#main\" class=\"skip\">Skip to content</a>",
+      "    <main id=\"main\">...</main>",
+      "</body>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-27",
+    "lesson": "lesson-38",
+    "difficulty": "medium",
+    "lines": [
+      "</html>",
+      "<main>...</main>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<html lang=\"en\">",
+      "<!DOCTYPE html>",
+      "<body>",
+      "<footer>...</footer>",
+      "</body>",
+      "<header>...</header>",
+      "<head><title>My Page</title></head>"
+    ],
+    "answer": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head><title>My Page</title></head>",
+      "<body>",
+      "<header>...</header>",
+      "<main>...</main>",
+      "<footer>...</footer>",
+      "</body>",
+      "</html>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-38. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-28",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "lines": [
+      "    <summary>Click to expand</summary>",
+      "    <p>Hidden until opened.</p>",
+      "</details>",
+      "<progress value=\"70\" max=\"100\"></progress>",
+      "<details>"
+    ],
+    "answer": [
+      "<details>",
+      "    <summary>Click to expand</summary>",
+      "    <p>Hidden until opened.</p>",
+      "</details>",
+      "<progress value=\"70\" max=\"100\"></progress>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-29",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "lines": [
+      "<button id=\"save\" data-action=\"save\">Save</button>",
+      "});",
+      "<script>",
+      "document.getElementById(\"save\").addEventListener(\"click\", () => {",
+      "    console.log(\"saved!\");",
+      "</script>"
+    ],
+    "answer": [
+      "<button id=\"save\" data-action=\"save\">Save</button>",
+      "<script>",
+      "document.getElementById(\"save\").addEventListener(\"click\", () => {",
+      "    console.log(\"saved!\");",
+      "});",
+      "</script>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-30",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "lines": [
+      "<!-- 1. tab through the whole page -->",
+      "<!-- audit checklist -->",
+      "<!-- 2. does every control have a label? -->",
+      "<!-- 3. contrast >= 4.5:1 for text -->"
+    ],
+    "answer": [
+      "<!-- audit checklist -->",
+      "<!-- 1. tab through the whole page -->",
+      "<!-- 2. does every control have a label? -->",
+      "<!-- 3. contrast >= 4.5:1 for text -->"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-31",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "lines": [
+      "<header><nav>...</nav></header>",
+      "<main><!-- page content --></main>",
+      "<!-- template: header rendered on every page -->"
+    ],
+    "answer": [
+      "<!-- template: header rendered on every page -->",
+      "<header><nav>...</nav></header>",
+      "<main><!-- page content --></main>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-32",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "lines": [
+      "    <article>Blog post</article>",
+      "</main>",
+      "<header>Site logo + nav</header>",
+      "<main>",
+      "<footer>Copyright</footer>"
+    ],
+    "answer": [
+      "<header>Site logo + nav</header>",
+      "<main>",
+      "    <article>Blog post</article>",
+      "</main>",
+      "<footer>Copyright</footer>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-33",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "lines": [
+      "</ul>",
+      "<h1>Main Title</h1>",
+      "    <li>Second item</li>",
+      "    <li>First item</li>",
+      "<h2>Section</h2>",
+      "<p>Some <strong>bold</strong> and <em>italic</em> text.</p>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<ul>"
+    ],
+    "answer": [
+      "<h1>Main Title</h1>",
+      "<h2>Section</h2>",
+      "<p>Some <strong>bold</strong> and <em>italic</em> text.</p>",
+      "<ul>",
+      "    <li>First item</li>",
+      "    <li>Second item</li>",
+      "</ul>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-34",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "lines": [
+      "    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>",
+      "<table>",
+      "    <thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "    <caption>Monthly sales</caption>",
+      "</table>"
+    ],
+    "answer": [
+      "<table>",
+      "    <caption>Monthly sales</caption>",
+      "    <thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>",
+      "    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>",
+      "</table>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-35",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "lines": [
+      "</head>",
+      "    <title>Learn HTML - Guide</title>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<head>",
+      "    <meta name=\"description\" content=\"A beginner guide to HTML.\">",
+      "    <link rel=\"canonical\" href=\"https://site.com/page\">"
+    ],
+    "answer": [
+      "<head>",
+      "    <title>Learn HTML - Guide</title>",
+      "    <meta name=\"description\" content=\"A beginner guide to HTML.\">",
+      "    <link rel=\"canonical\" href=\"https://site.com/page\">",
+      "</head>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-36",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "lines": [
+      "<script src=\"app.js\" defer></script>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\">"
+    ],
+    "answer": [
+      "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\">",
+      "<script src=\"app.js\" defer></script>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-37",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "lines": [
+      "  <h2>{post.title}</h2>",
+      "// React JSX — HTML with expressions",
+      "<div className=\"card\">",
+      "</div>",
+      "  <p>{post.body}</p>"
+    ],
+    "answer": [
+      "// React JSX — HTML with expressions",
+      "<div className=\"card\">",
+      "  <h2>{post.title}</h2>",
+      "  <p>{post.body}</p>",
+      "</div>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-38",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "lines": [
+      "<!-- Navigation starts here -->",
+      "<nav>...</nav>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<!-- NOTE: add search box -->"
+    ],
+    "answer": [
+      "<!-- Navigation starts here -->",
+      "<nav>...</nav>",
+      "<!-- NOTE: add search box -->",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-39",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "lines": [
+      "<input type=\"email\" name=\"email\" required>",
+      "<form method=\"post\" action=\"/signup\">",
+      "</form>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<input type=\"hidden\" name=\"csrf\" value=\"TOKEN\">"
+    ],
+    "answer": [
+      "<form method=\"post\" action=\"/signup\">",
+      "<input type=\"hidden\" name=\"csrf\" value=\"TOKEN\">",
+      "<input type=\"email\" name=\"email\" required>",
+      "</form>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-40",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "lines": [
+      "<p>5 &lt; 10 and 10 &gt; 5 is &amp; logic</p>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<p>Copyright &copy; 2026 &mdash; Tom &amp; Jerry</p>"
+    ],
+    "answer": [
+      "<p>5 &lt; 10 and 10 &gt; 5 is &amp; logic</p>",
+      "<p>Copyright &copy; 2026 &mdash; Tom &amp; Jerry</p>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-41",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "lines": [
+      "    <h2>Title</h2>",
+      "<div class=\"card\">",
+      "</div>",
+      "    <p>Text with a <span class=\"highlight\">highlighted</span> word.</p>"
+    ],
+    "answer": [
+      "<div class=\"card\">",
+      "    <h2>Title</h2>",
+      "    <p>Text with a <span class=\"highlight\">highlighted</span> word.</p>",
+      "</div>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-42",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "lines": [
+      "<input list=\"colors\" name=\"fav\">",
+      "    <option value=\"Blue\">",
+      "</datalist>",
+      "    <option value=\"Red\">",
+      "<datalist id=\"colors\">"
+    ],
+    "answer": [
+      "<input list=\"colors\" name=\"fav\">",
+      "<datalist id=\"colors\">",
+      "    <option value=\"Red\">",
+      "    <option value=\"Blue\">",
+      "</datalist>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-43",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "lines": [
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<tr><td style=\"padding:16px;\">Hello!</td></tr>",
+      "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">",
+      "</table>"
+    ],
+    "answer": [
+      "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">",
+      "<tr><td style=\"padding:16px;\">Hello!</td></tr>",
+      "</table>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-44",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "lines": [
+      "    <title>Page</title>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "</html>",
+      "<body>",
+      "<head>",
+      "</body>",
+      "<!DOCTYPE html>",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <!-- content -->",
+      "</head>",
+      "    <meta charset=\"UTF-8\">",
+      "<html lang=\"en\">"
+    ],
+    "answer": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <title>Page</title>",
+      "</head>",
+      "<body>",
+      "    <!-- content -->",
+      "</body>",
+      "</html>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-45",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "lines": [
+      "<script>",
+      "</script>",
+      "    console.log(\"saved!\");",
+      "<button id=\"save\" data-action=\"save\">Save</button>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "document.getElementById(\"save\").addEventListener(\"click\", () => {",
+      "});"
+    ],
+    "answer": [
+      "<button id=\"save\" data-action=\"save\">Save</button>",
+      "<script>",
+      "document.getElementById(\"save\").addEventListener(\"click\", () => {",
+      "    console.log(\"saved!\");",
+      "});",
+      "</script>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-46",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "lines": [
+      "    <meta charset=\"UTF-8\">",
+      "    <title>Page</title>",
+      "<body>",
+      "    <!-- content -->",
+      "<html lang=\"en\">",
+      "</html>",
+      "</body>",
+      "</head>",
+      "<!DOCTYPE html>",
+      "<head>",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+    ],
+    "answer": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <title>Page</title>",
+      "</head>",
+      "<body>",
+      "    <!-- content -->",
+      "</body>",
+      "</html>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-47",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "lines": [
+      "<tr><td style=\"padding:16px;\">Hello!</td></tr>",
+      "</table>",
+      "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">"
+    ],
+    "answer": [
+      "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\">",
+      "<tr><td style=\"padding:16px;\">Hello!</td></tr>",
+      "</table>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-48",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "lines": [
+      "</body>",
+      "<body>",
+      "</html>",
+      "<head><title>My Page</title></head>",
+      "<main>...</main>",
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<header>...</header>",
+      "<footer>...</footer>"
+    ],
+    "answer": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head><title>My Page</title></head>",
+      "<body>",
+      "<header>...</header>",
+      "<main>...</main>",
+      "<footer>...</footer>",
+      "</body>",
+      "</html>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-49",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "lines": [
+      "    <h2>Title</h2>",
+      "<div class=\"card\">",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "</div>",
+      "    <p>Text with a <span class=\"highlight\">highlighted</span> word.</p>"
+    ],
+    "answer": [
+      "<div class=\"card\">",
+      "    <h2>Title</h2>",
+      "    <p>Text with a <span class=\"highlight\">highlighted</span> word.</p>",
+      "</div>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-50",
+    "lesson": "lesson-36",
+    "difficulty": "hard",
+    "lines": [
+      "<!-- 1. tab through the whole page -->",
+      "<!-- 3. contrast >= 4.5:1 for text -->",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "<!-- audit checklist -->",
+      "<!-- 2. does every control have a label? -->"
+    ],
+    "answer": [
+      "<!-- audit checklist -->",
+      "<!-- 1. tab through the whole page -->",
+      "<!-- 2. does every control have a label? -->",
+      "<!-- 3. contrast >= 4.5:1 for text -->",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-51",
+    "lesson": "lesson-24",
+    "difficulty": "hard",
+    "lines": [
+      "</svg>",
+      "<canvas id=\"game\" width=\"300\" height=\"150\"></canvas>",
+      "<svg width=\"100\" height=\"100\">",
+      "    <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"blue\"/>"
+    ],
+    "answer": [
+      "<svg width=\"100\" height=\"100\">",
+      "    <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"blue\"/>",
+      "</svg>",
+      "<canvas id=\"game\" width=\"300\" height=\"150\"></canvas>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-52",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "lines": [
+      "<datalist id=\"colors\">",
+      "</datalist>",
+      "    <option value=\"Blue\">",
+      "<input list=\"colors\" name=\"fav\">",
+      "    <option value=\"Red\">",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "<input list=\"colors\" name=\"fav\">",
+      "<datalist id=\"colors\">",
+      "    <option value=\"Red\">",
+      "    <option value=\"Blue\">",
+      "</datalist>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-53",
+    "lesson": "lesson-38",
+    "difficulty": "hard",
+    "lines": [
+      "<footer>...</footer>",
+      "<main>...</main>",
+      "<header>...</header>",
+      "</html>",
+      "<html lang=\"en\">",
+      "</body>",
+      "<head><title>My Page</title></head>",
+      "<body>",
+      "<!DOCTYPE html>"
+    ],
+    "answer": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head><title>My Page</title></head>",
+      "<body>",
+      "<header>...</header>",
+      "<main>...</main>",
+      "<footer>...</footer>",
+      "</body>",
+      "</html>"
+    ],
+    "explanation": "This snippet comes from lesson lesson-38. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-54",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "lines": [
+      "</head>",
+      "    <title>My Page</title>",
+      "<html>",
+      "</body>",
+      "<!DOCTYPE html>",
+      "</html>",
+      "<!-- --> experiment: modify a value above and predict the new output",
+      "    <h1>Hello</h1>",
+      "<body>",
+      "<head>"
+    ],
+    "answer": [
+      "<!DOCTYPE html>",
+      "<html>",
+      "<head>",
+      "    <title>My Page</title>",
+      "</head>",
+      "<body>",
+      "    <h1>Hello</h1>",
+      "</body>",
+      "</html>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "html-puzzle-55",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "lines": [
+      "<input type=\"text\" required minlength=\"3\" pattern=\"[A-Za-z]+\">",
+      "<p class=\"error\" hidden>Invalid input</p>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "<input type=\"text\" required minlength=\"3\" pattern=\"[A-Za-z]+\">",
+      "<p class=\"error\" hidden>Invalid input</p>",
+      "<!-- --> experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  }
+]

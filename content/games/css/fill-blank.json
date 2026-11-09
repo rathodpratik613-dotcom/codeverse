@@ -1,0 +1,902 @@
+[
+  {
+    "id": "css-fill-01",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":_____ { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :root { --bg: #111; --text: #eee; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "root",
+    "options": [
+      "scroll-margin-top",
+      ":autofill",
+      "root",
+      "font-face"
+    ],
+    "explanation": "\"root\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "css-fill-02",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":root { --bg: #fff; --text: #111; }\n@media (prefers-_____-scheme: dark) {\n    :root { --bg: #111; --text: #eee; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "color",
+    "options": [
+      "word-break",
+      "unicode-bidi",
+      "overscroll-behavior",
+      "color"
+    ],
+    "explanation": "\"color\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "css-fill-03",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":_____ {\n    --primary: #6366f1;\n}\nbutton {\n    background: var(--primary);\n    color: white;\n}",
+    "answer": "root",
+    "options": [
+      "root",
+      "any-link",
+      "@supports",
+      "align-content"
+    ],
+    "explanation": "\"root\" is the correct keyword here — check the lesson on lesson-03 for context."
+  },
+  {
+    "id": "css-fill-04",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":root {\n    --primary: #6366f1;\n}\nbutton {\n    _____: var(--primary);\n    color: white;\n}",
+    "answer": "background",
+    "options": [
+      "scrollbar-corner",
+      "hyphenate-character",
+      "background",
+      "bleed"
+    ],
+    "explanation": "\"background\" is the correct keyword here — check the lesson on lesson-03 for context."
+  },
+  {
+    "id": "css-fill-05",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "input_____-visible {\n    outline: 2px solid blue;\n    outline-offset: 2px;\n}\ninput[type=\"checkbox\"] {\n    accent-color: #6366f1;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": ":focus",
+    "options": [
+      "tan",
+      "box-decoration-break",
+      ":focus",
+      "text-align"
+    ],
+    "explanation": "\":focus\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "css-fill-06",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "input:focus-visible {\n    _____: 2px solid blue;\n    outline-offset: 2px;\n}\ninput[type=\"checkbox\"] {\n    accent-color: #6366f1;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "outline",
+    "options": [
+      "outline",
+      "::placeholder",
+      "page-orientation",
+      "max"
+    ],
+    "explanation": "\"outline\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "css-fill-07",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card {\n    transition: transform 0.2s ease, _____ 0.2s ease;\n}\n.card:hover {\n    transform: translateY(-4px);\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "box-shadow",
+    "options": [
+      "list-style-image",
+      "orphans",
+      "box-shadow",
+      "sign"
+    ],
+    "explanation": "\"box-shadow\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "css-fill-08",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card {\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n.card_____ {\n    transform: translateY(-4px);\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": ":hover",
+    "options": [
+      ":link",
+      ":is",
+      ":hover",
+      "::slotted"
+    ],
+    "explanation": "\":hover\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "css-fill-09",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":_____ {\n    --primary: #6366f1;\n}\nbutton {\n    background: var(--primary);\n    color: white;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "root",
+    "options": [
+      "hyphenate-limit-chars",
+      "content",
+      ":last-child",
+      "root"
+    ],
+    "explanation": "\"root\" is the correct keyword here — check the lesson on lesson-03 for context."
+  },
+  {
+    "id": "css-fill-10",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":root {\n    --primary: #6366f1;\n}\nbutton {\n    _____: var(--primary);\n    color: white;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "background",
+    "options": [
+      "url",
+      "background",
+      "local-link",
+      ":default"
+    ],
+    "explanation": "\"background\" is the correct keyword here — check the lesson on lesson-03 for context."
+  },
+  {
+    "id": "css-fill-11",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "* {\n    box-sizing: _____-box;\n}\n.card {\n    width: 300px;\n    padding: 20px;\n    border: 1px solid #ddd;\n    margin: 10px auto;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "border",
+    "options": [
+      "container-type",
+      ":focus-visible",
+      "border",
+      "any-link"
+    ],
+    "explanation": "\"border\" is the correct keyword here — check the lesson on lesson-05 for context."
+  },
+  {
+    "id": "css-fill-12",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "* {\n    box-sizing: border-box;\n}\n.card {\n    _____: 300px;\n    padding: 20px;\n    border: 1px solid #ddd;\n    margin: 10px auto;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "width",
+    "options": [
+      "scrollbar-corner",
+      "object-position",
+      "width",
+      "cursor"
+    ],
+    "explanation": "\"width\" is the correct keyword here — check the lesson on lesson-05 for context."
+  },
+  {
+    "id": "css-fill-13",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":_____ {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n/* tokens -> base -> components -> utilities */\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "root",
+    "options": [
+      "animation-timing-function",
+      "place-self",
+      "abs",
+      "root"
+    ],
+    "explanation": "\"root\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "css-fill-14",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":root {\n    --_____-primary: #6366f1;\n    --space-md: 1rem;\n}\n/* tokens -> base -> components -> utilities */\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "color",
+    "options": [
+      "target-current",
+      "color",
+      ":nth-last-of-type",
+      "mask-clip"
+    ],
+    "explanation": "\"color\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "css-fill-15",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card-wrapper { _____: inline-size; }\n@container (min-width: 350px) {\n    .card { grid-template-columns: 1fr 1fr; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "container-type",
+    "options": [
+      "@-moz-document",
+      "first-child",
+      "container-type",
+      "is"
+    ],
+    "explanation": "\"container-type\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "css-fill-16",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card-wrapper { container-type: inline-size; }\n@container (min-_____: 350px) {\n    .card { grid-template-columns: 1fr 1fr; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "width",
+    "options": [
+      "break-before",
+      "width",
+      "scroll-timeline-axis",
+      "animation-fill-mode"
+    ],
+    "explanation": "\"width\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "css-fill-17",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".hidden {\n    _____: none;\n}\n.inline-block {\n    display: inline-block;\n    width: 100px;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "display",
+    "options": [
+      "display",
+      "max-height",
+      "font-style",
+      "@container"
+    ],
+    "explanation": "\"display\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "css-fill-18",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".hidden {\n    display: none;\n}\n.inline-block {\n    _____: inline-block;\n    width: 100px;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "display",
+    "options": [
+      "keyframes",
+      ":dir",
+      "display",
+      "container-name"
+    ],
+    "explanation": "\"display\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "css-fill-19",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".row {\n    _____: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 16px;\n}",
+    "answer": "display",
+    "options": [
+      "::cue",
+      "atan2",
+      "display",
+      "@-ms-keyframes"
+    ],
+    "explanation": "\"display\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "css-fill-20",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".row {\n    display: flex;\n    _____: space-between;\n    align-items: center;\n    gap: 16px;\n}",
+    "answer": "justify-content",
+    "options": [
+      "slotted",
+      "picture-in-picture",
+      "box-shadow",
+      "justify-content"
+    ],
+    "explanation": "\"justify-content\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "css-fill-21",
+    "lesson": "lesson-37",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "/* browserslist */\n> 0.5%, last 2 versions, _____ dead\n/* compiles modern CSS for older targets */",
+    "answer": "not",
+    "options": [
+      "animation-timeline",
+      ":host-context",
+      "not",
+      ":modal"
+    ],
+    "explanation": "\"not\" is the correct keyword here — check the lesson on lesson-37 for context."
+  },
+  {
+    "id": "css-fill-22",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".tooltip {\n    _____: absolute;\n    position-anchor: --btn;\n    top: anchor(bottom);\n}\nbutton { anchor-name: --btn; }",
+    "answer": "position",
+    "options": [
+      "transform",
+      "contain-intrinsic-inline-size",
+      "align-content",
+      "position"
+    ],
+    "explanation": "\"position\" is the correct keyword here — check the lesson on lesson-36 for context."
+  },
+  {
+    "id": "css-fill-23",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".tooltip {\n    position: absolute;\n    _____-anchor: --btn;\n    top: anchor(bottom);\n}\nbutton { anchor-name: --btn; }",
+    "answer": "position",
+    "options": [
+      "position",
+      ":host",
+      "overflow-wrap",
+      "initial-letter-wrap"
+    ],
+    "explanation": "\"position\" is the correct keyword here — check the lesson on lesson-36 for context."
+  },
+  {
+    "id": "css-fill-24",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".button {\n    _____: 2px solid #333;\n    border-radius: 999px;\n    outline: 3px solid transparent;\n}\n.button:focus-visible {\n    outline-color: blue;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "border",
+    "options": [
+      "border",
+      "mask-image",
+      "initial-letter-wrap",
+      "clamp"
+    ],
+    "explanation": "\"border\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "css-fill-25",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".button {\n    border: 2px solid #333;\n    _____-radius: 999px;\n    outline: 3px solid transparent;\n}\n.button:focus-visible {\n    outline-color: blue;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "border",
+    "options": [
+      "visibility",
+      "scrollbar-corner",
+      ":default",
+      "border"
+    ],
+    "explanation": "\"border\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "css-fill-26",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@_____ print {\n    nav, .ads { display: none; }\n    .card { page-break-inside: avoid; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "media",
+    "options": [
+      "media",
+      "anchor()",
+      "padding-left",
+      "word-break"
+    ],
+    "explanation": "\"media\" is the correct keyword here — check the lesson on lesson-22 for context."
+  },
+  {
+    "id": "css-fill-27",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@media print {\n    nav, .ads { _____: none; }\n    .card { page-break-inside: avoid; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "display",
+    "options": [
+      ":autofill",
+      "text-wrap-style",
+      "property",
+      "display"
+    ],
+    "explanation": "\"display\" is the correct keyword here — check the lesson on lesson-22 for context."
+  },
+  {
+    "id": "css-fill-28",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@page { _____: 2cm; }\n@media print {\n    nav, footer { display: none; }\n    .card { break-inside: avoid; }\n}",
+    "answer": "margin",
+    "options": [
+      ":is",
+      "margin",
+      "min",
+      "grid-auto-columns"
+    ],
+    "explanation": "\"margin\" is the correct keyword here — check the lesson on lesson-31 for context."
+  },
+  {
+    "id": "css-fill-29",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@page { margin: 2cm; }\n@_____ print {\n    nav, footer { display: none; }\n    .card { break-inside: avoid; }\n}",
+    "answer": "media",
+    "options": [
+      "align-self",
+      "timeline-scope",
+      "link",
+      "media"
+    ],
+    "explanation": "\"media\" is the correct keyword here — check the lesson on lesson-31 for context."
+  },
+  {
+    "id": "css-fill-30",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":_____ {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n.button {\n    background: var(--color-primary);\n    padding: var(--space-md);\n}",
+    "answer": "root",
+    "options": [
+      "target-text",
+      "scroll-margin-top",
+      "abs",
+      "root"
+    ],
+    "explanation": "\"root\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "css-fill-31",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":root {\n    --_____-primary: #6366f1;\n    --space-md: 1rem;\n}\n.button {\n    background: var(--color-primary);\n    padding: var(--space-md);\n}",
+    "answer": "color",
+    "options": [
+      "color",
+      "letter-spacing",
+      "margin",
+      ":disabled"
+    ],
+    "explanation": "\"color\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "css-fill-32",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".layout {\n    _____: grid;\n    grid-template-columns: 250px 1fr;\n    gap: 20px;\n}",
+    "answer": "display",
+    "options": [
+      "display",
+      "after",
+      ":in-range",
+      "white-space"
+    ],
+    "explanation": "\"display\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "css-fill-33",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".layout {\n    display: grid;\n    _____-template-columns: 250px 1fr;\n    gap: 20px;\n}",
+    "answer": "grid",
+    "options": [
+      "sqrt",
+      "grid",
+      "first-letter",
+      "scroll-padding"
+    ],
+    "explanation": "\"grid\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "css-fill-34",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".hero {\n    _____: clamp(1.5rem, 4vw, 3rem);\n    width: min(90%, 1200px);\n    margin: 0 auto;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "font-size",
+    "options": [
+      "@-moz-document",
+      ":required",
+      "font-size",
+      "counters"
+    ],
+    "explanation": "\"font-size\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "css-fill-35",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".hero {\n    font-size: clamp(1.5rem, 4vw, 3rem);\n    _____: min(90%, 1200px);\n    margin: 0 auto;\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "width",
+    "options": [
+      "width",
+      "part",
+      "target-within",
+      ":not"
+    ],
+    "explanation": "\"width\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "css-fill-36",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@media (max-_____: 768px) {\n    .nav { flex-direction: column; }\n}",
+    "answer": "width",
+    "options": [
+      "anchor-size()",
+      "width",
+      "first-line",
+      "nth-last-child"
+    ],
+    "explanation": "\"width\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "css-fill-37",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@media (max-width: 768px) {\n    .nav { flex-_____: column; }\n}",
+    "answer": "direction",
+    "options": [
+      "max",
+      "cqw",
+      "scroll-timeline-axis",
+      "direction"
+    ],
+    "explanation": "\"direction\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "css-fill-38",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card {\n    _____: 1px solid #ccc;\n    padding: 16px;\n}\n.card .title {\n    font-weight: bold;\n}",
+    "answer": "border",
+    "options": [
+      "interactivity",
+      "hyphenate-limit-lines",
+      "border",
+      "namespace"
+    ],
+    "explanation": "\"border\" is the correct keyword here — check the lesson on lesson-02 for context."
+  },
+  {
+    "id": "css-fill-39",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card {\n    border: 1px solid #ccc;\n    _____: 16px;\n}\n.card .title {\n    font-weight: bold;\n}",
+    "answer": "padding",
+    "options": [
+      "backdrop",
+      "image-set",
+      "padding",
+      "tan"
+    ],
+    "explanation": "\"padding\" is the correct keyword here — check the lesson on lesson-02 for context."
+  },
+  {
+    "id": "css-fill-40",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@_____ reset, base, components, utilities;\n@layer components {\n    .btn { padding: 0.5rem 1rem; }\n}",
+    "answer": "layer",
+    "options": [
+      "target-counters",
+      "layer",
+      "any-link",
+      "initial-letter-align"
+    ],
+    "explanation": "\"layer\" is the correct keyword here — check the lesson on lesson-34 for context."
+  },
+  {
+    "id": "css-fill-41",
+    "lesson": "lesson-34",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@layer reset, base, components, utilities;\n@_____ components {\n    .btn { padding: 0.5rem 1rem; }\n}",
+    "answer": "layer",
+    "options": [
+      "mix-blend-mode",
+      "layer",
+      "font-size",
+      "scroll-margin"
+    ],
+    "explanation": "\"layer\" is the correct keyword here — check the lesson on lesson-34 for context."
+  },
+  {
+    "id": "css-fill-42",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".carousel {\n    _____: flex;\n    overflow-x: auto;\n    scroll-snap-type: x proximity;\n}\n.slide { scroll-snap-align: start; }",
+    "answer": "display",
+    "options": [
+      "contain",
+      "focus-visible",
+      "list-style",
+      "display"
+    ],
+    "explanation": "\"display\" is the correct keyword here — check the lesson on lesson-24 for context."
+  },
+  {
+    "id": "css-fill-43",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".carousel {\n    display: flex;\n    _____-x: auto;\n    scroll-snap-type: x proximity;\n}\n.slide { scroll-snap-align: start; }",
+    "answer": "overflow",
+    "options": [
+      "overflow",
+      "@charset",
+      ":checked",
+      ":enabled"
+    ],
+    "explanation": "\"overflow\" is the correct keyword here — check the lesson on lesson-24 for context."
+  },
+  {
+    "id": "css-fill-44",
+    "lesson": "lesson-37",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "/* browserslist */\n> 0.5%, last 2 versions, _____ dead\n/* compiles modern CSS for older targets */\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "not",
+    "options": [
+      "padding-top",
+      "not",
+      "letter-spacing",
+      ":default"
+    ],
+    "explanation": "\"not\" is the correct keyword here — check the lesson on lesson-37 for context."
+  },
+  {
+    "id": "css-fill-45",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@_____ fadeUp {\n    from { opacity: 0; transform: translateY(20px); }\n    to { opacity: 1; transform: none; }\n}\n.card { animation: fadeUp .4s ease both; }",
+    "answer": "keyframes",
+    "options": [
+      "keyframes",
+      "user-invalid",
+      "backdrop",
+      ":first-child"
+    ],
+    "explanation": "\"keyframes\" is the correct keyword here — check the lesson on lesson-30 for context."
+  },
+  {
+    "id": "css-fill-46",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@keyframes fadeUp {\n    from { _____: 0; transform: translateY(20px); }\n    to { opacity: 1; transform: none; }\n}\n.card { animation: fadeUp .4s ease both; }",
+    "answer": "opacity",
+    "options": [
+      "hyphenate-limit-lines",
+      "opacity",
+      ":nth-child",
+      "timeline-scope"
+    ],
+    "explanation": "\"opacity\" is the correct keyword here — check the lesson on lesson-30 for context."
+  },
+  {
+    "id": "css-fill-47",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card {\n    _____: 1rem;\n    .title { font-weight: bold; }\n    &:hover { box-shadow: 0 4px 12px #0002; }\n}",
+    "answer": "padding",
+    "options": [
+      "mask-origin",
+      "contain-intrinsic-height",
+      "align-self",
+      "padding"
+    ],
+    "explanation": "\"padding\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "css-fill-48",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card {\n    padding: 1rem;\n    .title { _____: bold; }\n    &:hover { box-shadow: 0 4px 12px #0002; }\n}",
+    "answer": "font-weight",
+    "options": [
+      "font-weight",
+      "cqb",
+      "cqw",
+      "host-context"
+    ],
+    "explanation": "\"font-weight\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "css-fill-49",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card_____ {\n    transform: translateY(-4px) scale(1.02);\n}",
+    "answer": ":hover",
+    "options": [
+      "cursor",
+      "text-autospace",
+      ":hover",
+      "exp"
+    ],
+    "explanation": "\":hover\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "css-fill-50",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ".card:hover {\n    _____: translateY(-4px) scale(1.02);\n}",
+    "answer": "transform",
+    "options": [
+      ":root",
+      "counters",
+      "text-wrap-mode",
+      "transform"
+    ],
+    "explanation": "\"transform\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "css-fill-51",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":_____ { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :root { --bg: #111; --text: #eee; }\n}",
+    "answer": "root",
+    "options": [
+      "dir",
+      "root",
+      "float",
+      "pow"
+    ],
+    "explanation": "\"root\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "css-fill-52",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":root { --bg: #fff; --text: #111; }\n@media (prefers-_____-scheme: dark) {\n    :root { --bg: #111; --text: #eee; }\n}",
+    "answer": "color",
+    "options": [
+      ":required",
+      "contain-intrinsic-height",
+      "color",
+      "border-top-right-radius"
+    ],
+    "explanation": "\"color\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "css-fill-53",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":_____ {\n    --color-primary: #6366f1;\n    --space-md: 1rem;\n}\n.button {\n    background: var(--color-primary);\n    padding: var(--space-md);\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "root",
+    "options": [
+      "bottom",
+      "log",
+      "root",
+      "transition-timing-function"
+    ],
+    "explanation": "\"root\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "css-fill-54",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":root {\n    --_____-primary: #6366f1;\n    --space-md: 1rem;\n}\n.button {\n    background: var(--color-primary);\n    padding: var(--space-md);\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "color",
+    "options": [
+      "acos",
+      "color",
+      "aspect-ratio",
+      "isolation"
+    ],
+    "explanation": "\"color\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "css-fill-55",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "body {\n    _____: sans-serif;\n    color: #333;\n}\nh1 {\n    color: navy;\n}",
+    "answer": "font-family",
+    "options": [
+      "font-family",
+      ":where",
+      ":target",
+      "timeline-scope"
+    ],
+    "explanation": "\"font-family\" is the correct keyword here — check the lesson on lesson-01 for context."
+  },
+  {
+    "id": "css-fill-56",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "body {\n    font-family: sans-serif;\n    _____: #333;\n}\nh1 {\n    color: navy;\n}",
+    "answer": "color",
+    "options": [
+      "::marker",
+      "root",
+      "padding-top",
+      "color"
+    ],
+    "explanation": "\"color\" is the correct keyword here — check the lesson on lesson-01 for context."
+  },
+  {
+    "id": "css-fill-57",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@media (max-_____: 768px) {\n    .nav { flex-direction: column; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "width",
+    "options": [
+      "text-align",
+      "width",
+      "text-wrap-shift",
+      "place-self"
+    ],
+    "explanation": "\"width\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "css-fill-58",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": "@media (max-width: 768px) {\n    .nav { flex-_____: column; }\n}\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "direction",
+    "options": [
+      "content-visibility",
+      "host-context",
+      "::cue",
+      "direction"
+    ],
+    "explanation": "\"direction\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "css-fill-59",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":_____ { --bg: #fff; --text: #111; }\n@media (prefers-color-scheme: dark) {\n    :root { --bg: #141414; --text: #eee; }\n}\nbody { background: var(--bg); color: var(--text); }\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "root",
+    "options": [
+      "round",
+      "break-after",
+      "scroll-margin-top",
+      "root"
+    ],
+    "explanation": "\"root\" is the correct keyword here — check the lesson on lesson-29 for context."
+  },
+  {
+    "id": "css-fill-60",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this css code:",
+    "code": ":root { --bg: #fff; --text: #111; }\n@media (prefers-_____-scheme: dark) {\n    :root { --bg: #141414; --text: #eee; }\n}\nbody { background: var(--bg); color: var(--text); }\n/* */ experiment: modify a value above and predict the new output",
+    "answer": "color",
+    "options": [
+      "page",
+      "string-set",
+      "transition-timing-function",
+      "color"
+    ],
+    "explanation": "\"color\" is the correct keyword here — check the lesson on lesson-29 for context."
+  }
+]

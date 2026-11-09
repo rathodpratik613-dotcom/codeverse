@@ -1,0 +1,367 @@
+[
+  {
+    "id": "r-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Fast lookup of values by a unique key"
+    ]
+  },
+  {
+    "id": "r-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      }
+    ],
+    "distractors": [
+      "Parameters are placeholders; arguments are the real values passed",
+      "A base case that stops the recursion",
+      "Reproduce it reliably and note the exact steps"
+    ]
+  },
+  {
+    "id": "r-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic",
+      "A named storage location for a value",
+      "Joining them end to end into one string"
+    ]
+  },
+  {
+    "id": "r-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      },
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      },
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      }
+    ],
+    "distractors": [
+      "#",
+      "#"
+    ]
+  },
+  {
+    "id": "r-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Why is binary search faster than linear search?",
+        "right": "It halves the remaining items each step"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Nothing — the block is skipped"
+    ]
+  },
+  {
+    "id": "r-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What makes a while loop safe?",
+        "right": "Its condition eventually becomes false"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "isValidEmail"
+    ]
+  },
+  {
+    "id": "r-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What is the correct comment syntax?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      }
+    ],
+    "distractors": [
+      "That your code runs and produces output",
+      "A ready-made function provided by the language"
+    ]
+  },
+  {
+    "id": "r-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "What does \"return\" do?",
+        "right": "Sends a value back and ends the function"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "r-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "What is the best first step for a capstone project?",
+        "right": "Define the smallest version that works end-to-end"
+      },
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      }
+    ],
+    "distractors": [
+      "Nothing — the block is skipped"
+    ]
+  },
+  {
+    "id": "r-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "What is 10 % 3 in most languages?",
+        "right": "1 (the remainder)"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Joining them end to end into one string"
+    ]
+  },
+  {
+    "id": "r-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Where should you look FIRST for accurate syntax questions?",
+        "right": "The official language documentation"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Define the smallest version that works end-to-end",
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\"",
+      "you know how many times to repeat"
+    ]
+  },
+  {
+    "id": "r-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "What is a commit?",
+        "right": "A saved snapshot of your code at a point in time"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "That your code runs and produces output",
+      "Skips to the next iteration",
+      "A blueprint for creating objects"
+    ]
+  },
+  {
+    "id": "r-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In boolean logic, A AND B is true when...",
+        "right": "both A and B are true"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in R?",
+        "right": "#"
+      },
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      }
+    ],
+    "distractors": [
+      "Nothing — the block is skipped",
+      "A blueprint for creating objects"
+    ]
+  },
+  {
+    "id": "r-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What should you do FIRST when you find a bug?",
+        "right": "Reproduce it reliably and note the exact steps"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In R, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      }
+    ],
+    "distractors": [
+      "#",
+      "#",
+      "A named storage location for a value"
+    ]
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ruby-bug-01",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "end greet(name) {\n    return \"Hello, \" + name\n}\n# call it: greet(\"Sam\")\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "def square(n) {",
+      "def greet(name) {",
+      "for i in range(10) {",
+      "end greet(name) {"
+    ],
+    "answer": "def greet(name) {",
+    "explanation": "Line 1 uses \"end\" where \"def\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-02",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "name = \"Alice\"\nage = 30\n# Common types: \"Alice\" is a string, 42 is a number, def is a boolean\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# Common types: \"Alice\" is a string, 42 is a number, def is a boolean",
+      "# Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "# git commit -m \"describe why\"",
+      "try {"
+    ],
+    "answer": "# Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "explanation": "Line 3 uses \"def\" where \"true\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-03",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "def factorial(n) {\n    def n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "if n <= 1 { return 1 }",
+      "# experiment: modify a value above and predict the new output",
+      "def n <= 1 { return 1 }",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "if n <= 1 { return 1 }",
+    "explanation": "Line 2 uses \"def\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-04",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "age = 20\ndef age >= 18 {\n    puts \"Adult\"\n} else {\n    puts \"Minor\"\n}",
+    "buggyLine": 2,
+    "options": [
+      "def age >= 18 {",
+      "age = 30",
+      "if age >= 18 {",
+      "puts \"Alice\""
+    ],
+    "answer": "if age >= 18 {",
+    "explanation": "Line 2 uses \"def\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-05",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "# Docs pattern: Quick Start -> Guides -> API Reference\n# search def: function name + your language\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "# search def: function name + your language",
+      "# 3. smallest code that reproduces it",
+      "# search for: function name + your language",
+      "# git push     - share to remote"
+    ],
+    "answer": "# search for: function name + your language",
+    "explanation": "Line 2 uses \"def\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-06",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "def i in range(5) {\n    puts i\n}\n# prints 0 1 2 3 4",
+    "buggyLine": 1,
+    "options": [
+      "def i in range(5) {",
+      "return n * n",
+      "puts count",
+      "for i in range(5) {"
+    ],
+    "answer": "for i in range(5) {",
+    "explanation": "Line 1 uses \"def\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-07",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "for i in range(10) {\n    if i == 5 { break }\n    def i\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# git add .     - stage changes",
+      "puts i",
+      "def i",
+      "count = 0"
+    ],
+    "answer": "puts i",
+    "explanation": "Line 3 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-08",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "if age >= 18 AND hasTicket {\n    def \"Welcome in\"\n}",
+    "buggyLine": 2,
+    "options": [
+      "puts \"Welcome in\"",
+      "# an object groups related fields under one name",
+      "def \"Welcome in\"",
+      "name = \"Alice\""
+    ],
+    "answer": "puts \"Welcome in\"",
+    "explanation": "Line 2 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-09",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "count = 0\ndef count < 5 {\n    puts count\n    count = count + 1\n}",
+    "buggyLine": 2,
+    "options": [
+      "# DEBUG: print intermediate values",
+      "def count < 5 {",
+      "if n <= 1 { return 1 }",
+      "while count < 5 {"
+    ],
+    "answer": "while count < 5 {",
+    "explanation": "Line 2 uses \"def\" where \"while\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-10",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "code": "# DEBUG: print intermediate values\ntotal = 0\n    total = total + item\ndef total\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "# fetch data without blocking the UI",
+      "puts total",
+      "def total"
+    ],
+    "answer": "puts total",
+    "explanation": "Line 4 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-11",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "if age >= 18 AND hasTicket {\n    def \"Welcome in\"\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "age = 30",
+      "def bark() { puts \"Woof!\" }",
+      "puts \"Welcome in\"",
+      "def \"Welcome in\""
+    ],
+    "answer": "puts \"Welcome in\"",
+    "explanation": "Line 2 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-12",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "def greet(name) {\n    def \"Hello, \" + name\n}\n# call it: greet(\"Sam\")",
+    "buggyLine": 2,
+    "options": [
+      "puts \"*\"",
+      "def \"Hello, \" + name",
+      "# result is now 25",
+      "return \"Hello, \" + name"
+    ],
+    "answer": "return \"Hello, \" + name",
+    "explanation": "Line 2 uses \"def\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-13",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "def square(n) {\n    def n * n\n}\nresult = square(5)\n# result is now 25\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "puts user[\"name\"]  # look up by key",
+      "return n * n",
+      "def n * n",
+      "# git push     - share to remote"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 2 uses \"def\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-14",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "user = { \"name\": \"Alice\", \"age\": 30 }\ndef user[\"name\"]  # look up by key\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "puts user[\"name\"]  # look up by key",
+      "with open(\"data.txt\", \"r\") as file {",
+      "def user[\"name\"]  # look up by key",
+      "# length/count, round/floor/ceil, min/max, sort, join/split"
+    ],
+    "answer": "puts user[\"name\"]  # look up by key",
+    "explanation": "Line 2 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-15",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "code": "def \"Alice\"\n# The line above sends text to the screen\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "class Dog {",
+      "# e.g. math functions, date handling, file helpers",
+      "puts \"Alice\"",
+      "def \"Alice\""
+    ],
+    "answer": "puts \"Alice\"",
+    "explanation": "Line 1 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-16",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "age = 20\nif age >= 18 {\n    puts \"Adult\"\n} else {\n    def \"Minor\"\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "# e.g. math functions, date handling, file helpers",
+      "puts \"Minor\"",
+      "# experiment: modify a value above and predict the new output",
+      "def \"Minor\""
+    ],
+    "answer": "puts \"Minor\"",
+    "explanation": "Line 5 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-17",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "def Dog {\n    name = \"Buddy\"\n    def bark() { puts \"Woof!\" }\n}\n# dog = Dog()  then  dog.bark()",
+    "buggyLine": 1,
+    "options": [
+      "def Dog {",
+      "class Dog {",
+      "# experiment: modify a value above and predict the new output",
+      "return n * n"
+    ],
+    "answer": "class Dog {",
+    "explanation": "Line 1 uses \"def\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-18",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "def factorial(n) {\n    if n <= 1 { return 1 }\n    def n * factorial(n - 1)\n}",
+    "buggyLine": 3,
+    "options": [
+      "return n * factorial(n - 1)",
+      "def n * factorial(n - 1)",
+      "# experiment: modify a value above and predict the new output",
+      "# text + \" World\" joins strings"
+    ],
+    "answer": "return n * factorial(n - 1)",
+    "explanation": "Line 3 uses \"def\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-19",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "end add(a, b) {\n    return a + b\n}\nputs add(2, 3)  # passes 2 and 3 as arguments",
+    "buggyLine": 1,
+    "options": [
+      "def add(a, b) {",
+      "# Docs pattern: Quick Start -> Guides -> API Reference",
+      "end add(a, b) {",
+      "user = { name: \"Alice\", age: 30 }"
+    ],
+    "answer": "def add(a, b) {",
+    "explanation": "Line 1 uses \"end\" where \"def\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-20",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "total = 0  # global\nend add(x) {\n    total = total + x  # needs special handling in strict languages\n}",
+    "buggyLine": 2,
+    "options": [
+      "# tags now holds only 2 unique values",
+      "def add(x) {",
+      "# Variables hold reusable values",
+      "end add(x) {"
+    ],
+    "answer": "def add(x) {",
+    "explanation": "Line 2 uses \"end\" where \"def\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-21",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "def row in range(3) {\n    for col in range(3) {\n        puts \"*\"\n    }\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "# git add .     - stage changes",
+      "def row in range(3) {",
+      "userCount = 0",
+      "for row in range(3) {"
+    ],
+    "answer": "for row in range(3) {",
+    "explanation": "Line 1 uses \"def\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-22",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "def Dog {\n    name = \"Buddy\"\n    def bark() { puts \"Woof!\" }\n}\n# dog = Dog()  then  dog.bark()\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "class Dog {",
+      "def Dog {",
+      "# 1. what I expected",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "class Dog {",
+    "explanation": "Line 1 uses \"def\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-23",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "items = [\"a\", \"b\", \"c\"]\ndef items[0]  # first item\n# items[1], items[2] ... indexes count from 0\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "def items[0]  # first item",
+      "puts items[0]  # first item",
+      "# experiment: modify a value above and predict the new output",
+      "# import the tools you need"
+    ],
+    "answer": "puts items[0]  # first item",
+    "explanation": "Line 2 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-24",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    def \"Something went wrong\"\n}",
+    "buggyLine": 4,
+    "options": [
+      "name = \"Alice\"",
+      "puts \"Something went wrong\"",
+      "def \"Something went wrong\"",
+      "puts \"Adult\""
+    ],
+    "answer": "puts \"Something went wrong\"",
+    "explanation": "Line 4 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-25",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "count = 0\nwhile count < 5 {\n    def count\n    count = count + 1\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "puts add(2, 3)  # passes 2 and 3 as arguments",
+      "return \"Hello, \" + name",
+      "puts count",
+      "def count"
+    ],
+    "answer": "puts count",
+    "explanation": "Line 3 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-26",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "# DEBUG: print intermediate values\ntotal = 0\n    total = total + item\ndef total",
+    "buggyLine": 4,
+    "options": [
+      "puts total",
+      "while count < 5 {",
+      "if age >= 18 AND hasTicket {",
+      "def total"
+    ],
+    "answer": "puts total",
+    "explanation": "Line 4 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-27",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "# This program greets the world\ndef \"Hello, World!\"\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "puts \"Hello, World!\"",
+      "def \"Hello, World!\"",
+      "# git basics",
+      "puts i"
+    ],
+    "answer": "puts \"Hello, World!\"",
+    "explanation": "Line 2 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-28",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "for i in range(5) {\n    def i\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "def i",
+      "text = \"Hello\"",
+      "puts i",
+      "# Good: totalPrice = calculateTotal(basePrice, taxRate)"
+    ],
+    "answer": "puts i",
+    "explanation": "Line 2 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-29",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    def \"Something went wrong\"\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "def \"Something went wrong\"",
+      "# git basics",
+      "# sorted -> [1, 2, 3]  (use the built-in sort)",
+      "puts \"Something went wrong\""
+    ],
+    "answer": "puts \"Something went wrong\"",
+    "explanation": "Line 4 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-30",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "name = \"Alice\"\nage = 30\n# Common types: \"Alice\" is a string, 42 is a number, def is a boolean",
+    "buggyLine": 3,
+    "options": [
+      "def square(n) {",
+      "# prints 0 1 2 3 4",
+      "# Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "# Common types: \"Alice\" is a string, 42 is a number, def is a boolean"
+    ],
+    "answer": "# Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "explanation": "Line 3 uses \"def\" where \"true\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-31",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "def i in range(10) {\n    if i == 5 { break }\n    puts i\n}\n# prints 0 1 2 3 4",
+    "buggyLine": 1,
+    "options": [
+      "for i in range(10) {",
+      "# experiment: modify a value above and predict the new output",
+      "for i in range(5) {",
+      "def i in range(10) {"
+    ],
+    "answer": "for i in range(10) {",
+    "explanation": "Line 1 uses \"def\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-32",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "items = [\"a\", \"b\", \"c\"]\ndef items[0]  # first item\n# items[1], items[2] ... indexes count from 0",
+    "buggyLine": 2,
+    "options": [
+      "puts \"*\"",
+      "puts items[0]  # first item",
+      "def factorial(n) {",
+      "def items[0]  # first item"
+    ],
+    "answer": "puts items[0]  # first item",
+    "explanation": "Line 2 uses \"def\" where \"puts\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-33",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "code": "for row in range(3) {\n    def col in range(3) {\n        puts \"*\"\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "try {",
+      "for col in range(3) {",
+      "def col in range(3) {",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "for col in range(3) {",
+    "explanation": "Line 2 uses \"def\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-34",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "end add(a, b) {\n    return a + b\n}\nputs add(2, 3)  # passes 2 and 3 as arguments\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "end add(a, b) {",
+      "def add(a, b) {",
+      "# 2. what actually happened",
+      "userCount = 0"
+    ],
+    "answer": "def add(a, b) {",
+    "explanation": "Line 1 uses \"end\" where \"def\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-35",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "def square(n) {\n    def n * n\n}\nresult = square(5)\n# result is now 25",
+    "buggyLine": 2,
+    "options": [
+      "return n * n",
+      "def add(x) {",
+      "} else {",
+      "def n * n"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 2 uses \"def\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-36",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "total = 0  # global\nend add(x) {\n    total = total + x  # needs special handling in strict languages\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "try {",
+      "def add(x) {",
+      "} catch (error) {",
+      "end add(x) {"
+    ],
+    "answer": "def add(x) {",
+    "explanation": "Line 2 uses \"end\" where \"def\" belongs. Check keyword spelling and context."
+  }
+]

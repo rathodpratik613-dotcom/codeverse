@@ -1,0 +1,650 @@
+[
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: // write a note here",
+    "code": null,
+    "answer": "//",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9(no semicolon)",
+    "code": null,
+    "answer": "(no semicolon)",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: println(\"Hello\")",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $fun add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "kotlin-fill-q-kotlin-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "kotlin-fill-37",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "protected",
+      "companion",
+      "super",
+      "fun"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "kotlin-fill-38",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n// _____ the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "import",
+    "options": [
+      "import",
+      "suspend",
+      "by",
+      "when"
+    ],
+    "explanation": "\"import\" is the correct keyword here — check the lesson on lesson-27 for context."
+  },
+  {
+    "id": "kotlin-fill-39",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\ntry {\n    risky_operation()\n} catch (error) {\n    println(\"Something went wrong\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "vararg",
+      "fun",
+      "lazy",
+      "throw"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "kotlin-fill-40",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n_____ {\n    risky_operation()\n} catch (error) {\n    println(\"Something went wrong\")\n}\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "try",
+    "options": [
+      "try",
+      "throw",
+      "also",
+      "companion"
+    ],
+    "explanation": "\"try\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "kotlin-fill-41",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "as",
+      "while",
+      "fun",
+      "else"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "kotlin-fill-42",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\nwith open(\"_____.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "data",
+    "options": [
+      "break",
+      "data",
+      "package",
+      "override"
+    ],
+    "explanation": "\"data\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "kotlin-fill-43",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nitems = [\"a\", \"b\", \"c\"]\nprintln(items[0])  // first item\n// items[1], items[2] ... indexes count from 0\n}",
+    "answer": "fun",
+    "options": [
+      "throw",
+      "fun",
+      "break",
+      "when"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "kotlin-fill-44",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nfor i in range(10) {\n    if i == 5 { break }\n    println(i)\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "for",
+      "in",
+      "fun",
+      "apply"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "kotlin-fill-45",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n_____ i in range(10) {\n    if i == 5 { break }\n    println(i)\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "for",
+    "options": [
+      "for",
+      "abstract",
+      "let",
+      "import"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "kotlin-fill-46",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nfor row in range(3) {\n    for col in range(3) {\n        println(\"*\")\n    }\n}\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "var",
+      "do",
+      "apply",
+      "fun"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "kotlin-fill-47",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n_____ row in range(3) {\n    for col in range(3) {\n        println(\"*\")\n    }\n}\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "for",
+    "options": [
+      "repeat",
+      "for",
+      "also",
+      "interface"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "kotlin-fill-48",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n}",
+    "answer": "fun",
+    "options": [
+      "protected",
+      "lazy",
+      "fun",
+      "suspend"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-34 for context."
+  },
+  {
+    "id": "kotlin-fill-49",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n// git basics\n// git _____      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n}",
+    "answer": "init",
+    "options": [
+      "init",
+      "finally",
+      "vararg",
+      "data"
+    ],
+    "explanation": "\"init\" is the correct keyword here — check the lesson on lesson-34 for context."
+  },
+  {
+    "id": "kotlin-fill-50",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nfor i in range(10) {\n    if i == 5 { break }\n    println(i)\n}\n// prints 0 1 2 3 4\n}",
+    "answer": "fun",
+    "options": [
+      "it",
+      "fun",
+      "try",
+      "this"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "kotlin-fill-51",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n_____ i in range(10) {\n    if i == 5 { break }\n    println(i)\n}\n// prints 0 1 2 3 4\n}",
+    "answer": "for",
+    "options": [
+      "lazy",
+      "class",
+      "for",
+      "sealed"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "kotlin-fill-52",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nfun factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "by",
+      "private",
+      "fun",
+      "lazy"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "kotlin-fill-53",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n_____ factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "fun",
+      "reified",
+      "package",
+      "for"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "kotlin-fill-54",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nfun greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "else",
+      "by",
+      "fun",
+      "object"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "kotlin-fill-55",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n_____ greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "internal",
+      "fun",
+      "object",
+      "private"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "kotlin-fill-56",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nfun factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n}",
+    "answer": "fun",
+    "options": [
+      "class",
+      "in",
+      "fun",
+      "it"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "kotlin-fill-57",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\n_____ factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n}",
+    "answer": "fun",
+    "options": [
+      "this",
+      "run",
+      "lazy",
+      "fun"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "kotlin-fill-58",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fun",
+    "options": [
+      "true",
+      "also",
+      "as",
+      "fun"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "kotlin-fill-59",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "fun main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result _____ 11\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "is",
+    "options": [
+      "is",
+      "fun",
+      "true",
+      "class"
+    ],
+    "explanation": "\"is\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "kotlin-fill-60",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this kotlin code:",
+    "code": "_____ main() {\nval name = \"Alice\"\nvar age = 30\n// Variables hold reusable values\n}",
+    "answer": "fun",
+    "options": [
+      "private",
+      "as",
+      "object",
+      "fun"
+    ],
+    "explanation": "\"fun\" is the correct keyword here — check the lesson on lesson-03 for context."
+  }
+]

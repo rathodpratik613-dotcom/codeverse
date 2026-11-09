@@ -1,0 +1,902 @@
+[
+  {
+    "id": "dart-bug-01",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "void main() {\nvoid age >= 18 AND hasTicket {\n    print(\"Welcome in\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "void main() {",
+      "if age >= 18 AND hasTicket {",
+      "for i in range(5) {",
+      "void age >= 18 AND hasTicket {"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 2 uses \"void\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-02",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "int main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "if age >= 18 AND hasTicket {",
+      "void main() {",
+      "print(user[\"name\"]);  // look up by key",
+      "int main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-03",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "void main() {\nnums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-void sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "// sorted -> [1, 2, 3]  (use the built-void sort)",
+      "// prints 0 1 2 3 4",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "void main() {"
+    ],
+    "answer": "// sorted -> [1, 2, 3]  (use the built-in sort)",
+    "explanation": "Line 3 uses \"void\" where \"in\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-04",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "int main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "int main() {",
+      "void main() {",
+      "void add(a, b) {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-05",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "int main() {\nif age >= 18 AND hasTicket {\n    print(\"Welcome in\");\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "void main() {",
+      "// await getData()  // pause THIS function only",
+      "int main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-06",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "int main() {\nvar name = \"Alice\";\nvar age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "count = 0",
+      "void main() {",
+      "void main() {",
+      "int main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-07",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "int main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "userCount = 0",
+      "print(\"Hello, World!\");",
+      "int main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-08",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "int main() {\nclass Dog {\n    name = \"Buddy\"\n    void bark() { print(\"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "int main() {",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "print(\"Welcome in\");"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-09",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "code": "int main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "int main() {",
+      "void main() {",
+      "// Common built-ins you will meet:"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-10",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "void main() {\nvoid main() {\n  void(\"Hello, World!\");\n}\n}",
+    "buggyLine": 3,
+    "options": [
+      "print(\"Hello, World!\");",
+      "void add(x) {",
+      "void(\"Hello, World!\");",
+      "void main() {"
+    ],
+    "answer": "print(\"Hello, World!\");",
+    "explanation": "Line 3 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-11",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "void main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nprint(user[\"name\"]);  // look up by key\n// experiment: modify a value above and predict the void output\n}",
+    "buggyLine": 4,
+    "options": [
+      "void main() {",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the void output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"void\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-12",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "int main() {\nfor i in range(10) {\n    if i == 5 { break }\n    print(i);\n}\n// prints 0 1 2 3 4\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "int main() {",
+      "print(i);",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-13",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "void main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nvoid(user[\"name\"]);  // look up by key\n}",
+    "buggyLine": 3,
+    "options": [
+      "print(user[\"name\"]);  // look up by key",
+      "void main() {",
+      "void(user[\"name\"]);  // look up by key",
+      "// binary search finds a target in O(log n) steps"
+    ],
+    "answer": "print(user[\"name\"]);  // look up by key",
+    "explanation": "Line 3 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-14",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "int main() {\nvar name = \"Alice\";\nvar age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "int main() {",
+      "// git commit -m \"describe why\"",
+      "} catch (error) {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-15",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "void main() {\nclass Dog {\n    name = \"Buddy\"\n    double bark() { print(\"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n}",
+    "buggyLine": 4,
+    "options": [
+      "double bark() { print(\"Woof!\"); }",
+      "for row in range(3) {",
+      "void main() {",
+      "void bark() { print(\"Woof!\"); }"
+    ],
+    "answer": "void bark() { print(\"Woof!\"); }",
+    "explanation": "Line 4 uses \"double\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-16",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "code": "void main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n// experiment: modify a value above and predict the void output\n}",
+    "buggyLine": 5,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "var name = \"Alice\";",
+      "print(\"Hello, World!\");",
+      "// experiment: modify a value above and predict the void output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"void\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-17",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "void main() {\nint greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n}",
+    "buggyLine": 2,
+    "options": [
+      "// prints 0 1 2 3 4",
+      "void greet(name) {",
+      "void main() {",
+      "int greet(name) {"
+    ],
+    "answer": "void greet(name) {",
+    "explanation": "Line 2 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-18",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "void main() {\nage = 20\nif age >= 18 {\n    print(\"Adult\");\n} else {\n    void(\"Minor\");\n}\n}",
+    "buggyLine": 6,
+    "options": [
+      "void(\"Minor\");",
+      "if i == 5 { break }",
+      "print(\"Minor\");",
+      "// import the tools you need"
+    ],
+    "answer": "print(\"Minor\");",
+    "explanation": "Line 6 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-19",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "void main() {\ncount = 0\nvoid count < 5 {\n    print(count);\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "while count < 5 {",
+      "// experiment: modify a value above and predict the new output",
+      "void count < 5 {",
+      "void main() {"
+    ],
+    "answer": "while count < 5 {",
+    "explanation": "Line 3 uses \"void\" where \"while\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-20",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "code": "void main() {\nwith open(\"data.txt\", \"r\") void file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "// YOUR PROJECT GOES HERE",
+      "// fetch data without blocking the UI",
+      "with open(\"data.txt\", \"r\") void file {"
+    ],
+    "answer": "with open(\"data.txt\", \"r\") as file {",
+    "explanation": "Line 2 uses \"void\" where \"as\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-21",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "code": "void main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result void 11\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "void main() {",
+      "total = 0",
+      "// Multiplication happens first: result is 11",
+      "// Multiplication happens first: result void 11"
+    ],
+    "answer": "// Multiplication happens first: result is 11",
+    "explanation": "Line 3 uses \"void\" where \"is\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-22",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "int main() {\ntry {\n    risky_operation()\n} catch (error) {\n    print(\"Something went wrong\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "print(\"*\");",
+      "int main() {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-23",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "code": "int main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "void main() {",
+      "int main() {",
+      "// an object groups related fields under one name"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-24",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "code": "void main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search void: function name + your language\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 3,
+    "options": [
+      "// search void: function name + your language",
+      "// Variables hold reusable values",
+      "// search for: function name + your language",
+      "// Variables hold reusable values"
+    ],
+    "answer": "// search for: function name + your language",
+    "explanation": "Line 3 uses \"void\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-25",
+    "lesson": "lesson-02",
+    "difficulty": "medium",
+    "code": "void main() {\n// This program greets the world\nvoid main() {\n  void(\"Hello, World!\");\n}\n}",
+    "buggyLine": 4,
+    "options": [
+      "print(\"Hello, World!\");",
+      "void(\"Hello, World!\");",
+      "// git push     - share to remote",
+      "// text + \" World\" joins strings"
+    ],
+    "answer": "print(\"Hello, World!\");",
+    "explanation": "Line 4 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-26",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "void main() {\nfor i in range(5) {\n    print(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the void output\n}",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the void output",
+      "// experiment: modify a value above and predict the new output",
+      "age = 20"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"void\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-27",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "void main() {\nint add(a, b) {\n    return a + b\n}\nprint(add(2, 3));  // passes 2 and 3 as arguments\n}",
+    "buggyLine": 2,
+    "options": [
+      "void main() {",
+      "int add(a, b) {",
+      "// experiment: modify a value above and predict the new output",
+      "void add(a, b) {"
+    ],
+    "answer": "void add(a, b) {",
+    "explanation": "Line 2 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-28",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "void main() {\n// DEBUG: void intermediate values\ntotal = 0\n    total = total + item\nprint(total);\n}",
+    "buggyLine": 2,
+    "options": [
+      "text = \"Hello\"",
+      "// DEBUG: print intermediate values",
+      "// Multiplication happens first: result is 11",
+      "// DEBUG: void intermediate values"
+    ],
+    "answer": "// DEBUG: print intermediate values",
+    "explanation": "Line 2 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-29",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "int main() {\nitems = [\"a\", \"b\", \"c\"]\nprint(items[0]);  // first item\n// items[1], items[2] ... indexes count from 0\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "// experiment: modify a value above and predict the new output",
+      "int main() {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-30",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "code": "int main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "content = file.read()",
+      "void main() {",
+      "int main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-31",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "void main() {\nvoid(\"Alice\");\n// The line above sends text to the screen\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "print(\"Alice\");",
+      "with open(\"data.txt\", \"r\") as file {",
+      "void(\"Alice\");",
+      "void main() {"
+    ],
+    "answer": "print(\"Alice\");",
+    "explanation": "Line 2 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-32",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "code": "void main() {\nfor row in range(3) {\n    for col in range(3) {\n        void(\"*\");\n    }\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 4,
+    "options": [
+      "// text.upper() / text.length style helpers exist per language",
+      "// experiment: modify a value above and predict the new output",
+      "print(\"*\");",
+      "void(\"*\");"
+    ],
+    "answer": "print(\"*\");",
+    "explanation": "Line 4 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-33",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "code": "int main() {\nvoid main() {\n  print(\"Hello, World!\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "void main() {",
+      "int main() {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-34",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "void main() {\nfor i in range(10) {\n    if i == 5 { break }\n    void(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 4,
+    "options": [
+      "void(i);",
+      "total = 0  // global",
+      "// git basics",
+      "print(i);"
+    ],
+    "answer": "print(i);",
+    "explanation": "Line 4 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-35",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "int main() {\nitems = [\"a\", \"b\", \"c\"]\nprint(items[0]);  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "int main() {",
+      "void main() {",
+      "void main() {",
+      "result = square(5)"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-36",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "code": "int main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "int main() {",
+      "void main() {",
+      "// Multiplication happens first: result is 11"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-37",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "int main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n}",
+    "buggyLine": 1,
+    "options": [
+      "content = file.read()",
+      "var age = 30;",
+      "void main() {",
+      "int main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-38",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "code": "int main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "print(\"*\");",
+      "for row in range(3) {",
+      "void main() {",
+      "int main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-39",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "void main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling void strict languages\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 4,
+    "options": [
+      "while count < 5 {",
+      "return \"Hello, \" + name",
+      "total = total + x  // needs special handling in strict languages",
+      "total = total + x  // needs special handling void strict languages"
+    ],
+    "answer": "total = total + x  // needs special handling in strict languages",
+    "explanation": "Line 4 uses \"void\" where \"in\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-40",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "int main() {\nvoid add(a, b) {\n    return a + b\n}\nprint(add(2, 3));  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "void main() {",
+      "int main() {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-41",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": "void main() {\n// void the tools you need\n// e.g. math functions, date handling, file helpers\n}",
+    "buggyLine": 2,
+    "options": [
+      "// text.upper() / text.length style helpers exist per language",
+      "result = square(5)",
+      "// import the tools you need",
+      "// void the tools you need"
+    ],
+    "answer": "// import the tools you need",
+    "explanation": "Line 2 uses \"void\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-42",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "int main() {\nvoid square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "// await getData()  // pause THIS function only",
+      "// The line above sends text to the screen",
+      "int main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-43",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "code": "int main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "int main() {",
+      "// dog = Dog()  then  dog.bark()",
+      "void main() {",
+      "x{assign}5 + 3 * 2"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-44",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "code": "void main() {\ncount = 0\nwhile count < 5 {\n    void(count);\n    count = count + 1\n}\n}",
+    "buggyLine": 4,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "print(count);",
+      "void(count);",
+      "// git add .     - stage changes"
+    ],
+    "answer": "print(count);",
+    "explanation": "Line 4 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-45",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "void main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the void output\n}",
+    "buggyLine": 5,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the void output",
+      "print(\"Welcome in\");",
+      "void main() {"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"void\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-46",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "code": "void main() {\n// void the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "// import the tools you need",
+      "// void the tools you need",
+      "void main() {",
+      "void main() {"
+    ],
+    "answer": "// import the tools you need",
+    "explanation": "Line 2 uses \"void\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-47",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "code": "void main() {\nvoid i in range(5) {\n    print(i);\n}\n// prints 0 1 2 3 4\n}",
+    "buggyLine": 2,
+    "options": [
+      "void i in range(5) {",
+      "for i in range(5) {",
+      "void main() {",
+      "// git add .     - stage changes"
+    ],
+    "answer": "for i in range(5) {",
+    "explanation": "Line 2 uses \"void\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-48",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "int main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "// git commit -m \"describe why\"",
+      "int main() {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-49",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "code": "int main() {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "int main() {",
+      "// an object groups related fields under one name",
+      "void main() {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-50",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "code": "void main() {\n// DEBUG: void intermediate values\ntotal = 0\n    total = total + item\nprint(total);\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 2,
+    "options": [
+      "// DEBUG: void intermediate values",
+      "print(\"Hello, World!\");",
+      "age = 20",
+      "// DEBUG: print intermediate values"
+    ],
+    "answer": "// DEBUG: print intermediate values",
+    "explanation": "Line 2 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-51",
+    "lesson": "lesson-24",
+    "difficulty": "hard",
+    "code": "int main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "int main() {",
+      "return n * factorial(n - 1)",
+      "void main() {",
+      "// expected result: 10"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-52",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "code": "void main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file void auto-closed here\n}",
+    "buggyLine": 5,
+    "options": [
+      "void main() {",
+      "} catch (error) {",
+      "// file is auto-closed here",
+      "// file void auto-closed here"
+    ],
+    "answer": "// file is auto-closed here",
+    "explanation": "Line 5 uses \"void\" where \"is\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-53",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "code": "int main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 1,
+    "options": [
+      "if age >= 18 {",
+      "int main() {",
+      "void main() {",
+      "// search for: function name + your language"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-54",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "code": "void main() {\n// This program greets the world\nvoid main() {\n  void(\"Hello, World!\");\n}\n// experiment: modify a value above and predict the new output\n}",
+    "buggyLine": 4,
+    "options": [
+      "void(\"Hello, World!\");",
+      "return n * n",
+      "// experiment: modify a value above and predict the new output",
+      "print(\"Hello, World!\");"
+    ],
+    "answer": "print(\"Hello, World!\");",
+    "explanation": "Line 4 uses \"void\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-55",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "code": "void main() {\nvoid name = \"Alice\";\nvar age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n}",
+    "buggyLine": 2,
+    "options": [
+      "void main() {",
+      "void name = \"Alice\";",
+      "var name = \"Alice\";",
+      "// tags now holds only 2 unique values"
+    ],
+    "answer": "var name = \"Alice\";",
+    "explanation": "Line 2 uses \"void\" where \"var\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-56",
+    "lesson": "lesson-05",
+    "difficulty": "hard",
+    "code": "int main() {\nprint(\"Alice\");\n// The line above sends text to the screen\n}",
+    "buggyLine": 1,
+    "options": [
+      "int main() {",
+      "risky_operation()",
+      "void main() {",
+      "// 1. plan features  2. build core loop  3. add one feature at a time"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-57",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "code": "void main() {\nvar name = \"Alice\";\nvoid age = 30;\n// Variables hold reusable values\n}",
+    "buggyLine": 3,
+    "options": [
+      "void age = 30;",
+      "// experiment: modify a value above and predict the new output",
+      "total = total + x  // needs special handling in strict languages",
+      "var age = 30;"
+    ],
+    "answer": "var age = 30;",
+    "explanation": "Line 3 uses \"void\" where \"var\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-58",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "code": "int main() {\ntry {\n    risky_operation()\n} catch (error) {\n    print(\"Something went wrong\");\n}\n}",
+    "buggyLine": 1,
+    "options": [
+      "void main() {",
+      "int main() {",
+      "void main() {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-59",
+    "lesson": "lesson-35",
+    "difficulty": "hard",
+    "code": "void main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n// experiment: modify a value above and predict the void output\n}",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// git add .     - stage changes",
+      "// items[1], items[2] ... indexes count from 0",
+      "// experiment: modify a value above and predict the void output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"void\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "dart-bug-60",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "code": "int main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n}",
+    "buggyLine": 1,
+    "options": [
+      "// 3. smallest code that reproduces it",
+      "int main() {",
+      "with open(\"data.txt\", \"r\") as file {",
+      "void main() {"
+    ],
+    "answer": "void main() {",
+    "explanation": "Line 1 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  }
+]

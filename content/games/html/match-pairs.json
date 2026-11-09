@@ -1,0 +1,353 @@
+[
+  {
+    "id": "html-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "html-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      }
+    ],
+    "distractors": [
+      "Specifies the link destination URL",
+      "Structuring web page content",
+      "<details>"
+    ]
+  },
+  {
+    "id": "html-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does the href attribute do on an <a> tag?",
+        "right": "Specifies the link destination URL"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "html-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Why set width and height on images?",
+        "right": "To prevent layout shift while the image loads"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "class can repeat on many elements; id must be unique"
+    ]
+  },
+  {
+    "id": "html-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      }
+    ],
+    "distractors": [
+      "&lt;",
+      "Style and DOM encapsulation for a component"
+    ]
+  },
+  {
+    "id": "html-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      }
+    ],
+    "distractors": [
+      "When no semantic element fits the grouping need"
+    ]
+  },
+  {
+    "id": "html-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does JSX compile down to?",
+        "right": "Function calls that create DOM elements"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "For scalable icons and diagrams that need CSS/DOM control"
+    ]
+  },
+  {
+    "id": "html-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What is the difference between class and id?",
+        "right": "class can repeat on many elements; id must be unique"
+      },
+      {
+        "left": "Why prefer <main> over <div class=\"main\">?",
+        "right": "It conveys meaning to browsers, SEO, and assistive tech"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does Shadow DOM provide?",
+        "right": "Style and DOM encapsulation for a component"
+      }
+    ],
+    "distractors": [
+      "<h1>",
+      "So the browser reads characters correctly"
+    ]
+  },
+  {
+    "id": "html-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why must charset be declared early in <head>? ",
+        "right": "So the browser decodes the document correctly from the start"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "What does the required attribute do?",
+        "right": "Prevents submission when the field is empty"
+      }
+    ],
+    "distractors": [
+      "Embedding external content like maps or videos"
+    ]
+  },
+  {
+    "id": "html-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What should you check before calling an HTML page done?",
+        "right": "Validation, accessibility, and semantic structure"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does the meta description do?",
+        "right": "Gives search engines a summary shown under the result"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "html-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      }
+    ],
+    "distractors": [
+      "Email clients have poor CSS support — tables render reliably",
+      "So the browser reads characters correctly"
+    ]
+  },
+  {
+    "id": "html-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "What should you check before calling an HTML page done?",
+        "right": "Validation, accessibility, and semantic structure"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "How do you write an HTML comment?",
+        "right": "<!-- like this -->"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "html-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In HTML, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "What problem do HTML templates solve?",
+        "right": "Duplicating the same markup across many pages"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      }
+    ],
+    "distractors": [
+      "Jumps to the element with id=\"section\" on the same page"
+    ]
+  },
+  {
+    "id": "html-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is HTML primarily used for?",
+        "right": "Structuring web page content"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in HTML?",
+        "right": "<!-- -->"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Specifies the link destination URL",
+      "So the browser reads characters correctly"
+    ]
+  }
+]

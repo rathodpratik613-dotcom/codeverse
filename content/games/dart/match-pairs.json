@@ -1,0 +1,358 @@
+[
+  {
+    "id": "dart-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "dart-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      },
+      {
+        "left": "What is 10 % 3 in most languages?",
+        "right": "1 (the remainder)"
+      },
+      {
+        "left": "What is a commit?",
+        "right": "A saved snapshot of your code at a point in time"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Parameters are placeholders; arguments are the real values passed"
+    ]
+  },
+  {
+    "id": "dart-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "dart-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      },
+      {
+        "left": "A for loop is best when...",
+        "right": "you know how many times to repeat"
+      },
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "//",
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "dart-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "It halves the remaining items each step"
+    ]
+  },
+  {
+    "id": "dart-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "What is a variable?",
+        "right": "A named storage location for a value"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "dart-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What problem does async programming solve?",
+        "right": "Long-running tasks without freezing the program"
+      }
+    ],
+    "distractors": [
+      "Sends text or values to the screen or console",
+      "Reproduce it reliably and note the exact steps"
+    ]
+  },
+  {
+    "id": "dart-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      }
+    ],
+    "distractors": [
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\"",
+      "A named storage location for a value"
+    ]
+  },
+  {
+    "id": "dart-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      },
+      {
+        "left": "What is the best first step for a capstone project?",
+        "right": "Define the smallest version that works end-to-end"
+      },
+      {
+        "left": "What happens when an if condition is false and there is no else?",
+        "right": "Nothing — the block is skipped"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Its condition eventually becomes false",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "dart-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "What is the most valuable first test for a new function?",
+        "right": "A normal input with a known expected output"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "dart-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Groups related data (and often behavior) under one name",
+      "isValidEmail"
+    ]
+  },
+  {
+    "id": "dart-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Why is binary search faster than linear search?",
+        "right": "It halves the remaining items each step"
+      },
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "What does a \"Hello World\" program mainly teach you?",
+        "right": "That your code runs and produces output"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Sends text or values to the screen or console",
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "dart-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Where should you look FIRST for accurate syntax questions?",
+        "right": "The official language documentation"
+      },
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "A blueprint for creating objects"
+    ]
+  },
+  {
+    "id": "dart-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In Dart, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      },
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Dart?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Handle failures without crashing the whole program"
+    ]
+  }
+]

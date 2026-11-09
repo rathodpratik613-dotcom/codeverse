@@ -1,0 +1,362 @@
+[
+  {
+    "id": "bash-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\"",
+      "A base case that stops the recursion",
+      "Nothing — the set keeps only one copy"
+    ]
+  },
+  {
+    "id": "bash-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "What does \"continue\" do inside a loop?",
+        "right": "Skips to the next iteration"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "1 (the remainder)",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "bash-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "A variable declared inside a function is...",
+        "right": "local — visible only within that function"
+      },
+      {
+        "left": "What does a \"Hello World\" program mainly teach you?",
+        "right": "That your code runs and produces output"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Fast lookup of values by a unique key"
+    ]
+  },
+  {
+    "id": "bash-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      },
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      },
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "#"
+    ]
+  },
+  {
+    "id": "bash-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "bash-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "What happens when an if condition is false and there is no else?",
+        "right": "Nothing — the block is skipped"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "What is the best first step for a capstone project?",
+        "right": "Define the smallest version that works end-to-end"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "bash-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why is binary search faster than linear search?",
+        "right": "It halves the remaining items each step"
+      }
+    ],
+    "distractors": [
+      "Long-running tasks without freezing the program"
+    ]
+  },
+  {
+    "id": "bash-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Nothing — the set keeps only one copy",
+      "A base case that stops the recursion",
+      "both A and B are true"
+    ]
+  },
+  {
+    "id": "bash-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What should you do FIRST when you find a bug?",
+        "right": "Reproduce it reliably and note the exact steps"
+      },
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "#",
+      "Define the smallest version that works end-to-end",
+      "#",
+      "#"
+    ]
+  },
+  {
+    "id": "bash-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "bash-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "What is a commit?",
+        "right": "A saved snapshot of your code at a point in time"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Long-running tasks without freezing the program",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "bash-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\"",
+      "Makes functions/code from another module available"
+    ]
+  },
+  {
+    "id": "bash-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "bash-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What makes a while loop safe?",
+        "right": "Its condition eventually becomes false"
+      },
+      {
+        "left": "In Bash, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Bash?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "local — visible only within that function"
+    ]
+  }
+]

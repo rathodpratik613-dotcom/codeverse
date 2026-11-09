@@ -1,0 +1,352 @@
+[
+  {
+    "id": "csharp-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      },
+      {
+        "left": "What is the best first step for a capstone project?",
+        "right": "Define the smallest version that works end-to-end"
+      },
+      {
+        "left": "Where should you look FIRST for accurate syntax questions?",
+        "right": "The official language documentation"
+      }
+    ],
+    "distractors": [
+      "Its condition eventually becomes false",
+      "Depends on the code — trace it line by line",
+      "true"
+    ]
+  },
+  {
+    "id": "csharp-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "In boolean logic, A AND B is true when...",
+        "right": "both A and B are true"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "csharp-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "csharp-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "0",
+      "A base case that stops the recursion"
+    ]
+  },
+  {
+    "id": "csharp-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "csharp-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why is binary search faster than linear search?",
+        "right": "It halves the remaining items each step"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "csharp-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Fast lookup of values by a unique key"
+    ]
+  },
+  {
+    "id": "csharp-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What problem does async programming solve?",
+        "right": "Long-running tasks without freezing the program"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "both A and B are true"
+    ]
+  },
+  {
+    "id": "csharp-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Joining them end to end into one string",
+      "Reproduce it reliably and note the exact steps"
+    ]
+  },
+  {
+    "id": "csharp-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does the print/output function do?",
+        "right": "Sends text or values to the screen or console"
+      },
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      },
+      {
+        "left": "What makes a while loop safe?",
+        "right": "Its condition eventually becomes false"
+      },
+      {
+        "left": "Which of these is typically a boolean value?",
+        "right": "true"
+      }
+    ],
+    "distractors": [
+      "local — visible only within that function",
+      "//",
+      "//",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "csharp-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "20 times"
+    ]
+  },
+  {
+    "id": "csharp-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "A variable declared inside a function is...",
+        "right": "local — visible only within that function"
+      },
+      {
+        "left": "What does \"return\" do?",
+        "right": "Sends a value back and ends the function"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "//",
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "csharp-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What happens when an if condition is false and there is no else?",
+        "right": "Nothing — the block is skipped"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Nothing — the set keeps only one copy",
+      "A ready-made function provided by the language"
+    ]
+  },
+  {
+    "id": "csharp-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In C#, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does \"continue\" do inside a loop?",
+        "right": "Skips to the next iteration"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in C#?",
+        "right": "//"
+      },
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      }
+    ],
+    "distractors": []
+  }
+]

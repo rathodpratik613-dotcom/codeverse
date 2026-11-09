@@ -1,0 +1,902 @@
+[
+  {
+    "id": "c-bug-01",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nchar main() {\ncount = 0\nwhile count < 5 {\n    printf(\"%s\\n\", count);\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "result = square(5)",
+      "int main() {",
+      "// git basics",
+      "char main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-02",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nchar main() {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "int main() {",
+      "char main() {",
+      "#include <stdio.h>",
+      "int main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-03",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nchar main() {\ntry {\n    risky_operation()\n} catch (error) {\n    printf(\"%s\\n\", \"Something went wrong\");\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "char main() {",
+      "int main() {",
+      "return \"Hello, \" + name",
+      "int main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-04",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nchar main() {\ntext = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "char main() {",
+      "int main() {",
+      "int main() {",
+      "risky_operation()"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-05",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\nchar name[] = \"Alice\";\nint age = 30;\n// Variables hold reusable values\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int 0;",
+      "// tags now holds only 2 unique values",
+      "return 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-06",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\nfor i in range(10) {\n    if i == 5 { break }\n    printf(\"%s\\n\", i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 9,
+    "options": [
+      "void greet(name) {",
+      "int 0;",
+      "int main() {",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 9 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-07",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "code": "#int <stdio.h>\nint main() {\nprintf(\"%s\\n\", \"Alice\");\n// The line above sends text to the screen\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "#int <stdio.h>",
+      "for i in range(10) {",
+      "#include <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-08",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "#int <stdio.h>\nint main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "return 0;",
+      "#int <stdio.h>",
+      "#include <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-09",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\nage = 20\nint age >= 18 {\n    printf(\"%s\\n\", \"Adult\");\n} else {\n    printf(\"%s\\n\", \"Minor\");\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 4,
+    "options": [
+      "// dog = Dog()  then  dog.bark()",
+      "int age >= 18 {",
+      "return 0;",
+      "if age >= 18 {"
+    ],
+    "answer": "if age >= 18 {",
+    "explanation": "Line 4 uses \"int\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-10",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "return 0;",
+      "int 0;",
+      "int main() {",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-11",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\nchar name[] = \"Alice\";\nint age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, 1 (true) / 0 (false) is a boolean\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "return 0;",
+      "// items[1], items[2] ... indexes count from 0",
+      "#include <stdio.h>",
+      "int 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-12",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\n// This program greets the world\n#include <stdio.h>\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 10,
+    "options": [
+      "void greet(name) {",
+      "// prints 0 1 2 3 4",
+      "return 0;",
+      "int 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 10 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-13",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "code": "#int <stdio.h>\nint main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "#int <stdio.h>",
+      "// await getData()  // pause THIS function only",
+      "return 0;"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-14",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nchar main() {\nchar name[] = \"Alice\";\nint age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, 1 (true) / 0 (false) is a boolean\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "int main() {",
+      "user = { name: \"Alice\", age: 30 }",
+      "char main() {",
+      "while count < 5 {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-15",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\nif age >= 18 AND hasTicket {\n    printf(\"%s\\n\", \"Welcome in\");\n}\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int main() {",
+      "// experiment: modify a value above and predict the new output",
+      "int 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-16",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "#int <stdio.h>\nint main() {\nclass Dog {\n    name = \"Buddy\"\n    void bark() { printf(\"%s\\n\", \"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#int <stdio.h>",
+      "#include <stdio.h>",
+      "// experiment: modify a value above and predict the new output",
+      "#include <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-17",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "#int <stdio.h>\nint main() {\nvoid add(a, b) {\n    return a + b\n}\nprintf(\"%s\\n\", add(2, 3));  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "#include <stdio.h>",
+      "#int <stdio.h>",
+      "#include <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-18",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nchar main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nprintf(\"%s\\n\", user[\"name\"]);  // look up by key\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "int main() {",
+      "char main() {",
+      "int main() {",
+      "// text.upper() / text.length style helpers exist per language"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-19",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "code": "#int <stdio.h>\nint main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "// tags now holds only 2 unique values",
+      "return 0;",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-20",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\n#include <stdio.h>\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 9,
+    "options": [
+      "int 0;",
+      "#include <stdio.h>",
+      "return 0;",
+      "void add(x) {"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 9 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-21",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "code": "#int <stdio.h>\nint main() {\nitems = [\"a\", \"b\", \"c\"]\nprintf(\"%s\\n\", items[0]);  // first item\n// items[1], items[2] ... indexes count from 0\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "#int <stdio.h>",
+      "// binary search finds a target in O(log n) steps",
+      "// Common built-ins you will meet:"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-22",
+    "lesson": "lesson-22",
+    "difficulty": "easy",
+    "code": "#include <stdio.h>\nint main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "class Dog {",
+      "int 0;",
+      "return 0;",
+      "#include <stdio.h>"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-23",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\nchar name[] = \"Alice\";\nint age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "printf(\"%s\\n\", \"Adult\");",
+      "int 0;",
+      "return 0;",
+      "age = 20"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-24",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "#int <stdio.h>\nint main() {\nx{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#int <stdio.h>",
+      "int age = 30;",
+      "#include <stdio.h>",
+      "printf(\"%s\\n\", count);"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-25",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "code": "#int <stdio.h>\nint main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// DEBUG: print intermediate values",
+      "#include <stdio.h>",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-26",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "#int <stdio.h>\nint main() {\nfor i in range(5) {\n    printf(\"%s\\n\", i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "user = { name: \"Alice\", age: 30 }",
+      "char name[] = \"Alice\";",
+      "#include <stdio.h>",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-27",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nchar main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "char main() {",
+      "int main() {",
+      "items = [\"a\", \"b\", \"c\"]"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-28",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n    int 0;\n}",
+    "buggyLine": 5,
+    "options": [
+      "return 0;",
+      "result = square(5)",
+      "#include <stdio.h>",
+      "int 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 5 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-29",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "#int <stdio.h>\nint main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nprintf(\"%s\\n\", total);\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "return 0;",
+      "#include <stdio.h>",
+      "return 0;",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-30",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\n#include <stdio.h>\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}\n    int 0;\n}",
+    "buggyLine": 8,
+    "options": [
+      "int 0;",
+      "int main() {",
+      "#include <stdio.h>",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 8 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-31",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\n// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 8,
+    "options": [
+      "int 0;",
+      "return 0;",
+      "// git add .     - stage changes",
+      "int main() {"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 8 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-32",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\nvoid add(a, b) {\n    return a + b\n}\nprintf(\"%s\\n\", add(2, 3));  // passes 2 and 3 as arguments\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "int 0;",
+      "return 0;",
+      "return 0;",
+      "int main() {"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-33",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nchar main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nprintf(\"%s\\n\", total);\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "char main() {",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the new output",
+      "int main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-34",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\ntags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n    int 0;\n}",
+    "buggyLine": 5,
+    "options": [
+      "if n <= 1 { return 1 }",
+      "return 0;",
+      "printf(\"Hello, World!\\n\");",
+      "int 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 5 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-35",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\nint factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "return 0;",
+      "int factorial(n) {",
+      "return 0;",
+      "void factorial(n) {"
+    ],
+    "answer": "void factorial(n) {",
+    "explanation": "Line 3 uses \"int\" where \"void\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-36",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "code": "#int <stdio.h>\nint main() {\n// fetch data without blocking the UI\n// await getData()  // pause THIS function only\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "int main() {",
+      "#include <stdio.h>",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-37",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\nint i in range(5) {\n    printf(\"%s\\n\", i);\n}\n// prints 0 1 2 3 4\n    return 0;\n}",
+    "buggyLine": 3,
+    "options": [
+      "for i in range(5) {",
+      "// e.g. math functions, date handling, file helpers",
+      "printf(\"Hello, World!\\n\");",
+      "int i in range(5) {"
+    ],
+    "answer": "for i in range(5) {",
+    "explanation": "Line 3 uses \"int\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-38",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nchar main() {\nvoid factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "int main() {",
+      "// expected result: 10",
+      "int main() {",
+      "char main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-39",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\nage = 20\nif age >= 18 {\n    printf(\"%s\\n\", \"Adult\");\n} else {\n    printf(\"%s\\n\", \"Minor\");\n}\n    int 0;\n}",
+    "buggyLine": 9,
+    "options": [
+      "return 0;",
+      "// text.upper() / text.length style helpers exist per language",
+      "return 0;",
+      "int 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 9 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-40",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "#int <stdio.h>\nint main() {\nclass Dog {\n    name = \"Buddy\"\n    void bark() { printf(\"%s\\n\", \"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "#int <stdio.h>",
+      "// Good question template:",
+      "return 0;"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-41",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "code": "#int <stdio.h>\nint main() {\n// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "// git push     - share to remote",
+      "printf(\"%s\\n\", user[\"name\"]);  // look up by key",
+      "#include <stdio.h>",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-42",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "code": "#include <stdio.h>\nint main() {\nif age >= 18 AND hasTicket {\n    printf(\"%s\\n\", \"Welcome in\");\n}\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "printf(\"Hello, World!\\n\");",
+      "int 0;",
+      "return 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-43",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nint main() {\nfor row in range(3) {\n    for col in range(3) {\n        printf(\"%s\\n\", \"*\");\n    }\n}\n    int 0;\n}",
+    "buggyLine": 8,
+    "options": [
+      "#include <stdio.h>",
+      "int 0;",
+      "return 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 8 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-44",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nint main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "return 0;",
+      "// file is auto-closed here",
+      "return 0;",
+      "int 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-45",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nint main() {\n// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 6,
+    "options": [
+      "int 0;",
+      "#include <stdio.h>",
+      "return 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 6 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-46",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "code": "#int <stdio.h>\nint main() {\ntry {\n    risky_operation()\n} catch (error) {\n    printf(\"%s\\n\", \"Something went wrong\");\n}\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "#include <stdio.h>",
+      "#include <stdio.h>",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-47",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nint main() {\nvoid greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 8,
+    "options": [
+      "return 0;",
+      "void add(x) {",
+      "int 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 8 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-48",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nint main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n// experiment: modify a value above and predict the new output\n    int 0;\n}",
+    "buggyLine": 7,
+    "options": [
+      "int 0;",
+      "int main() {",
+      "int main() {",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 7 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-49",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nint main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search int: function name + your language\n    return 0;\n}",
+    "buggyLine": 4,
+    "options": [
+      "// search for: function name + your language",
+      "int main() {",
+      "// search int: function name + your language",
+      "// 3. smallest code that reproduces it"
+    ],
+    "answer": "// search for: function name + your language",
+    "explanation": "Line 4 uses \"int\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-50",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nchar main() {\n// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "userCount = 0",
+      "int main() {",
+      "// binary search finds a target in O(log n) steps",
+      "char main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-51",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nint main() {\nuser = { \"name\": \"Alice\", \"age\": 30 }\nprintf(\"%s\\n\", user[\"name\"]);  // look up by key\n    int 0;\n}",
+    "buggyLine": 5,
+    "options": [
+      "return 0;",
+      "return 0;",
+      "int 0;",
+      "return 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 5 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-52",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nchar main() {\n// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "int main() {",
+      "#include <stdio.h>",
+      "char main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-53",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "code": "#int <stdio.h>\nint main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "#int <stdio.h>",
+      "#include <stdio.h>",
+      "for col in range(3) {"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-54",
+    "lesson": "lesson-27",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nchar main() {\n// import the tools you need\n// e.g. math functions, date handling, file helpers\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "#include <stdio.h>",
+      "printf(\"%s\\n\", \"Adult\");",
+      "char main() {",
+      "int main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-55",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "code": "#int <stdio.h>\nint main() {\nitems = [\"a\", \"b\", \"c\"]\nprintf(\"%s\\n\", items[0]);  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "// Common built-ins you will meet:",
+      "// experiment: modify a value above and predict the new output",
+      "#int <stdio.h>",
+      "#include <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-56",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "code": "#int <stdio.h>\nint main() {\ntotal = 0  // global\nvoid add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "// git push     - share to remote",
+      "// Multiplication happens first: result is 11",
+      "#include <stdio.h>",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-57",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nchar main() {\nvoid square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n    return 0;\n}",
+    "buggyLine": 2,
+    "options": [
+      "char main() {",
+      "return a + b",
+      "int main() {",
+      "int main() {"
+    ],
+    "answer": "int main() {",
+    "explanation": "Line 2 uses \"char\" where \"int\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-58",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "code": "#int <stdio.h>\nint main() {\ncount = 0\nwhile count < 5 {\n    printf(\"%s\\n\", count);\n    count = count + 1\n}\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "#int <stdio.h>",
+      "int main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-59",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "code": "#int <stdio.h>\nint main() {\nwith open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the new output\n    return 0;\n}",
+    "buggyLine": 1,
+    "options": [
+      "#include <stdio.h>",
+      "#include <stdio.h>",
+      "int main() {",
+      "#int <stdio.h>"
+    ],
+    "answer": "#include <stdio.h>",
+    "explanation": "Line 1 uses \"int\" where \"include\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "c-bug-60",
+    "lesson": "lesson-24",
+    "difficulty": "hard",
+    "code": "#include <stdio.h>\nint main() {\nuser = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n    int 0;\n}",
+    "buggyLine": 5,
+    "options": [
+      "int main() {",
+      "return 0;",
+      "return n * n",
+      "int 0;"
+    ],
+    "answer": "return 0;",
+    "explanation": "Line 5 uses \"int\" where \"return\" belongs. Check keyword spelling and context."
+  }
+]

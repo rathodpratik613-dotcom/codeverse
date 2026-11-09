@@ -1,0 +1,355 @@
+[
+  {
+    "id": "python-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does the print/output function do?",
+        "right": "Sends text or values to the screen or console"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "python-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Sends a value back and ends the function"
+    ]
+  },
+  {
+    "id": "python-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "A variable declared inside a function is...",
+        "right": "local — visible only within that function"
+      },
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      },
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      },
+      {
+        "left": "Which of these is typically a boolean value?",
+        "right": "True"
+      }
+    ],
+    "distractors": [
+      "#",
+      "Depends on the code — trace it line by line",
+      "Handle failures without crashing the whole program",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "python-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "local — visible only within that function",
+      "Define the smallest version that works end-to-end"
+    ]
+  },
+  {
+    "id": "python-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why is binary search faster than linear search?",
+        "right": "It halves the remaining items each step"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "both A and B are true",
+      "Parameters are placeholders; arguments are the real values passed",
+      "local — visible only within that function"
+    ]
+  },
+  {
+    "id": "python-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What problem does async programming solve?",
+        "right": "Long-running tasks without freezing the program"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Reproduce it reliably and note the exact steps"
+    ]
+  },
+  {
+    "id": "python-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Parameters are placeholders; arguments are the real values passed"
+    ]
+  },
+  {
+    "id": "python-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Joining them end to end into one string"
+    ]
+  },
+  {
+    "id": "python-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does \"continue\" do inside a loop?",
+        "right": "Skips to the next iteration"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "python-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "What does concatenation mean for strings?",
+        "right": "Joining them end to end into one string"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "python-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Groups related data (and often behavior) under one name",
+      "both A and B are true"
+    ]
+  },
+  {
+    "id": "python-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is a variable?",
+        "right": "A named storage location for a value"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "A blueprint for creating objects",
+      "#"
+    ]
+  },
+  {
+    "id": "python-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "What makes a while loop safe?",
+        "right": "Its condition eventually becomes false"
+      },
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "python-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Python?",
+        "right": "#"
+      },
+      {
+        "left": "In Python, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      }
+    ],
+    "distractors": []
+  }
+]

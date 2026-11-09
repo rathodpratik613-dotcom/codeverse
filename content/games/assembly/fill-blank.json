@@ -1,0 +1,650 @@
+[
+  {
+    "id": "assembly-fill-q-assembly-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: ; write a note here",
+    "code": null,
+    "answer": ";",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9(no semicolon)",
+    "code": null,
+    "answer": "(no semicolon)",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: ; output via syscall write (int 0x80)",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $cmp/jcc score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $loop ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $loop count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $label: add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $ret a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "assembly-fill-q-assembly-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "assembly-fill-37",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "eax{assign}5 + 3 * 2\n; Multiplication happens first: result is 11\n; experiment: modify a value above _____ predict the new output",
+    "answer": "and",
+    "options": [
+      "std",
+      "shr",
+      "and",
+      "ret"
+    ],
+    "explanation": "\"and\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "assembly-fill-38",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "label: square(n) {\n    _____ n * n\n}\nresult = square(5)\n; result is now 25",
+    "answer": "ret",
+    "options": [
+      "cmpsd",
+      "hlt",
+      "invvpid",
+      "ret"
+    ],
+    "explanation": "\"ret\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "assembly-fill-39",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "text = \"Hello\"\n; text + \" World\" joins strings\n; text.upper() / text.length style helpers exist per language\n; experiment: modify a value above _____ predict the new output",
+    "answer": "and",
+    "options": [
+      "cwd",
+      "and",
+      "sfence",
+      "rdseed"
+    ],
+    "explanation": "\"and\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "assembly-fill-40",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    ; output via syscall write (_____ 0x80)\n}",
+    "answer": "int",
+    "options": [
+      "int",
+      "test",
+      "cqo",
+      "jae"
+    ],
+    "explanation": "\"int\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "assembly-fill-41",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "nums = [3, 1, 2]\n; sorted -> [1, 2, 3]  (use the built-in sort)\n; binary search finds a target in O(log n) steps\n; experiment: modify a value above _____ predict the new output",
+    "answer": "and",
+    "options": [
+      "cdq",
+      "and",
+      "prefetch",
+      "rol"
+    ],
+    "explanation": "\"and\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "assembly-fill-42",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "user = { \"name\": \"Alice\", \"age\": 30 }\n; output via syscall write (_____ 0x80)  ; look up by key\n; experiment: modify a value above and predict the new output",
+    "answer": "int",
+    "options": [
+      "pause",
+      "cpuid",
+      "int",
+      "movzx"
+    ],
+    "explanation": "\"int\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "assembly-fill-43",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "user = { \"name\": \"Alice\", \"age\": 30 }\n; output via syscall write (int 0x80)  ; look up by key\n; experiment: modify a value above _____ predict the new output",
+    "answer": "and",
+    "options": [
+      "ja",
+      "bswap",
+      "shr",
+      "and"
+    ],
+    "explanation": "\"and\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "assembly-fill-44",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "label: factorial(n) {\n    cmp/jcc n <= 1 { _____ 1 }\n    ret n * factorial(n - 1)\n}",
+    "answer": "ret",
+    "options": [
+      "mfence",
+      "ret",
+      "sar",
+      "jg"
+    ],
+    "explanation": "\"ret\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "assembly-fill-45",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "label: factorial(n) {\n    cmp/jcc n <= 1 { ret 1 }\n    _____ n * factorial(n - 1)\n}",
+    "answer": "ret",
+    "options": [
+      "vmcall",
+      "ret",
+      "neg",
+      "ror"
+    ],
+    "explanation": "\"ret\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "assembly-fill-46",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n; output via syscall write (_____ 0x80)  ; first item\n; items[1], items[2] ... indexes count from 0",
+    "answer": "int",
+    "options": [
+      "stosb",
+      "int",
+      "or",
+      "std"
+    ],
+    "explanation": "\"int\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "assembly-fill-47",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "; Docs pattern: Quick Start -> Guides -> API Reference\n; search for: function name + your language\n; experiment: modify a value above _____ predict the new output",
+    "answer": "and",
+    "options": [
+      "and",
+      "jl",
+      "invept",
+      "movzx"
+    ],
+    "explanation": "\"and\" is the correct keyword here — check the lesson on lesson-33 for context."
+  },
+  {
+    "id": "assembly-fill-48",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n; output via syscall write (_____ 0x80)  ; first item\n; items[1], items[2] ... indexes count from 0\n; experiment: modify a value above and predict the new output",
+    "answer": "int",
+    "options": [
+      "inc",
+      "int",
+      "and",
+      "ret"
+    ],
+    "explanation": "\"int\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "assembly-fill-49",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n; output via syscall write (int 0x80)  ; first item\n; items[1], items[2] ... indexes count from 0\n; experiment: modify a value above _____ predict the new output",
+    "answer": "and",
+    "options": [
+      "std",
+      "jg",
+      "and",
+      "nop"
+    ],
+    "explanation": "\"and\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "assembly-fill-50",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "_____ row in range(3) {\n    loop col in range(3) {\n        ; output via syscall write (int 0x80)\n    }\n}",
+    "answer": "loop",
+    "options": [
+      "loop",
+      "jb",
+      "sysenter",
+      "div"
+    ],
+    "explanation": "\"loop\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "assembly-fill-51",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "loop row in range(3) {\n    _____ col in range(3) {\n        ; output via syscall write (int 0x80)\n    }\n}",
+    "answer": "loop",
+    "options": [
+      "jae",
+      "cbw",
+      "cld",
+      "loop"
+    ],
+    "explanation": "\"loop\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "assembly-fill-52",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "; git basics\n; git init      - start tracking\n; git _____ .     - stage changes\n; git commit -m \"describe why\"\n; git push     - share to remote\n; experiment: modify a value above and predict the new output",
+    "answer": "add",
+    "options": [
+      "add",
+      "invd",
+      "push",
+      "int"
+    ],
+    "explanation": "\"add\" is the correct keyword here — check the lesson on lesson-34 for context."
+  },
+  {
+    "id": "assembly-fill-53",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "; git basics\n; git init      - start tracking\n; git add .     - stage changes\n; git commit -m \"describe why\"\n; git _____     - share to remote\n; experiment: modify a value above and predict the new output",
+    "answer": "push",
+    "options": [
+      "push",
+      "bswap",
+      "vmclear",
+      "cmpsb"
+    ],
+    "explanation": "\"push\" is the correct keyword here — check the lesson on lesson-34 for context."
+  },
+  {
+    "id": "assembly-fill-54",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "; DEBUG: print intermediate values\ntotal = 0\n    total = total + item\n; output via syscall write (_____ 0x80)\n; experiment: modify a value above and predict the new output",
+    "answer": "int",
+    "options": [
+      "jbe",
+      "int",
+      "cmpsb",
+      "jp"
+    ],
+    "explanation": "\"int\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "assembly-fill-55",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "; DEBUG: print intermediate values\ntotal = 0\n    total = total + item\n; output via syscall write (int 0x80)\n; experiment: modify a value above _____ predict the new output",
+    "answer": "and",
+    "options": [
+      "inc",
+      "vmlaunch",
+      "and",
+      "sar"
+    ],
+    "explanation": "\"and\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "assembly-fill-56",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "section .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    _____ eax, 4\n    mov ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    int 0x80\n; experiment: modify a value above and predict the new output",
+    "answer": "mov",
+    "options": [
+      "mov",
+      "jb",
+      "pause",
+      "movsb"
+    ],
+    "explanation": "\"mov\" is the correct keyword here — check the lesson on lesson-01 for context."
+  },
+  {
+    "id": "assembly-fill-57",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "section .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    _____ ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    int 0x80\n; experiment: modify a value above and predict the new output",
+    "answer": "mov",
+    "options": [
+      "mov",
+      "pause",
+      "rdseed",
+      "invept"
+    ],
+    "explanation": "\"mov\" is the correct keyword here — check the lesson on lesson-01 for context."
+  },
+  {
+    "id": "assembly-fill-58",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "; This program greets the world\nsection .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    _____ eax, 4\n    mov ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    int 0x80",
+    "answer": "mov",
+    "options": [
+      "vmlaunch",
+      "jo",
+      "prefetch",
+      "mov"
+    ],
+    "explanation": "\"mov\" is the correct keyword here — check the lesson on lesson-02 for context."
+  },
+  {
+    "id": "assembly-fill-59",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "; This program greets the world\nsection .data\n    msg db \"Hello, World!\", 10\nsection .text\n    global _start\n_start:\n    mov eax, 4\n    _____ ebx, 1\n    mov ecx, msg\n    mov edx, 14\n    int 0x80\n    mov eax, 1\n    xor ebx, ebx\n    int 0x80",
+    "answer": "mov",
+    "options": [
+      "mov",
+      "jnp",
+      "scasw",
+      "sfence"
+    ],
+    "explanation": "\"mov\" is the correct keyword here — check the lesson on lesson-02 for context."
+  },
+  {
+    "id": "assembly-fill-60",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this assembly code:",
+    "code": "_____/jcc age >= 18 AND hasTicket {\n    ; output via syscall write (int 0x80)\n}\n; experiment: modify a value above and predict the new output",
+    "answer": "cmp",
+    "options": [
+      "je",
+      "cmp",
+      "invept",
+      "jae"
+    ],
+    "explanation": "\"cmp\" is the correct keyword here — check the lesson on lesson-11 for context."
+  }
+]

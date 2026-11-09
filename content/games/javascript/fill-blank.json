@@ -1,0 +1,650 @@
+[
+  {
+    "id": "javascript-fill-q-javascript-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: // write a note here",
+    "code": null,
+    "answer": "//",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9;",
+    "code": null,
+    "answer": ";",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console.log(\"Hello\");",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $function add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "javascript-fill-q-javascript-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "javascript-fill-37",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "_____ age >= 18 AND hasTicket {\n    console.log(\"Welcome in\");\n}\n// experiment: modify a value above and predict the new output",
+    "answer": "if",
+    "options": [
+      "undefined",
+      "const",
+      "function",
+      "if"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "javascript-fill-38",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "if age >= 18 AND hasTicket {\n    console.log(\"Welcome in\");\n}\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "break",
+      "catch",
+      "new",
+      "filter"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "javascript-fill-39",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "total = 0  // global\n_____ add(x) {\n    total = total + x  // needs special handling in strict languages\n}",
+    "answer": "function",
+    "options": [
+      "true",
+      "function",
+      "null",
+      "var"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "javascript-fill-40",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "switch",
+      "function",
+      "new",
+      "null"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-36 for context."
+  },
+  {
+    "id": "javascript-fill-41",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "_____ greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")",
+    "answer": "function",
+    "options": [
+      "function",
+      "push",
+      "null",
+      "async"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "javascript-fill-42",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "function greet(name) {\n    _____ \"Hello, \" + name\n}\n// call it: greet(\"Sam\")",
+    "answer": "return",
+    "options": [
+      "return",
+      "if",
+      "push",
+      "break"
+    ],
+    "explanation": "\"return\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "javascript-fill-43",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "_____ name = \"Alice\";\nconst age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "answer": "let",
+    "options": [
+      "let",
+      "return",
+      "export",
+      "case"
+    ],
+    "explanation": "\"let\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "javascript-fill-44",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "let name = \"Alice\";\n_____ age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "answer": "const",
+    "options": [
+      "class",
+      "import",
+      "const",
+      "null"
+    ],
+    "explanation": "\"const\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "javascript-fill-45",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "_____ square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output",
+    "answer": "function",
+    "options": [
+      "var",
+      "function",
+      "if",
+      "null"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "javascript-fill-46",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "function square(n) {\n    _____ n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output",
+    "answer": "return",
+    "options": [
+      "while",
+      "this",
+      "return",
+      "async"
+    ],
+    "explanation": "\"return\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "javascript-fill-47",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "_____ name = \"Alice\";\nconst age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output",
+    "answer": "let",
+    "options": [
+      "catch",
+      "let",
+      "true",
+      "break"
+    ],
+    "explanation": "\"let\" is the correct keyword here — check the lesson on lesson-03 for context."
+  },
+  {
+    "id": "javascript-fill-48",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "let name = \"Alice\";\n_____ age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output",
+    "answer": "const",
+    "options": [
+      "await",
+      "var",
+      "import",
+      "const"
+    ],
+    "explanation": "\"const\" is the correct keyword here — check the lesson on lesson-03 for context."
+  },
+  {
+    "id": "javascript-fill-49",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "nums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "const",
+      "new",
+      "this",
+      "while"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "javascript-fill-50",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "_____ Dog {\n    name = \"Buddy\"\n    function bark() { console.log(\"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()",
+    "answer": "class",
+    "options": [
+      "filter",
+      "while",
+      "class",
+      "let"
+    ],
+    "explanation": "\"class\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "javascript-fill-51",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "class Dog {\n    name = \"Buddy\"\n    _____ bark() { console.log(\"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()",
+    "answer": "function",
+    "options": [
+      "for",
+      "function",
+      "this",
+      "map"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "javascript-fill-52",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "count = 0\n_____ count < 5 {\n    console.log(count);\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output",
+    "answer": "while",
+    "options": [
+      "case",
+      "while",
+      "let",
+      "null"
+    ],
+    "explanation": "\"while\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "javascript-fill-53",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "count = 0\nwhile count < 5 {\n    console.log(count);\n    count = count + 1\n}\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "async",
+      "continue",
+      "new",
+      "let"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "javascript-fill-54",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "_____ name = \"Alice\";\nconst age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the new output",
+    "answer": "let",
+    "options": [
+      "let",
+      "await",
+      "catch",
+      "function"
+    ],
+    "explanation": "\"let\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "javascript-fill-55",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "let name = \"Alice\";\n_____ age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the new output",
+    "answer": "const",
+    "options": [
+      "continue",
+      "const",
+      "catch",
+      "typeof"
+    ],
+    "explanation": "\"const\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "javascript-fill-56",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "_____ i in range(5) {\n    console.log(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output",
+    "answer": "for",
+    "options": [
+      "map",
+      "await",
+      "for",
+      "try"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "javascript-fill-57",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "for i in range(5) {\n    console.log(i);\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "new",
+      "while",
+      "case",
+      "false"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "javascript-fill-58",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: _____ name + your language\n// experiment: modify a value above and predict the new output",
+    "answer": "function",
+    "options": [
+      "var",
+      "try",
+      "filter",
+      "function"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-33 for context."
+  },
+  {
+    "id": "javascript-fill-59",
+    "lesson": "lesson-33",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: function name + your language\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "break",
+      "async",
+      "new",
+      "undefined"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-33 for context."
+  },
+  {
+    "id": "javascript-fill-60",
+    "lesson": "lesson-18",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this javascript code:",
+    "code": "// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "true",
+      "function",
+      "catch",
+      "new"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-18 for context."
+  }
+]

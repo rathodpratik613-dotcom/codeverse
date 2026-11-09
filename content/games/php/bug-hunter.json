@@ -1,0 +1,812 @@
+[
+  {
+    "id": "php-bug-01",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "for i in range(5) {\n    <?php i;\n}\n// prints 0 1 2 3 4",
+    "buggyLine": 2,
+    "options": [
+      "echo total;",
+      "echo i;",
+      "$age = 30;",
+      "<?php i;"
+    ],
+    "answer": "echo i;",
+    "explanation": "Line 2 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-02",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "function square(n) {\n    <?php n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "user = { name: \"Alice\", age: 30 }",
+      "// experiment: modify a value above and predict the new output",
+      "<?php n * n",
+      "return n * n"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 2 uses \"<?php\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-03",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "// This program greets the world\n<?php\n<?php \"Hello, World!\";",
+    "buggyLine": 3,
+    "options": [
+      "echo \"Hello, World!\";",
+      "for col in range(3) {",
+      "<?php \"Hello, World!\";",
+      "result = double(5)"
+    ],
+    "answer": "echo \"Hello, World!\";",
+    "explanation": "Line 3 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-04",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "total = 0  // global\n<?php add(x) {\n    total = total + x  // needs special handling in strict languages\n}",
+    "buggyLine": 2,
+    "options": [
+      "function add(x) {",
+      "<?php add(x) {",
+      "// text + \" World\" joins strings",
+      "// 1. what I expected"
+    ],
+    "answer": "function add(x) {",
+    "explanation": "Line 2 uses \"<?php\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-05",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "// Docs pattern: Quick Start -> Guides -> API Reference\n// search for: <?php name + your language\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "// search for: <?php name + your language",
+      "if n <= 1 { return 1 }",
+      "// search for: function name + your language",
+      "// text + \" World\" joins strings"
+    ],
+    "answer": "// search for: function name + your language",
+    "explanation": "Line 2 uses \"<?php\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-06",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "code": "echo \"Alice\";\n// The line above sends text to the screen\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 3,
+    "options": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "$name = \"Alice\";",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-07",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "code": "// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 4,
+    "options": [
+      "// git add .     - stage changes",
+      "// experiment: modify a value above and predict the <?php output",
+      "function square(n) {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-08",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "nums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (use the built-in sort)\n// binary search finds a target in O(log n) steps\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 4,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "echo user[\"name\"];  // look up by key",
+      "result = double(5)",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-09",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "for i in range(5) {\n    echo i;\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 5,
+    "options": [
+      "// experiment: modify a value above and predict the <?php output",
+      "// experiment: modify a value above and predict the new output",
+      "function add(x) {",
+      "user = { \"name\": \"Alice\", \"age\": 30 }"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-10",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "code": "user = { \"name\": \"Alice\", \"age\": 30 }\n<?php user[\"name\"];  // look up by key\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "<?php user[\"name\"];  // look up by key",
+      "for i in range(5) {",
+      "echo user[\"name\"];  // look up by key",
+      "return n * factorial(n - 1)"
+    ],
+    "answer": "echo user[\"name\"];  // look up by key",
+    "explanation": "Line 2 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-11",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "code": "count = 0\nwhile count < 5 {\n    <?php count;\n    count = count + 1\n}",
+    "buggyLine": 3,
+    "options": [
+      "<?php count;",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "text = \"Hello\"",
+      "echo count;"
+    ],
+    "answer": "echo count;",
+    "explanation": "Line 3 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-12",
+    "lesson": "lesson-31",
+    "difficulty": "easy",
+    "code": "// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 4,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the <?php output",
+      "// experiment: modify a value above and predict the new output",
+      "// items[1], items[2] ... indexes count from 0"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-13",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "<?php i in range(10) {\n    if i == 5 { break }\n    echo i;\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "<?php i in range(10) {",
+      "if age >= 18 AND hasTicket {",
+      "userCount = 0",
+      "for i in range(10) {"
+    ],
+    "answer": "for i in range(10) {",
+    "explanation": "Line 1 uses \"<?php\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-14",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "function add(a, b) {\n    <?php a + b\n}\necho add(2, 3);  // passes 2 and 3 as arguments",
+    "buggyLine": 2,
+    "options": [
+      "echo i;",
+      "return a + b",
+      "<?php a + b",
+      "content = file.read()"
+    ],
+    "answer": "return a + b",
+    "explanation": "Line 2 uses \"<?php\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-15",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "function factorial(n) {\n    if n <= 1 { return 1 }\n    <?php n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "for row in range(3) {",
+      "// git init      - start tracking",
+      "<?php n * factorial(n - 1)",
+      "return n * factorial(n - 1)"
+    ],
+    "answer": "return n * factorial(n - 1)",
+    "explanation": "Line 3 uses \"<?php\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-16",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "// This program greets the world\n<?php\n<?php \"Hello, World!\";\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "echo \"Hello, World!\";",
+      "$name = \"Alice\";",
+      "// experiment: modify a value above and predict the new output",
+      "<?php \"Hello, World!\";"
+    ],
+    "answer": "echo \"Hello, World!\";",
+    "explanation": "Line 3 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-17",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "function add(a, b) {\n    <?php a + b\n}\necho add(2, 3);  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "return a + b",
+      "for col in range(3) {",
+      "<?php a + b",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "return a + b",
+    "explanation": "Line 2 uses \"<?php\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-18",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "code": "// git basics\n// git init      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 6,
+    "options": [
+      "nums = [3, 1, 2]",
+      "// experiment: modify a value above and predict the new output",
+      "// result is now 25",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-19",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "code": "// Common built-ins you will meet:\n// length/count, round/floor/ceil, min/max, sort, join/split\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 3,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the new output",
+      "if n <= 1 { return 1 }",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-20",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "code": "with open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 5,
+    "options": [
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// experiment: modify a value above and predict the new output",
+      "// expected result: 10",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-21",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    <?php \"Something went wrong\";\n}",
+    "buggyLine": 4,
+    "options": [
+      "} else {",
+      "<?php \"Something went wrong\";",
+      "// The line above sends text to the screen",
+      "echo \"Something went wrong\";"
+    ],
+    "answer": "echo \"Something went wrong\";",
+    "explanation": "Line 4 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-22",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "age = 20\nif age >= 18 {\n    echo \"Adult\";\n} else {\n    <?php \"Minor\";\n}",
+    "buggyLine": 5,
+    "options": [
+      "<?php \"Minor\";",
+      "function greet(name) {",
+      "total = 0",
+      "echo \"Minor\";"
+    ],
+    "answer": "echo \"Minor\";",
+    "explanation": "Line 5 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-23",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "class Dog {\n    name = \"Buddy\"\n    <?php bark() { echo \"Woof!\"; }\n}\n// dog = Dog()  then  dog.bark()",
+    "buggyLine": 3,
+    "options": [
+      "function bark() { echo \"Woof!\"; }",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "// experiment: modify a value above and predict the new output",
+      "<?php bark() { echo \"Woof!\"; }"
+    ],
+    "answer": "function bark() { echo \"Woof!\"; }",
+    "explanation": "Line 3 uses \"<?php\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-24",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "code": "nums = [3, 1, 2]\n// sorted -> [1, 2, 3]  (<?php the built-in sort)\n// binary search finds a target in O(log n) steps",
+    "buggyLine": 2,
+    "options": [
+      "total = 0",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// sorted -> [1, 2, 3]  (<?php the built-in sort)",
+      "// items[1], items[2] ... indexes count from 0"
+    ],
+    "answer": "// sorted -> [1, 2, 3]  (use the built-in sort)",
+    "explanation": "Line 2 uses \"<?php\" where \"use\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-25",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "code": "user = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 3,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the <?php output",
+      "// experiment: modify a value above and predict the new output",
+      "total = 0  // global"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-26",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "items = [\"a\", \"b\", \"c\"]\n<?php items[0];  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "// expected result: 10",
+      "result = double(5)",
+      "<?php items[0];  // first item",
+      "echo items[0];  // first item"
+    ],
+    "answer": "echo items[0];  // first item",
+    "explanation": "Line 2 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-27",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "for i in range(10) {\n    if i == 5 { break }\n    <?php i;\n}\n// prints 0 1 2 3 4",
+    "buggyLine": 3,
+    "options": [
+      "<?php i;",
+      "echo \"Alice\";",
+      "echo i;",
+      "echo \"*\";"
+    ],
+    "answer": "echo i;",
+    "explanation": "Line 3 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-28",
+    "lesson": "lesson-36",
+    "difficulty": "medium",
+    "code": "// YOUR PROJECT GOES HERE\n// 1. plan features  2. build core loop  3. add one feature at a time\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 3,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// call it: greet(\"Sam\")",
+      "// experiment: modify a value above and predict the <?php output",
+      "total = total + x  // needs special handling in strict languages"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-29",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "<?php square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25",
+    "buggyLine": 1,
+    "options": [
+      "<?php square(n) {",
+      "// experiment: modify a value above and predict the new output",
+      "// DEBUG: print intermediate values",
+      "function square(n) {"
+    ],
+    "answer": "function square(n) {",
+    "explanation": "Line 1 uses \"<?php\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-30",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "// DEBUG: <?php intermediate values\ntotal = 0\n    total = total + item\necho total;",
+    "buggyLine": 1,
+    "options": [
+      "// DEBUG: print intermediate values",
+      "// experiment: modify a value above and predict the new output",
+      "echo i;",
+      "// DEBUG: <?php intermediate values"
+    ],
+    "answer": "// DEBUG: print intermediate values",
+    "explanation": "Line 1 uses \"<?php\" where \"print\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-31",
+    "lesson": "lesson-35",
+    "difficulty": "medium",
+    "code": "// Good question template:\n// 1. what I expected\n// 2. what actually happened\n// 3. smallest code that reproduces it\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 5,
+    "options": [
+      "// prints 0 1 2 3 4",
+      "// search for: function name + your language",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-32",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "$x{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 3,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the <?php output",
+      "// await getData()  // pause THIS function only",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-33",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": "function factorial(n) {\n    if n <= 1 { return 1 }\n    <?php n * factorial(n - 1)\n}",
+    "buggyLine": 3,
+    "options": [
+      "return n * factorial(n - 1)",
+      "echo \"Welcome in\";",
+      "// experiment: modify a value above and predict the new output",
+      "<?php n * factorial(n - 1)"
+    ],
+    "answer": "return n * factorial(n - 1)",
+    "explanation": "Line 3 uses \"<?php\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-34",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "count = 0\nwhile count < 5 {\n    echo count;\n    count = count + 1\n}\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 6,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// Bad:  x = calc(a,b)",
+      "for i in range(10) {",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 6 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-35",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "code": "// fetch data without blocking the UI\n// await getData()  // pause THIS <?php only\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "return n * factorial(n - 1)",
+      "// await getData()  // pause THIS <?php only",
+      "echo total;",
+      "// await getData()  // pause THIS function only"
+    ],
+    "answer": "// await getData()  // pause THIS function only",
+    "explanation": "Line 2 uses \"<?php\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-36",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "total = 0  // global\n<?php add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "<?php add(x) {",
+      "echo \"Hello, World!\";",
+      "function add(x) {",
+      "// DEBUG: print intermediate values"
+    ],
+    "answer": "function add(x) {",
+    "explanation": "Line 2 uses \"<?php\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-37",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": "// import the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 3,
+    "options": [
+      "total = total + x  // needs special handling in strict languages",
+      "// experiment: modify a value above and predict the <?php output",
+      "// experiment: modify a value above and predict the new output",
+      "// prints 0 1 2 3 4"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-38",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "code": "// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\necho total;\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 5,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the <?php output",
+      "$name = \"Alice\";",
+      "if age >= 18 AND hasTicket {"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-39",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "<?php greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")",
+    "buggyLine": 1,
+    "options": [
+      "// 2. what actually happened",
+      "function greet(name) {",
+      "<?php greet(name) {",
+      "echo \"Hello, World!\";"
+    ],
+    "answer": "function greet(name) {",
+    "explanation": "Line 1 uses \"<?php\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-40",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "code": "items = [\"a\", \"b\", \"c\"]\n<?php items[0];  // first item\n// items[1], items[2] ... indexes count from 0",
+    "buggyLine": 2,
+    "options": [
+      "echo items[0];  // first item",
+      "<?php items[0];  // first item",
+      "// git basics",
+      "// text + \" World\" joins strings"
+    ],
+    "answer": "echo items[0];  // first item",
+    "explanation": "Line 2 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-41",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "code": "tags = {\"python\", \"code\", \"python\"}\n// tags now holds only 2 unique values\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 3,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// git add .     - stage changes",
+      "// experiment: modify a value above and predict the <?php output",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 3 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-42",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "code": "<?php age >= 18 AND hasTicket {\n    echo \"Welcome in\";\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "<?php age >= 18 AND hasTicket {",
+      "if age >= 18 AND hasTicket {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "// Multiplication happens first: result is 11"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 1 uses \"<?php\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-43",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "code": "class Dog {\n    name = \"Buddy\"\n    <?php bark() { echo \"Woof!\"; }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "return \"Hello, \" + name",
+      "<?php bark() { echo \"Woof!\"; }",
+      "function bark() { echo \"Woof!\"; }",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "function bark() { echo \"Woof!\"; }",
+    "explanation": "Line 3 uses \"<?php\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-44",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "code": "text = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 4,
+    "options": [
+      "// experiment: modify a value above and predict the <?php output",
+      "function greet(name) {",
+      "// experiment: modify a value above and predict the new output",
+      "// Variables hold reusable values"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-45",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "<?php row in range(3) {\n    for col in range(3) {\n        echo \"*\";\n    }\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "<?php row in range(3) {",
+      "for row in range(3) {",
+      "return n * n"
+    ],
+    "answer": "for row in range(3) {",
+    "explanation": "Line 1 uses \"<?php\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-46",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "code": "$name = \"Alice\";\n$age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 4,
+    "options": [
+      "// experiment: modify a value above and predict the <?php output",
+      "// git basics",
+      "// experiment: modify a value above and predict the new output",
+      "echo \"Welcome in\";"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-47",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "code": "<?php age >= 18 AND hasTicket {\n    echo \"Welcome in\";\n}",
+    "buggyLine": 1,
+    "options": [
+      "if age >= 18 AND hasTicket {",
+      "// experiment: modify a value above and predict the new output",
+      "echo i;",
+      "<?php age >= 18 AND hasTicket {"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 1 uses \"<?php\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-48",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "code": "<?php\n<?php \"Hello, World!\";\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "echo \"Hello, World!\";",
+      "// e.g. math functions, date handling, file helpers",
+      "<?php \"Hello, World!\";",
+      "with open(\"data.txt\", \"r\") as file {"
+    ],
+    "answer": "echo \"Hello, World!\";",
+    "explanation": "Line 2 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-49",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    <?php \"Something went wrong\";\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "echo \"Something went wrong\";",
+      "<?php \"Something went wrong\";",
+      "echo user[\"name\"];  // look up by key",
+      "age = 20"
+    ],
+    "answer": "echo \"Something went wrong\";",
+    "explanation": "Line 4 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-50",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "code": "age = 20\nif age >= 18 {\n    echo \"Adult\";\n} else {\n    echo \"Minor\";\n}\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 7,
+    "options": [
+      "// an object groups related fields under one name",
+      "$x{assign}5 + 3 * 2",
+      "// experiment: modify a value above and predict the <?php output",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 7 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-51",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "code": "$name = \"Alice\";\n$age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 4,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "} catch (error) {",
+      "function factorial(n) {",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 4 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-52",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "code": "function greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the <?php output",
+    "buggyLine": 5,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the <?php output"
+    ],
+    "answer": "// experiment: modify a value above and predict the new output",
+    "explanation": "Line 5 uses \"<?php\" where \"new\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-53",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "for row in range(3) {\n    for col in range(3) {\n        <?php \"*\";\n    }\n}",
+    "buggyLine": 3,
+    "options": [
+      "<?php \"*\";",
+      "echo \"Hello, World!\";",
+      "echo \"*\";",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)"
+    ],
+    "answer": "echo \"*\";",
+    "explanation": "Line 3 uses \"<?php\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "php-bug-54",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "code": "$name = \"Alice\";\n$age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, <?php is a boolean",
+    "buggyLine": 3,
+    "options": [
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "// Common types: \"Alice\" is a string, 42 is a number, <?php is a boolean",
+      "count = count + 1",
+      "function add(x) {"
+    ],
+    "answer": "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "explanation": "Line 3 uses \"<?php\" where \"true\" belongs. Check keyword spelling and context."
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "id": "rust-fill-q-rust-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: // write a note here",
+    "code": null,
+    "answer": "//",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9;",
+    "code": null,
+    "answer": ";",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: println!(\"{}\", \"Hello\");",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $fn add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "rust-fill-q-rust-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "rust-fill-37",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nfn main() {\n    println!(\"Hello, World!\");\n}\n}",
+    "answer": "fn",
+    "options": [
+      "if",
+      "false",
+      "mod",
+      "fn"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-01 for context."
+  },
+  {
+    "id": "rust-fill-38",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\n_____ main() {\n    println!(\"Hello, World!\");\n}\n}",
+    "answer": "fn",
+    "options": [
+      "where",
+      "fn",
+      "self",
+      "use"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-01 for context."
+  },
+  {
+    "id": "rust-fill-39",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nfor i in range(5) {\n    println!(\"{}\", i);\n}\n// prints 0 1 2 3 4\n}",
+    "answer": "fn",
+    "options": [
+      "Err",
+      "fn",
+      "Result",
+      "continue"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "rust-fill-40",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\n_____ i in range(5) {\n    println!(\"{}\", i);\n}\n// prints 0 1 2 3 4\n}",
+    "answer": "for",
+    "options": [
+      "String",
+      "for",
+      "let",
+      "Self"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "rust-fill-41",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\n// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nprintln!(\"{}\", total);\n}",
+    "answer": "fn",
+    "options": [
+      "Result",
+      "else",
+      "if",
+      "fn"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "rust-fill-42",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nprintln!(\"{}\", \"Alice\");\n// The line above sends text to the screen\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fn",
+    "options": [
+      "impl",
+      "use",
+      "impl",
+      "fn"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-05 for context."
+  },
+  {
+    "id": "rust-fill-43",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nlet name = \"Alice\";\nlet age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n}",
+    "answer": "fn",
+    "options": [
+      "fn",
+      "Some",
+      "Self",
+      "loop"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "rust-fill-44",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\n_____ name = \"Alice\";\nlet age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n}",
+    "answer": "let",
+    "options": [
+      "const",
+      "if",
+      "let",
+      "true"
+    ],
+    "explanation": "\"let\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "rust-fill-45",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\n// Test checklist: normal input, empty input, huge input, bad input\nresult = double(5)\n// expected result: 10\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fn",
+    "options": [
+      "Some",
+      "pub",
+      "ref",
+      "fn"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-31 for context."
+  },
+  {
+    "id": "rust-fill-46",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nclass Dog {\n    name = \"Buddy\"\n    fn bark() { println!(\"{}\", \"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n}",
+    "answer": "fn",
+    "options": [
+      "self",
+      "fn",
+      "unsafe",
+      "break"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "rust-fill-47",
+    "lesson": "lesson-28",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\nclass Dog {\n    name = \"Buddy\"\n    _____ bark() { println!(\"{}\", \"Woof!\"); }\n}\n// dog = Dog()  then  dog.bark()\n}",
+    "answer": "fn",
+    "options": [
+      "let",
+      "for",
+      "break",
+      "fn"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "rust-fill-48",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nif age >= 18 AND hasTicket {\n    println!(\"{}\", \"Welcome in\");\n}\n}",
+    "answer": "fn",
+    "options": [
+      "else",
+      "loop",
+      "fn",
+      "impl"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "rust-fill-49",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\n_____ age >= 18 AND hasTicket {\n    println!(\"{}\", \"Welcome in\");\n}\n}",
+    "answer": "if",
+    "options": [
+      "if",
+      "else",
+      "break",
+      "await"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "rust-fill-50",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nfn square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n}",
+    "answer": "fn",
+    "options": [
+      "where",
+      "trait",
+      "fn",
+      "mod"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "rust-fill-51",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\n_____ square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n}",
+    "answer": "fn",
+    "options": [
+      "crate",
+      "impl",
+      "use",
+      "fn"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "rust-fill-52",
+    "lesson": "lesson-30",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\n// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n}",
+    "answer": "fn",
+    "options": [
+      "use",
+      "Self",
+      "Ok",
+      "fn"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-30 for context."
+  },
+  {
+    "id": "rust-fill-53",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\ncount = 0\nwhile count < 5 {\n    println!(\"{}\", count);\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fn",
+    "options": [
+      "while",
+      "move",
+      "trait",
+      "fn"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "rust-fill-54",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\ncount = 0\n_____ count < 5 {\n    println!(\"{}\", count);\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "while",
+    "options": [
+      "impl",
+      "while",
+      "break",
+      "use"
+    ],
+    "explanation": "\"while\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "rust-fill-55",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nlet name = \"Alice\";\nlet age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fn",
+    "options": [
+      "None",
+      "fn",
+      "return",
+      "Err"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-03 for context."
+  },
+  {
+    "id": "rust-fill-56",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\n_____ name = \"Alice\";\nlet age = 30;\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "let",
+    "options": [
+      "let",
+      "enum",
+      "Self",
+      "ref"
+    ],
+    "explanation": "\"let\" is the correct keyword here — check the lesson on lesson-03 for context."
+  },
+  {
+    "id": "rust-fill-57",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nage = 20\nif age >= 18 {\n    println!(\"{}\", \"Adult\");\n} else {\n    println!(\"{}\", \"Minor\");\n}\n}",
+    "answer": "fn",
+    "options": [
+      "crate",
+      "true",
+      "fn",
+      "Option"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "rust-fill-58",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\nage = 20\n_____ age >= 18 {\n    println!(\"{}\", \"Adult\");\n} else {\n    println!(\"{}\", \"Minor\");\n}\n}",
+    "answer": "if",
+    "options": [
+      "dyn",
+      "if",
+      "static",
+      "const"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-07 for context."
+  },
+  {
+    "id": "rust-fill-59",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "_____ main() {\nfn square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fn",
+    "options": [
+      "await",
+      "while",
+      "fn",
+      "trait"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "rust-fill-60",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this rust code:",
+    "code": "fn main() {\n_____ square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output\n}",
+    "answer": "fn",
+    "options": [
+      "false",
+      "fn",
+      "Self",
+      "String"
+    ],
+    "explanation": "\"fn\" is the correct keyword here — check the lesson on lesson-15 for context."
+  }
+]

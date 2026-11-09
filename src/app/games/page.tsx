@@ -7,9 +7,10 @@ import { languages } from '@/data/languages';
 
 const GAMES = [
   { id: 'quiz-battle', name: 'Quiz Battle', desc: 'Timed multiple-choice questions with combos and lives', icon: Swords, href: (l: string) => `/games/quiz-battle?lang=${l}`, live: true },
-  { id: 'code-puzzle', name: 'Code Puzzle', desc: 'Arrange code lines in the right order', icon: Puzzle, href: (l: string) => `/challenges`, live: false },
-  { id: 'bug-hunter', name: 'Bug Hunter', desc: 'Find and fix errors in code snippets', icon: Bug, href: (l: string) => `/challenges`, live: false },
-  { id: 'match-pairs', name: 'Match Pairs', desc: 'Match keywords to their meanings', icon: GitCompare, href: (l: string) => `/challenges`, live: false },
+  { id: 'code-puzzle', name: 'Code Puzzle', desc: 'Arrange code lines in the right order', icon: Puzzle, href: (l: string) => `/games/code-puzzle?lang=${l}`, live: true },
+  { id: 'bug-hunter', name: 'Bug Hunter', desc: 'Find and fix the buggy line in a snippet', icon: Bug, href: (l: string) => `/games/bug-hunter?lang=${l}`, live: true },
+  { id: 'match-pairs', name: 'Match Pairs', desc: 'Match questions to their correct answers', icon: GitCompare, href: (l: string) => `/games/match-pairs?lang=${l}`, live: true },
+  { id: 'fill-blank', name: 'Fill in the Blank', desc: 'Complete the missing keyword in code', icon: Search, href: (l: string) => `/games/fill-blank?lang=${l}`, live: true },
 ];
 
 export default function GamesPage() {
@@ -65,7 +66,7 @@ export default function GamesPage() {
         </div>
 
         <p className="text-center text-gray-500 text-sm mt-10">
-          Code Puzzle, Bug Hunter and Match Pairs are in development — Quiz Battle is live with all {languages.length} languages.
+          Five game types live across all {languages.length} languages — earn XP and climb the leaderboards.
         </p>
       </main>
     </div>

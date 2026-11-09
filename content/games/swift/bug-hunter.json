@@ -1,0 +1,527 @@
+[
+  {
+    "id": "swift-bug-01",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "func factorial(n) {\n    func n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}",
+    "buggyLine": 2,
+    "options": [
+      "func n <= 1 { return 1 }",
+      "if n <= 1 { return 1 }",
+      "// experiment: modify a value above and predict the new output",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "if n <= 1 { return 1 }",
+    "explanation": "Line 2 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-02",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "func name = \"Alice\"\nlet age = 30\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "// an object groups related fields under one name",
+      "func name = \"Alice\"",
+      "let name = \"Alice\""
+    ],
+    "answer": "let name = \"Alice\"",
+    "explanation": "Line 1 uses \"func\" where \"let\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-03",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "func i in range(5) {\n    print(i)\n}\n// prints 0 1 2 3 4",
+    "buggyLine": 1,
+    "options": [
+      "print(i)",
+      "for i in range(5) {",
+      "if i == 5 { break }",
+      "func i in range(5) {"
+    ],
+    "answer": "for i in range(5) {",
+    "explanation": "Line 1 uses \"func\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-04",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "func age >= 18 AND hasTicket {\n    print(\"Welcome in\")\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "// text + \" World\" joins strings",
+      "func age >= 18 AND hasTicket {",
+      "if age >= 18 AND hasTicket {",
+      "} else {"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 1 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-05",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "var add(a, b) {\n    return a + b\n}\nprint(add(2, 3))  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "return \"Hello, \" + name",
+      "var add(a, b) {",
+      "// experiment: modify a value above and predict the new output",
+      "func add(a, b) {"
+    ],
+    "answer": "func add(a, b) {",
+    "explanation": "Line 1 uses \"var\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-06",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "code": "// git basics\n// git func      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote",
+    "buggyLine": 2,
+    "options": [
+      "// git func      - start tracking",
+      "print(\"Something went wrong\")",
+      "// prints 0 1 2 3 4",
+      "// git init      - start tracking"
+    ],
+    "answer": "// git init      - start tracking",
+    "explanation": "Line 2 uses \"func\" where \"init\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-07",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "var factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "var factorial(n) {",
+      "while count < 5 {",
+      "// experiment: modify a value above and predict the new output",
+      "func factorial(n) {"
+    ],
+    "answer": "func factorial(n) {",
+    "explanation": "Line 1 uses \"var\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-08",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "func {\n    risky_operation()\n} catch (error) {\n    print(\"Something went wrong\")\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "try {",
+      "func {",
+      "// git basics",
+      "print(\"Welcome in\")"
+    ],
+    "answer": "try {",
+    "explanation": "Line 1 uses \"func\" where \"try\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-09",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "for row in range(3) {\n    func col in range(3) {\n        print(\"*\")\n    }\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "total = 0  // global",
+      "func col in range(3) {",
+      "// binary search finds a target in O(log n) steps",
+      "for col in range(3) {"
+    ],
+    "answer": "for col in range(3) {",
+    "explanation": "Line 2 uses \"func\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-10",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "total = 0  // global\nvar add(x) {\n    total = total + x  // needs special handling in strict languages\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "func add(x) {",
+      "var add(x) {",
+      "func factorial(n) {"
+    ],
+    "answer": "func add(x) {",
+    "explanation": "Line 2 uses \"var\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-11",
+    "lesson": "lesson-04",
+    "difficulty": "easy",
+    "code": "func name = \"Alice\"\nlet age = 30\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+    "buggyLine": 1,
+    "options": [
+      "if n <= 1 { return 1 }",
+      "func name = \"Alice\"",
+      "// git commit -m \"describe why\"",
+      "let name = \"Alice\""
+    ],
+    "answer": "let name = \"Alice\"",
+    "explanation": "Line 1 uses \"func\" where \"let\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-12",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "total = 0  // global\nvar add(x) {\n    total = total + x  // needs special handling in strict languages\n}",
+    "buggyLine": 2,
+    "options": [
+      "let age = 30",
+      "func add(x) {",
+      "if age >= 18 {",
+      "var add(x) {"
+    ],
+    "answer": "func add(x) {",
+    "explanation": "Line 2 uses \"var\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-13",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "for row in range(3) {\n    func col in range(3) {\n        print(\"*\")\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "func col in range(3) {",
+      "count = 0",
+      "for col in range(3) {",
+      "func greet(name) {"
+    ],
+    "answer": "for col in range(3) {",
+    "explanation": "Line 2 uses \"func\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-14",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "code": "for i in range(10) {\n    func i == 5 { break }\n    print(i)\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "func i == 5 { break }",
+      "// experiment: modify a value above and predict the new output",
+      "print(add(2, 3))  // passes 2 and 3 as arguments",
+      "if i == 5 { break }"
+    ],
+    "answer": "if i == 5 { break }",
+    "explanation": "Line 2 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-15",
+    "lesson": "lesson-29",
+    "difficulty": "easy",
+    "code": "// fetch data without blocking the UI\n// var getData()  // pause THIS function only\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "// var getData()  // pause THIS function only",
+      "// experiment: modify a value above and predict the new output",
+      "// await getData()  // pause THIS function only",
+      "for row in range(3) {"
+    ],
+    "answer": "// await getData()  // pause THIS function only",
+    "explanation": "Line 2 uses \"var\" where \"await\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-16",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "func add(a, b) {\n    func a + b\n}\nprint(add(2, 3))  // passes 2 and 3 as arguments",
+    "buggyLine": 2,
+    "options": [
+      "total = total + item",
+      "return a + b",
+      "func a + b",
+      "print(\"Alice\")"
+    ],
+    "answer": "return a + b",
+    "explanation": "Line 2 uses \"func\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-17",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "func Dog {\n    name = \"Buddy\"\n    func bark() { print(\"Woof!\") }\n}\n// dog = Dog()  then  dog.bark()\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "func Dog {",
+      "class Dog {",
+      "print(i)",
+      "func square(n) {"
+    ],
+    "answer": "class Dog {",
+    "explanation": "Line 1 uses \"func\" where \"class\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-18",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "// Docs pattern: Quick Start -> Guides -> API Reference\n// search var: function name + your language\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "print(count)",
+      "// git basics",
+      "// search for: function name + your language",
+      "// search var: function name + your language"
+    ],
+    "answer": "// search for: function name + your language",
+    "explanation": "Line 2 uses \"var\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-19",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "func greet(name) {\n    func \"Hello, \" + name\n}\n// call it: greet(\"Sam\")",
+    "buggyLine": 2,
+    "options": [
+      "return \"Hello, \" + name",
+      "total = 0",
+      "func \"Hello, \" + name",
+      "// git basics"
+    ],
+    "answer": "return \"Hello, \" + name",
+    "explanation": "Line 2 uses \"func\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-20",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "code": "func {\n    risky_operation()\n} catch (error) {\n    print(\"Something went wrong\")\n}",
+    "buggyLine": 1,
+    "options": [
+      "count = count + 1",
+      "try {",
+      "func {",
+      "// Multiplication happens first: result is 11"
+    ],
+    "answer": "try {",
+    "explanation": "Line 1 uses \"func\" where \"try\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-21",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "var square(n) {\n    return n * n\n}\nresult = square(5)\n// result is now 25\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "func square(n) {",
+      "// experiment: modify a value above and predict the new output",
+      "var square(n) {",
+      "let age = 30"
+    ],
+    "answer": "func square(n) {",
+    "explanation": "Line 1 uses \"var\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-22",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "code": "// git basics\n// git func      - start tracking\n// git add .     - stage changes\n// git commit -m \"describe why\"\n// git push     - share to remote\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "userCount = 0",
+      "// git func      - start tracking",
+      "// git init      - start tracking",
+      "with open(\"data.txt\", \"r\") as file {"
+    ],
+    "answer": "// git init      - start tracking",
+    "explanation": "Line 2 uses \"func\" where \"init\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-23",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "count = 0\nfunc count < 5 {\n    print(count)\n    count = count + 1\n}",
+    "buggyLine": 2,
+    "options": [
+      "let age = 30",
+      "while count < 5 {",
+      "func count < 5 {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "while count < 5 {",
+    "explanation": "Line 2 uses \"func\" where \"while\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-24",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "code": "let name = \"Alice\"\nfunc age = 30\n// Variables hold reusable values",
+    "buggyLine": 2,
+    "options": [
+      "let age = 30",
+      "return a + b",
+      "func age = 30",
+      "print(\"Something went wrong\")"
+    ],
+    "answer": "let age = 30",
+    "explanation": "Line 2 uses \"func\" where \"let\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-25",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "count = 0\nfunc count < 5 {\n    print(count)\n    count = count + 1\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "while count < 5 {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "if n <= 1 { return 1 }",
+      "func count < 5 {"
+    ],
+    "answer": "while count < 5 {",
+    "explanation": "Line 2 uses \"func\" where \"while\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-26",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "code": "func name = \"Alice\"\nlet age = 30\n// Variables hold reusable values\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "func name = \"Alice\"",
+      "return \"Hello, \" + name",
+      "func bark() { print(\"Woof!\") }",
+      "let name = \"Alice\""
+    ],
+    "answer": "let name = \"Alice\"",
+    "explanation": "Line 1 uses \"func\" where \"let\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-27",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "for i in range(10) {\n    func i == 5 { break }\n    print(i)\n}\n// prints 0 1 2 3 4",
+    "buggyLine": 2,
+    "options": [
+      "func i == 5 { break }",
+      "for row in range(3) {",
+      "if i == 5 { break }",
+      "total = 0  // global"
+    ],
+    "answer": "if i == 5 { break }",
+    "explanation": "Line 2 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-28",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "code": "func square(n) {\n    func n * n\n}\nresult = square(5)\n// result is now 25",
+    "buggyLine": 2,
+    "options": [
+      "func n * n",
+      "// experiment: modify a value above and predict the new output",
+      "print(\"*\")",
+      "return n * n"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 2 uses \"func\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-29",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "code": "age = 20\nif age >= 18 {\n    print(\"Adult\")\n} func {\n    print(\"Minor\")\n}",
+    "buggyLine": 4,
+    "options": [
+      "risky_operation()",
+      "} else {",
+      "} func {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": "} else {",
+    "explanation": "Line 4 uses \"func\" where \"else\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-30",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "code": "var greet(name) {\n    return \"Hello, \" + name\n}\n// call it: greet(\"Sam\")\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "let name = \"Alice\"",
+      "func greet(name) {",
+      "var greet(name) {",
+      "name = \"Buddy\""
+    ],
+    "answer": "func greet(name) {",
+    "explanation": "Line 1 uses \"var\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-31",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "code": "func age >= 18 AND hasTicket {\n    print(\"Welcome in\")\n}",
+    "buggyLine": 1,
+    "options": [
+      "for row in range(3) {",
+      "func age >= 18 AND hasTicket {",
+      "print(\"Adult\")",
+      "if age >= 18 AND hasTicket {"
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 1 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-32",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "code": "age = 20\nfunc age >= 18 {\n    print(\"Adult\")\n} else {\n    print(\"Minor\")\n}\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "// experiment: modify a value above and predict the new output",
+      "if age >= 18 {",
+      "name = \"Buddy\"",
+      "func age >= 18 {"
+    ],
+    "answer": "if age >= 18 {",
+    "explanation": "Line 2 uses \"func\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-33",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "code": "class Dog {\n    name = \"Buddy\"\n    var bark() { print(\"Woof!\") }\n}\n// dog = Dog()  then  dog.bark()",
+    "buggyLine": 3,
+    "options": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "func bark() { print(\"Woof!\") }",
+      "var bark() { print(\"Woof!\") }"
+    ],
+    "answer": "func bark() { print(\"Woof!\") }",
+    "explanation": "Line 3 uses \"var\" where \"func\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-34",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "code": "func i in range(5) {\n    print(i)\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "func i in range(5) {",
+      "age = 20",
+      "for i in range(5) {",
+      "items = [\"a\", \"b\", \"c\"]"
+    ],
+    "answer": "for i in range(5) {",
+    "explanation": "Line 1 uses \"func\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-35",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "code": "// func the tools you need\n// e.g. math functions, date handling, file helpers\n// experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "// func the tools you need",
+      "x{assign}5 + 3 * 2",
+      "print(\"Welcome in\")",
+      "// import the tools you need"
+    ],
+    "answer": "// import the tools you need",
+    "explanation": "Line 1 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  }
+]

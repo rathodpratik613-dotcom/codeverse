@@ -1,0 +1,353 @@
+[
+  {
+    "id": "rust-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "A named storage location for a value",
+      "Define the smallest version that works end-to-end"
+    ]
+  },
+  {
+    "id": "rust-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "rust-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the most valuable first test for a new function?",
+        "right": "A normal input with a known expected output"
+      }
+    ],
+    "distractors": [
+      "A ready-made function provided by the language",
+      "//",
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "rust-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "In boolean logic, A AND B is true when...",
+        "right": "both A and B are true"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "rust-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "What is a variable?",
+        "right": "A named storage location for a value"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "rust-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "What problem does async programming solve?",
+        "right": "Long-running tasks without freezing the program"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "rust-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "rust-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What should you do FIRST when you find a bug?",
+        "right": "Reproduce it reliably and note the exact steps"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "rust-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is typically a boolean value?",
+        "right": "true"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "rust-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "true"
+    ]
+  },
+  {
+    "id": "rust-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does \"return\" do?",
+        "right": "Sends a value back and ends the function"
+      },
+      {
+        "left": "A for loop is best when...",
+        "right": "you know how many times to repeat"
+      }
+    ],
+    "distractors": [
+      "//",
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "rust-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is the best first step for a capstone project?",
+        "right": "Define the smallest version that works end-to-end"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic"
+    ]
+  },
+  {
+    "id": "rust-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What does a \"Hello World\" program mainly teach you?",
+        "right": "That your code runs and produces output"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Joining them end to end into one string",
+      "A blueprint for creating objects"
+    ]
+  },
+  {
+    "id": "rust-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Rust?",
+        "right": "//"
+      },
+      {
+        "left": "In Rust, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "A base case that stops the recursion"
+    ]
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "id": "swift-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "Makes functions/code from another module available"
+    ]
+  },
+  {
+    "id": "swift-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Groups related data (and often behavior) under one name"
+    ]
+  },
+  {
+    "id": "swift-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "1 (the remainder)",
+      "Define the smallest version that works end-to-end"
+    ]
+  },
+  {
+    "id": "swift-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      }
+    ],
+    "distractors": [
+      "isValidEmail"
+    ]
+  },
+  {
+    "id": "swift-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+    ]
+  },
+  {
+    "id": "swift-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Parameters are placeholders; arguments are the real values passed"
+    ]
+  },
+  {
+    "id": "swift-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "swift-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "What is the difference between a parameter and an argument?",
+        "right": "Parameters are placeholders; arguments are the real values passed"
+      },
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "The official language documentation"
+    ]
+  },
+  {
+    "id": "swift-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "What does the print/output function do?",
+        "right": "Sends text or values to the screen or console"
+      },
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "swift-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "swift-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "you know how many times to repeat",
+      "Sends a value back and ends the function"
+    ]
+  },
+  {
+    "id": "swift-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What problem does async programming solve?",
+        "right": "Long-running tasks without freezing the program"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the correct comment syntax?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "swift-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      }
+    ],
+    "distractors": [
+      "Sends text or values to the screen or console"
+    ]
+  },
+  {
+    "id": "swift-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What does concatenation mean for strings?",
+        "right": "Joining them end to end into one string"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Swift?",
+        "right": "//"
+      },
+      {
+        "left": "In Swift, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      }
+    ],
+    "distractors": [
+      "That your code runs and produces output",
+      "Skips to the next iteration"
+    ]
+  }
+]

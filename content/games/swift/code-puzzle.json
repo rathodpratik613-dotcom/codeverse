@@ -1,0 +1,1014 @@
+[
+  {
+    "id": "swift-puzzle-01",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "lines": [
+      "// Good question template:",
+      "// 2. what actually happened",
+      "// 1. what I expected",
+      "// experiment: modify a value above and predict the new output",
+      "// 3. smallest code that reproduces it"
+    ],
+    "answer": [
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 2. what actually happened",
+      "// 3. smallest code that reproduces it",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-02",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "lines": [
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0",
+      "// Bad:  x = calc(a,b)"
+    ],
+    "answer": [
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-03",
+    "lesson": "lesson-09",
+    "difficulty": "easy",
+    "lines": [
+      "    count = count + 1",
+      "while count < 5 {",
+      "}",
+      "count = 0",
+      "// experiment: modify a value above and predict the new output",
+      "    print(count)"
+    ],
+    "answer": [
+      "count = 0",
+      "while count < 5 {",
+      "    print(count)",
+      "    count = count + 1",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-04",
+    "lesson": "lesson-24",
+    "difficulty": "easy",
+    "lines": [
+      "// an object groups related fields under one name",
+      "user = { name: \"Alice\", age: 30 }",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "user = { name: \"Alice\", age: 30 }",
+      "// an object groups related fields under one name",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-24. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-05",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "lines": [
+      "func add(x) {",
+      "    total = total + x  // needs special handling in strict languages",
+      "total = 0  // global",
+      "}"
+    ],
+    "answer": [
+      "total = 0  // global",
+      "func add(x) {",
+      "    total = total + x  // needs special handling in strict languages",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-06",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "lines": [
+      "    for col in range(3) {",
+      "for row in range(3) {",
+      "}",
+      "        print(\"*\")",
+      "    }"
+    ],
+    "answer": [
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "        print(\"*\")",
+      "    }",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-07",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "lines": [
+      "// result is now 25",
+      "result = square(5)",
+      "// experiment: modify a value above and predict the new output",
+      "func square(n) {",
+      "}",
+      "    return n * n"
+    ],
+    "answer": [
+      "func square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "// result is now 25",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-08",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "lines": [
+      "    if i == 5 { break }",
+      "// prints 0 1 2 3 4",
+      "}",
+      "    print(i)",
+      "for i in range(10) {"
+    ],
+    "answer": [
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    print(i)",
+      "}",
+      "// prints 0 1 2 3 4"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-09",
+    "lesson": "lesson-20",
+    "difficulty": "easy",
+    "lines": [
+      "// text + \" World\" joins strings",
+      "// experiment: modify a value above and predict the new output",
+      "// text.upper() / text.length style helpers exist per language",
+      "text = \"Hello\""
+    ],
+    "answer": [
+      "text = \"Hello\"",
+      "// text + \" World\" joins strings",
+      "// text.upper() / text.length style helpers exist per language",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-10",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "class Dog {",
+      "    func bark() { print(\"Woof!\") }",
+      "    name = \"Buddy\"",
+      "// dog = Dog()  then  dog.bark()"
+    ],
+    "answer": [
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "    func bark() { print(\"Woof!\") }",
+      "}",
+      "// dog = Dog()  then  dog.bark()",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-11",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "lines": [
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git basics",
+      "// git push     - share to remote",
+      "// git commit -m \"describe why\""
+    ],
+    "answer": [
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\"",
+      "// git push     - share to remote"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-12",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "lines": [
+      "// e.g. math functions, date handling, file helpers",
+      "// import the tools you need",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "// import the tools you need",
+      "// e.g. math functions, date handling, file helpers",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-13",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "lines": [
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "// experiment: modify a value above and predict the new output",
+      "// Common built-ins you will meet:"
+    ],
+    "answer": [
+      "// Common built-ins you will meet:",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-14",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "with open(\"data.txt\", \"r\") as file {",
+      "// file is auto-closed here",
+      "    content = file.read()"
+    ],
+    "answer": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "// file is auto-closed here"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-15",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "lines": [
+      "// Multiplication happens first: result is 11",
+      "x{assign}5 + 3 * 2",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-16",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "lines": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "// file is auto-closed here",
+      "    content = file.read()"
+    ],
+    "answer": [
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "// file is auto-closed here",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-17",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "if age >= 18 AND hasTicket {",
+      "// experiment: modify a value above and predict the new output",
+      "    print(\"Welcome in\")"
+    ],
+    "answer": [
+      "if age >= 18 AND hasTicket {",
+      "    print(\"Welcome in\")",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-18",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "func greet(name) {",
+      "// call it: greet(\"Sam\")",
+      "    return \"Hello, \" + name",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "func greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "// call it: greet(\"Sam\")",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-19",
+    "lesson": "lesson-25",
+    "difficulty": "easy",
+    "lines": [
+      "try {",
+      "} catch (error) {",
+      "}",
+      "    risky_operation()",
+      "    print(\"Something went wrong\")"
+    ],
+    "answer": [
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    print(\"Something went wrong\")",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-20",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "lines": [
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "// YOUR PROJECT GOES HERE",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "// YOUR PROJECT GOES HERE",
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-21",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "print(user[\"name\"])  // look up by key"
+    ],
+    "answer": [
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "print(user[\"name\"])  // look up by key",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-22",
+    "lesson": "lesson-30",
+    "difficulty": "easy",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0"
+    ],
+    "answer": [
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-23",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "// Variables hold reusable values",
+      "let name = \"Alice\"",
+      "let age = 30"
+    ],
+    "answer": [
+      "let name = \"Alice\"",
+      "let age = 30",
+      "// Variables hold reusable values",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-24",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "print(total)",
+      "    total = total + item",
+      "// DEBUG: print intermediate values",
+      "total = 0"
+    ],
+    "answer": [
+      "// DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "print(total)",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-25",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "print(\"Alice\")",
+      "// The line above sends text to the screen"
+    ],
+    "answer": [
+      "print(\"Alice\")",
+      "// The line above sends text to the screen",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-26",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "lines": [
+      "    print(\"Something went wrong\")",
+      "} catch (error) {",
+      "try {",
+      "}",
+      "    risky_operation()",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    print(\"Something went wrong\")",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-27",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "lines": [
+      "result = double(5)",
+      "// expected result: 10",
+      "// Test checklist: normal input, empty input, huge input, bad input"
+    ],
+    "answer": [
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "// expected result: 10"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-28",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "for i in range(5) {",
+      "// prints 0 1 2 3 4",
+      "    print(i)"
+    ],
+    "answer": [
+      "for i in range(5) {",
+      "    print(i)",
+      "}",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-29",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "lines": [
+      "    total = total + x  // needs special handling in strict languages",
+      "}",
+      "total = 0  // global",
+      "func add(x) {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "total = 0  // global",
+      "func add(x) {",
+      "    total = total + x  // needs special handling in strict languages",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-30",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "lines": [
+      "let name = \"Alice\"",
+      "let age = 30",
+      "// experiment: modify a value above and predict the new output",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean"
+    ],
+    "answer": [
+      "let name = \"Alice\"",
+      "let age = 30",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-31",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "lines": [
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "// search for: function name + your language",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "// search for: function name + your language",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-32",
+    "lesson": "lesson-22",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// tags now holds only 2 unique values"
+    ],
+    "answer": [
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// tags now holds only 2 unique values",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-33",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "lines": [
+      "age = 20",
+      "} else {",
+      "}",
+      "if age >= 18 {",
+      "    print(\"Adult\")",
+      "    print(\"Minor\")"
+    ],
+    "answer": [
+      "age = 20",
+      "if age >= 18 {",
+      "    print(\"Adult\")",
+      "} else {",
+      "    print(\"Minor\")",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-34",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "lines": [
+      "    print(i)",
+      "}",
+      "// prints 0 1 2 3 4",
+      "for i in range(5) {"
+    ],
+    "answer": [
+      "for i in range(5) {",
+      "    print(i)",
+      "}",
+      "// prints 0 1 2 3 4"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-35",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "func add(a, b) {",
+      "print(add(2, 3))  // passes 2 and 3 as arguments",
+      "    return a + b"
+    ],
+    "answer": [
+      "func add(a, b) {",
+      "    return a + b",
+      "}",
+      "print(add(2, 3))  // passes 2 and 3 as arguments",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-36",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "lines": [
+      "// prints 0 1 2 3 4",
+      "}",
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "// experiment: modify a value above and predict the new output",
+      "    print(i)"
+    ],
+    "answer": [
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    print(i)",
+      "}",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-37",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "lines": [
+      "// await getData()  // pause THIS function only",
+      "// fetch data without blocking the UI",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "// fetch data without blocking the UI",
+      "// await getData()  // pause THIS function only",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-38",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "lines": [
+      "print(total)",
+      "total = 0",
+      "// DEBUG: print intermediate values",
+      "    total = total + item"
+    ],
+    "answer": [
+      "// DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "print(total)"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-39",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "lines": [
+      "func square(n) {",
+      "result = square(5)",
+      "    return n * n",
+      "// result is now 25",
+      "}"
+    ],
+    "answer": [
+      "func square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "// result is now 25"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-40",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "lines": [
+      "} else {",
+      "// experiment: modify a value above and predict the new output",
+      "age = 20",
+      "    print(\"Minor\")",
+      "}",
+      "if age >= 18 {",
+      "    print(\"Adult\")"
+    ],
+    "answer": [
+      "age = 20",
+      "if age >= 18 {",
+      "    print(\"Adult\")",
+      "} else {",
+      "    print(\"Minor\")",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-41",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "lines": [
+      "print(items[0])  // first item",
+      "// experiment: modify a value above and predict the new output",
+      "items = [\"a\", \"b\", \"c\"]",
+      "// items[1], items[2] ... indexes count from 0"
+    ],
+    "answer": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "print(items[0])  // first item",
+      "// items[1], items[2] ... indexes count from 0",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-42",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "lines": [
+      "func add(a, b) {",
+      "    return a + b",
+      "print(add(2, 3))  // passes 2 and 3 as arguments",
+      "}"
+    ],
+    "answer": [
+      "func add(a, b) {",
+      "    return a + b",
+      "}",
+      "print(add(2, 3))  // passes 2 and 3 as arguments"
+    ],
+    "explanation": "This snippet comes from lesson lesson-14. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-43",
+    "lesson": "lesson-35",
+    "difficulty": "hard",
+    "lines": [
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 3. smallest code that reproduces it",
+      "// 2. what actually happened"
+    ],
+    "answer": [
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 2. what actually happened",
+      "// 3. smallest code that reproduces it"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-44",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "lines": [
+      "// text.upper() / text.length style helpers exist per language",
+      "// text + \" World\" joins strings",
+      "text = \"Hello\""
+    ],
+    "answer": [
+      "text = \"Hello\"",
+      "// text + \" World\" joins strings",
+      "// text.upper() / text.length style helpers exist per language"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-45",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "lines": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "// items[1], items[2] ... indexes count from 0",
+      "print(items[0])  // first item"
+    ],
+    "answer": [
+      "items = [\"a\", \"b\", \"c\"]",
+      "print(items[0])  // first item",
+      "// items[1], items[2] ... indexes count from 0"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-46",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "lines": [
+      "    return \"Hello, \" + name",
+      "func greet(name) {",
+      "// call it: greet(\"Sam\")",
+      "}"
+    ],
+    "answer": [
+      "func greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "// call it: greet(\"Sam\")"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-47",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "lines": [
+      "nums = [3, 1, 2]",
+      "// binary search finds a target in O(log n) steps",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "nums = [3, 1, 2]",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-48",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "lines": [
+      "let age = 30",
+      "let name = \"Alice\"",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean"
+    ],
+    "answer": [
+      "let name = \"Alice\"",
+      "let age = 30",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-49",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "lines": [
+      "// binary search finds a target in O(log n) steps",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "nums = [3, 1, 2]"
+    ],
+    "answer": [
+      "nums = [3, 1, 2]",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-50",
+    "lesson": "lesson-02",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "// This program greets the world",
+      "print(\"Hello, World!\")"
+    ],
+    "answer": [
+      "// This program greets the world",
+      "print(\"Hello, World!\")",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-02. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-51",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "if age >= 18 AND hasTicket {",
+      "    print(\"Welcome in\")"
+    ],
+    "answer": [
+      "if age >= 18 AND hasTicket {",
+      "    print(\"Welcome in\")",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-52",
+    "lesson": "lesson-31",
+    "difficulty": "hard",
+    "lines": [
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "// experiment: modify a value above and predict the new output",
+      "// expected result: 10",
+      "result = double(5)"
+    ],
+    "answer": [
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "// expected result: 10",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-53",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "lines": [
+      "count = 0",
+      "    count = count + 1",
+      "while count < 5 {",
+      "}",
+      "    print(count)"
+    ],
+    "answer": [
+      "count = 0",
+      "while count < 5 {",
+      "    print(count)",
+      "    count = count + 1",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-54",
+    "lesson": "lesson-34",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "// git push     - share to remote",
+      "// git commit -m \"describe why\"",
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes"
+    ],
+    "answer": [
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\"",
+      "// git push     - share to remote",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "swift-puzzle-55",
+    "lesson": "lesson-03",
+    "difficulty": "hard",
+    "lines": [
+      "let name = \"Alice\"",
+      "let age = 30",
+      "// Variables hold reusable values"
+    ],
+    "answer": [
+      "let name = \"Alice\"",
+      "let age = 30",
+      "// Variables hold reusable values"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  }
+]

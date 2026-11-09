@@ -1,0 +1,361 @@
+[
+  {
+    "id": "ruby-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the best first step for a capstone project?",
+        "right": "Define the smallest version that works end-to-end"
+      },
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Nothing — the block is skipped",
+      "A named storage location for a value",
+      "Its condition eventually becomes false"
+    ]
+  },
+  {
+    "id": "ruby-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is the most valuable first test for a new function?",
+        "right": "A normal input with a known expected output"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In boolean logic, A AND B is true when...",
+        "right": "both A and B are true"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "ruby-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "A ready-made function provided by the language",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "ruby-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What makes a while loop safe?",
+        "right": "Its condition eventually becomes false"
+      },
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "1 (the remainder)",
+      "#"
+    ]
+  },
+  {
+    "id": "ruby-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a commit?",
+        "right": "A saved snapshot of your code at a point in time"
+      },
+      {
+        "left": "What is a \"built-in\" or standard library function?",
+        "right": "A ready-made function provided by the language"
+      },
+      {
+        "left": "What should you do FIRST when you find a bug?",
+        "right": "Reproduce it reliably and note the exact steps"
+      }
+    ],
+    "distractors": [
+      "#",
+      "Parameters are placeholders; arguments are the real values passed",
+      "A base case that stops the recursion"
+    ]
+  },
+  {
+    "id": "ruby-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "A saved snapshot of your code at a point in time",
+      "That your code runs and produces output",
+      "Long-running tasks without freezing the program"
+    ]
+  },
+  {
+    "id": "ruby-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is the correct comment syntax?",
+        "right": "#"
+      }
+    ],
+    "distractors": [
+      "Sends a value back and ends the function"
+    ]
+  },
+  {
+    "id": "ruby-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "#",
+      "1 (the remainder)",
+      "#"
+    ]
+  },
+  {
+    "id": "ruby-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "ruby-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic",
+      "#"
+    ]
+  },
+  {
+    "id": "ruby-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "What does \"continue\" do inside a loop?",
+        "right": "Skips to the next iteration"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "1 (the remainder)",
+      "A base case that stops the recursion"
+    ]
+  },
+  {
+    "id": "ruby-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      },
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      }
+    ],
+    "distractors": [
+      "Groups related data (and often behavior) under one name"
+    ]
+  },
+  {
+    "id": "ruby-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      }
+    ],
+    "distractors": [
+      "Define the smallest version that works end-to-end",
+      "local — visible only within that function"
+    ]
+  },
+  {
+    "id": "ruby-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Ruby?",
+        "right": "#"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does concatenation mean for strings?",
+        "right": "Joining them end to end into one string"
+      },
+      {
+        "left": "In Ruby, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  }
+]

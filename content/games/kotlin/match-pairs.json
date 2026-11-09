@@ -1,0 +1,367 @@
+[
+  {
+    "id": "kotlin-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What is a commit?",
+        "right": "A saved snapshot of your code at a point in time"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does the print/output function do?",
+        "right": "Sends text or values to the screen or console"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Handle failures without crashing the whole program",
+      "Makes functions/code from another module available"
+    ]
+  },
+  {
+    "id": "kotlin-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "What happens when an if condition is false and there is no else?",
+        "right": "Nothing — the block is skipped"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "kotlin-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "A named storage location for a value",
+      "A ready-made function provided by the language",
+      "A normal input with a known expected output"
+    ]
+  },
+  {
+    "id": "kotlin-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Where should you look FIRST for accurate syntax questions?",
+        "right": "The official language documentation"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "A variable declared inside a function is...",
+        "right": "local — visible only within that function"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic",
+      "Nothing — the block is skipped",
+      "Groups related data (and often behavior) under one name"
+    ]
+  },
+  {
+    "id": "kotlin-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is 10 % 3 in most languages?",
+        "right": "1 (the remainder)"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "//",
+      "Fast lookup of values by a unique key",
+      "A saved snapshot of your code at a point in time"
+    ]
+  },
+  {
+    "id": "kotlin-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Joining them end to end into one string",
+      "Long-running tasks without freezing the program"
+    ]
+  },
+  {
+    "id": "kotlin-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "A for loop is best when...",
+        "right": "you know how many times to repeat"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "true",
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "kotlin-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Why use functions?",
+        "right": "To reuse code and organize logic"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does a \"Hello World\" program mainly teach you?",
+        "right": "That your code runs and produces output"
+      }
+    ],
+    "distractors": [
+      "//"
+    ]
+  },
+  {
+    "id": "kotlin-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What happens when you add a duplicate to a set?",
+        "right": "Nothing — the set keeps only one copy"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "//",
+      "//",
+      "A blueprint for creating objects",
+      "//"
+    ]
+  },
+  {
+    "id": "kotlin-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic"
+    ]
+  },
+  {
+    "id": "kotlin-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "What should you do FIRST when you find a bug?",
+        "right": "Reproduce it reliably and note the exact steps"
+      },
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "1 (the remainder)",
+      "Define the smallest version that works end-to-end",
+      "Handle failures without crashing the whole program"
+    ]
+  },
+  {
+    "id": "kotlin-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "you know how many times to repeat",
+      "1 (the remainder)"
+    ]
+  },
+  {
+    "id": "kotlin-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "true"
+    ]
+  },
+  {
+    "id": "kotlin-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      },
+      {
+        "left": "In Kotlin, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does an object/struct primarily do?",
+        "right": "Groups related data (and often behavior) under one name"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in Kotlin?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "It closes the file automatically, even on errors",
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+    ]
+  }
+]

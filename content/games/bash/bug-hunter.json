@@ -1,0 +1,647 @@
+[
+  {
+    "id": "bash-bug-01",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "code": "# Docs pattern: Quick Start -> Guides -> API Reference\n# search if: function name + your language\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "if age >= 18 {",
+      "age=30",
+      "# search for: function name + your language",
+      "# search if: function name + your language"
+    ],
+    "answer": "# search for: function name + your language",
+    "explanation": "Line 2 uses \"if\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-02",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "code": "items = [\"a\", \"b\", \"c\"]\necho items[0]  # first item\n# itemsif1], items[2] ... indexes count from 0",
+    "buggyLine": 3,
+    "options": [
+      "# itemsif1], items[2] ... indexes count from 0",
+      "# git push     - share to remote",
+      "# items[1], items[2] ... indexes count from 0",
+      "age=30"
+    ],
+    "answer": "# items[1], items[2] ... indexes count from 0",
+    "explanation": "Line 3 uses \"if\" where \"[\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-03",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "age = 20\nthen age >= 18 {\n    echo \"Adult\"\n} else {\n    echo \"Minor\"\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "then age >= 18 {",
+      "if i == 5 { break }",
+      "# experiment: modify a value above and predict the new output",
+      "if age >= 18 {"
+    ],
+    "answer": "if age >= 18 {",
+    "explanation": "Line 2 uses \"then\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-04",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "class Dog {\n    name = \"Buddy\"\n    function bark() { echo \"Woof!\" }\n}\n# dog = Dog()  if  dog.bark()\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 5,
+    "options": [
+      "# The line above sends text to the screen",
+      "# dog = Dog()  if  dog.bark()",
+      "# dog = Dog()  then  dog.bark()",
+      "echo i"
+    ],
+    "answer": "# dog = Dog()  then  dog.bark()",
+    "explanation": "Line 5 uses \"if\" where \"then\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-05",
+    "lesson": "lesson-12",
+    "difficulty": "easy",
+    "code": "for row in range(3) {\n    if col in range(3) {\n        echo \"*\"\n    }\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "for col in range(3) {",
+      "echo \"Minor\"",
+      "if col in range(3) {"
+    ],
+    "answer": "for col in range(3) {",
+    "explanation": "Line 2 uses \"if\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-06",
+    "lesson": "lesson-14",
+    "difficulty": "easy",
+    "code": "function add(a, b) {\n    return a + b\n}\nif add(2, 3)  # passes 2 and 3 as arguments\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "echo add(2, 3)  # passes 2 and 3 as arguments",
+      "# Good question template:",
+      "# experiment: modify a value above and predict the new output",
+      "if add(2, 3)  # passes 2 and 3 as arguments"
+    ],
+    "answer": "echo add(2, 3)  # passes 2 and 3 as arguments",
+    "explanation": "Line 4 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-07",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "function square(n) {\n    if n * n\n}\nresult = square(5)\n# result is now 25\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "echo \"Alice\"",
+      "# experiment: modify a value above and predict the new output",
+      "return n * n",
+      "if n * n"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 2 uses \"if\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-08",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "code": "function square(n) {\n    if n * n\n}\nresult = square(5)\n# result is now 25",
+    "buggyLine": 2,
+    "options": [
+      "class Dog {",
+      "return n * n",
+      "# experiment: modify a value above and predict the new output",
+      "if n * n"
+    ],
+    "answer": "return n * n",
+    "explanation": "Line 2 uses \"if\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-09",
+    "lesson": "lesson-16",
+    "difficulty": "easy",
+    "code": "total = 0  # global\nif add(x) {\n    total = total + x  # needs special handling in strict languages\n}",
+    "buggyLine": 2,
+    "options": [
+      "if add(x) {",
+      "# text.upper() / text.length style helpers exist per language",
+      "# experiment: modify a value above and predict the new output",
+      "function add(x) {"
+    ],
+    "answer": "function add(x) {",
+    "explanation": "Line 2 uses \"if\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-10",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "code": "function factorial(n) {\n    then n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "then n <= 1 { return 1 }",
+      "# text + \" World\" joins strings",
+      "if n <= 1 { return 1 }",
+      "items = [\"a\", \"b\", \"c\"]"
+    ],
+    "answer": "if n <= 1 { return 1 }",
+    "explanation": "Line 2 uses \"then\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-11",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "code": "# DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nif total\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "echo total",
+      "echo \"*\"",
+      "if total",
+      "# dog = Dog()  then  dog.bark()"
+    ],
+    "answer": "echo total",
+    "explanation": "Line 4 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-12",
+    "lesson": "lesson-19",
+    "difficulty": "easy",
+    "code": "items = [\"a\", \"b\", \"c\"]\nif items[0]  # first item\n# items[1], items[2] ... indexes count from 0\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "# Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "# text.upper() / text.length style helpers exist per language",
+      "if items[0]  # first item",
+      "echo items[0]  # first item"
+    ],
+    "answer": "echo items[0]  # first item",
+    "explanation": "Line 2 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-13",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "code": "then age >= 18 AND hasTicket {\n    echo \"Welcome in\"\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "then age >= 18 AND hasTicket {",
+      "if age >= 18 AND hasTicket {",
+      "# experiment: modify a value above and predict the new output",
+      "echo \"Minor\""
+    ],
+    "answer": "if age >= 18 AND hasTicket {",
+    "explanation": "Line 1 uses \"then\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-14",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "for i in range(5) {\n    if i\n}\n# prints 0 1 2 3 4",
+    "buggyLine": 2,
+    "options": [
+      "if i",
+      "# experiment: modify a value above and predict the new output",
+      "echo \"Adult\"",
+      "echo i"
+    ],
+    "answer": "echo i",
+    "explanation": "Line 2 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-15",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "code": "# import the tools you need\n# eifg. math functions, date handling, file helpers\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "age = 20",
+      "# eifg. math functions, date handling, file helpers",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "# e.g. math functions, date handling, file helpers"
+    ],
+    "answer": "# e.g. math functions, date handling, file helpers",
+    "explanation": "Line 2 uses \"if\" where \".\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-16",
+    "lesson": "lesson-07",
+    "difficulty": "easy",
+    "code": "age = 20\nif age >= 18 {\n    echo \"Adult\"\n} if {\n    echo \"Minor\"\n}",
+    "buggyLine": 4,
+    "options": [
+      "} else {",
+      "return a + b",
+      "} if {",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "} else {",
+    "explanation": "Line 4 uses \"if\" where \"else\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-17",
+    "lesson": "lesson-08",
+    "difficulty": "easy",
+    "code": "for i in range(5) {\n    if i\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "if i",
+      "function factorial(n) {",
+      "echo i",
+      "# Common types: \"Alice\" is a string, 42 is a number, true is a boolean"
+    ],
+    "answer": "echo i",
+    "explanation": "Line 2 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-18",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "code": "class Dog {\n    name = \"Buddy\"\n    if bark() { echo \"Woof!\" }\n}\n# dog = Dog()  then  dog.bark()",
+    "buggyLine": 3,
+    "options": [
+      "# expected result: 10",
+      "if bark() { echo \"Woof!\" }",
+      "# 2. what actually happened",
+      "function bark() { echo \"Woof!\" }"
+    ],
+    "answer": "function bark() { echo \"Woof!\" }",
+    "explanation": "Line 3 uses \"if\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-19",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "# This program greets the world\nif \"Hello, World!\"\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "echo \"Hello, World!\"",
+      "# call it: greet(\"Sam\")",
+      "userCount = 0",
+      "if \"Hello, World!\""
+    ],
+    "answer": "echo \"Hello, World!\"",
+    "explanation": "Line 2 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-20",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "code": "nums = [3, 1, 2]\n# sorted -> [1, 2, 3]  (use the built-in if)\n# binary search finds a target in O(log n) steps",
+    "buggyLine": 2,
+    "options": [
+      "# Multiplication happens first: result is 11",
+      "# import the tools you need",
+      "# sorted -> [1, 2, 3]  (use the built-in if)",
+      "# sorted -> [1, 2, 3]  (use the built-in sort)"
+    ],
+    "answer": "# sorted -> [1, 2, 3]  (use the built-in sort)",
+    "explanation": "Line 2 uses \"if\" where \"sort\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-21",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "function greet(name) {\n    if \"Hello, \" + name\n}\n# call it: greet(\"Sam\")",
+    "buggyLine": 2,
+    "options": [
+      "count = 0",
+      "# git commit -m \"describe why\"",
+      "return \"Hello, \" + name",
+      "if \"Hello, \" + name"
+    ],
+    "answer": "return \"Hello, \" + name",
+    "explanation": "Line 2 uses \"if\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-22",
+    "lesson": "lesson-13",
+    "difficulty": "easy",
+    "code": "function greet(name) {\n    if \"Hello, \" + name\n}\n# call it: greet(\"Sam\")\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "return \"Hello, \" + name",
+      "if \"Hello, \" + name",
+      "# Good question template:",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "return \"Hello, \" + name",
+    "explanation": "Line 2 uses \"if\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-23",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "if \"Alice\"\n# The line above sends text to the screen\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "echo \"Alice\"",
+      "if \"Alice\"",
+      "# experiment: modify a value above and predict the new output",
+      "for col in range(3) {"
+    ],
+    "answer": "echo \"Alice\"",
+    "explanation": "Line 1 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-24",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "code": "text = \"Hello\"\n# text + \" World\" joins strings\n# textifupper() / text.length style helpers exist per language",
+    "buggyLine": 3,
+    "options": [
+      "total = total + item",
+      "# text.upper() / text.length style helpers exist per language",
+      "# experiment: modify a value above and predict the new output",
+      "# textifupper() / text.length style helpers exist per language"
+    ],
+    "answer": "# text.upper() / text.length style helpers exist per language",
+    "explanation": "Line 3 uses \"if\" where \".\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-25",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "count = 0\nif count < 5 {\n    echo count\n    count = count + 1\n}",
+    "buggyLine": 2,
+    "options": [
+      "text = \"Hello\"",
+      "age=30",
+      "if count < 5 {",
+      "while count < 5 {"
+    ],
+    "answer": "while count < 5 {",
+    "explanation": "Line 2 uses \"if\" where \"while\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-26",
+    "lesson": "lesson-11",
+    "difficulty": "medium",
+    "code": "if age >= 18 AND hasTicket {\n    if \"Welcome in\"\n}",
+    "buggyLine": 2,
+    "options": [
+      "try {",
+      "if \"Welcome in\"",
+      "echo \"Welcome in\"",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "echo \"Welcome in\"",
+    "explanation": "Line 2 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-27",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    if \"Something went wrong\"\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 4,
+    "options": [
+      "if \"Something went wrong\"",
+      "# binary search finds a target in O(log n) steps",
+      "echo \"Something went wrong\"",
+      "count = count + 1"
+    ],
+    "answer": "echo \"Something went wrong\"",
+    "explanation": "Line 4 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-28",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "code": "for row in range(3) {\n    if col in range(3) {\n        echo \"*\"\n    }\n}",
+    "buggyLine": 2,
+    "options": [
+      "if col in range(3) {",
+      "if age >= 18 AND hasTicket {",
+      "for col in range(3) {",
+      "# 1. what I expected"
+    ],
+    "answer": "for col in range(3) {",
+    "explanation": "Line 2 uses \"if\" where \"for\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-29",
+    "lesson": "lesson-21",
+    "difficulty": "medium",
+    "code": "user = { \"name\": \"Alice\", \"age\": 30 }\nif user[\"name\"]  # look up by key\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "echo user[\"name\"]  # look up by key",
+      "items = [\"a\", \"b\", \"c\"]",
+      "if user[\"name\"]  # look up by key",
+      "text = \"Hello\""
+    ],
+    "answer": "echo user[\"name\"]  # look up by key",
+    "explanation": "Line 2 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-30",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "code": "count = 0\nwhile count < 5 {\n    if count\n    count = count + 1\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "echo count",
+      "nums = [3, 1, 2]",
+      "# 1. plan features  2. build core loop  3. add one feature at a time",
+      "if count"
+    ],
+    "answer": "echo count",
+    "explanation": "Line 3 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-31",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "code": "try {\n    risky_operation()\n} catch (error) {\n    if \"Something went wrong\"\n}",
+    "buggyLine": 4,
+    "options": [
+      "if \"Something went wrong\"",
+      "echo \"Something went wrong\"",
+      "nums = [3, 1, 2]",
+      "echo \"Hello, World!\""
+    ],
+    "answer": "echo \"Something went wrong\"",
+    "explanation": "Line 4 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-32",
+    "lesson": "lesson-14",
+    "difficulty": "medium",
+    "code": "function add(a, b) {\n    if a + b\n}\necho add(2, 3)  # passes 2 and 3 as arguments",
+    "buggyLine": 2,
+    "options": [
+      "# experiment: modify a value above and predict the new output",
+      "if a + b",
+      "return a + b",
+      "# e.g. math functions, date handling, file helpers"
+    ],
+    "answer": "return a + b",
+    "explanation": "Line 2 uses \"if\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-33",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "code": "function factorial(n) {\n    if n <= 1 { return 1 }\n    if n * factorial(n - 1)\n}",
+    "buggyLine": 3,
+    "options": [
+      "for i in range(5) {",
+      "if n * factorial(n - 1)",
+      "echo total",
+      "return n * factorial(n - 1)"
+    ],
+    "answer": "return n * factorial(n - 1)",
+    "explanation": "Line 3 uses \"if\" where \"return\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-34",
+    "lesson": "lesson-18",
+    "difficulty": "medium",
+    "code": "# Common built-ins you will meet:\n# length/count, round/floor/ceil, min/max, if, join/split\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "# length/count, round/floor/ceil, min/max, if, join/split",
+      "# experiment: modify a value above and predict the new output",
+      "# 1. what I expected",
+      "# length/count, round/floor/ceil, min/max, sort, join/split"
+    ],
+    "answer": "# length/count, round/floor/ceil, min/max, sort, join/split",
+    "explanation": "Line 2 uses \"if\" where \"sort\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-35",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "code": "text = \"Hello\"\n# text + \" World\" joins strings\n# textifupper() / text.length style helpers exist per language\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 3,
+    "options": [
+      "# textifupper() / text.length style helpers exist per language",
+      "for i in range(5) {",
+      "# text.upper() / text.length style helpers exist per language",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "# text.upper() / text.length style helpers exist per language",
+    "explanation": "Line 3 uses \"if\" where \".\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-36",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "code": "with open(\"data.txt\", \"r\") as file {\n    content = file.if()\n}\n# file is auto-closed here",
+    "buggyLine": 2,
+    "options": [
+      "risky_operation()",
+      "# git basics",
+      "content = file.read()",
+      "content = file.if()"
+    ],
+    "answer": "content = file.read()",
+    "explanation": "Line 2 uses \"if\" where \"read\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-37",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "for i in range(10) {\n    then i == 5 { break }\n    echo i\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "then i == 5 { break }",
+      "echo items[0]  # first item",
+      "if i == 5 { break }",
+      "total = 0"
+    ],
+    "answer": "if i == 5 { break }",
+    "explanation": "Line 2 uses \"then\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-38",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "code": "for i in range(10) {\n    then i == 5 { break }\n    echo i\n}\n# prints 0 1 2 3 4",
+    "buggyLine": 2,
+    "options": [
+      "# 3. smallest code that reproduces it",
+      "if i == 5 { break }",
+      "then i == 5 { break }",
+      "echo add(2, 3)  # passes 2 and 3 as arguments"
+    ],
+    "answer": "if i == 5 { break }",
+    "explanation": "Line 2 uses \"then\" where \"if\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-39",
+    "lesson": "lesson-29",
+    "difficulty": "medium",
+    "code": "# fetch data without blocking the UI\n# await getData()  // pause THIS if only\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "echo \"*\"",
+      "# await getData()  // pause THIS function only",
+      "# await getData()  // pause THIS if only",
+      "echo total"
+    ],
+    "answer": "# await getData()  // pause THIS function only",
+    "explanation": "Line 2 uses \"if\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-40",
+    "lesson": "lesson-26",
+    "difficulty": "medium",
+    "code": "with open(\"dataiftxt\", \"r\") as file {\n    content = file.read()\n}\n# file is auto-closed here\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 1,
+    "options": [
+      "if age >= 18 AND hasTicket {",
+      "# result is now 25",
+      "with open(\"dataiftxt\", \"r\") as file {",
+      "with open(\"data.txt\", \"r\") as file {"
+    ],
+    "answer": "with open(\"data.txt\", \"r\") as file {",
+    "explanation": "Line 1 uses \"if\" where \".\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-41",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "code": "nums = [3, 1, 2]\n# sorted -> [1, 2, 3]  (use the built-in if)\n# binary search finds a target in O(log n) steps\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "# sorted -> [1, 2, 3]  (use the built-in if)",
+      "# sorted -> [1, 2, 3]  (use the built-in sort)",
+      "echo count",
+      "# experiment: modify a value above and predict the new output"
+    ],
+    "answer": "# sorted -> [1, 2, 3]  (use the built-in sort)",
+    "explanation": "Line 2 uses \"if\" where \"sort\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-42",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "code": "total = 0  # global\nif add(x) {\n    total = total + x  # needs special handling in strict languages\n}\n# experiment: modify a value above and predict the new output",
+    "buggyLine": 2,
+    "options": [
+      "function add(x) {",
+      "if add(x) {",
+      "echo total",
+      "function factorial(n) {"
+    ],
+    "answer": "function add(x) {",
+    "explanation": "Line 2 uses \"if\" where \"function\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-43",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "code": "# DEBUG: print intermediate values\ntotal = 0\n    total = total + item\nif total",
+    "buggyLine": 4,
+    "options": [
+      "if total",
+      "echo total",
+      "# experiment: modify a value above and predict the new output",
+      "if age >= 18 {"
+    ],
+    "answer": "echo total",
+    "explanation": "Line 4 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  }
+]

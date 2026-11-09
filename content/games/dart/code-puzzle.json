@@ -1,0 +1,1212 @@
+[
+  {
+    "id": "dart-puzzle-01",
+    "lesson": "lesson-36",
+    "difficulty": "easy",
+    "lines": [
+      "// YOUR PROJECT GOES HERE",
+      "void main() {",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "// 1. plan features  2. build core loop  3. add one feature at a time"
+    ],
+    "answer": [
+      "void main() {",
+      "// YOUR PROJECT GOES HERE",
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-02",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "    print(\"Welcome in\");",
+      "void main() {",
+      "}",
+      "if age >= 18 AND hasTicket {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "void main() {",
+      "if age >= 18 AND hasTicket {",
+      "    print(\"Welcome in\");",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-03",
+    "lesson": "lesson-27",
+    "difficulty": "easy",
+    "lines": [
+      "void main() {",
+      "}",
+      "// import the tools you need",
+      "// e.g. math functions, date handling, file helpers"
+    ],
+    "answer": [
+      "void main() {",
+      "// import the tools you need",
+      "// e.g. math functions, date handling, file helpers",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-04",
+    "lesson": "lesson-26",
+    "difficulty": "easy",
+    "lines": [
+      "// file is auto-closed here",
+      "    content = file.read()",
+      "}",
+      "with open(\"data.txt\", \"r\") as file {",
+      "}",
+      "void main() {"
+    ],
+    "answer": [
+      "void main() {",
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "// file is auto-closed here",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-05",
+    "lesson": "lesson-35",
+    "difficulty": "easy",
+    "lines": [
+      "// 1. what I expected",
+      "void main() {",
+      "// 2. what actually happened",
+      "// Good question template:",
+      "// 3. smallest code that reproduces it",
+      "}"
+    ],
+    "answer": [
+      "void main() {",
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 2. what actually happened",
+      "// 3. smallest code that reproduces it",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-06",
+    "lesson": "lesson-06",
+    "difficulty": "easy",
+    "lines": [
+      "// Multiplication happens first: result is 11",
+      "x{assign}5 + 3 * 2",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "void main() {"
+    ],
+    "answer": [
+      "void main() {",
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-07",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "lines": [
+      "var age = 30;",
+      "}",
+      "// Variables hold reusable values",
+      "var name = \"Alice\";",
+      "// experiment: modify a value above and predict the new output",
+      "void main() {"
+    ],
+    "answer": [
+      "void main() {",
+      "var name = \"Alice\";",
+      "var age = 30;",
+      "// Variables hold reusable values",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-08",
+    "lesson": "lesson-18",
+    "difficulty": "easy",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "// Common built-ins you will meet:",
+      "}",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "void main() {"
+    ],
+    "answer": [
+      "void main() {",
+      "// Common built-ins you will meet:",
+      "// length/count, round/floor/ceil, min/max, sort, join/split",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-18. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-09",
+    "lesson": "lesson-28",
+    "difficulty": "easy",
+    "lines": [
+      "void main() {",
+      "}",
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "}",
+      "    void bark() { print(\"Woof!\"); }",
+      "// dog = Dog()  then  dog.bark()"
+    ],
+    "answer": [
+      "void main() {",
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "    void bark() { print(\"Woof!\"); }",
+      "}",
+      "// dog = Dog()  then  dog.bark()",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-10",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "lines": [
+      "// git push     - share to remote",
+      "// git init      - start tracking",
+      "}",
+      "void main() {",
+      "// git basics",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\""
+    ],
+    "answer": [
+      "void main() {",
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\"",
+      "// git push     - share to remote",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-11",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "void main() {",
+      "}",
+      "}",
+      "void main() {",
+      "  print(\"Hello, World!\");"
+    ],
+    "answer": [
+      "void main() {",
+      "void main() {",
+      "  print(\"Hello, World!\");",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-12",
+    "lesson": "lesson-10",
+    "difficulty": "easy",
+    "lines": [
+      "// prints 0 1 2 3 4",
+      "    if i == 5 { break }",
+      "void main() {",
+      "}",
+      "}",
+      "for i in range(10) {",
+      "    print(i);",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "void main() {",
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    print(i);",
+      "}",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-13",
+    "lesson": "lesson-11",
+    "difficulty": "easy",
+    "lines": [
+      "    print(\"Welcome in\");",
+      "void main() {",
+      "}",
+      "if age >= 18 AND hasTicket {",
+      "}"
+    ],
+    "answer": [
+      "void main() {",
+      "if age >= 18 AND hasTicket {",
+      "    print(\"Welcome in\");",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-11. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-14",
+    "lesson": "lesson-32",
+    "difficulty": "easy",
+    "lines": [
+      "print(total);",
+      "    total = total + item",
+      "total = 0",
+      "void main() {",
+      "// DEBUG: print intermediate values",
+      "}"
+    ],
+    "answer": [
+      "void main() {",
+      "// DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "print(total);",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-15",
+    "lesson": "lesson-21",
+    "difficulty": "easy",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "print(user[\"name\"]);  // look up by key",
+      "void main() {",
+      "}",
+      "user = { \"name\": \"Alice\", \"age\": 30 }"
+    ],
+    "answer": [
+      "void main() {",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "print(user[\"name\"]);  // look up by key",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-16",
+    "lesson": "lesson-34",
+    "difficulty": "easy",
+    "lines": [
+      "// git commit -m \"describe why\"",
+      "// git basics",
+      "// git push     - share to remote",
+      "void main() {",
+      "// git add .     - stage changes",
+      "// git init      - start tracking",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "void main() {",
+      "// git basics",
+      "// git init      - start tracking",
+      "// git add .     - stage changes",
+      "// git commit -m \"describe why\"",
+      "// git push     - share to remote",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-34. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-17",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "lines": [
+      "void main() {",
+      "}",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps",
+      "nums = [3, 1, 2]"
+    ],
+    "answer": [
+      "void main() {",
+      "nums = [3, 1, 2]",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-18",
+    "lesson": "lesson-23",
+    "difficulty": "easy",
+    "lines": [
+      "nums = [3, 1, 2]",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "}",
+      "// binary search finds a target in O(log n) steps",
+      "// experiment: modify a value above and predict the new output",
+      "void main() {"
+    ],
+    "answer": [
+      "void main() {",
+      "nums = [3, 1, 2]",
+      "// sorted -> [1, 2, 3]  (use the built-in sort)",
+      "// binary search finds a target in O(log n) steps",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-23. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-19",
+    "lesson": "lesson-17",
+    "difficulty": "easy",
+    "lines": [
+      "    return n * factorial(n - 1)",
+      "}",
+      "    if n <= 1 { return 1 }",
+      "void factorial(n) {",
+      "}",
+      "void main() {"
+    ],
+    "answer": [
+      "void main() {",
+      "void factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    return n * factorial(n - 1)",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-20",
+    "lesson": "lesson-33",
+    "difficulty": "easy",
+    "lines": [
+      "}",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "void main() {",
+      "// search for: function name + your language"
+    ],
+    "answer": [
+      "void main() {",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "// search for: function name + your language",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-21",
+    "lesson": "lesson-15",
+    "difficulty": "easy",
+    "lines": [
+      "result = square(5)",
+      "}",
+      "    return n * n",
+      "void main() {",
+      "}",
+      "void square(n) {",
+      "// result is now 25"
+    ],
+    "answer": [
+      "void main() {",
+      "void square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "// result is now 25",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-22",
+    "lesson": "lesson-05",
+    "difficulty": "easy",
+    "lines": [
+      "// The line above sends text to the screen",
+      "}",
+      "void main() {",
+      "print(\"Alice\");"
+    ],
+    "answer": [
+      "void main() {",
+      "print(\"Alice\");",
+      "// The line above sends text to the screen",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-05. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-23",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "result = double(5)",
+      "// expected result: 10",
+      "void main() {",
+      "// Test checklist: normal input, empty input, huge input, bad input"
+    ],
+    "answer": [
+      "void main() {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "// expected result: 10",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-24",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "// Multiplication happens first: result is 11",
+      "void main() {",
+      "x{assign}5 + 3 * 2"
+    ],
+    "answer": [
+      "void main() {",
+      "x{assign}5 + 3 * 2",
+      "// Multiplication happens first: result is 11",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-06. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-25",
+    "lesson": "lesson-32",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "    total = total + item",
+      "print(total);",
+      "}",
+      "total = 0",
+      "void main() {",
+      "// DEBUG: print intermediate values"
+    ],
+    "answer": [
+      "void main() {",
+      "// DEBUG: print intermediate values",
+      "total = 0",
+      "    total = total + item",
+      "print(total);",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-32. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-26",
+    "lesson": "lesson-03",
+    "difficulty": "medium",
+    "lines": [
+      "void main() {",
+      "var name = \"Alice\";",
+      "}",
+      "// Variables hold reusable values",
+      "var age = 30;"
+    ],
+    "answer": [
+      "void main() {",
+      "var name = \"Alice\";",
+      "var age = 30;",
+      "// Variables hold reusable values",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-03. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-27",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "lines": [
+      "if age >= 18 {",
+      "void main() {",
+      "    print(\"Adult\");",
+      "} else {",
+      "    print(\"Minor\");",
+      "}",
+      "age = 20",
+      "}"
+    ],
+    "answer": [
+      "void main() {",
+      "age = 20",
+      "if age >= 18 {",
+      "    print(\"Adult\");",
+      "} else {",
+      "    print(\"Minor\");",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-28",
+    "lesson": "lesson-31",
+    "difficulty": "medium",
+    "lines": [
+      "void main() {",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "result = double(5)",
+      "// expected result: 10",
+      "// Test checklist: normal input, empty input, huge input, bad input"
+    ],
+    "answer": [
+      "void main() {",
+      "// Test checklist: normal input, empty input, huge input, bad input",
+      "result = double(5)",
+      "// expected result: 10",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-31. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-29",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "lines": [
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "var age = 30;",
+      "}",
+      "void main() {",
+      "var name = \"Alice\";"
+    ],
+    "answer": [
+      "void main() {",
+      "var name = \"Alice\";",
+      "var age = 30;",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-30",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "lines": [
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "void main() {",
+      "userCount = 0",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "answer": [
+      "void main() {",
+      "// Bad:  x = calc(a,b)",
+      "// Good: totalPrice = calculateTotal(basePrice, taxRate)",
+      "userCount = 0",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-30. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-31",
+    "lesson": "lesson-09",
+    "difficulty": "medium",
+    "lines": [
+      "    print(count);",
+      "}",
+      "while count < 5 {",
+      "count = 0",
+      "void main() {",
+      "}",
+      "    count = count + 1"
+    ],
+    "answer": [
+      "void main() {",
+      "count = 0",
+      "while count < 5 {",
+      "    print(count);",
+      "    count = count + 1",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-09. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-32",
+    "lesson": "lesson-13",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "void main() {",
+      "    return \"Hello, \" + name",
+      "// call it: greet(\"Sam\")",
+      "}",
+      "void greet(name) {"
+    ],
+    "answer": [
+      "void main() {",
+      "void greet(name) {",
+      "    return \"Hello, \" + name",
+      "}",
+      "// call it: greet(\"Sam\")",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-13. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-33",
+    "lesson": "lesson-17",
+    "difficulty": "medium",
+    "lines": [
+      "void factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "}",
+      "}",
+      "void main() {",
+      "    return n * factorial(n - 1)",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "void main() {",
+      "void factorial(n) {",
+      "    if n <= 1 { return 1 }",
+      "    return n * factorial(n - 1)",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-17. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-34",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "lines": [
+      "var age = 30;",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "void main() {",
+      "var name = \"Alice\";",
+      "}",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "void main() {",
+      "var name = \"Alice\";",
+      "var age = 30;",
+      "// Common types: \"Alice\" is a string, 42 is a number, true is a boolean",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-04. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-35",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "if age >= 18 {",
+      "    print(\"Adult\");",
+      "} else {",
+      "age = 20",
+      "    print(\"Minor\");",
+      "}",
+      "void main() {"
+    ],
+    "answer": [
+      "void main() {",
+      "age = 20",
+      "if age >= 18 {",
+      "    print(\"Adult\");",
+      "} else {",
+      "    print(\"Minor\");",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-07. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-36",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "lines": [
+      "    name = \"Buddy\"",
+      "// experiment: modify a value above and predict the new output",
+      "void main() {",
+      "    void bark() { print(\"Woof!\"); }",
+      "}",
+      "class Dog {",
+      "}",
+      "// dog = Dog()  then  dog.bark()"
+    ],
+    "answer": [
+      "void main() {",
+      "class Dog {",
+      "    name = \"Buddy\"",
+      "    void bark() { print(\"Woof!\"); }",
+      "}",
+      "// dog = Dog()  then  dog.bark()",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-28. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-37",
+    "lesson": "lesson-27",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "// e.g. math functions, date handling, file helpers",
+      "// import the tools you need",
+      "void main() {",
+      "// experiment: modify a value above and predict the new output"
+    ],
+    "answer": [
+      "void main() {",
+      "// import the tools you need",
+      "// e.g. math functions, date handling, file helpers",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-27. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-38",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "void main() {",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "// experiment: modify a value above and predict the new output",
+      "// search for: function name + your language"
+    ],
+    "answer": [
+      "void main() {",
+      "// Docs pattern: Quick Start -> Guides -> API Reference",
+      "// search for: function name + your language",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-33. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-39",
+    "lesson": "lesson-01",
+    "difficulty": "medium",
+    "lines": [
+      "}",
+      "void main() {",
+      "void main() {",
+      "}",
+      "  print(\"Hello, World!\");"
+    ],
+    "answer": [
+      "void main() {",
+      "void main() {",
+      "  print(\"Hello, World!\");",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-01. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-40",
+    "lesson": "lesson-15",
+    "difficulty": "medium",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "void main() {",
+      "}",
+      "result = square(5)",
+      "}",
+      "// result is now 25",
+      "void square(n) {",
+      "    return n * n"
+    ],
+    "answer": [
+      "void main() {",
+      "void square(n) {",
+      "    return n * n",
+      "}",
+      "result = square(5)",
+      "// result is now 25",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-15. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-41",
+    "lesson": "lesson-10",
+    "difficulty": "medium",
+    "lines": [
+      "for i in range(10) {",
+      "// prints 0 1 2 3 4",
+      "}",
+      "void main() {",
+      "}",
+      "    if i == 5 { break }",
+      "    print(i);"
+    ],
+    "answer": [
+      "void main() {",
+      "for i in range(10) {",
+      "    if i == 5 { break }",
+      "    print(i);",
+      "}",
+      "// prints 0 1 2 3 4",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-10. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-42",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "lines": [
+      "print(items[0]);  // first item",
+      "}",
+      "items = [\"a\", \"b\", \"c\"]",
+      "void main() {",
+      "// items[1], items[2] ... indexes count from 0"
+    ],
+    "answer": [
+      "void main() {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "print(items[0]);  // first item",
+      "// items[1], items[2] ... indexes count from 0",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-43",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "// items[1], items[2] ... indexes count from 0",
+      "items = [\"a\", \"b\", \"c\"]",
+      "void main() {",
+      "}",
+      "print(items[0]);  // first item"
+    ],
+    "answer": [
+      "void main() {",
+      "items = [\"a\", \"b\", \"c\"]",
+      "print(items[0]);  // first item",
+      "// items[1], items[2] ... indexes count from 0",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-19. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-44",
+    "lesson": "lesson-29",
+    "difficulty": "hard",
+    "lines": [
+      "// fetch data without blocking the UI",
+      "// await getData()  // pause THIS function only",
+      "// experiment: modify a value above and predict the new output",
+      "void main() {",
+      "}"
+    ],
+    "answer": [
+      "void main() {",
+      "// fetch data without blocking the UI",
+      "// await getData()  // pause THIS function only",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-29. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-45",
+    "lesson": "lesson-35",
+    "difficulty": "hard",
+    "lines": [
+      "void main() {",
+      "// 1. what I expected",
+      "}",
+      "// Good question template:",
+      "// experiment: modify a value above and predict the new output",
+      "// 2. what actually happened",
+      "// 3. smallest code that reproduces it"
+    ],
+    "answer": [
+      "void main() {",
+      "// Good question template:",
+      "// 1. what I expected",
+      "// 2. what actually happened",
+      "// 3. smallest code that reproduces it",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-35. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-46",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "for row in range(3) {",
+      "void main() {",
+      "        print(\"*\");",
+      "    }",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "    for col in range(3) {"
+    ],
+    "answer": [
+      "void main() {",
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "        print(\"*\");",
+      "    }",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-47",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "lines": [
+      "void add(x) {",
+      "}",
+      "}",
+      "total = 0  // global",
+      "void main() {",
+      "    total = total + x  // needs special handling in strict languages"
+    ],
+    "answer": [
+      "void main() {",
+      "total = 0  // global",
+      "void add(x) {",
+      "    total = total + x  // needs special handling in strict languages",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-16. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-48",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "lines": [
+      "void main() {",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// tags now holds only 2 unique values",
+      "}"
+    ],
+    "answer": [
+      "void main() {",
+      "tags = {\"python\", \"code\", \"python\"}",
+      "// tags now holds only 2 unique values",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-22. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-49",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "}",
+      "with open(\"data.txt\", \"r\") as file {",
+      "void main() {",
+      "    content = file.read()",
+      "// file is auto-closed here"
+    ],
+    "answer": [
+      "void main() {",
+      "with open(\"data.txt\", \"r\") as file {",
+      "    content = file.read()",
+      "}",
+      "// file is auto-closed here",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-26. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-50",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "    }",
+      "        print(\"*\");",
+      "void main() {",
+      "}"
+    ],
+    "answer": [
+      "void main() {",
+      "for row in range(3) {",
+      "    for col in range(3) {",
+      "        print(\"*\");",
+      "    }",
+      "}",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-12. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-51",
+    "lesson": "lesson-20",
+    "difficulty": "hard",
+    "lines": [
+      "text = \"Hello\"",
+      "// text + \" World\" joins strings",
+      "// experiment: modify a value above and predict the new output",
+      "// text.upper() / text.length style helpers exist per language",
+      "}",
+      "void main() {"
+    ],
+    "answer": [
+      "void main() {",
+      "text = \"Hello\"",
+      "// text + \" World\" joins strings",
+      "// text.upper() / text.length style helpers exist per language",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-20. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-52",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "lines": [
+      "print(user[\"name\"]);  // look up by key",
+      "void main() {",
+      "}",
+      "user = { \"name\": \"Alice\", \"age\": 30 }"
+    ],
+    "answer": [
+      "void main() {",
+      "user = { \"name\": \"Alice\", \"age\": 30 }",
+      "print(user[\"name\"]);  // look up by key",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-21. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-53",
+    "lesson": "lesson-25",
+    "difficulty": "hard",
+    "lines": [
+      "}",
+      "void main() {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    print(\"Something went wrong\");",
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "try {"
+    ],
+    "answer": [
+      "void main() {",
+      "try {",
+      "    risky_operation()",
+      "} catch (error) {",
+      "    print(\"Something went wrong\");",
+      "}",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-25. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-54",
+    "lesson": "lesson-36",
+    "difficulty": "hard",
+    "lines": [
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "void main() {",
+      "}",
+      "// YOUR PROJECT GOES HERE"
+    ],
+    "answer": [
+      "void main() {",
+      "// YOUR PROJECT GOES HERE",
+      "// 1. plan features  2. build core loop  3. add one feature at a time",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-36. The correct order runs top to bottom as written."
+  },
+  {
+    "id": "dart-puzzle-55",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "lines": [
+      "// experiment: modify a value above and predict the new output",
+      "}",
+      "// prints 0 1 2 3 4",
+      "void main() {",
+      "for i in range(5) {",
+      "}",
+      "    print(i);"
+    ],
+    "answer": [
+      "void main() {",
+      "for i in range(5) {",
+      "    print(i);",
+      "}",
+      "// prints 0 1 2 3 4",
+      "// experiment: modify a value above and predict the new output",
+      "}"
+    ],
+    "explanation": "This snippet comes from lesson lesson-08. The correct order runs top to bottom as written."
+  }
+]

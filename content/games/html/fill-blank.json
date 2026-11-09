@@ -1,0 +1,636 @@
+[
+  {
+    "id": "html-fill-q-html-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <${tag}>content</${tag}>",
+    "code": null,
+    "answer": "p/h1/div",
+    "explanation": "Elements use opening and closing tags."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <body> ... </${close}>",
+    "code": null,
+    "answer": "body",
+    "explanation": "Body wraps all visible content."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <ul><li>Item</${li}></ul>",
+    "code": null,
+    "answer": "li",
+    "explanation": "List items use the li tag."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <a href=\"${url}\">text</a>",
+    "code": null,
+    "answer": "https://...",
+    "explanation": "href holds the destination."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <tr><${cell}>Data</${cell}></tr>",
+    "code": null,
+    "answer": "td",
+    "explanation": "td holds table data; th holds headers."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <input type=\"${t}\" name=\"age\">",
+    "code": null,
+    "answer": "number",
+    "explanation": "Types tailor input behavior and validation."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <${tag}>primary page content</${tag}>",
+    "code": null,
+    "answer": "main",
+    "explanation": "main wraps the dominant content."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <img src=\"a.jpg\" ${attr}=\"A cat\">",
+    "code": null,
+    "answer": "alt",
+    "explanation": "alt describes the image for accessibility."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class=\"${a} ${b}\"  // two classes on one element",
+    "code": null,
+    "answer": "space-separated",
+    "explanation": "Classes are separated by spaces."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <${tag} class=\"inline-note\">note</${tag}>",
+    "code": null,
+    "answer": "span",
+    "explanation": "span is the inline container."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: Tom &${amp} Jerry  // literal ampersand",
+    "code": null,
+    "answer": "amp",
+    "explanation": "&amp; shows a real &."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <!-- ${note} -->",
+    "code": null,
+    "answer": "comment text",
+    "explanation": "Text between the markers is ignored."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <a href=\"${p}about.html\">About</a>",
+    "code": null,
+    "answer": "relative path",
+    "explanation": "Relative paths resolve from the current page."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: loading=\"${v}\"  // defer off-screen images",
+    "code": null,
+    "answer": "lazy",
+    "explanation": "Lazy loading delays off-screen images."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: autocomplete=\"${v}\"  // let browser fill the field",
+    "code": null,
+    "answer": "email/name/etc",
+    "explanation": "autocomplete tokens help password managers."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: aria-${attr}=\"...\"  // only when HTML falls short",
+    "code": null,
+    "answer": "label/hidden/etc",
+    "explanation": "ARIA supplements, not replaces, semantics."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <meta name=\"${n}\" content=\"...\">",
+    "code": null,
+    "answer": "description/viewport/robots",
+    "explanation": "Meta name/value pairs configure the page."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <meta name=\"${v}\" content=\"width=device-width\">",
+    "code": null,
+    "answer": "viewport",
+    "explanation": "Viewport controls mobile rendering scale."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <${d}><summary>Title</summary>content</${d}>",
+    "code": null,
+    "answer": "details",
+    "explanation": "details wraps collapsible content."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: use ${css} styles in emails — clients strip <style>",
+    "code": null,
+    "answer": "inline",
+    "explanation": "Inline style=\"...\" attributes survive everywhere."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: pattern=\"[0-9]{${n}}\"  // exactly n digits",
+    "code": null,
+    "answer": "5/10/etc",
+    "explanation": "pattern uses regex to constrain format."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: colspan=\"${n}\"  // cell spans n columns",
+    "code": null,
+    "answer": "2/3/etc",
+    "explanation": "colspan merges cells horizontally."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: document.querySelector(\"${sel}\")  // find an element",
+    "code": null,
+    "answer": "#id/.class/tag",
+    "explanation": "Selectors find DOM nodes."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <svg><${shape} .../></svg>",
+    "code": null,
+    "answer": "circle/rect/path",
+    "explanation": "SVG uses shape elements."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: validator.w3.org  // check your ${doc}",
+    "code": null,
+    "answer": "HTML",
+    "explanation": "Validate markup for correctness."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: render the ${part} once, reuse it on every page",
+    "code": null,
+    "answer": "header",
+    "explanation": "Shared regions like headers belong in templates/components."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: loading=\"${v}\" on below-fold images",
+    "code": null,
+    "answer": "lazy",
+    "explanation": "Lazy loading defers off-screen resources."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: rel=\"${r}\" on target=\"_blank\" links",
+    "code": null,
+    "answer": "noopener",
+    "explanation": "noopener prevents window.opener attacks."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: escape user input to prevent ${xss} attacks",
+    "code": null,
+    "answer": "XSS",
+    "explanation": "Unescaped <script> in user text executes in victims' browsers."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: customElements.${m}(\"my-element\", MyClass)",
+    "code": null,
+    "answer": "define",
+    "explanation": "define() registers the element with the browser."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: @media (max-width: 600px) { ... }  // target ${screens}",
+    "code": null,
+    "answer": "small",
+    "explanation": "Media queries branch styles on device conditions."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"@type\": \"${type}\"   // e.g. Article, Product, FAQPage",
+    "code": null,
+    "answer": "schema",
+    "explanation": "schema.org types classify your content."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: frameworks render ${html} under the hood",
+    "code": null,
+    "answer": "HTML",
+    "explanation": "Everything ends up as DOM elements in the browser."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: the ${manifest} file declares app name, icons, and display mode",
+    "code": null,
+    "answer": "manifest",
+    "explanation": "manifest.json (or link tag) describes the installable app."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: <script ${attr} src=\"app.js\"></script>  // load after parsing",
+    "code": null,
+    "answer": "defer",
+    "explanation": "defer downloads in parallel but executes after HTML parses."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: axe DevTools and Lighthouse ${verb} accessibility issues automatically",
+    "code": null,
+    "answer": "detect",
+    "explanation": "Automated scanners flag ~30-50% of issues; manual review covers the rest."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-37",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: dir=\"${dir}\"  // right-to-left for Arabic/Hebrew",
+    "code": null,
+    "answer": "rtl",
+    "explanation": "dir controls text direction for bidirectional languages."
+  },
+  {
+    "id": "html-fill-q-html-q-fill-38",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: validator.w3.org  // check your ${doc}",
+    "code": null,
+    "answer": "HTML",
+    "explanation": "Validate markup for correctness."
+  },
+  {
+    "id": "html-fill-39",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<_____ lang=\"en\">\n<body>\n    <a href=\"#main\" class=\"skip\">Skip to content</a>\n    <main id=\"main\">...</main>\n</body>",
+    "answer": "html",
+    "options": [
+      "data",
+      "html",
+      "picture",
+      "private-aggregation"
+    ],
+    "explanation": "\"html\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "html-fill-40",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<html lang=\"en\">\n<_____>\n    <a href=\"#main\" class=\"skip\">Skip to content</a>\n    <main id=\"main\">...</main>\n</body>",
+    "answer": "body",
+    "options": [
+      "h6",
+      "address",
+      "nav",
+      "body"
+    ],
+    "explanation": "\"body\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "html-fill-41",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "// React JSX — HTML with expressions\n<_____ className=\"card\">\n  <h2>{post.title}</h2>\n  <p>{post.body}</p>\n</div>",
+    "answer": "div",
+    "options": [
+      "picture",
+      "browsing-topics",
+      "div",
+      "template"
+    ],
+    "explanation": "\"div\" is the correct keyword here — check the lesson on lesson-33 for context."
+  },
+  {
+    "id": "html-fill-42",
+    "lesson": "lesson-33",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "// React JSX — HTML with expressions\n<div className=\"card\">\n  <h2>{post._____}</h2>\n  <p>{post.body}</p>\n</div>",
+    "answer": "title",
+    "options": [
+      "canvas",
+      "<!DOCTYPE",
+      "title",
+      "wbr"
+    ],
+    "explanation": "\"title\" is the correct keyword here — check the lesson on lesson-33 for context."
+  },
+  {
+    "id": "html-fill-43",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<!DOCTYPE _____>\n<html lang=\"en\">\n<head><title>My Page</title></head>\n<body>\n<header>...</header>\n<main>...</main>\n<footer>...</footer>\n</body>\n</html>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "html",
+    "options": [
+      "html",
+      "style",
+      "form",
+      "body"
+    ],
+    "explanation": "\"html\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "html-fill-44",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<!DOCTYPE html>\n<_____ lang=\"en\">\n<head><title>My Page</title></head>\n<body>\n<header>...</header>\n<main>...</main>\n<footer>...</footer>\n</body>\n</html>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "html",
+    "options": [
+      "html",
+      "th",
+      "turtledove",
+      "protected-audience"
+    ],
+    "explanation": "\"html\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "html-fill-45",
+    "lesson": "lesson-12",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<!-- Navigation starts here -->\n<_____>...</nav>\n<!-- NOTE: add search box -->",
+    "answer": "nav",
+    "options": [
+      "nav",
+      "payment",
+      "input",
+      "serial"
+    ],
+    "explanation": "\"nav\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "html-fill-46",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<!-- Navigation starts here -->\n<nav>...</nav>\n<!-- NOTE: add _____ box -->",
+    "answer": "search",
+    "options": [
+      "accelerometer",
+      "document-picture-in-picture",
+      "figure",
+      "search"
+    ],
+    "explanation": "\"search\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "html-fill-47",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<!-- template: _____ rendered on every page -->\n<header><nav>...</nav></header>\n<main><!-- page content --></main>",
+    "answer": "header",
+    "options": [
+      "<!DOCTYPE",
+      "header",
+      "head",
+      "source"
+    ],
+    "explanation": "\"header\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "html-fill-48",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<!-- template: header rendered on every page -->\n<_____><nav>...</nav></header>\n<main><!-- page content --></main>",
+    "answer": "header",
+    "options": [
+      "q",
+      "header",
+      "article",
+      "summary"
+    ],
+    "explanation": "\"header\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "html-fill-49",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<_____>\n    <caption>Monthly sales</caption>\n    <thead><tr><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>\n    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>\n</table>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "table",
+    "options": [
+      "private-aggregation",
+      "select",
+      "script",
+      "table"
+    ],
+    "explanation": "\"table\" is the correct keyword here — check the lesson on lesson-22 for context."
+  },
+  {
+    "id": "html-fill-50",
+    "lesson": "lesson-22",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<table>\n    <caption>Monthly sales</caption>\n    <thead><_____><th scope=\"col\">Month</th><th scope=\"col\">Sales</th></tr></thead>\n    <tbody><tr><td>Jan</td><td>100</td></tr></tbody>\n</table>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "tr",
+    "options": [
+      "mark",
+      "object",
+      "tr",
+      "fledge"
+    ],
+    "explanation": "\"tr\" is the correct keyword here — check the lesson on lesson-22 for context."
+  },
+  {
+    "id": "html-fill-51",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<_____ type=\"text\" required minlength=\"3\" pattern=\"[A-Za-z]+\">\n<p class=\"error\" hidden>Invalid input</p>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "input",
+    "options": [
+      "li",
+      "del",
+      "input",
+      "microphone"
+    ],
+    "explanation": "\"input\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "html-fill-52",
+    "lesson": "lesson-21",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<input type=\"text\" required minlength=\"3\" pattern=\"[A-Za-z]+\">\n<_____ class=\"error\" hidden>Invalid input</p>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "p",
+    "options": [
+      "p",
+      "samp",
+      "td",
+      "kbd"
+    ],
+    "explanation": "\"p\" is the correct keyword here — check the lesson on lesson-21 for context."
+  },
+  {
+    "id": "html-fill-53",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<_____ controls preload=\"metadata\">\n    <source src=\"clip.mp4\" type=\"video/mp4\">\n    Your browser does not support video.\n</video>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "video",
+    "options": [
+      "midi",
+      "form",
+      "video",
+      "hr"
+    ],
+    "explanation": "\"video\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "html-fill-54",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<video controls preload=\"metadata\">\n    <source src=\"clip.mp4\" type=\"_____/mp4\">\n    Your browser does not support video.\n</video>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "video",
+    "options": [
+      "a",
+      "video",
+      "attribution-reporting",
+      "base"
+    ],
+    "explanation": "\"video\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "html-fill-55",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<!-- Navigation starts here -->\n<_____>...</nav>\n<!-- NOTE: add search box -->\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "nav",
+    "options": [
+      "samp",
+      "nav",
+      "img",
+      "object"
+    ],
+    "explanation": "\"nav\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "html-fill-56",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<!-- Navigation starts here -->\n<nav>...</nav>\n<!-- NOTE: add _____ box -->\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "search",
+    "options": [
+      "time",
+      "search",
+      "menu",
+      "dialog"
+    ],
+    "explanation": "\"search\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "html-fill-57",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<_____ list=\"colors\" name=\"fav\">\n<datalist id=\"colors\">\n    <option value=\"Red\">\n    <option value=\"Blue\">\n</datalist>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "input",
+    "options": [
+      "html",
+      "input",
+      "template",
+      "speaker"
+    ],
+    "explanation": "\"input\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "html-fill-58",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<input list=\"colors\" name=\"fav\">\n<datalist id=\"colors\">\n    <_____ value=\"Red\">\n    <option value=\"Blue\">\n</datalist>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "option",
+    "options": [
+      "option",
+      "meta",
+      "th",
+      "protected-audience"
+    ],
+    "explanation": "\"option\" is the correct keyword here — check the lesson on lesson-15 for context."
+  },
+  {
+    "id": "html-fill-59",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<_____>5 &lt; 10 and 10 &gt; 5 is &amp; logic</p>\n<p>Copyright &copy; 2026 &mdash; Tom &amp; Jerry</p>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "p",
+    "options": [
+      "blockquote",
+      "figure",
+      "h2",
+      "p"
+    ],
+    "explanation": "\"p\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "html-fill-60",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this html code:",
+    "code": "<p>5 &lt; 10 and 10 &gt; 5 is &amp; logic</p>\n<_____>Copyright &copy; 2026 &mdash; Tom &amp; Jerry</p>\n<!-- --> experiment: modify a value above and predict the new output",
+    "answer": "p",
+    "options": [
+      "span",
+      "p",
+      "textarea",
+      "q"
+    ],
+    "explanation": "\"p\" is the correct keyword here — check the lesson on lesson-11 for context."
+  }
+]

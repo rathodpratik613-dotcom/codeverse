@@ -1,0 +1,650 @@
+[
+  {
+    "id": "php-fill-q-php-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: // write a note here",
+    "code": null,
+    "answer": "//",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9;",
+    "code": null,
+    "answer": ";",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: echo \"Hello\";",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $function add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "php-fill-q-php-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "php-fill-37",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "_____ \"Alice\";\n// The line above sends text to the screen\n// experiment: modify a value above and predict the new output",
+    "answer": "echo",
+    "options": [
+      "final",
+      "extends",
+      "foreach",
+      "echo"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-05 for context."
+  },
+  {
+    "id": "php-fill-38",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "echo \"Alice\";\n// The line above sends text to the screen\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "new",
+      "interface",
+      "foreach",
+      "catch"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-05 for context."
+  },
+  {
+    "id": "php-fill-39",
+    "lesson": "lesson-24",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "user = { name: \"Alice\", age: 30 }\n// an object groups related fields under one name\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "$this",
+      "return",
+      "null",
+      "new"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-24 for context."
+  },
+  {
+    "id": "php-fill-40",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "_____ {\n    risky_operation()\n} catch (error) {\n    echo \"Something went wrong\";\n}\n// experiment: modify a value above and predict the new output",
+    "answer": "try",
+    "options": [
+      "true",
+      "try",
+      "function",
+      "const"
+    ],
+    "explanation": "\"try\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "php-fill-41",
+    "lesson": "lesson-25",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "try {\n    risky_operation()\n} _____ (error) {\n    echo \"Something went wrong\";\n}\n// experiment: modify a value above and predict the new output",
+    "answer": "catch",
+    "options": [
+      "extends",
+      "new",
+      "if",
+      "catch"
+    ],
+    "explanation": "\"catch\" is the correct keyword here — check the lesson on lesson-25 for context."
+  },
+  {
+    "id": "php-fill-42",
+    "lesson": "lesson-16",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "total = 0  // global\n_____ add(x) {\n    total = total + x  // needs special handling in strict languages\n}",
+    "answer": "function",
+    "options": [
+      "use",
+      "throw",
+      "function",
+      "class"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "php-fill-43",
+    "lesson": "lesson-30",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "// Bad:  x = calc(a,b)\n// Good: totalPrice = calculateTotal(basePrice, taxRate)\nuserCount = 0\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "new",
+      "implements",
+      "try",
+      "extends"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-30 for context."
+  },
+  {
+    "id": "php-fill-44",
+    "lesson": "lesson-20",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "text = \"Hello\"\n// text + \" World\" joins strings\n// text.upper() / text.length style helpers exist per language\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "throw",
+      "new",
+      "catch",
+      "static"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-20 for context."
+  },
+  {
+    "id": "php-fill-45",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "_____ i in range(5) {\n    echo i;\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output",
+    "answer": "for",
+    "options": [
+      "echo",
+      "elseif",
+      "catch",
+      "for"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "php-fill-46",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "for i in range(5) {\n    _____ i;\n}\n// prints 0 1 2 3 4\n// experiment: modify a value above and predict the new output",
+    "answer": "echo",
+    "options": [
+      "function",
+      "for",
+      "const",
+      "echo"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "php-fill-47",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "_____ age >= 18 AND hasTicket {\n    echo \"Welcome in\";\n}",
+    "answer": "if",
+    "options": [
+      "if",
+      "implements",
+      "return",
+      "new"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "php-fill-48",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "if age >= 18 AND hasTicket {\n    _____ \"Welcome in\";\n}",
+    "answer": "echo",
+    "options": [
+      "true",
+      "private",
+      "try",
+      "echo"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-11 for context."
+  },
+  {
+    "id": "php-fill-49",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n_____ items[0];  // first item\n// items[1], items[2] ... indexes count from 0",
+    "answer": "echo",
+    "options": [
+      "interface",
+      "catch",
+      "null",
+      "echo"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "php-fill-50",
+    "lesson": "lesson-26",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "with open(\"data.txt\", \"r\") as file {\n    content = file.read()\n}\n// file is auto-closed here\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "foreach",
+      "new",
+      "static",
+      "null"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-26 for context."
+  },
+  {
+    "id": "php-fill-51",
+    "lesson": "lesson-06",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "$x{assign}5 + 3 * 2\n// Multiplication happens first: result is 11\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "extends",
+      "print",
+      "new",
+      "trait"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-06 for context."
+  },
+  {
+    "id": "php-fill-52",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "// DEBUG: _____ intermediate values\ntotal = 0\n    total = total + item\necho total;\n// experiment: modify a value above and predict the new output",
+    "answer": "print",
+    "options": [
+      "else",
+      "print",
+      "array",
+      "require"
+    ],
+    "explanation": "\"print\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "php-fill-53",
+    "lesson": "lesson-32",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "// DEBUG: print intermediate values\ntotal = 0\n    total = total + item\n_____ total;\n// experiment: modify a value above and predict the new output",
+    "answer": "echo",
+    "options": [
+      "false",
+      "array",
+      "echo",
+      "while"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-32 for context."
+  },
+  {
+    "id": "php-fill-54",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "<?php\n_____ \"Hello, World!\";\n// experiment: modify a value above and predict the new output",
+    "answer": "echo",
+    "options": [
+      "trait",
+      "const",
+      "echo",
+      "include"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-01 for context."
+  },
+  {
+    "id": "php-fill-55",
+    "lesson": "lesson-01",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "<?php\necho \"Hello, World!\";\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "new",
+      "static",
+      "false",
+      "namespace"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-01 for context."
+  },
+  {
+    "id": "php-fill-56",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "$name = \"Alice\";\n$age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, _____ is a boolean\n// experiment: modify a value above and predict the new output",
+    "answer": "true",
+    "options": [
+      "elseif",
+      "$this",
+      "true",
+      "interface"
+    ],
+    "explanation": "\"true\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "php-fill-57",
+    "lesson": "lesson-04",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "$name = \"Alice\";\n$age = 30;\n// Common types: \"Alice\" is a string, 42 is a number, true is a boolean\n// experiment: modify a value above and predict the _____ output",
+    "answer": "new",
+    "options": [
+      "catch",
+      "new",
+      "extends",
+      "for"
+    ],
+    "explanation": "\"new\" is the correct keyword here — check the lesson on lesson-04 for context."
+  },
+  {
+    "id": "php-fill-58",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "_____ add(a, b) {\n    return a + b\n}\necho add(2, 3);  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output",
+    "answer": "function",
+    "options": [
+      "function",
+      "include",
+      "static",
+      "use"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-14 for context."
+  },
+  {
+    "id": "php-fill-59",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "function add(a, b) {\n    _____ a + b\n}\necho add(2, 3);  // passes 2 and 3 as arguments\n// experiment: modify a value above and predict the new output",
+    "answer": "return",
+    "options": [
+      "return",
+      "true",
+      "if",
+      "extends"
+    ],
+    "explanation": "\"return\" is the correct keyword here — check the lesson on lesson-14 for context."
+  },
+  {
+    "id": "php-fill-60",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this php code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n_____ items[0];  // first item\n// items[1], items[2] ... indexes count from 0\n// experiment: modify a value above and predict the new output",
+    "answer": "echo",
+    "options": [
+      "echo",
+      "return",
+      "public",
+      "trait"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-19 for context."
+  }
+]

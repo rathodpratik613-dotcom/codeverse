@@ -1,0 +1,650 @@
+[
+  {
+    "id": "bash-fill-q-bash-q-fill-1",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: {hello}",
+    "code": null,
+    "answer": "{hello}",
+    "explanation": "The hello-world snippet is the complete minimal program."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-2",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: # write a note here",
+    "code": null,
+    "answer": "#",
+    "explanation": "The line-comment marker starts a comment."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-3",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: name{assign}\"Alice\"",
+    "code": null,
+    "answer": "{assign}",
+    "explanation": "The assignment operator stores the value into the variable."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-4",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: price = 9(no semicolon)",
+    "code": null,
+    "answer": "(no semicolon)",
+    "explanation": "Statements are terminated the way the language requires."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-5",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: echo \"Hello\"",
+    "code": null,
+    "answer": "print/output call",
+    "explanation": "Use the language's standard output function."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-6",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: result = 7 operator 2   // result is 5",
+    "code": null,
+    "answer": "-",
+    "explanation": "The minus operator subtracts."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-7",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $if score >= 60 { ... }",
+    "code": null,
+    "answer": "if",
+    "explanation": "The if keyword starts a conditional."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-8",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $for ... { repeat }",
+    "code": null,
+    "answer": "for",
+    "explanation": "The for keyword begins a counted loop."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-9",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $while count < 10 { ... }",
+    "code": null,
+    "answer": "while",
+    "explanation": "While repeats until the condition fails."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-10",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: if done { $break }   // exit loop now",
+    "code": null,
+    "answer": "break",
+    "explanation": "Break leaves the loop immediately."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-11",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: eligible = age >= 18 $and / && hasID",
+    "code": null,
+    "answer": "and",
+    "explanation": "AND requires both conditions to hold."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-12",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: for row { for col { ... } }  // $a loop inside a loop",
+    "code": null,
+    "answer": "nested loops",
+    "explanation": "A loop inside a loop is called nesting."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-13",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $function add(a, b) { return a + b }",
+    "code": null,
+    "answer": "def/function/fn/func",
+    "explanation": "The function keyword starts a definition."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-14",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: multiply(${x}, ${y})  // x and y are ___",
+    "code": null,
+    "answer": "arguments",
+    "explanation": "Values passed at call time are arguments."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-15",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $return a + b   // hand result to caller",
+    "code": null,
+    "answer": "return",
+    "explanation": "Return passes the value back."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-16",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: def f() { let temp = 1 }  // temp is ___ scoped",
+    "code": null,
+    "answer": "local",
+    "explanation": "Names inside functions default to local scope."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-17",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: factorial calls ___ to solve smaller cases",
+    "code": null,
+    "answer": "itself",
+    "explanation": "Recursion means self-invocation."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-18",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: len(\"abc\")  // ___ returns 3",
+    "code": null,
+    "answer": "length",
+    "explanation": "Length functions count items or characters."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-19",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items[${i}]  // get element at position i",
+    "code": null,
+    "answer": "0-based index",
+    "explanation": "Access uses numeric positions starting at 0."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-20",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: \"Hello\" + \" World\"  // ___ two strings",
+    "code": null,
+    "answer": "concatenate",
+    "explanation": "The + operator joins strings."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-21",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: scores[\"amy\"] = 95  // \"amy\" is the ___",
+    "code": null,
+    "answer": "key",
+    "explanation": "The left side of the pair is the lookup key."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-22",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: seen.add(item)  // track ___ values",
+    "code": null,
+    "answer": "unique",
+    "explanation": "Sets store each value at most once."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-23",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: items.sort()  // arrange in ___ order",
+    "code": null,
+    "answer": "sorted",
+    "explanation": "Sort orders elements for predictable access."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-24",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: user.${field}  // access a field",
+    "code": null,
+    "answer": "name",
+    "explanation": "Dot notation reaches into an object."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-25",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: try { ... } $catch / except { ... }",
+    "code": null,
+    "answer": "catch/except",
+    "explanation": "The catch clause handles the failure."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-26",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: open(\"log.txt\", \"$\"a\" (append)\")  // add to end of file",
+    "code": null,
+    "answer": "a",
+    "explanation": "\"a\" means append."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-27",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: $import / use / include math   // bring in the math module",
+    "code": null,
+    "answer": "import",
+    "explanation": "Import loads external code."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-28",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: class ${name} { ... }   // blueprint for objects",
+    "code": null,
+    "answer": "Dog/Animal/etc",
+    "explanation": "Classes are named blueprints."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-29",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: await fetch(url)  // wait for ___ to finish",
+    "code": null,
+    "answer": "the promise",
+    "explanation": "Await suspends until the async result arrives."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-30",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: const MAX_RETRIES = 3  // name ___ numbers",
+    "code": null,
+    "answer": "magic",
+    "explanation": "Named constants replace unexplained literal values."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-31",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: assert result == ___   // check the expected value",
+    "code": null,
+    "answer": "expected",
+    "explanation": "Assertions compare actual output to expected output."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-32",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: console/log the value of ___ to see what it holds",
+    "code": null,
+    "answer": "variable",
+    "explanation": "Inspecting variable values reveals logic errors."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-33",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: look up the ___ before using an unfamiliar function",
+    "code": null,
+    "answer": "docs",
+    "explanation": "Documentation describes exactly how functions behave."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-34",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: git ___ -m \"message\"   // save a snapshot",
+    "code": null,
+    "answer": "commit",
+    "explanation": "commit records your staged changes permanently."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-35",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: include expected vs ___ output in your question",
+    "code": null,
+    "answer": "actual",
+    "explanation": "Comparing expected and actual reveals the gap precisely."
+  },
+  {
+    "id": "bash-fill-q-bash-q-fill-36",
+    "difficulty": "medium",
+    "prompt": "Fill in the blank: while game_running { play_round() }  // the main ___",
+    "code": null,
+    "answer": "loop",
+    "explanation": "Games and tools center on a main loop."
+  },
+  {
+    "id": "bash-fill-37",
+    "lesson": "lesson-23",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "nums = [3, 1, 2]\n# sorted -> [1, 2, 3]  (use the built-in _____)\n# binary search finds a target in O(log n) steps\n# experiment: modify a value above and predict the new output",
+    "answer": "sort",
+    "options": [
+      "dmesg",
+      "tail",
+      "HOSTTYPE",
+      "sort"
+    ],
+    "explanation": "\"sort\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "bash-fill-38",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "_____ \"Alice\"\n# The line above sends text to the screen\n# experiment: modify a value above and predict the new output",
+    "answer": "echo",
+    "options": [
+      "COPROC",
+      "BASH_REMATCH",
+      "OPTARG",
+      "echo"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-05 for context."
+  },
+  {
+    "id": "bash-fill-39",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "class Dog {\n    name = \"Buddy\"\n    _____ bark() { echo \"Woof!\" }\n}\n# dog = Dog()  then  dog.bark()\n# experiment: modify a value above and predict the new output",
+    "answer": "function",
+    "options": [
+      "EGID",
+      "COMP_WORDS",
+      "EPOCHSECONDS",
+      "function"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "bash-fill-40",
+    "lesson": "lesson-28",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "class Dog {\n    name = \"Buddy\"\n    function bark() { echo \"Woof!\" }\n}\n# dog = Dog()  _____  dog.bark()\n# experiment: modify a value above and predict the new output",
+    "answer": "then",
+    "options": [
+      "then",
+      "UID",
+      "TIMEFORMAT",
+      "service"
+    ],
+    "explanation": "\"then\" is the correct keyword here — check the lesson on lesson-28 for context."
+  },
+  {
+    "id": "bash-fill-41",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n_____ items[0]  # first item\n# items[1], items[2] ... indexes count from 0",
+    "answer": "echo",
+    "options": [
+      "HOSTNAME",
+      "ln",
+      "echo",
+      "nslookup"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "bash-fill-42",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\necho items[0]  # first item\n# items_____1], items[2] ... indexes count from 0",
+    "answer": "[",
+    "options": [
+      "[",
+      "FUNCNAME",
+      "COPROC",
+      "pwd"
+    ],
+    "explanation": "\"[\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "bash-fill-43",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "_____ i in range(5) {\n    echo i\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "answer": "for",
+    "options": [
+      "SHLVL",
+      "for",
+      "MAPFILE",
+      "DENO_DIR"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "bash-fill-44",
+    "lesson": "lesson-08",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "for i in range(5) {\n    _____ i\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "answer": "echo",
+    "options": [
+      "GROUPS",
+      "echo",
+      "EPOCHSECONDS",
+      "NVM_DIR"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-08 for context."
+  },
+  {
+    "id": "bash-fill-45",
+    "lesson": "lesson-19",
+    "difficulty": "medium",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\n_____ items[0]  # first item\n# items[1], items[2] ... indexes count from 0\n# experiment: modify a value above and predict the new output",
+    "answer": "echo",
+    "options": [
+      "GOPATH",
+      "echo",
+      "trap",
+      "cat"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "bash-fill-46",
+    "lesson": "lesson-19",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "items = [\"a\", \"b\", \"c\"]\necho items[0]  # first item\n# items_____1], items[2] ... indexes count from 0\n# experiment: modify a value above and predict the new output",
+    "answer": "[",
+    "options": [
+      "PATH",
+      "[",
+      "BASH_ARGC",
+      "PPID"
+    ],
+    "explanation": "\"[\" is the correct keyword here — check the lesson on lesson-19 for context."
+  },
+  {
+    "id": "bash-fill-47",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "count = 0\n_____ count < 5 {\n    echo count\n    count = count + 1\n}",
+    "answer": "while",
+    "options": [
+      "BASH_ARGV",
+      "MAPFILE",
+      "HOSTNAME",
+      "while"
+    ],
+    "explanation": "\"while\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "bash-fill-48",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "count = 0\nwhile count < 5 {\n    _____ count\n    count = count + 1\n}",
+    "answer": "echo",
+    "options": [
+      "echo",
+      "HOSTNAME",
+      "BASH_ENV",
+      "HOSTNAME"
+    ],
+    "explanation": "\"echo\" is the correct keyword here — check the lesson on lesson-09 for context."
+  },
+  {
+    "id": "bash-fill-49",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "_____ i in range(10) {\n    if i == 5 { break }\n    echo i\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "answer": "for",
+    "options": [
+      "BASH_COMPAT",
+      "]]",
+      "for",
+      "set"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "bash-fill-50",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "for i in range(10) {\n    _____ i == 5 { break }\n    echo i\n}\n# prints 0 1 2 3 4\n# experiment: modify a value above and predict the new output",
+    "answer": "if",
+    "options": [
+      "sudo",
+      "if",
+      "BASH_ARGV",
+      "SHLVL"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-10 for context."
+  },
+  {
+    "id": "bash-fill-51",
+    "lesson": "lesson-16",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "total = 0  # global\n_____ add(x) {\n    total = total + x  # needs special handling in strict languages\n}",
+    "answer": "function",
+    "options": [
+      "BASH_LOADABLES_PATH",
+      "echo",
+      "GROUPS",
+      "function"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-16 for context."
+  },
+  {
+    "id": "bash-fill-52",
+    "lesson": "lesson-23",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "nums = [3, 1, 2]\n# sorted -> [1, 2, 3]  (use the built-in _____)\n# binary search finds a target in O(log n) steps",
+    "answer": "sort",
+    "options": [
+      "MACHTYPE",
+      "sort",
+      "su",
+      "EPOCHREALTIME"
+    ],
+    "explanation": "\"sort\" is the correct keyword here — check the lesson on lesson-23 for context."
+  },
+  {
+    "id": "bash-fill-53",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "_____ add(a, b) {\n    return a + b\n}\necho add(2, 3)  # passes 2 and 3 as arguments",
+    "answer": "function",
+    "options": [
+      "UID",
+      "VIRTUAL_ENV",
+      "PPID",
+      "function"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-14 for context."
+  },
+  {
+    "id": "bash-fill-54",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "function add(a, b) {\n    _____ a + b\n}\necho add(2, 3)  # passes 2 and 3 as arguments",
+    "answer": "return",
+    "options": [
+      "COMP_KEY",
+      "return",
+      "]",
+      "LINENO"
+    ],
+    "explanation": "\"return\" is the correct keyword here — check the lesson on lesson-14 for context."
+  },
+  {
+    "id": "bash-fill-55",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "_____ greet(name) {\n    return \"Hello, \" + name\n}\n# call it: greet(\"Sam\")",
+    "answer": "function",
+    "options": [
+      "function",
+      "return",
+      "GROUPS",
+      "sudo"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "bash-fill-56",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "function greet(name) {\n    _____ \"Hello, \" + name\n}\n# call it: greet(\"Sam\")",
+    "answer": "return",
+    "options": [
+      "LC_ALL",
+      "BASH_LINENO",
+      "HOSTNAME",
+      "return"
+    ],
+    "explanation": "\"return\" is the correct keyword here — check the lesson on lesson-13 for context."
+  },
+  {
+    "id": "bash-fill-57",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "_____ factorial(n) {\n    if n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}",
+    "answer": "function",
+    "options": [
+      "function",
+      "esac",
+      "uptime",
+      "service"
+    ],
+    "explanation": "\"function\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "bash-fill-58",
+    "lesson": "lesson-17",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "function factorial(n) {\n    _____ n <= 1 { return 1 }\n    return n * factorial(n - 1)\n}",
+    "answer": "if",
+    "options": [
+      "xargs",
+      "gunzip",
+      "unset",
+      "if"
+    ],
+    "explanation": "\"if\" is the correct keyword here — check the lesson on lesson-17 for context."
+  },
+  {
+    "id": "bash-fill-59",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "_____ row in range(3) {\n    for col in range(3) {\n        echo \"*\"\n    }\n}",
+    "answer": "for",
+    "options": [
+      "for",
+      "COMP_CWORD",
+      "SHLVL",
+      "trap"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-12 for context."
+  },
+  {
+    "id": "bash-fill-60",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "prompt": "Complete the missing keyword in this bash code:",
+    "code": "for row in range(3) {\n    _____ col in range(3) {\n        echo \"*\"\n    }\n}",
+    "answer": "for",
+    "options": [
+      "trap",
+      "for",
+      "sort",
+      "dmesg"
+    ],
+    "explanation": "\"for\" is the correct keyword here — check the lesson on lesson-12 for context."
+  }
+]

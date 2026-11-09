@@ -1,0 +1,357 @@
+[
+  {
+    "id": "php-match-01",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "What problem does async programming solve?",
+        "right": "Long-running tasks without freezing the program"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In most languages, the first element of a list has index...",
+        "right": "0"
+      }
+    ],
+    "distractors": [
+      "A saved snapshot of your code at a point in time"
+    ]
+  },
+  {
+    "id": "php-match-02",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a dictionary/map best for?",
+        "right": "Fast lookup of values by a unique key"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "Why is binary search faster than linear search?",
+        "right": "It halves the remaining items each step"
+      }
+    ],
+    "distractors": [
+      "A saved snapshot of your code at a point in time"
+    ]
+  },
+  {
+    "id": "php-match-03",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "Where should you look FIRST for accurate syntax questions?",
+        "right": "The official language documentation"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does a \"Hello World\" program mainly teach you?",
+        "right": "That your code runs and produces output"
+      }
+    ],
+    "distractors": [
+      "A normal input with a known expected output"
+    ]
+  },
+  {
+    "id": "php-match-04",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "What MUST every recursive function have?",
+        "right": "A base case that stops the recursion"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "php-match-05",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "What does an import statement do?",
+        "right": "Makes functions/code from another module available"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Depends on the code — trace it line by line",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "php-match-06",
+    "difficulty": "easy",
+    "pairs": [
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "php-match-07",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "What does concatenation mean for strings?",
+        "right": "Joining them end to end into one string"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "What happens when an if condition is false and there is no else?",
+        "right": "Nothing — the block is skipped"
+      },
+      {
+        "left": "What is a variable?",
+        "right": "A named storage location for a value"
+      }
+    ],
+    "distractors": [
+      "To reuse code and organize logic",
+      "Depends on the code — trace it line by line"
+    ]
+  },
+  {
+    "id": "php-match-08",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What is a class?",
+        "right": "A blueprint for creating objects"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "0"
+    ]
+  },
+  {
+    "id": "php-match-09",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": []
+  },
+  {
+    "id": "php-match-10",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "Why use \"with open(...)\" instead of open() + close()?",
+        "right": "It closes the file automatically, even on errors"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which question is most likely to get a helpful answer?",
+        "right": "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+      }
+    ],
+    "distractors": [
+      "//",
+      "isValidEmail",
+      "//",
+      "//"
+    ]
+  },
+  {
+    "id": "php-match-11",
+    "difficulty": "medium",
+    "pairs": [
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "What does \"continue\" do inside a loop?",
+        "right": "Skips to the next iteration"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "20 times",
+      "//",
+      "To reuse code and organize logic",
+      "//"
+    ]
+  },
+  {
+    "id": "php-match-12",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      },
+      {
+        "left": "What does the print/output function do?",
+        "right": "Sends text or values to the screen or console"
+      },
+      {
+        "left": "What does \"return\" do?",
+        "right": "Sends a value back and ends the function"
+      }
+    ],
+    "distractors": [
+      "you know how many times to repeat",
+      "\"In Python 3.12, this 5-line script prints None instead of 5 — why?\""
+    ]
+  },
+  {
+    "id": "php-match-13",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is the best first step for a capstone project?",
+        "right": "Define the smallest version that works end-to-end"
+      },
+      {
+        "left": "If the outer loop runs 4 times and the inner runs 5 times, the inner body executes...",
+        "right": "20 times"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      }
+    ],
+    "distractors": [
+      "//",
+      "true",
+      "Skips to the next iteration"
+    ]
+  },
+  {
+    "id": "php-match-14",
+    "difficulty": "hard",
+    "pairs": [
+      {
+        "left": "What is the purpose of try/catch?",
+        "right": "Handle failures without crashing the whole program"
+      },
+      {
+        "left": "In PHP, what is the safest way to predict what a program outputs?",
+        "right": "Depends on the code — trace it line by line"
+      },
+      {
+        "left": "Which name is best for a function that checks email format?",
+        "right": "isValidEmail"
+      },
+      {
+        "left": "Which of these is the correct way to write a comment in PHP?",
+        "right": "//"
+      }
+    ],
+    "distractors": [
+      "Groups related data (and often behavior) under one name"
+    ]
+  }
+]
