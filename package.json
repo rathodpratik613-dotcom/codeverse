@@ -11,7 +11,8 @@
     "content:seed": "tsx scripts/seed-content.ts",
     "content:stats": "tsx scripts/content-stats.ts",
     "content:verify": "tsx scripts/verify-solutions.ts",
-    "content:import": "tsx scripts/import-content.ts"
+    "content:import": "tsx scripts/import-content.ts",
+    "content:audit": "tsx scripts/verify-completeness.ts"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
