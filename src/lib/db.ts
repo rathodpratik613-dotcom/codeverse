@@ -27,6 +27,7 @@ interface DatabaseSchema {
   contentItems: any[];
   languageSuggestions: any[];
   gameHistory: any[];
+  dailyChallenges: any[];
 }
 
 const defaultData: DatabaseSchema = {
@@ -46,6 +47,7 @@ const defaultData: DatabaseSchema = {
   contentItems: [],
   languageSuggestions: [],
   gameHistory: [],
+  dailyChallenges: [],
 };
 
 let db: Low<DatabaseSchema> | null = null;

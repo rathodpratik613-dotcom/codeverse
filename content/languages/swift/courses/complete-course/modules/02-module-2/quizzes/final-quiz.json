@@ -1,0 +1,130 @@
+{
+  "id": "swift-02-module-2-final-quiz",
+  "moduleId": "02-module-2",
+  "title": "Module Final Quiz - 02-module-2",
+  "questions": [
+    {
+      "id": "swift-q-comment-7",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-7",
+      "type": "mcq",
+      "question": "What happens when an if condition is false and there is no else?",
+      "options": [
+        "Nothing — the block is skipped",
+        "The program crashes",
+        "The else block always runs",
+        "The condition repeats"
+      ],
+      "correctAnswer": "Nothing — the block is skipped",
+      "explanation": "Without else, a false condition simply skips the block."
+    },
+    {
+      "id": "swift-q-out-7",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "swift-q-comment-8",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-8",
+      "type": "mcq",
+      "question": "A for loop is best when...",
+      "options": [
+        "you know how many times to repeat",
+        "the condition depends on user input forever",
+        "you want infinite repetition",
+        "you need random behavior"
+      ],
+      "correctAnswer": "you know how many times to repeat",
+      "explanation": "For loops count through a known sequence."
+    },
+    {
+      "id": "swift-q-out-8",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "swift-q-comment-9",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-9",
+      "type": "mcq",
+      "question": "What makes a while loop safe?",
+      "options": [
+        "Its condition eventually becomes false",
+        "It has a fixed iteration count",
+        "It always runs exactly once",
+        "It cannot contain breaks"
+      ],
+      "correctAnswer": "Its condition eventually becomes false",
+      "explanation": "A condition that never turns false loops forever."
+    },
+    {
+      "id": "swift-q-out-9",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "swift-q-comment-10",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

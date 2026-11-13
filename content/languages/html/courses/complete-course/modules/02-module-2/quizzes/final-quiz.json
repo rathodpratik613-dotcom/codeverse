@@ -1,0 +1,130 @@
+{
+  "id": "html-02-module-2-final-quiz",
+  "moduleId": "02-module-2",
+  "title": "Module Final Quiz - 02-module-2",
+  "questions": [
+    {
+      "id": "html-q-comment-9",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-9",
+      "type": "mcq",
+      "question": "What is the difference between class and id?",
+      "options": [
+        "class can repeat on many elements; id must be unique",
+        "They are identical",
+        "id styles, class scripts",
+        "class is for images only"
+      ],
+      "correctAnswer": "class can repeat on many elements; id must be unique",
+      "explanation": "id = one per page; class = reusable groups."
+    },
+    {
+      "id": "html-q-out-9",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-10",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-10",
+      "type": "mcq",
+      "question": "When should you use <div> or <span>?",
+      "options": [
+        "When no semantic element fits the grouping need",
+        "For every piece of text",
+        "Never — they are deprecated",
+        "Only for images"
+      ],
+      "correctAnswer": "When no semantic element fits the grouping need",
+      "explanation": "They are neutral containers for styling/scripting."
+    },
+    {
+      "id": "html-q-out-10",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-11",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-11",
+      "type": "mcq",
+      "question": "How do you display a literal < character on a page?",
+      "options": [
+        "&lt;",
+        "<",
+        "&gt;",
+        "&#60;"
+      ],
+      "correctAnswer": "&lt;",
+      "explanation": "&lt; renders as < without starting a tag."
+    },
+    {
+      "id": "html-q-out-11",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-12",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

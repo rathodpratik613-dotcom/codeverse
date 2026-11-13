@@ -1,0 +1,130 @@
+{
+  "id": "html-05-module-5-final-quiz",
+  "moduleId": "05-module-5",
+  "title": "Module Final Quiz - 05-module-5",
+  "questions": [
+    {
+      "id": "html-q-comment-27",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-27",
+      "type": "mcq",
+      "question": "What does defer on a script tag do?",
+      "options": [
+        "Downloads in parallel but executes after HTML parsing",
+        "Skips the script entirely",
+        "Runs before the page loads",
+        "Caches the script forever"
+      ],
+      "correctAnswer": "Downloads in parallel but executes after HTML parsing",
+      "explanation": "defer removes render-blocking without losing order."
+    },
+    {
+      "id": "html-q-out-27",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-28",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-28",
+      "type": "mcq",
+      "question": "What is XSS?",
+      "options": [
+        "Injecting malicious scripts into a page through unescaped content",
+        "A type of database",
+        "A CSS animation",
+        "A hosting provider"
+      ],
+      "correctAnswer": "Injecting malicious scripts into a page through unescaped content",
+      "explanation": "Cross-site scripting exploits unescaped output."
+    },
+    {
+      "id": "html-q-out-28",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-29",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-29",
+      "type": "mcq",
+      "question": "Why is server-side validation still needed when HTML5 has built-in checks?",
+      "options": [
+        "Client validation can be bypassed — the server must enforce rules",
+        "HTML5 validation is too slow",
+        "Browsers do not support it",
+        "It is only for styling"
+      ],
+      "correctAnswer": "Client validation can be bypassed — the server must enforce rules",
+      "explanation": "Anyone can craft requests without a browser."
+    },
+    {
+      "id": "html-q-out-29",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-30",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

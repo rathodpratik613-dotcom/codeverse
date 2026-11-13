@@ -1,0 +1,133 @@
+{
+  "id": "css-06-module-6-final-quiz",
+  "moduleId": "06-module-6",
+  "title": "Module Final Quiz - 06-module-6",
+  "questions": [
+    {
+      "id": "css-q-comment-32",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-32",
+      "type": "mcq",
+      "question": "What are design tokens?",
+      "options": [
+        "Named design variables",
+        "Encryption keys",
+        "CSS frameworks",
+        "Server configs"
+      ],
+      "correctAnswer": "Named variables for repeated design values (colors, spacing)",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-fill-32",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Architecture at Scale technique shown in this lesson?",
+      "options": [
+        "CSS Architecture at Scale",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Architecture at Scale",
+      "explanation": "It exists to help you css architecture at scale effectively."
+    },
+    {
+      "id": "css-q-out-32",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "css-q-comment-33",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-33",
+      "type": "mcq",
+      "question": "What does clamp() give you in CSS?",
+      "options": [
+        "Fluid scaling between bounds",
+        "Random values",
+        "Print margins",
+        "Z-index"
+      ],
+      "correctAnswer": "A value that scales fluidly between min and max",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-fill-33",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Capstone technique shown in this lesson?",
+      "options": [
+        "CSS Capstone",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Capstone",
+      "explanation": "It exists to help you css capstone effectively."
+    },
+    {
+      "id": "css-q-out-33",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "css-q-comment-34",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-34",
+      "type": "mcq",
+      "question": "What problem do cascade layers solve?",
+      "options": [
+        "Order-dependent cascade chaos",
+        "Slow page loads",
+        "Missing fonts",
+        "SEO"
+      ],
+      "correctAnswer": "Specificity conflicts regardless of selector strength",
+      "explanation": ""
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

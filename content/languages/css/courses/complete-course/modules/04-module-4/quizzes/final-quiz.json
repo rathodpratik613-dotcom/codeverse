@@ -1,0 +1,133 @@
+{
+  "id": "css-04-module-4-final-quiz",
+  "moduleId": "04-module-4",
+  "title": "Module Final Quiz - 04-module-4",
+  "questions": [
+    {
+      "id": "css-q-comment-20",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-20",
+      "type": "mcq",
+      "question": "What does clamp(1rem, 4vw, 2rem) do?",
+      "options": [
+        "Scales between min and max based on viewport",
+        "Always returns 4vw",
+        "Rounds to nearest rem",
+        "Is invalid CSS"
+      ],
+      "correctAnswer": "Scales between min and max based on viewport",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-fill-20",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Units technique shown in this lesson?",
+      "options": [
+        "CSS Units",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Units",
+      "explanation": "It exists to help you css units effectively."
+    },
+    {
+      "id": "css-q-out-20",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "css-q-comment-21",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-21",
+      "type": "mcq",
+      "question": "In CSS nesting, what does & represent?",
+      "options": [
+        "The parent selector",
+        "A wildcard",
+        "The root element",
+        "A pseudo-class"
+      ],
+      "correctAnswer": "The parent selector",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-fill-21",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Nesting technique shown in this lesson?",
+      "options": [
+        "CSS Nesting",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Nesting",
+      "explanation": "It exists to help you css nesting effectively."
+    },
+    {
+      "id": "css-q-out-21",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "css-q-comment-22",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-22",
+      "type": "mcq",
+      "question": "How do you hide navigation when printing?",
+      "options": [
+        "@media print { nav { display:none } }",
+        "nav { print: none }",
+        "visibility: print",
+        "You cannot"
+      ],
+      "correctAnswer": "@media print { nav { display:none } }",
+      "explanation": ""
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

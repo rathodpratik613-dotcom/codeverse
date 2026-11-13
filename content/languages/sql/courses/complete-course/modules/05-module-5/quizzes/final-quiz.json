@@ -1,0 +1,133 @@
+{
+  "id": "sql-05-module-5-final-quiz",
+  "moduleId": "05-module-5",
+  "title": "Module Final Quiz - 05-module-5",
+  "questions": [
+    {
+      "id": "sql-q-comment-25",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-25",
+      "type": "mcq",
+      "question": "What does Atomicity guarantee?",
+      "options": [
+        "All-or-nothing execution",
+        "Fast queries",
+        "Encrypted data",
+        "Auto-backup"
+      ],
+      "correctAnswer": "All statements in a transaction succeed or none do",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-fill-25",
+      "type": "mcq",
+      "question": "What is the main purpose of the Transactions and ACID technique shown in this lesson?",
+      "options": [
+        "Transactions and ACID",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Transactions and ACID",
+      "explanation": "It exists to help you transactions and acid effectively."
+    },
+    {
+      "id": "sql-q-out-25",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "sql-q-comment-26",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-26",
+      "type": "mcq",
+      "question": "When should you create an index?",
+      "options": [
+        "Filter/join/sort columns",
+        "Every column",
+        "Only primary keys",
+        "Never"
+      ],
+      "correctAnswer": "On columns used in WHERE, JOIN, and ORDER BY",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-fill-26",
+      "type": "mcq",
+      "question": "What is the main purpose of the Indexes Deep Dive technique shown in this lesson?",
+      "options": [
+        "Indexes Deep Dive",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Indexes Deep Dive",
+      "explanation": "It exists to help you indexes deep dive effectively."
+    },
+    {
+      "id": "sql-q-out-26",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "sql-q-comment-27",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-27",
+      "type": "mcq",
+      "question": "Why does WHERE YEAR(created_at)=2024 prevent index use?",
+      "options": [
+        "Functions block indexes",
+        "YEAR() is slow",
+        "It scans anyway",
+        "Indexes ignore dates"
+      ],
+      "correctAnswer": "The function wraps the column — the index sees transformed values",
+      "explanation": ""
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

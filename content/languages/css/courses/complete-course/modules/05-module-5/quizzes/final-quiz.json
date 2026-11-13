@@ -1,0 +1,133 @@
+{
+  "id": "css-05-module-5-final-quiz",
+  "moduleId": "05-module-5",
+  "title": "Module Final Quiz - 05-module-5",
+  "questions": [
+    {
+      "id": "css-q-comment-26",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-26",
+      "type": "mcq",
+      "question": "What problem does BEM naming solve?",
+      "options": [
+        "Predictable, collision-free class names at scale",
+        "It makes CSS faster",
+        "It adds animations",
+        "It validates HTML"
+      ],
+      "correctAnswer": "Predictable, collision-free class names at scale",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-fill-26",
+      "type": "mcq",
+      "question": "What is the main purpose of the CSS Architecture technique shown in this lesson?",
+      "options": [
+        "CSS Architecture",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "CSS Architecture",
+      "explanation": "It exists to help you css architecture effectively."
+    },
+    {
+      "id": "css-q-out-26",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "css-q-comment-27",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-27",
+      "type": "mcq",
+      "question": "What does prefers-color-scheme let you do?",
+      "options": [
+        "Adapt OS dark/light preference",
+        "Detect screen size",
+        "Measure performance",
+        "Encrypt colors"
+      ],
+      "correctAnswer": "Adapt styles to the user's OS dark/light preference",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-fill-27",
+      "type": "mcq",
+      "question": "What is the main purpose of the Capstone: Style a Page technique shown in this lesson?",
+      "options": [
+        "Capstone: Style a Page",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Capstone: Style a Page",
+      "explanation": "It exists to help you capstone: style a page effectively."
+    },
+    {
+      "id": "css-q-out-27",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "css-q-comment-28",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-28",
+      "type": "mcq",
+      "question": "Which properties are cheapest to animate?",
+      "options": [
+        "transform and opacity",
+        "width and height",
+        "top and left",
+        "margin"
+      ],
+      "correctAnswer": "transform and opacity",
+      "explanation": ""
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

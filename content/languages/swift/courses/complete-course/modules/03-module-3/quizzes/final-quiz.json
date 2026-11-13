@@ -1,0 +1,130 @@
+{
+  "id": "swift-03-module-3-final-quiz",
+  "moduleId": "03-module-3",
+  "title": "Module Final Quiz - 03-module-3",
+  "questions": [
+    {
+      "id": "swift-q-comment-13",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-13",
+      "type": "mcq",
+      "question": "Why use functions?",
+      "options": [
+        "To reuse code and organize logic",
+        "To make programs run slower",
+        "To store data permanently",
+        "To avoid writing any code"
+      ],
+      "correctAnswer": "To reuse code and organize logic",
+      "explanation": "Functions eliminate duplication and create structure."
+    },
+    {
+      "id": "swift-q-out-13",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "swift-q-comment-14",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-14",
+      "type": "mcq",
+      "question": "What is the difference between a parameter and an argument?",
+      "options": [
+        "Parameters are placeholders; arguments are the real values passed",
+        "They are exactly the same thing",
+        "Parameters belong to callers, arguments to functions",
+        "Arguments are optional, parameters required"
+      ],
+      "correctAnswer": "Parameters are placeholders; arguments are the real values passed",
+      "explanation": "Parameters define the shape; arguments supply the data."
+    },
+    {
+      "id": "swift-q-out-14",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "swift-q-comment-15",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "swift-q-concept-15",
+      "type": "mcq",
+      "question": "What does \"return\" do?",
+      "options": [
+        "Sends a value back and ends the function",
+        "Prints the value to screen",
+        "Repeats the function",
+        "Deletes the function"
+      ],
+      "correctAnswer": "Sends a value back and ends the function",
+      "explanation": "Return both produces output and stops execution of that function."
+    },
+    {
+      "id": "swift-q-out-15",
+      "type": "mcq",
+      "question": "In Swift, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "swift-q-comment-16",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Swift?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Swift, // marks a comment. Block comments use /* */."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

@@ -1,0 +1,133 @@
+{
+  "id": "css-03-module-3-final-quiz",
+  "moduleId": "03-module-3",
+  "title": "Module Final Quiz - 03-module-3",
+  "questions": [
+    {
+      "id": "css-q-comment-14",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-14",
+      "type": "mcq",
+      "question": "Two equal-specificity rules conflict — which wins?",
+      "options": [
+        "The one written later",
+        "The first one",
+        "The longer selector",
+        "Random choice"
+      ],
+      "correctAnswer": "The one written later",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-fill-14",
+      "type": "mcq",
+      "question": "What is the main purpose of the Specificity and Cascade technique shown in this lesson?",
+      "options": [
+        "Specificity and Cascade",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Specificity and Cascade",
+      "explanation": "It exists to help you specificity and cascade effectively."
+    },
+    {
+      "id": "css-q-out-14",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "css-q-comment-15",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-15",
+      "type": "mcq",
+      "question": "What is the main advantage of outline over border?",
+      "options": [
+        "It does not affect layout",
+        "It is thicker",
+        "It supports gradients",
+        "It is required for buttons"
+      ],
+      "correctAnswer": "It does not affect layout",
+      "explanation": ""
+    },
+    {
+      "id": "css-q-fill-15",
+      "type": "mcq",
+      "question": "What is the main purpose of the Borders and Outlines technique shown in this lesson?",
+      "options": [
+        "Borders and Outlines",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "Borders and Outlines",
+      "explanation": "It exists to help you borders and outlines effectively."
+    },
+    {
+      "id": "css-q-out-15",
+      "type": "mcq",
+      "question": "In CSS, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "css-q-comment-16",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in CSS?",
+      "options": [
+        "/* */",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "/* */",
+      "explanation": "In CSS, /* */ marks a comment. Block comments use /* ... */."
+    },
+    {
+      "id": "css-q-concept-16",
+      "type": "mcq",
+      "question": "How do you create \"...\" text truncation?",
+      "options": [
+        "overflow:hidden + nowrap + text-overflow:ellipsis",
+        "max-width alone",
+        "font-size: small",
+        "text-align: center"
+      ],
+      "correctAnswer": "overflow:hidden + nowrap + text-overflow:ellipsis",
+      "explanation": ""
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

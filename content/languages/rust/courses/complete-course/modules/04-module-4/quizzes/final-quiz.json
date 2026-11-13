@@ -1,0 +1,130 @@
+{
+  "id": "rust-04-module-4-final-quiz",
+  "moduleId": "04-module-4",
+  "title": "Module Final Quiz - 04-module-4",
+  "questions": [
+    {
+      "id": "rust-q-comment-19",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Rust?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Rust, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "rust-q-concept-19",
+      "type": "mcq",
+      "question": "In most languages, the first element of a list has index...",
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "none"
+      ],
+      "correctAnswer": "0",
+      "explanation": "Zero-based indexing is the near-universal convention."
+    },
+    {
+      "id": "rust-q-out-19",
+      "type": "mcq",
+      "question": "In Rust, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "rust-q-comment-20",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Rust?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Rust, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "rust-q-concept-20",
+      "type": "mcq",
+      "question": "What does concatenation mean for strings?",
+      "options": [
+        "Joining them end to end into one string",
+        "Deleting half of them",
+        "Sorting them alphabetically",
+        "Comparing their lengths"
+      ],
+      "correctAnswer": "Joining them end to end into one string",
+      "explanation": "\"foo\" + \"bar\" becomes \"foobar\"."
+    },
+    {
+      "id": "rust-q-out-20",
+      "type": "mcq",
+      "question": "In Rust, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "rust-q-comment-21",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Rust?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Rust, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "rust-q-concept-21",
+      "type": "mcq",
+      "question": "What is a dictionary/map best for?",
+      "options": [
+        "Fast lookup of values by a unique key",
+        "Storing items in sorted order only",
+        "Counting loop iterations",
+        "Printing text to screen"
+      ],
+      "correctAnswer": "Fast lookup of values by a unique key",
+      "explanation": "Key-based lookup is O(1) on average — far faster than scanning."
+    },
+    {
+      "id": "rust-q-out-21",
+      "type": "mcq",
+      "question": "In Rust, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "rust-q-comment-22",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Rust?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In Rust, // marks a comment. Block comments use /* */."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

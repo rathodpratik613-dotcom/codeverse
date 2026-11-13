@@ -1,0 +1,133 @@
+{
+  "id": "sql-02-module-2-final-quiz",
+  "moduleId": "02-module-2",
+  "title": "Module Final Quiz - 02-module-2",
+  "questions": [
+    {
+      "id": "sql-q-comment-7",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-7",
+      "type": "mcq",
+      "question": "What happens with UPDATE users SET x=1 (no WHERE)?",
+      "options": [
+        "Every row updated",
+        "Error — WHERE required",
+        "Nothing happens",
+        "Only first row"
+      ],
+      "correctAnswer": "Every row is updated",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-fill-7",
+      "type": "mcq",
+      "question": "What is the main purpose of the UPDATE and DELETE technique shown in this lesson?",
+      "options": [
+        "UPDATE and DELETE",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "UPDATE and DELETE",
+      "explanation": "It exists to help you update and delete effectively."
+    },
+    {
+      "id": "sql-q-out-7",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "sql-q-comment-8",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-8",
+      "type": "mcq",
+      "question": "What does LEFT JOIN guarantee?",
+      "options": [
+        "All left-table rows appear",
+        "All rows match",
+        "No NULLs ever",
+        "Sorted output"
+      ],
+      "correctAnswer": "All rows from the left table appear",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-fill-8",
+      "type": "mcq",
+      "question": "What is the main purpose of the JOINs technique shown in this lesson?",
+      "options": [
+        "JOINs",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "JOINs",
+      "explanation": "It exists to help you joins effectively."
+    },
+    {
+      "id": "sql-q-out-8",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "sql-q-comment-9",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-9",
+      "type": "mcq",
+      "question": "What is the difference between WHERE and HAVING?",
+      "options": [
+        "WHERE=rows, HAVING=groups",
+        "They are identical",
+        "HAVING is faster",
+        "WHERE cannot use aggregates"
+      ],
+      "correctAnswer": "WHERE filters rows; HAVING filters groups",
+      "explanation": ""
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

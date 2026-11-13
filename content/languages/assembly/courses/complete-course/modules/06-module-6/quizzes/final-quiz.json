@@ -1,0 +1,130 @@
+{
+  "id": "assembly-06-module-6-final-quiz",
+  "moduleId": "06-module-6",
+  "title": "Module Final Quiz - 06-module-6",
+  "questions": [
+    {
+      "id": "assembly-q-comment-31",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    },
+    {
+      "id": "assembly-q-concept-31",
+      "type": "mcq",
+      "question": "What is the most valuable first test for a new function?",
+      "options": [
+        "A normal input with a known expected output",
+        "The fastest possible input",
+        "Input that crashes the program",
+        "Random data with no expected result"
+      ],
+      "correctAnswer": "A normal input with a known expected output",
+      "explanation": "One known-good case proves the function basically works."
+    },
+    {
+      "id": "assembly-q-out-31",
+      "type": "mcq",
+      "question": "In Assembly, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "assembly-q-comment-32",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    },
+    {
+      "id": "assembly-q-concept-32",
+      "type": "mcq",
+      "question": "What should you do FIRST when you find a bug?",
+      "options": [
+        "Reproduce it reliably and note the exact steps",
+        "Rewrite the whole program",
+        "Delete the suspicious function",
+        "Restart the computer"
+      ],
+      "correctAnswer": "Reproduce it reliably and note the exact steps",
+      "explanation": "You cannot fix what you cannot reproduce."
+    },
+    {
+      "id": "assembly-q-out-32",
+      "type": "mcq",
+      "question": "In Assembly, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "assembly-q-comment-33",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    },
+    {
+      "id": "assembly-q-concept-33",
+      "type": "mcq",
+      "question": "Where should you look FIRST for accurate syntax questions?",
+      "options": [
+        "The official language documentation",
+        "A random blog post",
+        "Guessing from memory",
+        "Asking in chat without checking"
+      ],
+      "correctAnswer": "The official language documentation",
+      "explanation": "Official docs are maintained and version-correct."
+    },
+    {
+      "id": "assembly-q-out-33",
+      "type": "mcq",
+      "question": "In Assembly, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "assembly-q-comment-34",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in Assembly?",
+      "options": [
+        ";",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": ";",
+      "explanation": "In Assembly, ; marks a comment. Block comments use ; (line comments only)."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

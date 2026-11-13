@@ -1,0 +1,130 @@
+{
+  "id": "html-04-module-4-final-quiz",
+  "moduleId": "04-module-4",
+  "title": "Module Final Quiz - 04-module-4",
+  "questions": [
+    {
+      "id": "html-q-comment-21",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-21",
+      "type": "mcq",
+      "question": "What does the required attribute do?",
+      "options": [
+        "Prevents submission when the field is empty",
+        "Hides the field",
+        "Makes it read-only",
+        "Adds a default value"
+      ],
+      "correctAnswer": "Prevents submission when the field is empty",
+      "explanation": "required enforces presence client-side."
+    },
+    {
+      "id": "html-q-out-21",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-22",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-22",
+      "type": "mcq",
+      "question": "What does scope=\"col\" on a <th> tell assistive tech?",
+      "options": [
+        "This header applies to the cells below it in the column",
+        "The column is sortable",
+        "The cell is hidden",
+        "The table has 5 columns"
+      ],
+      "correctAnswer": "This header applies to the cells below it in the column",
+      "explanation": "scope associates headers with their data cells."
+    },
+    {
+      "id": "html-q-out-22",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-23",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-23",
+      "type": "mcq",
+      "question": "What is the DOM?",
+      "options": [
+        "The tree representation of the page that scripts can modify",
+        "A type of CSS file",
+        "The server database",
+        "A JavaScript framework"
+      ],
+      "correctAnswer": "The tree representation of the page that scripts can modify",
+      "explanation": "DOM = live, scriptable page structure."
+    },
+    {
+      "id": "html-q-out-23",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-24",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

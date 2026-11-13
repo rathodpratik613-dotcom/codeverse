@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Code2, Swords, Bug, Puzzle, GitCompare, Search, Trophy } from 'lucide-react';
+import { Code2, Swords, Bug, Puzzle, GitCompare, Search, Trophy, Calendar } from 'lucide-react';
 import { languages } from '@/data/languages';
 
 const GAMES = [
@@ -47,6 +47,17 @@ export default function GamesPage() {
         </div>
 
         <div className="grid sm:grid-cols-2 gap-5">
+          <Link href="/daily-challenge" className="sm:col-span-2">
+            <div className="bg-gradient-to-r from-orange-900/30 to-purple-900/30 border border-orange-500/30 rounded-2xl p-6 hover:border-orange-500/60 transition-all">
+              <div className="flex items-center gap-4">
+                <Calendar className="w-10 h-10 text-orange-400" />
+                <div>
+                  <h3 className="text-xl font-bold text-white">Daily Challenge</h3>
+                  <p className="text-gray-400 text-sm">One quiz per day — same questions for everyone. Bonus XP!</p>
+                </div>
+              </div>
+            </div>
+          </Link>
           {GAMES.map((g) => {
             const Icon = g.icon;
             const inner = (

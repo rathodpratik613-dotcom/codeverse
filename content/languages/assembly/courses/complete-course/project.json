@@ -1,0 +1,30 @@
+{
+  "id": "assembly-capstone-project",
+  "language": "assembly",
+  "title": "Complete assembly Capstone Project",
+  "description": "Apply everything you've learned in assembly to build a complete application.",
+  "difficulty": "hard",
+  "estimatedHours": 8,
+  "milestones": [
+    {
+      "title": "Setup",
+      "description": "Set up project structure and dependencies"
+    },
+    {
+      "title": "Core Features",
+      "description": "Implement main functionality"
+    },
+    {
+      "title": "Testing",
+      "description": "Write tests and verify functionality"
+    },
+    {
+      "title": "Polish",
+      "description": "Add error handling and documentation"
+    }
+  ],
+  "starterCode": "// assembly Capstone Project\n// TODO: Implement your solution here",
+  "solutionCode": "// assembly Capstone Project Solution\n// Complete implementation",
+  "xpReward": 500,
+  "coinReward": 200
+}

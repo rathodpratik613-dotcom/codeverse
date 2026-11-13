@@ -1,0 +1,133 @@
+{
+  "id": "sql-01-module-1-final-quiz",
+  "moduleId": "01-module-1",
+  "title": "Module Final Quiz - 01-module-1",
+  "questions": [
+    {
+      "id": "sql-q-comment-1",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-1",
+      "type": "mcq",
+      "question": "What kind of data does SQL manage?",
+      "options": [
+        "Structured data in relational tables",
+        "Unstructured text files",
+        "Images and video",
+        "Server configuration"
+      ],
+      "correctAnswer": "Structured data in relational tables",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-fill-1",
+      "type": "mcq",
+      "question": "What is the main purpose of the What is SQL technique shown in this lesson?",
+      "options": [
+        "What is SQL",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "What is SQL",
+      "explanation": "It exists to help you what is sql effectively."
+    },
+    {
+      "id": "sql-q-out-1",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "sql-q-comment-2",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-2",
+      "type": "mcq",
+      "question": "What does SELECT DISTINCT do?",
+      "options": [
+        "Removes duplicate rows",
+        "Sorts results",
+        "Deletes duplicates from table",
+        "Counts rows"
+      ],
+      "correctAnswer": "Removes duplicate rows from results",
+      "explanation": ""
+    },
+    {
+      "id": "sql-q-fill-2",
+      "type": "mcq",
+      "question": "What is the main purpose of the SELECT Basics technique shown in this lesson?",
+      "options": [
+        "SELECT Basics",
+        "Storing passwords",
+        "Printing random numbers",
+        "Deleting files"
+      ],
+      "correctAnswer": "SELECT Basics",
+      "explanation": "It exists to help you select basics effectively."
+    },
+    {
+      "id": "sql-q-out-2",
+      "type": "mcq",
+      "question": "In SQL, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "sql-q-comment-3",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in SQL?",
+      "options": [
+        "--",
+        "//",
+        "#",
+        "<!-- -->"
+      ],
+      "correctAnswer": "--",
+      "explanation": "In SQL, -- marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "sql-q-concept-3",
+      "type": "mcq",
+      "question": "How do you check for missing values?",
+      "options": [
+        "IS NULL",
+        "= NULL",
+        "== NULL",
+        "EMPTY()"
+      ],
+      "correctAnswer": "IS NULL",
+      "explanation": ""
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

@@ -1,0 +1,130 @@
+{
+  "id": "html-03-module-3-final-quiz",
+  "moduleId": "03-module-3",
+  "title": "Module Final Quiz - 03-module-3",
+  "questions": [
+    {
+      "id": "html-q-comment-15",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-15",
+      "type": "mcq",
+      "question": "What does <datalist> provide?",
+      "options": [
+        "Autocomplete suggestions for an input",
+        "A table of data",
+        "A dropdown of pages",
+        "Form validation errors"
+      ],
+      "correctAnswer": "Autocomplete suggestions for an input",
+      "explanation": "datalist offers suggestions while typing."
+    },
+    {
+      "id": "html-q-out-15",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-16",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-16",
+      "type": "mcq",
+      "question": "What is the first accessibility win on any page?",
+      "options": [
+        "Correct semantic structure and landmarks",
+        "Fancy animations",
+        "More ads",
+        "Bigger fonts only"
+      ],
+      "correctAnswer": "Correct semantic structure and landmarks",
+      "explanation": "Structure carries meaning to assistive technology."
+    },
+    {
+      "id": "html-q-out-16",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-17",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-17",
+      "type": "mcq",
+      "question": "What does the meta description do?",
+      "options": [
+        "Gives search engines a summary shown under the result",
+        "Changes page colors",
+        "Encrypts the page",
+        "Adds keywords to body text"
+      ],
+      "correctAnswer": "Gives search engines a summary shown under the result",
+      "explanation": "It is the snippet text in search results."
+    },
+    {
+      "id": "html-q-out-17",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-18",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

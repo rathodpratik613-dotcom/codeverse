@@ -1,0 +1,30 @@
+{
+  "id": "php-capstone-project",
+  "language": "php",
+  "title": "Complete php Capstone Project",
+  "description": "Apply everything you've learned in php to build a complete application.",
+  "difficulty": "hard",
+  "estimatedHours": 8,
+  "milestones": [
+    {
+      "title": "Setup",
+      "description": "Set up project structure and dependencies"
+    },
+    {
+      "title": "Core Features",
+      "description": "Implement main functionality"
+    },
+    {
+      "title": "Testing",
+      "description": "Write tests and verify functionality"
+    },
+    {
+      "title": "Polish",
+      "description": "Add error handling and documentation"
+    }
+  ],
+  "starterCode": "// php Capstone Project\n// TODO: Implement your solution here",
+  "solutionCode": "// php Capstone Project Solution\n// Complete implementation",
+  "xpReward": 500,
+  "coinReward": 200
+}

@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
+import { LevelUpAnimation } from '@/components/level-up-animation';
 
 interface User {
   id: string;
@@ -40,6 +41,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [showLevelUp, setShowLevelUp] = useState<number | null>(null);
   const router = useRouter();
 
   const fetchUser = async () => {
@@ -134,12 +136,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const refreshUser = async () => {
+    const prevLevel = user?.level;
     await fetchUser();
+    // Check for level up after refresh
+    if (user && prevLevel && user.level > prevLevel) {
+      setShowLevelUp(user.level);
+    }
   };
 
   return (
     <AuthContext.Provider value={{ user, login, signup, logout, isAuthenticated, isLoading, refreshUser }}>
       {children}
+      {showLevelUp && <LevelUpAnimation level={showLevelUp} onComplete={() => setShowLevelUp(null)} />}
     </AuthContext.Provider>
   );
 }

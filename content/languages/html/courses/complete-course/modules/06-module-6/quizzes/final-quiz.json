@@ -1,0 +1,130 @@
+{
+  "id": "html-06-module-6-final-quiz",
+  "moduleId": "06-module-6",
+  "title": "Module Final Quiz - 06-module-6",
+  "questions": [
+    {
+      "id": "html-q-comment-33",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-33",
+      "type": "mcq",
+      "question": "What does JSX compile down to?",
+      "options": [
+        "Function calls that create DOM elements",
+        "Raw HTML files",
+        "CSS stylesheets",
+        "Database queries"
+      ],
+      "correctAnswer": "Function calls that create DOM elements",
+      "explanation": "JSX is syntax sugar; the framework builds real DOM nodes."
+    },
+    {
+      "id": "html-q-out-33",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-34",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-34",
+      "type": "mcq",
+      "question": "What makes a site installable as a PWA?",
+      "options": [
+        "HTTPS + manifest + service worker",
+        "Only a mobile app store listing",
+        "A .exe file",
+        "Native code"
+      ],
+      "correctAnswer": "HTTPS + manifest + service worker",
+      "explanation": "The three pillars Chrome requires for the install prompt."
+    },
+    {
+      "id": "html-q-out-34",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-35",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    },
+    {
+      "id": "html-q-concept-35",
+      "type": "mcq",
+      "question": "What does loading=\"lazy\" do on an image?",
+      "options": [
+        "Defers loading until the image scrolls near the viewport",
+        "Compresses the image",
+        "Loads it twice",
+        "Hides it until clicked"
+      ],
+      "correctAnswer": "Defers loading until the image scrolls near the viewport",
+      "explanation": "Off-screen images no longer compete for bandwidth upfront."
+    },
+    {
+      "id": "html-q-out-35",
+      "type": "mcq",
+      "question": "In HTML, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "html-q-comment-36",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in HTML?",
+      "options": [
+        "<!-- -->",
+        "//",
+        "#",
+        "/* */"
+      ],
+      "correctAnswer": "<!-- -->",
+      "explanation": "In HTML, <!-- --> marks a comment. Block comments use -->."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}

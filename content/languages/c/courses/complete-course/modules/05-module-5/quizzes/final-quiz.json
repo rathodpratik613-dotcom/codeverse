@@ -1,0 +1,130 @@
+{
+  "id": "c-05-module-5-final-quiz",
+  "moduleId": "05-module-5",
+  "title": "Module Final Quiz - 05-module-5",
+  "questions": [
+    {
+      "id": "c-q-comment-25",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "c-q-concept-25",
+      "type": "mcq",
+      "question": "What is the purpose of try/catch?",
+      "options": [
+        "Handle failures without crashing the whole program",
+        "Make code run faster",
+        "Hide bugs permanently",
+        "Replace testing"
+      ],
+      "correctAnswer": "Handle failures without crashing the whole program",
+      "explanation": "Try/catch converts crashes into controlled responses."
+    },
+    {
+      "id": "c-q-out-25",
+      "type": "mcq",
+      "question": "In C, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "c-q-comment-26",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "c-q-concept-26",
+      "type": "mcq",
+      "question": "Why use \"with open(...)\" instead of open() + close()?",
+      "options": [
+        "It closes the file automatically, even on errors",
+        "It makes files bigger",
+        "It is required by all languages",
+        "It encrypts the file"
+      ],
+      "correctAnswer": "It closes the file automatically, even on errors",
+      "explanation": "Context managers prevent resource leaks."
+    },
+    {
+      "id": "c-q-out-26",
+      "type": "mcq",
+      "question": "In C, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "c-q-comment-27",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C, // marks a comment. Block comments use /* */."
+    },
+    {
+      "id": "c-q-concept-27",
+      "type": "mcq",
+      "question": "What does an import statement do?",
+      "options": [
+        "Makes functions/code from another module available",
+        "Deletes unused code",
+        "Compiles the program",
+        "Connects to the internet"
+      ],
+      "correctAnswer": "Makes functions/code from another module available",
+      "explanation": "Imports load reusable code into your program."
+    },
+    {
+      "id": "c-q-out-27",
+      "type": "mcq",
+      "question": "In C, what is the safest way to predict what a program outputs?",
+      "options": [
+        "Depends on the code — trace it line by line"
+      ],
+      "correctAnswer": "Depends on the code — trace it line by line",
+      "explanation": "Read top to bottom, track variable values, and note every output statement."
+    },
+    {
+      "id": "c-q-comment-28",
+      "type": "mcq",
+      "question": "Which of these is the correct way to write a comment in C?",
+      "options": [
+        "//",
+        "#",
+        "<!-- -->",
+        "/* */"
+      ],
+      "correctAnswer": "//",
+      "explanation": "In C, // marks a comment. Block comments use /* */."
+    }
+  ],
+  "passingScore": 70,
+  "xpReward": 100
+}
