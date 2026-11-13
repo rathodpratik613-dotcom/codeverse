@@ -523,5 +523,230 @@
     ],
     "answer": "// import the tools you need",
     "explanation": "Line 1 uses \"func\" where \"import\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "swift-bug-36",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "let greeting = \"Hello, World!\"\nprint(greeting)",
+    "buggyLine": 2,
+    "options": [
+      "print(greeting)",
+      "println(greeting)",
+      "console.log(greeting)",
+      "echo greeting"
+    ],
+    "answer": "print(greeting)",
+    "explanation": "Swift uses print() for output. println, console.log, and echo are from other languages."
+  },
+  {
+    "id": "swift-bug-37",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "var name = \"Alice\"\nlet age = 30\nname = \"Bob\"\n// age = 31  // This would be an error",
+    "buggyLine": 4,
+    "options": [
+      "// age = 31  // This would be an error",
+      "age = 31",
+      "var age = 31",
+      "let age = 31"
+    ],
+    "answer": "// age = 31  // This would be an error",
+    "explanation": "let declares a constant that cannot be reassigned. The commented line shows what would happen if you tried."
+  },
+  {
+    "id": "swift-bug-38",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "let numbers = [1, 2, 3, 4, 5]\nlet first = numbers[0]\nlet last = numbers[numbers.count - 1]\nprint(first, last)",
+    "buggyLine": 3,
+    "options": [
+      "let last = numbers[numbers.count - 1]",
+      "let last = numbers[numbers.count]",
+      "let last = numbers.last",
+      "let last = numbers[numbers.count - 2]"
+    ],
+    "answer": "let last = numbers[numbers.count - 1]",
+    "explanation": "Array indices are 0-based. numbers.count gives the count, so the last index is count - 1. numbers.count would be out of bounds."
+  },
+  {
+    "id": "swift-bug-39",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "func greet(name: String) -> String {\n    return \"Hello, \\(name)!\"\n}\nprint(greet(name: \"Charlie\"))",
+    "buggyLine": 4,
+    "options": [
+      "print(greet(name: \"Charlie\"))",
+      "print(greet(\"Charlie\"))",
+      "print(greet(name: Charlie))",
+      "print(greet(\"Charlie\"))"
+    ],
+    "answer": "print(greet(name: \"Charlie\"))",
+    "explanation": "Swift function calls require the parameter label: greet(name: \"Charlie\"). Omitting the label or using wrong syntax causes errors."
+  },
+  {
+    "id": "swift-bug-40",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "let optionalName: String? = nil\nif let name = optionalName {\n    print(\"Hello, \\(name)\")\n} else {\n    print(\"Hello, stranger\")\n}",
+    "buggyLine": 2,
+    "options": [
+      "if let name = optionalName {",
+      "if optionalName != nil {",
+      "if let name = optionalName! {",
+      "if optionalName {"
+    ],
+    "answer": "if let name = optionalName {",
+    "explanation": "if let safely unwraps an optional. The others either don't unwrap properly or use force unwrapping which can crash."
+  },
+  {
+    "id": "swift-bug-41",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "struct Person {\n    var name: String\n    var age: Int\n}\n\nlet person = Person(name: \"Alice\", age: 30)\nprint(person.name)",
+    "buggyLine": 7,
+    "options": [
+      "let person = Person(name: \"Alice\", age: 30)",
+      "let person = Person(\"Alice\", 30)",
+      "let person = Person(name: \"Alice\", age: \"30\")",
+      "let person = new Person(name: \"Alice\", age: 30)"
+    ],
+    "answer": "let person = Person(name: \"Alice\", age: 30)",
+    "explanation": "Swift struct initialization uses labeled arguments matching property names. The memberwise initializer is automatically provided."
+  },
+  {
+    "id": "swift-bug-42",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "code": "enum Direction {\n    case north, south, east, west\n}\n\nlet current = Direction.north\nswitch current {\ncase .north: print(\"Going north\")\ncase .south: print(\"Going south\")\ncase .east: print(\"Going east\")\ncase .west: print(\"Going west\")\n}",
+    "buggyLine": 8,
+    "options": [
+      "case .north: print(\"Going north\")",
+      "case north: print(\"Going north\")",
+      "case Direction.north: print(\"Going north\")",
+      "case .North: print(\"Going north\")"
+    ],
+    "answer": "case .north: print(\"Going north\")",
+    "explanation": "Enum cases in switch use dot notation: .north. Without the dot or with wrong case, it won't match."
+  },
+  {
+    "id": "swift-bug-43",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "code": "class Vehicle {\n    var speed: Int = 0\n    \n    func accelerate() {\n        speed += 10\n    }\n}\n\nclass Car: Vehicle {\n    var brand: String\n    \n    init(brand: String) {\n        self.brand = brand\n        super.init()\n    }\n}\n\nlet car = Car(brand: \"Toyota\")\ncar.accelerate()\nprint(car.speed)",
+    "buggyLine": 15,
+    "options": [
+      "super.init()",
+      "self.init()",
+      "Vehicle.init()",
+      "super()"
+    ],
+    "answer": "super.init()",
+    "explanation": "Subclass initializers must call super.init() to initialize the parent class. self.init() is for delegating within the same class."
+  },
+  {
+    "id": "swift-bug-44",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "code": "protocol Greetable {\n    func greet() -> String\n}\n\nstruct EnglishGreeter: Greetable {\n    func greet() -> String {\n        return \"Hello!\"\n    }\n}\n\nlet greeter = EnglishGreeter()\nprint(greeter.greet())",
+    "buggyLine": 11,
+    "options": [
+      "struct EnglishGreeter: Greetable {",
+      "class EnglishGreeter: Greetable {",
+      "struct EnglishGreeter implements Greetable {",
+      "struct EnglishGreeter extends Greetable {"
+    ],
+    "answer": "struct EnglishGreeter: Greetable {",
+    "explanation": "Swift uses colon (:) for protocol conformance, not implements or extends. Both struct and class can conform to protocols."
+  },
+  {
+    "id": "swift-bug-45",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "code": "func processNumbers(_ numbers: [Int]) -> [Int] {\n    return numbers.filter { $0 > 0 }.map { $0 * 2 }\n}\n\nlet result = processNumbers([1, -2, 3, -4, 5])\nprint(result)",
+    "buggyLine": 2,
+    "options": [
+      "return numbers.filter { $0 > 0 }.map { $0 * 2 }",
+      "return numbers.filter { $0 < 0 }.map { $0 * 2 }",
+      "return numbers.map { $0 * 2 }.filter { $0 > 0 }",
+      "return numbers.filter { $0 >= 0 }.map { $0 * 2 }"
+    ],
+    "answer": "return numbers.filter { $0 > 0 }.map { $0 * 2 }",
+    "explanation": "Closure shorthand $0 refers to the first parameter. filter keeps positive numbers, map doubles them. Order matters: filter first, then map."
+  },
+  {
+    "id": "swift-bug-46",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "code": "let dict = [\"a\": 1, \"b\": 2, \"c\": 3]\nfor (key, value) in dict {\n    print(\"\\(key): \\(value)\")\n}",
+    "buggyLine": 2,
+    "options": [
+      "for (key, value) in dict {",
+      "for key, value in dict {",
+      "for (key: value) in dict {",
+      "for [key, value] in dict {"
+    ],
+    "answer": "for (key, value) in dict {",
+    "explanation": "Dictionary iteration uses tuple destructuring: for (key, value) in dict. Parentheses are required."
+  },
+  {
+    "id": "swift-bug-47",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "let numbers = [1, 2, 3, 4, 5]\nlet doubled = numbers.map { $0 * 2 }\nlet sum = numbers.reduce(0, +)\nprint(doubled)\nprint(sum)",
+    "buggyLine": 3,
+    "options": [
+      "let sum = numbers.reduce(0, +)",
+      "let sum = numbers.reduce(0) { $0 + $1 }",
+      "let sum = numbers.sum()",
+      "let sum = numbers.reduce(0, *)"
+    ],
+    "answer": "let sum = numbers.reduce(0, +)",
+    "explanation": "reduce(initial, combine) applies combine to accumulate. + is a function reference for addition. The closure version also works."
+  },
+  {
+    "id": "swift-bug-48",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "code": "extension String {\n    func reversedWords() -> String {\n        return self.split(separator: \" \").reversed().joined(separator: \" \")\n    }\n}\n\nlet text = \"Hello World Swift\"\nprint(text.reversedWords())",
+    "buggyLine": 3,
+    "options": [
+      "return self.split(separator: \" \").reversed().joined(separator: \" \")",
+      "return self.split(\" \").reversed().joined(\" \")",
+      "return self.components(separatedBy: \" \").reversed().joined(separator: \" \")",
+      "return self.split(separator: \" \").reversed().joined()"
+    ],
+    "answer": "return self.split(separator: \" \").reversed().joined(separator: \" \")",
+    "explanation": "split(separator:) takes a Character, joined(separator:) takes a String. The parameter labels are required."
+  },
+  {
+    "id": "swift-bug-49",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "code": "guard let url = URL(string: \"https://example.com\") else {\n    fatalError(\"Invalid URL\")\n}\nlet task = URLSession.shared.dataTask(with: url) { data, response, error in\n    if let data = data {\n        print(String(data: data, encoding: .utf8)!)\n    }\n}\ntask.resume()",
+    "buggyLine": 2,
+    "options": [
+      "guard let url = URL(string: \"https://example.com\") else {",
+      "if let url = URL(string: \"https://example.com\") {",
+      "let url = URL(string: \"https://example.com\")!",
+      "guard url = URL(string: \"https://example.com\") else {"
+    ],
+    "answer": "guard let url = URL(string: \"https://example.com\") else {",
+    "explanation": "guard let safely unwraps optionals and exits scope if nil. The else block must exit the current scope (return, throw, fatalError, etc.)."
+  },
+  {
+    "id": "swift-bug-50",
+    "lesson": "lesson-15",
+    "difficulty": "hard",
+    "code": "actor Counter {\n    private var value = 0\n    \n    func increment() {\n        value += 1\n    }\n    \n    func getValue() -> Int {\n        return value\n    }\n}\n\nlet counter = Counter()\nawait counter.increment()\nprint(await counter.getValue())",
+    "buggyLine": 5,
+    "options": [
+      "func increment() {",
+      "func increment() async {",
+      "func increment() throws {",
+      "func increment() -> Int {"
+    ],
+    "answer": "func increment() {",
+    "explanation": "Actor methods are implicitly async when called from outside. Inside the actor, methods don't need async keyword unless they suspend."
   }
 ]

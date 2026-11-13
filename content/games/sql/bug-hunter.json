@@ -658,5 +658,95 @@
     ],
     "answer": "id INT PRIMARY KEY,",
     "explanation": "Line 2 uses \"SELECT\" where \"PRIMARY\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "sql-bug-45",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "SELECT name, age FROM users WHERE age > 18;",
+    "buggyLine": 1,
+    "options": [
+      "SELECT name, age FROM users WHERE age > 18;",
+      "SELECT name age FROM users WHERE age > 18;",
+      "SELECT name, age FROM users WHERE age >= 18;",
+      "SELECT name, age FROM user WHERE age > 18;"
+    ],
+    "answer": "SELECT name, age FROM users WHERE age > 18;",
+    "explanation": "SELECT requires commas between columns. The table name is users (plural). WHERE age > 18 is correct for strictly greater than."
+  },
+  {
+    "id": "sql-bug-46",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "INSERT INTO users (name, email, age) VALUES ('Alice', 'alice@example.com', 30);",
+    "buggyLine": 1,
+    "options": [
+      "INSERT INTO users (name, email, age) VALUES ('Alice', 'alice@example.com', 30);",
+      "INSERT INTO users (name, email, age) VALUES ('Alice' 'alice@example.com' 30);",
+      "INSERT INTO user (name, email, age) VALUES ('Alice', 'alice@example.com', 30);",
+      "INSERT users (name, email, age) VALUES ('Alice', 'alice@example.com', 30);"
+    ],
+    "answer": "INSERT INTO users (name, email, age) VALUES ('Alice', 'alice@example.com', 30);",
+    "explanation": "INSERT INTO table (columns) VALUES (values) requires commas between values and the INTO keyword."
+  },
+  {
+    "id": "sql-bug-47",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "UPDATE users SET age = 31 WHERE id = 1;",
+    "buggyLine": 1,
+    "options": [
+      "UPDATE users SET age = 31 WHERE id = 1;",
+      "UPDATE users SET age = 31 WHERE id == 1;",
+      "UPDATE user SET age = 31 WHERE id = 1;",
+      "UPDATE users age = 31 WHERE id = 1;"
+    ],
+    "answer": "UPDATE users SET age = 31 WHERE id = 1;",
+    "explanation": "UPDATE table SET column = value WHERE condition. Uses single = for assignment, not == (which is for comparison in some contexts)."
+  },
+  {
+    "id": "sql-bug-48",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "SELECT name, COUNT(*) as order_count\nFROM orders\nGROUP BY name\nHAVING COUNT(*) > 5\nORDER BY order_count DESC;",
+    "buggyLine": 4,
+    "options": [
+      "HAVING COUNT(*) > 5",
+      "WHERE COUNT(*) > 5",
+      "HAVING order_count > 5",
+      "GROUP BY name HAVING COUNT(*) > 5"
+    ],
+    "answer": "HAVING COUNT(*) > 5",
+    "explanation": "HAVING filters aggregated results after GROUP BY. WHERE filters rows before aggregation and cannot use aggregate functions."
+  },
+  {
+    "id": "sql-bug-49",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "SELECT u.name, o.total\nFROM users u\nINNER JOIN orders o ON u.id = o.user_id\nWHERE o.total > 100;",
+    "buggyLine": 3,
+    "options": [
+      "INNER JOIN orders o ON u.id = o.user_id",
+      "INNER JOIN orders o ON u.id == o.user_id",
+      "JOIN orders o ON u.id = o.user_id",
+      "INNER JOIN orders ON u.id = o.user_id"
+    ],
+    "answer": "INNER JOIN orders o ON u.id = o.user_id",
+    "explanation": "JOIN syntax: JOIN table alias ON condition. Uses single = for join conditions. Table alias o is required for column references."
+  },
+  {
+    "id": "sql-bug-50",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "SELECT name, AVG(age) as avg_age\nFROM users\nGROUP BY name\nORDER BY avg_age DESC\nLIMIT 10;",
+    "buggyLine": 4,
+    "options": [
+      "ORDER BY avg_age DESC",
+      "ORDER BY AVG(age) DESC",
+      "ORDER BY avg_age ASC",
+      "GROUP BY avg_age DESC"
+    ],
+    "answer": "ORDER BY avg_age DESC",
+    "explanation": "ORDER BY can use column aliases defined in SELECT. avg_age refers to the alias. DESC sorts highest to lowest."
   }
 ]

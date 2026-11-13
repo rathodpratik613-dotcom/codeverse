@@ -538,5 +538,215 @@
     ],
     "answer": "def add(x) {",
     "explanation": "Line 2 uses \"end\" where \"def\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "ruby-bug-37",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "puts \"Hello, World!\"\nname = \"Alice\"\nputs \"My name is #{name}\"",
+    "buggyLine": 3,
+    "options": [
+      "puts \"My name is #{name}\"",
+      "puts \"My name is {name}\"",
+      "puts \"My name is \" + name",
+      "puts name"
+    ],
+    "answer": "puts \"My name is #{name}\"",
+    "explanation": "Ruby string interpolation uses #{variable} inside double quotes. Single quotes or braces without # do not interpolate."
+  },
+  {
+    "id": "ruby-bug-38",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "numbers = [1, 2, 3, 4, 5]\nsum = numbers.sum\nputs sum",
+    "buggyLine": 2,
+    "options": [
+      "sum = numbers.sum",
+      "sum = numbers.sum()",
+      "sum = sum(numbers)",
+      "sum = numbers.add"
+    ],
+    "answer": "sum = numbers.sum",
+    "explanation": "Array#sum is a method call without parentheses in Ruby. Adding () works but is unidiomatic; the others are wrong methods."
+  },
+  {
+    "id": "ruby-bug-39",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "def greet(name)\n  \"Hello, #{name}!\"\nend\nputs greet(\"Bob\")",
+    "buggyLine": 4,
+    "options": [
+      "puts greet(\"Bob\")",
+      "puts greet Bob",
+      "greet(\"Bob\")",
+      "puts \"Bob\""
+    ],
+    "answer": "puts greet(\"Bob\")",
+    "explanation": "Method calls with arguments need parentheses (or no space). puts greet Bob is parsed as puts(greet) then Bob is a separate expression."
+  },
+  {
+    "id": "ruby-bug-40",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "age = 25\nif age >= 18\n  puts \"Adult\"\nelsif age >= 13\n  puts \"Teenager\"\nelse\n  puts \"Child\"\nend",
+    "buggyLine": 4,
+    "options": [
+      "elsif age >= 13",
+      "else if age >= 13",
+      "elif age >= 13",
+      "elseif age >= 13"
+    ],
+    "answer": "elsif age >= 13",
+    "explanation": "Ruby uses \"elsif\" (one word, no e after l) for else-if branches. \"else if\" creates a nested if inside else."
+  },
+  {
+    "id": "ruby-bug-41",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfruits.each do |fruit|\n  puts fruit.upcase\nend",
+    "buggyLine": 2,
+    "options": [
+      "fruits.each do |fruit|",
+      "fruits.each { |fruit|",
+      "fruits.for do |fruit|",
+      "fruits.loop do |fruit|"
+    ],
+    "answer": "fruits.each do |fruit|",
+    "explanation": "Ruby blocks use do...end for multi-line or { } for single-line. \"for\" is not a method on arrays; \"each\" is correct."
+  },
+  {
+    "id": "ruby-bug-42",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "hash = { name: \"Alice\", age: 30 }\nputs hash[:name]\nputs hash[\"age\"]",
+    "buggyLine": 3,
+    "options": [
+      "puts hash[\"age\"]",
+      "puts hash[:age]",
+      "puts hash.age",
+      "puts hash.get(\"age\")"
+    ],
+    "answer": "puts hash[:age]",
+    "explanation": "Symbol keys (:age) and string keys (\"age\") are different in Ruby. hash[:name] works because :name is a symbol; hash[\"age\"] fails because the key is :age."
+  },
+  {
+    "id": "ruby-bug-43",
+    "lesson": "lesson-07",
+    "difficulty": "medium",
+    "code": "def factorial(n)\n  return 1 if n <= 1\n  n * factorial(n - 1)\nend\nputs factorial(5)",
+    "buggyLine": 2,
+    "options": [
+      "return 1 if n <= 1",
+      "if n <= 1 return 1",
+      "return 1 unless n > 1",
+      "if n <= 1 then return 1 end"
+    ],
+    "answer": "return 1 if n <= 1",
+    "explanation": "Ruby supports modifier if: statement if condition. The others have syntax issues or change semantics."
+  },
+  {
+    "id": "ruby-bug-44",
+    "lesson": "lesson-08",
+    "difficulty": "hard",
+    "code": "class Dog\n  attr_accessor :name, :breed\n  \n  def initialize(name, breed)\n    @name = name\n    @breed = breed\n  end\n  \n  def bark\n    \"Woof!\"\n  end\nend\n\ndog = Dog.new(\"Buddy\", \"Labrador\")\nputs dog.bark",
+    "buggyLine": 13,
+    "options": [
+      "puts dog.bark",
+      "puts dog.bark()",
+      "puts dog.bark()",
+      "puts dog.bark()"
+    ],
+    "answer": "puts dog.bark",
+    "explanation": "In Ruby, method calls without arguments can omit parentheses: dog.bark works. dog.bark() also works but is less idiomatic."
+  },
+  {
+    "id": "ruby-bug-45",
+    "lesson": "lesson-09",
+    "difficulty": "hard",
+    "code": "begin\n  result = 10 / 0\nrescue ZeroDivisionError => e\n  puts \"Error: #{e.message}\"\nend",
+    "buggyLine": 3,
+    "options": [
+      "rescue ZeroDivisionError => e",
+      "rescue ZeroDivisionError = e",
+      "catch ZeroDivisionError => e",
+      "rescue => ZeroDivisionError"
+    ],
+    "answer": "rescue ZeroDivisionError => e",
+    "explanation": "Ruby exception handling uses rescue with => to capture the exception object. The syntax rescue ClassName => variable is correct."
+  },
+  {
+    "id": "ruby-bug-46",
+    "lesson": "lesson-10",
+    "difficulty": "hard",
+    "code": "numbers = [1, 2, 3, 4, 5]\nsquares = numbers.map { |n| n * n }\nevens = numbers.select { |n| n.even? }\nputs squares.inspect\nputs evens.inspect",
+    "buggyLine": 2,
+    "options": [
+      "squares = numbers.map { |n| n * n }",
+      "squares = numbers.map do |n| n * n end",
+      "squares = numbers.collect { |n| n * n }",
+      "squares = numbers.map(|n| n * n)"
+    ],
+    "answer": "squares = numbers.map { |n| n * n }",
+    "explanation": "Ruby blocks can use { } for single expressions or do...end for multi-line. Both work, but { } is preferred for single-line operations."
+  },
+  {
+    "id": "ruby-bug-47",
+    "lesson": "lesson-11",
+    "difficulty": "hard",
+    "code": "module Greeter\n  def greet\n    \"Hello from module!\"\n  end\nend\n\nclass Person\n  include Greeter\nend\n\np = Person.new\nputs p.greet",
+    "buggyLine": 10,
+    "options": [
+      "include Greeter",
+      "extend Greeter",
+      "import Greeter",
+      "use Greeter"
+    ],
+    "answer": "include Greeter",
+    "explanation": "include adds module methods as instance methods. extend adds them as class methods. import and use are not Ruby keywords."
+  },
+  {
+    "id": "ruby-bug-48",
+    "lesson": "lesson-12",
+    "difficulty": "hard",
+    "code": "def method_missing(name, *args)\n  puts \"Called #{name} with #{args}\"\nend\n\nobj = Object.new\nobj.undefined_method(1, 2, 3)",
+    "buggyLine": 1,
+    "options": [
+      "def method_missing(name, *args)",
+      "def method_missing(name, args)",
+      "def missing_method(name, *args)",
+      "def method_missing(name, **args)"
+    ],
+    "answer": "def method_missing(name, *args)",
+    "explanation": "method_missing is a special Ruby method called when an undefined method is invoked. *args captures all arguments as an array."
+  },
+  {
+    "id": "ruby-bug-49",
+    "lesson": "lesson-13",
+    "difficulty": "hard",
+    "code": "lambda_fn = ->(x) { x * 2 }\nproc_fn = proc { |x| x * 2 }\n\nputs lambda_fn.call(5)\nputs proc_fn.call(5)",
+    "buggyLine": 1,
+    "options": [
+      "lambda_fn = ->(x) { x * 2 }",
+      "lambda_fn = lambda { |x| x * 2 }",
+      "lambda_fn = ->(x) do x * 2 end",
+      "lambda_fn = proc { |x| x * 2 }"
+    ],
+    "answer": "lambda_fn = ->(x) { x * 2 }",
+    "explanation": "Ruby lambdas use -> syntax or lambda keyword. Both create strict arity functions unlike proc which is lenient."
+  },
+  {
+    "id": "ruby-bug-50",
+    "lesson": "lesson-14",
+    "difficulty": "hard",
+    "code": "class Calculator\n  def add(a, b)\n    a + b\n  end\n  \n  def self.multiply(a, b)\n    a * b\n  end\nend\n\ncalc = Calculator.new\nputs calc.add(2, 3)\nputs Calculator.multiply(4, 5)",
+    "buggyLine": 8,
+    "options": [
+      "def self.multiply(a, b)",
+      "def multiply(a, b)",
+      "def Calculator.multiply(a, b)",
+      "def class.multiply(a, b)"
+    ],
+    "answer": "def self.multiply(a, b)",
+    "explanation": "self.method_name defines a class method in Ruby. Without self, it would be an instance method requiring an object."
   }
 ]

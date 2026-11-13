@@ -643,5 +643,110 @@
     ],
     "answer": "echo total",
     "explanation": "Line 4 uses \"if\" where \"echo\" belongs. Check keyword spelling and context."
+  },
+  {
+    "id": "bash-bug-44",
+    "lesson": "lesson-01",
+    "difficulty": "easy",
+    "code": "#!/bin/bash\necho \"Hello, World!\"",
+    "buggyLine": 2,
+    "options": [
+      "echo \"Hello, World!\"",
+      "print \"Hello, World!\"",
+      "echo Hello, World!",
+      "echo 'Hello, World!'"
+    ],
+    "answer": "echo \"Hello, World!\"",
+    "explanation": "echo outputs text. Quotes preserve spaces and special characters. print is not a bash builtin."
+  },
+  {
+    "id": "bash-bug-45",
+    "lesson": "lesson-02",
+    "difficulty": "easy",
+    "code": "name=\"Alice\"\nage=30\necho \"Name: $name, Age: $age\"",
+    "buggyLine": 3,
+    "options": [
+      "echo \"Name: $name, Age: $age\"",
+      "echo \"Name: {name}, Age: {age}\"",
+      "echo \"Name: $name, Age: $age\"",
+      "echo \"Name: name, Age: age\""
+    ],
+    "answer": "echo \"Name: $name, Age: $age\"",
+    "explanation": "Bash variables use $variable syntax. ${variable} also works for disambiguation. Escaping $ shows literal dollar sign."
+  },
+  {
+    "id": "bash-bug-46",
+    "lesson": "lesson-03",
+    "difficulty": "easy",
+    "code": "if [ $age -ge 18 ]; then\n  echo \"Adult\"\nelse\n  echo \"Minor\"\nfi",
+    "buggyLine": 1,
+    "options": [
+      "if [ $age -ge 18 ]; then",
+      "if [ $age >= 18 ]; then",
+      "if [ $age -gt 18 ]; then",
+      "if [[ $age -ge 18 ]]; then"
+    ],
+    "answer": "if [ $age -ge 18 ]; then",
+    "explanation": "Test uses -ge for >=, -gt for >, -le for <=, -lt for <. The [ ] syntax requires spaces and semicolon before then."
+  },
+  {
+    "id": "bash-bug-47",
+    "lesson": "lesson-04",
+    "difficulty": "medium",
+    "code": "for i in {1..5}; do\n  echo \"Number: $i\"\ndone",
+    "buggyLine": 1,
+    "options": [
+      "for i in {1..5}; do",
+      "for i in 1 2 3 4 5; do",
+      "for i in $(seq 1 5); do",
+      "for i in {1,5}; do"
+    ],
+    "answer": "for i in {1..5}; do",
+    "explanation": "Brace expansion {1..5} generates sequence 1 2 3 4 5. seq command also works. {1,5} only generates 1 and 5."
+  },
+  {
+    "id": "bash-bug-48",
+    "lesson": "lesson-05",
+    "difficulty": "medium",
+    "code": "while read -r line; do\n  echo \"Line: $line\"\ndone < input.txt",
+    "buggyLine": 1,
+    "options": [
+      "while read -r line; do",
+      "while read line; do",
+      "while read -r $line; do",
+      "while read line -r; do"
+    ],
+    "answer": "while read -r line; do",
+    "explanation": "-r prevents backslash interpretation. Variable name should not have $. read line without -r can mangle backslashes."
+  },
+  {
+    "id": "bash-bug-49",
+    "lesson": "lesson-06",
+    "difficulty": "medium",
+    "code": "files=$(ls *.txt)\nfor file in $files; do\n  echo \"Processing: $file\"\ndone",
+    "buggyLine": 1,
+    "options": [
+      "files=$(ls *.txt)",
+      "files=`ls *.txt`",
+      "files=$(ls *.txt | tr \"\\n\" \" \")",
+      "files=ls *.txt"
+    ],
+    "answer": "files=$(ls *.txt)",
+    "explanation": "$(command) is modern command substitution. Backticks also work but are deprecated. ls output needs word splitting for the for loop."
+  },
+  {
+    "id": "bash-bug-50",
+    "lesson": "lesson-07",
+    "difficulty": "hard",
+    "code": "function greet {\n  local name=$1\n  echo \"Hello, $name!\"\n}\ngreet \"World\"",
+    "buggyLine": 2,
+    "options": [
+      "local name=$1",
+      "local name = $1",
+      "name=$1",
+      "local name \"$1\""
+    ],
+    "answer": "local name=$1",
+    "explanation": "local declares function-local variables. No spaces around =. $1 is first argument. Without local, variable is global."
   }
 ]
