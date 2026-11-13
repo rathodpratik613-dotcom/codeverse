@@ -93,9 +93,22 @@ function main(): void {
         }
       }
 
-      // Count projects
+      // Count projects (both in projects/ dir and course-level project.json)
       const projectsDir = path.join(CONTENT_DIR, 'projects', lang);
       stats[lang].projects = countFiles(projectsDir);
+      
+      // Also check for project.json in course directories
+      if (fs.existsSync(coursesDir)) {
+        const courseDirs = fs.readdirSync(coursesDir, { withFileTypes: true })
+          .filter((dirent) => dirent.isDirectory())
+          .map((dirent) => dirent.name);
+        for (const courseDir of courseDirs) {
+          const projectPath = path.join(coursesDir, courseDir, 'project.json');
+          if (fs.existsSync(projectPath)) {
+            stats[lang].projects++;
+          }
+        }
+      }
 
       // Count glossary terms
       const glossaryPath = path.join(CONTENT_DIR, 'glossary', `${lang}.json`);
