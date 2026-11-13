@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { registerUser, findUserByEmail, findUserByUsername, generateToken, createSession } from '@/lib/auth';
+import { rateLimit } from '@/lib/rate-limit';
 import { z } from 'zod';
 
 const signupSchema = z.object({
@@ -11,6 +12,12 @@ const signupSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
+    const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
+    const { allowed } = rateLimit(`signup:${ip}`, { windowMs: 60000, maxRequests: 3 });
+    if (!allowed) {
+      return NextResponse.json({ error: 'Too many attempts. Try again later.' }, { status: 429 });
+    }
+
     const body = await request.json();
     const { username, email, password, rememberMe } = signupSchema.parse(body);
 
